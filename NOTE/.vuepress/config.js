@@ -18,23 +18,36 @@ module.exports = {
         {
           text: "Java",
           sublink: [
-            { text: "Chapter1", link: "DBM/Lecture/Lec1" },
-            { text: "Chapter3", link: "DBM/Lecture/Lec2" },
-            { text: "Chapter3", link: "DBM/Lecture/Lec3" },
+            { text: "Chapter1", link: "ProgramLanguage/Java/Lec0" },
+            { text: "Chapter2", link: "ProgramLanguage/Java/Lec1" },
+            { text: "Chapter3", link: "ProgramLanguage/Java/Lec2" },
+            { text: "Chapter4", link: "ProgramLanguage/Java/Lec3" },
+            { text: "Chapter5", link: "ProgramLanguage/Java/Lec4" },
+            { text: "Chapter5", link: "ProgramLanguage/Java/Lec5" },
+            { text: "Chapter5", link: "ProgramLanguage/Java/Lec6" },
+            { text: "Chapter5", link: "ProgramLanguage/Java/Lec7" },
           ],
         },
-        { text: "Mysql", link: "" },
+        { text: "Cpp", link: "" },
+        { text: "Python", link: "" },
       ],
       DBM: [
         {
           text: "数据库设计",
           sublink: [
             { text: "Chapter1", link: "DBM/Lecture/Lec1" },
-            { text: "Chapter3", link: "DBM/Lecture/Lec2" },
+            { text: "Chapter2", link: "DBM/Lecture/Lec2" },
             { text: "Chapter3", link: "DBM/Lecture/Lec3" },
           ],
         },
-        { text: "Mysql", link: "" },
+        {
+          text: "Mysql",
+          sublink: [
+            { text: "Chapter1", link: "DBM/Lecture/Lec1" },
+            { text: "Chapter2", link: "DBM/Lecture/Lec2" },
+            { text: "Chapter3", link: "DBM/Lecture/Lec3" },
+          ],
+        },
       ],
       Math: [
         {
@@ -51,12 +64,20 @@ module.exports = {
       ],
       CO: [
         { text: "Computer", link: "CO/Lecture/Lec1" },
-        { text: "Bits: Data Representation and Manipulation", link: "CO/Lecture/Lec2" },
-        { text: "Boolean Algebra: From Bits to Logic", link: "CO/Lecture/Lec3" },
+        {
+          text: "Bits: Data Representation and Manipulation",
+          link: "CO/Lecture/Lec2",
+        },
+        {
+          text: "Boolean Algebra: From Bits to Logic",
+          link: "CO/Lecture/Lec3",
+        },
         { text: "From Transistors to Gates", link: "CO/Lecture/Lec4" },
       ],
     },
-    editurl:
-      "https://github.com/open17/vuepress-theme-easy-book/blob/master/example",
+    editurl: "https://github.com/ALLENYGY/ALLENYGY.github.io/blob/master/NOTE",
+    footer_html: `<div style="align-items: center;text-align: center;">
+      <p>MIT Licensed | Copyright © 2023-present AllenYGY</p>
+  </div><br/><br/>`,
   },
 };
