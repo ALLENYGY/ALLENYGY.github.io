@@ -3,195 +3,465 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Abstract Methods and Classes Interfaces | MyNote</title>
+    <title>Exception Handeling | MyNote</title>
     <meta name="generator" content="VuePress 1.9.9">
     
     <meta name="description" content="">
     
-    <link rel="preload" href="/assets/css/0.styles.b5c7ba3b.css" as="style"><link rel="preload" href="/assets/js/app.04849cc3.js" as="script"><link rel="preload" href="/assets/js/2.2068e414.js" as="script"><link rel="preload" href="/assets/js/56.7ae35ebf.js" as="script"><link rel="prefetch" href="/assets/js/10.2bf55b30.js"><link rel="prefetch" href="/assets/js/11.b1a50188.js"><link rel="prefetch" href="/assets/js/12.1bee865f.js"><link rel="prefetch" href="/assets/js/13.be4bfd52.js"><link rel="prefetch" href="/assets/js/14.ae8f33eb.js"><link rel="prefetch" href="/assets/js/15.c0e9ae71.js"><link rel="prefetch" href="/assets/js/16.6472ff74.js"><link rel="prefetch" href="/assets/js/17.0c746d2b.js"><link rel="prefetch" href="/assets/js/18.e94ae4e3.js"><link rel="prefetch" href="/assets/js/19.b1039ffd.js"><link rel="prefetch" href="/assets/js/20.9ba05e1b.js"><link rel="prefetch" href="/assets/js/21.0790cfd9.js"><link rel="prefetch" href="/assets/js/22.96e5b1f2.js"><link rel="prefetch" href="/assets/js/23.fccf6e32.js"><link rel="prefetch" href="/assets/js/24.453b4bbe.js"><link rel="prefetch" href="/assets/js/25.9c48b588.js"><link rel="prefetch" href="/assets/js/26.2850ae57.js"><link rel="prefetch" href="/assets/js/27.e1b0bb60.js"><link rel="prefetch" href="/assets/js/28.f4007b5c.js"><link rel="prefetch" href="/assets/js/29.b889c1dd.js"><link rel="prefetch" href="/assets/js/3.ee88ff18.js"><link rel="prefetch" href="/assets/js/30.3fcf6239.js"><link rel="prefetch" href="/assets/js/31.5d72a80d.js"><link rel="prefetch" href="/assets/js/32.d67d7f0f.js"><link rel="prefetch" href="/assets/js/33.e96adb72.js"><link rel="prefetch" href="/assets/js/34.d33b00f9.js"><link rel="prefetch" href="/assets/js/35.6ed17c7a.js"><link rel="prefetch" href="/assets/js/36.c41909e8.js"><link rel="prefetch" href="/assets/js/37.269427c6.js"><link rel="prefetch" href="/assets/js/38.66084498.js"><link rel="prefetch" href="/assets/js/39.f46cf5c5.js"><link rel="prefetch" href="/assets/js/4.df8d15a2.js"><link rel="prefetch" href="/assets/js/40.76bc0bcf.js"><link rel="prefetch" href="/assets/js/41.343f20bb.js"><link rel="prefetch" href="/assets/js/42.c083eb9f.js"><link rel="prefetch" href="/assets/js/43.208581f0.js"><link rel="prefetch" href="/assets/js/44.a8ad8b2f.js"><link rel="prefetch" href="/assets/js/45.5913f380.js"><link rel="prefetch" href="/assets/js/46.9ee4d2e6.js"><link rel="prefetch" href="/assets/js/47.b723ada8.js"><link rel="prefetch" href="/assets/js/48.386a9b7b.js"><link rel="prefetch" href="/assets/js/49.b25669bf.js"><link rel="prefetch" href="/assets/js/5.dad0cfb6.js"><link rel="prefetch" href="/assets/js/50.a6468084.js"><link rel="prefetch" href="/assets/js/51.c3f1cbd0.js"><link rel="prefetch" href="/assets/js/52.3fd8e5aa.js"><link rel="prefetch" href="/assets/js/53.b0dce991.js"><link rel="prefetch" href="/assets/js/54.3229619c.js"><link rel="prefetch" href="/assets/js/55.af6160d5.js"><link rel="prefetch" href="/assets/js/57.eb16a8fb.js"><link rel="prefetch" href="/assets/js/58.b7180847.js"><link rel="prefetch" href="/assets/js/59.df56e1b1.js"><link rel="prefetch" href="/assets/js/6.664c3d02.js"><link rel="prefetch" href="/assets/js/60.9c8939b1.js"><link rel="prefetch" href="/assets/js/61.2e187653.js"><link rel="prefetch" href="/assets/js/62.67ca4a60.js"><link rel="prefetch" href="/assets/js/63.f717251a.js"><link rel="prefetch" href="/assets/js/7.d273989c.js"><link rel="prefetch" href="/assets/js/8.a253233a.js"><link rel="prefetch" href="/assets/js/9.b8dcf72d.js">
+    <link rel="preload" href="/assets/css/0.styles.b5c7ba3b.css" as="style"><link rel="preload" href="/assets/js/app.a6af4446.js" as="script"><link rel="preload" href="/assets/js/2.2068e414.js" as="script"><link rel="preload" href="/assets/js/58.6eb2c5ae.js" as="script"><link rel="prefetch" href="/assets/js/10.2bf55b30.js"><link rel="prefetch" href="/assets/js/11.b1a50188.js"><link rel="prefetch" href="/assets/js/12.1bee865f.js"><link rel="prefetch" href="/assets/js/13.be4bfd52.js"><link rel="prefetch" href="/assets/js/14.ae8f33eb.js"><link rel="prefetch" href="/assets/js/15.c0e9ae71.js"><link rel="prefetch" href="/assets/js/16.6472ff74.js"><link rel="prefetch" href="/assets/js/17.9ae55e73.js"><link rel="prefetch" href="/assets/js/18.065678db.js"><link rel="prefetch" href="/assets/js/19.db98946d.js"><link rel="prefetch" href="/assets/js/20.16ac118e.js"><link rel="prefetch" href="/assets/js/21.61035998.js"><link rel="prefetch" href="/assets/js/22.e9bbc544.js"><link rel="prefetch" href="/assets/js/23.befca7a4.js"><link rel="prefetch" href="/assets/js/24.3e9f5e16.js"><link rel="prefetch" href="/assets/js/25.3b5f5666.js"><link rel="prefetch" href="/assets/js/26.322aa29d.js"><link rel="prefetch" href="/assets/js/27.1ed4a0be.js"><link rel="prefetch" href="/assets/js/28.0f989219.js"><link rel="prefetch" href="/assets/js/29.fdb2ea89.js"><link rel="prefetch" href="/assets/js/3.ee88ff18.js"><link rel="prefetch" href="/assets/js/30.437487fc.js"><link rel="prefetch" href="/assets/js/31.25441b31.js"><link rel="prefetch" href="/assets/js/32.73991d05.js"><link rel="prefetch" href="/assets/js/33.e64038d4.js"><link rel="prefetch" href="/assets/js/34.82cdfb9b.js"><link rel="prefetch" href="/assets/js/35.2f4c3454.js"><link rel="prefetch" href="/assets/js/36.83c3b5e6.js"><link rel="prefetch" href="/assets/js/37.59d82b81.js"><link rel="prefetch" href="/assets/js/38.b80c0aa6.js"><link rel="prefetch" href="/assets/js/39.f5e20d12.js"><link rel="prefetch" href="/assets/js/4.a0a8b88f.js"><link rel="prefetch" href="/assets/js/40.f38864e0.js"><link rel="prefetch" href="/assets/js/41.f63df2c6.js"><link rel="prefetch" href="/assets/js/42.852eb634.js"><link rel="prefetch" href="/assets/js/43.a7c7a8e6.js"><link rel="prefetch" href="/assets/js/44.7c454ebc.js"><link rel="prefetch" href="/assets/js/45.8f537667.js"><link rel="prefetch" href="/assets/js/46.71bc84ed.js"><link rel="prefetch" href="/assets/js/47.e3e3dbba.js"><link rel="prefetch" href="/assets/js/48.7351f3c0.js"><link rel="prefetch" href="/assets/js/49.08dde645.js"><link rel="prefetch" href="/assets/js/5.dad0cfb6.js"><link rel="prefetch" href="/assets/js/50.e10f8d07.js"><link rel="prefetch" href="/assets/js/51.170d34d5.js"><link rel="prefetch" href="/assets/js/52.7908849b.js"><link rel="prefetch" href="/assets/js/53.601950d6.js"><link rel="prefetch" href="/assets/js/54.11c50ceb.js"><link rel="prefetch" href="/assets/js/55.422f6ade.js"><link rel="prefetch" href="/assets/js/56.e95e045f.js"><link rel="prefetch" href="/assets/js/57.f86ee6ff.js"><link rel="prefetch" href="/assets/js/59.ff5f08fa.js"><link rel="prefetch" href="/assets/js/6.664c3d02.js"><link rel="prefetch" href="/assets/js/60.34825b22.js"><link rel="prefetch" href="/assets/js/61.b6a3d165.js"><link rel="prefetch" href="/assets/js/62.503c990e.js"><link rel="prefetch" href="/assets/js/63.d3820f4d.js"><link rel="prefetch" href="/assets/js/64.6ec7ca00.js"><link rel="prefetch" href="/assets/js/65.2a8a205f.js"><link rel="prefetch" href="/assets/js/7.d273989c.js"><link rel="prefetch" href="/assets/js/8.a253233a.js"><link rel="prefetch" href="/assets/js/9.b8dcf72d.js">
     <link rel="stylesheet" href="/assets/css/0.styles.b5c7ba3b.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="container"><div tabindex="-1" class="el-drawer__wrapper" style="display:none;"><div role="document" tabindex="-1" class="el-drawer__container"><div aria-modal="true" aria-labelledby="el-drawer__title" aria-label="Fast Search" role="dialog" tabindex="-1" class="el-drawer ttb" style="height:75%;"><header id="el-drawer__title" class="el-drawer__header"><span role="heading" title="Fast Search">Fast Search</span><button aria-label="close Fast Search" type="button" class="el-drawer__close-btn"><i class="el-dialog__close el-icon el-icon-close"></i></button></header><!----></div></div></div> <div class="el-dialog__wrapper" style="display:none;"><div role="dialog" aria-modal="true" aria-label="设置" class="el-dialog" style="margin-top:15vh;width:80%;"><div class="el-dialog__header"><span class="el-dialog__title">设置</span><button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button></div><!----><div class="el-dialog__footer"><div class="dialog-footer"><button type="button" class="el-button el-button--default"><!----><!----><span>恢复默认</span></button> <button type="button" class="el-button el-button--primary"><!----><!----><span>应用</span></button></div></div></div></div> <div tabindex="-1" class="el-drawer__wrapper" style="display:none;"><div role="document" tabindex="-1" class="el-drawer__container"><div aria-modal="true" aria-labelledby="el-drawer__title" aria-label="目录" role="dialog" tabindex="-1" class="el-drawer ltr" style="width:80%;"><header id="el-drawer__title" class="el-drawer__header"><span role="heading" title="目录">目录</span><button aria-label="close 目录" type="button" class="el-drawer__close-btn"><i class="el-dialog__close el-icon el-icon-close"></i></button></header><!----></div></div></div> <div class="navbar dark-box"><div class="navbar-top"><div class="navbar-brand"><a href="/" class="router-link-active"></a> <span class="title">Easy-Book</span></div> <div class="navbar-links"><a href="/" class="router-link-active active-link">
           Home
-        </a></div> <div class="navbar-icons"><i class="icon-button el-icon-table-lamp"></i> <i class="icon-button el-icon-search"></i> <i class="icon-button el-icon-set-up last-icon"></i> <!----></div></div> <div class="navbar-divider"></div></div> <div class="dark"><div class="content-page"><div class="left-nav dark-box"><div class="LeftNav" style="background-color:#fff;width:15vw;"><ul role="menubar" class="el-menu" style="background-color:#ffffff;"><!----> <!----> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:#303133;background-color:#ffffff;"><i class="el-icon-s-comment"></i> <span>留言墙</span></li> <!----></ul></div></div> <div class="markdown-body content__default"><h1 id="abstract-methods-and-classes-interfaces"><a href="#abstract-methods-and-classes-interfaces" class="header-anchor">#</a> Abstract Methods and Classes Interfaces</h1> <ul><li><a href="#abstract-methods-and-classes-interfaces">Abstract Methods and Classes Interfaces</a> <ul><li><a href="#abstract-methods">Abstract Methods</a></li> <li><a href="#interfaces">Interfaces</a> <ul><li><a href="#application">Application</a></li></ul></li> <li><a href="#interfaces-vs-abstract-classes">Interfaces vs. Abstract Classes</a></li></ul></li></ul> <h2 id="abstract-methods"><a href="#abstract-methods" class="header-anchor">#</a> Abstract Methods</h2> <ul><li>Some methods should not have code.</li> <li>So make the methods abstract: do not need to implement the methods at all. The methods have no code, only a &quot;;&quot;.</li></ul> <ol><li>Non-private abstract methods are inherited by subclasses, just like other methods. -----&gt;非私有抽象类将其被子类继承。</li> <li>Abstract methods will later be overridden in subclasses using non-abstract methods, just like other methods. -----&gt;抽象化方法将在子类被重写。
-<ul><li>Example: the Circle class overrides the abstract area method inherited from the Shape class, to compute the area of a circle using Math.PI.</li></ul></li> <li>It is possible to override an inherited abstract method with another abstract method, but it is useless since it just replaces one abstract method with another. -----&gt;可以用新的抽象方法重写，但也意味着子类仍是抽象类。</li> <li>A class with one or more abstract methods must itself be declared abstract. -----&gt;存在抽象方法的类是抽象类
-<ul><li>A class can even be declared as abstract even though ithas no abstract methods. -----&gt;即使没有抽象方法也可被定义成抽象类</li></ul></li> <li>Abstract classes cannot be instantiated. -----&gt;抽象方法不可被实例化 ==&gt;不可创建新的类对象</li></ol> <ul><li>Note that you can still create object variables of an abstract class, but such a variable must refer to an object of a non abstract subclass.</li></ul> <div class="mycodeblock" style="position:relative;"><pre><code><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test</span> {
+        </a></div> <div class="navbar-icons"><i class="icon-button el-icon-table-lamp"></i> <i class="icon-button el-icon-search"></i> <i class="icon-button el-icon-set-up last-icon"></i> <!----></div></div> <div class="navbar-divider"></div></div> <div class="dark"><div class="content-page"><div class="left-nav dark-box"><div class="LeftNav" style="background-color:#fff;width:15vw;"><ul role="menubar" class="el-menu" style="background-color:#ffffff;"><!----> <!----> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:#303133;background-color:#ffffff;"><i class="el-icon-s-comment"></i> <span>留言墙</span></li> <!----></ul></div></div> <div class="markdown-body content__default"><h1 id="exception-handeling"><a href="#exception-handeling" class="header-anchor">#</a> Exception Handeling</h1> <ul><li><a href="#exception-handeling">Exception Handeling</a> <ul><li><a href="#programming-errors">Programming Errors</a></li> <li><a href="#exceptions">Exceptions</a> <ul><li><a href="#exception-classes-%E5%BC%82%E5%B8%B8%E7%B1%BB">Exception Classes 异常类</a> <ul><li><a href="#checked-and-unchecked-exceptions">Checked and Unchecked Exceptions</a> <ul><li><a href="#unchecked-exceptions-%E4%B8%8D%E4%B8%80%E5%AE%9A%E5%8F%91%E7%94%9F-----%E4%B8%8D%E4%B8%80%E5%AE%9A%E8%A6%81%E6%94%B9%E4%B9%9F%E8%83%BD%E8%BF%90%E8%A1%8C">Unchecked exceptions&gt; 不一定发生-----不一定要改，也能运行</a></li></ul></li> <li><a href="#checked-exceptioon-%E4%B8%80%E5%AE%9A%E5%8F%91%E7%94%9F-----%E4%B8%80%E5%AE%9A%E8%A6%81%E6%94%B9%E5%90%A6%E5%88%99%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C">Checked Exceptioon&gt; 一定发生-----一定要改，否则无法运行</a></li></ul></li> <li><a href="#try-catch-finally--throwthrows">try-catch-finally &amp; throw/throws</a> <ul><li><a href="#try-%E6%8A%8A%E5%8F%AF%E8%83%BD%E5%8F%91%E7%94%9F%E5%BC%82%E5%B8%B8%E7%9A%84%E4%BB%A3%E7%A0%81%E7%94%A8try%E5%8C%85%E8%A3%B9">try 把可能发生异常的代码用try{}包裹</a></li> <li><a href="#catch-%E6%8D%95%E8%8E%B7%E7%89%B9%E5%AE%9A%E5%BC%82%E5%B8%B8%E5%90%8E%E6%89%A7%E8%A1%8C%E8%BF%99%E9%83%A8%E5%88%86%E5%A4%84%E7%90%86">catch 捕获特定异常后执行这部分处理</a></li> <li><a href="#finally-%E6%97%A0%E8%AE%BA%E6%98%AF%E5%90%A6%E6%8D%95%E8%8E%B7%E5%BC%82%E5%B8%B8%E6%9C%80%E5%90%8E%E9%83%BD%E8%BF%9B%E5%85%A5finally">finally 无论是否捕获异常，最后都进入finally{}</a></li> <li><a href="#throw--throws-%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%A4%84%E7%90%86%E5%BC%82%E5%B8%B8">throw &amp; throws 两种方式处理异常</a></li></ul></li> <li><a href="#exception-information">Exception information</a></li> <li><a href="#throws-%E7%94%A8%E4%BA%8E%E6%8A%9B%E5%87%BA%E7%89%B9%E5%AE%9A%E7%9A%84%E5%BC%82%E5%B8%B8%E4%BB%A5%E5%8F%8A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8">throws 用于抛出特定的异常，以及自定义异常</a> <ul><li><a href="#custom-new-exceptions-%E6%96%B0%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AA%E7%B1%BB%E7%BB%A7%E6%89%BFexception%E8%BF%99%E4%B8%AA%E7%88%B6%E7%B1%BB">Custom new exceptions 新定义一个类继承Exception这个父类</a></li> <li><a href="#throws-and-method-overidding">throws and method overidding</a></li></ul></li></ul></li></ul></li></ul> <h2 id="programming-errors"><a href="#programming-errors" class="header-anchor">#</a> Programming Errors</h2> <ul><li>Compile-time errors: lexical / syntactic / semantic. ——&gt;语法错误------编译无法通过<br>
+在编译时就无法通过</li></ul> <div class="mycodeblock" style="position:relative;"><pre><code><span class="hljs-comment">// Example with compile-time error 语法错误再此处不作演示</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">division</span><span class="hljs-params">(<span class="hljs-type">int</span> i, <span class="hljs-type">int</span> j)</span> {   因为无法捕捉到ArithmeticException的异常所以直接报错
+        <span class="hljs-type">int</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> -<span class="hljs-number">1</span>;
+        <span class="hljs-keyword">try</span> {
+            result = i / j;
+        } <span class="hljs-keyword">catch</span> (Exception e) { <span class="hljs-comment">// Catches all exceptions!</span>
+            System.out.println(<span class="hljs-string">&quot;Wrong: &quot;</span> + e.getMessage());
+        } <span class="hljs-keyword">catch</span> (ArithmeticException e) { <span class="hljs-comment">// Unreachable code.</span>
+            System.out.println(<span class="hljs-string">&quot;Wrong: &quot;</span> + e.getMessage());
+        } <span class="hljs-keyword">finally</span> {
+            System.out.println(i + <span class="hljs-string">&quot; / &quot;</span> + j + <span class="hljs-string">&quot; = &quot;</span> + result);
+        }
+    }
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+    division(<span class="hljs-number">100</span>, <span class="hljs-number">4</span>);
+    division(<span class="hljs-number">100</span>, <span class="hljs-number">0</span>); <span class="hljs-comment">// ArithmeticException: / by zero</span>
+    System.out.println(<span class="hljs-string">&quot;End of main()&quot;</span>);
+    }
+<span class="hljs-comment">//Unreachable catch block for ArithmeticException. </span>
+<span class="hljs-comment">//It is already handled by the catch block for Exception.</span>
+</code></pre><button data-clipboard-text="// Example with compile-time error 语法错误再此处不作演示
+public static void division(int i, int j) {   因为无法捕捉到ArithmeticException的异常所以直接报错
+        int result = -1;
+        try {
+            result = i / j;
+        } catch (Exception e) { // Catches all exceptions!
+            System.out.println(&quot;Wrong: &quot; + e.getMessage());
+        } catch (ArithmeticException e) { // Unreachable code.
+            System.out.println(&quot;Wrong: &quot; + e.getMessage());
+        } finally {
+            System.out.println(i + &quot; / &quot; + j + &quot; = &quot; + result);
+        }
+    }
+
+public static void main(String[] args) {
+    division(100, 4);
+    division(100, 0); // ArithmeticException: / by zero
+    System.out.println(&quot;End of main()&quot;);
+    }
+//Unreachable catch block for ArithmeticException. 
+//It is already handled by the catch block for Exception.
+" class="code-copy-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"></path></svg></button></div> <ul><li>Runtime errors:------编译通过，运行报错,需要程序员立刻处理否则无法运行
+<ul><li>Error
+<ul><li>Usually unrecoverable, very rare.</li> <li>Examples: JVM out of memory, hardware error, etc. ——&gt;越界，内存泄漏</li></ul></li> <li>Exception：
+<ul><li>Often recoverable, fairly common.</li></ul></li></ul></li></ul> <h2 id="exceptions"><a href="#exceptions" class="header-anchor">#</a> Exceptions</h2> <ol><li>An exception in Java is any abnormal
+<ul><li>unexpected event</li> <li>extraordinary condition.</li></ul></li> <li>example:
+<ul><li>file not found exception</li> <li>array out of bounds exception</li> <li>unable to get connection exception</li></ul></li> <li>Java is guaranteed to:
+<ul><li>Automatically detect that something is wrong.</li> <li>Immediately stop the program.</li> <li>Show you an exception about the problem.</li> <li>Tell you what the exception is about.</li> <li>Tell you exactly where the exception happened in your code.</li></ul></li> <li>Handling the exception
+<ul><li>Your Java program may catch the exception object. Your program can then use the object to recover from the problem.</li></ul></li> <li>Throwing an exception
+<ul><li>When an exception occurs, the JVM automatically creates an object from the class Exception which contains information about the problem. This object represents the exception itself!</li></ul></li></ol> <h3 id="exception-classes-异常类"><a href="#exception-classes-异常类" class="header-anchor">#</a> Exception Classes 异常类</h3> <ul><li>The predefined class Exception is the root class for all possible exceptions</li> <li>Every exception class is a descendent class of the class Exception</li> <li>Although the Exception class can be used directly in a class or program, it is most often used to define a subclass</li> <li>The class Exception is in the java.lang package</li></ul> <h4 id="checked-and-unchecked-exceptions"><a href="#checked-and-unchecked-exceptions" class="header-anchor">#</a> Checked and Unchecked Exceptions</h4> <h5 id="unchecked-exceptions-不一定发生-不一定要改-也能运行"><a href="#unchecked-exceptions-不一定发生-不一定要改-也能运行" class="header-anchor">#</a> Unchecked exceptions&gt; 不一定发生-----不一定要改，也能运行</h5> <ul><li>Unchecked exceptions are the class RuntimeException and any of its subclasses.
+<ul><li>These exceptions correspond to bugs (divisions by zero, array access out of bounds, etc.) that can happen anywhere in your program.</li> <li>The compiler does not force the programmer to handle these exceptions.</li> <li>In fact, the programmers may not even know that these exceptions could be thrown.</li> <li>Since an unchecked exception corresponds to a bug, it is normal for the program to die (instead of trying to recover from the problem); you must then find the bug in your program and fix it.</li></ul></li></ul> <h4 id="checked-exceptioon-一定发生-一定要改-否则无法运行"><a href="#checked-exceptioon-一定发生-一定要改-否则无法运行" class="header-anchor">#</a> Checked Exceptioon&gt; 一定发生-----一定要改，否则无法运行</h4> <ul><li>Checked exceptions are subclasses of the Exception class, excluding the class RuntimeException and its subclasses.
+<ul><li>These exceptions correspond to situation which are unexpected but which are not bugs in the program.
+<blockquote><p>(the network is temporarily down, the hard disk is full, etc.)</p></blockquote></li> <li>These exception can happen at specific places in your program (when opening a network connection, when saving a file, etc.)</li> <li>The compiler forces the programmer to handle these exceptions in some way (see later). Usually the program can recover from the problem (instead of dying) and keep running.</li></ul></li></ul> <h3 id="try-catch-finally-throw-throws"><a href="#try-catch-finally-throw-throws" class="header-anchor">#</a> try-catch-finally &amp; throw/throws</h3> <h4 id="try-把可能发生异常的代码用try-包裹"><a href="#try-把可能发生异常的代码用try-包裹" class="header-anchor">#</a> try 把可能发生异常的代码用try{}包裹</h4> <p>The Java code that you think may produce an exception is placed within a try block.</p> <ul><li>No exception occurs inside the try block → the finally block is executed, then the rest of the method.</li> <li>An exception occurs inside the try block → an exception object is created by Java and thrown, killing all the code after that inside the try block, until a matching catch block is found and executed to handle the exception object → the finally block is executed → the rest of the method is executed.</li></ul> <h4 id="catch-捕获特定异常后执行这部分处理"><a href="#catch-捕获特定异常后执行这部分处理" class="header-anchor">#</a> catch 捕获特定异常后执行这部分处理</h4> <ul><li>An exception object created and thrown during execution of the try block can be caught and handled in a catch block.</li> <li>On exit from a catch block, normal execution continues and the finally block is executed, followed by the execution of the rest of the method.</li></ul> <div class="mycodeblock" style="position:relative;"><pre><code><span class="hljs-comment">// try-catch example:</span>
+<span class="hljs-keyword">import</span> java.util.Scanner;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test2</span> {
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+    <span class="hljs-type">Scanner</span> <span class="hljs-variable">scanner</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);
+    <span class="hljs-keyword">while</span>(<span class="hljs-literal">true</span>) {
+        System.out.print(<span class="hljs-string">&quot;Input an integer: &quot;</span>);
+        <span class="hljs-type">String</span> <span class="hljs-variable">s</span> <span class="hljs-operator">=</span> scanner.nextLine();
+        <span class="hljs-keyword">try</span> {
+          <span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> Integer.parseInt(s);
+          System.out.println(<span class="hljs-string">&quot;i is: &quot;</span> + i);
+        }<span class="hljs-keyword">catch</span>(NumberFormatException e) {
+          System.out.println(<span class="hljs-string">&quot;Wrong!&quot;</span>);
+        }
+    }
+  }
+}
+</code></pre><button data-clipboard-text="// try-catch example:
+import java.util.Scanner;
+public class Test2 {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    while(true) {
+        System.out.print(&quot;Input an integer: &quot;);
+        String s = scanner.nextLine();
+        try {
+          int i = Integer.parseInt(s);
+          System.out.println(&quot;i is: &quot; + i);
+        }catch(NumberFormatException e) {
+          System.out.println(&quot;Wrong!&quot;);
+        }
+    }
+  }
+}
+" class="code-copy-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"></path></svg></button></div> <h4 id="finally-无论是否捕获异常-最后都进入finally"><a href="#finally-无论是否捕获异常-最后都进入finally" class="header-anchor">#</a> finally 无论是否捕获异常，最后都进入finally{}</h4> <ul><li>A finally block is always executed.</li> <li>Generally a finally block is used for freeing resources, cleaning up, closing files or network connections etc. Otherwise you do not need it.</li> <li>If the finally block executes a control transfer statement such as a return or a break statement, then this control statement determines how the execution will proceed regardless of any return or control statement present in the try or catch.</li></ul> <div class="mycodeblock" style="position:relative;"><pre><code><span class="hljs-keyword">try</span> {
+    &lt;code that might <span class="hljs-keyword">throw</span> an exception&gt;
+} <span class="hljs-keyword">catch</span> (&lt;exception type1&gt; &lt;parameter1&gt;) {
+    &lt;statements handling parameter1&gt;
+} <span class="hljs-keyword">catch</span> (&lt;exception type2&gt; &lt;parameter2&gt;) {
+    &lt;statements handling parameter2&gt;
+}<span class="hljs-keyword">finally</span> { <span class="hljs-comment">// finally block</span>
+    &lt;statements always executed&gt;
+}
+</code></pre><button data-clipboard-text="try {
+    &lt;code that might throw an exception&gt;
+} catch (&lt;exception type1&gt; &lt;parameter1&gt;) {
+    &lt;statements handling parameter1&gt;
+} catch (&lt;exception type2&gt; &lt;parameter2&gt;) {
+    &lt;statements handling parameter2&gt;
+}finally { // finally block
+    &lt;statements always executed&gt;
+}
+" class="code-copy-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"></path></svg></button></div> <div class="mycodeblock" style="position:relative;"><pre><code><span class="hljs-comment">//finally example:</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test3</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">division</span><span class="hljs-params">(<span class="hljs-type">int</span> i, <span class="hljs-type">int</span> j)</span> {
+        <span class="hljs-type">int</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> -<span class="hljs-number">1</span>;
+        <span class="hljs-keyword">try</span> {
+            result = i / j;
+        } <span class="hljs-keyword">catch</span>(ArithmeticException e) {
+            System.out.println(<span class="hljs-string">&quot;Wrong: &quot;</span> + e.getMessage());
+        } <span class="hljs-keyword">finally</span> {
+            System.out.println(i + <span class="hljs-string">&quot; / &quot;</span> + j + <span class="hljs-string">&quot; = &quot;</span> + result);
+        }
+    }
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
-    <span class="hljs-comment">// Cannot instantiate the type shape</span>
-    <span class="hljs-type">Shape</span> <span class="hljs-variable">s</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Shape</span>(); <span class="hljs-comment">// Forbidden</span>
-    <span class="hljs-type">Circle</span> <span class="hljs-variable">c</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Circle</span>(); <span class="hljs-comment">// Okay</span>
-    <span class="hljs-type">Shape</span> <span class="hljs-variable">sc</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Circle</span>(); <span class="hljs-comment">// Okay</span>
-    ...
+        division(<span class="hljs-number">100</span>, <span class="hljs-number">4</span>);
+        division(<span class="hljs-number">100</span>, <span class="hljs-number">0</span>); <span class="hljs-comment">// ArithmeticException: / by zero</span>
+        System.out.println(<span class="hljs-string">&quot;End of main()&quot;</span>);
     }
 }
-</code></pre><button data-clipboard-text="public class Test {
+</code></pre><button data-clipboard-text="//finally example:
+public class Test3 {
+    public static void division(int i, int j) {
+        int result = -1;
+        try {
+            result = i / j;
+        } catch(ArithmeticException e) {
+            System.out.println(&quot;Wrong: &quot; + e.getMessage());
+        } finally {
+            System.out.println(i + &quot; / &quot; + j + &quot; = &quot; + result);
+        }
+    }
     public static void main(String[] args) {
-    // Cannot instantiate the type shape
-    Shape s = new Shape(); // Forbidden
-    Circle c = new Circle(); // Okay
-    Shape sc = new Circle(); // Okay
-    ...
+        division(100, 4);
+        division(100, 0); // ArithmeticException: / by zero
+        System.out.println(&quot;End of main()&quot;);
     }
 }
-" class="code-copy-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"></path></svg></button></div> <h2 id="interfaces"><a href="#interfaces" class="header-anchor">#</a> Interfaces</h2> <ul><li>An interface is a specification of what some classes can do (which public methods they have) without saying how the classes do it (which code the methods have) <strong>一些共用的抽象的方法的集合</strong> <ul><li>In the Java programming language, an interface is not a class but a set of requirements for classes that want to conform to the interface.</li></ul></li> <li>All methods listed in an interface are always public. <strong>方法必须是公开的，否则没有意义</strong></li></ul> <p>An interface is specified using the interface keyword.</p> <blockquote><p>public interface xxx {..}</p></blockquote> <ul><li>An interface is not a class . Interfaces never have instance fields, and the methods are never implemented in the interface.</li></ul> <blockquote><p><strong>It is not possible to create an object from an interface</strong> 因为接口是抽象方法的集合，所以可以类比抽象类，所以无法创建对象<br>
-接口不是类</p></blockquote> <p>A class specifies that it implements an interface using the implements keyword.</p> <blockquote><p>public class xxx implements xxx {…}</p></blockquote> <ul><li>The class must then provide code for all the methods listed in that interface (except if the class is abstract, in which case some of the methods listed in the interface can be abstract in the class).</li> <li>An interface can also contain constants (static final data) but this is more rare.</li></ul> <div class="mycodeblock" style="position:relative;"><pre><code><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Movable</span> {
-    <span class="hljs-keyword">public</span> <span class="hljs-type">double</span> <span class="hljs-title function_">getSpeed</span><span class="hljs-params">()</span>;
+" class="code-copy-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"></path></svg></button></div> <h4 id="throw-throws-两种方式处理异常"><a href="#throw-throws-两种方式处理异常" class="header-anchor">#</a> throw &amp; throws 两种方式处理异常</h4> <p>A method can explicitly create an object from the Exception class (or one of its subclasses) using new and then throw the object using the throw statement. Then the method must either:</p> <ul><li>Catch the exception object itself using a try-catch statement. <strong>使用try-catch捕获并处理异常</strong> <ul><li>This is not very useful: in general there is little reason for a method to throw an exception just to immediately catch it in the same method...</li></ul></li> <li>use the throws clause to specify as part of the type of the method that the method might throw an exception. <strong>在方法名旁边throws特定的异常</strong> <ul><li>The exception object will then have to be caught somewhere else, in  one of the callers of the method.   <strong>可以用if-else, 挑出异常，用throw抛出异常</strong></li></ul></li></ul> <h3 id="exception-information"><a href="#exception-information" class="header-anchor">#</a> Exception information</h3> <ul><li>getMessage()
+<ul><li>Returns the detailed error message string for this exception object.<strong>抛出的异常中写啥，getMessage就返回啥</strong></li></ul></li> <li>printStackTrace()
+<ul><li>Prints this exception and its backtrace: the list of method calls starting from main up to the method that threw the exception object.</li></ul></li></ul> <div class="mycodeblock" style="position:relative;"><pre><code><span class="hljs-comment">//throw</span>
+<span class="hljs-keyword">import</span> java.util.Scanner;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test6</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        <span class="hljs-type">Scanner</span> <span class="hljs-variable">scanner</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);
+        <span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) {
+            System.out.print(<span class="hljs-string">&quot;Input a positive integer: &quot;</span>);
+            <span class="hljs-type">String</span> <span class="hljs-variable">s</span> <span class="hljs-operator">=</span> scanner.nextLine();
+            <span class="hljs-keyword">try</span> {
+                <span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> Integer.parseInt(s);
+                <span class="hljs-keyword">if</span> (i &lt;= <span class="hljs-number">0</span>) {
+                    <span class="hljs-comment">// This is overkill. It is easier to just print the</span>
+                    <span class="hljs-comment">// error message here and then use &quot;continue&quot; to start</span>
+                    <span class="hljs-comment">// the next iteration of the while loop.</span>
+                    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Exception</span>(i + <span class="hljs-string">&quot; &lt;= 0 !&quot;</span>);
+                }
+                System.out.println(<span class="hljs-string">&quot;i is: &quot;</span> + i);
+            } <span class="hljs-keyword">catch</span> (Exception e) { <span class="hljs-comment">// Catch all exceptions!</span>
+                System.out.println(<span class="hljs-string">&quot;Catch: &quot;</span> + e.getMessage());
+            }
+        }
+    }
+}
+</code></pre><button data-clipboard-text="//throw
+import java.util.Scanner;
+public class Test6 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            System.out.print(&quot;Input a positive integer: &quot;);
+            String s = scanner.nextLine();
+            try {
+                int i = Integer.parseInt(s);
+                if (i &lt;= 0) {
+                    // This is overkill. It is easier to just print the
+                    // error message here and then use &quot;continue&quot; to start
+                    // the next iteration of the while loop.
+                    throw new Exception(i + &quot; &lt;= 0 !&quot;);
+                }
+                System.out.println(&quot;i is: &quot; + i);
+            } catch (Exception e) { // Catch all exceptions!
+                System.out.println(&quot;Catch: &quot; + e.getMessage());
+            }
+        }
+    }
+}
+" class="code-copy-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"></path></svg></button></div> <div class="mycodeblock" style="position:relative;"><pre><code><span class="hljs-keyword">import</span> java.util.Scanner;
 
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setSpeed</span><span class="hljs-params">(<span class="hljs-type">double</span> newSpeed)</span>;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test7</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">readPosInt</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
+        <span class="hljs-type">Scanner</span> <span class="hljs-variable">scanner</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);
+        System.out.print(<span class="hljs-string">&quot;Input a positive integer: &quot;</span>);
+        <span class="hljs-type">String</span> <span class="hljs-variable">s</span> <span class="hljs-operator">=</span> scanner.nextLine();
+        <span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> Integer.parseInt(s);
+        <span class="hljs-keyword">if</span> (i &lt;= <span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Exception</span>(i + <span class="hljs-string">&quot; &lt;= 0 !&quot;</span>);
+        }
+        System.out.println(<span class="hljs-string">&quot;i is: &quot;</span> + i);
+    }
 
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">int</span> <span class="hljs-variable">MY_CONSTANT</span> <span class="hljs-operator">=</span> <span class="hljs-number">100</span>;
-    <span class="hljs-comment">//在上面的示例中，MY_CONSTANT是一个常量，它被声明为public static final，这意味着它是一个公共的、静态的和不可变值。</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        <span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) {
+            <span class="hljs-keyword">try</span> {
+                readPosInt(); <span class="hljs-comment">// May throw an exception, which we need to catch.</span>
+            } <span class="hljs-keyword">catch</span> (Exception e) { <span class="hljs-comment">// Catch all exceptions!</span>
+                System.out.println(<span class="hljs-string">&quot;Catch: &quot;</span> + e.getMessage());
+            }
+        }
+    }
+}
+</code></pre><button data-clipboard-text="import java.util.Scanner;
+
+public class Test7 {
+    public static void readPosInt() throws Exception {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;Input a positive integer: &quot;);
+        String s = scanner.nextLine();
+        int i = Integer.parseInt(s);
+        if (i &lt;= 0) {
+            throw new Exception(i + &quot; &lt;= 0 !&quot;);
+        }
+        System.out.println(&quot;i is: &quot; + i);
+    }
+
+    public static void main(String[] args) {
+        while (true) {
+            try {
+                readPosInt(); // May throw an exception, which we need to catch.
+            } catch (Exception e) { // Catch all exceptions!
+                System.out.println(&quot;Catch: &quot; + e.getMessage());
+            }
+        }
+    }
+}
+" class="code-copy-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"></path></svg></button></div> <h3 id="throws-用于抛出特定的异常-以及自定义异常"><a href="#throws-用于抛出特定的异常-以及自定义异常" class="header-anchor">#</a> throws 用于抛出特定的异常，以及自定义异常</h3> <ul><li>In a method, if you throw an exception object and you don’t want to catch the exception object in the same method then you must use the throws clause.</li> <li>The method might throw multiple different kinds of exceptions: you need to list in the throws clause all the exceptions that the method does not catch itself.</li></ul> <div class="mycodeblock" style="position:relative;"><pre><code><span class="hljs-keyword">public</span> Type <span class="hljs-title function_">methodName</span><span class="hljs-params">(…)</span> <span class="hljs-keyword">throws</span> &lt;Exception1&gt;,…, &lt;ExceptionN&gt; {
+        …
+}
+</code></pre><button data-clipboard-text="public Type methodName(…) throws &lt;Exception1&gt;,…, &lt;ExceptionN&gt; {
+        …
+}
+" class="code-copy-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"></path></svg></button></div> <h4 id="custom-new-exceptions-新定义一个类继承exception这个父类"><a href="#custom-new-exceptions-新定义一个类继承exception这个父类" class="header-anchor">#</a> Custom new exceptions 新定义一个类继承Exception这个父类</h4> <ol><li>Define a subclass of Exception.</li> <li>Create an exception object from the subclass using new.</li> <li>Throw the exception object using throw.</li> <li>Use a try-catch statement to handle the exception object inside the method itself, or use a throws clause and catch the exception object somewhere else.</li></ol> <div class="mycodeblock" style="position:relative;"><pre><code>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">NotPositiveException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Exception</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">NotPositiveException</span><span class="hljs-params">(String msg)</span> {
+    <span class="hljs-comment">// msg is the message given to the exception </span>
+    when
+    <span class="hljs-comment">// it is created, which will later be the </span>
+    resultP
+    <span class="hljs-comment">// of calling the getMessage() method.</span>
+    <span class="hljs-built_in">super</span>(msg);
+    }
 }
 
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Car</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Vehicle</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Movable</span> {
-    ...
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-type">double</span> <span class="hljs-title function_">getSpeed</span><span class="hljs-params">()</span> { ... }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setSpeed</span><span class="hljs-params">(<span class="hljs-type">double</span> newSpeed)</span> { ... }
+<span class="hljs-keyword">import</span> java.util.Scanner;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test8</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">readPosInt</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> NotPositiveException {
+        <span class="hljs-type">Scanner</span> <span class="hljs-variable">scanner</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);
+        System.out.print(<span class="hljs-string">&quot;Input a positive integer: &quot;</span>);
+        <span class="hljs-type">String</span> <span class="hljs-variable">s</span> <span class="hljs-operator">=</span> scanner.nextLine();
+        <span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> Integer.parseInt(s);
+        <span class="hljs-keyword">if</span> (i &lt;= <span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">NotPositiveException</span>(i + <span class="hljs-string">&quot; &lt;= 0 !&quot;</span>);
+        }
+        System.out.println(<span class="hljs-string">&quot;i is: &quot;</span> + i);
+    }
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        <span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) {
+            <span class="hljs-keyword">try</span> {
+                readPosInt();
+            } <span class="hljs-keyword">catch</span> (NotPositiveException e) { <span class="hljs-comment">// If i &lt;= 0.</span>
+                System.out.println(<span class="hljs-string">&quot;NotPositive: &quot;</span> + e.getMessage());
+            } <span class="hljs-keyword">catch</span> (NumberFormatException e) { <span class="hljs-comment">// If parseInt() fails.</span>
+                System.out.println(<span class="hljs-string">&quot;NumberFormat: &quot;</span> + e.getMessage());
+            }
+        }
+    }
+}
+</code></pre><button data-clipboard-text="
+public class NotPositiveException extends Exception {
+    public NotPositiveException(String msg) {
+    // msg is the message given to the exception 
+    when
+    // it is created, which will later be the 
+    resultP
+    // of calling the getMessage() method.
+    super(msg);
+    }
 }
 
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Car</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Vehicle</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Movable</span> {
-    ...
+import java.util.Scanner;
+public class Test8 {
+    public static void readPosInt() throws NotPositiveException {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;Input a positive integer: &quot;);
+        String s = scanner.nextLine();
+        int i = Integer.parseInt(s);
+        if (i &lt;= 0) {
+            throw new NotPositiveException(i + &quot; &lt;= 0 !&quot;);
+        }
+        System.out.println(&quot;i is: &quot; + i);
+    }
+    public static void main(String[] args) {
+        while (true) {
+            try {
+                readPosInt();
+            } catch (NotPositiveException e) { // If i &lt;= 0.
+                System.out.println(&quot;NotPositive: &quot; + e.getMessage());
+            } catch (NumberFormatException e) { // If parseInt() fails.
+                System.out.println(&quot;NumberFormat: &quot; + e.getMessage());
+            }
+        }
+    }
+}
+" class="code-copy-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"></path></svg></button></div> <blockquote><p>Input a positive integer: -2<br>
+NotPositive: -2 &lt;= 0 !<br>
+Input a positive integer: -2.5<br>
+NumberFormat: For input string: &quot;-2.5&quot;</p></blockquote> <h4 id="throws-and-method-overidding"><a href="#throws-and-method-overidding" class="header-anchor">#</a> throws and method overidding</h4> <ul><li>An overriding method in subclass can throw any unchecked exception, regardless of whether the  overridden method in superclass throws exceptions  or not.</li> <li>If an overriding method in subclass throws checked exception, then it must be the same exception or child exceptions of the exception(s) declared in the  overridden method.</li></ul> <div class="mycodeblock" style="position:relative;"><pre><code><span class="hljs-keyword">class</span> <span class="hljs-title class_">A</span> {
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">meth</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> FileNotFoundException {
+    }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">A</span> {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">meth</span><span class="hljs-params">()</span> {
+    } <span class="hljs-comment">// compiles fine</span>
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">C</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">A</span> {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">meth</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException {
+    } <span class="hljs-comment">// compile error</span>
     <span class="hljs-comment">/*
-     * Does not implement setSpeed method, leave it to a
-     * subclass to implement the missing method
+     * Exception IOException is not compatible with throws clause
+     * in A.meth()
      */</span>
-<span class="hljs-meta">@Override</span>
-<span class="hljs-keyword">public</span> <span class="hljs-type">double</span> <span class="hljs-title function_">getSpeed</span><span class="hljs-params">()</span> { ... }
 }
 
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SmallCar</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Car</span> {
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">D</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">A</span> {
     <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setSpeed</span><span class="hljs-params">(<span class="hljs-type">double</span> newSpeed)</span> {
-        <span class="hljs-comment">// Implement the missing method</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">meth</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> RuntimeException {
+    }<span class="hljs-comment">// compiles fine</span>
+}
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">A</span> {
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">meth</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException;
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">B</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">A</span> {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">meth</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> FileNotFoundException {
+    }
+    <span class="hljs-comment">// compiles fine</span>
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">C</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">A</span> {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">meth</span><span class="hljs-params">()</span> {
+    } <span class="hljs-comment">// compiles fine</span>
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">D</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">A</span> {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">meth</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
+    } <span class="hljs-comment">// compile error</span>
+}
+</code></pre><button data-clipboard-text="class A {
+    void meth() throws FileNotFoundException {
     }
 }
 
-</code></pre><button data-clipboard-text="public interface Movable {
-    public double getSpeed();
-
-    public void setSpeed(double newSpeed);
-
-    public static final int MY_CONSTANT = 100;
-    //在上面的示例中，MY_CONSTANT是一个常量，它被声明为public static final，这意味着它是一个公共的、静态的和不可变值。
+class B extends A {
+    @Override
+    void meth() {
+    } // compiles fine
 }
 
-public class Car extends Vehicle implements Movable {
-    ...
+class C extends A {
     @Override
-    public double getSpeed() { ... }
-
-    @Override
-    public void setSpeed(double newSpeed) { ... }
-}
-
-public abstract class Car extends Vehicle implements Movable {
-    ...
+    void meth() throws IOException {
+    } // compile error
     /*
-     * Does not implement setSpeed method, leave it to a
-     * subclass to implement the missing method
+     * Exception IOException is not compatible with throws clause
+     * in A.meth()
      */
-@Override
-public double getSpeed() { ... }
 }
 
-public class SmallCar extends Car {
+class D extends A {
     @Override
-    public void setSpeed(double newSpeed) {
-        // Implement the missing method
+    void meth() throws RuntimeException {
+    }// compiles fine
+}
+
+interface A {
+    void meth() throws IOException;
+}
+
+class B implements A {
+    @Override
+    public void meth() throws FileNotFoundException {
     }
+    // compiles fine
 }
 
-" class="code-copy-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"></path></svg></button></div> <hr> <ul><li>Multiple unrelated classes can implement the same interface. <strong>接口可以实现多重继承</strong> <ul><li>Example: a Car class and a Rabbit class both might have getSpeed and setSpeed methods to implement the Movable interface, even though the two classes are unrelated (their only common ancestor is the Object class).</li></ul></li> <li>The same class can implement multiple unrelated interfaces.
-<ul><li>Example: a Rabbit class might implement both the Movable interface and the Edible interface.</li></ul></li> <li>If a class implements an interface, then any subclass implicitly implements the same interface too, because the subclass inherits from its parent class all the methods necessary to implement the interface.</li></ul> <div class="mycodeblock" style="position:relative;"><pre><code><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Movable</span> {
-    <span class="hljs-keyword">public</span> <span class="hljs-type">double</span> <span class="hljs-title function_">getSpeed</span><span class="hljs-params">()</span>;
-
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setSpeed</span><span class="hljs-params">(<span class="hljs-type">double</span> newSpeed)</span>;
-}
-
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Edible</span> {
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">cook</span><span class="hljs-params">()</span>;
-}
-
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Car</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Vehicle</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Movable</span> {
-    ...
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-type">double</span> <span class="hljs-title function_">getSpeed</span><span class="hljs-params">()</span> { ... }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setSpeed</span><span class="hljs-params">(<span class="hljs-type">double</span> newSpeed)</span> { ... }
-}
-
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Rabbit</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Animal</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Movable</span>, Edible {
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-type">double</span> <span class="hljs-title function_">getSpeed</span><span class="hljs-params">()</span> { ... }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setSpeed</span><span class="hljs-params">(<span class="hljs-type">double</span> newSpeed)</span> { ... }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">cook</span><span class="hljs-params">()</span> { ... }
-}
-</code></pre><button data-clipboard-text="public interface Movable {
-    public double getSpeed();
-
-    public void setSpeed(double newSpeed);
-}
-
-public interface Edible {
-    public void cook();
-}
-
-public class Car extends Vehicle implements Movable {
-    ...
+class C implements A {
     @Override
-    public double getSpeed() { ... }
-
-    @Override
-    public void setSpeed(double newSpeed) { ... }
+    public void meth() {
+    } // compiles fine
 }
 
-public class Rabbit extends Animal implements Movable, Edible {
+class D implements A {
     @Override
-    public double getSpeed() { ... }
-
-    @Override
-    public void setSpeed(double newSpeed) { ... }
-
-    @Override
-    public void cook() { ... }
+    public void meth() throws Exception {
+    } // compile error
 }
-" class="code-copy-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"></path></svg></button></div> <hr> <ul><li><strong>Just like a class, an interface can also be used as a type.</strong> <ul><li>Example: the Rabbit class implements the Edible interface, therefore a rabbit object can be assigned to a variable of type Edible:</li></ul></li></ul> <div class="mycodeblock" style="position:relative;"><pre><code><span class="hljs-type">Edible</span> <span class="hljs-variable">e</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Rabbit</span>(); <span class="hljs-comment">//类比子类继承父类</span>
-e.cook(); <span class="hljs-comment">// Cooking the rabbit.</span>
-</code></pre><button data-clipboard-text="Edible e = new Rabbit(); //类比子类继承父类
-e.cook(); // Cooking the rabbit.
-" class="code-copy-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"></path></svg></button></div> <ul><li>This is the same subtyping polymorphism we have seen when studying class inheritance (a rabbit object can be used as an animal object if the Rabbit class is a subclass of the Animal class) but with interfaces.</li></ul> <h3 id="application"><a href="#application" class="header-anchor">#</a> Application</h3> <ul><li>Using interfaces, you can write code that processes data without knowing what kind of data it really is.</li> <li>Example:</li></ul> <div class="mycodeblock" style="position:relative;"><pre><code><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test</span> {
-    ...
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">stopMovable</span><span class="hljs-params">(Movable m)</span> {
-        m.setSpeed(<span class="hljs-number">0.0</span>); <span class="hljs-comment">// m’s speed is now zero.</span>
-    }
-}
-</code></pre><button data-clipboard-text="public class Test {
-    ...
-    public void stopMovable(Movable m) {
-        m.setSpeed(0.0); // m’s speed is now zero.
-    }
-}
-" class="code-copy-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"></path></svg></button></div> <ul><li><p>The stopMovable method stops a movable object, but it does not know whether the movable object is a car or a rabbit. It only knows that the object is movable (which is really the only thing it needs to know).</p></li> <li><p>An interface splits your software into two parts:</p> <ul><li>The classes that implement the interface (provide code for all the methods listed in the interface).</li> <li>The rest of the code that uses the interface (call the methods listed in the interface).</li></ul></li> <li><p>The classes that implement the interface do not need to know anything about how the rest of the code uses the interface. <strong>实现时不需考虑如何使用</strong></p></li> <li><p>The rest of the code that uses the interface does not need to know anything about how the classes implementing the interface work internally. <strong>使用时不需考虑如何实现</strong></p></li></ul> <hr> <ul><li>The interface creates a contract between the two sides:
-<ul><li>The implementation side promises to provide code for all the methods listed in the interface.</li> <li>The use side promises to use only the methods listed in the interface.</li></ul></li></ul> <h2 id="interfaces-vs-abstract-classes"><a href="#interfaces-vs-abstract-classes" class="header-anchor">#</a> Interfaces vs. Abstract Classes</h2> <ul><li>Compare:
-<ul><li>Both contain no code for abstract methods.</li> <li>Both cannot be used to create objects.</li> <li>Both provide subtyping polymorphism.</li></ul></li> <li>Contrast:
-<ul><li>The interface splits your code into two parts and works as an API between the two parts. The classes implementing the interface are unrelated to each other (Car and Rabbit), they just happen to be able to do some of the same things.</li> <li>The abstract class is used for code inheritance (even if all the methods are abstract and no code is actually inherited). The subclasses are closely related to each other (Student and Teacher) since they are special cases of the same parent class (Person).<br> <img src="/assets/Interfaces%20vs.%20Abstract%20Classes.png" alt="Interfaces vs. Abstract Classes"></li></ul></li></ul></div> <div class="right-toc" data-v-313ec288><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#abstract-methods" class="active-link title-color" style="margin-left:0rem;" data-v-313ec288>
-        Abstract Methods
-      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#interfaces" class="title-color" style="margin-left:0rem;" data-v-313ec288>
-        Interfaces
-      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#application" class="non-active-link" style="margin-left:1.25rem;" data-v-313ec288>
-        Application
-      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#interfaces-vs-abstract-classes" class="title-color" style="margin-left:0rem;" data-v-313ec288>
-        Interfaces vs. Abstract Classes
+" class="code-copy-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"></path></svg></button></div></div> <div class="right-toc" data-v-313ec288><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#programming-errors" class="active-link title-color" style="margin-left:0rem;" data-v-313ec288>
+        Programming Errors
+      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#exceptions" class="title-color" style="margin-left:0rem;" data-v-313ec288>
+        Exceptions
+      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#exception-classes-异常类" class="non-active-link" style="margin-left:1.25rem;" data-v-313ec288>
+        Exception Classes 异常类
+      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#checked-and-unchecked-exceptions" class="non-active-link" style="margin-left:2.5rem;" data-v-313ec288>
+        Checked and Unchecked Exceptions
+      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#unchecked-exceptions-不一定发生-不一定要改-也能运行" class="non-active-link" style="margin-left:3.75rem;" data-v-313ec288>
+        Unchecked exceptions&gt; 不一定发生-----不一定要改，也能运行
+      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#checked-exceptioon-一定发生-一定要改-否则无法运行" class="non-active-link" style="margin-left:2.5rem;" data-v-313ec288>
+        Checked Exceptioon&gt; 一定发生-----一定要改，否则无法运行
+      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#try-catch-finally-throw-throws" class="non-active-link" style="margin-left:1.25rem;" data-v-313ec288>
+        try-catch-finally &amp; throw/throws
+      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#try-把可能发生异常的代码用try-包裹" class="non-active-link" style="margin-left:2.5rem;" data-v-313ec288>
+        try 把可能发生异常的代码用try{}包裹
+      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#catch-捕获特定异常后执行这部分处理" class="non-active-link" style="margin-left:2.5rem;" data-v-313ec288>
+        catch 捕获特定异常后执行这部分处理
+      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#finally-无论是否捕获异常-最后都进入finally" class="non-active-link" style="margin-left:2.5rem;" data-v-313ec288>
+        finally 无论是否捕获异常，最后都进入finally{}
+      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#throw-throws-两种方式处理异常" class="non-active-link" style="margin-left:2.5rem;" data-v-313ec288>
+        throw &amp; throws 两种方式处理异常
+      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#exception-information" class="non-active-link" style="margin-left:1.25rem;" data-v-313ec288>
+        Exception information
+      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#throws-用于抛出特定的异常-以及自定义异常" class="non-active-link" style="margin-left:1.25rem;" data-v-313ec288>
+        throws 用于抛出特定的异常，以及自定义异常
+      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#custom-new-exceptions-新定义一个类继承exception这个父类" class="non-active-link" style="margin-left:2.5rem;" data-v-313ec288>
+        Custom new exceptions 新定义一个类继承Exception这个父类
+      </a></div></div><div class="text item" data-v-313ec288><div class="link-container" data-v-313ec288><a href="#throws-and-method-overidding" class="non-active-link" style="margin-left:2.5rem;" data-v-313ec288>
+        throws and method overidding
       </a></div></div></div></div> <div class="hero-footer"><div class="hero-footer-divider"></div> <div></div></div></div></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.04849cc3.js" defer></script><script src="/assets/js/2.2068e414.js" defer></script><script src="/assets/js/56.7ae35ebf.js" defer></script>
+    <script src="/assets/js/app.a6af4446.js" defer></script><script src="/assets/js/2.2068e414.js" defer></script><script src="/assets/js/58.6eb2c5ae.js" defer></script>
   </body>
 </html>
