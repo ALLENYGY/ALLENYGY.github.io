@@ -3,10 +3,15 @@ module.exports = {
   theme: "easy-book",
   // Fill in the webpage title in title
   title: "MyNote",
+  head:[
+    ['link', { rel: 'icon', href: 'https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar' }]
+  ],
   markdown: {
     extractHeaders: ["h2", "h3", "h4", "h5"],
   },
   themeConfig: {
+    title:"MyBlog",
+    icon:"https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
     nav: [
       { text: "编程语言", link: "ProgramLanguage" },
       { text: "计算机组成原理", link: "CO" },
