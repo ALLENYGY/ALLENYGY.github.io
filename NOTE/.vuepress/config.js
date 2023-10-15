@@ -8,12 +8,23 @@ module.exports = {
   },
   themeConfig: {
     nav: [
-      { text: "编程语言", link: "Program Language" },
+      { text: "编程语言", link: "ProgramLanguage" },
       { text: "计算机组成原理", link: "CO" },
       { text: "数据库", link: "DBM" },
       { text: "数学", link: "Math" },
     ],
     group: {
+      ProgramLanguage: [
+        {
+          text: "Java",
+          sublink: [
+            { text: "Chapter1", link: "DBM/Lecture/Lec1" },
+            { text: "Chapter3", link: "DBM/Lecture/Lec2" },
+            { text: "Chapter3", link: "DBM/Lecture/Lec3" },
+          ],
+        },
+        { text: "Mysql", link: "" },
+      ],
       DBM: [
         {
           text: "数据库设计",

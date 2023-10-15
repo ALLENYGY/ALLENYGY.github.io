@@ -4,7 +4,7 @@
 
 <!-- code_chunk_output -->
 
-- [*Java Programming Essentials*](#java-programming-essentials)
+<!-- - [*Java Programming Essentials*](#java-programming-essentials)
   - [*Identifiers and Naming*](#identifiers-and-naming)
   - [*Keywords*](#keywords)
   - [*Variable Declarations and Assignments*](#variable-declarations-and-assignments)
@@ -21,7 +21,7 @@
   - [*Flow Control*](#flow-control)
     - [Condition statement](#condition-statement)
     - [Loop statement](#loop-statement)
-    - [The break and continue Statements](#the-break-and-continue-statements)
+    - [The break and continue Statements](#the-break-and-continue-statements) -->
 
 <!-- /code_chunk_output -->
 
@@ -29,7 +29,7 @@
 
 - A Java identifier must NOT start with a digit, and all the characters must be letters, digits, “$”or“_”
 - Java is a case-sensitive language
-  - W_12, HelloWorld, _983, $bS5_c7 *Correct*
+  - W_12, HelloWorld,_983, $bS5_c7 *Correct*
   - 4W2, class, Data#, 98.3, Hell world *Not Ok*
 
 ## *Keywords*

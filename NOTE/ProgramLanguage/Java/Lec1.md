@@ -4,7 +4,7 @@
 
 <!-- code_chunk_output -->
 
-- [Unified Modeling Language](#unified-modeling-language)
+<!-- - [Unified Modeling Language](#unified-modeling-language)
   - [UML](#uml)
   - [Class Diagram](#class-diagram)
   - [Class Relationship](#class-relationship)
@@ -12,7 +12,7 @@
     - [Aggregation](#aggregation)
     - [Composition](#composition)
     - [Inheritance](#inheritance)
-  - [Realization/Implementation](#realizationimplementation)
+  - [Realization/Implementation](#realizationimplementation) -->
 
 <!-- /code_chunk_output -->
 
