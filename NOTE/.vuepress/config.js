@@ -91,10 +91,10 @@ module.exports = {
         {
           text: "线性代数",
           sublink: [
-            { text: "Chapter1", link: "Math/Linear-Algebra/Chapter1" },
-            { text: "Chapter3", link: "Math/Linear-Algebra/Chapter2" },
-            { text: "Chapter3", link: "Math/Linear-Algebra/Chapter3" },
-            { text: "Chapter4", link: "Math/Linear-Algebra/Chapter4" },
+            { text: "Vector Spaces", link: "Math/Linear-Algebra/Chapter1" },
+            { text: "Linear Transformations", link: "Math/Linear-Algebra/Chapter2" },
+            { text: "Orthogonality", link: "Math/Linear-Algebra/Chapter3" },
+            { text: "Eigenvalues and Eigenvectors", link: "Math/Linear-Algebra/Chapter4" },
           ],
         },
         { text: "离散数学", link: "" },

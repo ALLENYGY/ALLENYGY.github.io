@@ -47,7 +47,7 @@
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-## 1. <a name='Chapter VectorSpaces'></a>Chapter  Vector Spaces
+## 1. <a name='Chapter VectorSpaces'></a>Vector Spaces
 
 ### 1.1. <a name='VectorandVectorSpaceAxioms'></a>Ⅰ Vector and Vector Space Axioms
 

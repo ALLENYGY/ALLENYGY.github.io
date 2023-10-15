@@ -4,7 +4,7 @@ Here is my math Note in UIC!
 
 ## Linear algebra
 
-- [Chapter1](Linear-Algebra/Chapter1)
-- [Chapter2](Linear-Algebra/Chapter2)
-- [Chapter3](Linear-Algebra/Chapter3)
-- [Chapter4](Linear-Algebra/Chapter4)
+- [Vector Spaces](Linear-Algebra/Chapter1)
+- [Linear Transformations](Linear-Algebra/Chapter2)
+- [Orthogonality](Linear-Algebra/Chapter3)
+- [Eigenvalues and Eigenvectors](Linear-Algebra/Chapter4)
