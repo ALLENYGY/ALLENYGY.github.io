@@ -37,7 +37,7 @@ module.exports = {
       { text: "编程语言", link: "ProgramLanguage" },
       { text: "数学", link: "Math" },
       { text: "数据库", link: "DBM" },
-      { text: "MRJ别点!!!", link: "MRJGYP" },
+      { text: "MRJ多看看!!!", link: "MRJGYP" },
     ],
     group: {
       CO: [
