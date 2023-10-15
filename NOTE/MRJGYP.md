@@ -1,5 +1,6 @@
 ---
 lock: true
+search: false
 ---
 # 劝Mrj别卷书
 

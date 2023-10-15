@@ -73,9 +73,9 @@ module.exports = {
         {
           text: "数据库设计",
           sublink: [
-            { text: "Chapter1", link: "DBM/Lecture/Lec1" },
-            { text: "Chapter2", link: "DBM/Lecture/Lec2" },
-            { text: "Chapter3", link: "DBM/Lecture/Lec3" },
+            { text: "Entity-Relationship Model Modeling", link: "DBM/Lecture/Lec1" },
+            { text: "Entity-Relationship Model Constraints", link: "DBM/Lecture/Lec2" },
+            { text: "Entity-Relationship Model Extended Features", link: "DBM/Lecture/Lec3" },
           ],
         },
         {
