@@ -18,7 +18,7 @@ module.exports = {
   },
   themeConfig: {
     hero_title: "Welcome to my Blog!",
-    hero_button: { name: "MRJ 别点！！！", link: "MRJGYP" },
+    hero_button: { name: "Go to Blog", link: "CO" },
     hero_link: {
       name: "My Adventure",
       link: "https://www.harkerbest.cn/p/781/",
@@ -37,6 +37,7 @@ module.exports = {
       { text: "编程语言", link: "ProgramLanguage" },
       { text: "数学", link: "Math" },
       { text: "数据库", link: "DBM" },
+      { text: "MRJ别点!!!", link: "MRJGYP" },
     ],
     group: {
       CO: [
