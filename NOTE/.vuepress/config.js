@@ -18,7 +18,7 @@ module.exports = {
   },
   themeConfig: {
     hero_title: "Welcome to my Blog!",
-    hero_button: { name: "Go to Blog", link: "CO" },
+    hero_button: { name: "MRJ别点!!!", link: "MRJGYP" },
     hero_link: {
       name: "My Adventure",
       link: "https://www.harkerbest.cn/p/781/",
