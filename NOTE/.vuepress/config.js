@@ -18,7 +18,7 @@ module.exports = {
   },
   themeConfig: {
     hero_title: "Welcome to my Blog!",
-    hero_button: { name: "GO to Blog!", link: "CO" },
+    hero_button: { name: "MRJ 别点！！！", link: "MRJGYP" },
     hero_link: {
       name: "My Adventure",
       link: "https://www.harkerbest.cn/p/781/",
@@ -142,5 +142,6 @@ module.exports = {
         link: "https://open17.github.io/vuepress-theme-easy-book/",
       },
     ],
+    lock_password: '040301',
   },
 };
