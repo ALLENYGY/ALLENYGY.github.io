@@ -11,6 +11,17 @@ module.exports = {
         href: "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
       },
     ],
+    [
+      "script",
+      {},
+      `var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?92a7e3e263e28dfdb6b2003a7f97b194";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();`,
+    ],
   ],
 
   markdown: {
@@ -73,9 +84,18 @@ module.exports = {
         {
           text: "数据库设计",
           sublink: [
-            { text: "Entity-Relationship Model Modeling", link: "DBM/Lecture/Lec1" },
-            { text: "Entity-Relationship Model Constraints", link: "DBM/Lecture/Lec2" },
-            { text: "Entity-Relationship Model Extended Features", link: "DBM/Lecture/Lec3" },
+            {
+              text: "Entity-Relationship Model Modeling",
+              link: "DBM/Lecture/Lec1",
+            },
+            {
+              text: "Entity-Relationship Model Constraints",
+              link: "DBM/Lecture/Lec2",
+            },
+            {
+              text: "Entity-Relationship Model Extended Features",
+              link: "DBM/Lecture/Lec3",
+            },
           ],
         },
         {
@@ -92,9 +112,15 @@ module.exports = {
           text: "线性代数",
           sublink: [
             { text: "Vector Spaces", link: "Math/Linear-Algebra/Chapter1" },
-            { text: "Linear Transformations", link: "Math/Linear-Algebra/Chapter2" },
+            {
+              text: "Linear Transformations",
+              link: "Math/Linear-Algebra/Chapter2",
+            },
             { text: "Orthogonality", link: "Math/Linear-Algebra/Chapter3" },
-            { text: "Eigenvalues and Eigenvectors", link: "Math/Linear-Algebra/Chapter4" },
+            {
+              text: "Eigenvalues and Eigenvectors",
+              link: "Math/Linear-Algebra/Chapter4",
+            },
           ],
         },
         { text: "离散数学", link: "" },
@@ -107,42 +133,48 @@ module.exports = {
   </div><br/><br/>`,
     card_group: [
       {
-        img_url: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/computer.png",
+        img_url:
+          "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/computer.png",
         title: "Computer Organization",
         description: "v1.2.x",
         link: "CO",
       },
       {
-        img_url: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/java-icon.png",
+        img_url:
+          "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/java-icon.png",
         title: "Program Language",
         description: "v1.2.x",
         link: "ProgramLanguage",
       },
       {
-        img_url: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/mathematica.png",
+        img_url:
+          "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/mathematica.png",
         title: "Mathematica",
         description: "v1.2.x",
         link: "Math",
       },
       {
-        img_url: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/data-check.png",
+        img_url:
+          "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/data-check.png",
         title: "DataBase Management",
         description: "v1.2.x",
         link: "DBM",
       },
       {
-        img_url: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/-book-.png",
+        img_url:
+          "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/-book-.png",
         title: "Adventure",
         description: "v1.2.x",
         link: "https://www.harkerbest.cn/p/781/",
       },
       {
-        img_url: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/logo.png",
+        img_url:
+          "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/logo.png",
         title: "GYP",
         description: "v1.2.x",
         link: "https://open17.github.io/vuepress-theme-easy-book/",
       },
     ],
-    lock_password: '040301',
+    lock_password: "040301",
   },
 };
