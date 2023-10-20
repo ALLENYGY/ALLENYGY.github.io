@@ -29,7 +29,7 @@ module.exports = {
   },
   themeConfig: {
     hero_title: "Welcome to my Blog!",
-    hero_button: { name: "MRJ别看!!!", link: "MRJGYP" },
+    hero_button: { name: "Start", link: "ProgramLanguage" },
     hero_link: {
       name: "My Adventure",
       link: "https://www.harkerbest.cn/p/781/",
