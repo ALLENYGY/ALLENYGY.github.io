@@ -9,6 +9,6 @@ Here is my Program Language Note in UIC!
 - [Java Programming Essentials](Java/Lec2)
 - [Creating Java Classes](Java/Lec3)
 - [Inheritance](Java/Lec4)
-- [Inheritance](Java/Lec5)
+- [Abstract Methods and Classes Interfaces](Java/Lec5)
 - [Exception Handeling](Java/Lec6)
 - [Array and Generics](Java/Lec7)
