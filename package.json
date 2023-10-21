@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "vuepress": "^1.9.9",
-    "vuepress-theme-easy-book": "^1.2.4"
+    "vuepress-theme-easy-book": "^1.2.5"
   }
 }
