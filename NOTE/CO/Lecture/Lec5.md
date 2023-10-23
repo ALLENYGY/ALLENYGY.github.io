@@ -61,6 +61,29 @@ Only add two single bits together (a, b), s is the sum and c is the carry bit
 - 半加器处理两个输入位的加法运算，产生Sum和Carry
 - 全加器处理三个输入位的加法运算，产生 和（Sum）和新的进位（Carry），能够考虑前一位的进位情况
 
-## *4-bit Adder*
+## *4-bit Adder* ***连锁进位加法器***
 
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/4-bit-adder.png"/>
+
+feeding the Carry Out of one circuit into the Carry In of the circuit immediately to its left
+
+"Ripple-Carry Adder"（连锁进位加法器）之所以被称为这个名称，是因为它的进位传递机制类似于水波纹在水面扩散的方式。它是一种最基本的加法器设计，用于将两个二进制数字相加。
+
+在Ripple-Carry Adder中，当两个二进制数字的每一位相加后产生进位时，这个进位会向下一位的相加操作传递。这个传递的过程就像水波纹在水面扩散一样，从一位传递到下一位，依次传递到最高位。这一连串的进位传递是串行进行的，因此它的名字中包含了"Ripple"这个词。
+
+## *Decoder*
+
+A decoder uses the inputs and their respective values to select one specific output line.
+
+- $n$ inputs to a maximum of $2^n$ outputs
+- $n$个输入最多可以有$2^n$个输出
+
+All memory addresses in a computer are specified as binary numbers.
+When a memory address is referenced (whether for reading or forwriting), the computer first has to determine the actual address.
+Decoder（译为解码器）是数字电路中的一个常见组件，它用于将输入的编码信号转换成特定的输出信号，根据输入信号的不同编码，Decoder产生不同的输出信号。Decoder有多种用途，包括：
+
+1. **控制逻辑**：Decoder用于生成控制信号，这些信号用于控制其他数字电路的操作。例如，它可以用于选择特定的操作模式，启用或禁用特定功能等。
+
+2. **地址解码**：在微处理器和微控制器中，Decoder用于解码指令地址，以确定下一步执行的指令或操作。
+
+Decoder是数字电路中的一种重要元件，用于将输入信号从一种编码形式转换为另一种有意义的输出信号，从而实现数据选择、控制、解码和路由等功能。
