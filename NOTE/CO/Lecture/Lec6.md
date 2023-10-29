@@ -1,2 +1,3 @@
-# From Gates to Circuits II:
-Sequential Circuits
+# *From Gates to Circuits II: Sequential Circuits*
+
+## *Sequential Circuits*
