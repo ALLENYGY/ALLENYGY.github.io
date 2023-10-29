@@ -62,7 +62,10 @@ module.exports = {
           link: "CO/Lecture/Lec3",
         },
         { text: "From Transistors to Gates", link: "CO/Lecture/Lec4" },
-        { text: "From Gates to Circuits I: Combinational Circuits", link: "CO/Lecture/Lec5" },
+        {
+          text: "From Gates to Circuits I: Combinational Circuits",
+          link: "CO/Lecture/Lec5",
+        },
       ],
       ProgramLanguage: [
         {
