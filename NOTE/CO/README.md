@@ -6,3 +6,4 @@ Here is my CO Note in UIC!
 - [Bits: Data Representation and Manipulation](Lecture/Lec2)
 - [Boolean Algebra: From Bits to Logic](Lecture/Lec3)
 - [From Transistors to Gates](Lecture/Lec4)
+- [From Gates to Circuits I: Combinational Circuits](Lecture/Lec5)
