@@ -70,17 +70,33 @@ module.exports = {
           text: "From Gates to Circuits II: Sequential Circuits",
           link: "CO/Lecture/Lec6",
         },
+        {
+          text: "Finite State Machine",
+          link: "CO/Lecture/Lec7",
+        },
       ],
       ProgramLanguage: [
         {
           text: "Java",
           sublink: [
             { text: "Java Introduction", link: "ProgramLanguage/Java/Lec0" },
-            { text: "Unified Modeling Language", link: "ProgramLanguage/Java/Lec1" },
-            { text: "Java Programming Essentials", link: "ProgramLanguage/Java/Lec2" },
-            { text: "Creating Java Classes", link: "ProgramLanguage/Java/Lec3" },
+            {
+              text: "Unified Modeling Language",
+              link: "ProgramLanguage/Java/Lec1",
+            },
+            {
+              text: "Java Programming Essentials",
+              link: "ProgramLanguage/Java/Lec2",
+            },
+            {
+              text: "Creating Java Classes",
+              link: "ProgramLanguage/Java/Lec3",
+            },
             { text: "Inheritance", link: "ProgramLanguage/Java/Lec4" },
-            { text: "Abstract Methods and Classes Interfaces", link: "ProgramLanguage/Java/Lec5" },
+            {
+              text: "Abstract Methods and Classes Interfaces",
+              link: "ProgramLanguage/Java/Lec5",
+            },
             { text: "Exception Handeling", link: "ProgramLanguage/Java/Lec6" },
             { text: "Array and Generics", link: "ProgramLanguage/Java/Lec7" },
           ],

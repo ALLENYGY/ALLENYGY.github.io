@@ -13,3 +13,5 @@ Here is my CO Note in UIC!
 ## [From Gates to Circuits I: Combinational Circuits](Lecture/Lec5)
 
 ## [From Gates to Circuits II: Sequential Circuits](Lecture/Lec6)
+
+## [Finite State Machine](Lecture/Lec7)
