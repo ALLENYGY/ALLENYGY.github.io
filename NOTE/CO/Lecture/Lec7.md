@@ -30,13 +30,7 @@
 
 <img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/1sA1to.jpg' alt='1sA1to'/>
 
-- *FSM*
-
-- Three groups of lights to be lit in a sequence：group 1 on, groups 1 & 2 on, all groups on.， all off. - 4 state
-- The lights are on only if the main switch is on.
-
-<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/DFk7Pb.jpg' alt='DFk7Pb'/>
-<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/4Zl8Zo.png' alt='4Zl8Zo'/>
+- **
 
 ### *Turing Machine vs FSM*
 
