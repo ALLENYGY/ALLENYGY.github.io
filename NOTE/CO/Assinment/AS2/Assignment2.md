@@ -95,11 +95,3 @@ Complete the truth table for the following sequential circuit: (8 points)
 |1|1|1|0|0|
 
 ## $VI$
-
-## $VII$
-
-## $VIII$
-
-## $IX$
-
-## $X$
