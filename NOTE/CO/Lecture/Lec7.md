@@ -36,7 +36,7 @@
 - The lights are on only if the main switch is on.
 
 <img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/DFk7Pb.jpg' alt='DFk7Pb'/>
-<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/d6pfq5.jpg' alt='d6pfq5'/>
+<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/4Zl8Zo.png' alt='4Zl8Zo'/>
 
 ### *Turing Machine vs FSM*
 
