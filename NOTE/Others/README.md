@@ -10,4 +10,4 @@ Here is some easy tool instruction in computer
 
 ## Conda
 
-### [Conda Basic Operation](Conda)
+### [Conda Basic Operation](Conda/Conda)
