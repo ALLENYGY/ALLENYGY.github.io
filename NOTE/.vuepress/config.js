@@ -44,10 +44,11 @@ module.exports = {
     title: "MyBlog",
     icon: "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
     nav: [
-      { text: "计算机组成原理", link: "CO" },
-      { text: "编程语言", link: "ProgramLanguage" },
-      { text: "数学", link: "Math" },
-      { text: "数据库", link: "DBM" },
+      { text: "Computer Organization", link: "CO" },
+      { text: "Language", link: "ProgramLanguage" },
+      { text: "Math", link: "Math" },
+      { text: "Database", link: "DBM" },
+      { text: "Others", link: "Others" },
       { text: "MRJ多看看!!!", link: "MRJGYP" },
     ],
     group: {
@@ -149,6 +150,19 @@ module.exports = {
         },
         { text: "离散数学", link: "" },
         { text: "概率统计", link: "" },
+      ],
+      Others: [
+        {
+          text: "Git",
+          sublink: [
+            { text: "Git Introduction", link: "Others/Git/Git-Introduction" },
+            {
+              text: "Git Basic",
+              link: "Others/Git/Git",
+            },
+          ],
+        },
+        { text: "Conda", link: "Conda/Conda" },
       ],
     },
     editurl: "https://github.com/ALLENYGY/ALLENYGY.github.io/blob/master/NOTE",
