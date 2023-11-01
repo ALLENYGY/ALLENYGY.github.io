@@ -8,7 +8,8 @@ module.exports = {
       "link",
       {
         rel: "icon",
-        href: "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
+        href: "NOTE/Logo/Logo.jpg",
+        // href: "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
       },
     ],
     [
@@ -42,7 +43,9 @@ module.exports = {
        and <span style="color: rgb(14 165 233)">knowledge</span> itself.
     </span>`,
     title: "MyBlog",
-    icon: "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
+    icon:'https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Logo.jpg',
+    // icon: "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
+
     nav: [
       { text: "计算机组成原理", link: "CO" },
       { text: "编程语言", link: "ProgramLanguage" },
