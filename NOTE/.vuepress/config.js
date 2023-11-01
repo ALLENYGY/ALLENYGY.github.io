@@ -8,8 +8,8 @@ module.exports = {
       "link",
       {
         rel: "icon",
-        href: "NOTE/Logo/Logo.png",
-        // href: "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
+        href: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Logo.jpg",
+        // "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
       },
     ],
     [
