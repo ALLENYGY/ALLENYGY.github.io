@@ -17,7 +17,7 @@ Fibonacci n_umbers are the sequence of numbers Fn defined by the linear recurren
 
 1. Truth Table
 
-|$I_3$|$I_2$|$I1$|$I_0$|$isF$|
+|$I_3$|$I_2$|$I_1$|$I_0$|$isF$|
 |-----|-----|----|-----|-----|
 |0|0|0|0|1|
 |0|0|0|1|1|
@@ -77,6 +77,50 @@ Draw a combinational logic circuit of an eight-input multiplexor where the input
 
 ## $IV$
 
+Investigate the operation of the following circuit. Assume the initial state is 0000. Trace the outputs (the Qs) as the clock ticks and determine the purpose of the circuit. You must show your trace to complete your answer. (10 points)
+<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/JRr3J4.png' alt='JRr3J4'/>
+
+- Equation
+  - Clock equation
+    - $CP_{0}=CP_{1}=CP_{2}=CP_{3}$
+
+  - Dirve equation
+    - $J_{0}=\overline {Q_{3}^{n}},K_{0}=Q_{3}^{n}$
+    - $J_{1}=Q_{0}^{n},K_{1}=\overline {Q_{0}^{n}}$
+    - $J_{2}=Q_{1}^{n},K_{2}=\overline {Q_{1}^{n}}$
+    - $J_{3}=Q_{2}^{n},K_{3}=\overline {Q_{2}^{n}}$
+  - State equation
+    - Feature equation: $Q^{n+1}=J\overline{Q^{n}}+\overline{K}{Q^{n}}$
+    - $Q_{0}^{n+1}=\overline {Q_{3}^{n}} \ \overline{Q_{0}^{n}}+\overline{Q_{3}^{n}}{Q_{0}^{n}}=\overline{Q_{3}^{n}}$
+    - $Q_{1}^{n+1}={Q_{0}^{n}} \ \overline{Q_{1}^{n}}+{Q_{0}^{n}}{Q_{1}^{n}}=Q_0^{n}$
+    - $Q_{2}^{n+1}={Q_{1}^{n}} \ \overline{Q_{2}^{n}}+{Q_{1}^{n}}{Q_{2}^{n}}=Q_1^{n}$
+    - $Q_{3}^{n+1}={Q_{2}^{n}} \ \overline{Q_{3}^{n}}+{Q_{2}^{n}}{Q_{3}^{n}}=Q_2^{n}$
+- State
+
+|$Q_{3}^{n}$|$Q_{2}^{n}$|$Q_{1}^{n}$|$Q_{0}^{n}$|$Q_{3}^{n+1}$|$Q_{2}^{n+1}$|$Q_{1}^{n+1}$|$Q_{0}^{n+1}$|
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+|$0$|$0$|$0$|$0$|$0$|$0$|$0$|$1$|
+|$0$|$0$|$0$|$1$|$0$|$0$|$1$|$1$|
+|$0$|$0$|$1$|$0$|$0$|$1$|$0$|$1$|
+|$0$|$0$|$1$|$1$|$0$|$1$|$1$|$1$|
+|$0$|$1$|$0$|$0$|$1$|$0$|$0$|$1$|
+|$0$|$1$|$0$|$1$|$1$|$0$|$1$|$1$|
+|$0$|$1$|$1$|$0$|$1$|$1$|$0$|$1$|
+|$0$|$1$|$1$|$1$|$1$|$1$|$1$|$1$|
+|$1$|$0$|$0$|$0$|$0$|$0$|$0$|$0$|
+|$1$|$0$|$0$|$1$|$0$|$0$|$1$|$0$|
+|$1$|$0$|$1$|$0$|$0$|$1$|$0$|$0$|
+|$1$|$0$|$1$|$1$|$0$|$1$|$1$|$0$|
+|$1$|$1$|$0$|$0$|$1$|$0$|$0$|$0$|
+|$1$|$1$|$0$|$1$|$1$|$0$|$1$|$0$|
+|$1$|$1$|$1$|$0$|$1$|$1$|$0$|$0$|
+|$1$|$1$|$1$|$1$|$1$|$1$|$1$|$0$|
+
+$State$ $Diagram$
+$0000>0001>0011>0111>1111>1110>1100>1000>0000$
+<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/StateDiagram.png' alt='StateDiagram'/>
+This state diagram describes the function of a four-bit binary right-cycling shifter.
+
 ## $V$
 
 Complete the truth table for the following sequential circuit: (8 points)
@@ -95,3 +139,37 @@ Complete the truth table for the following sequential circuit: (8 points)
 |1|1|1|0|0|
 
 ## $VI$
+
+Design a finite state machine (FSM) for a counter that counts through the 3-bit prime numbers downwards and loop: {75327532…}. Assume the counter starts with initial prime set to 111 as its first 3 bit prime number. (12 points)
+
+1. You need to provide the state transition diagram. Assume that the state is stored in three D Flip Flops. Hint: The set of all 3-bit prime numbers includes 2, 3, 5 and 7. (4 points)
+
+- State Diagram
+
+<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/StateDiagram-2.png' alt='StateDiagram-2'/>
+
+2. Design the sequential circuit for the counter. The circuit is driven by the clock. The output is a 7 segment LED display. The various digits from 0 through 9 can be displayed using a 7-segment display as shown in the following figure.
+
+<!-- |$Q_{2}^{n}$|$Q_{1}^{n}$|$Q_{0}^{n}$|$Q_{2}^{n+1}$|$Q_{1}^{n+1}$|$Q_{0}^{n+1}$|$a$|$b$|$c$|$d$|$e$|$f$|$g$|$LED$|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|$1$|$1$|$1$|$1$|$0$|$1$|$1$|$0$|$1$|$1$|$0$|$1$|$1$|$5$|
+|$1$|$0$|$1$|$0$|$1$|$1$|$1$|$1$|$1$|$1$|$0$|$0$|$1$|$3$|
+|$0$|$1$|$1$|$0$|$1$|$0$|$1$|$1$|$0$|$1$|$1$|$0$|$1$|$2$|
+|$0$|$1$|$0$|$1$|$1$|$1$|$1$|$1$|$1$|$0$|$0$|$0$|$0$|$7$| -->
+
+|$Q_{2}^{n}$|$Q_{1}^{n}$|$Q_{0}^{n}$|$Q_{2}^{n+1}$|$Q_{1}^{n+1}$|$Q_{0}^{n+1}$|$a$|$b$|$c$|$d$|$e$|$f$|$g$|$LED$|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|$1$|$1$|$1$|$1$|$0$|$1$|$1$|$1$|$1$|$0$|$0$|$0$|$0$|$7$|
+|$1$|$0$|$1$|$0$|$1$|$1$|$1$|$0$|$1$|$1$|$0$|$1$|$1$|$5$|
+|$0$|$1$|$1$|$0$|$1$|$0$|$1$|$1$|$1$|$1$|$0$|$0$|$1$|$3$|
+|$0$|$1$|$0$|$1$|$1$|$1$|$1$|$1$|$0$|$1$|$1$|$0$|$1$|$2$|
+
+$a=1$
+$b=\overline{Q_{2}^{n}}+Q_{1}^{n}+\overline{Q_{0}^{n}}$
+$c=Q_{2}^{n}+\overline{Q_{1}^{n}}+Q_{0}^{n}$
+$d=\overline{Q_{2}^{n}}+\overline{Q_{1}^{n}}+\overline{Q_{0}^{n}}$
+$e=\overline{Q_{2}^{n}}Q_{1}^{n}\overline{Q_{0}^{n}}$
+$f={Q_{2}^{n}}\overline{Q_{1}^{n}}Q_{0}^{n}$
+$g=\overline{Q_{2}^{n}}+\overline{Q_{1}^{n}}+\overline{Q_{0}^{n}}$
+
+<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/LED.png' alt='LED'/>
