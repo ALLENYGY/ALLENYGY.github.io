@@ -203,3 +203,19 @@ git diff --staged
 # 查看已经暂存起来的变化
 git diff --cached
 ```
+
+### 关联远程仓库
+
+- origin 是一个引用名 表示远程的仓库
+- [url] 即为远程仓库的.git
+
+```sh
+git remote add origin  [url]
+```
+
+- 假设master是本地仓库名
+
+```sh
+# 把本地仓库push到远程仓库
+git push -u  origin master 
+```
