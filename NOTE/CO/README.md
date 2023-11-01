@@ -15,3 +15,5 @@ Here is my CO Note in UIC!
 ## [From Gates to Circuits II: Sequential Circuits](Lecture/Lec6)
 
 ## [Finite State Machine](Lecture/Lec7)
+
+## [Circuit Design](Lecture/CircuitDesign)

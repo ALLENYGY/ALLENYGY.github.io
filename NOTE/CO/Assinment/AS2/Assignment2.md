@@ -140,7 +140,7 @@ Complete the truth table for the following sequential circuit: (8 points)
 
 ## $VI$
 
-Design a finite state machine (FSM) for a counter that counts through the 3-bit prime numbers downwards and loop: {75327532…}. Assume the counter starts with initial prime set to 111 as its first 3 bit prime number. (12 points)
+Design a finite state machine (FSM) for a counter that counts through the 3-bit prime numbers downwards and loop: $\{7>5>3>2>7>5>3>2\}$. Assume the counter starts with initial prime set to 111 as its first 3 bit prime number. (12 points)
 
 1. You need to provide the state transition diagram. Assume that the state is stored in three D Flip Flops. Hint: The set of all 3-bit prime numbers includes 2, 3, 5 and 7. (4 points)
 
@@ -172,5 +172,4 @@ $e=\overline{Q_{2}^{n}}Q_{1}^{n}\overline{Q_{0}^{n}}$
 $f={Q_{2}^{n}}\overline{Q_{1}^{n}}Q_{0}^{n}$
 $g=\overline{Q_{2}^{n}}+\overline{Q_{1}^{n}}+\overline{Q_{0}^{n}}$
 
-<!-- <img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/LED.png' alt='LED'/> -->
 <img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/LED-1.png' alt='LED-1'/>

@@ -78,6 +78,10 @@ module.exports = {
           text: "Finite State Machine",
           link: "CO/Lecture/Lec7",
         },
+        {
+          text: "Circuit Design",
+          link: "CO/Lecture/CircuitDesign",
+        },
       ],
       ProgramLanguage: [
         {
