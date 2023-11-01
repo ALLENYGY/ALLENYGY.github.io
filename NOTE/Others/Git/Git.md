@@ -37,11 +37,10 @@ git init
 
 ### Check file status
 
-- git status 查看哪些文件处于什么状态
+- 查看哪些文件处于什么状态
 
 ```sh
 git status
-
 # 更精简的输出
 git status -s
 # git status --short
@@ -75,11 +74,16 @@ when there are some small change in your file
 git commit -a -m "Updated with a new line"
 ```
 
-compare
-see the changes in a more compact way:
+- .gitignore
+忽略文件
 
-```sh
-git status --short
+```.gitnore
+# 通过配置目录下的 .gitignore 文件来忽略某些文件
+for example:
+# 忽略任何目录下名为 .idea 的文件夹
+.idea/
+# 忽略所有的 .pyc 文件
+*.pyc
 ```
 
 ### Remove File
@@ -112,11 +116,15 @@ TO see you commit log in the repository
 git log
 ```
 
-### Help
+- git diff 显示哪些文件发生了改变
 
 ```sh
-git command -help -  See all the available options for the specific command
-git help --all -  See all possible commands
+# 查看尚未暂存的文件更新了哪些部分
+git diff
+# 比对已暂存文件与最后一次提交的文件差异
+git diff --staged
+# 查看已经暂存起来的变化
+git diff --cached
 ```
 
 ### Branch
@@ -164,46 +172,6 @@ git merge branch2
 
 ## Git & Github
 
-### 获取远程仓库
-
-- git clone \<url> 从服务器端克隆一个已存在的git仓库到本地
-
-```sh
-# 克隆 Musicer 库到本地
-git clone https://github.com/xiayouran/Musicer.git
-
-# 克隆 gui-musicer分支代码 到本地
-git clone -b gui-musicer https://github.com/xiayouran/Musicer.git
-
-# 不仅会 git clone 当前项目中的代码，也会 clone 项目中子项目的代码
-# 即 git 中的 git
-git clone --recursive xxxxxx
-```
-
-### 记录每次更新到仓库
-
-- .gitignore 忽略文件
-
-```sh
-# 通过配置目录下的 .gitignore 文件来忽略某些文件
-for example:
-# 忽略任何目录下名为 .idea 的文件夹
-.idea/
-# 忽略所有的 .pyc 文件
-*.pyc
-```
-
-- git diff 显示哪些文件发生了改变
-
-```sh
-# 查看尚未暂存的文件更新了哪些部分
-git diff
-# 比对已暂存文件与最后一次提交的文件差异
-git diff --staged
-# 查看已经暂存起来的变化
-git diff --cached
-```
-
 ### 关联远程仓库
 
 - origin 是一个引用名 表示远程的仓库
@@ -218,4 +186,25 @@ git remote add origin  [url]
 ```sh
 # 把本地仓库push到远程仓库
 git push -u  origin master 
+```
+
+### 获取远程仓库
+
+- git clone \<url> 从服务器端克隆一个已存在的git仓库到本地
+
+```sh
+# 克隆 Musicer 库到本地
+git clone https://github.com/xiayouran/Musicer.git
+# 克隆 gui-musicer分支代码 到本地
+git clone -b gui-musicer https://github.com/xiayouran/Musicer.git
+# 不仅会 git clone 当前项目中的代码，也会 clone 项目中子项目的代码
+# 即 git 中的 git
+git clone --recursive xxxxxx
+```
+
+## Help
+
+```sh
+git command -help -  See all the available options for the specific command
+git help --all -  See all possible commands
 ```
