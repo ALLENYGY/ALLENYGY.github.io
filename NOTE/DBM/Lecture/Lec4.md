@@ -26,3 +26,10 @@
 Try to eliminate redundancy
 In most cases, the answer is very subjective. It depends on the real-world problem.
 Sometimes, the answers can be very different even on the same problem but with different assumptions.
+
+#### *Attribute vs Entity*
+
+It depends on the real case.
+Both ER models have advantages and disadvantages.
+
+#### Entity set vs Relationship set
