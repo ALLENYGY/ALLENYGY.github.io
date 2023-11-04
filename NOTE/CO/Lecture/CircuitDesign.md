@@ -24,7 +24,14 @@
   - 功能
   - 是否自启动 存在无效状态则不能自启动
 
-#### Example
+#### Example-1
+
+<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/J96m7Y.png' alt='J96m7Y'/>
+
+- Equation
+  - Clock equation
+    - $CP_{0}=CP_{1}=CP_{2}=CP_{3}$
+  - Ouput equation
 
 <img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/JRr3J4.png' alt='JRr3J4'/>
 
@@ -77,6 +84,8 @@ $0010>1001>0100>1010>1101>0110>1011>0101>0010$
 3. Output Equation
 4. Flip-Flop
 5. Circuit
+
+#### Example-2
 
 Design a finite state machine (FSM) for a counter that counts through the 3-bit prime numbers downwards and loop: $\{7>5>3>2>7>5>3>2\}$. Assume the counter starts with initial prime set to 111 as its first 3 bit prime number. (12 points)
 
