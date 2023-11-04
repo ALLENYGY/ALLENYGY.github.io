@@ -43,7 +43,7 @@ module.exports = {
        and <span style="color: rgb(14 165 233)">knowledge</span> itself.
     </span>`,
     title: "MyBlog",
-    icon:'https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Logo.jpg',
+    icon: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Logo.jpg",
     // icon: "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
 
     nav: [
@@ -109,7 +109,16 @@ module.exports = {
             { text: "Array and Generics", link: "ProgramLanguage/Java/Lec7" },
           ],
         },
-        { text: "Cpp", link: "" },
+        {
+          text: "R",
+          sublink: [
+            { text: "R Basic", link: "ProgramLanguage/R/Lec1" },
+            {
+              text: "R Data Structure",
+              link: "ProgramLanguage/R/Lec2",
+            },
+          ],
+        },
         { text: "Python", link: "" },
       ],
       DBM: [
@@ -171,10 +180,7 @@ module.exports = {
         },
         {
           text: "Conda",
-          sublink: [
-            { text: "Basic Conda", link: "Others/Conda/Conda" },
-            
-          ],
+          sublink: [{ text: "Basic Conda", link: "Others/Conda/Conda" }],
         },
       ],
     },

@@ -19,3 +19,9 @@ Here is my Program Language Note in UIC!
 ### [Exception Handeling](Java/Lec6)
 
 ### [Array and Generics](Java/Lec7)
+
+## R
+
+### [R Basic](R/Lec1)
+
+### [R Data Structure](R/Lec2)
