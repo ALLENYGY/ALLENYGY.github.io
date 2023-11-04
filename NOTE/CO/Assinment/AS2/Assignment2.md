@@ -2,6 +2,8 @@
 
 ## $I$
 
+For the following transistor-level circuit, fill in the truth table. What is the logical expression of Z in terms of A and B? (12 points)
+
 $Z=\overline{\overline A \ \overline B}=AB$
 
 | $A \ B$|$C \ D \ Z$|
@@ -13,7 +15,7 @@ $Z=\overline{\overline A \ \overline B}=AB$
 
 ## $II$
 
-Fibonacci n_umbers are the sequence of numbers Fn defined by the linear recurrence equation $F_{n} = F_{n-1} + F_{n-2}$ where $F_{1} = F_{2} = 1$. It is conventional to define $F_0 = 0$. Given a word size of four bits, design a circuit to detect if a given input binary number $I_3I_2I_1I_0$ is a Fibonacci number or not. Show the following steps: (20 points)
+Fibonacci numbers are the sequence of numbers Fn defined by the linear recurrence equation $F_{n} = F_{n-1} + F_{n-2}$ where $F_{1} = F_{2} = 1$. It is conventional to define $F_0 = 0$. Given a word size of four bits, design a circuit to detect if a given input binary number $I_3I_2I_1I_0$ is a Fibonacci number or not. Show the following steps: (20 points)
 
 1. Truth Table
 
