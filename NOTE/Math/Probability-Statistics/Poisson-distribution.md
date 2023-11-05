@@ -7,11 +7,12 @@
 - Poisson distribution
   - $Poi(x,\lambda) = e^{-\lambda}\frac{\lambda^k}{k!}$
 
-Intuitively, the Binomial distribution and the Poisson distribution seem to be unrelated. But a closer look reveals a very interesting relationship. The Poisson distribution is just a special case of the binomial distribution—that is, the number of trials is large enough that the given probability of success p is small. When n tends to infinity and p approaches zero, the binomial distribution approaches the Poisson distribution.
+Intuitively, the Binomial distribution and the Poisson distribution seem to be unrelated. But a closer look reveals a very interesting relationship. The Poisson distribution is just a special case of the binomial distribution. When n tends to infinity and p approaches zero, the binomial distribution approaches the Poisson distribution.
 
 ## Derivation
 
-- For binomial distribution
+For binomial distribution
+
 - $Bin(p,n) = P(X = k) ={(C^n_k)p^k(1-p)^{n-k}}$
   $E(x): \lambda = np \ \Rightarrow$ $p=\frac{\lambda}{n}$
 
