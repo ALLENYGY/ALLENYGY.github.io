@@ -35,7 +35,7 @@ Fibonacci numbers are the sequence of numbers Fn defined by the linear recurrenc
 |1|0|1|1|0|
 |1|1|0|0|0|
 |1|1|0|1|1|
-|1|1|1|0|0|
+|1|1|1|0|0¡¡|
 |1|1|1|1|0|
 
 2. Sum of Product
@@ -57,19 +57,19 @@ $(\overline{I_3} \ \overline{I_2} \ \overline{I_1} \ \overline{I_0}) +(\overline
 +({I_3} \ \overline{I_2} \ \overline{I_1} \ \overline{I_0})
 +({I_3} \ {I_2} \ \overline{I_1} \ {I_0})$
 
-$=(\overline{I_3} \ \overline{I_2} \ \overline{I_1})+(\overline{I_3} \ \overline{I_2} \ {I_1}) +({I_2} \ \overline{I_1} \ {I_0})+(\overline{I_2} \ \overline{I_1} \ \overline{I_0})+(\overline{I_3}\ \overline{I_1}\ {I_0})$
+$=(\overline{I_3} \ \overline{I_2} \ \overline{I_1})+(\overline{I_3} \ \overline{I_2} \ {I_1}) +({I_2} \ \overline{I_1} \ {I_0})+(\overline{I_2} \ \overline{I_1} \ \overline{I_0})$
 
-$=(\overline{I_3} \ \overline{I_2})+(\ \overline{I_2} \ \overline{I_1} \ \overline{I_0})+({I_2}\ \overline{I_1}\ {I_0})+(\overline{I_3}\ \overline{I_1}\ {I_0})$
+$=(\overline{I_3} \ \overline{I_2})+(\ \overline{I_2} \ \overline{I_1} \ \overline{I_0})+({I_2}\ \overline{I_1}\ {I_0})$
 
 4. Simplify the logical expression using K-MAP.
 
-<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/K-MAP.png' alt='K-MAP'/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/K-MAP.png"/>
 
-$=(\overline{I_3} \ \overline{I_2})+(\ \overline{I_2} \ \overline{I_1} \ \overline{I_0})+({I_2}\ \overline{I_1}\ {I_0})+(\overline{I_3}\ \overline{I_1}\ {I_0})$
+$=(\overline{I_3} \ \overline{I_2})+(\ \overline{I_2} \ \overline{I_1} \ \overline{I_0})+({I_2}\ \overline{I_1}\ {I_0})$
 
 5. Draw the logical circuit and verify it.
 
-<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/CO-As2.png' alt='CO-As2'/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Fibonacci.png"/>
 
 ## $III$
 
