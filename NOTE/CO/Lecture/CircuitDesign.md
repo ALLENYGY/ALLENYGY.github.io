@@ -26,12 +26,7 @@
 
 #### Example-1
 
-<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/J96m7Y.png' alt='J96m7Y'/>
-
-- Equation
-  - Clock equation
-    - $CP_{0}=CP_{1}=CP_{2}=CP_{3}$
-  - Ouput equation
+Investigate the operation of the following circuit. Assume the initial state is 0000. Trace the outputs (the Qs) as the clock ticks and determine the purpose of the circuit. You must show your trace to complete your answer.
 
 <img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/JRr3J4.png' alt='JRr3J4'/>
 
