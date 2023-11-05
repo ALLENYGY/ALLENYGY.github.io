@@ -148,16 +148,9 @@ Design a finite state machine (FSM) for a counter that counts through the 3-bit 
 
 - State Diagram
 
-<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/StateDiagram-2.png' alt='StateDiagram-2'/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/StateDiagram-2.png"/>
 
 2. Design the sequential circuit for the counter. The circuit is driven by the clock. The output is a 7 segment LED display. The various digits from 0 through 9 can be displayed using a 7-segment display as shown in the following figure.
-
-<!-- |$Q_{2}^{n}$|$Q_{1}^{n}$|$Q_{0}^{n}$|$Q_{2}^{n+1}$|$Q_{1}^{n+1}$|$Q_{0}^{n+1}$|$a$|$b$|$c$|$d$|$e$|$f$|$g$|$LED$|
-|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
-|$1$|$1$|$1$|$1$|$0$|$1$|$1$|$0$|$1$|$1$|$0$|$1$|$1$|$5$|
-|$1$|$0$|$1$|$0$|$1$|$1$|$1$|$1$|$1$|$1$|$0$|$0$|$1$|$3$|
-|$0$|$1$|$1$|$0$|$1$|$0$|$1$|$1$|$0$|$1$|$1$|$0$|$1$|$2$|
-|$0$|$1$|$0$|$1$|$1$|$1$|$1$|$1$|$1$|$0$|$0$|$0$|$0$|$7$| -->
 
 |$Q_{2}^{n}$|$Q_{1}^{n}$|$Q_{0}^{n}$|$Q_{2}^{n+1}$|$Q_{1}^{n+1}$|$Q_{0}^{n+1}$|$a$|$b$|$c$|$d$|$e$|$f$|$g$|$LED$|
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|
@@ -173,5 +166,8 @@ $d=\overline{Q_{2}^{n}}+\overline{Q_{1}^{n}}+\overline{Q_{0}^{n}}$
 $e=\overline{Q_{2}^{n}}Q_{1}^{n}\overline{Q_{0}^{n}}$
 $f={Q_{2}^{n}}\overline{Q_{1}^{n}}Q_{0}^{n}$
 $g=\overline{Q_{2}^{n}}+\overline{Q_{1}^{n}}+\overline{Q_{0}^{n}}$
+$D_0=Q_0^{n+1}=Q_2^n+\overline{Q_1^n}+\overline{Q_0^n}$
+$D_1=Q_1^{n+1}=\overline {Q_2^n}+\overline{Q_1^n}+\overline{Q_0^n}$
+$D_2=Q_2^{n+1}=Q_2Q_1Q_0+\overline {Q_2^n} Q_1^n\overline {Q_0^n}$
 
-<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/LED-1.png' alt='LED-1'/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/LED-1.png"/>
