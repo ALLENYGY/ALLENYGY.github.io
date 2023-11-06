@@ -15,7 +15,7 @@ $\equiv \neg\left(p\vee\lnot q\right)\vee(q\vee\lnot p)$
 $\equiv (\neg p \wedge q) \vee (q\vee\lnot p)$
 $\equiv ((\neg p \wedge q) \vee q) \vee ((\neg p \wedge q) \neg p)$
 $\equiv q \vee \neg p$
-it's clearly that $ q \vee \neg p$ is a contingency.
+it's clear that $ q \vee \neg p$ is a contingency.
 
 b)
 | p | q  |  $p\leftrightarrow q$  | $p\rightarrow q$ | $(p\leftrightarrow q) \rightarrow(p\rightarrow q)$ |

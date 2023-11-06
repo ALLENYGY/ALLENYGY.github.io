@@ -21,7 +21,7 @@ For binomial distribution
   - $p$ represents the probability that a trial will succeed
   
 
-Put the equation in the expression for the binomial distribution， we can get the following expression
+Put the equation in the expression for the binomial distribution，we can get the following expression
 
 $ C^k_n \ (\frac{\lambda}{n})^k \ (1-(\frac{\lambda}{n}))^{n-k} $
 
