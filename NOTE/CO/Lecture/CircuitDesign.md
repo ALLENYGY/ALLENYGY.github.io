@@ -107,4 +107,4 @@ $e=\overline{Q_{2}^{n}}Q_{1}^{n}\overline{Q_{0}^{n}}$
 $f={Q_{2}^{n}}\overline{Q_{1}^{n}}Q_{0}^{n}$
 $g=\overline{Q_{2}^{n}}+\overline{Q_{1}^{n}}+\overline{Q_{0}^{n}}$
 
-<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/LED-1.png' alt='LED-1'/>
+<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/zGv0xW.jpg' alt='zGv0xW'/>

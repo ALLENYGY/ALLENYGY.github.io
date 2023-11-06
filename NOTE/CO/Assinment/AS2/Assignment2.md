@@ -135,10 +135,10 @@ Complete the truth table for the following sequential circuit: (8 points)
 |0|0|1|0|0|
 |0|1|0|1|0|
 |0|1|1|0|0|
-|1|0|0|0|1|
-|1|0|1|0|1|
-|1|1|0|0|0|
-|1|1|1|0|0|
+|1|0|0|1|1|
+|1|0|1|1|1|
+|1|1|0|1|0|
+|1|1|1|1|0|
 
 ## $VI$
 
@@ -170,4 +170,4 @@ $D_0=Q_0^{n+1}=Q_2^n+\overline{Q_1^n}+\overline{Q_0^n}$
 $D_1=Q_1^{n+1}=\overline {Q_2^n}+\overline{Q_1^n}+\overline{Q_0^n}$
 $D_2=Q_2^{n+1}=Q_2Q_1Q_0+\overline {Q_2^n} Q_1^n\overline {Q_0^n}$
 
-<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/LED-2.png"/>
+<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/zGv0xW.jpg' alt='zGv0xW'/>
