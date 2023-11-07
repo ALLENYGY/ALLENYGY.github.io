@@ -3,7 +3,7 @@
 ## From Binomial distribution to Poisson distribution
 
 - Binomial distribution
-  - $Bin(p,n) = P(X = k) ={C^n_k\ p^k(1-p)^{n-k}}$
+  - $Bin(p,n) = P(X = k) ={C^k_n\ p^k(1-p)^{n-k}}$
 - Poisson distribution
   - $Poi(x,\lambda) = e^{-\lambda}\frac{\lambda^k}{k!}$
 
@@ -77,7 +77,7 @@ $\therefore lim_{n\rightarrow\infty} \ \frac{\lambda^k}{k!} \ (1-(\frac{\lambda}
 
 $\because n\rightarrow \infty \  \therefore \frac{\lambda}{n} \rightarrow 0$
 
-$\therefore 1-(\frac{\lambda}{n}))^{-k}=1$
+$\therefore (1-(\frac{\lambda}{n}))^{-k}=1$
 
 $\therefore lim_{n\rightarrow\infty} \ \frac{\lambda^k}{k!} \ (1-(\frac{\lambda}{n}))^{n}$
 
