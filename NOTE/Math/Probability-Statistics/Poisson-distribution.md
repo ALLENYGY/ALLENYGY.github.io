@@ -24,8 +24,6 @@ For binomial distribution
   - $n$ represents the number of trails
   - $p$ represents the probability that a trial will succeed
   
-
-
 ```txt
 As you can see the binomial distribution on the slide, the expected value of the binomial distribution is equal to the variable n times the probability p. So we can get p by lambda divided by n.
 ```
@@ -53,7 +51,7 @@ For the Poisson distribution, the variable n tends to the infinity
 So we just need to simplify this limit expression
 ```
 
-We can expand the factorial， then cancel out the (n-k)factorial part 
+We can expand the factorial， then cancel out the (n-k)factorial part
 
 $\therefore lim_{n \to \infty} \ \frac{n(n-1)(n-2)...(n-k+1)}{k!} \ \frac{\lambda^k}{n^k} \ (1-(\frac{\lambda}{n}))^{n-k} $
 
