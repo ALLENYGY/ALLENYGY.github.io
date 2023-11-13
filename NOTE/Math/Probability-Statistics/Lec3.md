@@ -2,7 +2,7 @@
 
 A sampling distribution is a distribution of all of the possible values of a statistic for a given size sample selected from a population
 
-## Sampling Distribution of the Mean
+## Sampling Distribution of the sample Mean *样本均值的样本分布*
 
 <img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/aFjG5B.png' alt='aFjG5B'/>
 
@@ -59,6 +59,22 @@ The sample variance \(s^2\) is an unbiased estimate of \(\sigma^2\) if the sampl
 However, $s$ is not an unbiased estimate of $\sigma$
 但是没有简单的方法计算$\sigma$ 所以仍用$s$ 计算
 
-## Sampling Distribution of the Proportion
+## Sampling Distribution of the Proportion *样本比例的样本分布*
 
 Proportion  The fraction, ratio, or percent indicating the part of the population or sample having a particular trait of interest.  
+
+$\hat{p}=\frac{X}{n}=\frac{number \ of \ items \ in \ the \ sample \ hanving \ the \ characteristic \ of \ interests}{sample \ size}$
+
+<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/S5rSXN.png' alt='S5rSXN'/>
+
+- For a population of units, we select samples of size n, and calculate its proportion $\hat{p}$ for the units of the sample to be fall into a particular category.
+- $\hat{p}$ is a random variable and has its probability distribution.
+- The probability distribution of all possible sample proportions is called the *sampling distribution of the sample proportion*
+
+The sampling distribution of $\hat{p}$ is
+
+1. approximately normal, if n is large meet the conditions that $np \geq 5$ and $n(1-p) \geq 5$
+2. $\mu_{\hat{p}}=p$
+3. $\sigma_{\hat{p}}=\sqrt{\frac{p(1-p)}{n}}$
+
+$\hat{p}$ ~ $N(p,\sqrt{\frac{p(1-p)}{n}})$
