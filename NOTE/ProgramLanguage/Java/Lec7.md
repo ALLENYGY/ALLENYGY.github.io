@@ -1,19 +1,5 @@
 # Array and Generics
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Array and Generics](#array-and-generics)
-  - [Array **引用数据类型**](#array-引用数据类型)
-  - [Enhanced for loops](#enhanced-for-loops)
-    - [Advantages](#advantages)
-    - [Disadvantages](#disadvantages)
-  - [ArrayList](#arraylist)
-  - [Generics--(Parametric Polymorphism)](#generics--parametric-polymorphism)
-
-<!-- /code_chunk_output -->
-
 ## Array **引用数据类型**
 
 - An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created. After creation, its length is fixed.

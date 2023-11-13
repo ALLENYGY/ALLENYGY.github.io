@@ -1,29 +1,5 @@
 # Creating Java Classes
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Creating Java Classes](#creating-java-classes)
-  - [Class and object](#class-and-object)
-    - [Class](#class)
-  - [UML and class diagram](#uml-and-class-diagram)
-    - [Diagram of one class](#diagram-of-one-class)
-  - [Constructor  **构造器**](#constructor--构造器)
-    - [The *new* Operator](#the-new-operator)
-      - [Initialize](#initialize)
-  - [Instance Variables](#instance-variables)
-  - [Local variable](#local-variable)
-  - [Methods](#methods)
-  - [*this* Keyword](#this-keyword)
-    - [*this* Keyword with a field](#this-keyword-with-a-field)
-    - [*this* Keyword with Constructor](#this-keyword-with-constructor)
-    - [*this* Keyword as a method parameter](#this-keyword-as-a-method-parameter)
-  - [Overloading **重载**](#overloading-重载)
-  - [Java access modifiers](#java-access-modifiers)
-
-<!-- /code_chunk_output -->
-
 ## Class and object
 
 - A class is a programmer-defined type.

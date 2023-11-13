@@ -1,28 +1,5 @@
 # Exception Handeling
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Exception Handeling](#exception-handeling)
-  - [Programming Errors](#programming-errors)
-  - [Exceptions](#exceptions)
-    - [Exception Classes 异常类](#exception-classes-异常类)
-      - [Checked and Unchecked Exceptions](#checked-and-unchecked-exceptions)
-        - [Unchecked exceptions\> 不一定发生-----不一定要改，也能运行](#unchecked-exceptions-不一定发生-----不一定要改也能运行)
-      - [Checked Exceptioon\> 一定发生-----一定要改，否则无法运行](#checked-exceptioon-一定发生-----一定要改否则无法运行)
-    - [try-catch-finally \& throw/throws](#try-catch-finally--throwthrows)
-      - [try 把可能发生异常的代码用try{}包裹](#try-把可能发生异常的代码用try包裹)
-      - [catch 捕获特定异常后执行这部分处理](#catch-捕获特定异常后执行这部分处理)
-      - [finally 无论是否捕获异常，最后都进入finally{}](#finally-无论是否捕获异常最后都进入finally)
-      - [throw \& throws 两种方式处理异常](#throw--throws-两种方式处理异常)
-    - [Exception information](#exception-information)
-    - [throws 用于抛出特定的异常，以及自定义异常](#throws-用于抛出特定的异常以及自定义异常)
-      - [Custom new exceptions 新定义一个类继承Exception这个父类](#custom-new-exceptions-新定义一个类继承exception这个父类)
-      - [throws and method overidding](#throws-and-method-overidding)
-
-<!-- /code_chunk_output -->
-
 ## Programming Errors
 
 - Compile-time errors: lexical / syntactic / semantic. ——>语法错误------编译无法通过

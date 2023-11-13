@@ -1,17 +1,5 @@
 # Abstract Methods and Classes Interfaces
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Abstract Methods and Classes Interfaces](#abstract-methods-and-classes-interfaces)
-  - [Abstract Methods](#abstract-methods)
-  - [Interfaces](#interfaces)
-    - [Application](#application)
-  - [Interfaces vs. Abstract Classes](#interfaces-vs-abstract-classes)
-
-<!-- /code_chunk_output -->
-
 ## Abstract Methods
 
 - Some methods should not have code.

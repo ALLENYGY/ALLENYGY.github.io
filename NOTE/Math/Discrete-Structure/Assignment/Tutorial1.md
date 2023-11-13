@@ -2,7 +2,7 @@
 
 ## 1.Question
 
-Assume  is an integer. Prove that if $3n^2 + 2$ is odd,then n is odd.
+Assume is an integer. Prove that if $3n^2 + 2$ is odd, then n is odd.
 $Proof$
 <table>
 <tr>
@@ -24,20 +24,20 @@ $Proof$
 </tr>
 </table>
 
-## 2.Question
+## 2. Question
 
 $\sum_{i=1}^{10} \left[ \frac{i}{2} \right] = \left[\frac{1}{2} \right]+\left[ \frac{2}{2}\right]+...+\left[ \frac{10}{2}\right]$
 &nbsp;&nbsp;&nbsp;&nbsp;$=1+1+2+2+3+3+4+4+5+5$
 &nbsp;&nbsp;&nbsp;&nbsp;$=30$
 
-## 3.Question
+## 3. Question
 
 Prove that $(\alpha \vee(\alpha \wedge \beta) ) \wedge \neg \alpha $ is a tautology.
 $Proof.$
 $\alpha \vee(\alpha \wedge \beta) \wedge \neg \alpha $
-&nbsp;&nbsp;&nbsp;&nbsp;$\equiv(\alpha \wedge T)\vee(\alpha\wedge\beta)\vee\neg\alpha$
-&nbsp;&nbsp;&nbsp;&nbsp;$\equiv(\alpha\wedge(T\vee\beta))\vee\neg\alpha$
-&nbsp;&nbsp;&nbsp;&nbsp;$\equiv(\alpha \wedge(\beta\vee T))\vee\neg\alpha$
-&nbsp;&nbsp;&nbsp;&nbsp;$\equiv(\alpha\wedge T)\vee\neg\alpha$
-&nbsp;&nbsp;&nbsp;&nbsp;$\equiv (\alpha\vee\neg\alpha)$
-&nbsp;&nbsp;&nbsp;&nbsp;$\equiv T $
+$\equiv(\alpha \wedge T)\vee(\alpha\wedge\beta)\vee\neg\alpha$
+$\equiv(\alpha\wedge(T\vee\beta))\vee\neg\alpha$
+$\equiv(\alpha \wedge(\beta\vee T))\vee\neg\alpha$
+$\equiv(\alpha\wedge T)\vee\neg\alpha$
+$\equiv (\alpha\vee\neg\alpha) \equiv T$
+

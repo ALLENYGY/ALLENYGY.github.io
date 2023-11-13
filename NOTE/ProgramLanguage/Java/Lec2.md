@@ -1,30 +1,5 @@
 # *Java Programming Essentials*
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-<!-- - [*Java Programming Essentials*](#java-programming-essentials)
-  - [*Identifiers and Naming*](#identifiers-and-naming)
-  - [*Keywords*](#keywords)
-  - [*Variable Declarations and Assignments*](#variable-declarations-and-assignments)
-    - [*Naming Conventions*](#naming-conventions)
-    - [*Three kinds of variables*](#three-kinds-of-variables)
-  - [*Standard input and output (I/O)*](#standard-input-and-output-io)
-  - [*Data Types*](#data-types)
-    - [*primitive type*](#primitive-type)
-    - [*Reference data type*](#reference-data-type)
-  - [*Variable Initialization*](#variable-initialization)
-  - [*Type Casting*](#type-casting)
-  - [*Arithmetic Expressions and Operators*](#arithmetic-expressions-and-operators)
-  - [*Java Packages*](#java-packages)
-  - [*Flow Control*](#flow-control)
-    - [Condition statement](#condition-statement)
-    - [Loop statement](#loop-statement)
-    - [The break and continue Statements](#the-break-and-continue-statements) -->
-
-<!-- /code_chunk_output -->
-
 ## *Identifiers and Naming*
 
 - A Java identifier must NOT start with a digit, and all the characters must be letters, digits, “$”or“_”

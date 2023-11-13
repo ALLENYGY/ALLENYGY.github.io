@@ -1,27 +1,5 @@
 # Inheritance
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Inheritance](#inheritance)
-  - [Overloading vs Overriding](#overloading-vs-overriding)
-    - [overloading\>重载](#overloading重载)
-    - [overriding\>重写](#overriding重写)
-  - [super keyword 从本类开始回溯直到找到该的方法](#super-keyword-从本类开始回溯直到找到该的方法)
-  - [final modifier](#final-modifier)
-  - [Object class](#object-class)
-    - [toString and equals methods](#tostring-and-equals-methods)
-      - [toString method](#tostring-method)
-      - [equals method](#equals-method)
-      - ["=="方法](#方法)
-    - [Dynamic binding 动态绑定](#dynamic-binding-动态绑定)
-  - [Subtyping polymorphism 子类多态](#subtyping-polymorphism-子类多态)
-  - [Type Casting](#type-casting)
-    - [instanceof](#instanceof)
-
-<!-- /code_chunk_output -->
-
 - Class inheritance is the process by which a new class is created from another class superclass-subclass, parent-child class
   - Allows code to be reused **允许复用**
   - Subclass automatically has all the non-private instance variables and methods of the superclass **子类自动拥有父类非私有实例变量和方法**

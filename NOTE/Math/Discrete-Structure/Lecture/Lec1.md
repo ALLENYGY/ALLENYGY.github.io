@@ -32,6 +32,7 @@
 $$p→q$$
 
 * p when q
+<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/img_1.png' alt='img_1'/>
 <img src="./Images/img_1.png" width="500" height="200" style="text-align: center">
 
 > p is the sufficient condition for q; q is the necessary condition for p
@@ -47,11 +48,12 @@ $$p ↔ q$$
 
 * p if and only if q
 * if p then q
-<img src="./Images/img_2.png" width="500" height="200" style="text-align: center">
+<img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/img_2.png' alt='img_2'/>
+
 
 ### Compound（复合）Propositions
 
-* A compound proposition involves a number of propositional variables and logical operators. <img src="./Images/img_3.png" width="250" height="200" style="text-align: center">
+* A compound proposition involves a number of propositional variables and logical operators. <img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/img_3.png' alt='img_3'/>
 $(p\wedge q)\vee r$ does not mean $p \wedge (q\vee r)$
 
 ## Specification Consistency

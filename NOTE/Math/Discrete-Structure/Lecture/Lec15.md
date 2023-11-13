@@ -14,7 +14,6 @@
   * Useful for timing purpose
   * Not for the logical purpose
 
-<img src="D:\Note\Image\Math\DiscreteStructure\Lecture15\Buffer.png" alt="Buffer" style="zoom:60%;" />
 
 ### Logic Circuit
 

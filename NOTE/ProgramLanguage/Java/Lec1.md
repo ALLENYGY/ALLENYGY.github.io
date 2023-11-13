@@ -1,21 +1,5 @@
 # Unified Modeling Language
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-<!-- - [Unified Modeling Language](#unified-modeling-language)
-  - [UML](#uml)
-  - [Class Diagram](#class-diagram)
-  - [Class Relationship](#class-relationship)
-    - [Association (directional + Multiplicity)](#association-directional--multiplicity)
-    - [Aggregation](#aggregation)
-    - [Composition](#composition)
-    - [Inheritance](#inheritance)
-  - [Realization/Implementation](#realizationimplementation) -->
-
-<!-- /code_chunk_output -->
-
 ## UML
 
 - Class diagrams

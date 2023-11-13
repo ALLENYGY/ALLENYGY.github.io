@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "8fd6cbe6d7a68e29",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ae8a7fe980fb40e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc282d6b41feb867",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Math/Discrete-Structure/Lecture/Lec15.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8eb60c371f90906c",
+    "type": "split",
+    "children": [
+      {
+        "id": "da747fd232674d45",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fad88317487aff7f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e85b685f6c0f86da",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6a8118122a10c937",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0ec28b40457bd90b",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce246d2552507401",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "133440e3a9286a93",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Math/Discrete-Structure/Lecture/Lec15.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "10a7478646e0e849",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Math/Discrete-Structure/Lecture/Lec15.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8ae410e9c709ee0a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c9223a8d590fb1e5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Math/Discrete-Structure/Lecture/Lec15.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "fc282d6b41feb867",
+  "lastOpenFiles": [
+    "Math/Discrete-Structure/Lecture/Lec14.md",
+    "Math/Discrete-Structure/Lecture/Lec11.md",
+    "Math/Discrete-Structure/Lecture/Lec2.md",
+    "Math/Discrete-Structure/Lecture/Homework.md",
+    "Math/Discrete-Structure/Lecture/Lec5.md",
+    "Math/Discrete-Structure/Lecture/Lec1.md",
+    "Math/Discrete-Structure/Assignment/Tutorial1.md",
+    "Math/Discrete-Structure/Assignment/Assignment7.md",
+    "Math/Discrete-Structure/Assignment/Assignment3.md",
+    "Math/Discrete-Structure/Assignment/Assignment5.md",
+    "Math/Discrete-Structure/Assignment/Assignment2.md",
+    "Math/Discrete-Structure/Lecture1/Images/img_1.png",
+    "Math/Discrete-Structure/Lecture/Lec15.md",
+    "Math/Discrete-Structure/Lecture/Lec13.md",
+    "Math/Discrete-Structure/Lecture/Lec12.md",
+    "Math/Discrete-Structure/Lecture/Lec10.md",
+    "Math/Discrete-Structure/Lecture/Lec7.md",
+    "Math/Discrete-Structure/Lecture/Lec6.md",
+    "Math/Discrete-Structure/Lecture",
+    "CO/Lab/Lab3.md",
+    "未命名.canvas",
+    "CO/Lecture/CircuitDesign.md",
+    "ProgramLanguage/README.md",
+    "ProgramLanguage/R/Lec1.md",
+    "ProgramLanguage/Java/Lec6.md",
+    "ProgramLanguage/Java/Lec7.md",
+    "ProgramLanguage/Java/Lec5.md",
+    "ProgramLanguage/Java/Lec3.md",
+    "ProgramLanguage/Java/Lec2.md"
+  ]
+}
