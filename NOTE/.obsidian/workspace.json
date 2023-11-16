@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "0ae8a7fe980fb40e",
+        "id": "d0b74a25d65fcf98",
         "type": "tabs",
         "children": [
           {
-            "id": "fc282d6b41feb867",
+            "id": "397c193412d34600",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Math/Discrete-Structure/Lecture/Lec15.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Math/Discrete-Structure/Lecture/Lec15.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Math/Discrete-Structure/Lecture/Lec15.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Math/Discrete-Structure/Lecture/Lec15.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -145,8 +137,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "fc282d6b41feb867",
+  "active": "397c193412d34600",
   "lastOpenFiles": [
+    "Math/Discrete-Structure/Lecture/Lec15.md",
     "Math/Discrete-Structure/Lecture/Lec14.md",
     "Math/Discrete-Structure/Lecture/Lec11.md",
     "Math/Discrete-Structure/Lecture/Lec2.md",
@@ -159,7 +152,6 @@
     "Math/Discrete-Structure/Assignment/Assignment5.md",
     "Math/Discrete-Structure/Assignment/Assignment2.md",
     "Math/Discrete-Structure/Lecture1/Images/img_1.png",
-    "Math/Discrete-Structure/Lecture/Lec15.md",
     "Math/Discrete-Structure/Lecture/Lec13.md",
     "Math/Discrete-Structure/Lecture/Lec12.md",
     "Math/Discrete-Structure/Lecture/Lec10.md",
