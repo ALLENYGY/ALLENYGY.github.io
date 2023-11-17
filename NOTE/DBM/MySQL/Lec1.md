@@ -28,13 +28,35 @@ If a tuple satisfies the predicate, show the values of the attributes in the SEL
 “exp” is an arithmetic expression which contains attributes and constants.
 
 For example
+```txt
+rental_rate < 1
+```
 
-- rental_rate < 1
-
-3. A predicate can also be a composition of terms.
+1. A predicate can also be a composition of terms.
 
 ```pseudocode
   pred = NOT pred
   pred = pred AND pred
   pred = pred OR pred
 ```
+
+NOT, AND, OR are logical operators.
+For example,
+```txt
+NOT rental_rate < 1
+(NOT rental_rate < 1) AND release_year = 2006
+```
+
+```sql
+SELECT * FROM film WHERE rating="PG-13"
+```
+SQL is case insensitive.
+However, to make query readable, we write
+key words (like SELECT, FROM, etc.) in capital;
+attributes and tables in lower cases; and string constant in the original form.
+
+In general, a basic query is in the form
+```sql
+SELECT 𝑎1,⋯,𝑎n FROM 𝑟 WHERE 𝑃
+```
+where a_1,⋯,a_n are attributes; r is a table; and P is a predicate.
