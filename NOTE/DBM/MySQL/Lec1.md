@@ -57,6 +57,6 @@ attributes and tables in lower cases; and string constant in the original form.
 
 In general, a basic query is in the form
 ```sql
-SELECT 𝑎1,⋯,𝑎n FROM 𝑟 WHERE 𝑃
+SELECT 𝑎1,⋯,𝑎n FROM r WHERE P
 ```
 where a_1,⋯,a_n are attributes; r is a table; and P is a predicate.
