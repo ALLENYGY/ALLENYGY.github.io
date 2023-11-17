@@ -17,3 +17,5 @@ Here is my DBM Note in UIC!
 ### [Logical Design](Lecture/Lec6)
 
 ## MySQL
+
+### [Basic MySQL](MySQL/Lec1)

@@ -138,14 +138,26 @@ module.exports = {
               text: "Entity-Relationship Model Extended Features",
               link: "DBM/Lecture/Lec3",
             },
+            {
+              text: "Design issue",
+              link: "DBM/Lecture/Lec4",
+            },
+            {
+              text: "Design issue",
+              link: "DBM/Lecture/Lec4",
+            },
+            {
+              text: "Logical Design",
+              link: "DBM/Lecture/Lec6",
+            },
           ],
         },
         {
           text: "Mysql",
           sublink: [
-            { text: "Chapter1", link: "DBM/Lecture/Lec1" },
-            { text: "Chapter2", link: "DBM/Lecture/Lec2" },
-            { text: "Chapter3", link: "DBM/Lecture/Lec3" },
+            { text: "Basic MySQL", link: "DBM/MySQL/Lec1" },
+            // { text: "Chapter2", link: "DBM/Lecture/Lec2" },
+            // { text: "Chapter3", link: "DBM/Lecture/Lec3" },
           ],
         },
       ],
