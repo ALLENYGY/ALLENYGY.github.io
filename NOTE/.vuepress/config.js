@@ -29,13 +29,13 @@ module.exports = {
     extractHeaders: ["h2", "h3", "h4", "h5"],
   },
   themeConfig: {
-    hero_title: "Welcome to my Blog!",
-    hero_button: { name: "Start", link: "ProgramLanguage" },
-    hero_link: {
+    cta_title: "Welcome to my Blog!",
+    cta_button: { name: "Start", link: "ProgramLanguage" },
+    cta_link: {
       name: "My Adventure",
       link: "https://www.harkerbest.cn/p/781/",
     },
-    hero_description_html: `      <span>
+    cta_description_html: `      <span>
       The <span style="color: rgb(14 165 233)">AllenYGY'Blog</span> 
       lets you efficiently Learn personal knowledge computer science
        <span style="color: rgb(14 165 233)">with</span> zero basis, 
@@ -46,15 +46,33 @@ module.exports = {
     icon: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Logo.jpg",
     // icon: "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
 
-    nav: [
-      { text: "计算机组成原理", link: "CO" },
-      { text: "编程语言", link: "ProgramLanguage" },
-      { text: "数学", link: "Math" },
-      { text: "数据库", link: "DBM" },
-      { text: "数据分析", link: "DataAnalysis" },
-      { text: "其他", link: "Others" },
-      // { text: "MRJ多看看!!!", link: "MRJGYP" },
-    ],
+    // nav: [
+    nav: {
+      '计算机组成原理': "CO",
+      '编程语言': "ProgramLanguage",
+      '数学': "Math",
+      '数据库': "DBM",
+      '数据分析': "DataAnalysis",
+      '其他': "Others",
+
+      // '数据分析': {
+      //   新版本: {
+      //     "v1.3.1": "",
+      //     "v1.3.0": "v/1.3.0",
+      //   },
+      //   旧版本: {
+      //     "v1.2.5": "v/old",
+      //   },
+      // },
+    },
+    // { text: "计算机组成原理", link: "CO" },
+    // { text: "编程语言", link: "ProgramLanguage" },
+    // { text: "数学", link: "Math" },
+    // { text: "数据库", link: "DBM" },
+    // { text: "数据分析", link: "DataAnalysis" },
+    // { text: "其他", link: "Others" },
+    // { text: "MRJ多看看!!!", link: "MRJGYP" },
+    // ],
     group: {
       CO: [
         { text: "Computer", link: "CO/Lecture/Lec1" },

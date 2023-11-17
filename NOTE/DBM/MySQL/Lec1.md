@@ -28,7 +28,8 @@ If a tuple satisfies the predicate, show the values of the attributes in the SEL
 “exp” is an arithmetic expression which contains attributes and constants.
 
 For example
-```txt
+
+```sql
 rental_rate < 1
 ```
 
@@ -42,7 +43,8 @@ rental_rate < 1
 
 NOT, AND, OR are logical operators.
 For example,
-```txt
+
+```sql
 NOT rental_rate < 1
 (NOT rental_rate < 1) AND release_year = 2006
 ```
@@ -57,6 +59,6 @@ attributes and tables in lower cases; and string constant in the original form.
 
 In general, a basic query is in the form
 ```sql
-SELECT 𝑎1,⋯,𝑎n FROM r WHERE P
+SELECT a1,⋯,an FROM r WHERE P
 ```
-where a_1,⋯,a_n are attributes; r is a table; and P is a predicate.
+where $a_1,⋯,a_n$ are attributes; r is a table; and P is a predicate.
