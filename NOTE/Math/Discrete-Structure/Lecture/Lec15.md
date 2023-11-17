@@ -14,7 +14,6 @@
   * Useful for timing purpose
   * Not for the logical purpose
 
-
 ### Logic Circuit
 
 <img src="D:\Note\Image\Math\DiscreteStructure\Lecture15\LogicCircuit01.png" alt="Logic Circuit_1" style="zoom: 67%;" />

@@ -36,3 +36,16 @@ FROM customer JOIN address ON customer.address_id = address.address_id AND custo
 SELECT first_name, last_name, address, district, postal_code
 FROM customer JOIN address USING (address_id, last_update)
 ```
+
+### JOIN
+
+- A JOIN without any condition is same as a cartesian product.
+Sometimes more than two tables are joined together.
+
+```sql
+  SELECT *FROM table1 NATURAL JOIN table2 NATURAL JOIN table3
+```
+The query is understood as
+```sql
+  SELECT* FROM (table1 NATURAL JOIN table2) NATURAL JOIN table3
+```
