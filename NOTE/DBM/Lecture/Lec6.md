@@ -70,3 +70,10 @@ If the ISA relationship set is disjoint and total
 - one schema is constructed for each entity set on the lower level, inheriting all attribute from the higher-level entity set.
 $student=(\underline{id},name,year,GPA)$
 $instructor=(\underline{id},name,title,salary)$
+
+## Aggregation
+Aggregations are treated same as other relationship sets.
+For example, the schema for “enroll” has the key of “instructor”, “student”, and “section”.
+Then, “doing” is a binary many-to-many relationship set. And the method for case 1 can be applied.
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/RE/Aggregation.png"/>
+$doing=(\underline{student\_id},\underline{instructor\_id},\underline{course\_name},\underline{section\_number},\underline{project\_id})$
