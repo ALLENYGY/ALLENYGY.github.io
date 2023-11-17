@@ -48,3 +48,25 @@ the entity set with total participation on the “many” side (case 9 and 10)
 
 If an entity set has composite attributes, composite attributes are directly substituted by the component attributes.
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER/Composite.png"/>
+
+## ISA Relationship Sets
+
+如果身份重叠则建 高一级 父表
+
+- If the ISA relationship set is overlapping or partial
+
+the schema for the higher-level entity set is like other strong entity sets;
+the schema for the lower-level entity set only consists of the attributes of this lower-level entity set and the key of the higher-level entity set;
+the key of the higher-level entity set is also the key of the lower-level entity set.
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER/ISA.png"/>
+$person=(\underline{id}, name)$
+$student=(\underline{id},year,GPA)$
+$instructor=(\underline{id},title,salary)$
+
+否则不建表
+If the ISA relationship set is disjoint and total
+
+- no need to create a schema for the entity set on the higher level;
+- one schema is constructed for each entity set on the lower level, inheriting all attribute from the higher-level entity set.
+$student=(\underline{id},name,year,GPA)$
+$instructor=(\underline{id},name,title,salary)$
