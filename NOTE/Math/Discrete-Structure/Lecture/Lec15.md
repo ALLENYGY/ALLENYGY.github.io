@@ -69,4 +69,3 @@
 <img src="D:\Note\Image\Math\DiscreteStructure\Lecture15\KM3.png" alt="KM_3" style="zoom:80%;" />
 
 <img src="D:\Note\Image\Math\DiscreteStructure\Lecture15\KM4.png" alt="KM_4" style="zoom:80%;" />
-1
