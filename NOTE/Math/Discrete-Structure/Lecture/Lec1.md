@@ -33,7 +33,8 @@ $$p→q$$
 
 * p when q
 <img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/img_1.png' alt='img_1'/>
-<img src="./Images/img_1.png" width="500" height="200" style="text-align: center">
+
+<!-- <img src="./Images/img_1.png" width="500" height="200" style="text-align: center"> -->
 
 > p is the sufficient condition for q; q is the necessary condition for p
     * False always true
@@ -50,7 +51,6 @@ $$p ↔ q$$
 * if p then q
 <img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/img_2.png' alt='img_2'/>
 
-
 ### Compound（复合）Propositions
 
 * A compound proposition involves a number of propositional variables and logical operators. <img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/img_3.png' alt='img_3'/>
@@ -60,3 +60,4 @@ $(p\wedge q)\vee r$ does not mean $p \wedge (q\vee r)$
 
 * Equivalently, if a specification {$p_1,p_2,...p_n$} is consistent, then the compound proposition $p_1\wedge p_2\wedge...\wedge p_n$ is true for at least one assignment
 * If the specification is inconsistent, then $p_1\wedge p_2\wedge...\wedge p_n$ is always false.
+1
