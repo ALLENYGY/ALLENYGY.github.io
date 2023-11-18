@@ -1,8 +1,36 @@
 # Data Modification
 
-- insert
-- delete
-- update
+- INSERT
+
+```sql
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES
+    (value1_1, value1_2, value1_3, ...),
+    (value2_1, value2_2, value2_3, ...),
+    ...
+```
+
+```sql
+INSERT INTO destination_table (column1, column2, ...)
+SELECT column1, column2, ...
+FROM source_table
+WHERE conditions;
+```
+
+- UPDATE
+
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+```
+
+- DELETE
+
+```sql
+DELETE FROM table_name
+WHERE condition;
+```
 
 Usually, database users are only allowed to change data (table rows), which is covered by this lab.
 Table columns are related to the logical design and are managed by database managers.
