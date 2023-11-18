@@ -81,7 +81,7 @@ module.exports = {
           "Entity-Relationship Model Constraints":"DBM/Lecture/Lec2",
           "Entity-Relationship Model Extended Features":"DBM/Lecture/Lec3",
           "Design issue":"DBM/Lecture/Lec4",
-          "Design issue":"DBM/Lecture/Lec4",
+          // "Design issue":"DBM/Lecture/Lec4",
           "Logical Design":"DBM/Lecture/Lec6",
           "KEY Concept": "DBM/Lecture/Key-concept",
 
@@ -202,13 +202,17 @@ module.exports = {
               text: "Design issue",
               link: "DBM/Lecture/Lec4",
             },
-            {
-              text: "Design issue",
-              link: "DBM/Lecture/Lec4",
-            },
+            // {
+            //   text: "Design issue",
+            //   link: "DBM/Lecture/Lec4",
+            // },
             {
               text: "Logical Design",
               link: "DBM/Lecture/Lec6",
+            },
+            {
+              text: "KEY Concept",
+              link: "DBM/Lecture/Key-concept",
             },
           ],
         },
