@@ -1,7 +1,7 @@
 # Entity-Relationship Model Constraints
 
-- Cardinality Constraints  **基数约束**
-- Participation Constraints **参与约束**
+- Cardinality Constraints  **基数约束** (one-one/one-many/many-many)
+- Participation Constraints **参与约束** (for all/some)
 - Constraints for Ternary Relationship Sets **三元关系集的约束**
 
 ## Motivation
@@ -24,14 +24,15 @@ Two types of constraints
 
 ## Cardinality Constraints
 
-To express the cardinality constraints, ER diagrams use an arrow (→) pointing to the one side.
-For the many side, the links simply have no arrow (−).
+To express the cardinality constraints.
+ER diagrams use an arrow $\rightarrow$ pointing to the one side.
+For the many side, the links simply have no arrow ($——$).
 
-### **One-to-many** relationship
+### **One-to-Many** relationship
 
 - An example for Cardinality Constraints One to many relationships:
   
-![Many-to-one](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER-Many-to-one.png)
+![Many-to-one](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER/Many-to-one.png)
 
 >Many student can only have one program
 
@@ -42,13 +43,13 @@ Here are some conditions for the example:
 
 A one-to-many relationship is the reverse of many-to-one.
 
-### **One-to-one** relationship
+### **One-to-One** relationship
 
 One entity from one entity set is associated with at most one entity from the other entity set and vice versa.
 
 - For example, one instructor can be the program director of at most one program, and one program has at most one program director.
 
-![One-to-one](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER-One-to-one.png)
+![One-to-one](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER/One-to-one.png)
 
 ### **Many-to-many** relationship
 
@@ -89,3 +90,8 @@ But every program has a program director.
 
 we usually avoid using constraints on ternary relationship sets.
 If expressing constraints is important, ternary relationship sets can always be converted into several binary ones.
+
+Non-binary relationships with constrains is complex.
+
+- Not suggested to use constraints on non-binary relationships (ambiguous)
+- See lecture: convert non-binary to binary
