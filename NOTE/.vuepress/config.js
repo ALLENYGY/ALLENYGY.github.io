@@ -83,6 +83,8 @@ module.exports = {
           "Design issue":"DBM/Lecture/Lec4",
           "Design issue":"DBM/Lecture/Lec4",
           "Logical Design":"DBM/Lecture/Lec6",
+          "KEY Concept": "DBM/Lecture/Key-concept",
+
         },
         'MySQL':{
           "Basic MySQL": "DBM/MySQL/Lab1",

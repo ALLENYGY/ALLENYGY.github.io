@@ -29,3 +29,5 @@ Here is my DBM Note in UIC!
 ### [Data Definition](MySQL/Lab5)
 
 ### [Data Modification](MySQL/Lab6)
+
+### [KEY Concept](MySQL/Key-concept)
