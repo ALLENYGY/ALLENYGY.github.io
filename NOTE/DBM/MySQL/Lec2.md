@@ -4,6 +4,7 @@
 
 ## Cross table
 
+The crossing of tables is the cartesian product of them.
 Equivalent to querying from a (temporary) table A×B, the cartesian product of A and B.
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/Crosstable.png"/>
 
