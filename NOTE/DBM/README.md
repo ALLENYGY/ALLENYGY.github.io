@@ -23,3 +23,9 @@ Here is my DBM Note in UIC!
 ### [Cross table query](MySQL/Lec2)
 
 ### [Join](MySQL/Lec3)
+
+### [Aggregation](MySQL/Lec4)
+
+### [Data Definition](MySQL/Lec5)
+
+### [Data Modification](MySQL/Lec6)
