@@ -121,3 +121,26 @@ SELECT * FROM person NATURAL FULL OUTER JOIN address
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/FULLOUTERJOIN.png"/>
 
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/JOIN.png"/>
+
+- 语法塘
+
+```sql
+SELECT __
+FROM A JOIN B USING(attribute 1,....)
+WHERE 
+HAVING
+```
+
+```sql
+SELECT __
+FROM A NATURAL JOIN()
+WHERE
+HAVING
+```
+
+```sql
+SELECT __
+FROM A LEFT OUTER JOIN B USING(attribute 1)
+WHERE ___
+HAVING 
+```
