@@ -18,14 +18,14 @@ Here is my DBM Note in UIC!
 
 ## MySQL
 
-### [Basic MySQL](MySQL/Lec1)
+### [Basic MySQL](MySQL/Lab1)
 
-### [Cross table query](MySQL/Lec2)
+### [Cross table query](MySQL/Lab2)
 
-### [Join](MySQL/Lec3)
+### [Join](MySQL/Lab3)
 
-### [Aggregation](MySQL/Lec4)
+### [Aggregation](MySQL/Lab4)
 
-### [Data Definition](MySQL/Lec5)
+### [Data Definition](MySQL/Lab5)
 
-### [Data Modification](MySQL/Lec6)
+### [Data Modification](MySQL/Lab6)
