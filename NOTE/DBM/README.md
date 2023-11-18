@@ -19,3 +19,7 @@ Here is my DBM Note in UIC!
 ## MySQL
 
 ### [Basic MySQL](MySQL/Lec1)
+
+### [Cross table query](MySQL/Lec2)
+
+### [Join](MySQL/Lec3)

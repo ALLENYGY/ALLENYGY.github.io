@@ -175,6 +175,7 @@ module.exports = {
           sublink: [
             { text: "Basic MySQL", link: "DBM/MySQL/Lec1" },
             { text: "Cross table query", link: "DBM/MySQL/Lec2" },
+            { text: "Join", link: "DBM/MySQL/Lec3" },
             // { text: "Chapter3", link: "DBM/Lecture/Lec3" },
           ],
         },
