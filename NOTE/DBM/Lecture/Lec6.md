@@ -44,6 +44,9 @@ the entity set with total participation on the “many” side (case 9 and 10)
 对于情况9，10把外键放在多的一侧
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER-Remancase.png"/>
 
+有many放many
+没many两边都放
+
 ## Composite Attribute
 
 If an entity set has composite attributes, composite attributes are directly substituted by the component attributes.
