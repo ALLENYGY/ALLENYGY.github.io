@@ -48,22 +48,62 @@ module.exports = {
 
     // nav: [
     nav: {
-      '计算机组成原理': "CO",
-      '编程语言': "ProgramLanguage",
+      '计算机组成原理': {
+        "Computer": "CO/Lecture/Lec1",
+        "Bits: Data Representation and Manipulation": "CO/Lecture/Lec2",
+        "Boolean Algebra: From Bits to Logic":"CO/Lecture/Lec3",
+        "From Transistors to Gates": "CO/Lecture/Lec4",
+        "From Gates to Circuits I: Combinational Circuits": "CO/Lecture/Lec5",
+        "From Gates to Circuits II: Sequential Circuits": "CO/Lecture/Lec6",
+        "Finite State Machine":"CO/Lecture/Lec7",
+        "Circuit Design": "CO/Lecture/CircuitDesign",
+      },
+      '编程语言':{
+        "Java":{
+            "Java Introduction":"ProgramLanguage/Java/Lec0",
+            "Unified Modeling Language":"ProgramLanguage/Java/Lec1",
+            "Java Programming Essentials": "ProgramLanguage/Java/Lec2",
+            "Creating Java Classes": "ProgramLanguage/Java/Lec3",
+            "Inheritance": "ProgramLanguage/Java/Lec4",
+            "Abstract Methods and Classes Interfaces": "ProgramLanguage/Java/Lec5",
+            "Exception Handeling": "ProgramLanguage/Java/Lec6",
+            "Array and Generics": "ProgramLanguage/Java/Lec7",
+        },
+        "R":{
+          "R Basic": "ProgramLanguage/R/Lec1" ,
+          "R Data Structure": "ProgramLanguage/R/Lec2",
+        }
+      },
       '数学': "Math",
-      '数据库': "DBM",
+      '数据库': {
+        '数据库设计':{
+          "Entity-Relationship Model Modeling":"DBM/Lecture/Lec1",
+          "Entity-Relationship Model Constraints":"DBM/Lecture/Lec2",
+          "Entity-Relationship Model Extended Features":"DBM/Lecture/Lec3",
+          "Design issue":"DBM/Lecture/Lec4",
+          "Design issue":"DBM/Lecture/Lec4",
+          "Logical Design":"DBM/Lecture/Lec6",
+        },
+        'MySQL':{
+          "Basic MySQL": "DBM/MySQL/Lec1",
+          "Cross table query": "DBM/MySQL/Lec2",
+          "Join": "DBM/MySQL/Lec3",
+          "Aggregation": "DBM/MySQL/Lec4",
+          "Data Definition": "DBM/MySQL/Lec5",
+          "Data Modification": "DBM/MySQL/Lec6",
+        }
+      },
+      // "DBM",
       '数据分析': "DataAnalysis",
-      '其他': "Others",
-
-      // '数据分析': {
-      //   新版本: {
-      //     "v1.3.1": "",
-      //     "v1.3.0": "v/1.3.0",
-      //   },
-      //   旧版本: {
-      //     "v1.2.5": "v/old",
-      //   },
-      // },
+      '其他': {
+           "Git":{
+            "Git Introduction": "Others/Git/Git-Introduction" ,
+            "Git Basic":"Others/Git/Git",
+           },
+           "Conda":{
+            "Basic Conda": "Others/Conda/Conda",
+           }
+      },  
     },
     // { text: "计算机组成原理", link: "CO" },
     // { text: "编程语言", link: "ProgramLanguage" },
