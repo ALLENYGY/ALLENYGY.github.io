@@ -16,6 +16,9 @@ Here is my DBM Note in UIC!
 
 ### [Logical Design](Lecture/Lec6)
 
+### [KEY Concept](Lecture/Key-concept)
+
+
 ## MySQL
 
 ### [Basic MySQL](MySQL/Lab1)
@@ -29,5 +32,3 @@ Here is my DBM Note in UIC!
 ### [Data Definition](MySQL/Lab5)
 
 ### [Data Modification](MySQL/Lab6)
-
-### [KEY Concept](MySQL/Key-concept)
