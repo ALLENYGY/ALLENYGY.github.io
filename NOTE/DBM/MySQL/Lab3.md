@@ -1,5 +1,49 @@
 # Join
 
+- NATURAL JOIN
+
+```sql
+SELECT *
+FROM table1
+NATURAL JOIN table2;
+```
+
+默认JOIN所有共同的attribute
+
+- JOIN ON
+
+```sql
+SELECT *
+FROM table1
+JOIN table2 ON table1.column_name = table2.column_name
+JOIN table3 ON table2.column_name = table3.column_name;
+```
+
+- JOIN USING
+
+```sql
+SELECT *
+FROM table1
+JOIN table2 USING (column_name)
+JOIN table3 USING (column_name);
+```
+
+- LEFT/RIGHT/FULL JOIN
+
+```sql
+SELECT *
+FROM left_table
+LEFT JOIN right_table ON left_table.column_name = right_table.column_name;
+
+SELECT *
+FROM table1
+RIGHT JOIN table2 ON table1.column_name = table2.column_name;
+
+SELECT *
+FROM table1
+FULL JOIN table2 ON table1.column_name = table2.column_name;
+```
+
 - Are you tired of condition checking in cross table queries?
 
 The NATURAL JOIN operator associates two tables by the common attributes.
@@ -121,26 +165,3 @@ SELECT * FROM person NATURAL FULL OUTER JOIN address
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/FULLOUTERJOIN.png"/>
 
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/JOIN.png"/>
-
-- 语法塘
-
-```sql
-SELECT __
-FROM A JOIN B USING(attribute 1,....)
-WHERE 
-HAVING
-```
-
-```sql
-SELECT __
-FROM A NATURAL JOIN()
-WHERE
-HAVING
-```
-
-```sql
-SELECT __
-FROM A LEFT OUTER JOIN B USING(attribute 1)
-WHERE ___
-HAVING 
-```
