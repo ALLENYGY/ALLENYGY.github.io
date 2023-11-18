@@ -1,5 +1,12 @@
 # Aggregation
 
+```sql
+SELECT column_name(s), COUNT(*)
+FROM table_name
+GROUP BY column_name(s)
+HAVING condition;
+```
+
 - “Aggregation” means performing some operations on a group of objects.
 
 COUNT: count the value
@@ -62,7 +69,7 @@ HAVING COUNT(film_id)>3;
 5. Check the condition in HAVING clause
 6. Output the selected attributes
 
-## Distinct
+## DISTINCT
 
 Assuming that every country has a city. Why the following query cannot find the number of countries?
 

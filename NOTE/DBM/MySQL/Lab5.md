@@ -6,6 +6,30 @@
 - Attributes and their types
 - Constraints
 
+```sql
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    department VARCHAR(100),
+    salary DECIMAL(10, 2) NOT NULL
+);
+```
+
+```sql
+CREATE TABLE table_name (
+    column1 datatype constraints,
+    column2 datatype constraints,
+    ...
+    PRIMARY KEY (column_name(s)),
+    FOREIGN KEY (column_name) REFERENCES other_table_name(column_name)
+);
+```
+
+```sql
+ALTER TABLE borrow ADD FOREIGN KEY (ISBN) REFERENCES books(ISBN)
+```
+
 ## CREATE
 
 - create database
@@ -48,6 +72,9 @@ CREATE TABLE table_name (
 | time |in ‘HH:MM:SS’ format.|
 | blob |binary large object, usually for images.|
 | clob |character large object, usually for long text.|
+
+VARCHAR 不定长
+CHAR 定长
 
 ## Constraints
 
