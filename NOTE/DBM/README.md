@@ -12,9 +12,7 @@ Here is my DBM Note in UIC!
 
 ### [Design Issues](Lecture/Lec4)
 
-<!-- ### [Design Issues](Lecture/Lec6) -->
-
-### [Logical Design](Lecture/Lec6)
+### [Logical Design](Lecture/Lec5)
 
 ### [KEY Concept](Lecture/Key-concept)
 

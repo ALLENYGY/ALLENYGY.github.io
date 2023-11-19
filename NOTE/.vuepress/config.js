@@ -202,13 +202,9 @@ module.exports = {
               text: "Design issue",
               link: "DBM/Lecture/Lec4",
             },
-            // {
-            //   text: "Design issue",
-            //   link: "DBM/Lecture/Lec4",
-            // },
             {
               text: "Logical Design",
-              link: "DBM/Lecture/Lec6",
+              link: "DBM/Lecture/Lec5",
             },
             {
               text: "KEY Concept",
