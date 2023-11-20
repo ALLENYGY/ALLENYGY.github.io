@@ -8,6 +8,9 @@
 - I/O
 
 Take Lc-3 for example
+
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/Lc-3.png"/>
+
 ## Memory
 
 - Address space $2^{16}$
@@ -66,10 +69,10 @@ Closer to processing unit, allow quicker access to intermediate results instead 
 
 Perform arithmetic and logic operations (AND, NOT, ADD) on values stored in registers
 
-- ADD  {0 0}
-- AND  {0 1}
-- NOT A {1 0}
-- PASS A {1 1}
+- ADD  
+- AND  
+- NOT A
+- PASS A
 
 ### CU
 
@@ -148,4 +151,106 @@ LDR DST SRC offset
 0110 xxx xxx xxxxxx
 ```
 
+## Instruction processsing
 
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/instruction-process.png"/>
+
+### Fetch
+
+PC-MAR-MDR-IR
+
+Load next instruction (at address stored in PC)
+from memory into Instruction Register (IR).
+
+- Load contents of PC into MAR.
+- Send “read” signal to memory.
+- Read contents of MDR, store in IR.
+
+Then increment PC, so that it points to the next instruction in sequence.
+
+- PC becomes PC+1.
+
+### Decode
+
+First identify the opcode.
+
+- In LC-3, this is always the first four bits of instruction.
+- A 4-to-16 decoder asserts a control line corresponding to the desired opcode.
+
+### Evaluate Address *计算地址*
+
+- For instructions that require memory access, compute address used for access.
+- Examples:
+  - add offset to base register (as in LDR)
+  - add offset to PC (or to part of PC)
+
+### Fetch Operands
+
+- Obtain source operands needed to perform operation.
+- Examples:
+  - load data from memory (LDR)
+  - read data from register file (ADD)
+
+### Execution
+
+- Perform the operation, using the source operands.
+- Examples:
+  - send operands to ALU and assert ADD signal
+  - do nothing (e.g., for loads and stores)
+
+### Store
+
+- Write results to destination (register or memory)
+- Examples:
+  - result of ADD is placed in destination register
+  - result of memory load is placed in destination register
+- for store instruction, data is stored to memory
+
+## Changing the Sequence of Execution
+
+- In the FETCH phase, PC is incremented by 1 automatically (counter)
+- Other Sequence
+  - if-then, loop, function call
+  - Achieved by special instruction that changes the content of PC
+    - Jumps (unconditionals)
+    - Branches (conditional)
+
+### LC-3's Jump Instruction
+
+Set the PC to the value obtained by adding an offset to a register.
+```ISA
+JMPR 000 BASE offset
+1100 000 011 000110
+```
+Add the value of 6 (offset) to the contents of R3 (Base),and load the result into the PC
+
+This becomes the address of the next instruction to fetch.
+
+### Driving Force: the Clock
+
+The clock is a signal that keeps the control unit moving.
+
+- At each clock “tick,” control unit moves to the next machine cycle -- may be next instruction or next phase of current instruction.
+
+- Stopping the Computer
+  - Stopping the instruction cycle requires stopping the clock
+
+## Instruction summary
+
+- Three basic kinds of instructions:
+  - computational instructions (ADD, AND, …)
+  - data movement instructions (LD, ST, …)
+  - control instructions (JMP, BRnz, …)
+
+## Micro-Architecture Level
+
+- Computer = processing unit + memory system + I/O
+  - Processing unit = control + data path
+    - Control = FSM *Finite state machine*
+      - Inputs = machine instruction,datapath condition
+      - Outputs = register transfer control signal, ALU operation codes
+      - Instruction interpretation = instruction fetch, decode, execute, write
+    - Datapath = function units +registers
+      - All logic used to process information
+        - Functional units = ALU, multipliers,dividers...
+        - Register = PC *program counter*, IR *instruction register*, storage registers

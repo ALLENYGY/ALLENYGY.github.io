@@ -17,3 +17,5 @@ Here is my CO Note in UIC!
 ## [Finite State Machine](CO/Lecture/Lec7.md)
 
 ## [Circuit Design](Lecture/CircuitDesign)
+
+## [Microarchitecture](CO/Lecture/Lec8.md)

@@ -57,6 +57,8 @@ module.exports = {
         "From Gates to Circuits II: Sequential Circuits": "CO/Lecture/Lec6",
         "Finite State Machine":"CO/Lecture/Lec7",
         "Circuit Design": "CO/Lecture/CircuitDesign",
+        "Microarchitecture":"CO/Lecture/Lec8",
+
       },
       '编程语言':{
         "Java":{
@@ -142,6 +144,10 @@ module.exports = {
         {
           text: "Circuit Design",
           link: "CO/Lecture/CircuitDesign",
+        },
+        {
+          text: "Microarchitecture",
+          link: "CO/Lecture/Lec8",
         },
       ],
       ProgramLanguage: [
