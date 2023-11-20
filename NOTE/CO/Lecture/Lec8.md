@@ -98,3 +98,40 @@ IR Get the Instruction from Memory through PC's address
 - Finite state machine
 
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/FSM.png"/>
+
+## Instruction
+
+- The instruction is the most basic unit of computer processing.
+- One instruction specifies two things:
+  - opcode: operation to be performed
+  - operands: data/locations to be used for operation
+- An instruction is encoded as a sequence of bits (just like data!)
+- Control unit interprets instruction
+- A computer’s instructions and their formats is known as its Instruction Set Architecture (ISA).
+
+### Lc-3's ADD Instruction
+
+- opcode: 0001
+- steering bit IR[5]
+
+If IR[5]=0
+
+```ISA
+ADD DST SR1 000 SR2
+0001 xxx xxx 000 xxx
+```
+
+- operands: Src1,Src2,Dst
+  - Src1+Src2->Dst
+
+If IR[5]=1
+
+```ISA
+ADD DST SR1 1 xxxxx
+0001 xxx xxx 1 xxxxx
+```
+
+- operands: Src1,Dst,xxxxx
+  - Src1+xxxxx->Dst
+
+### LC-3's LDR Instruction
