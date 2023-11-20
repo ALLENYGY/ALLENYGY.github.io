@@ -135,3 +135,17 @@ ADD DST SR1 1 xxxxx
   - Src1+xxxxx->Dst
 
 ### LC-3's LDR Instruction
+
+- opcode: 0110
+- operands: Src,Dst
+
+- Load the value in memory location Src into register Dst
+- Move [Base + Offset] to Dst
+- Load memory content at address (R3 + 6) to R2
+
+```ISA
+LDR DST SRC offset
+0110 xxx xxx xxxxxx
+```
+
+
