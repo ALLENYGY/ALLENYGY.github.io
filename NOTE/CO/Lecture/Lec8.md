@@ -2,15 +2,17 @@
 
 - Memory
 - CPU
+  - Register
   - ALU
   - CU
-- Take Lc-3 for example
+- I/O
 
+Take Lc-3 for example
 ## Memory
 
-- Address space $2^16$
-  - means: there are $2^16$ block
-- Addressability $2^16$
+- Address space $2^{16}$
+  - means: there are $2^{16}$ block
+- Addressability $16$
 - Each block store 16-bit instruction
   - Each block represent by a Hexadecimal code
     - x0000
@@ -39,15 +41,6 @@
   - Control Path
     - IR (instruction register), PC (program counter), FSM (finite state machine)
 
-### ALU *Arithmetic Logic Unit*
-
-Perform arithmetic and logic operations (AND, NOT, ADD) on values stored in registers
-
-- ADD  {0 0}
-- AND  {0 1}
-- NOT A {1 0}
-- PASS A {1 1}
-
 ### Register *Register File*
 
 - Register is store element
@@ -69,6 +62,15 @@ Perform arithmetic and logic operations (AND, NOT, ADD) on values stored in regi
 - Why register?
 Closer to processing unit, allow quicker access to intermediate results instead of going to memory
 
+### ALU *Arithmetic Logic Unit*
+
+Perform arithmetic and logic operations (AND, NOT, ADD) on values stored in registers
+
+- ADD  {0 0}
+- AND  {0 1}
+- NOT A {1 0}
+- PASS A {1 1}
+
 ### CU
 
 Control Unit: a finite state machine coordinates execution of the program
@@ -81,5 +83,18 @@ IR Get the Instruction from Memory through PC's address
   - In x86 architecture also called IP *Instruction Pointer*
 - IR *Instruction Register*
   - Current Instruction
+- Control Unit as a Finite State Machine
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/CU-FSM.png"/>
 
 ## I/O
+
+- Devices for getting data into and out of memory
+- Each device has its own interface, usually a set of registers like the memory’s MAR and MDR
+  - keyboard: data register (KBDR) and status register (KBSR)
+  - console: data register (DDR) and status register (DSR)
+
+## Lc-3
+
+- Finite state machine
+
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/FSM.png"/>
