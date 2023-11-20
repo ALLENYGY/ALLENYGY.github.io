@@ -4,7 +4,6 @@
 - CPU
   - ALU
   - CU
-
 - Take Lc-3 for example
 
 ## Memory
@@ -30,15 +29,26 @@
 2. MDR: Memory Data Register (D flip-flops)
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/MAR-MDR.png"/>
 
-## ALU *Arithmetic Logic Unit*
+## CPU
 
-- Funtion
-  - ADD  {0 0}
-  - AND  {0 1}
-  - NOT A {1 0}
-  - PASS A {1 1}
+- The brain of the computer
+- It is the part that actually executes the machine instructions
+- Inside the CPU
+  - Data path
+    - Registers
+  - Control Path
+    - IR (instruction register), PC (program counter), FSM (finite state machine)
 
-## Register *Register File*
+### ALU *Arithmetic Logic Unit*
+
+Perform arithmetic and logic operations (AND, NOT, ADD) on values stored in registers
+
+- ADD  {0 0}
+- AND  {0 1}
+- NOT A {1 0}
+- PASS A {1 1}
+
+### Register *Register File*
 
 - Register is store element
   - Achieved by D filp-flop
@@ -56,8 +66,13 @@
 
 <img src='https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Register.png' alt='Register'/>
 
-## CU
+- Why register?
+Closer to processing unit, allow quicker access to intermediate results instead of going to memory
 
+### CU
+
+Control Unit: a finite state machine coordinates execution of the program
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/CU.png"/>
 IR Get the Instruction from Memory through PC's address
 
 - PC *Program Counter*
