@@ -1,11 +1,12 @@
-# Von-Neumann-Architecture
+# Microarchitecture
 
-- Memory
-- CPU
-  - Register
-  - ALU
-  - CU
-- I/O
+- Von Neumann architecture
+  - Memory
+  - CPU
+    - Register
+    - ALU
+    - CU
+  - I/O
 
 Take Lc-3 for example
 
