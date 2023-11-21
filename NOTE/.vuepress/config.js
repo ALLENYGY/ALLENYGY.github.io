@@ -270,9 +270,7 @@ module.exports = {
       ],
     },
     editurl: "https://github.com/ALLENYGY/ALLENYGY.github.io/blob/master/NOTE",
-    footer_html: `<div style="align-items: center;text-align: center;">
-      <p>MIT Licensed | Copyright © 2023-present AllenYGY</p>
-  </div><br/><br/>`,
+    footer: 'MIT Licensed | Copyright © 2023-present AllenYGY',
     card_group: [
       {
         img_url:
