@@ -1,14 +1,42 @@
 # Microarchitecture
 
-- Von Neumann architecture
-  - Memory
-  - CPU
-    - Register
-    - ALU
-    - CU
-  - I/O
+- Microarchitecture connects circuits and ISA together.
+ISA = Instruction Set Architecture
 
-Take Lc-3 for example
+- ISA specifies what hardware does, but not how
+  - ISA defines the instruction code
+- Microarchitecture specifies how it does it
+  - Microarchitecture determine how it work it
+
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Microarchitecture.png"/>
+
+- The ISA is the interface of a processor as seen by an assembly language programmer
+or compiler writer
+- Micro-architecture transfers the ISA into an implementation
+- For a given ISA, there might be many different microarchitectures
+- An architecture is a collection of circuits connected together
+
+## Von Neumann architecture
+
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/John_von_Neumann.png" width="30%">
+
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/VNA.png" width="50%">
+
+- Memory
+- CPU
+  - Register
+  - ALU
+  - CU
+- I/O
+
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Stored-Program-Computer.png"/>
+
+- Memory stores not only data, but coded instructions that make up a computer program
+- CPU fetches and executes – interprets - successive instructions of the program
+- Program is simply data for the interpreter – as in a Universal Turing Machine!
+- Single expandable resource pool – main memory
+- constrains both data and program size
+<!-- Take Lc-3 for example -->
 
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/Lc-3.png"/>
 
@@ -31,9 +59,20 @@ Take Lc-3 for example
     - write a value to a memory location
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/Memory.png"/>
 
+### Interface to Memory
+
 1. MAR: Memory Address Register (D flip-flops)
 2. MDR: Memory Data Register (D flip-flops)
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/MAR-MDR.png"/>
+
+- To read a location (A):
+  1. Write the address (A) into the MAR.
+  2. Send a “read” signal to the memory.
+  3. Read the data from MDR.
+- To write a value (X) to a location (A):
+  1. Write the data (X) to the MDR.
+  2. Write the address (A) into the MAR.
+  3. Send a “write” signal to the memory.
 
 ## CPU
 
