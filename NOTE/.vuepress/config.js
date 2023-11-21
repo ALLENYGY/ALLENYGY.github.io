@@ -10,7 +10,8 @@ module.exports = {
         rel: "icon",
         // href: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Logo.jpg",
         // "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
-        href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-color.png",
+        // href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-color.png",
+        href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo.jpg",
         // href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-black.png",
       },
     ],
@@ -46,7 +47,9 @@ module.exports = {
     </span>`,
     title: "MyBlog",
     // icon: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Logo.jpg",
-    icon:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-color.png",
+    // icon:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-color.png",
+    icon:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo.jpg",
+
     // icon:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-black.png",
     // icon: "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
 
@@ -88,7 +91,7 @@ module.exports = {
           "Entity-Relationship Model Extended Features":"DBM/Lecture/Lec3",
           "Design issue":"DBM/Lecture/Lec4",
           // "Design issue":"DBM/Lecture/Lec4",
-          "Logical Design":"DBM/Lecture/Lec6",
+          "Logical Design":"DBM/Lecture/Lec5",
           "KEY Concept": "DBM/Lecture/Key-concept",
 
         },
