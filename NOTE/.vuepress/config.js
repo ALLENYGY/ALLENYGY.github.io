@@ -8,8 +8,10 @@ module.exports = {
       "link",
       {
         rel: "icon",
-        href: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Logo.jpg",
+        // href: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Logo.jpg",
         // "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
+        href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-color.png",
+        // href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-black.png",
       },
     ],
     [
@@ -43,7 +45,9 @@ module.exports = {
        and <span style="color: rgb(14 165 233)">knowledge</span> itself.
     </span>`,
     title: "MyBlog",
-    icon: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Logo.jpg",
+    // icon: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Logo.jpg",
+    icon:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-color.png",
+    // icon:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-black.png",
     // icon: "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
 
     // nav: [
