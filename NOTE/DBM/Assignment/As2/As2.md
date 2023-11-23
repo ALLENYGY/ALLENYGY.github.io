@@ -94,3 +94,5 @@ CREATE TABLE product(
   FOREIGN KEY (t_id) REFERENCES product_type(t_id)
 )
 ```
+
+## Q3
