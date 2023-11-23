@@ -100,15 +100,23 @@ CREATE TABLE product(
 - Find the number of courses taught by Goliath (instructor’s name) over the years.
 
 ```sql
-SELECT COUNT(teach.cID)
-FROM instructor JOIN teach USING(iID)
-WHERE instructor.iname='Goliath'
-GROUP BY (instructor.iname)
+SELECT COUNT(DISTINCT cID) AS num_courses_taught
+FROM teach
+WHERE iID = 'Goliath';
 ```
 
 - Find the number of courses taught by each instructor in the semester 23F.
 
-- Find the semester in which Goliath teaches more courses than other semesters.
-- Insert a new student of ID: 123456, name: ‘Tomas’, gender: Male, GPA: unknown, major: ACCT, and phone number: 32165498701.
-- Student ‘Dennis’ quit from the college. Please remove his information from the database.
+```sql
+SELECT COUNT(DISTINCT cID) As num_courses_taught
+FROM instructor
+JOIN teach USING(iID)
+GROUP BY (i.name)
+WHERE teach.semester='23F'
+```
 
+- Find the semester in which Goliath teaches more courses than other semesters.
+
+- Insert a new student of ID: 123456, name: ‘Tomas’, gender: Male, GPA: unknown, major: ACCT, and phone number: 32165498701.
+
+- Student ‘Dennis’ quit from the college. Please remove his information from the database.

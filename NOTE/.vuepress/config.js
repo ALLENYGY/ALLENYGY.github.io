@@ -320,10 +320,10 @@ module.exports = {
       },
       {
         img_url:
-          "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/logo.png",
+          "https://easy-book.open17.vip/logo2.png",
         title: "GYP",
         description: "v1.2.x",
-        link: "https://open17.github.io/vuepress-theme-easy-book/",
+        link: "https://vuepress-theme-easy-book.vercel.app/",
       },
     ],
     lock_password: "040301",
