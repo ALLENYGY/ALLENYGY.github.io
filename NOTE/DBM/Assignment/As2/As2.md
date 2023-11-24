@@ -95,7 +95,9 @@ CREATE TABLE product(
 )
 ```
 
-## Q3
+## 
+
+## Q4
 
 - Find the number of courses taught by Goliath (instructor’s name) over the years.
 
