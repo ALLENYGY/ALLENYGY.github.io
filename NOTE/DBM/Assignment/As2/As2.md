@@ -95,7 +95,15 @@ CREATE TABLE product(
 )
 ```
 
-## 
+## Q3
+
+The issue with the given ER model is that it lacks a direct relationship between the coupon and the products it can be applied to. This absence of a direct link creates a challenge in enforcing the constraint that a purchase using a coupon must include at least one product instance that corresponds to the type eligible for that coupon.
+
+1. Add a table/entity to represent coupon-product type associations:
+Create a table like `coupon_product_type` with columns such as `coupon_id` and `product_type_id` to denote which product types a coupon can be applied to.
+
+2. Modify the purchase entity to include coupon usage and enforce the constraint:
+Within the purchase entity, introduce a column `coupon_used` to denote whether a coupon was used in a purchase. Then, use a constraint or validation rule to ensure that if `coupon_used` is true, there must be at least one corresponding product instance in the purchase that matches the product type eligible for the coupon.
 
 ## Q4
 
