@@ -2,7 +2,7 @@
 module.exports = {
   theme: "easy-book",
   // Fill in the webpage title in title
-  title: "MyNote",
+  title: "AllenYGY's Blog",
   head: [
     [
       "link",
