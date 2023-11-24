@@ -14,7 +14,6 @@ module.exports = {
         // href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo.jpg",
         // href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-3.jpg",
         href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png",
-
         // href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-black.png",
       },
     ],
@@ -201,7 +200,7 @@ module.exports = {
       ],
       DBM: [
         {
-          text: "数据库设计",
+          text: "Database Design",
           sublink: [
             {
               text: "Entity-Relationship Model Modeling",
@@ -230,7 +229,7 @@ module.exports = {
           ],
         },
         {
-          text: "Mysql",
+          text: "MySQL",
           sublink: [
             { text: "Basic MySQL", link: "DBM/MySQL/Lab1" },
             { text: "Cross table query", link: "DBM/MySQL/Lab2" },

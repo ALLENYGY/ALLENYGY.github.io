@@ -108,7 +108,7 @@ WHERE iID = 'Goliath';
 - Find the number of courses taught by each instructor in the semester 23F.
 
 ```sql
-SELECT COUNT(DISTINCT cID) As num_courses_taught
+SELECT COUNT(DISTINCT cID) As num_courses_taught_each_instructor
 FROM instructor
 JOIN teach USING(iID)
 GROUP BY (i.name)
@@ -117,6 +117,25 @@ WHERE teach.semester='23F'
 
 - Find the semester in which Goliath teaches more courses than other semesters.
 
+```sql
+SELECT teach.semester, COUNT(teach.cID) AS num_courses
+FROM teach JOIN instrtuctor USING(iID)
+WHERE instructor.iname='Goliath'
+GROUP BY teach.semester
+ORDER BY num_courses DESC
+LIMIT 1;
+```
+
 - Insert a new student of ID: 123456, name: ‘Tomas’, gender: Male, GPA: unknown, major: ACCT, and phone number: 32165498701.
 
+```sql
+INSERT INTO student VALUES 
+(123456, 3, 'Tomas','Male',NULL,'ACCT', 32165498701);
+```
+
 - Student ‘Dennis’ quit from the college. Please remove his information from the database.
+
+```sql
+DELETE FROM student
+WHERE sname='Dennis'
+```
