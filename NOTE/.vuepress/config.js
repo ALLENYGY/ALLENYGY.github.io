@@ -200,7 +200,7 @@ module.exports = {
       ],
       DBM: [
         {
-          text: "Database Design",
+          text: "DataBase Design",
           sublink: [
             {
               text: "Entity-Relationship Model Modeling",
