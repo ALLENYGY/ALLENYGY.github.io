@@ -19,3 +19,5 @@ Here is my CO Note in UIC!
 ## [Circuit Design](Lecture/CircuitDesign)
 
 ## [Microarchitecture](CO/Lecture/Lec8.md)
+
+## [The LC-3 ISA](CO/Lecture/Lec9.md)

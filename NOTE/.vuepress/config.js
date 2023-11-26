@@ -68,6 +68,7 @@ module.exports = {
         "Finite State Machine":"CO/Lecture/Lec7",
         "Circuit Design": "CO/Lecture/CircuitDesign",
         "Microarchitecture":"CO/Lecture/Lec8",
+        "The LC-3 ISA":"CO/Lecture/Lec9",
 
       },
       '编程语言':{
@@ -158,6 +159,10 @@ module.exports = {
         {
           text: "Microarchitecture",
           link: "CO/Lecture/Lec8",
+        },
+        {
+          text: "The LC-3 ISA",
+          link: "CO/Lecture/Lec9",
         },
       ],
       ProgramLanguage: [
