@@ -5,7 +5,7 @@
 $person=(\underline{p\_id},name,gender)$
 $employ=(\underline{p\_id},position,salary)$
 $customer=(\underline{p\_id},calss,phone)$
-$purchase=(\underline{b\_id},date,order,p\_id)$
+$purchase=(\underline{b\_id},date,p\_id)$
 $coupon=(\underline{id},discount,p\_id,t\_id)$
 $use=(\underline{id},b\_id)$
 $product\_type=(\underline{t\_id},manufacturer,type,price)$
@@ -43,7 +43,6 @@ CREATE TABLE customer (
 CREATE TABLE purchase (
     b_id INT PRIMARY KEY,
     date DATE,
-    order VARCHAR(255),
     p_id INT,
     FOREIGN KEY (p_id) REFERENCES person(p_id)
 );
