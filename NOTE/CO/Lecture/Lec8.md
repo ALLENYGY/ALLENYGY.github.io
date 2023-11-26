@@ -136,12 +136,6 @@ IR Get the Instruction from Memory through PC's address
   - keyboard: data register (KBDR) and status register (KBSR)
   - console: data register (DDR) and status register (DSR)
 
-## Lc-3
-
-- Finite state machine
-
-<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/FSM.png"/>
-
 ## Instruction
 
 - The instruction is the most basic unit of computer processing.
@@ -191,7 +185,16 @@ LDR DST SRC offset
 0110 xxx xxx xxxxxx
 ```
 
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/LDR.png"/>
+
 ## Instruction processsing
+
+- **Fetch**
+- **Decode**
+- **Evaluate Address**
+- **Fetch operands**
+- **Execute**
+- **Store result**
 
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/instruction-process.png"/>
 
