@@ -27,3 +27,10 @@ then AND 0 with R2 and store its result to R2
 then ADD 5 to R2 and store its result to R2
 then Store R2's content to the address that is R1's content plus 14
 finally x2FFD plus PC's content then find the address's content,using this content to find the address and load the content to R3
+
+## $III$
+
+x3000 xE002
+x3001 xF022
+x3002 xF025
+x3003 x0048
