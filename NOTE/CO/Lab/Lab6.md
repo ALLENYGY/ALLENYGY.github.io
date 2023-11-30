@@ -2,17 +2,21 @@
 
 ## $I$
 
+What does the following code? (There are 3 instructions.)
+
 0011000000000000
 1001001001111111
 0001010001100001
 0001010000000010
 
-$ST$ $R_0$ X$0$
+.ORIG x3000
 $NOT$ $R_1$ $R_1$
 $ADD$ $R2$ $R1$ $\#1$
 $ADD$ $R2$ $R0$ $R2$
 
 ## $II$
+
+Input the following code and try to understand what it does by executing it step by step. (There are 6 instructions.)
 
 LEA R1, x2FFE
 ADD R2, R1, #14
@@ -30,7 +34,9 @@ finally x2FFD plus PC's content then find the address's content,using this conte
 
 ## $III$
 
-x3000 xE002
-x3001 xF022
-x3002 xF025
-x3003 x0048
+Write a LC3 machine code program to print out “Hello World!”. Hint: consider to use Trap instruction PUTS.
+
+1110 0000 0000 0010
+1111 0000 0010 0010
+1111 0000 0010 0101
+0000 0000 0100 1000
