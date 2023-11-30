@@ -9,7 +9,6 @@ What does the following code? (There are 3 instructions.)
 0001010001100001
 0001010000000010
 
-.ORIG x3000
 $NOT$ $R_1$ $R_1$
 $ADD$ $R2$ $R1$ $\#1$
 $ADD$ $R2$ $R0$ $R2$
