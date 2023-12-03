@@ -30,3 +30,4 @@ A->B,C,D
 A domain is atomic if its elements are considered to be indivisible units.
 A relational schema R is in first normal form if the domains of all attributes of R are atomic.
 Non-atomic values complicate storage and encourage redundant (repeated) storage of data.
+Atomicity is actually a property of how the elements of the domain are used.
