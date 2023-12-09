@@ -106,6 +106,7 @@ module.exports = {
           "Aggregation": "DBM/MySQL/Lab4",
           "Data Definition": "DBM/MySQL/Lab5",
           "Data Modification": "DBM/MySQL/Lab6",
+          "NULL & Subquery": "DBM/MySQL/Lab7",
         }
       },
       // "DBM",
@@ -242,6 +243,7 @@ module.exports = {
             { text: "Aggregation", link: "DBM/MySQL/Lab4" },
             { text: "Data Definition", link: "DBM/MySQL/Lab5" },
             { text: "Data Modification", link: "DBM/MySQL/Lab6" },
+            { text: "NULL & Subquery", link: "DBM/MySQL/Lab7" },
           ],
         },
       ],
