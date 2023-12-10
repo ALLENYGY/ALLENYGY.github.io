@@ -39,3 +39,6 @@
 - 不存在传递依赖
 
 ### BCNF *Boyce-Codd Normal Form*
+
+- 满足2NF的前提下
+- 主键不存在传递

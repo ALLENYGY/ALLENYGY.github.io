@@ -14,3 +14,18 @@ $R_1 \cup R_2\rightarrow R_2$
 - The decomposition is dependency preserving,  if
 ${(F_1 \cup F_2\cup \dots \cup F_n)}^+ =F^+$
 - If the decomposition is not dependency preserving, then checking updates for violation of functional dependencies may require computing joins, which is expensive.
+
+Example:
+$R=\{A,B,C\}$
+$F=\{A\rightarrow B,B\rightarrow C\}$
+can be decomposed in two different ways
+
+- $R_1=\{A,B\}, R_2 =\{B,C\}$
+  - Lossless-join decomposition
+    - $R_1 \cap R_2=\{B\} \ and\ B\rightarrow BC$
+    - Dependency preserving
+
+- $R_1=\{A,B\}, R_2 =\{A,C\}$
+  - Lossless-join decomposition
+    - $R_1 \cap R_2=\{A\} \ and\ A\rightarrow AB$
+    - Not dependency preserving (cannot check $B \rightarrow C$ without computing $R_1 ⨝ R_2$)
