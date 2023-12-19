@@ -13,7 +13,9 @@ module.exports = {
         // href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-color.png",
         // href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo.jpg",
         // href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-3.jpg",
-        href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png",
+        // href: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png",
+        href: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/BLOG.png",
+
         // href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-black.png",
       },
     ],
@@ -52,74 +54,75 @@ module.exports = {
     // icon:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-color.png",
     // icon:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo.jpg",
     // icon:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-3.jpg",
-    icon:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png",
+    // icon: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png",
+    icon: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/BLOG.png",
+
     // icon:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-black.png",
     // icon: "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
 
     // nav: [
     nav: {
-      '计算机组成原理': {
-        "Computer": "CO/Lecture/Lec1",
+      计算机组成原理: {
+        Computer: "CO/Lecture/Lec1",
         "Bits: Data Representation and Manipulation": "CO/Lecture/Lec2",
-        "Boolean Algebra: From Bits to Logic":"CO/Lecture/Lec3",
+        "Boolean Algebra: From Bits to Logic": "CO/Lecture/Lec3",
         "From Transistors to Gates": "CO/Lecture/Lec4",
         "From Gates to Circuits I: Combinational Circuits": "CO/Lecture/Lec5",
         "From Gates to Circuits II: Sequential Circuits": "CO/Lecture/Lec6",
-        "Finite State Machine":"CO/Lecture/Lec7",
+        "Finite State Machine": "CO/Lecture/Lec7",
         "Circuit Design": "CO/Lecture/CircuitDesign",
-        "Microarchitecture":"CO/Lecture/Lec8",
-        "The LC-3 ISA":"CO/Lecture/Lec9",
-
+        Microarchitecture: "CO/Lecture/Lec8",
+        "The LC-3 ISA": "CO/Lecture/Lec9",
       },
-      '编程语言':{
-        "Java":{
-            "Java Introduction":"ProgramLanguage/Java/Lec0",
-            "Unified Modeling Language":"ProgramLanguage/Java/Lec1",
-            "Java Programming Essentials": "ProgramLanguage/Java/Lec2",
-            "Creating Java Classes": "ProgramLanguage/Java/Lec3",
-            "Inheritance": "ProgramLanguage/Java/Lec4",
-            "Abstract Methods and Classes Interfaces": "ProgramLanguage/Java/Lec5",
-            "Exception Handeling": "ProgramLanguage/Java/Lec6",
-            "Array and Generics": "ProgramLanguage/Java/Lec7",
+      编程语言: {
+        Java: {
+          "Java Introduction": "ProgramLanguage/Java/Lec0",
+          "Unified Modeling Language": "ProgramLanguage/Java/Lec1",
+          "Java Programming Essentials": "ProgramLanguage/Java/Lec2",
+          "Creating Java Classes": "ProgramLanguage/Java/Lec3",
+          Inheritance: "ProgramLanguage/Java/Lec4",
+          "Abstract Methods and Classes Interfaces":
+            "ProgramLanguage/Java/Lec5",
+          "Exception Handeling": "ProgramLanguage/Java/Lec6",
+          "Array and Generics": "ProgramLanguage/Java/Lec7",
         },
-        "R":{
-          "R Basic": "ProgramLanguage/R/Lec1" ,
+        R: {
+          "R Basic": "ProgramLanguage/R/Lec1",
           "R Data Structure": "ProgramLanguage/R/Lec2",
-        }
-      },
-      '数学': "Math",
-      '数据库': {
-        '数据库设计':{
-          "Entity-Relationship Model Modeling":"DBM/Lecture/Lec1",
-          "Entity-Relationship Model Constraints":"DBM/Lecture/Lec2",
-          "Entity-Relationship Model Extended Features":"DBM/Lecture/Lec3",
-          "Design issue":"DBM/Lecture/Lec4",
-          // "Design issue":"DBM/Lecture/Lec4",
-          "Logical Design":"DBM/Lecture/Lec5",
-          "KEY Concept": "DBM/Lecture/Key-concept",
-
         },
-        'MySQL':{
+      },
+      数学: "Math",
+      数据库: {
+        数据库设计: {
+          "Entity-Relationship Model Modeling": "DBM/Lecture/Lec1",
+          "Entity-Relationship Model Constraints": "DBM/Lecture/Lec2",
+          "Entity-Relationship Model Extended Features": "DBM/Lecture/Lec3",
+          "Design issue": "DBM/Lecture/Lec4",
+          // "Design issue":"DBM/Lecture/Lec4",
+          "Logical Design": "DBM/Lecture/Lec5",
+          "KEY Concept": "DBM/Lecture/Key-concept",
+        },
+        MySQL: {
           "Basic MySQL": "DBM/MySQL/Lab1",
           "Cross table query": "DBM/MySQL/Lab2",
-          "Join": "DBM/MySQL/Lab3",
-          "Aggregation": "DBM/MySQL/Lab4",
+          Join: "DBM/MySQL/Lab3",
+          Aggregation: "DBM/MySQL/Lab4",
           "Data Definition": "DBM/MySQL/Lab5",
           "Data Modification": "DBM/MySQL/Lab6",
           "NULL & Subquery": "DBM/MySQL/Lab7",
-        }
+        },
       },
       // "DBM",
-      '数据分析': "DataAnalysis",
-      '其他': {
-           "Git":{
-            "Git Introduction": "Others/Git/Git-Introduction" ,
-            "Git Basic":"Others/Git/Git",
-           },
-           "Conda":{
-            "Basic Conda": "Others/Conda/Conda",
-           }
-      },  
+      数据分析: "DataAnalysis",
+      其他: {
+        Git: {
+          "Git Introduction": "Others/Git/Git-Introduction",
+          "Git Basic": "Others/Git/Git",
+        },
+        Conda: {
+          "Basic Conda": "Others/Conda/Conda",
+        },
+      },
     },
     // { text: "计算机组成原理", link: "CO" },
     // { text: "编程语言", link: "ProgramLanguage" },
@@ -287,7 +290,7 @@ module.exports = {
       ],
     },
     editurl: "https://github.com/ALLENYGY/ALLENYGY.github.io/blob/master/NOTE",
-    footer: 'MIT Licensed | Copyright © 2023-present AllenYGY',
+    footer: "MIT Licensed | Copyright © 2023-present AllenYGY",
     card_group: [
       {
         img_url:
@@ -325,8 +328,7 @@ module.exports = {
         link: "https://www.harkerbest.cn/p/781/",
       },
       {
-        img_url:
-          "https://easy-book.open17.vip/logo2.png",
+        img_url: "https://easy-book.open17.vip/logo2.png",
         title: "GYP",
         description: "v1.2.x",
         link: "https://vuepress-theme-easy-book.vercel.app/",
