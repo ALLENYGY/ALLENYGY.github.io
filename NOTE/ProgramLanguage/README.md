@@ -1,4 +1,4 @@
-# Program Laguage
+# Program Language
 
 Here is my Program Language Note in UIC!
 
