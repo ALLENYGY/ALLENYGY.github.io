@@ -58,3 +58,13 @@ $T(n)=nT(\frac{n}{n})+i =O(logn)$
 
 ## Problem III
 
+```pseudo
+isBST(node, lower, upper)
+  IF node IS NULL
+    RETURN TRUE
+  IF node.key <= lower OR node.key >= upper
+    RETURN FALSE
+  RETURN isBST(node.left, lower, node.key) AND isBST(node.right, node.key, upper)
+
+isBST(root, INT_MIN, INT_MAX)
+```
