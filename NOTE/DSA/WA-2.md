@@ -28,3 +28,33 @@ $T(n)=2^iT(\frac{n}{2^i})+i\ O(1)$
 When $2^i=n$
 $i=log_2n$
 $T(n)=nT(\frac{n}{n})+i =O(logn)$
+
+## Problem II
+
+0. initial state:
+     - |1|3|6|5|4|7|
+1. insert(1)
+    - |1|3|6|5|4|7|
+2. insert(3)
+    - |3|1|6|5|4|7|
+3. insert(6)
+    - |6|1|3|5|4|7|
+4. insert(5)
+    - |6|5|3|1|4|7|
+5. insert(4)
+    - |6|5|3|1|4|7|
+6. insert(7)
+    - |7|5|6|1|4|3|
+7. deleteMax()
+    - |6|5|3|1|4|7|
+8. deleteMax()
+    - |5|4|3|1|6|7|
+9. deleteMax()
+    - |4|1|3|5|7|7|
+10. deleteMax()
+    - |3|1|4|5|6|7|
+11. deleteMax()
+    - |1|3|4|5|6|7|
+
+## Problem III
+
