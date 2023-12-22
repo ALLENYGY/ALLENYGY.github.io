@@ -1,2 +1,2 @@
-# ALLENYGY.github.io
-AllenYGY's blog
+# AllenYGY's blog
+ALLENYGY.github.io

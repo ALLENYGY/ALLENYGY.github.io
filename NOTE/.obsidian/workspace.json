@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "329040096f95e1ac",
+        "id": "583abceac0e39669",
         "type": "tabs",
         "children": [
           {
-            "id": "5ee40bcbd0e15269",
+            "id": "6a20e823b815a6c6",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           },
           {
@@ -150,11 +158,14 @@
       "random-note:开始漫游笔记": false,
       "audio-recorder:开始/结束录音": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
-      "zk-prefixer:创建时间戳笔记": false
+      "zk-prefixer:创建时间戳笔记": false,
+      "remotely-save:Remotely Save": false
     }
   },
-  "active": "5ee40bcbd0e15269",
+  "active": "6a20e823b815a6c6",
   "lastOpenFiles": [
+    "README.md",
+    "ProgramLanguage/R/Lec1.md",
     "DBM/Lecture/NF.md",
     "Math/Discrete-Structure/Lecture/Lec6.md",
     "Math/Discrete-Structure/Lecture/Lec14.md",
@@ -182,8 +193,6 @@
     "Math/Discrete-Structure/Lecture/Lec12.md",
     "Math/Discrete-Structure/Lecture/Lec10.md",
     "Math/Discrete-Structure/Lecture/Lec7.md",
-    "Math/Discrete-Structure/Lecture",
-    "CO/Lab/Lab3.md",
-    "CO/Lecture/CircuitDesign.md"
+    "Math/Discrete-Structure/Lecture"
   ]
 }
