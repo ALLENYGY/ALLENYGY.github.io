@@ -14,3 +14,17 @@ GETSUM(A, left, right)
   else
     return GETSUM(A, center + 1, right)
 ```
+
+$T(n) = \begin{cases}
+2T(\frac{n}{2}) + O(1), & \text{if } n \geq 1 \\
+O(1), & \text{if } n = 1
+\end{cases}
+$
+
+$T(n)=2T(\frac{n}{2}) + O(1)$
+$T(n)=4T(\frac{n}{4}) + O(1)+ 2O(1)$
+$T(n)=2^iT(\frac{n}{2^i})+i\ O(1)$
+
+When $2^i=n$
+$i=log_2n$
+$T(n)=nT(\frac{n}{n})+i =O(logn)$
