@@ -50,7 +50,7 @@ $T(n)=nT(\frac{n}{n})+i =O(logn)$
 8. deleteMax()
     - |5|4|3|1|6|7|
 9. deleteMax()
-    - |4|1|3|5|7|7|
+    - |4|1|3|5|6|7|
 10. deleteMax()
     - |3|1|4|5|6|7|
 11. deleteMax()
