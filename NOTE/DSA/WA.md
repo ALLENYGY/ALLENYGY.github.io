@@ -15,8 +15,8 @@ GETminmun(A):
 
 ## Problem II
 
-1. ![Tree](/NOTE/DSA/BST.png)
-2. ![Tree](/NOTE/DSA/BST-1.png)
+1. ![Tree](/Users/allenygy/Desktop/WorkSpace/VScode-Workspace/MyBlog/NOTE/DSA/BST.png)
+2. ![Tree](/Users/allenygy/Desktop/WorkSpace/VScode-Workspace/MyBlog/NOTE/DSA/BST-1.png)
 3. |14|25|40|52|58|85|
 
 ## Problem III
@@ -120,5 +120,5 @@ a.
 
 b.
 
-1. ![Tree](/NOTE/DSA/insert-1.png)
-2. ![Tree](/NOTE/DSA/delete-1.png)
+1. ![Tree](/Users/allenygy/Desktop/WorkSpace/VScode-Workspace/MyBlog/NOTE/DSA/insert-1.png)
+2. ![Tree](/Users/allenygy/Desktop/WorkSpace/VScode-Workspace/MyBlog/NOTE/DSA/delete-1.png)
