@@ -56,5 +56,29 @@ Make J the parent of xL and xR, and insert J together with its child pointers in
 
 ## Deletion
 
-The target is a key in some internal node (needs to be replaced, according to our convention)
-After deleting target from leaf x, x contains less than $\lfloor \frac{L}{2}\rfloor$ keys (needs to merge nodes)
+Situation I:
+
+- The target is a key in some internal node (needs to be replaced, according to our convention)
+
+Situation II:
+
+- After deleting target from leaf x, x contains less than $\lfloor \frac{L}{2}\rfloor$ keys (needs to merge nodes)
+
+### Situation I *Removal of a Key*
+
+After deleting from node x, we can access y directly and replace target by the new smallest key in x
+
+### Situation II *Handling Leaves with Too Few Keys*
+
+Let u be the leaf that has $\lfloor \frac{L}{2}\rfloor$ keys (too few)
+Let v be a sibling of u with at least $\lceil \frac{L}{2}\rceil+1$ keys
+Let k be the key in the parent of u and v that separates the pointers to u and v
+There are two cases
+
+#### Case I
+Case 1: v contains $\lceil \frac{L}{2}\rceil+1$ or more keys and v is the right sibling of u
+ **Move the leftmost record from v to u**
+#### Case 2
+v contains $\lceil \frac{L}{2}\rceil +1$ or more keys and v is the left sibling of u
+ **Move the rightmost record from v to u**
+Then set the key in parent of u that separates u and v to be the new smallest key in u
