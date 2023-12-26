@@ -124,5 +124,5 @@ $\therefore M=171, L=8$
 
 b)
 
-1. ![Insert](insert.png)
-2. ![Delete](delete.png)
+1. ![Insert](Draw/insert.png)
+2. ![Delete](Draw/delete.png)
