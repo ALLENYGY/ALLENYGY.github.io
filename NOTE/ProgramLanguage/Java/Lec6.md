@@ -1,4 +1,4 @@
-# Exception Handeling
+# Exception Handling
 
 ## Programming Errors
 

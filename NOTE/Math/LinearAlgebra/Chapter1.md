@@ -56,7 +56,7 @@
 - Definition:
   - The set of all column n-vectors ${[u_1,u_2,...,u_n]}^T$ is called
   n-dimensional real space and is denoted $R^n$.^[Perhaps the most elementary vector spaces are the Euclidean vector spaces $R^n$.]
-  - $u_i$ is the i-th component of $[u_1,u_2,...,u_n]^T$.
+  - $u_i$ is the $i_{th}$ component of $[u_1,u_2,...,u_n]^T$.
 
 ##### Addition and Scalar Multiplication
 

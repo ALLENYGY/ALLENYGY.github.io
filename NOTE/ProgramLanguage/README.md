@@ -1,7 +1,5 @@
 # Program Language
 
-Here is my Program Language Note in UIC!
-
 ## Java
 
 ### [Java Introduction](Java/Lec0)
@@ -16,7 +14,7 @@ Here is my Program Language Note in UIC!
 
 ### [Abstract Methods and Classes Interfaces](Java/Lec5)
 
-### [Exception Handeling](Java/Lec6)
+### [Exception Handling](Java/Lec6)
 
 ### [Array and Generics](Java/Lec7)
 
@@ -25,3 +23,5 @@ Here is my Program Language Note in UIC!
 ### [R Basic](R/Lec1)
 
 ### [R Data Structure](R/Lec2)
+
+Here is my Program Language Note in UIC!

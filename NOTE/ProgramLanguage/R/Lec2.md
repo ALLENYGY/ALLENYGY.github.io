@@ -1,6 +1,6 @@
 # R Data Structure
 
-- vecotr
+- vecotor
 - list
 - matrix
 - array
@@ -11,7 +11,7 @@
 
 A vector is simply a list of items that are of the same type.
 
-To combine the list of items to a vector, use the c() function and separate the items by a comma.
+To combine the list of items into a vector, use the c() function and separate the items by a comma.
 
 ---
 

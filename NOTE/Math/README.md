@@ -4,10 +4,10 @@ Here is my math Note in UIC!
 
 ## Linear algebra
 
-### [Vector Spaces](Linear-Algebra/Chapter1)
+### [Vector Spaces](Chapter1.md)
 
-### [Linear Transformations](Linear-Algebra/Chapter2)
+### [Linear Transformations](Chapter2.md)
 
-### [Orthogonality](Linear-Algebra/Chapter3)
+### [Orthogonality](Chapter3.md)
 
-### [Eigenvalues and Eigenvectors](Linear-Algebra/Chapter4)
+### [Eigenvalues and Eigenvectors](Chapter4.md)

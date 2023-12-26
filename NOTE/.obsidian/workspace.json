@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Algorithm/DSA/WAssignment/WA-1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Algorithm/DSA/WAssignment/WA-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Algorithm/DSA/WAssignment/WA-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Algorithm/DSA/WAssignment/WA-1.md"
               }
             }
           }
@@ -138,17 +138,33 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "remotely-save:Remotely Save": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "remotely-save:Remotely Save": false
     }
   },
   "active": "5851a6d1d6bd4f2a",
   "lastOpenFiles": [
+    "Math/ProbabilityStatistics/PoissonDistribution.md",
+    "Math/README.md",
+    "Math/SpecificMathematics/递归/约瑟夫问题.md",
+    "_remotely-save-metadata-on-remote.json",
+    "Math/ProbabilityStatistics/ProbabilityTheory.md",
+    "Math/SpecificMathematics/递归/Rplots.pdf",
+    "Math/LinearAlgebra/Chapter1.md",
+    "Others/Git/Git-Introduction.md",
+    "Others/Git/Git.md",
+    "Others/Docker/docker.md",
+    "Others/Conda/Conda.md",
+    "ProgramLanguage/R/Lec2.md",
+    "ProgramLanguage/README.md",
+    "ProgramLanguage/Java/Lec6.md",
+    "README.md",
+    "_remotely-save-metadata-on-remote.nssyncsc",
     "DBM/MySQL/Lab7.md",
     "DBM/MySQL/Lab7-NSConflict-AllenYGY-mac14.2.1.md",
     "DSA/WA-2.md",
