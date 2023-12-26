@@ -118,7 +118,6 @@ $( M = \left\lfloor \frac{\text{Size of one block}}{\text{Size of a primary key 
 
 $( M = \left\lfloor \frac{2048}{8 + 4} \right\rfloor + 1 = \left\lfloor \frac{2048}{12} \right\rfloor + 1 = 170 + 1 = 171 )$
 
-
 - \( L = 16 \): Each leaf node can hold up to 16 records.
 - \( M = 171 \): Each internal node can have up to 171 children (170 keys + 1 extra pointer).
 
