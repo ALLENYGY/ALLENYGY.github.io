@@ -18,7 +18,7 @@ Each leaf has between $\lceil \frac{L}{2} \rceil $ and $L$ keys and correspondin
 
 ---
 
-- A $B^+-tree$ of order M (M>3) is an M-ary tree with the following properties:
+- A $B^+-Tree$ of order M (M>3) is an M-ary tree with the following properties:
 - The data items are stored in leaves
 - The root is either a leaf or has between two and M children
 - The non-leaf nodes store up to M-1 keys to guide the searching; key i represents the smallest key in subtree i+1
@@ -30,7 +30,7 @@ Each leaf has between $\lceil \frac{L}{2} \rceil $ and $L$ keys and correspondin
 
 ---
 
-## Insertion Procedure
+## Insertion
 
 1. Suppose that we want to insert a key K and its associated record.
 2. Search for the key K using the search procedure. This will bring us to a leaf x
@@ -53,3 +53,8 @@ To insert a key K into a full internal node x:
 - Insert K and its left and right child pointers into x, pretending there is space.  Now x has M keys (and M+1 pointers).
 - Split x into 2 new internal nodes $x_L$ and $x_R$, with $x_L$ containing the $( \lceil \frac{M}{2} \rceil -1)$  smallest keys, and $x_R$ containing the $\lfloor \frac {M}{2} \rfloor$ largest keys.  Note that the ${\lceil \frac{M}{2} \rceil}^{th}$ key J is not placed in $x_L$ or $x_R$
 Make J the parent of xL and xR, and insert J together with its child pointers into the old parent of x.
+
+## Deletion
+
+The target is a key in some internal node (needs to be replaced, according to our convention)
+After deleting target from leaf x, x contains less than $\lfloor \frac{L}{2}\rfloor$ keys (needs to merge nodes)
