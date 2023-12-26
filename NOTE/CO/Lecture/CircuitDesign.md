@@ -1,19 +1,19 @@
 # Circuit Design
 
-## Combinacial Circuit Design
+## Combinational Circuit Design
 
 1. Find Input and Output
 2. Truth Table
 3. K-Map Simplify
 4. Circuit  
 
-## Sequencial Circuit Design
+## Sequential Circuit Design
 
-### Sequencial Circuit Analysis
+### Sequential Circuit Analysis
 
 - Write Equations
   - Clock equation *时钟方程*
-  - Ouput equation *输出方程*
+  - Output equation *输出方程*
   - Drive equation *驱动方程*
   - State equation *状态方程*
 - List State

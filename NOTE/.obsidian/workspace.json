@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithm/DSA/WAssignment/WA-1.md",
+                "file": "CO/Lecture/CircuitDesign.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithm/DSA/WAssignment/WA-1.md",
+                "file": "CO/Lecture/CircuitDesign.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithm/DSA/WAssignment/WA-1.md",
+                "file": "CO/Lecture/CircuitDesign.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithm/DSA/WAssignment/WA-1.md"
+                "file": "CO/Lecture/CircuitDesign.md"
               }
             }
           }
@@ -149,6 +149,8 @@
   },
   "active": "5851a6d1d6bd4f2a",
   "lastOpenFiles": [
+    "CO/README.md",
+    "Algorithm/DSA/WAssignment/WA-1.md",
     "Math/ProbabilityStatistics/PoissonDistribution.md",
     "Math/README.md",
     "Math/SpecificMathematics/递归/约瑟夫问题.md",

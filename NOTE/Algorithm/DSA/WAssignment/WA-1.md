@@ -23,7 +23,7 @@ $=6n^2+5n+4$
 
 ## Problem 2
 
-For each pair of $f(n)$ and $g(n)$ below, decide if $f(n) = O(g(n))$, $f(n) =  \Omega(g(n))$, or $f(n) = \theta(g(n))$. Justify your answer using the definition of these asymptotic notation. Note that more than one of these relations may hold for a given pair; list all correct ones.
+For each pair of $f(n)$ and $g(n)$ below, decide if $f(n) = O(g(n))$, $f(n) =  \Omega(g(n))$, or $f(n) = \theta(g(n))$. Justify your answer using the definition of this asymptotic notation. Note that more than one of these relations may hold for a given pair; list all correct ones.
 
 1. $f(n)= \sqrt{n}$ and $g(n)= \sqrt{n} + log_2n$.
 
@@ -38,14 +38,13 @@ For each pair of $f(n)$ and $g(n)$ below, decide if $f(n) = O(g(n))$, $f(n) =  \
    (2) prove $f(n)=\Omega(g(n))$
 
     $Suppose \ c=\frac{1}{2}$
-    Now prove $ \sqrt{n} \geq \frac{1}{2}(\sqrt{n} + log_2n)$
+    Now prove $\sqrt{n} \geq \frac{1}{2}(\sqrt{n} + log_2n)$
 
     $\therefore$  prove $\sqrt{n} \geq log_2n$
 
     $lim_{n\rightarrow\infty}\frac{\sqrt{n}}{\log_2n}$
 
-    $=\frac{\frac{1}{2}n^{\frac{-1}{2}}}{\frac{1}{nln2}}=\frac{1}{2}n^{\frac{-1}{2}}nln2=\frac{1}{2}ln2n^{\frac{1}{2}}
-    \rightarrow \infty$
+    $=\frac{\frac{1}{2}n^{\frac{-1}{2}}}{\frac{1}{nln2}}=\frac{1}{2}n^{\frac{-1}{2}}nln2=\frac{1}{2}ln2n^{\frac{1}{2}}\rightarrow \infty$
 
     $\therefore \sqrt{n} \geq (log_2n)$
 
@@ -92,41 +91,33 @@ Solve the following recurrence relation and represent T(n) using a formula of n.
 
 $T(n) = 2T(\frac{n}{2}) + 1$
 
-$ T(n)=\left\{
-\begin{matrix}
-   2T(\frac{n}{2}) + 1, \ n>1\\
-  1, \ n=1
-\end{matrix}
-\right.
-$
+$T(n)=\left\{\begin{matrix}2T(\frac{n}{2}) + 1, \ n>1\\1, \ n=1\end{matrix}\right.$
 
 $T(n)=T(\frac{n}{2})+O(1)$
 
-$ =T(\frac{n}{2})+1$
-$ =T(\frac{n}{2^2})+2$
-$ =T(\frac{n}{2^3})+3$
-$ =T(\frac{n}{2^4})+4$
+$=T(\frac{n}{2})+1$
+ =T(\frac{n}{2^2})+2$
+$=T(\frac{n}{2^3})+3$
+$=T(\frac{n}{2^4})+4$
 $...$
-$ =T(\frac{n}{2^i})+i$
+$=T(\frac{n}{2^i})+i$
 
 let $\frac{n}{2^i}=1$
-$n=2^i ,\ \ \  i=log_2n \\
-\therefore T(n)=log_2n=O(logn)$
+$n=2^i ,\ \ \  i=log_2n \\\therefore T(n)=log_2n=O(logn)$
 
 ## Problem 5
 
 In the merge sort algorithm, we divide an array into two halves, recursively sort the subarrays, and then merge them into a sorted array. Now Ming proposes a “merge sort pro” algorithm. In “merge sort pro”, an array is divided evenly into four subarrays instead of two, and the rest of the steps are similar to those of merge sort. What do you think is the time cost of “merge sort pro” if the input size is n? Prove your answer.
 
-$T(n) = n logn \\
-T(n)=4T(\frac{n}{4})+n \\
-T(\frac{n}{4})=4T(\frac{n}{16})+\frac{n}{4} \\
-T(\frac{n}{16})=4T(\frac{n}{64})+\frac{n}{16} \\
-\ \ \therefore T(n)=4^mT(\frac{n}{4^m})+mn\\
-Let \ \ \frac{n}{4^m}=1, \ \ m=log_4n \\
-\ \ \therefore T(n)= 4^{log_4n}T(1)+nlog4n\\
-\ \ \because T(1)=0\\
-\ \ \therefore T(n)=nlog_4n=O(nlog_n)
-$
+$T(n) = n logn$
+$T(n)=4T(\frac{n}{4})+n$
+
+$T(\frac{n}{4})=4T(\frac{n}{16})+\frac{n}{4} \ T(\frac{n}{16})$
+$=4T(\frac{n}{64})+\frac{n}{16}$ 
+$\therefore T(n)=4^mT(\frac{n}{4^m})+mn$
+Let $\frac{n}{4^m}=1, \ \ m=log_4n$
+$\therefore T(n)= 4^{log_4n}T(1)+nlog4n$
+$\because T(1)=0\\ \ \ \therefore T(n)=nlog_4n=O(nlog_n)$
 
 ## Problem 6
 
