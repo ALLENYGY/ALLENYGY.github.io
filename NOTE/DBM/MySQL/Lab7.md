@@ -29,6 +29,9 @@ Different aggregation functions treat NULL values differently.
   - count returns 0;
   - other aggregation functions return NULL.
 
+- 如果NULL与非NULL的属性混合 那么所有aggregation function会忽略 NULL
+- 如果只有NULL，那么count() return 0,其他aggragation function return NULL
+
 ### Comparison and Compound Predicates
 
 - The logic with NULL values has three constants:

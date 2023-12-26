@@ -1,5 +1,7 @@
 # Written Assignment
 
+ 王梓仰 2230033060
+
 ## Problem I
 
 ```pseudo
@@ -96,24 +98,26 @@ b.
 
 ### 3.2
 
-1. **Insertion Time**: To insert an element into an AVL tree, we perform a binary search to find the correct position for the new element and then possibly perform some rotations to maintain the AVL property. The time complexity of both these operations is \( O(\log n) \) because the tree is balanced.
+1. **Insertion Time**: To insert an element into an AVL tree, we perform a binary search to find the correct position for the new element and then possibly perform some rotations to maintain the AVL property. The time complexity of both these operations is \( O(log n) \) because the tree is balanced.
 
-2. **Building the Tree**: If we insert \( n \) distinct integers into an AVL tree, each insert operation takes \( O(\log n) \) time. Since there are \( n \) elements, the total time to build the tree is \( O(n \log n) \).
+2. **Building the Tree**: If we insert \( n \) distinct integers into an AVL tree, each insert operation takes \( O(log n) \) time. Since there are \( n \) elements, the total time to build the tree is \( O(n log n) \).
 
 3. **In-order Traversal**: Once the AVL tree is built, we can perform an in-order traversal to retrieve the elements in sorted order. An in-order traversal of a binary search tree visits the nodes in ascending order, which is what we want for sorting. The time complexity for in-order traversal is \( O(n) \), as each node is visited exactly once.
 
-4. **Total Time Complexity**: The total time complexity of sorting an array using an AVL tree is the time to build the tree (\( O(n \log n) \)) plus the time for the in-order traversal (\( O(n) \)). Hence, the overall time complexity is \( O(n \log n) \).
+4. **Total Time Complexity**: The total time complexity of sorting an array using an AVL tree is the time to build the tree (\( O(n log n) \)) plus the time for the in-order traversal (\( O(n) \)). Hence, the overall time complexity is \( O(n log n) \).
 
-Therefore, we have shown that using an AVL tree to sort an array of distinct integers has a time complexity of \( O(n \log n) \).
+Therefore, we have shown that using an AVL tree to sort an array of distinct integers has a time complexity of \( O(n log n) \).
 
 ## Problem IV
 
 a.
-   \( L = \left\lfloor \frac{\text{Size of one block}}{\text{Size of each employee record}} \right\rfloor = \left\lfloor \frac{2048}{128} \right\rfloor = 16 \)
 
-   \( M = \left\lfloor \frac{\text{Size of one block}}{\text{Size of a primary key + Size of a pointer}} \right\rfloor + 1 \)
+$( L = \left\lfloor \frac{\text{Size of one block}}{\text{Size of each employee record}} \right\rfloor = \left\lfloor \frac{2048}{128} \right\rfloor = 16 )$
 
-   \( M = \left\lfloor \frac{2048}{8 + 4} \right\rfloor + 1 = \left\lfloor \frac{2048}{12} \right\lfloor + 1 = 170 + 1 = 171 \)
+$( M = \left\lfloor \frac{\text{Size of one block}}{\text{Size of a primary key + Size of a pointer}} \right\rfloor + 1 )$
+
+$( M = \left\lfloor \frac{2048}{8 + 4} \right\rfloor + 1 = \left\lfloor \frac{2048}{12} \right\rfloor + 1 = 170 + 1 = 171 )$
+
 
 - \( L = 16 \): Each leaf node can hold up to 16 records.
 - \( M = 171 \): Each internal node can have up to 171 children (170 keys + 1 extra pointer).
