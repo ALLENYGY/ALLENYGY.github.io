@@ -50,3 +50,5 @@ $F^+$ is a superset of $F$.
 - These rules are sound and complete.
 
 This method is also apply in Attribute Closure.
+
+### Prove Armstrong's Axioms

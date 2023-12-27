@@ -29,3 +29,5 @@ can be decomposed in two different ways
   - Lossless-join decomposition
     - $R_1 \cap R_2=\{A\} \ and\ A\rightarrow AB$
     - Not dependency preserving (cannot check $B \rightarrow C$ without computing $R_1 ⨝ R_2$)
+
+## BCNF
