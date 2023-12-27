@@ -31,3 +31,9 @@ Here is my DBM Note in UIC!
 ### [Data Modification](MySQL/Lab6)
 
 ### [Null & Subquery](MySQL/Lab7)
+
+### [Set Operation & WHERE subquery](MySQL/Lab8)
+
+### [Division and Correlated Subquery](MySQL/Lab9)
+
+### [Advanced SQL](MySQL/Lab10)
