@@ -46,9 +46,36 @@ $F^+$ is a superset of $F$.
   2. augumentation
      - if $\alpha \rightarrow \beta,$ then $\gamma \alpha \rightarrow \gamma \beta$ for any $\gamma$.  
   3. transitity
-     - if $\alpha \rightarrow \beta \ and \beta \rightarrow \gamma, then \alpha \rightarrow \gamma.$
+     - if $\alpha \rightarrow \beta$ and $\beta \rightarrow \gamma$, then $\alpha \rightarrow \gamma.$
 - These rules are sound and complete.
 
 This method is also apply in Attribute Closure.
 
 ### Prove Armstrong's Axioms
+
+For Union:
+If $\alpha \rightarrow \beta $ and $\alpha \rightarrow \gamma,$ then $\alpha \rightarrow \gamma \beta$
+
+1. $\alpha \rightarrow \beta$
+2. $\alpha \alpha \rightarrow \alpha \beta$ According to augmentation
+3. $\alpha \rightarrow \alpha \beta$
+4. $\alpha \rightarrow \gamma$
+5. $\alpha \beta \rightarrow \gamma \beta$
+6. $\alpha \rightarrow \alpha \beta \rightarrow \beta \gamma$ According to transitivity
+7. $\alpha \rightarrow \beta \gamma$
+
+For Decomposition:
+if $\alpha \rightarrow \beta \gamma$, then $\alpha \rightarrow \beta$ and $\alpha \rightarrow \gamma$
+
+1. $\alpha \rightarrow \beta \gamma$
+2. $\beta \gamma \rightarrow \beta$  according to reflexivity
+3. $\beta \gamma \rightarrow \gamma$ according to reflexivity
+4. $\therefore \alpha \rightarrow \beta,\alpha \rightarrow \gamma$ according to transitivity
+
+For pseudotransitivity
+if $\alpha \rightarrow \beta$ and $\gamma \beta \rightarrow \epsilon$ then $\alpha \gamma \rightarrow \epsilon$
+
+1. $\because \alpha \rightarrow \beta$
+2. $\therefore \alpha \gamma \rightarrow \beta \gamma$ according to augmentation
+3. $\because \alpha \gamma \rightarrow \beta \gamma \rightarrow \epsilon$ according to transitivity
+4. $\therefore \alpha \gamma \rightarrow \epsilon$
