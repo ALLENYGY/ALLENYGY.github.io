@@ -19,5 +19,12 @@ Integrity constraints guard against accidental damage to the database, by ensuri
 ```sql
 ALTER TABLE STUDENT
 ADD CONSTRAINT gpa_domain
-CHECK()
+CHECK(gpa>=0.00 AND gpa<=4.00)
 ```
+
+## Referential Integrity
+
+Referential integrity ensures that a value that appears in one relation table for a given set of attributes must also appears in the corresponding set of attributes in the other relation table
+
+关联删除
+关联更新
