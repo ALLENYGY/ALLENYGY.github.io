@@ -121,7 +121,7 @@ WHERE NOT EXISTS(
 
 ```sql
 SELECT s1.sID,s1.sname
-FROM student AS s1
+FROM student AS s1 
 WHERE NOT EXISTS(
     (SELECT cID 
     FROM course 
