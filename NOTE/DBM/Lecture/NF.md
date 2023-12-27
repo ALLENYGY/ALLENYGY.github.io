@@ -1,12 +1,26 @@
-# Process
+# Final Review
 
-## Find Fm
+## Find all the candidate keys
+
+1. 分出
+   - L
+   - R
+   - LR
+2. 依次遍历
+   - L
+   - L+LR
+
+## Decompose the schema in BCNF
+
+## Is Dependency Preservation
+
+## Find canonical cover of the functional dependencies
 
 - 函数右部依赖分解为单属性
 - 消除冗余属性
 - 消除冗余的函数依赖
 
-## 3NF
+## Decompose the schema in 3NF
 
 - Fm
 - 合并左部相同
