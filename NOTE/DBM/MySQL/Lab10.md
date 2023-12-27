@@ -101,5 +101,36 @@ WHERE NOT EXISTS(
   )
 )
 ```
+^[不需要将student，enroll，course合起来]
 
-不需要将student，enroll，course合起来
+2. Find the students who have taken all courses instructed by Goliath (instructor’s name and assuming that there is no other instructor who is called Goliath). Display your answer by sID and sname.
+
+Divisor: course that taught by Goliath
+Dividend: enroll
+
+```sql
+SELECT s1.sID,s1.sname
+FROM student AS s1
+WHERE NOT EXISTS(
+  (SELECT cID FROM course  WHERE cname='Goliath') 
+  EXCEPT
+  (SELECT cID FROM enroll AS e1
+  WHERE e1.sID=s1.sID)
+)
+```
+
+```sql
+SELECT s1.sID,s1.sname
+FROM student AS s1
+WHERE NOT EXISTS(
+    (SELECT cID 
+    FROM course 
+    JOIN teach USING(cID) 
+    JOIN instructor USING(iID) 
+    WHERE iname='Goliath'
+    AND cID NOT IN 
+        (SELECT cID FROM enroll AS e1
+        WHERE e1.sID=s1.sID)
+    )
+  );
+```
