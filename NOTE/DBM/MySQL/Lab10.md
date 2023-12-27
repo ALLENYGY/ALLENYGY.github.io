@@ -28,3 +28,32 @@ Referential integrity ensures that a value that appears in one relation table fo
 
 关联删除
 关联更新
+
+- Example:
+
+```sql
+CREATE TABLE student (
+  …
+  p_code INT(11),
+  FOREIGN KEY (p_code) REFERENCES program(p_code),
+  …
+)
+
+CREATE TABLE program (
+  …
+  p_code INT(11) NOT NULL,
+  PRIMARY KEY (p_code),
+  …
+)
+```
+
+```sql
+ALTER TABLE student
+  ADD CONSTRAINT student_program 
+    FOREIGN KEY (p_code) REFERENCES program(p_code) 
+    ON DELETE CASCADE 
+    ON UPDATE CASCADE
+```
+
+- Alternative cascade actions can be:
+  - SET NULL and SET DEFAULT.
