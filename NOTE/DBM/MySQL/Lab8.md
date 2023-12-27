@@ -45,6 +45,20 @@ However, this is NOT the reason for a union without type checking.
 TableA INTERSECT TableB;
 ```
 
+```sql
+(SELECT columns FROM tables1 WHERE P1) 
+INTERSECT 
+(SELECT columns FROM tables2 WHERE P2)
+```
+The corresponding IN subquery is $(\forall x \in A, x\in B)$
+
+```sql
+SELECT columns FROM tables1 
+WHERE P1 AND columns IN (
+    SELECT columns FROM tables2 WHERE P2
+    )
+```
+
 - Find the id of the English films which are played by Tim Hackman.
 
 ```sql
@@ -59,6 +73,31 @@ WHERE name='English')
 
 - can implemented by IN
 
+```sql
+SELECT film_id
+FROM film_actor JOIN actor USING(actor_id) 
+WHERE first_name='Tim' 
+  AND last_name='Hackman'
+  AND film_id IN(
+    SELECT film_id 
+    FROM film JOIN language USING(language_id) 
+    WHERE name='English')
+```
+
+- It can also be implemented by using SOME.
+If an element is in a set, then the element is equal to some element in the set.
+
+```sql
+    SELECT film_id
+    FROM film JOIN language USING(language_id)
+    WHERE name = 'English' AND
+      film_id = SOME(
+        SELECT film_id
+        FROM film_actor JOIN actor USING(actor_id)
+        WHERE first_name='Tim' AND last_name='Hackman'
+      )
+```
+
 ### Set Difference
 
 For set difference use the keyword EXCEPT.
@@ -67,16 +106,42 @@ For set difference use the keyword EXCEPT.
 TableA except TableB
 ```
 
-Find the id of the films which are played by Tim Hackman but not in English.
+```sql
+(SELECT columns FROM tables1 WHERE P1)
+EXCEPT 
+(SELECT columns FROM tables2 WHERE P2)
+```
+
+Alternatively we can use the NOT IN subquery.
 
 ```sql
-(SELECT film_id
-FROM film_actor JOIN actor USING(actor_id)
-WHERE first_name='Tim' AND last_name='Hackman’)
+SELECT columns FROM tables1 
+WHERE P1 AND columns NOT IN (
+SELECT columns FROM tables2 WHERE P2
+)
+```
+
+- Find the id of the films which are played by Tim Hackman but not in English.
+
+```sql
+(SELECT film_id 
+FROM film_actor JOIN actor USING(actor_id) 
+WHERE first_name="Tim" AND last_name="Hackman")
 EXCEPT
 (SELECT film_id
 FROM film JOIN language USING(language_id)
-WHERE name='English')
+WHERE name="English")
 ```
 
 - can implemented by NOT IN
+
+```sql
+SELECT film_id 
+FROM film_actor JOIN actor USING(actor_id) 
+WHERE first_name="Tim" 
+AND last_name="Hackman"
+AND film_id NOT IN (
+  SELECT film_id
+  FROM film JOIN language USING(language_id)
+  WHERE name="English")
+```
