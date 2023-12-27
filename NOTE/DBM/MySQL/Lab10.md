@@ -63,3 +63,43 @@ WHERE NOT EXISTS (
   )
 )
 ```
+
+### Example-for-Correlated-Subquery
+
+- $student=(\underline{sID},sname,gender,gpa,major,phone)$
+- $instructor=(\underline{iID},iname,gender,position,department)$
+- $course=(\underline{cID},cname,credit)$
+- $enroll=(\underline{sID,cID},semester,grade)$
+// sID is a foreign key to student.sID. cID is a foreign key to course.cID.
+- $teach=(\underline{iID,cID,semester})$
+// iID is a foreign key to instructor.iID. cID is a foreign key to course.cID.
+
+1. Find the students who have enrolled all courses. Display your answer by sID and sname.
+
+```sql
+SELECT s1.sID,s1.sname
+FROM student AS s1
+WHERE NOT EXISTS(
+  (SELECT cID FROM course)
+  EXCEPT
+  (SELECT cID 
+  FROM enroll AS e1
+  WHERE s1.sID=e1.sID
+  )
+)
+```
+
+```sql
+SELECT s1.sID,s1.sname
+FROM student AS s1
+WHERE NOT EXISTS(
+  SELECT cID FROM course
+  WHERE cID NOT IN(
+    SELECT cID 
+    FROM enroll AS e1
+    WHERE s1.sID=e1.sID
+  )
+)
+```
+
+不需要将student，enroll，course合起来
