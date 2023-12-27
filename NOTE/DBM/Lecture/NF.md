@@ -12,6 +12,8 @@
 
 ## Decompose the schema in BCNF
 
+## Is Loss-less join Decompositon
+
 ## Is Dependency Preservation
 
 ## Find canonical cover of the functional dependencies
