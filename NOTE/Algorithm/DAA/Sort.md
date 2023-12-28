@@ -213,6 +213,54 @@ Swap these elements if necessary so that
 
 ### Time Complexity for Quick Sort
 
+- Assumptions
+Pivot Selection: Median of 3
+Base Case: Array size <= 10
+- Running time $T(n)$
+  - Divide
+    1. Pivot selection: O(1)
+    2. Partitioning: O(n)
+    3. Recursive calls: T(i) + T(n-i-1)
+  - Conquer and Combine: O(1)
+
+$$T(n)=T(i)+T(n-i-1)+O(n)$$
+
+- Worst-Case
+  - The pivot is the smallest element, all the time
+  - Partition is always unbalanced
+
+$$
+T(N) = T(N - 1) + cN \\
+T(N - 1) = T(N - 2) + c(N - 1) \\
+T(N - 2) = T(N - 3) + c(N - 2) \\
+...\\
+T(2) = T(1) + c(2) \\
+T(N) = T(1) + c\sum_{i=2}^{N} i = O(N^2) \\
+$$
+
+- Best-Case
+  - Partition is perfectly balanced
+  - Pivot is always in the middle (median of the array)
+
+$T(n) = 2T\left(\frac{n}{2}\right) + n \\$
+
+$\quad = 2\left[2T\left(\frac{n}{2^2}\right) + \frac{n}{2}\right] + n \\$
+
+$\quad = 2^2T\left(\frac{n}{2^2}\right) + 2n \\$
+
+$\quad = 2^3T\left(\frac{n}{2^3}\right) + 3n \\$
+
+$\quad = 2^iT\left(\frac{n}{2^i}\right) + in \\$
+
+$Let\ i = \log(n)\\$
+
+$\quad = nT\left(\frac{n}{n}\right) + n \cdot \log(n)$
+
+$\quad = O(n \log(n))$
+
+- Average-Case
+- $O(nlog(n))$
+
 ### Why is quicksort faster than mergesort?
 
 - The inner loop consists of an increment/decrement (by 1, which is fast), a test and a jump.
