@@ -96,7 +96,7 @@ public static void insertionSort(int A[],int p){
 }
 ```
 
-Time Complexity
+### Time Complexity for Insertion Sort
 
 - Best-Case: $O(n)$ 已经拍好序的数组，扫一遍
 - Worst-Case: $O(n^2)$ 倒序的数组
@@ -130,7 +130,7 @@ MERGE(A, left, center, right)
 11. Copy B to A[left..right]
 ```
 
-Time Complexity
+### Time Complexity for Merge Sort
 $T(n) = \begin{cases}
 2T(\frac{n}{2}) + O(n), & \text{if } n \geq 1 \\
 O(1), & \text{if } n = 1
@@ -210,5 +210,10 @@ Swap these elements if necessary so that
 - A[center]  = Median of three
 - Pick A[center] as the pivot
 - Swap A[center] and A[right – 1] so that pivot is at second last position
+
+### Why is quicksort faster than mergesort?
+
+- The inner loop consists of an increment/decrement (by 1, which is fast), a test and a jump.
+- There is no extra juggling as in mergesort.
 
 ## Heap Sort
