@@ -211,6 +211,8 @@ Swap these elements if necessary so that
 - Pick A[center] as the pivot
 - Swap A[center] and A[right – 1] so that pivot is at second last position
 
+### Time Complexity for Quick Sort
+
 ### Why is quicksort faster than mergesort?
 
 - The inner loop consists of an increment/decrement (by 1, which is fast), a test and a jump.
