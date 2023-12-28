@@ -142,4 +142,73 @@ $
 
 ## Quick Sort
 
+```pseudo
+QUICKSORT(A, left, right)
+1.     IF left >= right
+2.          return
+3.     q = PARTITION(A, left, right)
+4.     //q is the position of the pivot
+5.     QUICKSORT(A, left, q-1)           
+6.     QUICKSORT(A, q+1, right)
+
+PARTITION(A, left, right)
+1.     p = PIVOT(A, left, right)
+2.    //p is the position of the pivot
+3.    swap A[p] and A[right]
+4.    i = left, j = right-1, pivot = A[right]
+5.    WHILE true           
+6.        WHILE i<right AND A[i]<pivot
+7.            i++
+8.        WHILE j>=left AND A[j]>pivot
+9.            j--
+10.       IF i<j
+11.           swap A[i] and A[j]
+12.           i++, j--
+13.       ELSE
+14.           BREAK
+15.   swap A[i] and A[right]
+```
+
+### Strategy for pick pivot
+
+#### Strategy I
+
+Use the first element as pivot
+
+1. if the input is random, ok
+2. if the input is presorted (or in reverse order)
+   - all the elements go into S2 (or S1)
+   - this happens consistently throughout the recursive calls
+  Results in $O(n^2)$ behavior
+
+#### Strategy II
+
+Choose the pivot randomly
+
+1. generally safe
+2. random number generation can be expensive
+
+#### Strategy III
+
+Use the median of the array *中位数*
+The median is the middle element if the array is sorted.
+
+1. Partitioning always cuts the array into roughly half
+2. An optimal quicksort: O(N log N)
+3. However, expensive to find the exact median
+e.g., sort an array to pick the value in the middle
+
+#### Strategy IV
+
+We will use median of three
+Compare just three elements: the left most, right most and center
+
+Swap these elements if necessary so that
+
+- A[left] =  Smallest
+- A[right]   =  Largest
+- A[center]  = Median of three
+- Pick A[center] as the pivot
+- Swap A[center] and A[right – 1] so that pivot is at second last position
+
 ## Heap Sort
