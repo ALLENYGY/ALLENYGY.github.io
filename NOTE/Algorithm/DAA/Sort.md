@@ -129,7 +129,10 @@ Time Complexity
 $T(n) = \begin{cases}
 2T(\frac{n}{2}) + O(n), & \text{if } n \geq 1 \\
 O(1), & \text{if } n = 1
-\end{cases}
+\end{cases} \\
+T(n)=2^iT(\frac{n}{2^i})+i*n\\
+let\ 2^i=n\\
+T(n)=nT(\frac{n}{n})+n*log(n)=O(nlog(n))
 $
 
 ## Quick Sort

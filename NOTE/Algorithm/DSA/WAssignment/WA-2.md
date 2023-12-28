@@ -22,7 +22,7 @@ O(1), & \text{if } n = 1
 $
 
 $T(n)=2T(\frac{n}{2}) + O(1)$
-$T(n)=4T(\frac{n}{4}) + O(1)+ 2O(1)$
+$T(n)=4T(\frac{n}{4}) + O(1)+ O(1)$
 $T(n)=2^iT(\frac{n}{2^i})+i\ O(1)$
 
 When $2^i=n$
