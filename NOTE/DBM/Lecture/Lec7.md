@@ -45,7 +45,7 @@ $F^+$ is a superset of $F$.
      - if $\beta \subseteq \alpha,$ then $\alpha \rightarrow \beta$
   2. augumentation
      - if $\alpha \rightarrow \beta,$ then $\gamma \alpha \rightarrow \gamma \beta$ for any $\gamma$.  
-  3. transitity
+  3. transitivity
      - if $\alpha \rightarrow \beta$ and $\beta \rightarrow \gamma$, then $\alpha \rightarrow \gamma.$
 - These rules are sound and complete.
 
