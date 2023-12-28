@@ -99,6 +99,9 @@ Time Complexity
 
 ## Merge Sort
 
+- 重点讲下merge的过程
+  - 对于两个有序数组第一个元素下标分别为$i_1，i_2$
+
 ```pseudo
 MERGESORT(A, left, right)
 1.     IF left>=right
