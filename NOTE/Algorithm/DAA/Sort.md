@@ -6,6 +6,11 @@
 - Quik Sort
 - Heap Sort
 
+稳定排序：排序前后两个相等的数相对位置不变，则算法稳定
+Bubble sort, Insertion sort, Merge sort
+非稳定排序：排序前后两个相等的数相对位置发生了变化，则算法不稳定
+Quick sort, Heap sort
+
 Default order from smallest to largest
 ## Bubble Sort
 
