@@ -99,6 +99,29 @@ Time Complexity
 
 ## Merge Sort
 
+```pseudo
+MERGESORT(A, left, right)
+1.     IF left>=right
+2.          RETURN
+3.    center = (left+right) / 2
+4.    MERGESORT(A, left, center)
+5.    MERGESORT(A, center+1, right)
+6.    MERGE(A, left, center, right)
+
+MERGE(A, left, center, right)
+1.  i1 = left, i2 = center+1, i=0
+2.  WHILE i1<=center AND i2<=right
+3.    IF A[i1]<A[i2]
+4.      B[i++] = A[i1++]
+5.    ELSE
+6.      B[i++] = A[i2++]
+7.    WHILE i1 <= center
+8.    B[i++] = A[i1++]
+9.    WHILE i2 <= right
+10.   B[i++] = A[i2++]
+11. Copy B to A[left..right]
+```
+
 ## Quick Sort
 
 ## Heap Sort
