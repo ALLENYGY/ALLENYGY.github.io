@@ -125,6 +125,13 @@ MERGE(A, left, center, right)
 11. Copy B to A[left..right]
 ```
 
+Time Complexity
+$T(n) = \begin{cases}
+2T(\frac{n}{2}) + O(n), & \text{if } n \geq 1 \\
+O(1), & \text{if } n = 1
+\end{cases}
+$
+
 ## Quick Sort
 
 ## Heap Sort
