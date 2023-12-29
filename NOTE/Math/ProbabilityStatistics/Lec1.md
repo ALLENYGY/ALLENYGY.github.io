@@ -1,14 +1,13 @@
-# Probability
+# Probability Theory
 
-## Poisson Distribution
+1. Set Theory
+2. Probability Theory
+3. Conditional Probability and Independence
+4. Random Variables
+5. Distribution Functions
 
-- Consider the number of times an event occurs over an interval of time or space, and assume that: (考虑事件在一段时间和空间内发生的次数)
-  - 1. The probability of occurrence is the same for any intervals of equal length
-  - 2. The occurrence in any interval is independent of an occurrence in any non-overlapping interval
+## Set Theory
 
-- The probability distribution of X is characterized by
-$$P(X = k) = \frac{\lambda^{k} e^{-\lambda}}{k!}$$
+- Countable set: it consists of countable number (finite or countably infinite) of elements. For example, the set of even numbers is countably infinite; the set of prime numbers under 10,000 is finite.
 
-- For Poisson distribution, the following is true:
-$$E(X)=Var(X)=\lambda$$
-λ is called the Poisson parameter. λ is the average number of items considered in the Poisson process during the observed time period.
+- Uncountable set: it consists of uncountable number of elements. For example, the number of real numbers in any interval (a, b); the set of possible outcomes from measuring human weight or height.
