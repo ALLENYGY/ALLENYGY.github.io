@@ -68,3 +68,13 @@ The confidence interval $\mu_1-\mu_2$ is:
 $$
 (\bar{x}_1 - \bar{x}_2) \pm \color{red}t_{n_1+n_2-2, \alpha/2}\color{black} \sqrt{S_p^2 \left(\frac{1}{n_1} + \frac{1}{n_2}\right)}
 $$
+
+### $\sigma_1$ and $\sigma_2$ unknown not assumed equal
+
+Samples are randomly and independently drawn
+
+Populations are normally distributed or both sample sizes are at least 30
+
+The population variances are not assumed equal, so include the two sample variances in the computation of the t-test statistic
+
+The test statistic is a t statistic with v degrees of freedom
