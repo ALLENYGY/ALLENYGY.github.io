@@ -34,24 +34,32 @@ e.g.: Test the claim that the population mean weight is 120 pounds
 
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/confidence/estimation.png"/>
 
-| We can estimate a Population Parameter ... | with a Sample Statistic (a Point Estimate) |
-| ----------------------------------------- | ------------------------------------------ |
-| Mean                                      | $$\bar{X}$$                               |
-| Proportion                                | $$p$$                                     |
-
 <table border="1" style="border-collapse: collapse; width: 100%;">
   <tr style="background-color: #ADD8E6;">
-    <th colspan="2">We can estimate a Population Parameter ...</th>
+    <th colspan="2">Population Parameter</th>
     <th colspan="2">Sample Statistic</th>
   </tr>
   <tr>
     <td style="background-color: #98FB98; text-align: center;">Mean</td>
-    <td style="background-color: #F5DEB3; text-align: center;">$\mu$</td>
-    <td style="background-color: #F5DEB3; text-align: center;">\( \bar{X} \)</td>
+    <td style="background-color: #F5DEB3; text-align: center;">&mu;</td>
+    <td style="background-color: #F5DEB3; text-align: center;">
+    <span style="text-decoration: overline;">X</span> </td>
   </tr>
   <tr>
     <td style="background-color: #98FB98; text-align: center;">Proportion</td>
-    <td style="background-color: #F5DEB3; text-align: center;">\( \pi \)</td>
-    <td style="background-color: #F5DEB3; text-align: center;">\( p \)</td>
+    <td style="background-color: #F5DEB3; text-align: center;">&pi;</td>
+    <td style="background-color: #F5DEB3; text-align: center;">p</td>
   </tr>
 </table>
+
+An interval estimate provides more information about a population characteristic than does a point estimate
+
+Such interval estimates are called confidence intervals
+
+## Confidence interval
+
+The general formula for all confidence intervals is:
+
+$$
+Point\ Estimate ± (Critical\ Value)(Standard\ Error)
+$$
