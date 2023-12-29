@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/ProbabilityStatistics/Chi-SquareTests.md",
+                "file": "Math/SpecificMathematics/Recursion/约瑟夫问题.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Math/ProbabilityStatistics/Chi-SquareTests.md",
+                "file": "Math/SpecificMathematics/Recursion/约瑟夫问题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Math/ProbabilityStatistics/Chi-SquareTests.md",
+                "file": "Math/SpecificMathematics/Recursion/约瑟夫问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Math/ProbabilityStatistics/Chi-SquareTests.md"
+                "file": "Math/SpecificMathematics/Recursion/约瑟夫问题.md"
               }
             }
           }
@@ -151,11 +151,17 @@
   },
   "active": "9ecbc0e35518d794",
   "lastOpenFiles": [
+    "Math/ProbabilityStatistics/Lec1.md",
+    "Math/ProbabilityStatistics/Lec3.md",
+    "Math/ProbabilityStatistics/Lec7.md",
+    "Math/ProbabilityStatistics/Lec6.md",
+    "Math/ProbabilityStatistics/Lec5.md",
+    "Math/ProbabilityStatistics/Chi-SquareTests.md",
+    "Math/ProbabilityStatistics/Lec8.md",
     "Math/ProbabilityStatistics/image.png",
     "Math/SpecificMathematics/Recursion/约瑟夫问题.md",
     "Math/README.md",
     "Others/Conda/Conda.md",
-    "Math/ProbabilityStatistics/Chi-SquareTests.md",
     "Math/ProbabilityStatistics/HypothesisTesting(II).md",
     "Math/ProbabilityStatistics/HypothesisTesting(I).md",
     "Others/Docker/Docker.md",
@@ -182,11 +188,6 @@
     "DBM/MySQL/Lab10.md",
     "DBM/MySQL/Lab9.md",
     "CO/Lecture/CircuitDesign.md",
-    "CO/README.md",
-    "Algorithm/DSA/WAssignment/WA-1.md",
-    "Math/ProbabilityStatistics/PoissonDistribution.md",
-    "Math/ProbabilityStatistics/ProbabilityTheory.md",
-    "Math/LinearAlgebra/Chapter1.md",
-    "Others/Git/Git-Introduction.md"
+    "CO/README.md"
   ]
 }
