@@ -3,7 +3,7 @@
 - Bubble Sort
 - Insertion Sort
 - Merge Sort
-- Quik Sort
+- Quick Sort
 - Heap Sort
 
 稳定排序：排序前后两个相等的数相对位置不变，则算法稳定
@@ -131,14 +131,14 @@ MERGE(A, left, center, right)
 ```
 
 ### Time Complexity for Merge Sort
-$T(n) = \begin{cases}
-2T(\frac{n}{2}) + O(n), & \text{if } n \geq 1 \\
+$$T(n) = \begin{cases}
+$2T(\frac{n}{2}) + O(n), & \text{if } n \geq 1 \\
 O(1), & \text{if } n = 1
 \end{cases} \\
-T(n)=2^iT(\frac{n}{2^i})+i*n\\
-let\ 2^i=n\\
-T(n)=nT(\frac{n}{n})+n*log(n)=O(nlog(n))
-$
+$$
+$T(n)=2^iT(\frac{n}{2^i})+i*n$
+$let\ 2^i=n$
+$T(n)=nT(\frac{n}{n})+n*log(n)=O(nlog(n))$
 
 ## Quick Sort
 
@@ -173,7 +173,7 @@ PARTITION(A, left, right)
 
 #### Strategy I
 
-Use the first element as pivot
+Use the first element as a pivot
 
 1. if the input is random, ok
 2. if the input is presorted (or in reverse order)
@@ -195,13 +195,13 @@ The median is the middle element if the array is sorted.
 
 1. Partitioning always cuts the array into roughly half
 2. An optimal quicksort: O(N log N)
-3. However, expensive to find the exact median
+3. However, it is expensive to find the exact median
 e.g., sort an array to pick the value in the middle
 
 #### Strategy IV
 
-We will use median of three
-Compare just three elements: the left most, right most and center
+We will use the median of three
+Compare just three elements: the left-most, right-most, and center
 
 Swap these elements if necessary so that
 
@@ -209,7 +209,7 @@ Swap these elements if necessary so that
 - A[right]   =  Largest
 - A[center]  = Median of three
 - Pick A[center] as the pivot
-- Swap A[center] and A[right – 1] so that pivot is at second last position
+- Swap A[center] and A[right – 1] so that the pivot is at second-last%%  %% position
 
 ### Time Complexity for Quick Sort
 
@@ -242,17 +242,17 @@ $$
   - Partition is perfectly balanced
   - Pivot is always in the middle (median of the array)
 
-$T(n) = 2T\left(\frac{n}{2}\right) + n \\$
+$T(n) = 2T\left(\frac{n}{2}\right) + n$
 
-$\quad = 2\left[2T\left(\frac{n}{2^2}\right) + \frac{n}{2}\right] + n \\$
+$\quad = 2\left[2T\left(\frac{n}{2^2}\right) + \frac{n}{2}\right] + n$
 
-$\quad = 2^2T\left(\frac{n}{2^2}\right) + 2n \\$
+$\quad = 2^2T\left(\frac{n}{2^2}\right) + 2n$
 
-$\quad = 2^3T\left(\frac{n}{2^3}\right) + 3n \\$
+$\quad = 2^3T\left(\frac{n}{2^3}\right) + 3n$
 
-$\quad = 2^iT\left(\frac{n}{2^i}\right) + in \\$
+$\quad = 2^iT\left(\frac{n}{2^i}\right) + in$
 
-$Let\ i = \log(n)\\$
+$Let\ i = \log(n)$
 
 $\quad = nT\left(\frac{n}{n}\right) + n \cdot \log(n)$
 
@@ -263,7 +263,7 @@ $\quad = O(n \log(n))$
 
 ### Why is quicksort faster than mergesort?
 
-- The inner loop consists of an increment/decrement (by 1, which is fast), a test and a jump.
+- The inner loop consists of an increment/decrement (by 1, which is fast), a test and ,a jump.
 - There is no extra juggling as in mergesort.
 
 ## Heap Sort

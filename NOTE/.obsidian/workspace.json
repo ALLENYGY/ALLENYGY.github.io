@@ -11,8 +11,12 @@
             "id": "9ecbc0e35518d794",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Algorithm/DAA/Sort.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Algorithm/DAA/Sort.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Algorithm/DAA/Sort.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Algorithm/DAA/Sort.md"
+              }
             }
           }
         ]
@@ -130,17 +138,18 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "remotely-secure:Remotely Sync": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "remotely-save:Remotely Save": false
+      "command-palette:打开命令面板": false
     }
   },
   "active": "9ecbc0e35518d794",
   "lastOpenFiles": [
+    "DataAnalysis/HOD/HOD.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772956703.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772955877.md",
     "Others/Conda/Conda.md",
@@ -176,7 +185,6 @@
     "ProgramLanguage/Java/Lec6.md",
     "README.md",
     "DBM/MySQL/Lab7.md",
-    "DBM/MySQL/Lab7-NSConflict-AllenYGY-mac14.2.1.md",
-    "DSA/WA-2.md"
+    "DBM/MySQL/Lab7-NSConflict-AllenYGY-mac14.2.1.md"
   ]
 }
