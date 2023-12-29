@@ -267,3 +267,11 @@ $\quad = O(n \log(n))$
 - There is no extra juggling as in mergesort.
 
 ## Heap Sort
+
+### Priority Queue
+
+Priority queue is a data structure which allows at least two operations
+
+- insert
+- deleteMin/deleteMax
+  - finds, returns and removes the minimum elements in the priority queue
