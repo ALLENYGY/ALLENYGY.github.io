@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Others/Conda/Conda.md",
+                "file": "Math/ProbabilityStatistics/Chi-SquareTests.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Others/Conda/Conda.md",
+                "file": "Math/ProbabilityStatistics/Chi-SquareTests.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Others/Conda/Conda.md",
+                "file": "Math/ProbabilityStatistics/Chi-SquareTests.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Others/Conda/Conda.md"
+                "file": "Math/ProbabilityStatistics/Chi-SquareTests.md"
               }
             }
           }
@@ -149,8 +149,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b64f70998bedd5d2",
+  "active": "9ecbc0e35518d794",
   "lastOpenFiles": [
+    "Math/SpecificMathematics/Recursion/约瑟夫问题.md",
+    "Math/README.md",
+    "Others/Conda/Conda.md",
+    "Math/ProbabilityStatistics/Chi-SquareTests.md",
     "Math/ProbabilityStatistics/HypothesisTesting(II).md",
     "Math/ProbabilityStatistics/HypothesisTesting(I).md",
     "Math/ProbabilityStatistics/image.png",
@@ -162,7 +166,6 @@
     "DataAnalysis/HOD/HOD.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772956703.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772955877.md",
-    "Others/Conda/Conda.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772942575.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772956703.nssyncsc",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772955877.nssyncsc",
@@ -182,12 +185,9 @@
     "CO/README.md",
     "Algorithm/DSA/WAssignment/WA-1.md",
     "Math/ProbabilityStatistics/PoissonDistribution.md",
-    "Math/README.md",
-    "Math/SpecificMathematics/递归/约瑟夫问题.md",
     "Math/ProbabilityStatistics/ProbabilityTheory.md",
     "Math/LinearAlgebra/Chapter1.md",
     "Others/Git/Git-Introduction.md",
-    "Others/Git/Git.md",
-    "ProgramLanguage/R/Lec2.md"
+    "Others/Git/Git.md"
   ]
 }
