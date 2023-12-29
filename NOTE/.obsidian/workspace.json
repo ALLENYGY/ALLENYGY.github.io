@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "c5cb557f0e7fb191",
+        "id": "278ad7db52cf011c",
         "type": "tabs",
         "children": [
           {
-            "id": "ec601bdd51449359",
+            "id": "43af6a329c77bfec",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Math/ProbabilityStatistics/Lec4.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Math/ProbabilityStatistics/Lec4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Math/ProbabilityStatistics/Lec4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "assets/JCM.png.md"
+                "file": "Math/ProbabilityStatistics/Lec4.md"
               }
             }
           }
@@ -143,10 +149,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b64f70998bedd5d2",
+  "active": "43af6a329c77bfec",
   "lastOpenFiles": [
-    "ProgramLanguage/Java/Lec6.md",
+    "Math/DiscreteStructure/Lecture/Lec7.md",
     "assets/JCM.png.md",
+    "ProgramLanguage/Java/Lec6.md",
     "assets",
     "Math/SpecificMathematics/Recursion/约瑟夫问题.md",
     "Math/ProbabilityStatistics/Lec4.md",
@@ -181,7 +188,6 @@
     "_remotely-save-metadata-on-remote.nssyncsc",
     "CO/TOOL/ASCII.c",
     "CO/TOOL/ASCII",
-    "DBM/MySQL/image.png",
-    "DBM/MySQL/Lab10.md"
+    "DBM/MySQL/image.png"
   ]
 }
