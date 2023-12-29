@@ -77,4 +77,26 @@ Populations are normally distributed or both sample sizes are at least 30
 
 The population variances are not assumed equal, so include the two sample variances in the computation of the t-test statistic
 
-The test statistic is a t statistic with v degrees of freedom
+The test statistic is a t statistic with $\nu$ degrees of freedom
+
+The number of degrees of freedom is the integer portion of:
+
+$$
+\nu = \frac{\left(\frac{S_1^2}{n_1} + \frac{S_2^2}{n_2}\right)^2}{\frac{\left(\frac{S_1^2}{n_1}\right)^2}{n_1 - 1} + \frac{\left(\frac{S_2^2}{n_2}\right)^2}{n_2 - 1}}
+$$
+
+The test statistic for $\mu_1-\mu_2$ is:
+
+$$
+t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{S_1^2}{n_1} + \frac{S_2^2}{n_2}}}
+$$
+
+The confidence interval $\mu_1-\mu_2$ is:
+
+$$
+(\bar{x}_1 - \bar{x}_2) \pm \color{red}\nu\color{black} {\sqrt{\frac{S_1^2}{n_1} + \frac{S_2^2}{n_2}}}
+$$
+
+## Related Samples
+
+Dependent samples are samples that are paired or related in some fashion.
