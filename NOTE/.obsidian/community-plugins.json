@@ -1,4 +1,10 @@
 [
   "obsidian-git",
-  "remotely-secure"
+  "remotely-secure",
+  "table-editor-obsidian",
+  "dataview",
+  "obsidian-excalidraw-plugin",
+  "obsidian-outliner",
+  "obsidian-icon-folder",
+  "obsidian-mind-map"
 ]
