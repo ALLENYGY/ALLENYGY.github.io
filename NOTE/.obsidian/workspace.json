@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e22fe8724a962995",
+        "id": "c5cb557f0e7fb191",
         "type": "tabs",
         "children": [
           {
-            "id": "9ecbc0e35518d794",
+            "id": "ec601bdd51449359",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Math/SpecificMathematics/Recursion/约瑟夫问题.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Math/SpecificMathematics/Recursion/约瑟夫问题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Math/SpecificMathematics/Recursion/约瑟夫问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Math/SpecificMathematics/Recursion/约瑟夫问题.md"
+                "file": "assets/JCM.png.md"
               }
             }
           }
@@ -149,8 +143,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9ecbc0e35518d794",
+  "active": "b64f70998bedd5d2",
   "lastOpenFiles": [
+    "ProgramLanguage/Java/Lec6.md",
+    "assets/JCM.png.md",
+    "assets",
+    "Math/SpecificMathematics/Recursion/约瑟夫问题.md",
     "Math/ProbabilityStatistics/Lec4.md",
     "Math/ProbabilityStatistics/Lec1.md",
     "Math/ProbabilityStatistics/Lec3.md",
@@ -160,7 +158,6 @@
     "Math/ProbabilityStatistics/Chi-SquareTests.md",
     "Math/ProbabilityStatistics/Lec8.md",
     "Math/ProbabilityStatistics/image.png",
-    "Math/SpecificMathematics/Recursion/约瑟夫问题.md",
     "Math/README.md",
     "Others/Conda/Conda.md",
     "Math/ProbabilityStatistics/HypothesisTesting(II).md",
@@ -184,10 +181,7 @@
     "_remotely-save-metadata-on-remote.nssyncsc",
     "CO/TOOL/ASCII.c",
     "CO/TOOL/ASCII",
-    "CO/TOOL",
     "DBM/MySQL/image.png",
-    "DBM/MySQL/Lab10.md",
-    "DBM/MySQL/Lab9.md",
-    "CO/Lecture/CircuitDesign.md"
+    "DBM/MySQL/Lab10.md"
   ]
 }
