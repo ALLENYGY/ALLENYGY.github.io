@@ -1,4 +1,4 @@
-# Hypothesis Testing
+# Hypothesis Testing(Single Population)
 
 1. State the null hypothesis, $H_0$ and the alternative hypothesis, $H_1$
 2. Choose the level of significance, $\alpha$, and the sample size, n
@@ -48,6 +48,9 @@ Type I and Type II errors cannot happen at the same time
 
 If Type I error probability $\alpha \uparrow$ then Type II error probability $\beta \downarrow$
 If Type I error probability $\alpha \downarrow$ then Type II error probability $\beta \uparrow$
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/error-1-2.png"/>
+
+## Summary
 
 Performed  Z  Test for the mean ($\delta$ known)
 Performed  t  Test for the mean ($\delta$ unknown)
