@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithm/DAA/Sort.md",
+                "file": "Others/Conda/Conda.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithm/DAA/Sort.md",
+                "file": "Others/Conda/Conda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithm/DAA/Sort.md",
+                "file": "Others/Conda/Conda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithm/DAA/Sort.md"
+                "file": "Others/Conda/Conda.md"
               }
             }
           }
@@ -151,6 +151,8 @@
   },
   "active": "b64f70998bedd5d2",
   "lastOpenFiles": [
+    "Others/Docker/Docker.md",
+    "Algorithm/DAA/Sort.md",
     "Math/ProbabilityStatistics/HypothesisTestingII.md",
     "Math/ProbabilityStatistics/SamplingDistribution.md",
     "Math/ProbabilityStatistics/HypothesisTestingI.md",
@@ -164,11 +166,9 @@
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772942575.nssyncsc",
     "_debug_remotely_save/000_坚果云闪电下载介绍.url.nssyncsc",
     "_debug_remotely_save",
-    "Others/Docker/docker.md",
     "DBM/Assignment/As3/As3.md",
     "_remotely-save-metadata-on-remote.json",
     "_remotely-save-metadata-on-remote.nssyncsc",
-    "Algorithm/DAA/Sort.md",
     "CO/TOOL/ASCII.c",
     "CO/TOOL/ASCII",
     "CO/TOOL",

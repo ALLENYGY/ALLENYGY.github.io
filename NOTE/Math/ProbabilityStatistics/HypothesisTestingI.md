@@ -52,8 +52,8 @@ If Type I error probability $\alpha \downarrow$ then Type II error probability $
 
 ## Summary
 
-Performed  Z  Test for the mean ($\delta$ known)
-Performed  t  Test for the mean ($\delta$ unknown)
+Performed  Z  Test for the mean ($\sigma$ known)
+Performed  t  Test for the mean ($\sigma$ unknown)
 Performed Z Tests about a Population Proportion
 Discussed  critical value and p–value approaches to hypothesis testing
 Type I & II errors
