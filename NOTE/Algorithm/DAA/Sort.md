@@ -275,3 +275,64 @@ Priority queue is a data structure which allows at least two operations
 - insert
 - deleteMin/deleteMax
   - finds, returns and removes the minimum elements in the priority queue
+
+### Binary Heap
+
+Heaps are “almost perfect binary trees”
+
+- All levels are full except possibly the lowest level
+- If the lowest level is not full, then nodes must be packed to the left
+
+### Property
+
+Given a binary heap of node number n and height h
+
+- n is within [2h, 2h+1-1]
+- The height $h=O(log(n))$
+The structure is so regular, it can be represented in an array and no links are necessary !!!
+
+Insert in $O(logN)$ time
+Locate the current minimum in $O(1)$ time
+Delete the current minimum in $O(log N)$ time
+
+```pseudo
+insert(x)
+1.     IF ISFULL(A)
+2.          return False
+3.     // percolate up
+4.     hole = size ++
+5.     WHILE hole>0 AND x<A[(hole-1)/2]
+6.         A[hole] = A[(hole-1)/2]
+7.         hole = (hole-1)/2
+8.   A[hole] = x
+9.   return True
+```
+
+Note:
+节点A：$x$
+父节点：$\lfloor \frac{x-1}{2} \rfloor$
+
+```pseudo
+deleteMin()
+1.     IF ISEMPTY(A)
+2.          return -1
+3.     min = A[0], hole = 0, x=A[--size]
+4.     // percolate down
+4.     WHILE A[hole] has children
+5.         sid = index of A[hole]’s smaller child
+6.         IF x<=A[sid]
+7.           BREAK
+8.         A[hole] = A[sid]
+9.         hole = sid
+10.   A[hole] = x
+11.   return min
+```
+
+```pseudo
+HEAPSORT(A)
+1.     heap = new MaxHeap(A) 
+2.     FOR Each x in A
+3.         heap.insert(x)
+4.     FOR i=size-1 TO 0
+5.         A[i] = heap.deleteMax()
+```
