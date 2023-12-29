@@ -36,7 +36,15 @@ The probability of Type I Error is $\alpha$
 
 ### Type II Error
 
-Fail to reject a false null hypothesis
+Fail to reject a false null hypothesis *原假设是错的却接受*
 Fail to reject a false null hypothesis $\beta$
 
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/Error.png"/>
+
+Type I and Type II errors cannot happen at the same time
+
+- Type I error can only occur if $H_0$ is true
+- Type II error can only occur if $H_0$ is false
+
+If Type I error probability $\alpha \uparrow$ then Type II error probability $\beta \downarrow$
+If Type I error probability $\alpha \downarrow$ then Type II error probability $\beta \uparrow$
