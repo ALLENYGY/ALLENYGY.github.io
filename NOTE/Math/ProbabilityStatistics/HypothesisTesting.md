@@ -48,3 +48,9 @@ Type I and Type II errors cannot happen at the same time
 
 If Type I error probability $\alpha \uparrow$ then Type II error probability $\beta \downarrow$
 If Type I error probability $\alpha \downarrow$ then Type II error probability $\beta \uparrow$
+
+Performed  Z  Test for the mean ($\delta$ known)
+Performed  t  Test for the mean ($\delta$ unknown)
+Performed Z Tests about a Population Proportion
+Discussed  critical value and p–value approaches to hypothesis testing
+Type I & II errors
