@@ -25,7 +25,7 @@ $$
 \chi^2 = \sum_{i=1}^{k} \frac{(f_i - E_i)^2}{E_i}
 $$
 
-### A Goodness of Fit Test for Multinomial Probabilities
+### Test of Multinomial Experiment
 
 1. H0: multinomial probabilities are p1, p2, … , pk
    Ha: at least one of the probabilities differs from p1, p2,…, pk
@@ -40,3 +40,26 @@ $$
 $$
 
 6. Reject H0 if $\chi^2$ > $\chi^2_\alpha$
+
+#### General Test Example
+
+**Marital status**
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/General-test.png"/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/General-test-1.png"/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/General-test-2.png"/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/General-test-3.png"/>
+
+#### Test for homogeneity Example
+
+**Support calls**
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/homogeneity-1.png"/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/homogeneity-2.png"/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/homogeneity-3.png"/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/homogeneity-4.png"/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/homogeneity-6.png"/>
+
+### A Chi-Square Test for Independence
+
+Chi-square test of independence is used to determine if there is a significant relationship between two qualitative (categorical) variables.
+
+A contingency table is used to investigate whether two traits or characteristics are related.
