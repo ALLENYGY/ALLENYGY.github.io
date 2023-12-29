@@ -177,12 +177,12 @@ Compared two independent samples
 - Performed Z  test for the difference in two means
 - Performed pooled variance t  test for the difference in two means
 - Performed separate-variance t test for difference in two means
-- Formed confidence intervals for the difference between two means 
+- Formed confidence intervals for the difference between two means
 
 Compared two related samples (paired samples)
 
 - Performed paired t  tests for the mean difference
-- Formed confidence intervals for the mean difference 
+- Formed confidence intervals for the mean difference
 
 Compared two population proportions
 
