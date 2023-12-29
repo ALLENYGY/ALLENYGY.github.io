@@ -100,3 +100,29 @@ $$
 ## Related Samples
 
 Dependent samples are samples that are paired or related in some fashion.
+
+### Paired T-test
+
+$$
+D_i = X_{1i} - X_{2i}
+$$
+
+$$
+\bar{d} = \frac{\sum d_i}{n}
+$$
+
+$$
+S_d = \sqrt{\frac{\sum (d_i - \bar{d})^2}{n - 1}}
+$$
+
+Paired (matched)-Sample T Test, the test statistic for $μ_D$  is a t-statistic
+
+$$
+t = \frac{\bar{D} - \mu_D}{\frac{S_D}{\sqrt{n}}}
+$$
+
+The confidence interval for $μ_D$ is
+
+$$
+\bar{d} \pm t_{\alpha/2, n-1} \left(\frac{S_D}{\sqrt{n}}\right)
+$$
