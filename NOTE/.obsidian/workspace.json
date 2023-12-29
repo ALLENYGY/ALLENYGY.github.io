@@ -149,8 +149,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9ecbc0e35518d794",
+  "active": "b64f70998bedd5d2",
   "lastOpenFiles": [
+    "Math/ProbabilityStatistics/HypothesisTestingII.md",
+    "Math/ProbabilityStatistics/SamplingDistribution.md",
+    "Math/ProbabilityStatistics/HypothesisTestingI.md",
     "DataAnalysis/HOD/HOD.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772956703.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772955877.md",
@@ -184,9 +187,6 @@
     "Others/Git/Git.md",
     "ProgramLanguage/R/Lec2.md",
     "ProgramLanguage/README.md",
-    "ProgramLanguage/Java/Lec6.md",
-    "README.md",
-    "DBM/MySQL/Lab7.md",
-    "DBM/MySQL/Lab7-NSConflict-AllenYGY-mac14.2.1.md"
+    "ProgramLanguage/Java/Lec6.md"
   ]
 }
