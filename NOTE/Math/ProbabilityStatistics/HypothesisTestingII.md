@@ -126,3 +126,65 @@ The confidence interval for $μ_D$ is
 $$
 \bar{d} \pm t_{\alpha/2, n-1} \left(\frac{S_D}{\sqrt{n}}\right)
 $$
+
+## Two Population Proportions
+
+The point estimate for the difference is
+$$
+\hat{p}_1 - \hat{p}_2
+$$
+
+Mean:
+
+$$
+\mu_{\hat{p}_1 - \hat{p}_2} = p_1 - p_2
+$$
+
+Standard deviation:
+
+<!-- $$
+\sigma_{\hat{p}_1 - \hat{p}_2} = \sqrt{\frac{p_1(1 - p_1)}{n_1} + \frac{p_2(1 - p_2)}{n_2}}
+$$ -->
+
+if $p_1=p_2$:
+
+$$
+\sigma_{\hat{p}_1 - \hat{p}_2} = \sqrt{\hat{p}(1 - \hat{p})\left(\frac{1}{n_1} + \frac{1}{n_2}\right)}
+$$
+
+if $p_1!=p_2$:
+
+$$
+\sigma_{\hat{p}_1 - \hat{p}_2} = \sqrt{\frac{\hat{p}_1(1 - \hat{p}_1)}{n_1} + \frac{\hat{p}_2(1 - \hat{p}_2)}{n_2}}
+$$
+
+The test statistic for $p_1 – p_2$ is a  Z statistic:
+
+$$
+z = \frac{(\hat{p}_1 - \hat{p}_2) - (p_1 - p_2)}{\sigma_{\hat{p}_1 - \hat{p}_2}}
+$$
+
+The confidence interval for $p_1-p_2$ is:
+
+$$
+(\hat{p}_1 - \hat{p}_2) \pm z_{\alpha/2} \sqrt{\frac{\hat{p}_1(1 - \hat{p}_1)}{n_1} + \frac{\hat{p}_2(1 - \hat{p}_2)}{n_2}}
+$$
+
+## Summary
+
+Compared two independent samples
+
+- Performed Z  test for the difference in two means
+- Performed pooled variance t  test for the difference in two means
+- Performed separate-variance t test for difference in two means
+- Formed confidence intervals for the difference between two means 
+
+Compared two related samples (paired samples)
+
+- Performed paired t  tests for the mean difference
+- Formed confidence intervals for the mean difference 
+
+Compared two population proportions
+
+- Formed confidence intervals for the difference between two population proportions
+- Performed Z-test for two population proportions
