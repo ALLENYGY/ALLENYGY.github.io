@@ -58,8 +58,61 @@ $$
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/homogeneity-4.png"/>
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/homogeneity-6.png"/>
 
-### A Chi-Square Test for Independence
+## Chi-Square Test for Independence
 
 Chi-square test of independence is used to determine if there is a significant relationship between two qualitative (categorical) variables.
 
 A contingency table is used to investigate whether two traits or characteristics are related.
+
+1. H0: X and Y are independent
+   Ha: X and Y are dependent
+
+2. Assumption: The excepted cell frequencies are > 5
+3. Set the level of significance
+
+$$
+\hat{E}_{ij} = \frac{r_i c_j}{n}
+$$
+
+4. Critical value is $\chi^2_\alpha$, with degrees of freedom (r-1)(c-1)
+5. Test statistic:
+
+$$
+\chi^2 = \sum_{i=1}^{r} \sum_{j=1}^{c} \frac{(f_{ij} - E_{ij})^2}{E_{ij}}
+$$
+
+where:
+$f_{ij}$ = observed frequency in cell $(i, j)$
+$E_{ij}$ = expected frequency in cell $(i, j)$
+$r$ = number of rows
+$c$ = number of columns
+6. Reject H0 if $\chi^2 > \chi^2_\alpha$
+
+### Chi-Square Test for Independence Example
+
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/contingency-1.png"/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/contingency-2.png"/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/contingency-3.png"/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/contingency-4.png"/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/contingency-5.png"/>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/chi/contingency-6.png"/>
+
+## Summary
+
+Chi-squared test of goodness of fit:
+
+$$
+\chi^2 = \sum_{i=1}^{k} \frac{(f_i - E_i)^2}{E_i}
+$$
+
+d.f. = k - 1
+
+Chi-squared test of independence in a contingency table:
+
+$$
+\chi^2 = \sum_{i=1}^{r} \sum_{j=1}^{c} \frac{(f_{ij} - E_{ij})^2}{E_{ij}}
+$$
+
+d.f. = (r - 1)(c - 1)
+
+These formulas and degrees of freedom calculations are fundamental to performing chi-squared tests in statistics.
