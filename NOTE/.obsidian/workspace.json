@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/ProbabilityStatistics/Lec6.md",
+                "file": "Algorithm/DSA/Tree.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Math/ProbabilityStatistics/Lec6.md",
+                "file": "Algorithm/DSA/Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Math/ProbabilityStatistics/Lec6.md",
+                "file": "Algorithm/DSA/Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Math/ProbabilityStatistics/Lec6.md"
+                "file": "Algorithm/DSA/Tree.md"
               }
             }
           }
@@ -149,11 +149,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "43af6a329c77bfec",
+  "active": "b64f70998bedd5d2",
   "lastOpenFiles": [
+    "Algorithm/DSA/AVL.md",
+    "Math/ProbabilityStatistics/Lec6.md",
     "Math/ProbabilityStatistics/Lec7.md",
     "Math/ProbabilityStatistics/Lec4.md",
-    "Math/ProbabilityStatistics/Lec6.md",
     "Math/ProbabilityStatistics/PoissonDistribution.md",
     "Math/ProbabilityStatistics/Lec5.md",
     "DataAnalysis/HOD/HOD.md",
@@ -179,7 +180,6 @@
     "Math/ProbabilityStatistics/HypothesisTestingI.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772956703.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772955877.md",
-    "_debug_remotely_save/sync_plans_hist_exported_on_1703772942575.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772956703.nssyncsc",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772955877.nssyncsc",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772942575.nssyncsc",
