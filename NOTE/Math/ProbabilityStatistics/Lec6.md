@@ -94,7 +94,7 @@ $$
 The confidence interval $\mu_1-\mu_2$ is:
 
 $$
-(\bar{x}_1 - \bar{x}_2) \pm \color{red}\nu\color{black} {\sqrt{\frac{S_1^2}{n_1} + \frac{S_2^2}{n_2}}}
+(\bar{x}_1 - \bar{x}_2) \pm \color{red}\nu\color{white} {\sqrt{\frac{S_1^2}{n_1} + \frac{S_2^2}{n_2}}}
 $$
 
 ## Related Samples
