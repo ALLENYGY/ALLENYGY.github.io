@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/ProbabilityStatistics/Lec4.md",
+                "file": "Math/ProbabilityStatistics/Lec5.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Math/ProbabilityStatistics/Lec4.md",
+                "file": "Math/ProbabilityStatistics/Lec5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Math/ProbabilityStatistics/Lec4.md",
+                "file": "Math/ProbabilityStatistics/Lec5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Math/ProbabilityStatistics/Lec4.md"
+                "file": "Math/ProbabilityStatistics/Lec5.md"
               }
             }
           }
@@ -149,19 +149,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "43af6a329c77bfec",
+  "active": "b64f70998bedd5d2",
   "lastOpenFiles": [
+    "Math/ProbabilityStatistics/Lec6.md",
+    "Math/ProbabilityStatistics/Lec7.md",
+    "Math/ProbabilityStatistics/Lec5.md",
+    "Math/ProbabilityStatistics/Lec4.md",
+    "DataAnalysis/HOD/HOD.md",
+    "DataAnalysis/HOD",
     "Math/DiscreteStructure/Lecture/Lec7.md",
     "assets/JCM.png.md",
     "ProgramLanguage/Java/Lec6.md",
     "assets",
     "Math/SpecificMathematics/Recursion/约瑟夫问题.md",
-    "Math/ProbabilityStatistics/Lec4.md",
     "Math/ProbabilityStatistics/Lec1.md",
     "Math/ProbabilityStatistics/Lec3.md",
-    "Math/ProbabilityStatistics/Lec7.md",
-    "Math/ProbabilityStatistics/Lec6.md",
-    "Math/ProbabilityStatistics/Lec5.md",
     "Math/ProbabilityStatistics/Chi-SquareTests.md",
     "Math/ProbabilityStatistics/Lec8.md",
     "Math/ProbabilityStatistics/image.png",
@@ -174,7 +176,6 @@
     "Math/ProbabilityStatistics/HypothesisTestingII.md",
     "Math/ProbabilityStatistics/SamplingDistribution.md",
     "Math/ProbabilityStatistics/HypothesisTestingI.md",
-    "DataAnalysis/HOD/HOD.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772956703.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772955877.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772942575.md",
@@ -183,11 +184,9 @@
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772942575.nssyncsc",
     "_debug_remotely_save/000_坚果云闪电下载介绍.url.nssyncsc",
     "_debug_remotely_save",
-    "DBM/Assignment/As3/As3.md",
     "_remotely-save-metadata-on-remote.json",
     "_remotely-save-metadata-on-remote.nssyncsc",
     "CO/TOOL/ASCII.c",
-    "CO/TOOL/ASCII",
     "DBM/MySQL/image.png"
   ]
 }
