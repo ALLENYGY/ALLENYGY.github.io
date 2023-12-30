@@ -44,7 +44,7 @@ $$
 The confidence interval $\mu_1-\mu_2$ is:
 
 $$
-(\bar{x}_1 - \bar{x}_2) \pm \color{red}Z_{\alpha/2}\color{black} \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}
+(\bar{x}_1 - \bar{x}_2) \pm \color{red}Z_{\alpha/2}\color{white} \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}
 $$
 
 ### $\sigma_1$ and $\sigma_2$ unknown assumed equal
@@ -66,7 +66,7 @@ $$
 The confidence interval $\mu_1-\mu_2$ is:
 
 $$
-(\bar{x}_1 - \bar{x}_2) \pm \color{red}t_{n_1+n_2-2, \alpha/2}\color{black} \sqrt{S_p^2 \left(\frac{1}{n_1} + \frac{1}{n_2}\right)}
+(\bar{x}_1 - \bar{x}_2) \pm \color{red}t_{n_1+n_2-2, \alpha/2}\color{white} \sqrt{S_p^2 \left(\frac{1}{n_1} + \frac{1}{n_2}\right)}
 $$
 
 ### $\sigma_1$ and $\sigma_2$ unknown not assumed equal
