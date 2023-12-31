@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithm/DAA/Sort.md",
+                "file": "Math/ProbabilityStatistics/Lec6.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithm/DAA/Sort.md",
+                "file": "Math/ProbabilityStatistics/Lec6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithm/DAA/Sort.md",
+                "file": "Math/ProbabilityStatistics/Lec6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithm/DAA/Sort.md"
+                "file": "Math/ProbabilityStatistics/Lec6.md"
               }
             }
           }
@@ -151,9 +151,9 @@
   },
   "active": "ec23d58cdc110300",
   "lastOpenFiles": [
+    "Algorithm/DAA/Sort.md",
     "Math/ProbabilityStatistics/Lec4.md",
     "Math/README.md",
-    "Algorithm/DAA/Sort.md",
     "Algorithm/DSA/WAssignment/WA-1.md",
     "Algorithm/DSA/B+Tree.md",
     "Algorithm/DSA/Tree.md",
