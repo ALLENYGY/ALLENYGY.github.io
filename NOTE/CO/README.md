@@ -2,7 +2,7 @@
 
 Here is my CO Note in UIC!
 
-## [Computer](CO/Lecture/Lec1.md)
+## [What is a Computer](CO/Lecture/Lec1.md)
 
 ## [Bits: Data Representation and Manipulation](CO/Lecture/Lec2.md)
 
