@@ -14,13 +14,11 @@ ISA = Instruction Set Architecture
 or compiler writer
 - Micro-architecture transfers the ISA into an implementation
 - For a given ISA, there might be many different microarchitectures
-- An architecture is a collection of circuits connected together
+- An architecture is a collection of circuits connected
 
 ## Von Neumann architecture
 
-<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/John_von_Neumann.png" width="30%">
-
-<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/VNA.png" width="50%">
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/John_von_Neumann.png" width="30%">![VNA](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/VNA.png)
 
 - Memory
 - CPU

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/ProbabilityStatistics/Lec6.md",
+                "file": "CO/Lecture/Lec8.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Math/ProbabilityStatistics/Lec6.md",
+                "file": "CO/Lecture/Lec8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Math/ProbabilityStatistics/Lec6.md",
+                "file": "CO/Lecture/Lec8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Math/ProbabilityStatistics/Lec6.md"
+                "file": "CO/Lecture/Lec8.md"
               }
             }
           }
@@ -151,6 +151,7 @@
   },
   "active": "ec23d58cdc110300",
   "lastOpenFiles": [
+    "Math/ProbabilityStatistics/Lec6.md",
     "Algorithm/DAA/Sort.md",
     "Math/ProbabilityStatistics/Lec4.md",
     "Math/README.md",
@@ -158,7 +159,6 @@
     "Algorithm/DSA/B+Tree.md",
     "Algorithm/DSA/Tree.md",
     "Algorithm/DSA/AVL.md",
-    "Math/ProbabilityStatistics/Lec6.md",
     "Math/ProbabilityStatistics/Lec7.md",
     "Math/ProbabilityStatistics/PoissonDistribution.md",
     "Math/ProbabilityStatistics/Lec5.md",
