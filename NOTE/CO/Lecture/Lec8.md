@@ -18,10 +18,7 @@ or compiler writer
 
 ## Von Neumann architecture
 
-<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/John_von_Neumann.png" width="30%">
-
-<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/VNA.png" width="2
-	 0%">
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/John_von_Neumann.png" width="30%">![VNA](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/VNA.png)
 
 - Memory
 - CPU
