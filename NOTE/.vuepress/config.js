@@ -257,15 +257,15 @@ module.exports = {
         {
           text: "线性代数",
           sublink: [
-            { text: "Vector Spaces", link: "Math/Linear-Algebra/Chapter1" },
+            { text: "Vector Spaces", link: "Math/LinearAlgebra/Chapter1" },
             {
               text: "Linear Transformations",
-              link: "Math/Linear-Algebra/Chapter2",
+              link: "Math/LinearAlgebra/Chapter2",
             },
-            { text: "Orthogonality", link: "Math/Linear-Algebra/Chapter3" },
+            { text: "Orthogonality", link: "Math/LinearAlgebra/Chapter3" },
             {
               text: "Eigenvalues and Eigenvectors",
-              link: "Math/Linear-Algebra/Chapter4",
+              link: "Math/LinearAlgebra/Chapter4",
             },
           ],
         },
