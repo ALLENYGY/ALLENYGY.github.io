@@ -1,4 +1,4 @@
-# Sort Algorithm
+ # Sort Algorithm
 
 - Bubble Sort
 - Insertion Sort
@@ -98,7 +98,7 @@ public static void insertionSort(int A[],int p){
 
 ### Time Complexity for Insertion Sort
 
-- Best-Case: $O(n)$ 已经拍好序的数组，扫一遍
+- Best-Case: $O(n)$ 已经排好序的数组，扫一遍
 - Worst-Case: $O(n^2)$ 倒序的数组
 - Average-Case: $O(n^2)$
 
@@ -209,7 +209,7 @@ Swap these elements if necessary so that
 - A[right]   =  Largest
 - A[center]  = Median of three
 - Pick A[center] as the pivot
-- Swap A[center] and A[right – 1] so that the pivot is at second-last%%  %% position
+- Swap A[center] and A[right – 1] so that the pivot is at second-last position
 
 ### Time Complexity for Quick Sort
 
@@ -263,18 +263,18 @@ $\quad = O(n \log(n))$
 
 ### Why is quicksort faster than mergesort?
 
-- The inner loop consists of an increment/decrement (by 1, which is fast), a test and ,a jump.
+- The inner loop consists of an increment/decrement (by 1, which is fast), a test, and , a jump.
 - There is no extra juggling as in mergesort.
 
 ## Heap Sort
 
 ### Priority Queue
 
-Priority queue is a data structure which allows at least two operations
+The priority queue is a data structure that allows at least two operations
 
 - insert
-- deleteMin/deleteMax
-  - finds, returns and removes the minimum elements in the priority queue
+- delete in/deleteMax
+  - finds, returns, and removes the minimum elements in the priority queue
 
 ### Binary Heap
 
@@ -287,11 +287,11 @@ Heaps are “almost perfect binary trees”
 
 Given a binary heap of node number n and height h
 
-- n is within [2h, 2h+1-1]
+- n is within $[2^h, 2^{h+1}-1]$
 - The height $h=O(log(n))$
 The structure is so regular, it can be represented in an array and no links are necessary !!!
 
-Insert in $O(logN)$ time
+Insert in $O(log N)$ time
 Locate the current minimum in $O(1)$ time
 Delete the current minimum in $O(log N)$ time
 
@@ -304,8 +304,8 @@ insert(x)
 5.     WHILE hole>0 AND x<A[(hole-1)/2]
 6.         A[hole] = A[(hole-1)/2]
 7.         hole = (hole-1)/2
-8.   A[hole] = x
-9.   return True
+8.     A[hole] = x
+9.     return True
 ```
 
 Note:
