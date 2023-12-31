@@ -245,8 +245,11 @@ module.exports = {
             { text: "Data Modification", link: "DBM/MySQL/Lab6" },
             { text: "NULL & Subquery", link: "DBM/MySQL/Lab7" },
             { text: "Set Operation & WHERE subquery", link: "DBM/MySQL/Lab8" },
-            { text: "Division and Correlated Subquery", link: "DBM/MySQL/Lab9" },
-            { text: "Advanced SQL", link: "DBM/MySQL/Lab10"},
+            {
+              text: "Division and Correlated Subquery",
+              link: "DBM/MySQL/Lab9",
+            },
+            { text: "Advanced SQL", link: "DBM/MySQL/Lab10" },
           ],
         },
       ],
@@ -267,7 +270,21 @@ module.exports = {
           ],
         },
         { text: "离散数学", link: "" },
-        { text: "概率统计", link: "" },
+        {
+          text: "概率统计",
+          sublink: [
+            { text: "Confidence Interval", link: "Math/ProbabilityStatistics/Lec4" },
+            {
+              text: "Hypothesis Testing(Single Population)",
+              link: "Math/ProbabilityStatistics/Lec5",
+            },
+            { text: "Hypothesis Testing (Two Populations)", link: "Math/ProbabilityStatistics/Lec6" },
+            {
+              text: "Chi-Square Tests",
+              link: "Math/ProbabilityStatistics/Lec7",
+            },
+          ],
+        },
       ],
       DataAnalysis: [
         { text: "Hands on Data For Every one", link: "DataAnalysis/HOD/HOD" },
