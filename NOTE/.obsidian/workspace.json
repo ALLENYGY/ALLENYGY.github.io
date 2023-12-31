@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CO/Lecture/Lec8.md",
+                "file": "Math/ProbabilityStatistics/Lec6.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CO/Lecture/Lec8.md",
+                "file": "Math/ProbabilityStatistics/Lec6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CO/Lecture/Lec8.md",
+                "file": "Math/ProbabilityStatistics/Lec6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CO/Lecture/Lec8.md"
+                "file": "Math/ProbabilityStatistics/Lec6.md"
               }
             }
           }
@@ -151,6 +151,8 @@
   },
   "active": "ec23d58cdc110300",
   "lastOpenFiles": [
+    "CO/Lecture/Lec8.md",
+    "CO/Lecture/Lec8-NSConflict-AllenYGY-mac14.2.1.md",
     "Math/ProbabilityStatistics/Lec6.md",
     "Algorithm/DAA/Sort.md",
     "Math/ProbabilityStatistics/Lec4.md",
@@ -178,8 +180,6 @@
     "Math/ProbabilityStatistics/HypothesisTesting(II).md",
     "Math/ProbabilityStatistics/HypothesisTesting(I).md",
     "Others/Docker/Docker.md",
-    "Math/ProbabilityStatistics/HypothesisTestingII.md",
-    "Math/ProbabilityStatistics/SamplingDistribution.md",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772956703.nssyncsc",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772955877.nssyncsc",
     "_debug_remotely_save/sync_plans_hist_exported_on_1703772942575.nssyncsc",
