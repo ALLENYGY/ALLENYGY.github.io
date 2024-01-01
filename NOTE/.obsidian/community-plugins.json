@@ -1,10 +1,11 @@
 [
-  "obsidian-git",
-  "remotely-secure",
+  "obsidian-tts",
+  "obsidian-collapse-all-plugin",
   "table-editor-obsidian",
-  "dataview",
-  "obsidian-excalidraw-plugin",
-  "obsidian-outliner",
-  "obsidian-icon-folder",
-  "obsidian-mind-map"
+  "Enhanced-editing",
+  "editing-toolbar",
+  "ob-table-enhancer",
+  "web-browser",
+  "obsidian-custom-frames",
+  "remotely-secure"
 ]

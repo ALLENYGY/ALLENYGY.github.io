@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "1ffef50ee1c54376",
+        "id": "f7c70e04f9e98e07",
         "type": "tabs",
         "children": [
           {
-            "id": "6f98e791363cc436",
+            "id": "187c59334ceb9d17",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
           }
@@ -130,19 +130,28 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-tts:Text to Speech": false,
+      "markdown-importer:Open format converter": false,
+      "publish:Publish changes...": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "remotely-secure:Remotely Sync": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "6f98e791363cc436",
+  "active": "187c59334ceb9d17",
   "lastOpenFiles": [
+    "Users/allenygy/Desktop/WorkSpace/VScode-Workspace/MyBlog/NOTE/DSA/BST-1.png.md",
+    "Users/allenygy/Desktop/WorkSpace/VScode-Workspace/MyBlog/NOTE/DSA",
+    "Users/allenygy/Desktop/WorkSpace/VScode-Workspace/MyBlog/NOTE",
+    "Users/allenygy/Desktop/WorkSpace/VScode-Workspace/MyBlog",
+    "Users/allenygy/Desktop/WorkSpace/VScode-Workspace",
+    "Users/allenygy/Desktop/WorkSpace",
+    "Users/allenygy/Desktop",
+    "Users/allenygy",
+    "Users",
     "README.md",
     "Word/英语词义分类数据库（大学版）/附件图片/1.jpg",
     "Word/英语词义分类数据库（大学版）/20进程/00进程组目录（复习）.md",
@@ -172,15 +181,6 @@
     "Math/ProbabilityStatistics/Lec8.md",
     "Math/ProbabilityStatistics/image.png",
     "Others/Conda/Conda.md",
-    "Math/ProbabilityStatistics/HypothesisTesting(II).md",
-    "_debug_remotely_save/sync_plans_hist_exported_on_1703772956703.nssyncsc",
-    "_debug_remotely_save/sync_plans_hist_exported_on_1703772955877.nssyncsc",
-    "_debug_remotely_save/sync_plans_hist_exported_on_1703772942575.nssyncsc",
-    "_debug_remotely_save/000_坚果云闪电下载介绍.url.nssyncsc",
-    "_debug_remotely_save",
-    "_remotely-save-metadata-on-remote.json",
-    "_remotely-save-metadata-on-remote.nssyncsc",
-    "CO/TOOL/ASCII.c",
     "DBM/MySQL/image.png"
   ]
 }

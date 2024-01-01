@@ -1,3 +1,17 @@
 {
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "enabledPlugins": [],
+  "defaultViewMode": "preview",
+  "useTab": false,
+  "newLinkFormat": "relative",
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "attachmentFolderPath": "英语词义分类数据库（大学版）/附件图片",
+  "legacyEditor": false,
+  "livePreview": false,
+  "promptDelete": false
 }
