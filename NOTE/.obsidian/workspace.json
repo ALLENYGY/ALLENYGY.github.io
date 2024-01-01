@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f7c70e04f9e98e07",
+        "id": "df311a585c11daa3",
         "type": "tabs",
         "children": [
           {
-            "id": "187c59334ceb9d17",
+            "id": "f0a17d6e57b6ac8a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -141,8 +141,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "187c59334ceb9d17",
+  "active": "b64f70998bedd5d2",
   "lastOpenFiles": [
+    "Untitled.canvas",
     "test.json",
     "Users/allenygy/Desktop/WorkSpace/VScode-Workspace/MyBlog/NOTE/DSA/BST-1.png.md",
     "Users/allenygy/Desktop/WorkSpace/VScode-Workspace/MyBlog/NOTE/DSA",
@@ -174,7 +175,6 @@
     "Math/DiscreteStructure/Lecture/Lec7.md",
     "assets/JCM.png.md",
     "ProgramLanguage/Java/Lec6.md",
-    "assets",
     "Math/SpecificMathematics/Recursion/约瑟夫问题.md",
     "Math/ProbabilityStatistics/Lec1.md",
     "Math/ProbabilityStatistics/Lec3.md",
