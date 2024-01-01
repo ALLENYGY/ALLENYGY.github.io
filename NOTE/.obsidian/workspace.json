@@ -11,8 +11,12 @@
             "id": "f0a17d6e57b6ac8a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CO/Assignment/As2/Assignment2.md",
+                "mode": "preview",
+                "source": true
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CO/Assignment/As2/Assignment2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,8 +146,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b64f70998bedd5d2",
+  "active": "f0a17d6e57b6ac8a",
   "lastOpenFiles": [
+    "CO/Assignment/As2/K-MAP.png",
+    "CO/README.md",
     "Untitled.canvas",
     "test.json",
     "Users/allenygy/Desktop/WorkSpace/VScode-Workspace/MyBlog/NOTE/DSA/BST-1.png.md",
@@ -179,7 +186,6 @@
     "Math/ProbabilityStatistics/Lec1.md",
     "Math/ProbabilityStatistics/Lec3.md",
     "Math/ProbabilityStatistics/Chi-SquareTests.md",
-    "Math/ProbabilityStatistics/Lec8.md",
     "Math/ProbabilityStatistics/image.png",
     "DBM/MySQL/image.png"
   ]
