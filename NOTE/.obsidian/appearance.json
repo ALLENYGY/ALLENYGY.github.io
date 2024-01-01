@@ -1,0 +1,9 @@
+{
+  "theme": "obsidian",
+  "baseFontSize": 16,
+  "accentColor": "",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "默认黑色背景"
+  ]
+}

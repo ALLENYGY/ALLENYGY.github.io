@@ -1,0 +1,18 @@
+/* 分类标题  */
+.category {
+  color: red;
+}
+/* 单词  */
+.vocabulary {
+  color: hsl(193, 100%, 44%);
+}
+/* 释义  */
+.definition {
+  /* display: block; */ /* 如果希望换行，可以去掉注释 */
+  color: orange;
+}
+
+/* 强调  */
+.emphasis {
+  color: orange;
+}
