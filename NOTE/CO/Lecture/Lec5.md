@@ -49,7 +49,6 @@ Only add two single bits together (a, b), s is the sum and c is the carry bit
 ## *Full Adder* ***全加器***
 
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Full-Adder-Circuit.png"/>
-<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Full-Adder.png"/>
 
 **Full Adder**:
 全加器用于对三个单比特（二进制位）进行加法运算，包括两个输入位（A和B）和上一位的进位（Cin），产生两个输出结果：和（Sum）和新的进位（Carry）。

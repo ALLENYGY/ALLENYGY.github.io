@@ -57,9 +57,9 @@ Pseudo-operations
 - look like instruction, but "opcode" starts whith dots
 
 ｜Opcode｜Operand｜Meaning｜
-｜--｜--｜--｜
+｜--｜--｜--|
 |.ORIG|address|starting address of program|
-|.END||end of program|
+|.END|end of program|
 |.BLKW|n|allocate n words of storage|
 |.FILL|n|allocate one word,initializa with value n|
 |.STRINGZ|n-character string|allocate n+1 locations, initialize w/characters and null terminator|
