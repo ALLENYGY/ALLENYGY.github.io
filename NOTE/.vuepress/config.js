@@ -287,7 +287,7 @@ module.exports = {
         },
       ],
       DataAnalysis: [
-        { text: "Hands on Data For Every one", link: "DataAnalysis/HOD/HOD" },
+        { text: "Hands on Data For Every one", link: "DataAnalysis/HODA/HODA" },
       ],
       Others: [
         {
