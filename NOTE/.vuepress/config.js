@@ -13,7 +13,9 @@ module.exports = {
         // href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-color.png",
         // href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo.jpg",
         // href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-3.jpg",
-        href: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png",
+        // href: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png",
+        href:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png",
+
         // href: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/mylogo.png",
         // href: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/BLOG.png",
 
@@ -58,7 +60,6 @@ module.exports = {
     // icon: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png",
     // icon: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/BLOG.png",
     icon: "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/mylogo.png",
-
     // icon:"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/allenygy-favicon-black.png",
     // icon: "https://gravatar.loli.net/avatar/b5ec443a5c6aa15be809bec3dde9e015?d=wavatar",
 
