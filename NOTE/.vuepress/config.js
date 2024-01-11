@@ -74,7 +74,7 @@ module.exports = {
         "From Gates to Circuits II: Sequential Circuits": "CO/Lecture/Lec6",
         "Finite State Machine": "CO/Lecture/Lec7",
         "Circuit Design": "CO/Lecture/CircuitDesign",
-        Microarchitecture: "CO/Lecture/Lec8",
+        "Microarchitecture": "CO/Lecture/Lec8",
         "The LC-3 ISA": "CO/Lecture/Lec9",
       },
       编程语言: {
@@ -83,7 +83,7 @@ module.exports = {
           "Unified Modeling Language": "ProgramLanguage/Java/Lec1",
           "Java Programming Essentials": "ProgramLanguage/Java/Lec2",
           "Creating Java Classes": "ProgramLanguage/Java/Lec3",
-          Inheritance: "ProgramLanguage/Java/Lec4",
+          "Inheritance": "ProgramLanguage/Java/Lec4",
           "Abstract Methods and Classes Interfaces":
             "ProgramLanguage/Java/Lec5",
           "Exception Handeling": "ProgramLanguage/Java/Lec6",
