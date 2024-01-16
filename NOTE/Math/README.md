@@ -36,7 +36,6 @@ Here is my math Note in UIC!
 
 ### [Boolean Algebras- Logic Circuits](DiscreteStructure/Lec15.md)
 
-
 ## Probability Statistics
 
 ### [Confidence Interval](ProbabilityStatistics/Lec4.md)
