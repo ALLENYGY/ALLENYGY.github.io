@@ -6,9 +6,9 @@ a)&emsp;$(\left(r\rightarrow\lnot q\right)\rightarrow t)\wedge(\lnot p\vee\lnot 
 &emsp;&emsp;$\equiv \neg(r\rightarrow\neg q) \wedge (\neg p \vee\neg r) \rightarrow \neg p$   **Modus tollen**
 &emsp;&emsp;$\equiv (r \wedge q) \wedge (\neg p\vee \neg r)\rightarrow \neg p$  **De Morgan’s laws**
 &emsp;&emsp;$\equiv ((r \wedge  q \wedge \neg p) \vee ( r \wedge q \wedge \neg r)) \rightarrow \neg p$ **Distributive laws**
-&emsp;&emsp;$\equiv (r \wedge q \wedge \neg p) \rightarrow \neg p $ **Identity Laws**
+&emsp;&emsp;$\equiv (r \wedge q \wedge \neg p) \rightarrow \neg p$ **Identity Laws**
 &emsp;&emsp;$\equiv \neg(r \wedge q \wedge \neg p) \vee\neg p$ 
-&emsp;&emsp;$\equiv (\neg r \vee \neg q \vee p) \vee \neg p $&emsp;**De Morgan’s laws**
+&emsp;&emsp;$\equiv (\neg r \vee \neg q \vee p) \vee \neg p$&emsp;**De Morgan’s laws**
 &emsp;&emsp;$\equiv (\neg r \vee \neg q \vee T) \equiv T$ **Domination Laws**
 b)&emsp;$(r\rightarrow\lnot t) \wedge (p\rightarrow t)\wedge r \rightarrow \neg p$
 &emsp;&emsp;$\equiv (\neg t) \wedge (p \rightarrow t) \rightarrow \neg p$ &emsp;**Modus ponens**
@@ -17,7 +17,7 @@ c)&emsp;$\exists x\left(P\left(x\right)\rightarrow Q\left(x\right)\right)$
 &emsp;&emsp;$\equiv \exists x(\neg P(x) \vee Q(x))$
 &emsp;&emsp;$\equiv \exists x (\neg (P(x)\wedge \neg Q(x)))$**De Morgan’s laws**
 &emsp;&emsp;$\equiv \neg \forall x  (P(x)\wedge \neg Q(x))$
-&emsp;&emsp;$\forall y\left(P\left(y\right)\land R\left(y\right)\right) $
+&emsp;&emsp;$\forall y\left(P\left(y\right)\land R\left(y\right)\right)$
 $\forall x\left(P\left(x\right)\right) \rightarrow \forall x\left(Q\left(x\right)\right)$
 &emsp;$\therefore \forall y(\neg Q(y) \wedge R(y))$
 &emsp;$\therefore \forall u\left(R\left(u\right)\vee Q\left(u\right)\right)$
@@ -53,7 +53,7 @@ c)Contraposition:
 &emsp;&emsp;$proof$:&emsp;$\neg Q \Rightarrow \neg P$
 &emsp;&emsp;&emsp;&emsp;&emsp; $Suppose: 3a+1=2n$ ($\neg Q$)
 &emsp;&emsp;&emsp;&emsp;&emsp; $\therefore a=$${2n-1}\over3$
-&emsp;&emsp;&emsp;&emsp;&emsp; It's clear that $ a$ can't be divided by 4 ($\neg P$)
+&emsp;&emsp;&emsp;&emsp;&emsp; It's clear that $a$ can't be divided by 4 ($\neg P$)
 &emsp;&emsp;&emsp;&emsp;$\therefore \neg Q \Rightarrow \neg P$
 
 ## Question5

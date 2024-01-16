@@ -45,8 +45,8 @@ E.g.: programmers don’t need to care about memory allocation and release.
 
 ### Java Compilation Model
 
-![Java Compilation Model](/assets/Java%20Compilation%20Model.png)
-![JCM](/assets/JCM.png)
+![Java Compilation Model](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/JavaCompilationModel.png)
+![JCM](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/JCM.png)
 
 - Java compiler translates Java programs into byte-code, a language for the Java Virtual Machine.
 - Once compiled to byte-code, a Java program can be used on any computer that has a JVM, making it very portable.

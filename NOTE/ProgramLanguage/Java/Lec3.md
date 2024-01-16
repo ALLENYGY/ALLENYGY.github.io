@@ -42,10 +42,9 @@
   - \- private
   - \~ package (default)
 - Underline static instance variables and static methods
-![ClassDiagram](/assets/ClassDiagram.png)
+![ClassDiagram](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ClassDiagram.png)
 
-<!-- ## Instance variable and methods
-
+<!--## Instance variable and methods
 ## Key word: this -->
 
 ## Constructor  **构造器**
@@ -84,7 +83,7 @@ Person person2 = person1;
 Person person3 = null;       //refers to no object
 ```
 
-![MemoryAnalysis](/assets/MemoryAnalysis.png)
+![MemoryAnalysis](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MemoryAnalysis.png)
 
 ## Instance Variables
 
@@ -101,8 +100,7 @@ person2.age
 > 2. Each object has its own copy of the variables.
 > 3. Every object has a state that is determined by the values stored in the instance variables of the object.
 
-![DefaultValue](/assets/DefaultValue.png)
-
+![DefaultValue](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DefaultValue.png)
 ## Local variable
 
 > A variable declared within a method definition is called a local variable. **定义在方法里的变量**
@@ -175,7 +173,7 @@ public class Person {
 }
 ```
 
-![MemoryAnalysis2](/assets/MemoryAnalysis2.png)
+![MemoryAnalysis2](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MemoryAnalysis.png)
 
 ## Overloading **重载**
 
@@ -189,7 +187,7 @@ public class Person {
 
 ## Java access modifiers
 
-![AccessModifiers](/assets/AccessModifiers.png)
+![AccessModifiers](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/AccessModifiers.png)
 
 - Only public and default can be used in the class declaration **只有public和default可以用于类名的申明**
 - A public class can be accessed from any place.

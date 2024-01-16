@@ -1,4 +1,4 @@
-# sets and n-tuple
+# Sets and N-tuple
 
 ## Sets
 

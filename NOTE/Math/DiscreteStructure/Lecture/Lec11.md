@@ -72,32 +72,32 @@ $$|E|=\sum_{v \in V}{deg^+(v)}=\sum_{v \in V}{deg^-(v)}$$
 
 * A complete graph is a simple graph in which there is an edge between each pair of distinct vertices, denoted by $K_n$ where n is the number of nodes in the graph.
 
-![CompleGraph](D:\Note\Image\Math\DiscreteStructure\Lecture11\CompleteGraph.png)
+![CompleteGraph](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CompleteGraph.png)
 
 ### Cycle
 
 * A cycle is a graph that contains n $(n\geq 3)$ vertices $\{v_1, V_2, ..., V_n-1,V_n\}$ and n edges $(v_1, V_2), (v_2, V_3), ..., (u_{n-1}, V_{n}), (U_n, V_1),$ denoted by $C_n$ where n is the number of nodes in the graph.
 
-![Cycle](D:\Note\Image\Math\DiscreteStructure\Lecture11\Cycle.png)
+![Cycle](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Cycle.png)
 
 ### Wheel
 
 * A wheel $W_n$ is obtained by adding an additional vertex to the cycle $C_n$, for n > 3, and connect this new vertex to each of the vertices in $C_n$, by new edges.
 
-![Wheel](D:\Note\Image\Math\DiscreteStructure\Lecture11\Wheel.png)
+![Wheel](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Wheel.png)
 
 ### Cube
 
 * A cube of dimension n $(Q_n)$ is a simple graph of $2^n$ vertices, where each vertex represents a bit string of length n. Two vertices are adjacent if and only if they differ by one bit.
 
-![Cube](D:\Note\Image\Math\DiscreteStructure\Lecture11\Cube.png)
+![Cube](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Cube.png)
 
 ## Complete Bipartite Graphs
 
 * A simple graph $G = (V, E)$ is called bipartite if its vertex set V can be partitioned into two disjoint set $V_1$, and $V_2$, such that every edge in the graph connects a vertex in $V_1$, and a vertex in $V_2$,
 * $V_1$ and $V_2$, are called a bipartite of the vertex set V of G.
 
-![Bipartite Graph](D:\Note\Image\Math\DiscreteStructure\Lecture11\BipartiteGraph.png)
+![Bipartite Graph](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/BipartiteGraph.png)
 
 ### Theorem
 
@@ -108,6 +108,6 @@ $$|E|=\sum_{v \in V}{deg^+(v)}=\sum_{v \in V}{deg^-(v)}$$
 * A subgraph H = (W, F) of graph G = (V, E) is made up of vertices $W \subseteq V$ and edges $F \subseteq E$
 * A subgraph H of G is a proper subgraph if $H \neq G$
 
-![Subgraphs](D:\Note\Image\Math\DiscreteStructure\Lecture11\Subgraphs.png)
+![Subgraphs](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Subgraphs.png)
 
-![Union](D:\Note\Image\Math\DiscreteStructure\Lecture11\Union.png)
+![Union](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Union.png)

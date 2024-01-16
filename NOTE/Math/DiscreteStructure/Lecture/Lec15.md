@@ -8,16 +8,18 @@
 
 ### Logic Gates
 
-* <img src="D:\Note\Image\Math\DiscreteStructure\Lecture15\LogicGates.png" alt="Logic Gate" style="zoom: 67%;" />
+*![LogicalGate](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/LogicGates.png)
 * Buffer
   * It is used for delay
   * Useful for timing purpose
   * Not for the logical purpose
+  * ![Buffer](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Buffer.png)
 
 ### Logic Circuit
 
-<img src="D:\Note\Image\Math\DiscreteStructure\Lecture15\LogicCircuit01.png" alt="Logic Circuit_1" style="zoom: 67%;" />
-<img src="D:\Note\Image\Math\DiscreteStructure\Lecture15\LogicCircuit02.png" alt="Logic Circuit_2" style="zoom: 80%;" />
+![LogicalGate01](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/LogicCircuit01.png)
+
+![LogicalGate02](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/LogicCircuit02.png)
 
 * Steps in Design of Logical Circuits (Without minimization)
 
@@ -38,14 +40,14 @@
   * 0 + 1 = 1
   * 1 + 0 = 1
   * 1 + 1 = 0 and carry 1 to the next place
-* <img src="D:\Note\Image\Math\DiscreteStructure\Lecture15\Half-Adder.png" alt="Half-Adder" style="zoom:80%;" />
+* ![HalfAdder](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Half-Adder.png)
 * S: 本位
 * C: 进位
-* ![HA](D:\Note\Image\Math\DiscreteStructure\Lecture15\HA.png)
+* ![HalfAdder](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/HA.png)
 
 #### Logic Circuit - Full Adder
 
-<img src="D:\Note\Image\Math\DiscreteStructure\Lecture15\Full-Adder.png" alt="Full—Adder" style="zoom:80%;" />
+![Full-Adder](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Full-Adder.png)
 
 ### Steps in Design of Logical Circuits(With Minimization)
 
@@ -60,12 +62,12 @@
 4. Minimization of the Boolean functions if possible
 5. Design the logical circuits
 
-<img src="D:\Note\Image\Math\DiscreteStructure\Lecture15\Karnaugh-Map.png" alt="KM_0" style="zoom:80%;" />
+![Karnaugh-Map](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Karnaugh-Map.png)
 
-<img src="D:\Note\Image\Math\DiscreteStructure\Lecture15\KM1.png" alt="KM_1" style="zoom:80%;" />
+![KM_1](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/KM1.png)
 
-<img src="D:\Note\Image\Math\DiscreteStructure\Lecture15\KM2.png" alt="KM_2" style="zoom:80%;" />
+![KM_2](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/KM2.png)
 
-<img src="D:\Note\Image\Math\DiscreteStructure\Lecture15\KM3.png" alt="KM_3" style="zoom:80%;" />
+![KM_3](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/KM3.png)
 
-<img src="D:\Note\Image\Math\DiscreteStructure\Lecture15\KM4.png" alt="KM_4" style="zoom:80%;" />
+![KM_4](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/KM4.png)

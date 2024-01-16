@@ -23,11 +23,11 @@
     $\therefore$ $R$ is symmetric.
     $\therefore$ $R$ is not antisymmetric.
     $Suppose$ $(x,y),(y,z)\in R$   $\therefore x\geq -y$  $z\geq-y$
-      $\therefore $ $x$ may not larger than $z$  
-      $\therefore $ $(x,z)$ may not in R
-      $\therefore $ $R$ is not transitive.
+      $\therefore$ $x$ may not larger than $z$  
+      $\therefore$ $(x,z)$ may not in R
+      $\therefore$ $R$ is not transitive.
   
-  * c)$R={(x,y)|\left\lfloor x\right\rfloor=\left\lfloor y\right\rfloor}$ is on  $ \mathbb{Q}$;
+  * c)$R={(x,y)|\left\lfloor x\right\rfloor=\left\lfloor y\right\rfloor}$ is on $\mathbb{Q}$;
 
     The following relation R is reflexive, symmetric and transitive
 
@@ -55,8 +55,8 @@
 
     $\because A\cap A =A$  $\therefore$ A is reflexive
     $\because A\cap B =B\cap A=\emptyset$ $\therefore$ A is symmetric  but not antisymmetric.
-    $Suppose $   $ A\cap B \ne \emptyset$ $B\cap C \ne \emptyset$
-    $But$ $ A\cap C $ may  equal to $\emptyset$    $\therefore$ A is not transitive.
+    $Suppose$   $ A\cap B \ne \emptyset$ $B\cap C \ne \emptyset$
+    $But$ $ A\cap C$ may  equal to $\emptyset$    $\therefore$ A is not transitive.
 
 ## Question2
 

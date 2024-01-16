@@ -1,4 +1,4 @@
-# Functions,Sequence,and Summations
+# Functions, Sequence, and Summations
 
 ## Functions
 

@@ -39,7 +39,7 @@
 The level of a node is the length of the path from the root to the node (The level of the root is defined to be zero).
 
 * The height of a tree is maximum level of node.
-* A rooted 𝑚-ary tree with height ℎ is called balanced if all leaves are at levels ℎ or ℎ − 1.
+* A rooted m-ary tree with height ℎ is called balanced if all leaves are at levels ℎ or ℎ − 1.
 
 ### Tree Traversal
 
@@ -55,13 +55,13 @@ The level of a node is the length of the path from the root to the node (The lev
 
 * 先序遍历可以想象为，一个小人从一棵二叉树根节点为起点，沿着二叉树外沿，逆时针走一圈回到根节点，路上遇到的元素顺序，就是先序遍历的结果
 
-![Pre-order](D:\Note\Image\Math\DiscreteStructure\Lecture13\Pre-orderTraversal.png)
+![Pre-order](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Pre-orderTraversal.png)
 
 #### In-order Traversal
 
 * 中序遍历可以看成，二叉树每个节点，垂直方向投影下来（可以理解为每个节点从最左边开始垂直掉到地上），然后从左往右数，得出的结果便是中序遍历的结果
 
-![In-order](D:\Note\Image\Math\DiscreteStructure\Lecture13\In-orderTraversal.png)
+![In-order](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/In-orderTraversal.png)
 
 #### Post-order Traversal
 
@@ -71,7 +71,7 @@ The level of a node is the length of the path from the root to the node (The lev
 
 就是围着树的外围绕一圈，如果发现一剪刀就能剪下的葡萄（必须是一颗葡萄）（也就是葡萄要一个一个掉下来，不能一口气掉超过1个这样），就把它剪下来，组成的就是后序遍历了。
 
-![Post-order](D:\Note\Image\Math\DiscreteStructure\Lecture13\Post-orderTraversal.png)
+![Post-order](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Post-orderTraversal.png)
 
 ### Spanning Trees
 
@@ -91,7 +91,7 @@ The level of a node is the length of the path from the root to the node (The lev
   
   * After the traversal is complete, the graph’s vertices and marked edges form the spanning tree.
   
-    ![DFS](D:\Note\Image\Math\DiscreteStructure\Lecture13\DFS.png)
+![DFS](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DFS.png)
 
 #### Breadth-First Search(BFS)
 
@@ -99,8 +99,8 @@ The level of a node is the length of the path from the root to the node (The lev
 * To create a breath-first search (BFS) spanning tree
   * Traverse the graph using a bread-first search and mark the edges that you follow.
   * When the traversal is complete, the graph’s vertices and marked edges form the spanning tree.
-  
-  ![BFS](D:\Note\Image\Math\DiscreteStructure\Lecture13\BFS.png)
+  	
+  ![BFS](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/BFS.png)
 
 ### Minimum Spanning Trees
 
@@ -117,7 +117,7 @@ The level of a node is the length of the path from the root to the node (The lev
 
 4. Repeat Step 3 for 𝑛 − 1 iterations (because a tree has 𝑛 − 1 edges).
 
-   ![Prim](D:\Note\Image\Math\DiscreteStructure\Lecture13\Prim's Algorithm.png)
+  ![Prim's Algorithm](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Prim's%20Algorithm.png)
 
 #### Kruskal’s Algorithm
 
@@ -131,4 +131,4 @@ The level of a node is the length of the path from the root to the node (The lev
 
 5. Repeat steps 2-4 until for 𝑛 − 1 iterations (because a tree has 𝑛 − 1 edges).
 
-   ![Kruskal](D:\Note\Image\Math\DiscreteStructure\Lecture13\Kruskal's Algorithm.png)
+![Kruskal’s Algorithm](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Kruskal's%20Algorithm.png)

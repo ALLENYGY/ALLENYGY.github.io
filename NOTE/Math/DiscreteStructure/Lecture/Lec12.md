@@ -10,7 +10,7 @@
 
 * Mostly used for the graph with few edges (sparse graph).
 
-![Represent Graph](D:\Note\Image\Math\DiscreteStructure\Lecture12\Representing-Graph.png)
+![Representing-Graph](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Representing-Graph.png)
 
 ## Graph Isomorphism(图同构)
 
@@ -35,13 +35,13 @@ A path of length n from vertex u to vertex v is a sequence of n edges $e_1, e_2,
 
 A circuit is a path that begins and ends at the same vertex in graph.
 
-![Circuit](D:\Note\Image\Math\DiscreteStructure\Lecture12\Circuit.png)
+![Circuit](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Circuit.png)
 
 #### Simple path/circuit
 
 * A simple path or circuit does not pass through the same edge twice or more.(不经过同样的边两次以上).
 
-![Simple Circuit](D:\Note\Image\Math\DiscreteStructure\Lecture12\SimpleCircuit.png)
+![Simple Circuit](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/SimpleCircuit.png)
 
 ### Graph Connectedness
 
@@ -86,14 +86,14 @@ A circuit is a path that begins and ends at the same vertex in graph.
   * r: number of regions
   * r=e-v+2
 
-![Euler's Formula](D:\Note\Image\Math\DiscreteStructure\Lecture12\Euler-formula.png)
+![Euler’s Formula](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Euler-formula.png)
 
-* There are three ways to determine if a graph is not a planargraph.
+* There are three ways to determine if a graph is not a planar-graph.
   * If G is a connected planar simple graph with e edges and v vertices with v > 3, then e ≤ 3v - 6
     * That is, if e > 3v- 6, G is not a planar graph
   * lf G is a connected planar simple graph, then G has a vertex of degree not exceeding 5
-  * If G has no vertex of degree below 5, G is not a planargraph.
-  * If G is a connected simple graph where v > 3 and nocircuits of length 3, then e < 2v - 4. if v > 3 and no circuits of length 3 and e > 2v - 4then G is not a planar graph.
+  * If G has no vertex of degree below 5, G is not a planar-graph.
+  * If G is a connected simple graph where v > 3 and no circuits of length 3, then e < 2v - 4. if v > 3 and no circuits of length 3 and e > 2v - 4then G is not a planar graph.
 
 >对于一个连通的简单平面图G，如果它有e条边和v个顶点，其中v > 3，则e ≤ 3v - 6。也就是说，如果e > 3v - 6，则G不是平面图。
 >如果一个连通的简单平面图G没有度数小于5的顶点，则G不是平面图。

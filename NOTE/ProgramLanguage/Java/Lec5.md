@@ -174,4 +174,4 @@ public class Test {
 - Contrast:
   - The interface splits your code into two parts and works as an API between the two parts. The classes implementing the interface are unrelated to each other (Car and Rabbit), they just happen to be able to do some of the same things.
   - The abstract class is used for code inheritance (even if all the methods are abstract and no code is actually inherited). The subclasses are closely related to each other (Student and Teacher) since they are special cases of the same parent class (Person).
-  ![Interfaces vs. Abstract Classes](/assets/Interfaces%20vs.%20Abstract%20Classes.png)
+  ![Interfaces vs. Abstract Classes](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/InterfacesvsAbstractClasses.png)

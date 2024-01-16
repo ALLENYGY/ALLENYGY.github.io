@@ -4,7 +4,7 @@
 
 This graph is directed. Because the adjacency matrix is not symmetric
 
-![](D:\Note\Image\Math\DiscreteStructure\Assignment8\Question1.png)
+![Q1](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Question1.png)
 
 ## Question2
 
@@ -55,7 +55,7 @@ For a cube of dimension n = 2, we have 4 vertices connected by an edge. We can e
 ## Question4
 a)
 
-![](D:\Note\Image\Math\DiscreteStructure\Assignment8\Question4.png)
+![Q4](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Question4.png)
 
 It's clear that the graph is planar. it can be drawn in the plane without any edges crossing
 b) It has Euler Circuit cause the thorem A connected multi-graph has an Euler circuit if and 
