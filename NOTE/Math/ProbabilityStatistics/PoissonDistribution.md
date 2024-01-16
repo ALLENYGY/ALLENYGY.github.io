@@ -51,13 +51,13 @@ And we put this equation to the binomial distribution, we can get the following 
 
 By expanding the combination number
 
-$ \frac{n!}{k!(n-k)!} \ \frac{\lambda^k}{n^k} \ (1-(\frac{\lambda}{n}))^{n-k} $
+$\frac{n!}{k!(n-k)!} \ \frac{\lambda^k}{n^k} \ (1-(\frac{\lambda}{n}))^{n-k}$
 
 There is an assumption in the Poisson distribution
 
 For Poisson distribution  $n \rightarrow \infty$
 
-$\therefore lim_{n \to \infty} \ \frac{n!}{k!(n-k)!} \ \frac{\lambda^k}{n^k} \ (1-(\frac{\lambda}{n}))^{n-k} $
+$\therefore lim_{n \to \infty} \ \frac{n!}{k!(n-k)!} \ \frac{\lambda^k}{n^k} \ (1-(\frac{\lambda}{n}))^{n-k}$
 
 ```txt
 For the Poisson distribution, the variable n tends to the infinity
@@ -66,17 +66,17 @@ So we just need to simplify this limit expression
 
 We can expand the factorial， then cancel out the (n-k)factorial part
 
-$\therefore lim_{n \to \infty} \ \frac{n(n-1)(n-2)...(n-k+1)}{k!} \ \frac{\lambda^k}{n^k} \ (1-(\frac{\lambda}{n}))^{n-k} $
+$\therefore lim_{n \to \infty} \ \frac{n(n-1)(n-2)...(n-k+1)}{k!} \ \frac{\lambda^k}{n^k} \ (1-(\frac{\lambda}{n}))^{n-k}$
 
 After that, we switch the positions of the denominators
 
-$\therefore lim_{n \to \infty} \ \frac{n(n-1)(n-2)...(n-k+1)}{n^k} \ \frac{\lambda^k}{k!} \ (1-(\frac{\lambda}{n}))^{n-k} $
+$\therefore lim_{n \to \infty} \ \frac{n(n-1)(n-2)...(n-k+1)}{n^k} \ \frac{\lambda^k}{k!} \ (1-(\frac{\lambda}{n}))^{n-k}$
 
 We can see that the factorial part has k terms， and we have n k times
 
-$\therefore lim_{n \to \infty} \ \frac{n}{n}\frac{n-1}{n}\frac{n-1}{n}...\frac{n-k+1}{n} \ \frac{\lambda^k}{k!} \ (1-(\frac{\lambda}{n}))^{n-k} $
+$\therefore lim_{n \to \infty} \ \frac{n}{n}\frac{n-1}{n}\frac{n-1}{n}...\frac{n-k+1}{n} \ \frac{\lambda^k}{k!} \ (1-(\frac{\lambda}{n}))^{n-k}$
 
-$\therefore lim_{n \to \infty} \ 1(1-\frac{1}{n})(1-\frac{2}{n})...(1-\frac{k-1}{n}) \ \frac{\lambda^k}{k!} \ (1-(\frac{\lambda}{n}))^{n-k} $
+$\therefore lim_{n \to \infty} \ 1(1-\frac{1}{n})(1-\frac{2}{n})...(1-\frac{k-1}{n}) \ \frac{\lambda^k}{k!} \ (1-(\frac{\lambda}{n}))^{n-k}$
 
 $\because  n\rightarrow \infty \ \therefore lim_{n \rightarrow \infty}1(1-\frac{1}{n})(1-\frac{2}{n})...(1-\frac{k-1}{n}) = 1$
 

@@ -3,12 +3,13 @@
 ## Question 1
 
 a)
-|p|q|$\left(p\vee\neg q\right)$|$(q\vee\neg p)$|$\left(p\vee\neg q\right)\rightarrow(q\vee\neg p)$|
-| ---------- | ---------- | ---------- | ---------- | ---------- |
-|T|T|T|T|T|
-|T|F|T|F|F|
-|F|T|F|T|T|
-|F|F|T|T|T|
+
+| p   | q   | $\left(p\vee\neg q\right)$ | $(q\vee\neg p)$ | $\left(p\vee\neg q\right)\rightarrow(q\vee\neg p)$ |
+| --- | --- | -------------------------- | --------------- | -------------------------------------------------- |
+| T   | T   | T                          | T               | T                                                  |
+| T   | F   | T                          | F               | F                                                  |
+| F   | T   | F                          | T               | T                                                  |
+| F   | F   | T                          | T               | T                                                  |
 
 $\left(p\vee\neg q\right)\rightarrow (q\vee\neg p)$
 $\equiv \neg\left(p\vee\lnot q\right)\vee(q\vee\lnot p)$
@@ -18,6 +19,7 @@ $\equiv q \vee \neg p$
 it's clear that $q \vee \neg p$ is a contingency.
 
 b)
+
 | p | q  |  $p\leftrightarrow q$  | $p\rightarrow q$ | $(p\leftrightarrow q) \rightarrow(p\rightarrow q)$ |
 | :--------: | :--------: | :--------: | :--------: | :--------: |
 |T|T|T|T|T|
@@ -32,6 +34,7 @@ $\equiv (\neg p\vee \neg q) \wedge (p \vee q) \vee (\neg p \vee q)$
 $\equiv T \vee (\neg p \vee q) \equiv T$
 
 c)
+
 | p | q |$\lnot p\land q$|$q\rightarrow p$| $\left(\lnot p\land q\right)\land(q\rightarrow p)$|
 | ---------- | ---------- | ---------- | ---------- | ---------- |
 |T|T|F|T|F|
