@@ -13,7 +13,7 @@
 - Scientific Research
 - ......
 
-### Data Sicience Skills
+### Data Science Skills
 
 - Data Engineer: Database, Coding Skills (Computer Programming)
 - Machine Learning Researcher: Math, Statistics, Machine Learning Knowledge (Math/Stat)
