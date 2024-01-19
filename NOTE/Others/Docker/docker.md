@@ -27,7 +27,7 @@
 
 ## Docker Command
 
-![mindmap](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Docker/mindmap.png)
+![MindMap](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Docker/Docker.png)
 
 ### Management
 
