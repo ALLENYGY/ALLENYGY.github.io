@@ -1,1 +1,0 @@
-[[../Math/ProbabilityStatistics/Lec4|Lec4]]
