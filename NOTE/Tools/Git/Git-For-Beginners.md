@@ -12,6 +12,7 @@
 - **gitignore**
 - **Branch**
 - **Branch Conflict**
+- **Rebase**
 - **Help**
 
 ## **Configuration**
@@ -295,7 +296,18 @@ git branch -D dev #强制删除未合并的分支
 
 ## **Rebase**
 
+>**Rebase**
+>将当前分支变基到另一个分支
 ![Rebase](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Git/Rebase.png)
+
+```sh
+git rebase branchname
+```
+
+|              | Merge                           | Rebase                                                             |
+| ------------ | ------------------------------- | ----------------------------------------------- |
+| Disadvantage | 产生额外的提交节点分支图复杂| 会改变提交历史，改变了当前分支branch out的节点，避免在共享分支使用 |
+| Advantage    | 不会破坏元分支的提交历史方便回溯和查看| 不会新增额外的提交记录，形成线性历史，比较直观和干净  |
 
 ## **Help**
 

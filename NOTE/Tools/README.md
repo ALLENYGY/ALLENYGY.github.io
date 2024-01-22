@@ -6,7 +6,12 @@ Here is some easy tool instruction in computer
 
 ### [Git Introduction](Git/Git-Introduction.md)
 
-### [Git Basic Operation](Git/Git-For-Beginners.md)
+### [Git For Beginners](Git/Git-For-Beginners.md)
+
+### [Git Remote Repository](Git-Remote-Repository.md)
+
+### [Git Workflow Model](Git-Workflow-Model.md)
+
 
 ## Docker
 
