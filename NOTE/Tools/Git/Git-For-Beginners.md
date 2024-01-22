@@ -6,7 +6,13 @@
 - **Check File Status**
 - **Add** and **Commit  File** to the **Local Repository**
 -  **View Repository Commit History**
-- 
+- **View File Difference**
+- **Reset Version**
+- **Remove Files**
+- **gitignore**
+- **Branch**
+- **Branch Conflict**
+- **Help**
 
 ## **Configuration**
 
@@ -45,9 +51,12 @@ git init
 ## **Check File Status**
 
 - 查看文件处于什么状态
-    1. *??*: 表示新添加的未跟踪文件
-    2. *A*: 表示新添加到暂存区中的文件
-    3. *M*: 表示修改过的文件
+    1. **??**: 未跟踪
+    2. **A**:  已暂存
+    3. **M**: 已修改过
+    4. **D**: 已删除
+    5. **R**：重命名
+    6. **U**：已更新未 合并
 	
 ```sh
 git status
@@ -224,44 +233,39 @@ doc/* txt
 doc/**/*.pdf
 ```
 
-## **Branch**
+## **Branch** 
 
-- Create Branch
-
-创建分支
+![GitBranch](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Git/Branch.png)
+>**Create Branch** 创建分支
 
 ```sh
 git branch xxxxxx(branch name)
 ```
 
-- View Branch
-
-查看分支
+>**View Branch** 查看分支
 
 ```sh
 git branch
 ```
 
-- Switch Branch
-
-切换分支
+>**Switch Branch** 切换分支
 
 ```sh
 git checkout xxxxx(branch name)
 ```
+```sh
+git switch xxxxx(branch name)
+```
 
-- Create and switch branch
+>**Create and Switch Branch** 创建并切换分支 
 
 ```sh
 git checkout -b xxxxx(branch name)
 ```
 
-- Merge Branch
-
-合并分支
-
-先切进一个分支，然后合并另一个分支
-
+>**Merge Branch** 合并分支
+>先切进一个分支，然后合并另一个分支
+>- 把Branch2合并到Branch1
 ```sh
 git checkout branch1
 ```
@@ -269,10 +273,36 @@ git checkout branch1
 git merge branch2
 ```
 
-## Help
+![GitBranch](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Git/Branch-1.png)
+
+>**Delete Branch** 删除分支
+```sh
+git branch -d dev #删除已经合并过的分支
+```
+```sh
+git branch -D dev #强制删除未合并的分支 
+```
+
+## **Branch Conflict**
+
+- 两分支未修改同一个文件的同一个位置：Git自动合并
+- 两分支修改同一个文件的同一个位置：产生冲突
+    - 解决方法：
+        1. 手工修改冲突文件，合并冲突内容
+        2. 添加到暂存区  $git add file  
+        3. 提交修改 $git commit -m "message"
+    - 终止合并：$git merge --abort 
+
+## **Rebase**
+
+![Rebase](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Git/Rebase.png)
+
+## **Help**
 
 ```sh
 git command -help -  See all the available options for the specific command
+```
+```sh
 git help --all -  See all possible commands
 ```
 

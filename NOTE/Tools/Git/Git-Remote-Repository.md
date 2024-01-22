@@ -48,7 +48,7 @@ git branch -M xxxx
 ```sh
 git push -u <RemoteRepo> <RemoteBranch>:<LocalBranch>
 ```
->如果远程分支名与本地分支名相同可以省略一个pull相同
+>如果远程分支名与本地分支名相同可以省略一个 pull相同
 ```sh
 git push -u <RemoteRepo> <LocalBranch>
 ```
