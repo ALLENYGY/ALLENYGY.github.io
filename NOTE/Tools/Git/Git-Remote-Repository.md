@@ -40,6 +40,10 @@ git remote add origin [url]
 ```sh
 git remote -v
 ```
+- 取消关联远程仓库
+```sh
+git remote remove <RemoteRepo>
+```
 - 指定本地分支名
 ```sh
 git branch -M xxxx
