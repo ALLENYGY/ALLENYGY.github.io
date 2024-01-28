@@ -233,6 +233,15 @@ doc/* txt
 #忽略 doc/ 目录及其所有子目录下的 .pdf 文件
 doc/**/*.pdf
 ```
+> [!note]+ **Disable tracking** 解除追踪
+> ```sh
+>git rm -r --cached example_folder/
+> ```
+
+>[!note]+ **Commit Change** 提交变化
+>```sh
+>git commit -m "Remove example_folder from tracking"
+>```
 
 ## **Branch** 
 
@@ -318,3 +327,5 @@ git command -help -  See all the available options for the specific command
 git help --all -  See all possible commands
 ```
 
+> [!Note]+ 
+> ![Git-Status](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Git/git-status.png)
