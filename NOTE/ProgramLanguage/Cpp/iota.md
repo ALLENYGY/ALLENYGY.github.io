@@ -6,7 +6,7 @@
 
 ## 使用方法
 
-* 头文件： #include \<numeric>
+* 头文件： \#include \<numeric>
 
 * 1. 对于数组
   * 格式：

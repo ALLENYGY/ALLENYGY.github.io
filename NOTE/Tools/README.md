@@ -1,6 +1,13 @@
+---
+Title: Tool
+tags:
+  - README
+Author: AllenYGY
+---
+
 # Tools
 
-Here is some easy tool instruction in computer
+Here is some easy tool instruction in Computer
 
 ## Git
 
@@ -11,7 +18,6 @@ Here is some easy tool instruction in computer
 ### [Git Remote Repository](Git-Remote-Repository.md)
 
 ### [Git Workflow Model](Git-Workflow-Model.md)
-
 
 ## Docker
 

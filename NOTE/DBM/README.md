@@ -1,6 +1,18 @@
-# Database Management
+---
+Title: Database Management System
+aliases:
+  - DBM
+tags:
+  - README
+Author: AllenYGY
+---
 
-Here is my DBM Note in UIC!
+# Database Management System
+
+Here is my Database Management System Note in UIC!
+
+- Database Design
+- MySQL
 
 ## Database Design
 

@@ -11,7 +11,6 @@
 
 ## Git Workspace/Staging Area/Local Repository
 
-
 ![Git workspace](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Git/git-1.png)
 基本概念：
 

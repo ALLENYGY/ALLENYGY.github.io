@@ -1,3 +1,12 @@
+---
+Title: Mathematica
+aliases:
+  - Math
+tags:
+  - README
+Author: AllenYGY
+---
+
 # Mathematica
 
 Here is my math Note in UIC!

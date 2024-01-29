@@ -3,20 +3,24 @@ Create Time: <% tp.date.now("Do MMMM YYYY") %>
 Week: <% tp.file.title%>
 Author:
   - AllenYGY
+tags:
+  - Weekly-Record
 ---
 
 # ToWeek
 
-## 本周总结
+## Summary
 
-- **工作/学习成就**
-  -
-- **个人成就**
-  -
+- **Study**
+    - 
+- **Life**
+    - 
+- **Complement**
+    - 
 
-## 下周计划
+## NextWeek
 
-- **工作/学习任务**
-  -
-- **个人目标**
-  -
+- **Study Task**
+    - 
+- **Personal Goal**
+    - 

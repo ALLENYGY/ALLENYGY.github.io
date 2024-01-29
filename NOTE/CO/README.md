@@ -1,6 +1,15 @@
+---
+Title: Computer Organization
+aliases:
+  - CO
+tags:
+  - README
+Author: AllenYGY
+---
+
 # Computer Organization
 
-Here is my CO Note in UIC!
+Here is my Computer Organization Note in UIC!
 
 ## [What is a Computer](CO/Lecture/Lec1.md)
 

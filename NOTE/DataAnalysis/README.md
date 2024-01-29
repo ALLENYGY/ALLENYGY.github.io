@@ -1,5 +1,10 @@
+---
+Title: Data Analysis
+aliases: HODA
+tags: README
+Author: AllenYGY
+---
+
 # Data Analysis
 
-<!-- Here is my DBM Note in UIC! -->
-
-## Hands on Data For Everyone
+## [Hands on Data For Everyone](DaraAnalysis/HODA/HODA.md)
