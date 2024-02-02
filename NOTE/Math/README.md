@@ -23,27 +23,27 @@ Here is my math Note in UIC!
 
 ## Discrete Structure
 
-### [Logic and Proofs----Propositional Logic](DiscreteStructure/Lec1.md)
+### [Logic and Proofs----Propositional Logic](DiscreteStructure/Lecture/Lec1.md)
 
-### [Logic and Proofs- Propositional Equivalence](DiscreteStructure/Lec2.md)
+### [Logic and Proofs- Propositional Equivalence](DiscreteStructure/Lecture/Lec2.md)
 
-### [Sets and N-tuple](DiscreteStructure/Lec5.md)
+### [Sets and N-tuple](DiscreteStructure/Lecture/Lec5.md)
 
-### [Functions, Sequence, and Summations](DiscreteStructure/Lec6.md)
+### [Functions, Sequence, and Summations](DiscreteStructure/Lecture/Lec6.md)
 
-### [Counting-Principles](DiscreteStructure/Lec7.md)
+### [Counting-Principles](DiscreteStructure/Lecture/Lec7.md)
 
-### [Relation](DiscreteStructure/Lec10.md)
+### [Relation](DiscreteStructure/Lecture/Lec10.md)
 
-### [Graph Theory](DiscreteStructure/Lec11.md)
+### [Graph Theory](DiscreteStructure/Lecture/Lec11.md)
 
-### [Graph Theory- Representing graph and connectivity](DiscreteStructure/Lec12.md)
+### [Graph Theory- Representing graph and connectivity](DiscreteStructure/Lecture/Lec12.md)
 
-### [Tree](DiscreteStructure/Lec13.md)
+### [Tree](DiscreteStructure/Lecture/Lec13.md)
 
-### [Boolean Algebras- Boolean Expressions](DiscreteStructure/Lec14.md)
+### [Boolean Algebras- Boolean Expressions](DiscreteStructure/Lecture/Lec14.md)
 
-### [Boolean Algebras- Logic Circuits](DiscreteStructure/Lec15.md)
+### [Boolean Algebras- Logic Circuits](DiscreteStructure/Lecture/Lec15.md)
 
 ## Probability Statistics
 

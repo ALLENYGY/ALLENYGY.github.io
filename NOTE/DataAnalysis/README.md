@@ -7,4 +7,4 @@ Author: AllenYGY
 
 # Data Analysis
 
-## [Hands on Data For Everyone](DaraAnalysis/HODA/HODA.md)
+## [Hands on Data For Everyone](HODA/HODA.md)
