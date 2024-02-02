@@ -1,13 +1,24 @@
-node_modules
-NOTE/.obsidian
-.metals
-.cph
-NOTE/Resume
-NOTE/Research
-NOTE/Record
-NOTE/.git
-NOTE/.gitignore
-NOTE/Obsidian
-NOTE/Contest
-NOTE/Web
+# Ignore node_modules directory
+node_modules/
+
+# Ignore Obsidian related files and directories
+NOTE/.obsidian/
+NOTE/Resume/
+NOTE/Research/
+NOTE/Record/
+NOTE/Obsidian/
+NOTE/Algorithm/Recursion/
+
+# Ignore IDE specific files and directories
+.metals/
+.cph/
+
+# Ignore Git related files and directories
+NOTE/.git/
+NOTE/.gitignore/
+
+# Ignore specific project directories
+NOTE/Contest/
+NOTE/Recursion/
+NOTE/Web/
 Assignment/
