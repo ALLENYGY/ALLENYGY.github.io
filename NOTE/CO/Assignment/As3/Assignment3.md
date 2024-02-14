@@ -96,7 +96,7 @@ x3103 0001 010 010 000010
 $\ ADD R_2 R_2 000 R_2$
 
 X30FF: Load x3100 to $R1$
-X3100: M[R1+2]->R2 Load the value of M[R1+2](x1441) to R2
+X3100: M[R1+2]->R2 Load the value of M[R1+2]\(x1441) to R2
 X3101: TRAP x25
 X3102: R1+R1->R2 R2=x6200
 X3103: R2+R2->R2 R2=xC400
