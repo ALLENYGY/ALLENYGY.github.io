@@ -6,7 +6,7 @@
 - **容器**: *Container*  容器是独立运行的一个或一组应用，是镜像运行时的实体
 - **Dockerfile**: 构建镜像需要的各种指令
 
->[!info] 镜像（Image）和容器（Container）的关系，就像是面向对象程序设计中的类和实例一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。
+>镜像（Image）和容器（Container）的关系，就像是面向对象程序设计中的类和实例一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。
 
 ## Client Server Architecture
 
@@ -18,7 +18,7 @@
 2. 使用Dockerfile构建Image
 3. 使用Image创建和运行容器
 
-### DockerFile
+### Dockerfile
 
 1. Install Operating System
 2. Install Operating Environment
@@ -50,7 +50,7 @@ docker image ls
 ```docker
 docker search [image]
 ```
- > [!note]+ **Example**
+ > **Example**
  >```docker
  docker search nginx
 
@@ -65,7 +65,7 @@ docker pull[image]
 ```docker
 docker push[image]
 ```
->[!note]+ **Example**
+>**Example**
 >```docker
 docker push geekhour/hello-docker:latest
 
@@ -75,7 +75,7 @@ docker push geekhour/hello-docker:latest
 docker save [image] -o FILE 
 docker save [image] > FILE 
 ```
->[!note]+ **Example**
+>**Example**
 >```docker
 >docker save geekhour/hello-docker:latest
 
@@ -84,7 +84,7 @@ docker save [image] > FILE
 ```docker
 docker load -i FILE
 ```
->[!note]+ **Example**
+>**Example**
 >```docker
  docker load -i hello-docker.tar
 
@@ -384,7 +384,7 @@ docker run -w[PATH][image]
 docker run [image][command]
 ```
 
->[!note]+ **Example**
+>**Example**
 >```docker
 docker run -it nginx:latest /bin/bash
 
@@ -462,3 +462,4 @@ VOLUME ["/path1", "/path2"...]
 # 用于定义匿名卷，持久化数据
 
 ```
+ 

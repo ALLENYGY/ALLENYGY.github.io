@@ -27,6 +27,10 @@ Author: AllenYGY
 
 ### [Array and Generics](Java/Lec7)
 
+## Python
+
+### [Python Basic](Python/PythonBasic)
+
 ## R
 
 ### [R Basic](R/Lec1)
