@@ -26,54 +26,6 @@ cellStyleRules: []
 ```
 
 
-```contributionWidget
-id: 107b8079-4cb0-425b-95ab-375f94e2f52d
-type: countdown
-titleAlign: center
-backgroundStyle: card
-maxWidthRatio: 100
-repeatType: none
-showEndDateTime: true
-endHour: 0
-endMinute: 0
-endSecond: 0
-title: Semester Ending
-endYear: 2024
-endMonth: 5
-endDayOfMonth: 1
-timeTextPattern: yMdHms
-
-```
-
-```contributionWidget
-id: c049088b-ba48-4622-8960-bc5b117ae040
-type: chart
-titleAlign: center
-chartType: bar
-backgroundStyle: card
-maxWidthRatio: 100
-maxHeight: 300
-labelProperty: ""
-labelFormat: $none
-valueProperty: ""
-filter:
-  conditions: []
-chartColorSet: ['#2D1F0C']
-backgroundColor: "#6FB0D6"
-
-```
-
-
-
-%% 
-# WorkView
-
-## Create Note
-
-```dataview
-calendar file.ctime
-```
-
 ## Modify Note
 
 ```dataview

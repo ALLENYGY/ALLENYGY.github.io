@@ -44,14 +44,11 @@ yarn.lock
 # Ignore Thumbs.db files on Windows
 Thumbs.db
 
-# .obsidian/*
+.obsidian/*
 # !.obsidian/plugins/
 # !.obsidian/plugins/*
 # !.obsidian/themes/
 # !.obsidian/themes/*
 
-.obsidian/workspace.json
-
-*.zip
 
 

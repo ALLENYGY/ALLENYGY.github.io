@@ -107,29 +107,6 @@ source .bashrc
 
 结束！
 
-## Basci Operation
-
-|           Command           |                           Description                            |                 中文描述                 |
-|:---------------------------:|:----------------------------------------------------------------:|:----------------------------------------:|
-|             `a`             |                   Insert text after the cursor                   |             在光标后插入文本             |
-|             `i`             |                  Insert text before the cursor                   |             在光标前插入文本             |
-|         `:wq`, `ZZ`         |                      Save changes and exit                       |              保存更改并退出              |
-|         `:q`, `:q!`         |             Exit without saving (`:q!` forces exit)              |       不保存退出（`:q!` 强制退出）       |
-|            `:w`             |                Save changes but continue editing                 |            保存更改但继续编辑            |
-|          `Ctrl+F`           |                      Move forward one page                       |                 向前翻页                 |
-|           `/text`           |                    Search forward for `text`                     |               向后查找文本               |
-|           `?text`           |                    Search backward for `text`                    |               向前查找文本               |
-|          `:!bash`           | Temporarily exit to execute a bash command; use `exit` to return | 临时退出执行bash命令；使用`exit`返回编辑 |
-|             `x`             |                Delete the character at the cursor                |             删除光标处的字符             |
-|            `dd`             |                     Delete the current line                      |                删除当前行                |
-|             `u`             |                    Undo the last modification                    |              撤销上一次修改              |
-|    `mv file fileFolder`     |                   Move `file` to `fileFolder`                    |           将文件移动到文件夹中           |
-|    `cp file fileFolder`     |                   Copy `file` to `fileFolder`                    |           将文件复制到文件夹中           |
-| `rm -rf file`, `rm -f file` |            Remove a directory (`-rf`) or file (`-f`)             |    删除文件夹（`-rf`）或文件（`-f`）     |
-|            `ls`             |                   List files in the directory                    |               查看文件目录               |
-|           `ls -a`           |               List all files including hidden ones               |        查看所有文件，包括隐藏文件        |
-|            `ll`             |     List all files with detailed info including permissions      |     列出所有文件，包括权限等详细信息     |
-
 ## **关于中文输入法**
 
 ### **Source**

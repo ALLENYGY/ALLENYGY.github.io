@@ -1,6 +1,6 @@
 # Git For Beginners
 
-## Get start
+## **Get start**
 
 - **Configuration**
 - **Check File Status**
@@ -9,7 +9,7 @@
 - **View File Difference**
 - **Reset Version**
 - **Remove Files**
-- **gitignore**
+- **`gitignore`**
 - **Branch**
 - **Branch Conflict**
 - **Rebase**
@@ -17,13 +17,13 @@
 
 ## **Configuration**
 
-> **View Git version** 查看git版本
+> [!note] **View Git version** 查看git版本
 
 ```sh
 git --version
 ```
 
-> **Config**
+> [!note] **Config**
 
 1. 设置用户名
 
@@ -43,7 +43,7 @@ git config --global user.email "xxxx"
 git config --list
 ```
 
-> **Initialization** 初始化本地仓库
+> [!note] **Initialization** 初始化本地仓库
 
 ```sh
 git init
@@ -69,7 +69,7 @@ git status -s # git status --short
 
 ## **Add** and **Commit  File** to the **Local Repository**
 
-> **ADD**
+> [!note] **ADD**
 > 添加到 暂存区  [**Staging Area**](Git-Introduction)
 
 ```sh
@@ -94,7 +94,7 @@ git add *.txt
 git add .
 ```
 
-> **COMMIT**
+> [!note] **COMMIT**
 > 只提交暂存区[**Staging Area**](Git-Introduction)的内容，不会提交工作区[**Workspace**](Git-Introduction)的内容
 
 ```sh
@@ -111,7 +111,7 @@ git commit -a -m "Updated with a new line"
 
 ## **View Repository Commit History**
 
->查看仓库提交历史记录
+>[!note] 查看仓库提交历史记录
 To see you commit log in the repository
 
 ```sh
@@ -123,7 +123,7 @@ git log --oneline #查看简洁的提交记录
 
 ## **View File Difference**
 
-> **Difference** among **WorkSpace**, **Staging Area** and **Repository**
+> [!note] **Difference** among **WorkSpace**, **Staging Area** and **Repository**
 
 1. WorkSpace VS Staging Area
 
@@ -147,7 +147,7 @@ git diff --staged
 # 查看已经暂存起来的变化
 git diff --cached
 ```
-> **Difference** between **Different Version**
+> [!note] **Difference** between **Different Version**
 ```sh
 git diff <VersionID1> <VersionID2>
 ```
@@ -158,7 +158,7 @@ git diff HEAD^ HEAD
 ```sh
 git diff HEAD~n HEAD #最新版本与前n个版本比较
 ```
-> **Difference** between **Different Branch**
+> [!note] **Difference** between **Different Branch**
 ```sh
 git diff <branch_name> <branch_name>
 ```
@@ -167,7 +167,7 @@ git diff <branch_name> <branch_name>
 
 ## **Reset the version**
 
-> **Reset** 版本回退
+> [!note] **Reset** 版本回退
 
 - 回退版本 并保存工作区和暂存区的所有内容
 
@@ -190,12 +190,12 @@ git reset --mixed[VersionID]
 
 ## **Remove Files**
 
->Method 1:  Delete From Workspace then Add the change to Staging Area
+>[!note] Method 1:  Delete From Workspace then Add the change to Staging Area
 ```sh
 rm files;
 git add file;
 ```
->Method 2: Delete From Workspace and Staging Area
+>[!note] Method 2: Delete From Workspace and Staging Area
 ```sh
 git rm <file>
 ```
@@ -227,7 +227,7 @@ git mv xxx.txt yyy.txt
 
 ## **gitignore**
 
->设置忽略文件
+>[!note] 设置忽略文件
 ![gitignore](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Git.gitignore.png)
 >.gitignore匹配规则
 >
@@ -267,19 +267,19 @@ doc/**/*.pdf
 ## **Branch**
 
 ![GitBranch](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Git/Branch.png)
->**Create Branch** 创建分支
+>[!note] **Create Branch** 创建分支
 
 ```sh
 git branch xxxxxx(branch name)
 ```
 
->**View Branch** 查看分支
+>[!note] **View Branch** 查看分支
 
 ```sh
 git branch
 ```
 
->**Switch Branch** 切换分支
+>[!note] **Switch Branch** 切换分支
 
 ```sh
 git checkout xxxxx(branch name)
@@ -288,13 +288,13 @@ git checkout xxxxx(branch name)
 git switch xxxxx(branch name)
 ```
 
->**Create and Switch Branch** 创建并切换分支
+>[!note] **Create and Switch Branch** 创建并切换分支
 
 ```sh
 git checkout -b xxxxx(branch name)
 ```
 
->**Merge Branch** 合并分支
+>[!note] **Merge Branch** 合并分支
 >先切进一个分支，然后合并另一个分支
 >
 >- 把Branch2合并到Branch1
@@ -308,7 +308,7 @@ git merge branch2
 
 ![GitBranch](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Git/Branch-1.png)
 
->**Delete Branch** 删除分支
+>[!note] **Delete Branch** 删除分支
 ```sh
 git branch -d dev #删除已经合并过的分支
 ```
@@ -328,7 +328,7 @@ git branch -D dev #强制删除未合并的分支
 
 ## **Rebase**
 
->**Rebase**
+>[!note] **Rebase**
 >将当前分支变基到另一个分支
 ![Rebase](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Git/Rebase.png)
 
