@@ -348,7 +348,7 @@ defaults:
                  onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
                 ></script>
             - smart_include:
-                enable: true
+                enable: false
                 key: language-vega-lite
               append: | # vega-lite支持
                 <style>
@@ -370,7 +370,7 @@ defaults:
                       }'
                 ></script>
             - smart_include:
-                enable: true
+                enable: false
                 key: language-mermaid
               append: | # mermaid支持
                 <style>
@@ -579,7 +579,7 @@ defaults:
                   }
                 </script>
             - smart_include:
-                enable: true
+                enable: false
               append: | # codeblocks复制按钮
                 <style>
                   pre .btn-pre-copy {
@@ -625,7 +625,7 @@ defaults:
                   }
                 </script>
             - smart_include:
-                enable: true
+                enable: false
               append: | # 回到顶部底部
                 <script 
                   src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
