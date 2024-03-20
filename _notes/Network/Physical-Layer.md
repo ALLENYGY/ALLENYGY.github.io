@@ -1,7 +1,7 @@
 ---
 Create Time: 19th March 2024
 Title: "[[Physical-Layer]]"
-status: UNFINISHED
+status: DONE
 tags:
   - NOTE
   - Network
