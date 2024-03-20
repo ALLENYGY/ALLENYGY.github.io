@@ -82,8 +82,8 @@ defaults:
                 href: /tags
               - title: <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
                 href: /map
-              - title: <i class="fa-solid fa-coffee fa-fw"></i> 打赏
-                href: /merger
+              # - title: <i class="fa-solid fa-coffee fa-fw"></i> 打赏
+                # href: /merger
             simple_jekyll_search: # 侧边栏的全站搜索
               enable: true
               full_text_search: false # 可能导致缓慢的搜索和加载
