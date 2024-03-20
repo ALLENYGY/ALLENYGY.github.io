@@ -78,13 +78,13 @@ defaults:
                 # href: /roots
               #操作系统
               - title: <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
-                href: /OS
+                href: /OperatingSystem
               - title: <i class="fa-solid fa-network-wired"></i> 计算机网络
                 href: /Network
               - title: <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
                 href: /CO
               - title: <i class="fa-solid fa-code fa-fw"></i> 编程语言
-                href: /ProgrammingLanguage
+                href: /ProgramLanguage
               - title: <i class="fa-solid fa-database fa-fw"></i> 数据库
                 href: /DBM
               
