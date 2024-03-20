@@ -45,3 +45,6 @@ Where $f = \frac{1}{T}$ is the fundamental frequency, $a_n$ and $b_n$ are the si
 
 - A twisted pair consists of two insulated copper wires, typically about 1 mm think.
 - ![Twisted-pair](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Twisted-Pair.png)
+
+##### Twisted-Pair: UTP and STP cables
+

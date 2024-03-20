@@ -324,7 +324,7 @@ defaults:
               </style>
           plugin:
             - smart_include:
-                enable: true
+                enable: false
                 key: $
               append: | # 对KaTeX过长公式渲染超出页面的修正
                 <link
