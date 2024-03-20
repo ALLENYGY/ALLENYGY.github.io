@@ -3,7 +3,7 @@ layout: page
 title: 计算机组成原理
 date: 2024-03-20
 lastmod: 2024-03-20
-permalink: /OS
+permalink: /CO
 jekyll-theme-ObJekyll:
   default:
     sidebar:
