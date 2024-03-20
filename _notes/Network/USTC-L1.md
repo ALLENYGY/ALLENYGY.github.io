@@ -1,7 +1,7 @@
 ---
 Create Time: 26th February 2024
 Title: "[[USTC-L1]]"
-status:DONE
+status: DONE
 Author:
   - AllenYGY
 tags:
