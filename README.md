@@ -2,7 +2,7 @@
 
 <!-- .slide -->
 
-# 将Obsidian库作为<br>publish为博客
+# 将Obsidian库publish为博客
 
 <!-- .slide -->
 
