@@ -1,4 +1,4 @@
-# [AllenYGY 的个人小站](https://ALLENYGY)<br>开始使用
+# AllenYGY 个人小站<br>开始阅读
 
 <!-- .slide -->
 
