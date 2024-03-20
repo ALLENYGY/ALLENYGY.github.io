@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+     &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="AllenYGY的个人小站" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。" />
+<meta property="og:description" content="轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。" />
+<link rel="canonical" href="https://objekyll.netlify.app/NOTE/OperatingSystem/OS-Operating-System-Structure/" />
+<meta property="og:url" content="https://objekyll.netlify.app/NOTE/OperatingSystem/OS-Operating-System-Structure/" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="AllenYGY的个人小站" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"AllenYGY"},"description":"轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。","headline":"AllenYGY的个人小站","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://objekyll.netlify.app/NOTE/OperatingSystem/OS-Operating-System-Structure/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-07 layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://www.acfun.cn/u/31661560">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://space.bilibili.com/357477198">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/comments">
+        <i class="fa-solid fa-comment fa-fw"></i> 留言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/roots">
+        <i class="fa-solid fa-seedling fa-fw"></i> 聚点
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/merger">
+        <i class="fa-solid fa-coffee fa-fw"></i> 打赏
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#os-operating-system-structure">OS-Operating-System-Structure</a>
+    <ol>
+      <li><a href="#operating-system-services">Operating System Services</a>
+        <ol>
+          <li><a href="#services-to-the-user">Services to the User</a></li>
+          <li><a href="#services-to-the-efficient-operations">Services to the efficient operations</a></li>
+        </ol>
+      </li>
+      <li><a href="#user-and-operating-system-interface">User and Operating System Interface</a>
+        <ol>
+          <li><a href="#command-line-interface-cli">Command Line Interface CLI</a></li>
+          <li><a href="#graphical-user-interface--gui">Graphical User Interface  GUI</a></li>
+        </ol>
+      </li>
+      <li><a href="#system-calls--api-c-libraries">System Calls,  API, C Libraries</a>
+        <ol>
+          <li><a href="#system-calls">System Calls</a></li>
+          <li><a href="#api">API</a>
+            <ol>
+              <li><a href="#system-calls-and-api">System Calls and API</a></li>
+              <li><a href="#system-call-parameter-passing">System Call Parameter Passing</a></li>
+              <li><a href="#type-of-system-call">Type of System Call</a></li>
+            </ol>
+          </li>
+          <li><a href="#standard-c-library-vs-system-call">Standard C Library vs System Call</a></li>
+          <li><a href="#standard-c-library-vs-c-posix-library">Standard C Library vs C POSIX Library</a></li>
+        </ol>
+      </li>
+      <li><a href="#system-programs">System Programs</a>
+        <ol>
+          <li><a href="#why-applications-are-operating-system-specific">Why Applications are Operating System Specific</a></li>
+        </ol>
+      </li>
+      <li><a href="#operating-system-implementation-history">Operating System Implementation History</a></li>
+      <li><a href="#operating-system-structures">Operating System Structures</a>
+        <ol>
+          <li><a href="#monolithic-traditional-unix">Monolithic– Traditional UNIX</a></li>
+          <li><a href="#monolithic-plus-modular---linux-system-structure">Monolithic Plus Modular - Linux System Structure</a></li>
+          <li><a href="#layered-approach">Layered Approach</a></li>
+          <li><a href="#microkernels-%E5%BE%AE%E5%86%85%E6%A0%B8">Microkernels 微内核</a></li>
+          <li><a href="#modules">Modules</a></li>
+          <li><a href="#hybrid-systems">Hybrid Systems</a></li>
+        </ol>
+      </li>
+      <li><a href="#operating-system-boot">Operating System Boot</a></li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "07/23/2022 10:59:03")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/yaleiyale/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+          
+        
+        字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title"></h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        8772字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        30分
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="os-operating-system-structure"><a class="internal-link" href="/NOTE/OperatingSystem/OS-Operating-System-Structure/">OS-Operating-System-Structure</a></h1>
+
+<h2 id="operating-system-services"><strong>Operating System Services</strong></h2>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/OS-Services.png" alt="OS-Service" /></p>
+
+<ul>
+  <li>Two categories of services
+    <ul>
+      <li>Services to the user:
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">UI</code>,<code class="language-plaintext highlighter-rouge">File tree</code>,….</li>
+        </ul>
+      </li>
+      <li>Services for the efficient operations
+        <ul>
+          <li>Management of memory</li>
+          <li>CPU scheduling</li>
+          <li>…</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="services-to-the-user"><strong>Services to the User</strong></h3>
+
+<ul>
+  <li><strong>User Interface</strong> <code class="language-plaintext highlighter-rouge">UI</code>
+    <ul>
+      <li>Command-Line Interface <code class="language-plaintext highlighter-rouge">CLI</code></li>
+      <li>Graphics User Interface <code class="language-plaintext highlighter-rouge">GUI</code></li>
+      <li>Touch-screen</li>
+      <li>Batch processing <code class="language-plaintext highlighter-rouge">批处理</code></li>
+    </ul>
+  </li>
+  <li><strong>Program Execution</strong>
+    <ul>
+      <li>Load a program into memory</li>
+      <li>Run a program, and then end execution</li>
+    </ul>
+  </li>
+  <li><strong>I/O Operations</strong></li>
+  <li><strong>File-System Manipulation</strong>
+    <ul>
+      <li>Read-Write</li>
+    </ul>
+  </li>
+  <li><strong>Communications</strong>
+    <ul>
+      <li>Process exchange information</li>
+    </ul>
+  </li>
+  <li><strong>Error detection</strong>
+    <ul>
+      <li>Handle possible errors</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="services-to-the-efficient-operations"><strong>Services to the efficient operations</strong></h3>
+
+<ul>
+  <li><strong>Resource allocation</strong></li>
+  <li>When multiple users or multiple jobs are using computer concurrently, resources must be allocated to each of them
+    <ul>
+      <li>Many types of resources
+        <ul>
+          <li>CPU, main memory, file storage, I/O devices.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Logging</strong>
+    <ul>
+      <li>keep track of which programs use how much and what kinds of computer resources</li>
+    </ul>
+  </li>
+  <li>**Protection and Security **
+    <ul>
+      <li>Protection
+        <ul>
+          <li>Ensure that all access to system resources is controlled</li>
+        </ul>
+      </li>
+      <li>Security
+        <ul>
+          <li>Avoid attack from outside the system</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="user-and-operating-system-interface"><strong>User and Operating System Interface</strong></h2>
+
+<h3 id="command-line-interface-cli"><strong>Command Line Interface</strong> <code class="language-plaintext highlighter-rouge">CLI</code></h3>
+
+<p><code class="language-plaintext highlighter-rouge">CLI</code> or <code class="language-plaintext highlighter-rouge">command interpreter</code> allows direct command entry.</p>
+
+<ul>
+  <li>Commands are sometimes implemented in kernel
+    <ul>
+      <li>commands built-in <code class="language-plaintext highlighter-rouge">内建指令</code></li>
+    </ul>
+  </li>
+  <li>Commands are sometimes by systems program
+    <ul>
+      <li>names of programs <code class="language-plaintext highlighter-rouge">程序名</code></li>
+      <li>Advantage: adding new features doesn’t require modification of interpreter</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="graphical-user-interface--gui"><strong>Graphical User Interface</strong>  <code class="language-plaintext highlighter-rouge">GUI</code></h3>
+
+<ul>
+  <li>User-friendly
+    <ul>
+      <li>desktop metaphor (象征) interface</li>
+      <li>Icons represent files, programs, actions, etc.</li>
+    </ul>
+  </li>
+  <li>Invented at Xerox PARC (1970s)</li>
+  <li>Many systems now include both CLI and GUI interfaces
+    <ul>
+      <li>Microsoft Windows is GUI with CLI “cmd” shell</li>
+      <li>Apple Mac OS X is “Aqua” GUI interface with UNIX kernel underneath and shells available</li>
+      <li>Unix and Linux have CLI with optional GUI interfaces</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="system-calls--api-c-libraries"><strong>System Calls,  API, C Libraries</strong></h2>
+
+<h3 id="system-calls"><strong>System Calls</strong></h3>
+
+<p>System calls provide an programming interface for programs to use services of operating systems.</p>
+
+<h3 id="api"><strong>API</strong></h3>
+
+<ul>
+  <li>Typically, application developers design programs according to an API rather than directly system calls.</li>
+  <li>The API <code class="language-plaintext highlighter-rouge">Application Programming Interface</code> specifies a set of functions that are available to an application programmer.
+    <ul>
+      <li><strong>Common API</strong>
+        <ul>
+          <li>Win32 API for Windows</li>
+          <li>POSIX API for POSIX-based systems (including virtually all versions of UNIX, Linux, and Mac OS X)</li>
+          <li>POSIX <code class="language-plaintext highlighter-rouge">Portable Operating System Interface</code> is – a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems.</li>
+          <li>Java API for the Java virtual machine (JVM)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="system-calls-and-api"><strong>System Calls and API</strong></h4>
+
+<ul>
+  <li>
+    <p>The caller just needs to <code class="language-plaintext highlighter-rouge">obey API</code> know <strong>nothing</strong> about how the system call is implemented Most details of OS interface hidden from programmer by API</p>
+  </li>
+  <li>
+    <p>The system call interface invokes the intended system call in OS kernel and returns status of the system call and any return values</p>
+  </li>
+  <li>
+    <p>Each system call has a number (as index)</p>
+  </li>
+  <li>
+    <p>System-call interface maintains a table: indexed according to these numbers</p>
+  </li>
+</ul>
+
+<h4 id="system-call-parameter-passing"><strong>System Call Parameter Passing</strong></h4>
+
+<ul>
+  <li>Three general methods
+    <ul>
+      <li><strong>Simplest/Fastest</strong>: pass the parameters in <em>registers</em>
+        <ul>
+          <li>缺点：寄存器不够大，限制传参数量</li>
+        </ul>
+      </li>
+      <li>Parameters <em>stored in a block/table, in memory</em>, and address of block passed as a parameter in a register.</li>
+      <li>Parameters are pushed onto the stack by the program and off the stack by the operating system</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="type-of-system-call"><strong>Type of System Call</strong></h4>
+
+<ul>
+  <li>Process Control</li>
+  <li>File Management</li>
+  <li>Device Management</li>
+  <li>Information maintenance</li>
+  <li>Communications</li>
+  <li>Protection</li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/SystemCalls.png" alt="System Calls" /></p>
+
+<h3 id="standard-c-library-vs-system-call"><strong>Standard C Library vs System Call</strong></h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Standard C Library</code>
+    <ul>
+      <li>Contains functions which make system calls or do not make system calls makes programmers’ work much easier</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Advantages of using Standard C Library</code>
+    <ul>
+      <li>It is <strong>simpler</strong> to call a function in a standard C library rather than to make a system call</li>
+      <li><strong>Portability</strong>
+        <ul>
+          <li>Source code executed in one OS can be run in another OS</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Advantages of using system Calls</code>
+    <ul>
+      <li>System calls are usually more powerful than functions from the Standard C Library
+        <ul>
+          <li>Can create processes, share memory between processes, etc. These advanced features are not available in the Standard C Library.</li>
+        </ul>
+      </li>
+      <li>It’s a little bit <strong>faster</strong> than using a library function (since internally the library function uses a system call anyway).</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="standard-c-library-vs-c-posix-library"><strong>Standard C Library vs C POSIX Library</strong></h3>
+
+<p><strong>Subset $\subset$ Superset</strong></p>
+
+<p>The C POSIX library was developed at the same time as the ANSI C standard. includes additional functions to those introduced in standard C</p>
+
+<h2 id="system-programs"><strong>System Programs</strong></h2>
+
+<p>System programs provide a convenient environment for program development and execution. They can be divided into:</p>
+
+<ul>
+  <li>File manipulation</li>
+  <li>Status information sometimes stored in a file</li>
+  <li>Programming language support</li>
+  <li>Program loading and execution</li>
+  <li>Communications</li>
+  <li>Background services (e.g., launch OS, disk checking, daemons(守护进程))</li>
+  <li>Application programs</li>
+</ul>
+
+<p>Most User’s view of the operation system is</p>
+<ul>
+  <li>defined by system programs, not the actual system calls (for system or application programmers)</li>
+</ul>
+
+<h3 id="why-applications-are-operating-system-specific"><strong>Why Applications are Operating System Specific</strong></h3>
+
+<ul>
+  <li>Apps compiled on one system usually are not executable on other operating systems
+    <ul>
+      <li>Each operating system provides its own unique system calls</li>
+    </ul>
+  </li>
+  <li>How can apps be used in multi-operating systems
+    <ul>
+      <li>Written in an interpreted language like Python, Ruby, and interpreter available on multiple operating systems<code class="language-plaintext highlighter-rouge">解释性语言</code></li>
+      <li>Written in a language that includes a VM containing the running app (like Java) <code class="language-plaintext highlighter-rouge">包括虚拟机的语言</code></li>
+      <li>Written in a standard language (like C), compiled separately on each operating system to run on each OS <code class="language-plaintext highlighter-rouge">标准语言</code></li>
+    </ul>
+  </li>
+  <li>Application Binary Interface (ABI) is
+    <ul>
+      <li>about how different components of binary code can interface for a given operating system on a given architecture</li>
+      <li>in low-level details
+<code class="language-plaintext highlighter-rouge">定义了不同的二进制代码组件如何在特定操作系统和特定础础架构上进行交互的低级别细节。</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="operating-system-implementation-history"><strong>Operating System Implementation History</strong></h2>
+
+<ul>
+  <li>Early <code class="language-plaintext highlighter-rouge">OSes</code> in assembly language</li>
+  <li>Then system programming languages like Algol, PL/1</li>
+  <li>Now high level language C, C++
+    <ul>
+      <li>High-level language is easier to port to other hardware</li>
+      <li>But slower</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Actually usually a mix of languages</p>
+<ul>
+  <li>Lowest levels in assembly language</li>
+  <li>Main body in C</li>
+  <li>Systems programs in C, C++, scripting languages like PERL, Python, shell scripts</li>
+  <li>Emulation can allow an OS to run on non-native hardware</li>
+</ul>
+
+<h2 id="operating-system-structures"><strong>Operating System Structures</strong></h2>
+
+<ul>
+  <li>Various ways to structure ones
+    <ul>
+      <li>Simple structure – MS-DOS</li>
+      <li>More complex – UNIX</li>
+      <li>Layered</li>
+      <li>Microkernel -Mach</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="monolithic-traditional-unix"><strong>Monolithic– Traditional UNIX</strong></h3>
+<ul>
+  <li>limited structuring (due to early hardware) <code class="language-plaintext highlighter-rouge">有限结构化</code></li>
+  <li>The UNIX OS consists of two separable parts
+    <ul>
+      <li>Systems programs</li>
+      <li>The kernel
+        <ul>
+          <li>Consists of everything below the system-call interface and above the physical hardware</li>
+          <li>Provides the file system, CPU scheduling, memory management, and other operating-system functions;</li>
+          <li>Consists of a large number of functions in one level</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="monolithic-plus-modular---linux-system-structure"><strong>Monolithic Plus Modular - Linux System Structure</strong></h3>
+
+<ul>
+  <li>Advantages for monolithic design
+    <ul>
+      <li>High speed</li>
+      <li>High efficiency</li>
+    </ul>
+  </li>
+  <li>Advantages for modular design
+    <ul>
+      <li>changes in one component affect only that component, and no others</li>
+      <li>Modules can be modified easily.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="layered-approach"><strong>Layered Approach</strong></h3>
+
+<ul>
+  <li>The operating system is divided into a number of layers (levels)
+    <ul>
+      <li>The bottom layer (layer 0), is the hardware.</li>
+      <li>The highest (layer N) is the user interface.</li>
+      <li>Each layer is built on top of lower layers
+        <ul>
+          <li>With modularity, each layer uses functions (operations) and services of only lower-level layers</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Advantage: Simplicity of construction and debugging.</li>
+  <li>Disadvantages:
+    <ul>
+      <li>Hard to define each layer.</li>
+      <li>Poor performance.
+%% <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/LayeredApproach.png" alt="" /><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Layer.png" alt="" /> %%</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="microkernels-微内核"><strong>Microkernels</strong> <code class="language-plaintext highlighter-rouge">微内核</code></h3>
+<p>Moves as much components from the kernel into user space</p>
+<ul>
+  <li>Mach
+  Mac OS X kernel (Darwin) partly based on Mach</li>
+</ul>
+
+<p>Communication takes place between user modules using message passing</p>
+<ul>
+  <li>Microkernels provide minimal process and memory management, in addition to a communication facility.</li>
+  <li>Communication between user modules through message passing.
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Microkernels.png" alt="" /></li>
+</ul>
+
+<p>Advantage</p>
+<ul>
+  <li>Easier to
+    <ul>
+      <li>extend to a microkernel</li>
+      <li>port the operating system to new architectures</li>
+    </ul>
+  </li>
+  <li>More reliable (less code is running in kernel mode)</li>
+  <li>More secure</li>
+</ul>
+
+<p>Disadvantages</p>
+<ul>
+  <li>Overhead of communication between user space and kernel space</li>
+</ul>
+
+<h3 id="modules"><strong>Modules</strong></h3>
+
+<p>Many modern operating systems implement loadable kernel modules (best practice)</p>
+<ul>
+  <li>Uses object-oriented approach</li>
+  <li>Each core component is separate, is loadable as needed within the kernel, talks to the others over known interfaces</li>
+</ul>
+
+<p>Overall, similar to layers but with more flexible 
+E.g., Linux, Solaris, macOS, Windows, etc</p>
+
+<h3 id="hybrid-systems"><strong>Hybrid Systems</strong></h3>
+
+<p>Most modern operating systems: not one pure model (structure)</p>
+<ul>
+  <li>Hybrid combines multiple approaches to address performance, security, usability needs.</li>
+</ul>
+
+<p>Example</p>
+<ul>
+  <li>Linux and Solaris kernels: monolithic (in kernel memory), plus modular (for dynamic loading of functionality)</li>
+  <li>Windows mostly monolithic, plus microkernel for different subsystem personalities, also provide support for dynamically loadable kernel modules.</li>
+  <li>Apple Mac OS X, Microkernel plus layered, Aqua (GUI) plus Cocoa (API) programming environment</li>
+</ul>
+
+<h2 id="operating-system-boot"><strong>Operating System Boot</strong></h2>
+<ul>
+  <li>When power is initialized on system, execution starts at a fixed memory location</li>
+  <li>Operating system must be made available to hardware so hardware can start it
+    <ul>
+      <li>One step process
+        <ul>
+          <li>Small piece of code – bootstrap loader<code class="language-plaintext highlighter-rouge">引导程序</code>, BIOS<code class="language-plaintext highlighter-rouge">基本输入输出系统</code> stored in ROM or EEPROM locates the kernel, loads it into memory, and starts it</li>
+        </ul>
+      </li>
+      <li>Two step process
+        <ul>
+          <li>ROM code loads boot block (with bootstrap loader) in hard disk</li>
+          <li>Bootstrap loader loads kernel</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Bootstrap loader <code class="language-plaintext highlighter-rouge">引导程序</code>  —–simple code to initialize the system
+    <ul>
+      <li>Load Kernel</li>
+      <li>Starts system daemons <code class="language-plaintext highlighter-rouge">守护进程</code> (services provided outside of the kernel)</li>
+    </ul>
+  </li>
+</ul>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+
+            <div style="font-size: 0.9em">
+                <p>
+                    no link
+                </p>
+            </div>
+            
+        </side>
+    </div>
+</div>
+<a id = "coffee" href="/merger"> <img  src="https://i.imgur.com/lEvIedR.png" alt="BuyMeACoffee" width="180"> </a>
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
+/>
+<style>
+  .pio-container{
+    -webkit-transition: transform .3s ease-in-out;
+               transition: transform .3s ease-in-out;
+  }
+  @media only print {
+    .pio-container {
+      display: none;
+    }
+  }
+ .layout-reverse #sidebar-checkbox:checked~.pio-container {
+     -webkit-transform: translateX(-14rem);
+        -ms-transform: translateX(-14rem);
+              transform: translateX(-14rem);
+   }
+</style>
+<script
+  async="async"
+  src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
+  onload='
+  fetch("https://v1.hitokoto.cn")
+  .then(response=>response.json())
+  .then(data=>{var helloword=data.hitokoto;
+  var pio_container=document.createElement("div");
+  pio_container.classList.add("pio-container");
+  pio_container.classList.add("right");
+  pio_container.style.bottom="-2rem";
+  pio_container.style.zIndex="1";
+  document.body.insertAdjacentElement("beforeend",pio_container);
+  let pio_action=document.createElement("div");
+  pio_action.classList.add("pio-action");
+  pio_container.insertAdjacentElement("beforeend",pio_action);
+  let pio_canvas=document.createElement("canvas");
+  pio_canvas.id="pio";
+  pio_canvas.style.width="14rem";
+  pio_canvas.width="600";
+  pio_canvas.height="800";
+  pio_container.insertAdjacentElement("beforeend",pio_canvas);
+  let pio = new Paul_Pio({
+    "mode":"fixed",
+    "hidden":true,
+    "night":"for(let i=7;i<16;++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break}",
+    "content":{
+      "link":["https://github.com/yaleiyale/obsidian-jekyll-blog"],
+      "skin":["要换成我的朋友吗？","让她放个假吧~"],
+      "hidden":true,
+      "welcome":helloword,
+      "touch":helloword,
+      "referer":"你通过 %t 来到了这里",
+      "custom":[
+        {"selector":"a","type":"link"},
+        {"selector":"#coffee","text":"打赏要理性哦😻~"},
+        {"selector":"img","text":"点下看看吧🔍~"},
+        {"selector":".wl-reaction","text":"我来要赞咯🌟"},
+        {"selector":".wl-comment","text":"文明发言，不然会被🚫哦~"},
+        {"selector":".highlight","text":"代码可以一键复制呢🔖~"},
+        {"selector":".sidebar-toggle","text":"打开侧边栏叭🗂️~"},
+        {"selector":".effect-info","text":"哇，你发现了什么❗"},
+        {"selector":"#sidebar-search-input","text":"想搜索什么呢❓"},
+        {"selector":"#toc","text":"这是目录~"},
+        {"selector":".page-title","text":"这是标题~"}]
+        },
+    "model":[
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/umaru/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/koharu/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/rem/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/kurumi/model.json"]
+        })}).catch(console.error);'
+></script>
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.css"
+/>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
+></script>
+<script type="text/javascript">
+  var content = document.querySelector(".wrapper");
+   if (content) {
+     var list = content.querySelectorAll("img");
+     if (list) {
+      var imgCount = list.length;
+      var imgNow;
+      var viewer = [];
+      if (imgCount > 0) {
+         for (var i = 0; i < imgCount - 1; i++) //去除末尾咖啡
+         {
+           imgNow = list[i];
+          //console.log(imgNow.src);
+          viewer[i - 1] = new Viewer(imgNow);
+         }
+      }
+     }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+

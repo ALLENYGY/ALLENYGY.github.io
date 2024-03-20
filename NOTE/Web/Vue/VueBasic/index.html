@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+     &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="AllenYGY的个人小站" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。" />
+<meta property="og:description" content="轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。" />
+<link rel="canonical" href="https://objekyll.netlify.app/NOTE/Web/Vue/VueBasic/" />
+<meta property="og:url" content="https://objekyll.netlify.app/NOTE/Web/Vue/VueBasic/" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="AllenYGY的个人小站" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"AllenYGY"},"description":"轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。","headline":"AllenYGY的个人小站","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://objekyll.netlify.app/NOTE/Web/Vue/VueBasic/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-07 layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://www.acfun.cn/u/31661560">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://space.bilibili.com/357477198">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/comments">
+        <i class="fa-solid fa-comment fa-fw"></i> 留言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/roots">
+        <i class="fa-solid fa-seedling fa-fw"></i> 聚点
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/merger">
+        <i class="fa-solid fa-coffee fa-fw"></i> 打赏
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#vuebasic">VueBasic</a>
+    <ol>
+      <li><a href="#%E5%88%9D%E8%AF%86vue">初识Vue</a></li>
+      <li><a href="#%E6%A8%A1%E7%89%88%E8%AF%AD%E6%B3%95">模版语法</a></li>
+      <li><a href="#%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A">数据绑定</a></li>
+      <li><a href="#el%E4%B8%8Edata%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%86%99%E6%B3%95">el与data的两种写法</a></li>
+      <li><a href="#mvvm-%E6%A8%A1%E5%9E%8B">MVVM 模型</a></li>
+      <li><a href="#%E6%95%B0%E6%8D%AE%E4%BB%A3%E7%90%86">数据代理</a></li>
+      <li><a href="#%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86">事件处理</a>
+        <ol>
+          <li><a href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">事件的基本使用</a></li>
+          <li><a href="#vue%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6">Vue中的事件修饰符</a></li>
+          <li><a href="#%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6">键盘事件</a></li>
+        </ol>
+      </li>
+      <li><a href="#%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7">计算属性</a></li>
+      <li><a href="#%E7%9B%91%E8%A7%86">监视</a></li>
+      <li><a href="#%E7%9B%91%E8%A7%86%E5%B1%9E%E6%80%A7-watch">监视属性 watch</a></li>
+      <li><a href="#%E6%B7%B1%E5%BA%A6%E7%9B%91%E8%A7%86">深度监视</a></li>
+      <li><a href="#%E7%BB%91%E5%AE%9A%E6%A0%B7%E5%BC%8F">绑定样式</a></li>
+      <li><a href="#%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93">条件渲染</a>
+        <ol>
+          <li><a href="#v-if">v-if</a></li>
+          <li><a href="#v-show">v-show</a></li>
+        </ol>
+      </li>
+      <li><a href="#%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93">列表渲染</a>
+        <ol>
+          <li><a href="#%E5%9F%BA%E6%9C%AC%E5%88%97%E8%A1%A8">基本列表</a></li>
+          <li><a href="#key%E7%9A%84%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86">key的内部原理</a></li>
+          <li><a href="#vue%E7%9B%91%E8%A7%86%E6%95%B0%E6%8D%AE">Vue监视数据</a></li>
+        </ol>
+      </li>
+      <li><a href="#%E6%94%B6%E9%9B%86%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE">收集表单数据</a>
+        <ol>
+          <li><a href="#text-input-type">text Input Type</a></li>
+          <li><a href="#radio-input-type">radio input type</a></li>
+          <li><a href="#checkbox-input-type">checkbox input type</a></li>
+        </ol>
+      </li>
+      <li><a href="#%E8%BF%87%E6%BB%A4%E5%99%A8">过滤器</a></li>
+      <li><a href="#%E5%86%85%E7%BD%AE%E6%8C%87%E4%BB%A4">内置指令</a></li>
+      <li><a href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4">自定义指令</a>
+        <ol>
+          <li><a href="#%E5%AE%9A%E4%B9%89%E8%AF%AD%E6%B3%95">定义语法</a></li>
+          <li><a href="#%E9%85%8D%E7%BD%AE%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%843%E4%B8%AA%E5%9B%9E%E8%B0%83">配置对象中常用的3个回调</a></li>
+        </ol>
+      </li>
+      <li><a href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">生命周期</a></li>
+      <li><a href="#%E7%BB%84%E4%BB%B6">组件</a></li>
+      <li><a href="#vue%E4%B8%AD%E4%BD%BF%E7%94%A8%E7%BB%84%E4%BB%B6%E7%9A%84%E4%B8%89%E5%A4%A7%E6%AD%A5%E9%AA%A4">Vue中使用组件的三大步骤</a></li>
+      <li><a href="#vuecomponent">VueComponent</a></li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "07/23/2022 10:59:03")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/yaleiyale/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+          
+        
+        字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title"></h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        8245字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        28分
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="vuebasic"><a class="internal-link" href="/NOTE/Web/Vue/VueBasic/">VueBasic</a></h1>
+
+<h2 id="初识vue"><strong>初识Vue</strong></h2>
+
+<ol>
+  <li>想让Vue工作，就必须创建一个Vue实例，且要传入一个配置对象；</li>
+  <li>root容器里的代码依然符合html规范，只不过混入了一些特外的Vue语法；</li>
+  <li>容器里的代码破称为【Vue模板】;</li>
+  <li>容器与实例一一对应；</li>
+  <li>真实开发中只有一个Vue实例，并且会配合着组件一起使用；</li>
+  <li>｛｛xxx｝｝中的xxx要写js表达式，且xxx可以自动读取到data中的所有属性；</li>
+  <li>一且data中的数据发生改变，那么模板中用到该数据的地方也会自动更新；</li>
+</ol>
+
+<h2 id="模版语法"><strong>模版语法</strong></h2>
+
+<p>Vue模板语法有2大类：</p>
+<ol>
+  <li>插值语法：
+    <ul>
+      <li>功能：“用于解析标签体内容。</li>
+      <li>写法：｛｛xxx｝｝，xxx是js表达式，且可以直接读取到data中的所有属性。</li>
+    </ul>
+  </li>
+  <li>指令语法：
+    <ul>
+      <li>功能：用于解析标签（包括：标签属性、标签体内容、绑定事件..•.）。</li>
+      <li>举例：v-bind:href=”xoox”或简写为：href=”xxx”，xoxcx同样要写js表达式，且可以直接读取到data中的所有属性。</li>
+    </ul>
+  </li>
+</ol>
+
+<blockquote>
+  <p>[!note]+ #备注
+Vue中有很多的指令，且形式都是：V-2？？？，此处我们只是拿v-bind举个例子。</p>
+</blockquote>
+
+<h2 id="数据绑定"><strong>数据绑定</strong></h2>
+
+<p>Vue中有2种数据绑定的方式：</p>
+<ol>
+  <li>单向绑定（v-bind）：数据只能从data流向页面。</li>
+  <li>双向绑定（Y-model）：数据不仅能从data流向页面，还可以从页面流间data。
+    <blockquote>
+      <p>[!note]+ #备注</p>
+      <ol>
+        <li>双向绑定一股都应用在表单类元素上（如：input、select等）</li>
+        <li>v-model:value 可以简写为 v-model，因为v-model默认收集的就是value值。</li>
+      </ol>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="el与data的两种写法"><strong>el与data的两种写法</strong></h2>
+
+<ol>
+  <li>el有2种写法
+    <ol>
+      <li>new Vue时候h置e1属性。</li>
+      <li>先创建Ve刻例，随后再通过vm.$mount(‘#root’)指定el的值。</li>
+    </ol>
+  </li>
+  <li>data有2种写法
+    <ol>
+      <li>对象式</li>
+      <li>函数式
+        <blockquote>
+          <p>[!warning]+ #备注
+data必须使用函数式，否则会报错。</p>
+        </blockquote>
+      </li>
+    </ol>
+  </li>
+  <li>一个重要的原则：
+ 由vue管理的函数，一定不要写箭头函数，一旦写了箭头函数，this就不再是Vue实例了。</li>
+</ol>
+
+<h2 id="mvvm-模型"><strong>MVVM 模型</strong></h2>
+
+<ol>
+  <li>M: 模型(Model): 对应data中的数据</li>
+  <li>V: 视图(View): 模版</li>
+  <li>VM: 视图模型(ViewModel): Vue实例对象
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Vue/MVVC.png" alt="MVVC" /></li>
+</ol>
+
+<p>观察发现：</p>
+<ol>
+  <li>data中所有的属性，最后都出现在了vm身上。</li>
+  <li>vm身上所有的属性 及 Vue原型上所有属性，在Vue模板中都可以直接使用。</li>
+</ol>
+
+<h2 id="数据代理"><strong>数据代理</strong></h2>
+
+<p>数据代理：通过一个对象代理对另一个对象中属性的操作（读/写）</p>
+
+<ol>
+  <li>
+    <blockquote>
+      <p>[!note]+ Vue中的数据代理
+通过vm对象来代理data对象中属性的操作（读/写）</p>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote>
+      <p>[!note]+ Vue中数据代理的好处
+更加方便的操作data中的数据</p>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote>
+      <p>[!note]+ 基本原理
+通过Object.defineProperty（）把data对象中所有属性添加到vm上。
+为每一个添加到vm上的属性，都指定一个getter/setter。
+在getter/Fetter内部去採作（读/写）data中对应的属性。</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="事件处理"><strong>事件处理</strong></h2>
+
+<h3 id="事件的基本使用"><strong>事件的基本使用</strong></h3>
+
+<ol>
+  <li>使用v-on:xxx 或 @xxx 绑定事件，其中xxx是事件名；</li>
+  <li>事件的回调需要配置在methods对象中，最终会在vm上；</li>
+  <li>methods中配置的函数，不要用箭头函数！否则this就不是vm了；</li>
+  <li>methods中配置的函数，都是被Vue所管理的函数，this的指向是vm 或 组件实例对象；</li>
+  <li>@click=”demo” 和 @click=”demo($event)” 效果一致，但后者可以传参；</li>
+</ol>
+
+<h3 id="vue中的事件修饰符"><strong>Vue中的事件修饰符</strong></h3>
+
+<ol>
+  <li><strong>prevent：阻止默认事件</strong></li>
+  <li><strong>stop：阻止事件冒泡</strong></li>
+  <li><strong>once：事件只触发一次</strong></li>
+  <li>capture：使用事件的捕获模式</li>
+  <li>self：只有event.target是当前操作的元素时才触发事件</li>
+  <li>passive：事件的默认行为立即执行，无需等待事件回调执行完毕</li>
+</ol>
+
+<h3 id="键盘事件"><strong>键盘事件</strong></h3>
+
+<ol>
+  <li>Vue中常用的按键别名：
+    <ul>
+      <li>回车 =&gt; enter</li>
+      <li>删除 =&gt; delete (捕获“删除”和“退格”键)</li>
+      <li>退出 =&gt; esc</li>
+      <li>空格 =&gt; space</li>
+      <li>换行 =&gt; tab (特殊，必须配合keydown去使用)</li>
+      <li>上 =&gt; up</li>
+      <li>下 =&gt; down</li>
+      <li>左 =&gt; left</li>
+      <li>右 =&gt; right</li>
+    </ul>
+  </li>
+  <li>Vue未提供别名的按键，可以使用按键原始的key值去绑定，但注意要转为kebab-case（短横线命名）</li>
+  <li>系统修饰键（用法特殊）：ctrl、alt、shift、meta
+    <ol>
+      <li>配合keyup使用：按下修饰键的同时，再按下其他键，随后释放其他键，事件才被触发。</li>
+      <li>配合keydown使用：正常触发事件。</li>
+    </ol>
+  </li>
+  <li>也可以使用keyCode去指定具体的按键（不推荐）</li>
+  <li><code class="language-plaintext highlighter-rouge">Vue.config.keyCodes.自定义键名 = 键码</code>，可以去定制按键别名</li>
+</ol>
+
+<h2 id="计算属性"><strong>计算属性</strong></h2>
+
+<ol>
+  <li>定义：要用的属性不存在，要通过已有属性计算得来。</li>
+  <li>原理：底层借助了Objcet.defineproperty方法提供的getter和setter。</li>
+  <li>get函数什么时候执行？
+    <blockquote>
+      <p>[!question]- Answer</p>
+      <ol>
+        <li>初次读取时会执行一次。</li>
+        <li>当依赖的数据发生改变时会被再次调用。</li>
+      </ol>
+    </blockquote>
+  </li>
+  <li>优势：与methods实现相比，内部有缓存机制（复用），效率更高，调试方便。
+    <blockquote>
+      <p>[!Note]-</p>
+      <ol>
+        <li>计算属性最终会出现在vm上，直接读取使用即可。</li>
+        <li>如果计算属性要被修改，那必须写set函数去响应修改，且set中要引起计算时依赖的数据发生改变。</li>
+      </ol>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="监视"><strong>监视</strong></h2>
+
+<h2 id="监视属性-watch"><strong>监视属性 watch</strong></h2>
+
+<ol>
+  <li>当被监视的属性变化时, 回调函数自动调用, 进行相关操作</li>
+  <li>监视的属性必须存在，才能进行监视！！</li>
+  <li>监视的两种写法：
+    <ol>
+      <li>new Vue时传入watch配置</li>
+      <li>通过vm.$watch监视</li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="深度监视"><strong>深度监视</strong></h2>
+
+<ol>
+  <li>Vue中的watch默认不监测对象内部值的改变（一层）。</li>
+  <li>配置deep:true可以监测对象内部值改变（多层）。
+    <blockquote>
+      <p>[!note] 备注：</p>
+      <ol>
+        <li>Vue自身可以监测对象内部值的改变，但Vue提供的watch默认不可以！</li>
+        <li>使用watch时根据数据的具体结构，决定是否采用深度监视。</li>
+      </ol>
+    </blockquote>
+  </li>
+</ol>
+
+<blockquote>
+  <p>[!abstract]+ <strong>Computed Vs Watch</strong>
+computed和watch之间的区别：</p>
+  <ol>
+    <li>computed能完成的功能，watch都可以完成。</li>
+    <li>watch能完成的功能，computed不一定能完成，例如：watch可以进行异步操作。</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ <strong>两个重要的小原则</strong>：</p>
+  <ol>
+    <li>所被Vue管理的函数，最好写成普通函数，这样this的指向才是vm 或 组件实例对象。</li>
+    <li>所有不被Vue所管理的函数（定时器的回调函数、ajax的回调函数等、Promise的回调函数），最好写成箭头函数，
+这样this的指向才是vm 或 组件实例对象。</li>
+  </ol>
+</blockquote>
+
+<h2 id="绑定样式"><strong>绑定样式</strong></h2>
+
+<ol>
+  <li>class样式
+写法:class=”xxx” xxx可以是字符串、对象、数组。
+字符串写法适用于：类名不确定，要动态获取。
+对象写法适用于：要绑定多个样式，个数不确定，名字也不确定。
+数组写法适用于：要绑定多个样式，个数确定，名字也确定，但不确定用不用。</li>
+  <li>style样式
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">:style</span><span class="o">=</span><span class="s1">"{fontSize: xxx}"</span><span class="nt">其中xxx是动态值</span><span class="err">。</span>
+<span class="nd">:style</span><span class="o">=</span><span class="s1">"[a,b]"</span><span class="nt">其中a</span><span class="err">、</span><span class="nt">b是样式对象</span><span class="err">。</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="条件渲染"><strong>条件渲染</strong></h2>
+
+<h3 id="v-if"><strong>v-if</strong></h3>
+<p>写法：</p>
+<ol>
+  <li>v-if=”表达式”</li>
+  <li>v-else-if=”表达式”</li>
+  <li>v-else=”表达式”
+    <blockquote>
+      <p>[!abstract] Feature
+适用于：切换频率较低的场景。
+特点：不展示的DOM元素直接被移除。
+注意：v-if可以和:v-else-if、v-else一起使用，但要求结构不能被“打断”。</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h3 id="v-show"><strong>v-show</strong></h3>
+
+<blockquote>
+  <p>[!abstract] Feature
+写法：v-show=”表达式”
+适用于：切换频率较高的场景。
+特点：不展示的DOM元素未被移除，仅仅是使用样式隐藏掉</p>
+</blockquote>
+
+<blockquote>
+  <p>[!note]+ 备注：
+使用v-if的时，元素可能无法获取到，而使用v-show一定可以获取到。</p>
+</blockquote>
+
+<h2 id="列表渲染"><strong>列表渲染</strong></h2>
+
+<h3 id="基本列表"><strong>基本列表</strong></h3>
+
+<blockquote>
+  <p>[!abstract] v-for</p>
+  <ol>
+    <li>用于展示列表数据</li>
+    <li>语法：v-for=”(item, index) in xxx” :key=”yyy”</li>
+    <li>可遍历：数组、对象、字符串（用的很少）、指定次数（用的很少）</li>
+  </ol>
+</blockquote>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"root"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- 遍历数组 --&gt;</span>
+	<span class="nt">&lt;h2&gt;</span>人员列表（遍历数组）<span class="nt">&lt;/h2&gt;</span>
+	<span class="nt">&lt;ul&gt;</span>
+		<span class="nt">&lt;li</span> <span class="na">v-for=</span><span class="s">"(p,index) of persons"</span> <span class="na">:key=</span><span class="s">"index"</span><span class="nt">&gt;</span>
+			-
+		<span class="nt">&lt;/li&gt;</span>
+	<span class="nt">&lt;/ul&gt;</span>
+<span class="c">&lt;!-- 遍历对象 --&gt;</span>
+	<span class="nt">&lt;h2&gt;</span>汽车信息（遍历对象）<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+    	<span class="nt">&lt;li</span> <span class="na">v-for=</span><span class="s">"(value,k) of car"</span> <span class="na">:key=</span><span class="s">"k"</span><span class="nt">&gt;</span>
+    		-
+    	<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="c">&lt;!-- 遍历字符串 --&gt;</span>
+	<span class="nt">&lt;h2&gt;</span>测试遍历字符串（用得少）<span class="nt">&lt;/h2&gt;</span>
+		<span class="nt">&lt;ul&gt;</span>
+    		<span class="nt">&lt;li</span> <span class="na">v-for=</span><span class="s">"(char,index) of str"</span> <span class="na">:key=</span><span class="s">"index"</span><span class="nt">&gt;</span>
+    			-
+    		<span class="nt">&lt;/li&gt;</span>
+    	<span class="nt">&lt;/ul&gt;</span>
+<span class="c">&lt;!-- 遍历指定次数 --&gt;</span>
+	<span class="nt">&lt;h2&gt;</span>测试遍历指定次数（用得少）<span class="nt">&lt;/h2&gt;</span>
+		<span class="nt">&lt;ul&gt;</span>
+			<span class="nt">&lt;li</span> <span class="na">v-for=</span><span class="s">"(number,index) of 5"</span> <span class="na">:key=</span><span class="s">"index"</span><span class="nt">&gt;</span>
+				-
+			<span class="nt">&lt;/li&gt;</span>
+	<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h3 id="key的内部原理"><strong>key的内部原理</strong></h3>
+
+<ol>
+  <li>虚拟DOM中key的作用：
+    <ul>
+      <li>key是虚拟DOM对象的标识，当数据发生变化时，Vue会根据【新数据】生成【新的虚拟DOM】</li>
+      <li>随后Vue进行【新虚拟DOM】与【旧虚拟DOM】的差异比较，比较规则如下：</li>
+    </ul>
+  </li>
+  <li>对比规则：
+    <ul>
+      <li>旧虚拟DOM中找到了与新虚拟DOM相同的key：
+        <ol>
+          <li>若虚拟DOM中内容没变, 直接使用之前的真实DOM！</li>
+          <li>若虚拟DOM中内容变了, 则生成新的真实DOM，随后替换掉页面中之前的真实DOM。</li>
+        </ol>
+      </li>
+      <li>旧虚拟DOM中未找到与新虚拟DOM相同的key
+        <ul>
+          <li>创建新的真实DOM，随后渲染到到页面。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>用index作为key可能会引发的问题：
+    <ol>
+      <li>若对数据进行：逆序添加、逆序删除等破坏顺序操作:
+ 会产生没有必要的真实DOM更新 ==&gt; 界面效果没问题, 但效率低。</li>
+      <li>如果结构中还包含输入类的DOM：
+ 会产生错误DOM更新 ==&gt; 界面有问题。</li>
+    </ol>
+  </li>
+  <li>开发中如何选择key?
+    <ol>
+      <li>最好使用每条数据的唯一标识作为key, 比如id、手机号、身份证号、学号等唯一值。</li>
+      <li>如果不存在对数据的逆序添加、逆序删除等破坏顺序操作，仅用于渲染列表用于展示，使用index作为key是没有问题的。</li>
+    </ol>
+  </li>
+</ol>
+
+<h3 id="vue监视数据"><strong>Vue监视数据</strong></h3>
+
+<ol>
+  <li><strong>Vue</strong>会监视data中所有层次的数据。</li>
+  <li>
+    <blockquote>
+      <p>[!question]- 如何监测对象中的数据?
+   通过setter实现监视，且要在new Vue时就传入要监测的数据。</p>
+      <ol>
+        <li>对象中后追加的属性，Vue默认不做响应式处理</li>
+        <li>如需给后添加的属性做响应式，请使用如下API：
+Vue.set(target，propertyName/index，value) 或
+vm.$set(target，propertyName/index，value)</li>
+      </ol>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote>
+      <p>[!question]- 如何监测数组中的数据？
+通过包裹数组更新元素的方法实现，本质就是做了两件事：</p>
+      <ol>
+        <li>调用原生对应的方法对数组进行更新。</li>
+        <li>重新解析模板，进而更新页面。</li>
+      </ol>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote>
+      <p>[!tip]-  在Vue修改数组中的某个元素一定要用如下方法：</p>
+      <ol>
+        <li>使用这些API:push()、pop()、shift()、unshift()、splice()、sort()、reverse()</li>
+        <li>Vue.set() 或 vm.$set()</li>
+      </ol>
+    </blockquote>
+  </li>
+</ol>
+
+<blockquote>
+  <p>[!warning]- 特别注意
+Vue.set() 和 vm.$set() 不能给vm 或 vm的根数据对象 添加属性！！！</p>
+</blockquote>
+
+<h2 id="收集表单数据"><strong>收集表单数据</strong></h2>
+
+<h3 id="text-input-type"><strong>text Input Type</strong></h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">/&gt;</span>
+</code></pre></div></div>
+<p>则v-model收集的是value值，用户输入的就是value值。</p>
+
+<h3 id="radio-input-type"><strong>radio input type</strong></h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span><span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<p>则v-model收集的是value值，且要给标签配置value值。</p>
+
+<h3 id="checkbox-input-type"><strong>checkbox input type</strong></h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">/&gt;</span>
+</code></pre></div></div>
+<ol>
+  <li>没有配置input的value属性，那么收集的就是checked（勾选 or 未勾选，是布尔值）</li>
+  <li>配置input的value属性:
+    <ol>
+      <li>v-model的初始值是非数组，那么收集的就是checked（勾选 or 未勾选，是布尔值）</li>
+      <li>v-model的初始值是数组，那么收集的的就是value组成的数组</li>
+    </ol>
+  </li>
+</ol>
+
+<blockquote>
+  <p>[!note]+ v-model的三个修饰符
+lazy：失去焦点再收集数据
+number：输入字符串转为有效的数字
+trim：输入首尾空格过滤</p>
+</blockquote>
+
+<h2 id="过滤器"><strong>过滤器</strong></h2>
+
+<blockquote>
+  <p>[!info]+ 定义：
+对要显示的数据进行特定格式化后再显示（适用于一些简单逻辑的处理）。</p>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ 语法:</p>
+  <ol>
+    <li>注册过滤器：Vue.filter(name,callback) 或 new Vue{filters:{}}</li>
+    <li>
+      <table>
+        <tbody>
+          <tr>
+            <td>使用过滤器： 或 v-bind:属性 = “xxx</td>
+            <td>过滤器名”</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!note]+ 备注：</p>
+  <ol>
+    <li>过滤器也可以接收额外参数、多个过滤器也可以串联</li>
+    <li>并没有改变原本的数据, 是产生新的对应的数据</li>
+  </ol>
+</blockquote>
+
+<h2 id="内置指令"><strong>内置指令</strong></h2>
+
+<blockquote>
+  <p>[!abstract]+ Abstract
+v-bind : 单向绑定解析表达式, 可简写为 :xxx
+v-model : 双向数据绑定
+v-for : 遍历数组/对象/字符串
+v-on : 绑定事件监听, 可简写为@
+v-if : 条件渲染（动态控制节点是否存存在）
+v-else : 条件渲染（动态控制节点是否存存在）
+v-show : 条件渲染 (动态控制节点是否展示)</p>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ v-text指令</p>
+  <ol>
+    <li>作用：向其所在的节点中渲染文本内容。</li>
+    <li>与插值语法的区别：v-text会替换掉节点中的内容，则不会。</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ v-html指令</p>
+  <ol>
+    <li>作用：向指定节点中渲染包含html结构的内容。</li>
+    <li>与插值语法的区别：
+      <blockquote>
+        <ol>
+          <li>v-html会替换掉节点中所有的内容，则不会。</li>
+          <li>v-html可以识别html结构。</li>
+        </ol>
+      </blockquote>
+    </li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!warning]+ v-html有安全性问题！！！！</p>
+  <ol>
+    <li>在网站上动态渲染任意HTML是非常危险的，容易导致XSS攻击。</li>
+    <li>一定要在可信的内容上使用v-html，永不要用在用户提交的内容上！</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ v-cloak指令（没有值）</p>
+  <ol>
+    <li>本质是一个特殊属性，Vue实例创建完毕并接管容器后，会删掉v-cloak属性。</li>
+    <li>使用css配合v-cloak可以解决网速慢时页面展示出的问题。
+```html</li>
+  </ol>
+  <style>
+	[v-cloak]{
+		display:none;
+	}
+</style>
+
+  <div id="root">
+	<h2 v-cloak=""></h2>
+</div>
+  <p>```</p>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ v-once指令</p>
+  <ol>
+    <li>v-once所在节点在初次动态渲染后，就视为静态内容了。</li>
+    <li>以后数据的改变不会引起v-once所在结构的更新，可以用于优化性能。</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ v-pre指令：</p>
+  <ol>
+    <li>跳过其所在节点的编译过程。</li>
+    <li>可利用它跳过：没有使用指令语法、没有使用插值语法的节点，会加快编译。</li>
+  </ol>
+</blockquote>
+
+<h2 id="自定义指令"><strong>自定义指令</strong></h2>
+
+<h3 id="定义语法"><strong>定义语法</strong></h3>
+
+<ol>
+  <li>局部指令
+ ```js
+new Vue({ 
+ directives:{指令名：配置对象}
+})</li>
+</ol>
+
+<p>new Vue({ 
+	directives:{指令名：回调函数}
+})</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2. 全局指令
+```js
+Vue.directive(指令名,配置对象) 
+Vue.directive(指令名,回调函数)
+</code></pre></div></div>
+
+<h3 id="配置对象中常用的3个回调"><strong>配置对象中常用的3个回调</strong></h3>
+
+<ol>
+  <li>bind：指令与元素成功绑定时调用。</li>
+  <li>inserted：指令所在元素被插入页面时调用。</li>
+  <li>update：指令所在模板结构被重新解析时调用。</li>
+</ol>
+
+<blockquote>
+  <p>[!note]+ 备注</p>
+  <ol>
+    <li>指令定义时不加v-，但使用时要加v-；</li>
+    <li>指令名如果是多个单词，要使用kebab-case命名方式，不要用camelCase命名。</li>
+  </ol>
+</blockquote>
+
+<h2 id="生命周期"><strong>生命周期</strong></h2>
+
+<blockquote>
+  <p>[!abstract] 生命周期</p>
+  <ol>
+    <li>又名：生命周期回调函数、生命周期函数、生命周期钩子。
+2.是什么：Vue在关键时刻帮我们调用的一些特殊名称的函数。
+3.生命周期函数的名字不可更改，但函数的具体内容是程序员根据需求编写的。
+4.生命周期函数中的this指向是vm 或 组件实例对象。</li>
+  </ol>
+</blockquote>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/vue/LifeCycle.png" alt="生命周期" /></p>
+
+<blockquote>
+  <p>[!info]+ 常用的生命周期钩子</p>
+  <ol>
+    <li>mounted: 发送ajax请求、启动定时器、绑定自定义事件、订阅消息等.
+【初始化操作】</li>
+    <li>beforeDestroy: 清除定时器、解绑自定义事件、取消订阅消息等.
+【收尾工作】</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!example]+ 关于销毁<code class="language-plaintext highlighter-rouge">Vue</code>实例
+1.销毁后借助Vue开发者工具看不到任何信息。
+2.销毁后自定义事件会失效，但原生DOM事件依然有效。
+3.一般不会在beforeDestroy操作数据，因为即便操作数据，也不会再触发更新流程了。</p>
+</blockquote>
+
+<h2 id="组件"><strong>组件</strong></h2>
+
+<h2 id="vue中使用组件的三大步骤"><strong>Vue中使用组件的三大步骤</strong></h2>
+
+<ol>
+  <li>定义组件(创建组件)</li>
+  <li>注册组件</li>
+  <li>使用组件(写组件标签)</li>
+</ol>
+
+<blockquote>
+  <p>[!question]+ 如何定义一个组件？
+使用Vue.extend(options)创建，其中options和new Vue(options)时传入的那个options几乎一样，但也有点区别；</p>
+</blockquote>
+
+<p>区别如下：</p>
+<ol>
+  <li>el不要写，为什么？ ——— 最终所有的组件都要经过一个vm的管理，由vm中的el决定服务哪个容器。</li>
+  <li>data必须写成函数，为什么？ ———— 避免组件被复用时，数据存在引用关系。</li>
+</ol>
+
+<p>使用template可以配置组件结构。</p>
+
+<blockquote>
+  <p>[!question]+ 如何注册组件？</p>
+  <ol>
+    <li>局部注册：靠new Vue的时候传入components选项</li>
+    <li>全局注册：靠Vue.component(‘组件名’,组件)</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!question]+ 编写组件标签：
+```html</p>
+</blockquote>
+<school></school>
+<blockquote>
+  <p>```</p>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ 几个注意点</p>
+</blockquote>
+
+<ol>
+  <li>关于组件名:
+    <ul>
+      <li>一个单词组成：
+  第一种写法(首字母小写)：school
+  第二种写法(首字母大写)：School</li>
+      <li>多个单词组成：
+  第一种写法(kebab-case命名)：my-school
+  第二种写法(CamelCase命名)：MySchool (需要Vue脚手架支持)
+        <blockquote>
+          <p>[!tip]+  注意</p>
+          <ol>
+            <li>组件名尽可能回避HTML中已有的元素名称，例如：h2、H2都不行。</li>
+            <li>可以使用name配置项指定组件在开发者工具中呈现的名字。</li>
+          </ol>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>关于组件标签:
+    <ul>
+      <li>第一种写法:
+ 	<code class="language-plaintext highlighter-rouge">html
+ 	&lt;school&gt;&lt;/school&gt;
+ 	</code></li>
+      <li>第二种写法：
+        <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="nt">&lt;school/&gt;</span>
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<blockquote>
+  <p>[!tip]+ 注意
+不用使用脚手架时，<school></school>会导致后续组件不能渲染。</p>
+</blockquote>
+
+<ol>
+  <li>一个简写方式：
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">school</span> <span class="o">=</span> <span class="nx">Vue</span><span class="p">.</span><span class="nf">extend</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span> 
+<span class="c1">//可简写为：</span>
+<span class="kd">const</span> <span class="nx">school</span> <span class="o">=</span> <span class="nx">options</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="vuecomponent"><strong>VueComponent</strong></h2>
+
+<ol>
+  <li>school组件本质是一个名为VueComponent的构造函数，且不是程序员定义的，是Vue.extend生成的。</li>
+  <li>我们只需要写<school></school>或&lt;school&gt;&lt;/school&gt;，<code class="language-plaintext highlighter-rouge">Vue</code>解析时会帮我们创建school组件的实例对象，
+ 即<code class="language-plaintext highlighter-rouge">Vue</code>帮我们执行的：<code class="language-plaintext highlighter-rouge">new VueComponent(options)</code>。</li>
+  <li>特别注意：每次调用<code class="language-plaintext highlighter-rouge">Vue.extend</code>，返回的都是一个全新的VueComponent！</li>
+  <li>关于this指向：
+    <ol>
+      <li>组件配置中：
+ data函数、methods中的函数、watch中的函数、computed中的函数 它们的this均是【VueComponent实例对象】。</li>
+      <li>new Vue(options)配置中：
+ data函数、methods中的函数、watch中的函数、computed中的函数 它们的this均是【Vue实例对象】。</li>
+    </ol>
+  </li>
+  <li>VueComponent的实例对象，以后简称vc（也可称之为：组件实例对象）。
+ Vue的实例对象，以后简称vm。</li>
+</ol>
+
+<blockquote>
+  <p>[!info]+  一个重要的内置关系
+VueComponent.prototype.<strong>proto</strong> === Vue.prototype</p>
+</blockquote>
+
+<blockquote>
+  <p>[!question]+ 为什么要有这个关系
+让组件实例对象（vc）可以访问到 Vue原型上的属性、方法。</p>
+</blockquote>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+
+            <div style="font-size: 0.9em">
+                <p>
+                    no link
+                </p>
+            </div>
+            
+        </side>
+    </div>
+</div>
+<a id = "coffee" href="/merger"> <img  src="https://i.imgur.com/lEvIedR.png" alt="BuyMeACoffee" width="180"> </a>
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
+/>
+<style>
+  .pio-container{
+    -webkit-transition: transform .3s ease-in-out;
+               transition: transform .3s ease-in-out;
+  }
+  @media only print {
+    .pio-container {
+      display: none;
+    }
+  }
+ .layout-reverse #sidebar-checkbox:checked~.pio-container {
+     -webkit-transform: translateX(-14rem);
+        -ms-transform: translateX(-14rem);
+              transform: translateX(-14rem);
+   }
+</style>
+<script
+  async="async"
+  src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
+  onload='
+  fetch("https://v1.hitokoto.cn")
+  .then(response=>response.json())
+  .then(data=>{var helloword=data.hitokoto;
+  var pio_container=document.createElement("div");
+  pio_container.classList.add("pio-container");
+  pio_container.classList.add("right");
+  pio_container.style.bottom="-2rem";
+  pio_container.style.zIndex="1";
+  document.body.insertAdjacentElement("beforeend",pio_container);
+  let pio_action=document.createElement("div");
+  pio_action.classList.add("pio-action");
+  pio_container.insertAdjacentElement("beforeend",pio_action);
+  let pio_canvas=document.createElement("canvas");
+  pio_canvas.id="pio";
+  pio_canvas.style.width="14rem";
+  pio_canvas.width="600";
+  pio_canvas.height="800";
+  pio_container.insertAdjacentElement("beforeend",pio_canvas);
+  let pio = new Paul_Pio({
+    "mode":"fixed",
+    "hidden":true,
+    "night":"for(let i=7;i<16;++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break}",
+    "content":{
+      "link":["https://github.com/yaleiyale/obsidian-jekyll-blog"],
+      "skin":["要换成我的朋友吗？","让她放个假吧~"],
+      "hidden":true,
+      "welcome":helloword,
+      "touch":helloword,
+      "referer":"你通过 %t 来到了这里",
+      "custom":[
+        {"selector":"a","type":"link"},
+        {"selector":"#coffee","text":"打赏要理性哦😻~"},
+        {"selector":"img","text":"点下看看吧🔍~"},
+        {"selector":".wl-reaction","text":"我来要赞咯🌟"},
+        {"selector":".wl-comment","text":"文明发言，不然会被🚫哦~"},
+        {"selector":".highlight","text":"代码可以一键复制呢🔖~"},
+        {"selector":".sidebar-toggle","text":"打开侧边栏叭🗂️~"},
+        {"selector":".effect-info","text":"哇，你发现了什么❗"},
+        {"selector":"#sidebar-search-input","text":"想搜索什么呢❓"},
+        {"selector":"#toc","text":"这是目录~"},
+        {"selector":".page-title","text":"这是标题~"}]
+        },
+    "model":[
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/umaru/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/koharu/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/rem/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/kurumi/model.json"]
+        })}).catch(console.error);'
+></script>
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.css"
+/>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
+></script>
+<script type="text/javascript">
+  var content = document.querySelector(".wrapper");
+   if (content) {
+     var list = content.querySelectorAll("img");
+     if (list) {
+      var imgCount = list.length;
+      var imgNow;
+      var viewer = [];
+      if (imgCount > 0) {
+         for (var i = 0; i < imgCount - 1; i++) //去除末尾咖啡
+         {
+           imgNow = list[i];
+          //console.log(imgNow.src);
+          viewer[i - 1] = new Viewer(imgNow);
+         }
+      }
+     }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+

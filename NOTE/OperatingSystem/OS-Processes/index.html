@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+     &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="AllenYGY的个人小站" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。" />
+<meta property="og:description" content="轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。" />
+<link rel="canonical" href="https://objekyll.netlify.app/NOTE/OperatingSystem/OS-Processes/" />
+<meta property="og:url" content="https://objekyll.netlify.app/NOTE/OperatingSystem/OS-Processes/" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="AllenYGY的个人小站" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"AllenYGY"},"description":"轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。","headline":"AllenYGY的个人小站","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://objekyll.netlify.app/NOTE/OperatingSystem/OS-Processes/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-07 layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://www.acfun.cn/u/31661560">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://space.bilibili.com/357477198">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/comments">
+        <i class="fa-solid fa-comment fa-fw"></i> 留言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/roots">
+        <i class="fa-solid fa-seedling fa-fw"></i> 聚点
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/merger">
+        <i class="fa-solid fa-coffee fa-fw"></i> 打赏
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#os-processes">OS-Processes</a>
+    <ol>
+      <li><a href="#process-concept">Process Concept</a>
+        <ol>
+          <li><a href="#elf-object-file-format">ELF Object File Format</a></li>
+        </ol>
+      </li>
+      <li><a href="#process-state">Process State</a>
+        <ol>
+          <li><a href="#transform-between-process-state">Transform between process State</a></li>
+        </ol>
+      </li>
+      <li><a href="#process-control-block-pcb">Process Control Block PCB</a></li>
+      <li><a href="#process-scheduling">Process Scheduling</a>
+        <ol>
+          <li><a href="#background">BackGround</a></li>
+          <li><a href="#cpu-switch-from-process-to-process">CPU Switch From Process to Process</a></li>
+          <li><a href="#context-switch">Context Switch</a></li>
+        </ol>
+      </li>
+      <li><a href="#operations-on-process">Operations on Process</a>
+        <ol>
+          <li><a href="#process-creation">Process Creation</a></li>
+          <li><a href="#process-termination">Process Termination</a></li>
+          <li><a href="#zombie-and-orphan">Zombie and Orphan</a></li>
+        </ol>
+      </li>
+      <li><a href="#inter-process-communication-ipc">Inter-process Communication IPC</a>
+        <ol>
+          <li><a href="#background-1">BackGround</a></li>
+          <li><a href="#communications-models">Communications Models</a>
+            <ol>
+              <li><a href="#shared-memory-user-control">Shared Memory User Control</a>
+                <ol>
+                  <li><a href="#producer-consumer-problem">Producer-Consumer Problem</a></li>
+                </ol>
+              </li>
+              <li><a href="#message-passing-kernel-control">Message Passing Kernel Control</a>
+                <ol>
+                  <li><a href="#direct-communication">Direct Communication</a></li>
+                  <li><a href="#indirect-communication">Indirect Communication</a></li>
+                  <li><a href="#synchronization-%E5%90%8C%E6%AD%A5">Synchronization 同步</a></li>
+                </ol>
+              </li>
+              <li><a href="#pipe">Pipe</a>
+                <ol>
+                  <li><a href="#anonymous-ordinary-pipes">Anonymous (Ordinary) Pipes</a></li>
+                  <li><a href="#named-pipes">Named Pipes</a></li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#communication-in-client-server-systems">Communication in Client-Server Systems</a>
+        <ol>
+          <li><a href="#sockets">Sockets</a></li>
+          <li><a href="#remote-procedure-call-rpc">Remote Procedure Call RPC</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "07/23/2022 10:59:03")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/yaleiyale/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+          
+        
+        字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title"></h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        13598字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        46分
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="os-processes"><a class="internal-link" href="/NOTE/OperatingSystem/OS-Processes/">OS-Processes</a></h1>
+<h2 id="process-concept">Process Concept</h2>
+<blockquote>
+  <p>[!tip]+ Process</p>
+  <ul>
+    <li>a program in execution in memory</li>
+    <li>execution must progress in sequential fashion</li>
+  </ul>
+</blockquote>
+
+<p>There can be several process for one program
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Process/process-1.png" alt="process" /></p>
+
+<h3 id="elf-object-file-format">ELF Object File Format</h3>
+
+<p>ELF<code class="language-plaintext highlighter-rouge">Executable and Linkable Format</code>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Process/ELF-1.png" alt="ELF" />
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Process/ELF-Format.png" alt="ELF-Format.png " /></p>
+
+<blockquote>
+  <p>[!note]+ A process includes multiple parts</p>
+  <ul>
+    <li>the program code (also called text section)</li>
+    <li>stack containing temporary data
+      <ul>
+        <li>E.g., function parameters, return addresses, local variables</li>
+      </ul>
+    </li>
+    <li>data section containing global variables and static variables</li>
+    <li>heap containing memory dynamically allocated during run time</li>
+    <li>program counter, processor registers (include all current )</li>
+  </ul>
+</blockquote>
+
+<h2 id="process-state">Process State</h2>
+
+<ul>
+  <li>New: The process is being created  <code class="language-plaintext highlighter-rouge">创建状态</code></li>
+  <li>Running: Instructions are being executed by CPU <code class="language-plaintext highlighter-rouge">运行状态</code></li>
+  <li>Waiting: The process is waiting for some event to occur <code class="language-plaintext highlighter-rouge">阻塞状态</code></li>
+  <li>Ready: The process is waiting to be assigned to a processor <code class="language-plaintext highlighter-rouge">就绪状态</code></li>
+  <li>Terminated: The process has finished execution <code class="language-plaintext highlighter-rouge">终止状态</code></li>
+</ul>
+
+<h3 id="transform-between-process-state">Transform between process State</h3>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/ProcessState.png" alt="ProcessState" /></p>
+<ul>
+  <li>Ready $\Rightarrow$ Running</li>
+  <li>Running  $\Rightarrow$  Ready</li>
+  <li>Running $\Rightarrow$  Waiting</li>
+  <li>Waiting $\Rightarrow$ Ready</li>
+</ul>
+
+<h2 id="process-control-block-pcb">Process Control Block <em>PCB</em></h2>
+<blockquote>
+  <p>[!tip]+ PCB</p>
+  <ol>
+    <li>PCB: Information associated with each process, can be stored in a struct type <code class="language-plaintext highlighter-rouge">also called task control block</code></li>
+    <li>A PCB is a kernel data structure  <code class="language-plaintext highlighter-rouge">PCB 是内核的数据结构</code></li>
+    <li>Each process has a corresponding unique PCB in the kernel <code class="language-plaintext highlighter-rouge">PCB 是进程的唯一标志</code></li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ PCB Include</p>
+  <ul>
+    <li>Process state – running, waiting, etc. <code class="language-plaintext highlighter-rouge">State</code></li>
+    <li>Program counter – location of instruction to next execute <code class="language-plaintext highlighter-rouge">PC</code></li>
+    <li>CPU registers – contents of all process-centric registers <code class="language-plaintext highlighter-rouge">Register</code></li>
+    <li>CPU scheduling <strong>information</strong>- priorities, scheduling queue pointers</li>
+    <li>Memory-management <strong>information</strong> – memory allocated to the process</li>
+    <li>Accounting <strong>information</strong> – CPU used, clock time elapsed since start, time limits</li>
+    <li>I/O status <strong>information</strong> – I/O devices allocated to process, list of open files</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+  A PCB is a kernel data structure</p>
+  <ul>
+    <li>stored in the memory reserved for the kernel</li>
+    <li>invisible to the process itself</li>
+    <li>changed only by the kernel.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ Each process has a corresponding unique PCB in the kernel.</p>
+  <ul>
+    <li>When a new process is created, the kernel creates a new PCB for it.</li>
+    <li>When a process dies, the kernel deletes the process’s PCB.</li>
+  </ul>
+</blockquote>
+
+<p>All the PCBs together is how the kernel keeps track of which processes exist in memory, where they are in memory, what they are currently doing (Maybe <code class="language-plaintext highlighter-rouge">State</code> )
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/StateQueue.png" alt="ReadyQueue" /></p>
+
+<blockquote>
+  <p>[!tip]+ Threads
+If process has a single thread of execution</p>
+  <ul>
+    <li>One program counter</li>
+  </ul>
+
+  <p>If a process has multiple threads of execution</p>
+  <ul>
+    <li>Kernel will keep the control information for each thread</li>
+    <li>Multiple program counters</li>
+  </ul>
+</blockquote>
+
+<h2 id="process-scheduling">Process Scheduling</h2>
+
+<h3 id="background">BackGround</h3>
+
+<ul>
+  <li>Several processes want to use one CPU (or CPU core)</li>
+  <li>Process scheduler <code class="language-plaintext highlighter-rouge">调度</code> (algorithm inside the kernel, software) selects among available processes（i.e. in ready state） for next execution on CPU core
+    <ul>
+      <li>Maintains scheduling queues of processes
+        <ul>
+          <li>Ready queue – set of all processes residing in main memory, ready and waiting to execute</li>
+        </ul>
+      </li>
+      <li>Wait queues – set of processes waiting for an event (i.e. I/O)</li>
+    </ul>
+  </li>
+  <li>Processes migrate among the various queues</li>
+  <li>Scheduling purpose: maximize CPU use, quickly switch processes</li>
+</ul>
+
+<h3 id="cpu-switch-from-process-to-process">CPU Switch From Process to Process</h3>
+
+<p>A context switch occurs when the CPU switches from one process to another.
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/CPUSwitch.png" alt="CPU Switch From Process to Process" /></p>
+
+<h3 id="context-switch">Context Switch</h3>
+
+<ul>
+  <li>When CPU switches to another process, the system must <code class="language-plaintext highlighter-rouge">保护现场</code>
+    <ul>
+      <li>save the state of the old process (the one is running on CPU)</li>
+      <li>load the saved state (CPU registers, program counter in PCB) for the new process (the one will run on CPU) via a context switch (i.e., switch PCB)</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>[!note]+ Context-switch time is
+ <code class="language-plaintext highlighter-rouge">overhead</code></p>
+  <ul>
+    <li>the system does no useful work while switching</li>
+  </ul>
+
+  <p><code class="language-plaintext highlighter-rouge">dependent on the complexity of OS</code></p>
+  <ul>
+    <li>The more complex the OS and the PCB， the longer time the context switch</li>
+  </ul>
+
+  <p><code class="language-plaintext highlighter-rouge">dependent on hardware support</code></p>
+  <ul>
+    <li>some hardware provides multiple sets of registers per CPU  multiple contexts loaded at once, (no need to switch  context when load another process to run)</li>
+  </ul>
+</blockquote>
+
+<h2 id="operations-on-process">Operations on Process</h2>
+
+<blockquote>
+  <p>[!note]+ OS must provide mechanisms for: 
+Process Creation 
+Process Termination</p>
+</blockquote>
+
+<h3 id="process-creation">Process Creation</h3>
+
+<p>Parent process</p>
+<ul>
+  <li>Create children processes</li>
+  <li>In turn create other processes,</li>
+  <li>Finally forming a tree of processes 
+Generally, process is identified and managed via a process identifier (pid)</li>
+</ul>
+
+<p>Parent and children</p>
+
+<ul>
+  <li>Resource sharing options
+    <ul>
+      <li>
+        <ol>
+          <li>Parent and children share all resources  <code class="language-plaintext highlighter-rouge">全共享</code></li>
+        </ol>
+      </li>
+      <li>
+        <ol>
+          <li>Children share subset of parent’s resources <code class="language-plaintext highlighter-rouge">子进程共享父进程的资源</code></li>
+        </ol>
+      </li>
+      <li>
+        <ol>
+          <li>Parent and child share no resources <code class="language-plaintext highlighter-rouge">不共享</code></li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>Execution options
+    <ul>
+      <li>
+        <ol>
+          <li>Parent and children execute concurrently `同时执行</li>
+        </ol>
+      </li>
+      <li>
+        <ol>
+          <li>Parent waits until children terminate <code class="language-plaintext highlighter-rouge">父进程等待子进程销毁后执行</code></li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="process-termination">Process Termination</h3>
+
+<ul>
+  <li>Child process asks OS to terminate itself
+    <ul>
+      <li>using the exit() system call.
+        <ul>
+          <li>Returns status data from child to parent (via wait())</li>
+          <li>Process’ resources are deallocated by operating system</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Parent may terminate the execution of children processes
+    <ul>
+      <li>using abort() system call for some reasons:
+        <ol>
+          <li>Child has exceeded allocated resources</li>
+          <li>Task assigned to child is no longer required</li>
+          <li>Parent terminated (some OS do not allow children to be alive)</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>[!info]+ Cascading <code class="language-plaintext highlighter-rouge">倾泻式的</code> termination</p>
+  <ul>
+    <li>Some operating systems do not allow child to exist if its parent has terminated.</li>
+    <li>When parent is terminated, all children, grandchildren, etc. are terminated.</li>
+    <li>The termination is initiated by the operating system.</li>
+  </ul>
+</blockquote>
+
+<p>wait()system call</p>
+<ul>
+  <li>The parent process may wait for termination of a child process</li>
+  <li>The call returns status information and the pid of the terminated process</li>
+</ul>
+
+<h3 id="zombie-and-orphan">Zombie and Orphan</h3>
+
+<blockquote>
+  <p>[!info]+ Zombie Process <code class="language-plaintext highlighter-rouge">僵尸</code>
+A <strong>zombie</strong> process is  living corpse, <strong>half alive and half dead</strong>
+ terminated, but still consumes system resources
+	-  still has an entry in the process table
+	- where the entry is still needed to allow the parent process to read its child’s exit status.
+	 - once the exit status is read by parent via the wait system call, the zombie’s entry is removed from the process table (“reaped“).</p>
+</blockquote>
+
+<blockquote>
+  <p>[!example]+ Zombie Program</p>
+  <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="c1"> </span><span class="cp">
+#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="c1"> </span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="c1"> </span><span class="cp">
+#include</span> <span class="cpf">&lt;sys/types.h&gt;</span><span class="c1"> </span><span class="cp">
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+	<span class="n">pid_t</span> <span class="n">pid</span> <span class="o">=</span> <span class="n">fork</span><span class="p">();</span> 
+	<span class="k">if</span> <span class="p">(</span><span class="n">pid</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/* Child */</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"Running Child, PID = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">getpid</span><span class="p">());</span>	
+		<span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> 
+	<span class="p">}</span> 	
+	<span class="k">else</span> <span class="p">{</span>	
+		<span class="n">printf</span><span class="p">(</span><span class="s">"Terminating Parent, PID = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">getpid</span><span class="p">());</span>
+		<span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">;</span> <span class="cm">/* Infinite loop */</span>
+	<span class="p">}</span> 
+     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>  </div>
+  <p><code class="language-plaintext highlighter-rouge">子程序结束却并未通过wait()回收</code></p>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ Reaping <code class="language-plaintext highlighter-rouge">回收</code> 
+Performed by parent on terminated child 
+Parent is given exit status information (by OS) 
+Kernel discards process</p>
+</blockquote>
+
+<blockquote>
+  <p>[!question]+  What if parent doesn’t reap?
+ If any parent terminates without reaping a child, then child will be reaped by init or system process
+ So, only explicitly reaping is needed when parent is a long- running processes. e.g., shells and servers</p>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ orphan  process <code class="language-plaintext highlighter-rouge">孤儿</code>
+An <strong>orphan</strong>  process is child process that is still running  but <strong>parent</strong> process has finished or <strong>terminated</strong>.</p>
+</blockquote>
+
+<blockquote>
+  <p>[!example]+ Orphan Program</p>
+  <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="c1"> </span><span class="cp">
+#include</span> <span class="cpf">&lt;sys/types.h&gt;</span><span class="c1"> </span><span class="cp">
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+	<span class="n">pid_t</span> <span class="n">pid</span> <span class="o">=</span> <span class="n">fork</span><span class="p">();</span> 
+	<span class="k">if</span> <span class="p">(</span><span class="n">pid</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/* Child */</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"Running Child, PID = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">getpid</span><span class="p">());</span>
+		<span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">;</span> <span class="cm">/* Infinite loop */</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>	
+		<span class="n">printf</span><span class="p">(</span><span class="s">"Terminating Parent, PID = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">getpid</span><span class="p">());</span>
+		<span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> 
+	<span class="p">}</span> 
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span> 
+<span class="p">}</span>
+</code></pre></div>  </div>
+  <p><code class="language-plaintext highlighter-rouge">父进程结束了却没有回收子进程</code></p>
+</blockquote>
+
+<h2 id="inter-process-communication-ipc">Inter-process Communication <code class="language-plaintext highlighter-rouge">IPC</code></h2>
+
+<h3 id="background-1">BackGround</h3>
+
+<blockquote>
+  <p>[!info]+ Processes within a system may be independent or cooperating</p>
+  <ul>
+    <li>Independent process cannot affect or be affected by another process</li>
+    <li>Cooperating process can affect or be affected by other processes, because they share data</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!tip]+  Advantages/Reasons of process cooperation</p>
+  <ol>
+    <li>Information sharing</li>
+    <li>Computation speed-up</li>
+    <li>Modularity</li>
+    <li>Convenience</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!tip] Disadvantages</p>
+  <ol>
+    <li>Added complexity</li>
+    <li>Deadlocks (死锁) possible</li>
+    <li>Starvation (饥饿) possible</li>
+  </ol>
+</blockquote>
+
+<h3 id="communications-models">Communications Models</h3>
+
+<p>Cooperating processes need interprocess communication (IPC)</p>
+<blockquote>
+  <p>[!tip]+  Two models of IPC</p>
+  <ul>
+    <li>Shared memory //user processes control</li>
+    <li>Message passing //kernel control</li>
+    <li>Pipe Communication 
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/CommunicationModel.png" alt="Communication Model" /></li>
+  </ul>
+</blockquote>
+
+<h4 id="shared-memory-user-control">Shared Memory <code class="language-plaintext highlighter-rouge">User Control</code></h4>
+
+<p><strong>Processes communicate through a shared memory</strong></p>
+
+<h5 id="producer-consumer-problem">Producer-Consumer Problem</h5>
+
+<blockquote>
+  <p>[!quote]+ Producer process produces information that is consumed by a consumer process</p>
+  <ul>
+    <li><code class="language-plaintext highlighter-rouge">Unbounded-buffer</code>: no practical limit on the size of the buffer
+      <ul>
+        <li>Producer never has to wait because there is always extra space available for new information;</li>
+        <li>Only consumer might have to wait if no information is available to read</li>
+      </ul>
+    </li>
+    <li><code class="language-plaintext highlighter-rouge">Bounded-buffer</code>: buffer size is fixed <code class="language-plaintext highlighter-rouge">Achieved by 循环队列</code>
+      <ul>
+        <li>Producer might have to wait if there is no space available to store new information;</li>
+        <li>Consumer might have to wait if no information is available to read</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<h4 id="message-passing-kernel-control">Message Passing <code class="language-plaintext highlighter-rouge">Kernel Control</code></h4>
+
+<p>Two operations <code class="language-plaintext highlighter-rouge">message size is either fixed or variable</code></p>
+<ul>
+  <li>send(message)</li>
+  <li>receive(message)
+A communication link between processes must be created before communication.</li>
+</ul>
+
+<blockquote>
+  <p>[!info]+  Implementation of communication link</p>
+  <ul>
+    <li>Physical level:
+      <ul>
+        <li>Shared memory</li>
+        <li>Hardware bus</li>
+        <li>Network</li>
+      </ul>
+    </li>
+    <li>Logical level:
+      <ul>
+        <li>Direct (process to process) or indirect (mail box)</li>
+        <li>Synchronous (blocking) or asynchronous (non-blocking)</li>
+        <li>Automatic or explicit buffering</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<h5 id="direct-communication">Direct Communication</h5>
+
+<p>In Direct Communication, Processes must name each other explicitly.</p>
+<ul>
+  <li>Send() and receive() primitives <code class="language-plaintext highlighter-rouge">原语</code> are defined as
+    <ul>
+      <li>send (P, message) – send a message to process <code class="language-plaintext highlighter-rouge">P</code></li>
+      <li>receive(Q, message) – receive a message from process <code class="language-plaintext highlighter-rouge">Q</code></li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>[!abstract]+ Properties of communication link 
+Links are established automatically 
+A link is associated with exactly one pair of communicating processes
+Between each pair there exists exactly one link 
+The link may be unidirectional, but is usually bi-directional</p>
+</blockquote>
+
+<h5 id="indirect-communication">Indirect Communication</h5>
+
+<blockquote>
+  <p>[!tip]+ MailBox
+Messages are directed and received from <strong>mailboxes</strong> (also referred to as ports <code class="language-plaintext highlighter-rouge">端口</code>)</p>
+  <ul>
+    <li>Each <strong>mailbox</strong> has a unique id
+      <ul>
+        <li>Processes can communicate only if they share a mailbox</li>
+        <li>Processes can communicate only if they share a mailbox</li>
+      </ul>
+    </li>
+    <li>The send() and receive() primitives are defined as
+      <ul>
+        <li>send(A, message) – send a message to mailbox A</li>
+        <li>receive(A, message) – receive a message from mailbox A</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!success]+  MailBox  Operations</p>
+  <ol>
+    <li>Create a new mailbox (port)</li>
+    <li>Send and receive messages through mailbox</li>
+    <li>Destroy a mailbox</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ Properties of communication link</p>
+  <ul>
+    <li>Link established only if processes share a common mailbox</li>
+    <li>A link may be associated with many processes</li>
+    <li>Each pair of processes may share several communication links</li>
+    <li>Link may be unidirectional or bi-directional</li>
+  </ul>
+</blockquote>
+
+<h5 id="synchronization-同步">Synchronization <code class="language-plaintext highlighter-rouge">同步</code></h5>
+
+<p><strong>Message passing may be either blocking or non-blocking</strong></p>
+
+<blockquote>
+  <p>[!info]+ Blocking is considered synchronous <code class="language-plaintext highlighter-rouge">同步</code></p>
+  <ul>
+    <li>Blocking send
+      <ul>
+        <li>the sender is blocked until the message is received by the receiving process or by the mailbox</li>
+      </ul>
+    </li>
+    <li>Blocking receive
+      <ul>
+        <li>the receiver is blocked until a message is available</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+  Non-blocking is considered asynchronous <code class="language-plaintext highlighter-rouge">异步</code></p>
+  <ul>
+    <li>Non-blocking send
+      <ul>
+        <li>the sender sends the message and continues without waiting for the message to be received</li>
+      </ul>
+    </li>
+    <li>Non-blocking receive
+      <ul>
+        <li>the receiver receives:  A valid message, or Null message</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<p>Different combinations possible 
+If both send and receive are blocking, this case is called <strong>rendezvous</strong> <code class="language-plaintext highlighter-rouge">会合</code></p>
+
+<p>Queue of messages attached to the link, in kernel memory 
+Implemented in one of three ways</p>
+
+<ol>
+  <li>Zero capacity – no messages are queued on a link.
+    <ul>
+      <li>Sender must wait for receiver (rendezvous)</li>
+    </ul>
+  </li>
+  <li>Bounded capacity – finite length of n messages
+    <ul>
+      <li>Sender must wait if link full</li>
+    </ul>
+  </li>
+  <li>Unbounded capacity – infinite length
+    <ul>
+      <li>Sender never waits</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="pipe">Pipe</h4>
+
+<p>Acts as a conduit <code class="language-plaintext highlighter-rouge">管道</code> allowing two processes to communicate on the same computer</p>
+
+<p>Anonymous <code class="language-plaintext highlighter-rouge">Ordinary </code> Pipes</p>
+<ul>
+  <li>cannot be accessed from outside the process that created it.  <code class="language-plaintext highlighter-rouge">匿名进程不能通过外部进程访问</code></li>
+  <li>Typically, a parent process creates a pipe and uses it to communicate with a child process that it created.</li>
+</ul>
+
+<p>Named Pipes</p>
+<ul>
+  <li>can be accessed without a parent-child relationship.</li>
+</ul>
+
+<h5 id="anonymous-ordinary-pipes">Anonymous (Ordinary) Pipes</h5>
+
+<ul>
+  <li><strong>Ordinary Pipes</strong> allow communication in standard producer-consumer style</li>
+  <li>Producer writes to one end (the write-end of the pipe)</li>
+  <li>Consumer reads from the other end (the read-end of the pipe)</li>
+  <li>Ordinary pipes are therefore unidirectional (单向)
+    <ul>
+      <li>create two separate pipes if bidirectional communication is necessary</li>
+    </ul>
+  </li>
+  <li>Require parent-child relationship between communicating processes
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Pipe.png" alt="Ordinary  Pipe" /></li>
+</ul>
+
+<h5 id="named-pipes">Named Pipes</h5>
+
+<ul>
+  <li><strong>Named Pipes</strong> are more powerful than ordinary pipes</li>
+  <li>Communication is bidirectional</li>
+  <li>No parent-child relationship is necessary between the communicating processes</li>
+  <li>Several (&gt;=2) processes can use the named pipe for communication</li>
+  <li>Provided on both UNIX and Windows systems</li>
+</ul>
+
+<h2 id="communication-in-client-server-systems">Communication in Client-Server Systems</h2>
+<h3 id="sockets">Sockets</h3>
+
+<blockquote>
+  <p>[!info]+ Socket  <code class="language-plaintext highlighter-rouge">套接字</code>
+Endpoint for communication <code class="language-plaintext highlighter-rouge">通讯的终结点</code>
+A number included at start of message packet to differentiate network services on a host</p>
+</blockquote>
+
+<ul>
+  <li>Concatenation of IP address and port
+    <ul>
+      <li>E.g., 161.25.19.8:1625</li>
+    </ul>
+  </li>
+  <li>port 1625 on host 161.25.19.8</li>
+  <li>All ports below 1024 are well known, used for standard services</li>
+  <li>Special IP address 127.0.0.1 (loopback) to refer to system on which process is running Communication happens between a pair of sockets, one on the local host and one on the remote host</li>
+</ul>
+
+<blockquote>
+  <p>[!info]+ Sock
+A data structure inside the kernel that represents the local end of a network connection 
+IP and Port</p>
+</blockquote>
+
+<h3 id="remote-procedure-call-rpc">Remote Procedure Call <code class="language-plaintext highlighter-rouge">RPC</code></h3>
+
+<ul>
+  <li>Remote procedure call (RPC) abstracts procedure calls between processes on networked systems
+    <ul>
+      <li>Looks like a normal function call but done through the network</li>
+      <li>Uses ports for service differentiation</li>
+    </ul>
+  </li>
+  <li>OS typically provides a <strong>matchmaker</strong> service to connect client and server
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/RPCExecution.png" alt="RPC" /></li>
+</ul>
+
+<blockquote>
+  <p>[!abstract]+ RPC Communication Steps</p>
+  <ol>
+    <li>The client-side stub (server proxy)
+      <ul>
+        <li>Locates the server</li>
+        <li>Marshals the parameters</li>
+        <li>Sends parameters to server-side stub in a network message</li>
+      </ul>
+    </li>
+    <li>The server-side stub (client proxy)
+      <ul>
+        <li>Receives this message</li>
+        <li>Unpacks the marshaled parameter</li>
+        <li>Performs the procedure call on the server, marshals the result of the call</li>
+        <li>Sends it back to the client-side stub in another message</li>
+      </ul>
+    </li>
+    <li>The client-side stub
+      <ul>
+        <li>Receives this second message</li>
+        <li>Unpacks the marshaled result</li>
+        <li>Gives it back to the client that did the RPC</li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ Stubs</p>
+  <ul>
+    <li>Manages the network connection between client and server</li>
+    <li>Extra code on the client side and server side</li>
+    <li>Typically, a separate stub exists for each separate remote procedure</li>
+    <li>On Windows, stub code compile from specification written in Microsoft Interface Definition Language (MIDL)</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ Marshel
+Use External Data Representation (XDR) format to account for different CPU architectures
+Data Representation can be different in different CPU
+	- <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/MarshelDataRepresentation.png" alt="DataRepresentation" /></p>
+  <ul>
+    <li>On the client side, parameter marshaling involves converting the machine-dependent data into XDR before they are sent to server.</li>
+    <li>On the server side, the XDR data are un-marshaled and converted to the machine-dependent representation for the server.</li>
+  </ul>
+</blockquote>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+
+            <div style="font-size: 0.9em">
+                <p>
+                    no link
+                </p>
+            </div>
+            
+        </side>
+    </div>
+</div>
+<a id = "coffee" href="/merger"> <img  src="https://i.imgur.com/lEvIedR.png" alt="BuyMeACoffee" width="180"> </a>
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
+/>
+<style>
+  .pio-container{
+    -webkit-transition: transform .3s ease-in-out;
+               transition: transform .3s ease-in-out;
+  }
+  @media only print {
+    .pio-container {
+      display: none;
+    }
+  }
+ .layout-reverse #sidebar-checkbox:checked~.pio-container {
+     -webkit-transform: translateX(-14rem);
+        -ms-transform: translateX(-14rem);
+              transform: translateX(-14rem);
+   }
+</style>
+<script
+  async="async"
+  src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
+  onload='
+  fetch("https://v1.hitokoto.cn")
+  .then(response=>response.json())
+  .then(data=>{var helloword=data.hitokoto;
+  var pio_container=document.createElement("div");
+  pio_container.classList.add("pio-container");
+  pio_container.classList.add("right");
+  pio_container.style.bottom="-2rem";
+  pio_container.style.zIndex="1";
+  document.body.insertAdjacentElement("beforeend",pio_container);
+  let pio_action=document.createElement("div");
+  pio_action.classList.add("pio-action");
+  pio_container.insertAdjacentElement("beforeend",pio_action);
+  let pio_canvas=document.createElement("canvas");
+  pio_canvas.id="pio";
+  pio_canvas.style.width="14rem";
+  pio_canvas.width="600";
+  pio_canvas.height="800";
+  pio_container.insertAdjacentElement("beforeend",pio_canvas);
+  let pio = new Paul_Pio({
+    "mode":"fixed",
+    "hidden":true,
+    "night":"for(let i=7;i<16;++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break}",
+    "content":{
+      "link":["https://github.com/yaleiyale/obsidian-jekyll-blog"],
+      "skin":["要换成我的朋友吗？","让她放个假吧~"],
+      "hidden":true,
+      "welcome":helloword,
+      "touch":helloword,
+      "referer":"你通过 %t 来到了这里",
+      "custom":[
+        {"selector":"a","type":"link"},
+        {"selector":"#coffee","text":"打赏要理性哦😻~"},
+        {"selector":"img","text":"点下看看吧🔍~"},
+        {"selector":".wl-reaction","text":"我来要赞咯🌟"},
+        {"selector":".wl-comment","text":"文明发言，不然会被🚫哦~"},
+        {"selector":".highlight","text":"代码可以一键复制呢🔖~"},
+        {"selector":".sidebar-toggle","text":"打开侧边栏叭🗂️~"},
+        {"selector":".effect-info","text":"哇，你发现了什么❗"},
+        {"selector":"#sidebar-search-input","text":"想搜索什么呢❓"},
+        {"selector":"#toc","text":"这是目录~"},
+        {"selector":".page-title","text":"这是标题~"}]
+        },
+    "model":[
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/umaru/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/koharu/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/rem/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/kurumi/model.json"]
+        })}).catch(console.error);'
+></script>
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.css"
+/>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
+></script>
+<script type="text/javascript">
+  var content = document.querySelector(".wrapper");
+   if (content) {
+     var list = content.querySelectorAll("img");
+     if (list) {
+      var imgCount = list.length;
+      var imgNow;
+      var viewer = [];
+      if (imgCount > 0) {
+         for (var i = 0; i < imgCount - 1; i++) //去除末尾咖啡
+         {
+           imgNow = list[i];
+          //console.log(imgNow.src);
+          viewer[i - 1] = new Viewer(imgNow);
+         }
+      }
+     }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+

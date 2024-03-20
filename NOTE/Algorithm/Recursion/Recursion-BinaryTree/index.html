@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+     &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="AllenYGY的个人小站" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。" />
+<meta property="og:description" content="轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。" />
+<link rel="canonical" href="https://objekyll.netlify.app/NOTE/Algorithm/Recursion/Recursion-BinaryTree/" />
+<meta property="og:url" content="https://objekyll.netlify.app/NOTE/Algorithm/Recursion/Recursion-BinaryTree/" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="AllenYGY的个人小站" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"AllenYGY"},"description":"轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。","headline":"AllenYGY的个人小站","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://objekyll.netlify.app/NOTE/Algorithm/Recursion/Recursion-BinaryTree/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-07 layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://www.acfun.cn/u/31661560">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://space.bilibili.com/357477198">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/comments">
+        <i class="fa-solid fa-comment fa-fw"></i> 留言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/roots">
+        <i class="fa-solid fa-seedling fa-fw"></i> 聚点
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/merger">
+        <i class="fa-solid fa-coffee fa-fw"></i> 打赏
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#recursion-binarytree">Recursion-BinaryTree</a>
+    <ol>
+      <li><a href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E6%B7%B1%E5%BA%A6">二叉树的最小深度</a></li>
+      <li><a href="#%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C">路径总和</a></li>
+      <li><a href="#%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C-ii">路径总和 II</a></li>
+      <li><a href="#%E6%B1%82%E6%A0%B9%E8%8A%82%E7%82%B9%E5%88%B0%E5%8F%B6%E8%8A%82%E7%82%B9%E6%95%B0%E5%AD%97%E4%B9%8B%E5%92%8C">求根节点到叶节点数字之和</a></li>
+      <li><a href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%89%80%E6%9C%89%E8%B7%AF%E5%BE%84">二叉树的所有路径</a></li>
+      <li><a href="#%E7%BB%9F%E8%AE%A1%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%A5%BD%E8%8A%82%E7%82%B9%E7%9A%84%E6%95%B0%E7%9B%AE">统计二叉树中好节点的数目</a></li>
+      <li><a href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%8F%B3%E8%A7%86%E5%9B%BE">二叉树的右视图</a></li>
+      <li><a href="#%E7%9B%B8%E5%90%8C%E7%9A%84%E6%A0%91">相同的树</a></li>
+      <li><a href="#%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91">对称二叉树</a></li>
+      <li><a href="#%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91">平衡二叉树</a></li>
+      <li><a href="#%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91">翻转二叉树</a></li>
+      <li><a href="#%E6%A0%B9%E5%88%B0%E5%8F%B6%E8%B7%AF%E5%BE%84%E4%B8%8A%E7%9A%84%E4%B8%8D%E8%B6%B3%E8%8A%82%E7%82%B9">根到叶路径上的不足节点</a></li>
+      <li><a href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E7%9A%84%E6%9C%80%E9%95%BF%E4%BA%A4%E9%94%99%E8%B7%AF%E5%BE%84">二叉树中的最长交错路径</a></li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "07/23/2022 10:59:03")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/yaleiyale/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+          
+        
+        字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title"></h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        6848字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        23分
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="recursion-binarytree"><strong>Recursion-BinaryTree</strong></h1>
+
+<h2 id="二叉树的最小深度"><a href="https://leetcode.cn/problems/minimum-depth-of-binary-tree/">二叉树的最小深度</a></h2>
+
+<p>刚开始直接左右节点分别遍历，取最小值
+没考虑根节点只有一个分支的情况</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+	<span class="kt">int</span> <span class="n">minDepth</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="n">minDepth</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
+		<span class="kt">int</span> <span class="n">right</span> <span class="o">=</span> <span class="n">minDepth</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>	
+		<span class="k">return</span> <span class="n">min</span><span class="p">(</span><span class="n">left</span><span class="p">,</span><span class="n">right</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>	
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+<p>每一层的情况递归时没有加一</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+	<span class="kt">int</span> <span class="n">minDepth</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">==</span><span class="nb">nullptr</span><span class="o">&amp;&amp;</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+		<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">==</span><span class="nb">nullptr</span><span class="o">&amp;&amp;</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="o">!=</span><span class="nb">nullptr</span><span class="p">)</span> 					<span class="k">return</span> <span class="n">minDepth</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
+		<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">!=</span><span class="nb">nullptr</span><span class="o">&amp;&amp;</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span> 					<span class="k">return</span> <span class="n">minDepth</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
+		<span class="k">else</span> 
+			<span class="k">return</span> 
+				<span class="n">min</span><span class="p">(</span><span class="n">minDepth</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">),</span><span class="n">minDepth</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">));</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+	<span class="kt">int</span> <span class="n">minDepth</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span><span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">==</span><span class="nb">nullptr</span> <span class="o">&amp;&amp;</span> <span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span> 
+			<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+		<span class="kt">int</span> <span class="n">m1</span><span class="o">=</span><span class="n">minDepth</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
+		<span class="kt">int</span> <span class="n">m2</span><span class="o">=</span><span class="n">minDepth</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">==</span><span class="nb">nullptr</span><span class="o">||</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span> 
+			<span class="k">return</span> <span class="n">m1</span><span class="o">+</span><span class="n">m2</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+		<span class="k">return</span> <span class="n">min</span><span class="p">(</span><span class="n">m1</span><span class="p">,</span><span class="n">m2</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="路径总和"><a href="https://leetcode.cn/problems/path-sum/">路径总和</a></h2>
+
+<p>#Experience 
+叶子节点的定义</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">node</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">==</span><span class="nb">nullptr</span><span class="o">&amp;&amp;</span><span class="n">node</span><span class="o">-&gt;</span><span class="n">right</span><span class="o">==</span><span class="nb">nullptr</span>
+</code></pre></div></div>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+	<span class="kt">bool</span> <span class="n">hasPathSum</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">,</span> <span class="kt">int</span> <span class="n">targetSum</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span><span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">==</span><span class="nb">nullptr</span><span class="o">&amp;&amp;</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span> 
+			<span class="k">return</span> <span class="n">targetSum</span><span class="o">==</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">;</span>
+		<span class="kt">bool</span> <span class="n">l</span> <span class="o">=</span> <span class="n">hasPathSum</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span><span class="n">targetSum</span><span class="o">-</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+		<span class="kt">bool</span> <span class="n">r</span> <span class="o">=</span> <span class="n">hasPathSum</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">,</span><span class="n">targetSum</span><span class="o">-</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+		<span class="k">return</span> <span class="n">l</span><span class="o">||</span><span class="n">r</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="路径总和-ii"><a href="https://leetcode.cn/problems/path-sum-ii/">路径总和 II</a></h2>
+
+<p>#achievement
+第一次独立写出，递归，回溯？哈哈哈哈</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">res</span><span class="p">;</span>
+<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">v</span><span class="p">;</span>
+<span class="nl">public:</span>
+	<span class="kt">void</span> <span class="n">dfs</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">,</span> <span class="kt">int</span> <span class="n">targetSum</span><span class="p">)</span> <span class="p">{</span> 
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="p">;</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">==</span><span class="nb">nullptr</span><span class="o">&amp;&amp;</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span>
+			<span class="k">if</span><span class="p">(</span><span class="n">targetSum</span><span class="o">==</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">){</span>
+				<span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+				<span class="n">res</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
+				<span class="n">v</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
+			<span class="p">}</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">){</span>
+			<span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+			<span class="n">dfs</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span><span class="n">targetSum</span><span class="o">-</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+			<span class="n">v</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
+		<span class="p">}</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">){</span>
+			<span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+			<span class="n">dfs</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">,</span><span class="n">targetSum</span><span class="o">-</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+			<span class="n">v</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
+		<span class="p">}</span>
+<span class="p">}</span>
+
+	<span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">pathSum</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">,</span> <span class="kt">int</span> <span class="n">targetSum</span><span class="p">)</span> <span class="p">{</span>
+    	<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span><span class="k">return</span> <span class="p">{};</span>
+    	<span class="n">dfs</span><span class="p">(</span><span class="n">root</span><span class="p">,</span><span class="n">targetSum</span><span class="p">);</span>
+    	<span class="k">return</span> <span class="n">res</span><span class="p">;</span> 
+    <span class="p">}</span>
+
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="求根节点到叶节点数字之和"><a href="https://leetcode.cn/problems/sum-root-to-leaf-numbers/">求根节点到叶节点数字之和</a></h2>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="n">res</span><span class="p">;</span>
+<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="n">v</span><span class="p">;</span>
+<span class="nl">public:</span>
+	<span class="kt">void</span> <span class="n">dfs</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">){</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">==</span><span class="nb">nullptr</span><span class="o">&amp;&amp;</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">){</span>	
+			<span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+            <span class="n">res</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
+            <span class="n">v</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
+		<span class="p">}</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">){</span>
+            <span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+            <span class="n">dfs</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
+            <span class="n">v</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
+		<span class="p">}</span>			
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">){</span>
+			<span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+            <span class="n">dfs</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
+            <span class="n">v</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>	
+		<span class="p">}</span>	
+	<span class="p">}</span>
+
+    <span class="kt">int</span> <span class="nf">sumNumbers</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+    	<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span><span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+	    <span class="n">dfs</span><span class="p">(</span><span class="n">root</span><span class="p">);</span>
+	    <span class="kt">int</span> <span class="n">ans</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="n">row</span><span class="o">:</span><span class="n">res</span><span class="p">){</span>
+        	<span class="kt">int</span> <span class="n">tmp</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+        	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="o">:</span><span class="n">row</span><span class="p">){</span>
+        		<span class="n">tmp</span><span class="o">=</span><span class="p">((</span><span class="n">tmp</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span><span class="o">+</span><span class="n">num</span><span class="p">);</span>
+    		<span class="p">}</span>	
+	    	<span class="n">ans</span><span class="o">+=</span><span class="n">tmp</span><span class="p">;</span>
+    	<span class="p">}</span>
+    	<span class="k">return</span> <span class="n">ans</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+<p>官解简洁写法</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span> 
+<span class="nl">public:</span> 
+	<span class="kt">int</span> <span class="n">dfs</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">,</span> <span class="kt">int</span> <span class="n">prevSum</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">root</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> <span class="p">}</span> 
+		<span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">prevSum</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">;</span> 
+		<span class="k">if</span> <span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span> <span class="o">==</span> <span class="nb">nullptr</span> <span class="o">&amp;&amp;</span> <span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">){</span> 				<span class="k">return</span> <span class="n">sum</span><span class="p">;</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span> 
+			<span class="k">return</span> <span class="n">dfs</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span> <span class="n">sum</span><span class="p">)</span> <span class="o">+</span> <span class="n">dfs</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">,</span><span class="n">sum</span><span class="p">);</span>
+		<span class="p">}</span> 
+	<span class="p">}</span> 
+	<span class="kt">int</span> <span class="nf">sumNumbers</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+		 <span class="k">return</span> <span class="n">dfs</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> 
+	<span class="p">}</span> 
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="二叉树的所有路径"><a href="https://leetcode.cn/problems/binary-tree-paths/">二叉树的所有路径</a></h2>
+
+<p>#Experience 
+把变量当作参数传递进函数，则不需要回溯变量</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+	<span class="kt">void</span> <span class="n">construct_paths</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">,</span> <span class="n">string</span> <span class="n">path</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;&amp;</span> <span class="n">paths</span><span class="p">)</span> <span class="p">{</span>
+    	<span class="k">if</span> <span class="p">(</span><span class="n">root</span> <span class="o">!=</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    		<span class="n">path</span> <span class="o">+=</span> <span class="n">to_string</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+    		<span class="k">if</span> <span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span> <span class="o">==</span> <span class="nb">nullptr</span> <span class="o">&amp;&amp;</span> <span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 当前节点是叶子节点</span>
+    			<span class="n">paths</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">path</span><span class="p">);</span> <span class="c1">// 把路径加入到答案中</span>
+    		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    			<span class="n">path</span> <span class="o">+=</span> <span class="s">"-&gt;"</span><span class="p">;</span> <span class="c1">// 当前节点不是叶子节点，继续递归遍历</span>
+    			<span class="n">construct_paths</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">paths</span><span class="p">);</span>
+    			<span class="n">construct_paths</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">paths</span><span class="p">);</span>
+    		<span class="p">}</span>
+    	<span class="p">}</span>
+    
+    <span class="p">}</span>
+	<span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">binaryTreePaths</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">paths</span><span class="p">;</span>
+		<span class="n">construct_paths</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="n">paths</span><span class="p">);</span>
+		<span class="k">return</span> <span class="n">paths</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="统计二叉树中好节点的数目"><a href="https://leetcode.cn/problems/count-good-nodes-in-binary-tree/">统计二叉树中好节点的数目</a></h2>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+	<span class="kt">int</span> <span class="n">goodNodes</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">,</span><span class="kt">int</span> <span class="n">mx</span><span class="o">=</span><span class="n">INT_MIN</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="n">goodNodes</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span><span class="n">max</span><span class="p">(</span><span class="n">mx</span><span class="p">,</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">));</span>
+		<span class="kt">int</span> <span class="n">right</span> <span class="o">=</span> <span class="n">goodNodes</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">,</span> <span class="n">max</span><span class="p">(</span><span class="n">mx</span><span class="p">,</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">));</span>
+		<span class="k">return</span> <span class="n">left</span><span class="o">+</span><span class="n">right</span><span class="o">+</span><span class="p">(</span><span class="n">mx</span><span class="o">&lt;=</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="二叉树的右视图"><a href="https://leetcode.cn/problems/binary-tree-right-side-view/">二叉树的右视图</a></h2>
+<p>#Experience 
+先遍历右子树并根据深度决定是否记录该节点</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="n">ans</span><span class="p">;</span>
+<span class="nl">public:</span>
+	<span class="kt">void</span> <span class="n">dfs</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">,</span><span class="kt">int</span> <span class="n">depth</span><span class="p">){</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">depth</span><span class="o">==</span><span class="n">ans</span><span class="p">.</span><span class="n">size</span><span class="p">())</span> <span class="n">ans</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">)</span> <span class="n">dfs</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">,</span><span class="n">depth</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">)</span> <span class="n">dfs</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span><span class="n">depth</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+	<span class="p">}</span>
+	<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">rightSideView</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span><span class="k">return</span> <span class="p">{};</span>
+		<span class="n">dfs</span><span class="p">(</span><span class="n">root</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+		<span class="k">return</span> <span class="n">ans</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="相同的树"><a href="https://leetcode.cn/problems/same-tree/">相同的树</a></h2>
+<p>#Experience 
+开始的时候犹豫当前节点判断，左子树判断和右子树判断
+后来发现并列就好了</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+	<span class="kt">bool</span> <span class="n">isSameTree</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">p</span><span class="p">,</span> <span class="n">TreeNode</span><span class="o">*</span> <span class="n">q</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">p</span><span class="o">==</span><span class="nb">nullptr</span><span class="o">||</span><span class="n">q</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span><span class="k">return</span> <span class="p">(</span><span class="n">p</span><span class="o">==</span><span class="n">q</span><span class="p">);</span>
+		<span class="k">return</span> <span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">val</span><span class="o">==</span><span class="n">q</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">)</span><span class="o">&amp;&amp;</span><span class="p">(</span><span class="n">isSameTree</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span><span class="n">q</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">))</span><span class="o">&amp;&amp;</span><span class="p">(</span><span class="n">isSameTree</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">,</span><span class="n">q</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">));</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+<h2 id="对称二叉树"><a href="https://leetcode.cn/problems/symmetric-tree/">对称二叉树</a></h2>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+	<span class="kt">bool</span> <span class="n">isSame</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">p</span><span class="p">,</span><span class="n">TreeNode</span> <span class="o">*</span><span class="n">q</span><span class="p">){</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">p</span><span class="o">==</span><span class="nb">nullptr</span><span class="o">||</span><span class="n">q</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span><span class="k">return</span> <span class="p">(</span><span class="n">p</span><span class="o">==</span><span class="n">q</span><span class="p">);</span>
+		<span class="k">return</span> <span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">val</span><span class="o">==</span><span class="n">q</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">)</span><span class="o">&amp;&amp;</span><span class="n">isSame</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span><span class="n">q</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">)</span><span class="o">&amp;&amp;</span><span class="n">isSame</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">,</span><span class="n">q</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
+	<span class="p">}</span>
+	<span class="kt">bool</span> <span class="nf">isSymmetric</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="n">isSame</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+<h2 id="平衡二叉树"><a href="https://leetcode.cn/problems/balanced-binary-tree/">平衡二叉树</a></h2>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+	<span class="kt">int</span> <span class="n">get_height</span><span class="p">(</span><span class="n">TreeNode</span> <span class="o">*</span><span class="n">node</span><span class="p">){</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">node</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span><span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="kt">int</span> <span class="n">leftH</span> <span class="o">=</span> <span class="n">get_height</span><span class="p">(</span><span class="n">node</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">leftH</span><span class="o">==-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+		<span class="kt">int</span> <span class="n">rightH</span> <span class="o">=</span> <span class="n">get_height</span><span class="p">(</span><span class="n">node</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">rightH</span><span class="o">==-</span><span class="mi">1</span><span class="o">||</span><span class="n">abs</span><span class="p">(</span><span class="n">leftH</span><span class="o">-</span><span class="n">rightH</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">)</span><span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+		<span class="k">return</span> <span class="n">max</span><span class="p">(</span><span class="n">leftH</span><span class="p">,</span><span class="n">rightH</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="kt">bool</span> <span class="nf">isBalanced</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="n">get_height</span><span class="p">(</span><span class="n">root</span><span class="p">)</span><span class="o">!=-</span><span class="mi">1</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+<h2 id="翻转二叉树"><a href="https://leetcode.cn/problems/invert-binary-tree/">翻转二叉树</a></h2>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+	<span class="n">TreeNode</span><span class="o">*</span> <span class="n">invertTree</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">==</span><span class="nb">nullptr</span><span class="p">)</span><span class="k">return</span> <span class="nb">nullptr</span><span class="p">;</span>
+		<span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">=</span><span class="n">invertTree</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
+		<span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="o">=</span><span class="n">invertTree</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
+		<span class="n">TreeNode</span><span class="o">*</span><span class="n">tmp</span><span class="o">=</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">;</span>
+		<span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">=</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">;</span>
+		<span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="o">=</span><span class="n">tmp</span><span class="p">;</span>
+		<span class="k">return</span> <span class="n">root</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+<h2 id="根到叶路径上的不足节点"><a href="https://leetcode.cn/problems/insufficient-nodes-in-root-to-leaf-paths/">根到叶路径上的不足节点</a></h2>
+<p>#Experience</p>
+<ul>
+  <li>我理解到，只能先删叶子节点
+判断叶子节点
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span> <span class="o">==</span> <span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">)</span> 
+</code></pre></div>    </div>
+  </li>
+  <li>如果 limit &gt; 0 说明从根到叶子的路径和小于 limit，删除叶子，否则不删除</li>
+  <li>如果有儿子没被删除，就不删 root，否则删 root
+判断是否存在子节点
+    <pre><code class="language-CPP">if(root-&gt;left || root-&gt;right)
+</code></pre>
+  </li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+	<span class="n">TreeNode</span><span class="o">*</span> <span class="n">sufficientSubset</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">,</span> <span class="kt">int</span> <span class="n">limit</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">limit</span> <span class="o">-=</span> <span class="n">root</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">;</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span> <span class="o">==</span> <span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">)</span> 
+			<span class="k">return</span> <span class="n">limit</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="nb">nullptr</span> <span class="o">:</span> <span class="n">root</span><span class="p">;</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">)</span> <span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span> <span class="o">=</span> <span class="n">sufficientSubset</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span> <span class="n">limit</span><span class="p">);</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">)</span> <span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span> <span class="o">=</span> <span class="n">sufficientSubset</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">,</span> <span class="n">limit</span><span class="p">);</span>
+		<span class="k">return</span> <span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span> <span class="o">||</span> <span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span> <span class="o">?</span> <span class="n">root</span> <span class="o">:</span> <span class="nb">nullptr</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="二叉树中的最长交错路径"><a href="https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/">二叉树中的最长交错路径</a></h2>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+	<span class="kt">int</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// 用于记录最大长度的全局变量</span>
+	<span class="kt">void</span> <span class="n">getlongestZigZag</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">is_left</span><span class="p">,</span> <span class="kt">int</span> <span class="n">len</span><span class="p">)</span> <span class="p">{</span>
+    	<span class="k">if</span> <span class="p">(</span><span class="n">root</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    	    <span class="n">ans</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">ans</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span> <span class="c1">// 更新最大长度</span>
+    	    <span class="k">return</span><span class="p">;</span>
+        <span class="p">}</span>   
+        <span class="c1">// 递归地在左右子树中查找交错路径</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">is_left</span><span class="p">)</span> <span class="p">{</span>
+    	<span class="c1">// 如果当前方向是左，那么我们要在右子树中继续找交错路径，并且长度加一</span>
+    	    <span class="n">getlongestZigZag</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="n">len</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">// 向右走</span>
+    	    <span class="n">getlongestZigZag</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span> <span class="nb">true</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">// 重新开始计数</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// 如果当前方向是右，那么我们要在左子树中继续找交错路径，并且长度加一</span>
+     		<span class="n">getlongestZigZag</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span> <span class="nb">true</span><span class="p">,</span> <span class="n">len</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">// 向左走</span>
+         	<span class="n">getlongestZigZag</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">// 重新开始计数</span>
+    	<span class="p">}</span>	
+	<span class="p">}</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="kt">int</span> <span class="nf">longestZigZag</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">getlongestZigZag</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span> <span class="nb">true</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">// 当我们从根节点向左移动时，路径长度变为1</span>
+		<span class="n">getlongestZigZag</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">// 同理，当我们从根节点向右移动时，路径长度变为1</span>
+		<span class="k">return</span> <span class="n">ans</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// 因为长度是从1开始的，我们需要减去1</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+
+            <div style="font-size: 0.9em">
+                <p>
+                    no link
+                </p>
+            </div>
+            
+        </side>
+    </div>
+</div>
+<a id = "coffee" href="/merger"> <img  src="https://i.imgur.com/lEvIedR.png" alt="BuyMeACoffee" width="180"> </a>
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
+/>
+<style>
+  .pio-container{
+    -webkit-transition: transform .3s ease-in-out;
+               transition: transform .3s ease-in-out;
+  }
+  @media only print {
+    .pio-container {
+      display: none;
+    }
+  }
+ .layout-reverse #sidebar-checkbox:checked~.pio-container {
+     -webkit-transform: translateX(-14rem);
+        -ms-transform: translateX(-14rem);
+              transform: translateX(-14rem);
+   }
+</style>
+<script
+  async="async"
+  src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
+  onload='
+  fetch("https://v1.hitokoto.cn")
+  .then(response=>response.json())
+  .then(data=>{var helloword=data.hitokoto;
+  var pio_container=document.createElement("div");
+  pio_container.classList.add("pio-container");
+  pio_container.classList.add("right");
+  pio_container.style.bottom="-2rem";
+  pio_container.style.zIndex="1";
+  document.body.insertAdjacentElement("beforeend",pio_container);
+  let pio_action=document.createElement("div");
+  pio_action.classList.add("pio-action");
+  pio_container.insertAdjacentElement("beforeend",pio_action);
+  let pio_canvas=document.createElement("canvas");
+  pio_canvas.id="pio";
+  pio_canvas.style.width="14rem";
+  pio_canvas.width="600";
+  pio_canvas.height="800";
+  pio_container.insertAdjacentElement("beforeend",pio_canvas);
+  let pio = new Paul_Pio({
+    "mode":"fixed",
+    "hidden":true,
+    "night":"for(let i=7;i<16;++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break}",
+    "content":{
+      "link":["https://github.com/yaleiyale/obsidian-jekyll-blog"],
+      "skin":["要换成我的朋友吗？","让她放个假吧~"],
+      "hidden":true,
+      "welcome":helloword,
+      "touch":helloword,
+      "referer":"你通过 %t 来到了这里",
+      "custom":[
+        {"selector":"a","type":"link"},
+        {"selector":"#coffee","text":"打赏要理性哦😻~"},
+        {"selector":"img","text":"点下看看吧🔍~"},
+        {"selector":".wl-reaction","text":"我来要赞咯🌟"},
+        {"selector":".wl-comment","text":"文明发言，不然会被🚫哦~"},
+        {"selector":".highlight","text":"代码可以一键复制呢🔖~"},
+        {"selector":".sidebar-toggle","text":"打开侧边栏叭🗂️~"},
+        {"selector":".effect-info","text":"哇，你发现了什么❗"},
+        {"selector":"#sidebar-search-input","text":"想搜索什么呢❓"},
+        {"selector":"#toc","text":"这是目录~"},
+        {"selector":".page-title","text":"这是标题~"}]
+        },
+    "model":[
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/umaru/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/koharu/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/rem/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/kurumi/model.json"]
+        })}).catch(console.error);'
+></script>
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.css"
+/>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
+></script>
+<script type="text/javascript">
+  var content = document.querySelector(".wrapper");
+   if (content) {
+     var list = content.querySelectorAll("img");
+     if (list) {
+      var imgCount = list.length;
+      var imgNow;
+      var viewer = [];
+      if (imgCount > 0) {
+         for (var i = 0; i < imgCount - 1; i++) //去除末尾咖啡
+         {
+           imgNow = list[i];
+          //console.log(imgNow.src);
+          viewer[i - 1] = new Viewer(imgNow);
+         }
+      }
+     }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+
