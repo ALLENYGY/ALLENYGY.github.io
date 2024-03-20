@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 class BidirectionalLinksGenerator < Jekyll::Generator
   def generate(site)
+    
     graph_nodes = []
     graph_edges = []
+
 
     all_notes = site.collections['notes'].docs
     all_pages = site.pages
@@ -115,6 +117,11 @@ class BidirectionalLinksGenerator < Jekyll::Generator
       end
     end
 
+    # 在 _includes/notes_graph.json 写入之前确保 _includes 目录存在
+    unless File.directory?('_includes')
+      Dir.mkdir('_includes')
+    end            
+        
     File.write('_includes/notes_graph.json', JSON.dump({
       edges: graph_edges,
       nodes: graph_nodes,
