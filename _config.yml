@@ -72,10 +72,23 @@ defaults:
             nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
               - title: <i class="fa-solid fa-home fa-fw"></i> 首页
                 href: /
-              - title: <i class="fa-solid fa-comment fa-fw"></i> 留言
-                href: /comments
-              - title: <i class="fa-solid fa-seedling fa-fw"></i> 聚点
-                href: /roots
+              # - title: <i class="fa-solid fa-comment fa-fw"></i> 留言
+                # href: /comments
+              # - title: <i class="fa-solid fa-seedling fa-fw"></i> 聚点
+                # href: /roots
+              #操作系统
+              - title: <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
+                href: /OS
+              - title: <i class="fa-solid fa-network-wired"></i> 计算机网络
+                href: /Network
+              - title: <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
+                href: /CO
+              - title: <i class="fa-solid fa-code fa-fw"></i> 编程语言
+                href: /ProgrammingLanguage
+              - title: <i class="fa-solid fa-database fa-fw"></i> 数据库
+                href: /DBM
+              
+
               - title: <i class="fa-solid fa-archive fa-fw"></i> 归档
                 href: /archive
               - title: <i class="fa-solid fa-tags fa-fw"></i> 标签
