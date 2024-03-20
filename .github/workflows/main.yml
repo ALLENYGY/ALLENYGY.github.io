@@ -19,7 +19,7 @@ jobs:
       - run: bundle exec ${BUNDLE_ARGS} jekyll build --trace
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(dat·e +'%Y-%m-%d')"
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
