@@ -1,24 +1,6 @@
-# Ignore node_modules directory
-node_modules/
-
-# Ignore Obsidian related files and directories
-NOTE/.obsidian/
-NOTE/Resume/
-NOTE/Research/
-NOTE/Record/
-NOTE/Obsidian/
-NOTE/Algorithm/Recursion/
-
-# Ignore IDE specific files and directories
-.metals/
-.cph/
-
-# Ignore Git related files and directories
-NOTE/.git/
-NOTE/.gitignore/
-
-# Ignore specific project directories
-NOTE/Contest/
-NOTE/Recursion/
-NOTE/Web/
-Assignment/
+vendor
+.bundle
+Gemfile.lock
+_site
+_includes/notes_graph.json
+notes

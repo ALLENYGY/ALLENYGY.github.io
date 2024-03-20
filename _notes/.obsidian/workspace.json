@@ -1,0 +1,264 @@
+{
+  "main": {
+    "id": "a247fd9f4a0a5a13",
+    "type": "split",
+    "children": [
+      {
+        "id": "07d4635c66d67f1b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ccacf0dc990e1d3a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Home.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "27b259a965fae503",
+    "type": "split",
+    "children": [
+      {
+        "id": "495c8c7a1284cb04",
+        "type": "tabs",
+        "dimension": 62.182203389830505,
+        "children": [
+          {
+            "id": "2149ca7f56dd2153",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b64f70998bedd5d2",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "9829e94760d0295d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#task",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f53be0967197f08e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "824097adea2c27af",
+        "type": "tabs",
+        "dimension": 37.81779661016949,
+        "children": [
+          {
+            "id": "87552f0863fb7569",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "9deccb9f44f6b388",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "873467c0bf5b8b6c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 346.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "6c77faef2551f814",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b1497b05aa93b43",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "231feee7442a7a77",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Home.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "84ee7b2541e777ed",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ffbb5374fe8bcab4",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "8147753539adc6c4",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "3d972d6edf2ff9a2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Home.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a4e146fc81fa544c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Home.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 359.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "templates:Insert template": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "daily-notes:Open today's daily note": false,
+      "obsidian-tts:Text to Speech": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templater-obsidian:Templater": false,
+      "remotely-save:Remotely Save": false,
+      "homepage:Open homepage": false
+    }
+  },
+  "active": "ccacf0dc990e1d3a",
+  "lastOpenFiles": [
+    "Network/Data-Link-Layer.md",
+    "OperatingSystem/OS-Threads.md",
+    "OperatingSystem/OS-Processes.md",
+    "OperatingSystem/OS-CPU-Scheduling.md",
+    "Others/文化随笔大纲.md",
+    "Others/颜文字.md",
+    "Others/火的传承——闽南年俗观察.md",
+    "Others/火与年华的仪式.md",
+    "Others/合同.md",
+    "Home.md",
+    "Web/Vue/VueApplication.md",
+    "Web/Vue/VueBasic.md",
+    "README.md",
+    "Network/USTC-L1.md",
+    "Network/Physical-Layer.md",
+    "Network/Basic-Concepts.md",
+    "Obsidian/Templaters/Daily.md",
+    "Obsidian/Templaters/Lanqiao.md",
+    "Obsidian/Templaters/Note.md",
+    "Pasted image 20240319004008.png",
+    "Pasted image 20240319004004.png",
+    "Pasted image 20240319004023.png",
+    "OperatingSystem/OS-Operating-System-Structure.md",
+    "Excalidraw/Drawing 2024-03-10 20.55.36.excalidraw.md",
+    "CO/Lecture/Lec8.md",
+    "CO/Lecture/Lec5.md",
+    "CO/Lecture/Lec4.md",
+    "CO/Lecture/Lec1.md",
+    "Record/Daily/2024-03-10.md",
+    "Excalidraw",
+    "ProgramLanguage/Java/ToStringandequalsmethods/Person.java",
+    "ProgramLanguage/Java/ToStringandequalsmethods/Test4.java",
+    "ProgramLanguage/Java/ToStringandequalsmethods/Test2.java",
+    "Untitled.nssyncsc",
+    "Tasks",
+    "Others",
+    "Algorithm/DAA/Assignment/Assignment-0-NSConflict1305-AllenYGY-mac14.2.1.md.nssyncsc",
+    "Algorithm/DAA/Assignment/Assignment-0-NSConflict6621-AllenYGY-mac14.2.1.md.nssyncsc",
+    "Algorithm/DAA/Assignment/Assignment-0-NSConflict6034-AllenYGY-mac14.2.1.md.nssyncsc",
+    "Pasted image 20240306232535.png",
+    "Pasted image 20240306091418.png",
+    "Pasted image 20240225145010.png",
+    "Pasted image 20240221022754.png",
+    "Pasted image 20240220192732.png",
+    "Pasted image 20240219235618.png",
+    "Pasted image 20240209174539.png",
+    "Untitled.canvas"
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "main": {
+    "id": "a247fd9f4a0a5a13",
+    "type": "split",
+    "children": [
+      {
+        "id": "91e3e3b3ca9c7a86",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5242474b88ec2a1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OperatingSystem/OS-Operating-System-Structure.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "f6e97147121d3693",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d6f212056485001c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OperatingSystem/OS-Operating-System-Structure.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "27b259a965fae503",
+    "type": "split",
+    "children": [
+      {
+        "id": "495c8c7a1284cb04",
+        "type": "tabs",
+        "dimension": 62.182203389830505,
+        "children": [
+          {
+            "id": "2149ca7f56dd2153",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b64f70998bedd5d2",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "9829e94760d0295d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f53be0967197f08e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "824097adea2c27af",
+        "type": "tabs",
+        "dimension": 37.81779661016949,
+        "children": [
+          {
+            "id": "87552f0863fb7569",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "9deccb9f44f6b388",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "873467c0bf5b8b6c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 346.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "6c77faef2551f814",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b1497b05aa93b43",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "231feee7442a7a77",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "OperatingSystem/OS-Operating-System-Structure.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "84ee7b2541e777ed",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ffbb5374fe8bcab4",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "8147753539adc6c4",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "3d972d6edf2ff9a2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "OperatingSystem/OS-Operating-System-Structure.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a4e146fc81fa544c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "OperatingSystem/OS-Operating-System-Structure.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 359.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "templates:Insert template": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "daily-notes:Open today's daily note": false,
+      "obsidian-tts:Text to Speech": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templater-obsidian:Templater": false,
+      "homepage:Open homepage": false,
+      "remotely-save:Remotely Save": false
+    }
+  },
+  "active": "5242474b88ec2a1d",
+  "lastOpenFiles": [
+    "Algorithm/DAA/Tutorial/Tutorial-1.nssyncsc",
+    "Algorithm/DAA/Tutorial/000_坚果云闪电下载介绍.url.nssyncsc",
+    "Algorithm/DAA/Tutorial",
+    "Algorithm/DAA/Assignment/Assignment-0-NSConflict1305-AllenYGY-mac14.2.1.md",
+    "Algorithm/DAA/Assignment/Assignment-0.md",
+    "Algorithm/DAA/Assignment/Assignment-0-NSConflict6621-AllenYGY-mac14.2.1.md",
+    "Algorithm/DAA/Assignment/Assignment-0-NSConflict6034-AllenYGY-mac14.2.1.md",
+    "Algorithm/DAA/Assignment/Assignment-0-NSConflict4553-AllenYGY-mac14.2.1.md",
+    "Algorithm/DAA/Assignment/Assignment-0-NSConflict4293-AllenYGY-mac14.2.1.md",
+    "Algorithm/DAA/Assignment/Assignment-0-NSConflict-AllenYGY-mac14.2.1.md",
+    "OperatingSystem/OS-Introduction.md",
+    "OperatingSystem/OS-Operating-System-Structure.md",
+    "OperatingSystem.md",
+    "OperatingSystem/Linux-Basic-Operation.md",
+    "Home.md",
+    "Tasks.md",
+    "Tasks",
+    "Home_1.md",
+    "Home_3.md",
+    "Home_2.md",
+    "Obsidian/Templaters/Daily.md",
+    "Obsidian/Templaters/Note.md",
+    "Algorithm/DAA/Algorithm/Divide&Conquer.md",
+    "Algorithm/DAA/Algorithm/Enumeration.md",
+    "Contest/Leetcode/Biweekly-contest-122.md",
+    "Network/BasicConcepts.md",
+    "_remotely-save-metadata-on-remote.json",
+    "_remotely-save-metadata-on-remote.nssyncsc",
+    "Pasted image 20240306232535.png",
+    "Pasted image 20240306091418.png",
+    "Algorithm/SlidingWindow.md",
+    "Record/Weekly/2024-W09.md",
+    "Network/USTC-L1.md",
+    "Algorithm/DAA/Algorithm",
+    "Algorithm/DAA/Assignment/Tutorial",
+    "Resume/JunyaYang_photo.pdf",
+    "Resume/JunyaYang_CN.pdf",
+    "Resume/JunyaYang.pdf",
+    "Pasted image 20240225145010.png",
+    "Pasted image 20240221022754.png",
+    "Pasted image 20240220192732.png",
+    "Pasted image 20240219235618.png",
+    "Pasted image 20240209174539.png",
+    "Pasted image 20240209173754.png",
+    "Pasted image 20240206223316.png",
+    "Untitled.canvas",
+    "Pasted image 20240122210249.png"
+  ]
+}

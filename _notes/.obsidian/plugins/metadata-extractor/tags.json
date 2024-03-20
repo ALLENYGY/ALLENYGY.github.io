@@ -1,0 +1,504 @@
+[
+  {
+    "tag": "note",
+    "tagCount": 25,
+    "relativePaths": [
+      "Web/Vue/前置知识.md",
+      "Web/Vue/VueBasic.md",
+      "Web/Vue/VueApplication.md",
+      "Web/CSS/CSS-Introduction.md",
+      "Tools/Shell/Shell.md",
+      "ProgramLanguage/Python/PythonBasic.md",
+      "ProgramLanguage/C/Macro.md",
+      "OperatingSystem/OS-CPU-Scheduling.md",
+      "OperatingSystem/OS-Threads.md",
+      "OperatingSystem/OS-Processes.md",
+      "OperatingSystem/OS-Operating-System-Structure.md",
+      "OperatingSystem/OS-Introduction.md",
+      "OperatingSystem/NJU-OS-PA0.md",
+      "OperatingSystem/Linux-Basic-Operation.md",
+      "Obsidian/Obsidian-Git/Obsidian-Git-Operation.md",
+      "Network/Basic-Concepts.md",
+      "Network/Physical-Layer.md",
+      "Network/Data-Link-Layer.md",
+      "FixIncome/FixedIncomeOverview.md",
+      "Algorithm/SlidingWindow.md",
+      "Algorithm/Recursion/Recursion-BinaryTree.md",
+      "Algorithm/DAA/Tutorial/Tutorial-1.md",
+      "Algorithm/DAA/Assignment/Assignment-0.md",
+      "Algorithm/DAA/Algorithm/Union-Find.md",
+      "Algorithm/DAA/Algorithm/Divide&Conquer.md"
+    ]
+  },
+  {
+    "tag": "vue",
+    "tagCount": 2,
+    "relativePaths": [
+      "Web/Vue/VueBasic.md",
+      "Web/Vue/VueApplication.md"
+    ]
+  },
+  {
+    "tag": "ch1",
+    "tagCount": 1,
+    "relativePaths": [
+      "Web/Vue/VueBasic.md"
+    ]
+  },
+  {
+    "tag": "web",
+    "tagCount": 3,
+    "relativePaths": [
+      "Web/Vue/VueBasic.md",
+      "Web/Vue/VueApplication.md",
+      "Web/CSS/CSS-Introduction.md"
+    ]
+  },
+  {
+    "tag": "备注",
+    "tagCount": 3,
+    "relativePaths": [
+      "Web/Vue/VueBasic.md"
+    ]
+  },
+  {
+    "tag": "ch2",
+    "tagCount": 1,
+    "relativePaths": [
+      "Web/Vue/VueApplication.md"
+    ]
+  },
+  {
+    "tag": "css",
+    "tagCount": 1,
+    "relativePaths": [
+      "Web/CSS/CSS-Introduction.md"
+    ]
+  },
+  {
+    "tag": "readme",
+    "tagCount": 7,
+    "relativePaths": [
+      "Tools/README.md",
+      "ProgramLanguage/README.md",
+      "Math/README.md",
+      "DataAnalysis/README.md",
+      "DBM/README.md",
+      "Contest/Overview.md",
+      "CO/README.md"
+    ]
+  },
+  {
+    "tag": "yearly-record",
+    "tagCount": 2,
+    "relativePaths": [
+      "Record/Yearly/2024.md",
+      "Obsidian/Templaters/Yearly.md"
+    ]
+  },
+  {
+    "tag": "weekly-record",
+    "tagCount": 9,
+    "relativePaths": [
+      "Record/Weekly/2024-W11.md",
+      "Record/Weekly/2024-W10.md",
+      "Record/Weekly/2024-W08.md",
+      "Record/Weekly/2024-W09.md",
+      "Record/Weekly/2024-W07.md",
+      "Record/Weekly/2024-W06.md",
+      "Record/Weekly/2024-W05.md",
+      "Record/Weekly/2024-W04.md",
+      "Obsidian/Templaters/Weekly.md"
+    ]
+  },
+  {
+    "tag": "task",
+    "tagCount": 2,
+    "relativePaths": [
+      "Record/Weekly/2024-W10.md",
+      "Record/Daily/2024-03-10.md"
+    ]
+  },
+  {
+    "tag": "daily-record",
+    "tagCount": 13,
+    "relativePaths": [
+      "Record/Internship/2024-03-04.md",
+      "Record/Internship/2024-03-03.md",
+      "Record/Daily/2024-02-17.md",
+      "Record/Daily/2024-03-10.md",
+      "Record/Daily/2024-03-01.md",
+      "Record/Daily/2024-01-30.md",
+      "Record/Daily/2024-02-27.md",
+      "Record/Daily/2024-02-19.md",
+      "Record/Daily/2024-01-31.md",
+      "Record/Daily/2024-01-29.md",
+      "Record/Daily/2024-01-28.md",
+      "Record/Daily/2024-01-27.md",
+      "Obsidian/Templaters/Daily.md"
+    ]
+  },
+  {
+    "tag": "internship",
+    "tagCount": 1,
+    "relativePaths": [
+      "Record/Internship/2024-03-03.md"
+    ]
+  },
+  {
+    "tag": "warning",
+    "tagCount": 1,
+    "relativePaths": [
+      "Record/Internship/2024-03-03.md"
+    ]
+  },
+  {
+    "tag": "birthday",
+    "tagCount": 1,
+    "relativePaths": [
+      "Record/Daily/2024-03-01.md"
+    ]
+  },
+  {
+    "tag": "flag",
+    "tagCount": 1,
+    "relativePaths": [
+      "Record/Daily/2024-01-30.md"
+    ]
+  },
+  {
+    "tag": "homepage",
+    "tagCount": 1,
+    "relativePaths": [
+      "README.md"
+    ]
+  },
+  {
+    "tag": "python",
+    "tagCount": 1,
+    "relativePaths": [
+      "ProgramLanguage/Python/PythonBasic.md"
+    ]
+  },
+  {
+    "tag": "c",
+    "tagCount": 1,
+    "relativePaths": [
+      "ProgramLanguage/C/Macro.md"
+    ]
+  },
+  {
+    "tag": "宏",
+    "tagCount": 1,
+    "relativePaths": [
+      "ProgramLanguage/C/Macro.md"
+    ]
+  },
+  {
+    "tag": "os",
+    "tagCount": 6,
+    "relativePaths": [
+      "OperatingSystem/OS-CPU-Scheduling.md",
+      "OperatingSystem/OS-Threads.md",
+      "OperatingSystem/OS-Processes.md",
+      "OperatingSystem/OS-Operating-System-Structure.md",
+      "OperatingSystem/OS-Introduction.md",
+      "OperatingSystem/NJU-OS-PA0.md"
+    ]
+  },
+  {
+    "tag": "lec5",
+    "tagCount": 1,
+    "relativePaths": [
+      "OperatingSystem/OS-CPU-Scheduling.md"
+    ]
+  },
+  {
+    "tag": "uic",
+    "tagCount": 5,
+    "relativePaths": [
+      "OperatingSystem/OS-CPU-Scheduling.md",
+      "OperatingSystem/OS-Threads.md",
+      "OperatingSystem/OS-Processes.md",
+      "Network/Basic-Concepts.md",
+      "Network/Data-Link-Layer.md"
+    ]
+  },
+  {
+    "tag": "lec4",
+    "tagCount": 1,
+    "relativePaths": [
+      "OperatingSystem/OS-Threads.md"
+    ]
+  },
+  {
+    "tag": "lec3",
+    "tagCount": 2,
+    "relativePaths": [
+      "OperatingSystem/OS-Processes.md",
+      "Network/Data-Link-Layer.md"
+    ]
+  },
+  {
+    "tag": "lec2",
+    "tagCount": 2,
+    "relativePaths": [
+      "OperatingSystem/OS-Operating-System-Structure.md",
+      "Network/Physical-Layer.md"
+    ]
+  },
+  {
+    "tag": "introduction",
+    "tagCount": 1,
+    "relativePaths": [
+      "OperatingSystem/OS-Introduction.md"
+    ]
+  },
+  {
+    "tag": "lec1",
+    "tagCount": 2,
+    "relativePaths": [
+      "OperatingSystem/OS-Introduction.md",
+      "Network/Basic-Concepts.md"
+    ]
+  },
+  {
+    "tag": "gnu/linux",
+    "tagCount": 1,
+    "relativePaths": [
+      "OperatingSystem/NJU-OS-PA0.md"
+    ]
+  },
+  {
+    "tag": "debian",
+    "tagCount": 1,
+    "relativePaths": [
+      "OperatingSystem/NJU-OS-PA0.md"
+    ]
+  },
+  {
+    "tag": "nju",
+    "tagCount": 1,
+    "relativePaths": [
+      "OperatingSystem/NJU-OS-PA0.md"
+    ]
+  },
+  {
+    "tag": "linux",
+    "tagCount": 1,
+    "relativePaths": [
+      "OperatingSystem/Linux-Basic-Operation.md"
+    ]
+  },
+  {
+    "tag": "basic",
+    "tagCount": 1,
+    "relativePaths": [
+      "OperatingSystem/Linux-Basic-Operation.md"
+    ]
+  },
+  {
+    "tag": "t1",
+    "tagCount": 5,
+    "relativePaths": [
+      "Obsidian/Templaters/Leetcode.md",
+      "Contest/Leetcode/Weekly-contest-381.md",
+      "Contest/Leetcode/Leetcode.md",
+      "Contest/Leetcode/Biweekly-contest-123.md",
+      "Contest/Leetcode/Biweekly-contest-122.md"
+    ]
+  },
+  {
+    "tag": "灵神题解",
+    "tagCount": 16,
+    "relativePaths": [
+      "Obsidian/Templaters/Leetcode.md",
+      "Contest/Leetcode/Leetcode.md",
+      "Contest/Leetcode/Biweekly-contest-123.md",
+      "Contest/Leetcode/Biweekly-contest-122.md"
+    ]
+  },
+  {
+    "tag": "t2",
+    "tagCount": 5,
+    "relativePaths": [
+      "Obsidian/Templaters/Leetcode.md",
+      "Contest/Leetcode/Weekly-contest-381.md",
+      "Contest/Leetcode/Leetcode.md",
+      "Contest/Leetcode/Biweekly-contest-123.md",
+      "Contest/Leetcode/Biweekly-contest-122.md"
+    ]
+  },
+  {
+    "tag": "t3",
+    "tagCount": 5,
+    "relativePaths": [
+      "Obsidian/Templaters/Leetcode.md",
+      "Contest/Leetcode/Weekly-contest-381.md",
+      "Contest/Leetcode/Leetcode.md",
+      "Contest/Leetcode/Biweekly-contest-123.md",
+      "Contest/Leetcode/Biweekly-contest-122.md"
+    ]
+  },
+  {
+    "tag": "t4",
+    "tagCount": 5,
+    "relativePaths": [
+      "Obsidian/Templaters/Leetcode.md",
+      "Contest/Leetcode/Weekly-contest-381.md",
+      "Contest/Leetcode/Leetcode.md",
+      "Contest/Leetcode/Biweekly-contest-123.md",
+      "Contest/Leetcode/Biweekly-contest-122.md"
+    ]
+  },
+  {
+    "tag": "extension",
+    "tagCount": 1,
+    "relativePaths": [
+      "Obsidian/Obsidian-Git/Obsidian-Git-Operation.md"
+    ]
+  },
+  {
+    "tag": "git",
+    "tagCount": 1,
+    "relativePaths": [
+      "Obsidian/Obsidian-Git/Obsidian-Git-Operation.md"
+    ]
+  },
+  {
+    "tag": "network",
+    "tagCount": 3,
+    "relativePaths": [
+      "Network/Basic-Concepts.md",
+      "Network/Physical-Layer.md",
+      "Network/Data-Link-Layer.md"
+    ]
+  },
+  {
+    "tag": "finance",
+    "tagCount": 1,
+    "relativePaths": [
+      "FixIncome/FixedIncomeOverview.md"
+    ]
+  },
+  {
+    "tag": "excalidraw",
+    "tagCount": 1,
+    "relativePaths": [
+      "Excalidraw/Drawing 2024-03-10 20.55.36.excalidraw.md"
+    ]
+  },
+  {
+    "tag": "overview",
+    "tagCount": 1,
+    "relativePaths": [
+      "Contest/Overview.md"
+    ]
+  },
+  {
+    "tag": "contest",
+    "tagCount": 5,
+    "relativePaths": [
+      "Contest/Leetcode/Weekly-contest-381.md",
+      "Contest/Leetcode/Biweekly-contest-123.md",
+      "Contest/Leetcode/Biweekly-contest-122.md",
+      "Contest/Lanqiao/Week-1.md",
+      "Contest/Lanqiao/Lanqiao.md"
+    ]
+  },
+  {
+    "tag": "woc，我是傻逼",
+    "tagCount": 1,
+    "relativePaths": [
+      "Contest/Leetcode/Biweekly-contest-122.md"
+    ]
+  },
+  {
+    "tag": "分组循环",
+    "tagCount": 1,
+    "relativePaths": [
+      "Contest/Leetcode/Biweekly-contest-122.md"
+    ]
+  },
+  {
+    "tag": "还没开始",
+    "tagCount": 2,
+    "relativePaths": [
+      "Contest/Leetcode/Biweekly-contest-122.md"
+    ]
+  },
+  {
+    "tag": "experience",
+    "tagCount": 10,
+    "relativePaths": [
+      "Contest/Lanqiao/Week-1.md",
+      "Algorithm/SlidingWindow.md",
+      "Algorithm/Recursion/Recursion-BinaryTree.md"
+    ]
+  },
+  {
+    "tag": "hint",
+    "tagCount": 2,
+    "relativePaths": [
+      "Contest/Lanqiao/Week-1.md"
+    ]
+  },
+  {
+    "tag": "algorithm",
+    "tagCount": 2,
+    "relativePaths": [
+      "Algorithm/SlidingWindow.md",
+      "Algorithm/Recursion/Recursion-BinaryTree.md"
+    ]
+  },
+  {
+    "tag": "achievement",
+    "tagCount": 1,
+    "relativePaths": [
+      "Algorithm/Recursion/Recursion-BinaryTree.md"
+    ]
+  },
+  {
+    "tag": "daa",
+    "tagCount": 2,
+    "relativePaths": [
+      "Algorithm/DAA/Tutorial/Tutorial-1.md",
+      "Algorithm/DAA/Assignment/Assignment-0.md"
+    ]
+  },
+  {
+    "tag": "tutorial",
+    "tagCount": 1,
+    "relativePaths": [
+      "Algorithm/DAA/Tutorial/Tutorial-1.md"
+    ]
+  },
+  {
+    "tag": "assignment",
+    "tagCount": 1,
+    "relativePaths": [
+      "Algorithm/DAA/Assignment/Assignment-0.md"
+    ]
+  },
+  {
+    "tag": "datastructure",
+    "tagCount": 1,
+    "relativePaths": [
+      "Algorithm/DAA/Algorithm/Union-Find.md"
+    ]
+  },
+  {
+    "tag": "unionfind",
+    "tagCount": 1,
+    "relativePaths": [
+      "Algorithm/DAA/Algorithm/Union-Find.md"
+    ]
+  },
+  {
+    "tag": "dc",
+    "tagCount": 1,
+    "relativePaths": [
+      "Algorithm/DAA/Algorithm/Divide&Conquer.md"
+    ]
+  }
+]
