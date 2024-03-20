@@ -78,17 +78,17 @@ defaults:
                 # href: /roots
               #操作系统
               - title: <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
-                href: /OperatingSystem
+                href: /OS
               - title: <i class="fa-solid fa-network-wired"></i> 计算机网络
-                href: /Network
+                href: /DCN
               - title: <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
                 href: /CO
               - title: <i class="fa-solid fa-code fa-fw"></i> 编程语言
                 href: /ProgramLanguage
               - title: <i class="fa-solid fa-database fa-fw"></i> 数据库
                 href: /DBM
-              
-
+              - title: <i class="fa-solid fa-link fa-fw"></i> 友链
+                href: /links
               - title: <i class="fa-solid fa-archive fa-fw"></i> 归档
                 href: /archive
               - title: <i class="fa-solid fa-tags fa-fw"></i> 标签
@@ -679,7 +679,7 @@ defaults:
               />
             - |
               <script>
-                var myname = "yaleiyale";
+                var myname = "allenygy";
                 var profile = "https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png";
                 var usage = "payment";
                 var wechat = "wxp://f2f0dsQlAhlj8JhTvCFKDc06potIJmAlC6Egb5iwzbEuuVA";

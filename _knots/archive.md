@@ -26,7 +26,6 @@ jekyll-theme-ObJekyll:
 }
 ```
 
-
 {% assign lmonth = "1000-01" | date: "%b %Y" %}
 
 {% for post in site.notes reversed %}
@@ -37,6 +36,7 @@ jekyll-theme-ObJekyll:
 {%assign lmonth = month %}
 {% endif %}
 {% if site.use_html_extension %}
+
 - _{{ post.date | date:"%d %b" }}_ [{{ post.title }}]({{ post.url | relative_url | append: ".html" }})
 {% else %}
 - _{{ post.date | date:"%d %b" }}_ [{{ post.title }}]({{ post.url | relative_url }})

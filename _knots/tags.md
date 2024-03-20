@@ -37,12 +37,13 @@ jekyll-theme-ObJekyll:
 ```
 {% endif %}
 ## 类别
-- [游戏](/gametags)
+<!-- - [游戏](/gametags)
 {% for tag in site.tags reversed %}
-{% unless tag[0] contains '游戏'or tag[0] contains 'excalidraw'  %}
+{% unless tag[0] contains '游戏'or tag[0] contains 'excalidraw'  %} -->
 ## {{ tag[0] }}
 {% for post in tag[1] %}
 {% if site.use_html_extension %}
+
 - *{{ post.date | date:"%d %b %Y" }}* [{{ post.title }}]({{ post.url | relative_url | append: ".html"}})
 {% else %}
 - *{{ post.date | date:"%d %b %Y" }}* [{{ post.title }}]({{ post.url | relative_url }})

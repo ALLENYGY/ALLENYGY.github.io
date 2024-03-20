@@ -1,12 +1,12 @@
-# AllenYGY 个人小站<br>开始阅读
+## AllenYGY<BR>个人小站<br>开始阅读
 
 <!-- .slide -->
 
-# 将Obsidian库publish为博客
+## 将Obsidian库publish为博客
 
 <!-- .slide -->
 
-# 支持双链<br>预览 和 图谱
+## 支持双链<br>预览 和 图谱
 
 <!-- .slide vertical=true -->
 

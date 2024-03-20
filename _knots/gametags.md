@@ -43,6 +43,7 @@ jekyll-theme-ObJekyll:
 ## {{ tag[0]|remove_first: "游戏/"  }}
 {% for post in tag[1] %}
 {% if site.use_html_extension %}
+
 - *{{ post.date | date:"%d %b %Y" }}* [{{ post.title }}]({{ post.url | relative_url | append: ".html"}})
 {% else %}
 - *{{ post.date | date:"%d %b %Y" }}* [{{ post.title }}]({{ post.url | relative_url }})
