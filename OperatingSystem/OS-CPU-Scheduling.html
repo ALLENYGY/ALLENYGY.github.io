@@ -18,11 +18,11 @@
 <meta property="og:url" content="https://objekyll.netlify.app/OperatingSystem/OS-CPU-Scheduling" />
 <meta property="og:site_name" content="AllenYGY的个人小站" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-03-20T18:48:59+08:00" />
+<meta property="article:published_time" content="2024-03-20T20:33:55+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Os Cpu Scheduling" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-20T18:48:59+08:00","datePublished":"2024-03-20T18:48:59+08:00","description":"[[OS-CPU-Scheduling]]","headline":"Os Cpu Scheduling","mainEntityOfPage":{"@type":"WebPage","@id":"https://objekyll.netlify.app/OperatingSystem/OS-CPU-Scheduling"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://objekyll.netlify.app/OperatingSystem/OS-CPU-Scheduling"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-20T20:33:55+08:00","datePublished":"2024-03-20T20:33:55+08:00","description":"[[OS-CPU-Scheduling]]","headline":"Os Cpu Scheduling","mainEntityOfPage":{"@type":"WebPage","@id":"https://objekyll.netlify.app/OperatingSystem/OS-CPU-Scheduling"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://objekyll.netlify.app/OperatingSystem/OS-CPU-Scheduling"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -369,7 +369,7 @@
         
         
         <i class="fa-solid fa-calendar-plus fa-fw"></i>
-        建于：2024-03-20 18:48:59 Wednesday
+        建于：2024-03-20 20:33:55 Wednesday
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
@@ -601,10 +601,57 @@
 
 
 
+<style>
+  pre.language-vega-lite,
+  code.language-vega-lite {
+    display: none;
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-vega-lite"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+        vegaEmbed(m, JSON.parse(x.textContent));
+      }'
+></script>
 
 
 
 
+<style>
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+  @media only screen {
+    .mermaid {
+      overflow: hidden hidden;
+      max-width: 100%;
+      max-height: 66.6vh;
+    }
+    .mermaid {
+      overflow: auto auto;
+    }
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-mermaid"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        m.classList.add("mermaid");
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+      }'
+></script>
 
 
 
@@ -682,10 +729,56 @@
 
 
 
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
 
 
 
 
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
 
 
 
