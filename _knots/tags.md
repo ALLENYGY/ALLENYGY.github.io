@@ -27,13 +27,14 @@ jekyll-theme-ObJekyll:
 ]{% endcapture %}
 {% assign json_data = json_data | remove_first: "," %}
 {
-  "data": { "values": {{ json_data }} },
+  "data": { "values": {{ json_data | safe }} },
+  "mark": "bar",
   "encoding": {
-    "y": {"field": "tags", "type": "nominal"},
-    "x": {"field": "count", "type": "quantitative" }
-  },
-  "mark": "bar"
+    "y": {"field": "count", "type": "quantitative"},
+    "x": {"field": "tags", "type": "nominal", "sort": "-y"}
+  }
 }
+
 ```
 {% endif %}
 ## 类别

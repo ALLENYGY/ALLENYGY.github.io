@@ -129,7 +129,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346.5
+    "width": 346.5,
+    "collapsed": true
   },
   "right": {
     "id": "6c77faef2551f814",
@@ -233,8 +234,10 @@
   },
   "active": "cb9893abf1c8bede",
   "lastOpenFiles": [
-    "Network/USTC-L1.md",
+    "Record/Weekly/2024-W11.md",
+    "Record/Weekly/2024-W05.md",
     "Network/Physical-Layer.md",
+    "Network/USTC-L1.md",
     "OperatingSystem/OS-Processes.md",
     "Home.md",
     "WorkView.md",
@@ -265,7 +268,6 @@
     "OperatingSystem/NJU-OS-PA0.md",
     "WorkView-NSConflict-AllenYGY-mac14.4.md",
     "Web/Vue/VueBasic.md",
-    "Web/Vue/VueBasic-NSConflict-AllenYGY-mac14.4.md",
     "Contest/Leetcode/Leetcode.nssyncsc",
     "Contest/Leetcode/Weekly-contest-381.nssyncsc",
     "Pasted image 20240319004008.png",

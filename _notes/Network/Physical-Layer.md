@@ -41,10 +41,19 @@ Where $f = \frac{1}{T}$ is the fundamental frequency, $a_n$ and $b_n$ are the si
 - Guided media, which are those that provide a conduit from one device to another.
 - Include twisted-pair cable, coaxial cable, and fiberoptic cable.
 
-#### Twisted-pair 
+#### Twisted-pair `双绞线`
 
 - A twisted pair consists of two insulated copper wires, typically about 1 mm think.
 - ![Twisted-pair](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Twisted-Pair.png)
+- UTP and STP cables `Shield or not`
+	- ![UTP&STP](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/UTP_STP.png)
+	- ![UTP-connector](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/UTP-connector.png)
 
-##### Twisted-Pair: UTP and STP cables
+![UTP Performance](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/UTP-Performance.png)
+
+$\uparrow frequency \Rightarrow Attenuation \downarrow$
+
+#### Coaxial Cable `同轴电缆`
+
+#### Optical fiber `光导纤维`
 
