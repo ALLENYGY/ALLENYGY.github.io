@@ -1,5 +1,5 @@
 ---
-Title: "[[Contest/Lanqiao/Week-1]]"
+Title: "[[CO/Contest/Lanqiao/Week-1]]"
 Contest: lanqiao
 tags: Contest
 theme: 简单填空题
@@ -8,7 +8,7 @@ Author:
   - AllenYGY
 ---
 
-# [[Contest/Lanqiao/Week-1]]
+# [[CO/Contest/Lanqiao/Week-1]]
 
 
 [门牌号](https://www.lanqiao.cn/problems/592/learning/)

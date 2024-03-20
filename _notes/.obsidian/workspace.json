@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6f39f1db6a5a36c6",
+        "id": "7136e1752157aa8e",
         "type": "tabs",
         "children": [
           {
-            "id": "5d9dbe33b7742fa1",
+            "id": "cb9893abf1c8bede",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "OperatingSystem/OS-Processes.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -110,8 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346.5,
-    "collapsed": true
+    "width": 346.5
   },
   "right": {
     "id": "6c77faef2551f814",
@@ -127,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Home.md",
+                "file": "OperatingSystem/OS-Processes.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Home.md",
+                "file": "OperatingSystem/OS-Processes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,12 +182,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Home.md"
+                "file": "OperatingSystem/OS-Processes.md"
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -197,6 +196,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "vscode-editor:Create Code File": false,
       "templates:Insert template": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -207,51 +207,51 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "templater-obsidian:Templater": false,
+      "homepage:Open homepage": false,
       "remotely-save:Remotely Save": false,
-      "homepage:Open homepage": false
+      "obsidian-map-view:Open map view": false
     }
   },
-  "active": "5d9dbe33b7742fa1",
+  "active": "cb9893abf1c8bede",
   "lastOpenFiles": [
-    "Network/Data-Link-Layer.md",
-    "OperatingSystem/OS-Threads.md",
-    "OperatingSystem/OS-Processes.md",
-    "OperatingSystem/OS-CPU-Scheduling.md",
-    "Others/文化随笔大纲.md",
-    "Others/颜文字.md",
-    "Others/火的传承——闽南年俗观察.md",
-    "Others/火与年华的仪式.md",
-    "Others/合同.md",
     "Home.md",
-    "Web/Vue/VueApplication.md",
-    "Web/Vue/VueBasic.md",
-    "README.md",
-    "Network/USTC-L1.md",
-    "Network/Physical-Layer.md",
-    "Network/Basic-Concepts.md",
-    "Obsidian/Templaters/Daily.md",
+    "WorkView.md",
+    "Resume/JunyaYang.pdf",
+    "Math/ProbabilityStatistics/Lec6.md",
+    "Contest/Overview.md",
+    "Contest/Lanqiao/Week-1.md",
+    "Contest/Lanqiao/Lanqiao.md",
     "Obsidian/Templaters/Lanqiao.md",
-    "Obsidian/Templaters/Note.md",
+    "Obsidian/Templaters/Note-NSCaseConflict-AllenYGY-mac14.4.md",
+    "conflict-files-obsidian-git.md",
+    "Network/USTC-L1-NSConflict-AllenYGY-mac14.4.nssyncsc",
+    "Contest/Lanqiao/Week-1.nssyncsc",
+    "Contest/Lanqiao/Lanqiao.nssyncsc",
+    "Contest/Lanqiao/000_Nutstore Flash Download Guide.url.nssyncsc",
+    "CO/Contest/Lanqiao/Week-1.md",
+    "CO/Contest/Lanqiao/Lanqiao.md",
+    "CO/Contest/Leetcode/Weekly-contest-381.md",
+    "CO/Contest/Leetcode/Biweekly-contest-123.md",
+    "CO/Contest/Leetcode/Biweekly-contest-122.md",
+    "CO/Contest/Overview.md",
+    "CO/Contest/Lanqiao",
+    "CO/Contest/Leetcode",
+    "CO/Contest",
+    "Contest/Leetcode/Leetcode.md",
+    "OperatingSystem/NJU-OS-PA0-NSConflict-AllenYGY-mac14.4.md",
+    "OperatingSystem/Linux-Basic-Operation-NSConflict-AllenYGY-mac14.4.md",
+    "OperatingSystem/NJU-OS-PA0.md",
+    "WorkView-NSConflict-AllenYGY-mac14.4.md",
+    "Web/Vue/VueBasic.md",
+    "Web/Vue/VueBasic-NSConflict-AllenYGY-mac14.4.md",
+    "Record/Weekly/2024-W05.md",
+    "Record/Weekly/2024-W05-NSConflict-AllenYGY-mac14.4.md",
+    "Contest/Lanqiao/Week-1.md",
+    "Contest/Leetcode/Leetcode.nssyncsc",
+    "Contest/Leetcode/Weekly-contest-381.nssyncsc",
     "Pasted image 20240319004008.png",
     "Pasted image 20240319004004.png",
     "Pasted image 20240319004023.png",
-    "OperatingSystem/OS-Operating-System-Structure.md",
-    "Excalidraw/Drawing 2024-03-10 20.55.36.excalidraw.md",
-    "CO/Lecture/Lec8.md",
-    "CO/Lecture/Lec5.md",
-    "CO/Lecture/Lec4.md",
-    "CO/Lecture/Lec1.md",
-    "Record/Daily/2024-03-10.md",
-    "Excalidraw",
-    "ProgramLanguage/Java/ToStringandequalsmethods/Person.java",
-    "ProgramLanguage/Java/ToStringandequalsmethods/Test4.java",
-    "ProgramLanguage/Java/ToStringandequalsmethods/Test2.java",
-    "Untitled.nssyncsc",
-    "Tasks",
-    "Others",
-    "Algorithm/DAA/Assignment/Assignment-0-NSConflict1305-AllenYGY-mac14.2.1.md.nssyncsc",
-    "Algorithm/DAA/Assignment/Assignment-0-NSConflict6621-AllenYGY-mac14.2.1.md.nssyncsc",
-    "Algorithm/DAA/Assignment/Assignment-0-NSConflict6034-AllenYGY-mac14.2.1.md.nssyncsc",
     "Pasted image 20240306232535.png",
     "Pasted image 20240306091418.png",
     "Pasted image 20240225145010.png",
