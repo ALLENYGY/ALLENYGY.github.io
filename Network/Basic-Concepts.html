@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    Basic Concepts &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Basic Concepts" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="[[Basic-Concepts]]" />
+<meta property="og:description" content="[[Basic-Concepts]]" />
+<link rel="canonical" href="https://objekyll.netlify.app/Network/Basic-Concepts" />
+<meta property="og:url" content="https://objekyll.netlify.app/Network/Basic-Concepts" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-03-20T14:10:48+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Basic Concepts" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-20T14:10:48+08:00","datePublished":"2024-03-20T14:10:48+08:00","description":"[[Basic-Concepts]]","headline":"Basic Concepts","mainEntityOfPage":{"@type":"WebPage","@id":"https://objekyll.netlify.app/Network/Basic-Concepts"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://objekyll.netlify.app/Network/Basic-Concepts"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-07 layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://www.acfun.cn/u/31661560">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://space.bilibili.com/357477198">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/comments">
+        <i class="fa-solid fa-comment fa-fw"></i> 留言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/roots">
+        <i class="fa-solid fa-seedling fa-fw"></i> 聚点
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/merger">
+        <i class="fa-solid fa-coffee fa-fw"></i> 打赏
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#basic-concepts">Basic-Concepts</a>
+    <ol>
+      <li><a href="#data-communication-components">Data Communication Components</a></li>
+      <li><a href="#data-flow">Data Flow</a></li>
+      <li><a href="#fundamentals-of-data-and-signals">Fundamentals of Data and Signals</a>
+        <ol>
+          <li><a href="#analog-versus-digital">Analog Versus Digital</a></li>
+          <li><a href="#advantages-of-digital-signals">Advantages of Digital Signals</a></li>
+        </ol>
+      </li>
+      <li><a href="#digital-encoding-schemes">Digital Encoding Schemes</a>
+        <ol>
+          <li><a href="#transmitting-digital-data-with-digital-signals-%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7-%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7">Transmitting digital data with digital signals 数字信号-&gt;数字信号</a></li>
+          <li><a href="#transmitting-digital-data-with-analog-signals-%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7-%E6%A8%A1%E6%8B%9F%E4%BF%A1%E5%8F%B7">Transmitting digital data with analog signals 数字信号-&gt;模拟信号</a></li>
+          <li><a href="#convert-analog-signal-to-digital-signal--%E6%A8%A1%E6%8B%9F%E4%BF%A1%E5%8F%B7-%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7">Convert Analog Signal to Digital Signal  模拟信号-&gt;数字信号</a></li>
+        </ol>
+      </li>
+      <li><a href="#capacity-of-communication-channel">Capacity of Communication Channel</a></li>
+      <li><a href="#computer-networks">Computer Networks</a></li>
+      <li><a href="#network-hardware">Network Hardware</a>
+        <ol>
+          <li><a href="#local-loop-%E6%9C%AC%E5%9C%B0%E5%9B%9E%E8%B7%AF">Local Loop 本地回路</a></li>
+          <li><a href="#local-area-networks-lans-%E5%B1%80%E5%9F%9F%E7%BD%91">Local Area Networks (LANs) 局域网</a></li>
+          <li><a href="#mans-metropolitan-area-network-%E5%9F%8E%E5%9F%9F%E7%BD%91">MANs (Metropolitan Area Network) 城域网</a></li>
+          <li><a href="#wans-wide-area-networks-%E5%B9%BF%E5%9F%9F%E7%BD%91">WANs (Wide Area Networks) 广域网</a></li>
+          <li><a href="#internetworks-%E4%BA%92%E8%81%94%E7%BD%91">Internetworks 互联网</a></li>
+        </ol>
+      </li>
+      <li><a href="#network-software">Network Software</a>
+        <ol>
+          <li><a href="#protocol-hierarchies">Protocol Hierarchies</a>
+            <ol>
+              <li><a href="#why-layering">Why Layering?</a></li>
+              <li><a href="#design-issues-for-the-layers">Design Issues for the Layers</a></li>
+            </ol>
+          </li>
+          <li><a href="#connection-oriented-and-connectionless-services">Connection-Oriented and Connectionless Services</a>
+            <ol>
+              <li><a href="#connection-oriented-services">Connection-oriented Services</a></li>
+              <li><a href="#connectionless-service">Connectionless Service</a></li>
+            </ol>
+          </li>
+          <li><a href="#service-primitives-%E5%8E%9F%E5%A7%8B%E6%9C%8D%E5%8A%A1">Service Primitives 原始服务</a></li>
+        </ol>
+      </li>
+      <li><a href="#network-topologies-and-categories">Network Topologies and Categories</a>
+        <ol>
+          <li><a href="#bus-topology">Bus Topology</a></li>
+          <li><a href="#ring-topology">Ring Topology</a></li>
+          <li><a href="#star-topology">Star Topology</a></li>
+          <li><a href="#tree-topology">Tree Topology</a></li>
+          <li><a href="#mesh-topology">Mesh Topology</a></li>
+        </ol>
+      </li>
+      <li><a href="#open-system-interconnection-osi-model">Open System Interconnection (OSI) Model</a></li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "07/23/2022 10:59:03")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/yaleiyale/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        13万
+        
+          
+        
+        6千
+        958字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title">Basic Concepts</h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：2024-03-20 14:10:48 Wednesday
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        9333字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        32分
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="basic-concepts"><a class="internal-link" href="/Network/Basic-Concepts">Basic-Concepts</a></h1>
+
+<ul>
+  <li>The term <strong>telecommunication</strong> means communication <strong>at a distance</strong>.</li>
+  <li>The word data refers to information presented in whatever form is agreed upon by the parties <strong>creating and using the data</strong>.</li>
+  <li><strong>Data communications</strong> are <strong>the exchange of data between two devices</strong> via some form of transmission medium such as a wire cable.</li>
+</ul>
+
+<h2 id="data-communication-components"><strong>Data Communication Components</strong></h2>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/protocol.png" alt="Data Communication Components" /></p>
+<ul>
+  <li>Five components of data communication
+    <ul>
+      <li>Sender</li>
+      <li>Medium</li>
+      <li>Receiver</li>
+      <li>Protocol</li>
+      <li>Message</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>[!abstract]+ Network Protocol</p>
+  <ol>
+    <li>Communication node is <strong>machine</strong></li>
+    <li><strong>All communication activity</strong> in the Internet is <strong>controlled by protocols</strong></li>
+    <li>Protocols define formats, order of sending and receiving of messages, and the actions that the reception initiates</li>
+  </ol>
+</blockquote>
+
+<h2 id="data-flow"><strong>Data Flow</strong></h2>
+
+<ul>
+  <li>Simplex <em>单向</em> 单向同时只有一路信号
+    <ul>
+      <li>TV</li>
+    </ul>
+  </li>
+  <li>Half-duplex <em>半双工</em> 双向同时只有一路信号
+    <ul>
+      <li>Interphone</li>
+    </ul>
+  </li>
+  <li>Full-duplex <em>全双向</em> 双向同时有两路信号
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Dataflow.png" alt="DataFlow" /></li>
+</ul>
+
+<h2 id="fundamentals-of-data-and-signals"><strong>Fundamentals of Data and Signals</strong></h2>
+
+<h3 id="analog-versus-digital"><strong>Analog Versus Digital</strong></h3>
+
+<ul>
+  <li><strong>Analog</strong> signals are <strong>continuous</strong> electrical signals that vary in time. <em>模拟信号</em></li>
+  <li><strong>Digital</strong> signals are <strong>non-continuous</strong>. <em>数字信号</em>
+    <ul>
+      <li>They consist of <strong>pulses</strong> or <strong>digits</strong> with discrete levels or values.</li>
+      <li>The value of each pulse is constant.</li>
+      <li>Digital signals usually have two <strong>amplitude</strong> levels such as 1 or 0, HIGH or LOW.
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Signals.png" alt="Signal" /></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="advantages-of-digital-signals"><strong>Advantages of Digital Signals</strong></h3>
+
+<ol>
+  <li>Less <strong>sensitive</strong> to the <strong>interferences</strong> (e.g., noise, magnetic field) <em>对扰动不敏感</em></li>
+  <li>Easier for further <strong>processing</strong> (e.g., error correction, storage, etc.) <em>方便后续处理</em>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/NoiseSignal.png" alt="NoiseSignal" /></li>
+</ol>
+
+<h2 id="digital-encoding-schemes"><strong>Digital Encoding Schemes</strong></h2>
+
+<h3 id="transmitting-digital-data-with-digital-signals-数字信号-数字信号"><strong>Transmitting digital data with digital signals</strong> <em>数字信号-&gt;数字信号</em></h3>
+
+<ul>
+  <li><strong>Non-return to zero digital encoding scheme</strong> <em>不归零数字编码方案</em>
+    <ul>
+      <li>‘1’ bit is sent as a high value and ‘0’ bit is sent as a low value.</li>
+      <li>The receiver may <strong>lose synchronization</strong> because the data may contain long runs of consecutive bits with the same value <strong>[no changes in voltage]</strong>.</li>
+    </ul>
+  </li>
+  <li><strong>Manchester digital encoding scheme</strong>  <em>曼彻斯特数字编码方案</em>
+    <ul>
+      <li>The digital data is represented as: ‘0’ bit by a voltage from low to high; ‘1’ bit by a voltage from high to low.</li>
+      <li>Manchester encoding is a synchronous clock encoding technique to encode the clock and data of a synchronous bit stream.</li>
+      <li>数字数据表示为:“0”位由电压由低到高; “1”位由电压由高到低。 曼切斯特编码是一种同步时钟编码技术，用于对同步比特流的时钟和数据进行编码。</li>
+      <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/EncodingScheme/Manchester.png" alt="Manchester" /></li>
+      <li><code class="language-plaintext highlighter-rouge">Efficiency : 50%</code></li>
+    </ul>
+  </li>
+  <li><strong>4B/5B digital encoding scheme</strong>
+    <ul>
+      <li>It produces a signal for a group of bits each time, rather than outputting a signal for each individual bit.</li>
+      <li>Each time, a 4-bit input data (16 different bit patterns) is encoded as a 5-bit data (32 different bit patterns).</li>
+      <li>By carefully choosing the 5-bit patterns which always contain two ‘1’s even if the input data is all ‘0’s, the clock synchronizations can be achieved.</li>
+      <li>它每次为一组位产生信号，而不是为每个单独的位输出信号。 每次，4位输入数据(16种不同的位模式)被编码为5位数据(32种不同的位模式)。 通过仔细选择总是包含两个’1’的5位模式，即使输入数据都是’0’，也可以实现时钟同步。</li>
+      <li><code class="language-plaintext highlighter-rouge">Efficiency : 80%</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="transmitting-digital-data-with-analog-signals-数字信号-模拟信号"><strong>Transmitting digital data with analog signals</strong> <em>数字信号-&gt;模拟信号</em></h3>
+
+<ul>
+  <li><strong>AM - Amplitude Modulation</strong>  <em>调幅</em>
+    <ul>
+      <li>Carrier<strong>载波</strong></li>
+      <li>On/Off 机械的表达
+        <ul>
+          <li>Presence of the carrier:1</li>
+          <li>Absence (or no carrier) :0</li>
+        </ul>
+      </li>
+      <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/AM.png" alt="AM" /></li>
+    </ul>
+  </li>
+  <li><strong>FM - Frequency Modulation</strong> <em>调频</em>
+    <ul>
+      <li>A 0 is represented by the original <strong>carrier frequency</strong></li>
+      <li>A 1 by a much <strong>higher frequency</strong> (the cycles are spaced closer together).</li>
+      <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/FM.png" alt="FM" /></li>
+      <li>Frequency Modulation modifies the frequency of the carrier to represent the 1s or 0s. <em>操纵频率表示0/1</em></li>
+    </ul>
+  </li>
+  <li><strong>PM - Phase Modulation</strong> <em>调相</em>
+    <ul>
+      <li>载波相位在每次出现1位时切换，但在0位时不受影响。</li>
+      <li>这些位被定时以符合特定的载波周期数。</li>
+      <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/PM.png" alt="PM" /></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="convert-analog-signal-to-digital-signal--模拟信号-数字信号"><strong>Convert Analog Signal to Digital Signal</strong>  <em>模拟信号-&gt;数字信号</em></h3>
+
+<ul>
+  <li><strong>Pulse Coding Modulation</strong> 脉冲编码调制
+    <ol>
+      <li>Sampling 采样
+        <ul>
+          <li>是模拟-数字转换过程中的第一步，涉及按照特定的时间间隔（采样率）测量连续模拟信号的瞬时值。采样率必须至少是信号中最高频率的两倍，这是根据奈奎斯特定理来决定的，以确保信号可以被无失真地重建。</li>
+        </ul>
+      </li>
+      <li>Quantitation  量化
+        <ul>
+          <li>采样后的步骤是量化，这个过程涉及将每个采样点的模拟值映射到最接近的数字级别。量化步骤确定了信号的数字表示可以取的不同值的数量。在图像中，量化被表示为一系列的水平线，每一条线对应一个量化级别。每个采样值被”量化”到最接近的这些水平线上。在量化过程中，采样值是用比特数表示的，而这个比特数（8位到24位）决定了可能的量化级别的数量，也就是量化精度。</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/ConvertSignals.png" alt="Convert Signal" /></li>
+  <li>PCM samples the signal from 8 to 192 thousand times per second; each sample is represented by 8 to 24 bits.</li>
+</ul>
+
+<h2 id="capacity-of-communication-channel"><strong>Capacity of Communication Channel</strong></h2>
+
+<ul>
+  <li>$Nyquist’s\ Theorem$</li>
+  <li>Assumption: noise free in the channel</li>
+  <li>Formula: \(B=2F(log_2M)=\frac{2log_2M}{T}=\frac{2}{T}(When\ M=2)\)
+    <ul>
+      <li>B = Bit Rate (bit/sec)</li>
+      <li>F = Channel Bandwidth in Hertz</li>
+      <li>M = Number of levels in a signal (two for binary)</li>
+    </ul>
+  </li>
+  <li>$Shannon’s Theorem$</li>
+  <li>In reality, the signal may be corrupted by electrical noise.</li>
+  <li>Formula: \(B = F[log_2(1+\frac{S}{N})]\)
+    <ul>
+      <li>B = Actual Bit Rate (bit/sec)</li>
+      <li>F = Channel Bandwidth in Hertz</li>
+      <li>S = Signal Power in watts</li>
+      <li>N = Noise Power in watts</li>
+    </ul>
+  </li>
+  <li>$Signal-to-Noise\ Radio$
+\(SNR_{dB}= 10\ log_{10}{\frac{S}{N}}\)
+\(SNR=10^{\frac{SNR_{db}}{10}}\)</li>
+</ul>
+
+<h2 id="computer-networks"><strong>Computer Networks</strong></h2>
+
+<ul>
+  <li><strong>A network is a set of devices(often referred to as nodes) connected by communication links.</strong></li>
+  <li>A node can be a <strong>computer, printer, or any other device</strong> capable of sending and/or receiving data generated by other nodes on the network.</li>
+</ul>
+
+<h2 id="network-hardware"><strong>Network Hardware</strong></h2>
+
+<ul>
+  <li>The computer networks can classified as the following <em>4 categories</em>
+    <ul>
+      <li><strong>Local loop</strong></li>
+      <li><strong>LANs</strong></li>
+      <li><strong>MANs</strong></li>
+      <li><strong>WANs</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="local-loop-本地回路"><strong>Local Loop</strong> <em>本地回路</em></h3>
+
+<ul>
+  <li>It refers to the “last mile” of analog phone line that goes from the Exchange Centre to your house. <em>指从交换中心到您家的 “最后一英里 “模拟电话线。</em>
+    <ul>
+      <li>Voice lines <em>话频线路</em></li>
+      <li>Modem (56 kbps) <em>调制解调器</em></li>
+      <li>ISDN (Integrated Services Digital Network): 2 x 64 kbps digital lines</li>
+      <li>ADSL (Asymmetrical Digital Subscriber Line): up to 8 Mbps</li>
+      <li>Cable Modems (up to 30 Mbps)  <em>电缆调制解调器</em></li>
+      <li>Network cable</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="local-area-networks-lans-局域网"><strong>Local Area Networks (LANs)</strong> <em>局域网</em></h3>
+
+<ul>
+  <li>LANs are privately-owned networks within <em>a single building or campus</em> of up to a few kilometers in size.</li>
+  <li>LANs run at speeds of <strong>10Mbps to 10Gbps</strong>, have low delay, and <strong>make very few errors</strong>.</li>
+  <li>The <strong>topologies</strong> *拓扑 *of LANs are various: Bus, Ring, Star, etc.</li>
+</ul>
+
+<h3 id="mans-metropolitan-area-network-城域网"><strong>MANs (Metropolitan Area Network)</strong> <em>城域网</em></h3>
+
+<ul>
+  <li>MANs are networks that connect LANs together within a city.
+    <ul>
+      <li>Example: Cable television network</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="wans-wide-area-networks-广域网"><strong>WANs (Wide Area Networks)</strong> <em>广域网</em></h3>
+
+<ul>
+  <li>WANs connect LANs together between cities.</li>
+  <li>A WAN spans a large geographical area, often a country or continent.</li>
+</ul>
+
+<h3 id="internetworks-互联网"><strong>Internetworks</strong> <em>互联网</em></h3>
+
+<ul>
+  <li>Many networks exists in the world with different hardware and software;</li>
+  <li>To communicate, it is better to connect different networks together.</li>
+  <li>A collection of interconnected networks is called an internetwork or internet (which is used in a generic sense, in contrast to the worldwide Internet).</li>
+</ul>
+
+<h2 id="network-software"><strong>Network Software</strong></h2>
+
+<h3 id="protocol-hierarchies"><strong>Protocol Hierarchies</strong></h3>
+
+<p>Networks are recognized as a stack of <strong>layers</strong> or <strong>levels</strong>, each one built upon the one below it.</p>
+
+<ul>
+  <li>Each layer offers <strong>certain service</strong>s to the higher layers, <em>shielding those layers from the details of how the offered services are implemented.</em></li>
+  <li>Between each pair of adjacent layers is an interface. The interface defines which primitives operations and services the lower layer makes available to the upper one.<em>每一对相邻层之间都有一个接口。接口定义了下层向上层提供哪些基本操作和服务。</em></li>
+</ul>
+
+<h4 id="why-layering"><strong>Why Layering?</strong></h4>
+
+<p>Management of complex systems:</p>
+<ul>
+  <li>Modularization simplifies
+    <ul>
+      <li>Design</li>
+      <li>Maintenance</li>
+      <li>Updating of a system</li>
+    </ul>
+  </li>
+  <li>Explicit structure allows
+    <ul>
+      <li>Identification of the individual parts</li>
+      <li>Relations among them</li>
+    </ul>
+  </li>
+  <li>Clear structure: layering
+    <ul>
+      <li>Layered reference model</li>
+      <li>Goal: different implementation of one layer fit with all implementations of other layers</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="design-issues-for-the-layers"><strong>Design Issues for the Layers</strong></h4>
+
+<ul>
+  <li><strong>Addressing</strong>: Every layer needs a mechanism for identifying senders and receivers.</li>
+  <li><strong>Rules of data transfer</strong>: simplex or duplex, no. of channels</li>
+  <li><strong>Error control</strong>: Both sender and receiver must agree on some sort of error-detecting and error-correcting codes.</li>
+  <li><strong>Sequence</strong>: The protocol must provide solution for receiver to reassemble the messages properly.</li>
+  <li><strong>Flow control</strong>: The protocol should provide a mechanism for sender and receiver to regulate the transmission rate.</li>
+  <li><strong>Routing</strong>: A mechanism must be provided to choose a route when there are multiple paths between source and destination.</li>
+</ul>
+
+<h3 id="connection-oriented-and-connectionless-services"><strong>Connection-Oriented and Connectionless Services</strong></h3>
+
+<h4 id="connection-oriented-services"><strong>Connection-oriented Services</strong></h4>
+
+<ul>
+  <li><strong>To establish a connection</strong>, the <em>sender</em>, <em>receiver</em> and <em>the subnet</em> conduct a <strong>negotiation</strong> about parameters to be used, such as <em>maximum message size</em>, <em>quality of service required</em>, etc.
+    <ul>
+      <li>The <strong>Quality of Service</strong> can be characterized in terms of Data Loss Rate, Delay Jitter, Data Rate, etc.</li>
+      <li>Application Example: File transfer</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="connectionless-service"><strong>Connectionless Service</strong></h4>
+
+<ul>
+  <li>Each message carries the <em>full destination address</em>, and each one is <strong>routed through the system independent of all the others</strong>.</li>
+  <li><strong>No negotiation</strong> is needed between <em>sender</em> and <em>receiver</em>.</li>
+</ul>
+
+<h3 id="service-primitives-原始服务"><strong>Service Primitives</strong> <em>原始服务</em></h3>
+
+<p>A service is formally specified by a set of primitives (operations) available to a user process to access the service. These primitives tell the service to perform some action or report on an action taken by a peer entity.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Primitives</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LISTEN</td>
+      <td>Block waiting for an incoming connection</td>
+    </tr>
+    <tr>
+      <td>CONNECT</td>
+      <td>Establish a connection with a waiting peer</td>
+    </tr>
+    <tr>
+      <td>RECEIVE</td>
+      <td>Block waiting for an incoming message</td>
+    </tr>
+    <tr>
+      <td>SEND</td>
+      <td>Send a message to the peer</td>
+    </tr>
+    <tr>
+      <td>DISCONNECT</td>
+      <td>Terminate a connection</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="network-topologies-and-categories"><strong>Network Topologies and Categories</strong></h2>
+
+<ul>
+  <li>Network Topology refers to the layout of a network.</li>
+  <li>Different configurations of network cable, computers and devices form different topologies.
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Topology.png" alt="Topology" /></li>
+</ul>
+
+<h3 id="bus-topology"><strong>Bus Topology</strong></h3>
+
+<ul>
+  <li>Bus topology: All devices are connected to a common backbone.</li>
+  <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Topology/Bus.png" alt="Bus" /></li>
+  <li><strong>Advantages</strong>
+    <ul>
+      <li>Easy to connect a computer or peripheral to a linear bus. <em>方便连接</em></li>
+      <li>Requires less cable length than a star topology. <em>耗材少</em></li>
+    </ul>
+  </li>
+  <li><strong>Disadvantages</strong>
+    <ul>
+      <li>Entire network shuts down if there is a break in the main cable. <em>不可靠</em></li>
+      <li>Terminators are required at both ends of the backbone cable.</li>
+      <li>Difficult to identify the problem if the entire network shuts down. o Not meant to be used as a stand-alone solution in a large building.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="ring-topology"><strong>Ring Topology</strong></h3>
+
+<ul>
+  <li>Ring topology
+    <ul>
+      <li>In a ring network, every device has exactly two neighbors for communication purposes <em>管理复杂</em></li>
+    </ul>
+  </li>
+  <li>All messages travel through a ring in the same direction (either “clockwise” or “counterclockwise”)</li>
+  <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Topology/Ring.png" alt="Ring" /></li>
+</ul>
+
+<h3 id="star-topology"><strong>Star Topology</strong></h3>
+
+<ul>
+  <li>Star topology
+    <ul>
+      <li>A star topology is designed with each node (file server, workstations, and peripherals) connected directly to a central network hub or concentrator.</li>
+      <li>Data on a star network passes through the hub or concentrator before continuing to its destination.</li>
+      <li>The hub or concentrator manages and controls all functions of the network.</li>
+      <li>It also acts as a repeater for the data flow.</li>
+    </ul>
+  </li>
+  <li><strong>Advantages</strong> <em>Current-connections</em>
+    <ul>
+      <li>Easy to install and wire.</li>
+      <li>No disruptions to the network then connecting or removing devices.</li>
+      <li>Easy to detect faults and to remove parts.</li>
+    </ul>
+  </li>
+  <li><strong>Disadvantages</strong>
+    <ul>
+      <li>Requires more cable length than a linear topology.</li>
+      <li>If the hub or concentrator fails, nodes attached are disabled.</li>
+      <li>More expensive than linear bus topologies because of the cost of the concentrators.</li>
+    </ul>
+  </li>
+  <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Topology/Star.png" alt="Star" /></li>
+</ul>
+
+<h3 id="tree-topology"><strong>Tree Topology</strong></h3>
+
+<ul>
+  <li>A tree topology <strong>combines</strong> characteristics of <em>star</em> and linear <em>bus</em> topologies.</li>
+  <li>Tree topologies <strong>allow for the expansion of an existing network</strong>.
+    <ul>
+      <li>For example, enabling schools to configure a network for labs.</li>
+    </ul>
+  </li>
+  <li>Advantages
+    <ul>
+      <li>Point-to-point wiring for individual segments.</li>
+      <li>Supported by several hardware and software venders.</li>
+    </ul>
+  </li>
+  <li>Disadvantages
+    <ul>
+      <li>Overall length of each segment is limited by the type of cabling used.</li>
+      <li>If the backbone line breaks, the entire segment goes down.</li>
+      <li>More difficult to configure and wire than other topologies.</li>
+    </ul>
+  </li>
+  <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Topology/Tree.png" alt="Tree" /></li>
+</ul>
+
+<h3 id="mesh-topology"><strong>Mesh Topology</strong></h3>
+
+<ul>
+  <li>A Mesh topology consists of a network where every device on the network is physically connected to every other device on the network.</li>
+  <li>Advantages
+    <ul>
+      <li>It provides a great deal of performance and reliability.</li>
+    </ul>
+  </li>
+  <li>Disadvantages
+    <ul>
+      <li>However the complexity and difficulty of creating one increases geometrically as the number of nodes on the network increases.</li>
+    </ul>
+  </li>
+  <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Topology/Mesh.png" alt="Mesh" /></li>
+</ul>
+
+<h2 id="open-system-interconnection-osi-model"><strong>Open System Interconnection (OSI) Model</strong></h2>
+
+<ul>
+  <li>Open System Interconnection (OSI) Model has seven layers.
+    <ul>
+      <li><em>Physical Layer</em></li>
+      <li><em>Data Link Layer</em></li>
+      <li><em>Network Layer</em></li>
+      <li><em>Transport Layer</em></li>
+      <li><em>Session Layer</em></li>
+      <li><em>Presentation Layer</em></li>
+      <li><em>Application Layer</em></li>
+    </ul>
+  </li>
+  <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/OSI.png" alt="OSI" /></li>
+  <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/OSI_Exchange.png" alt="OSI" /></li>
+</ul>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/Network/Basic-Concepts">Basic Concepts</a><br>
+                    <!-- <div style="font-size: 0.9em">[[Basic-Concepts]]
+</div> -->
+                </div>
+                
+            </div>
+            
+        </side>
+    </div>
+</div>
+<a id = "coffee" href="/merger"> <img  src="https://i.imgur.com/lEvIedR.png" alt="BuyMeACoffee" width="180"> </a>
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
+/>
+<style>
+  .pio-container{
+    -webkit-transition: transform .3s ease-in-out;
+               transition: transform .3s ease-in-out;
+  }
+  @media only print {
+    .pio-container {
+      display: none;
+    }
+  }
+ .layout-reverse #sidebar-checkbox:checked~.pio-container {
+     -webkit-transform: translateX(-14rem);
+        -ms-transform: translateX(-14rem);
+              transform: translateX(-14rem);
+   }
+</style>
+<script
+  async="async"
+  src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
+  onload='
+  fetch("https://v1.hitokoto.cn")
+  .then(response=>response.json())
+  .then(data=>{var helloword=data.hitokoto;
+  var pio_container=document.createElement("div");
+  pio_container.classList.add("pio-container");
+  pio_container.classList.add("right");
+  pio_container.style.bottom="-2rem";
+  pio_container.style.zIndex="1";
+  document.body.insertAdjacentElement("beforeend",pio_container);
+  let pio_action=document.createElement("div");
+  pio_action.classList.add("pio-action");
+  pio_container.insertAdjacentElement("beforeend",pio_action);
+  let pio_canvas=document.createElement("canvas");
+  pio_canvas.id="pio";
+  pio_canvas.style.width="14rem";
+  pio_canvas.width="600";
+  pio_canvas.height="800";
+  pio_container.insertAdjacentElement("beforeend",pio_canvas);
+  let pio = new Paul_Pio({
+    "mode":"fixed",
+    "hidden":true,
+    "night":"for(let i=7;i<16;++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break}",
+    "content":{
+      "link":["https://github.com/yaleiyale/obsidian-jekyll-blog"],
+      "skin":["要换成我的朋友吗？","让她放个假吧~"],
+      "hidden":true,
+      "welcome":helloword,
+      "touch":helloword,
+      "referer":"你通过 %t 来到了这里",
+      "custom":[
+        {"selector":"a","type":"link"},
+        {"selector":"#coffee","text":"打赏要理性哦😻~"},
+        {"selector":"img","text":"点下看看吧🔍~"},
+        {"selector":".wl-reaction","text":"我来要赞咯🌟"},
+        {"selector":".wl-comment","text":"文明发言，不然会被🚫哦~"},
+        {"selector":".highlight","text":"代码可以一键复制呢🔖~"},
+        {"selector":".sidebar-toggle","text":"打开侧边栏叭🗂️~"},
+        {"selector":".effect-info","text":"哇，你发现了什么❗"},
+        {"selector":"#sidebar-search-input","text":"想搜索什么呢❓"},
+        {"selector":"#toc","text":"这是目录~"},
+        {"selector":".page-title","text":"这是标题~"}]
+        },
+    "model":[
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/umaru/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/koharu/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/rem/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/kurumi/model.json"]
+        })}).catch(console.error);'
+></script>
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.css"
+/>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
+></script>
+<script type="text/javascript">
+  var content = document.querySelector(".wrapper");
+   if (content) {
+     var list = content.querySelectorAll("img");
+     if (list) {
+      var imgCount = list.length;
+      var imgNow;
+      var viewer = [];
+      if (imgCount > 0) {
+         for (var i = 0; i < imgCount - 1; i++) //去除末尾咖啡
+         {
+           imgNow = list[i];
+          //console.log(imgNow.src);
+          viewer[i - 1] = new Viewer(imgNow);
+         }
+      }
+     }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+
