@@ -4,8 +4,8 @@ Title: "[[NJU-OS-PA0]]"
 Author:
   - AllenYGY
 tags:
-  - NOTE
   - OS
+  - NOTE
   - GNU/Linux
   - Debian
   - NJU

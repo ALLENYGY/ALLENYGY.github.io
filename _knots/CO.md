@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 聚点
-date: 2022-10-22 21:48:33 +0800,周四
-lastmod: 2022-10-22 22:06:07 +0800,周四
-permalink: /roots
+title: 计算机组成原理
+date: 2024-03-20
+lastmod: 2024-03-20
+permalink: /OS
 jekyll-theme-ObJekyll:
   default:
     sidebar:
@@ -14,7 +14,7 @@ jekyll-theme-ObJekyll:
 ---
 
 {% for tag in site.tags%}
-{% if tag[0] == "rootnote" %}
+{% if tag[0] == "CO" %}
 {% assign sorted-posts = tag[1] | sort: 'date'|reverse %}
 {% break %}
 {% endif %}

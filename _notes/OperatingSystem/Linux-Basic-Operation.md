@@ -4,6 +4,7 @@ Title: "[[Linux-Basic-Operation]]"
 Author:
   - AllenYGY
 tags:
+  - OS 
   - NOTE
   - Linux
   - Basic

@@ -3,8 +3,8 @@ Create Time: 8th March 2024
 Title: "[[OS-Operating-System-Structure]]"
 status: DONE
 tags:
-  - NOTE
   - OS
+  - NOTE
   - Lec2
 archived: true
 Author:

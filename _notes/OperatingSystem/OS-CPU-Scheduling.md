@@ -3,8 +3,8 @@ Create Time: 19th March 2024
 Title: "[[OS-CPU-Scheduling]]"
 status: UNFINISHED
 tags:
-  - NOTE
   - OS
+  - NOTE
   - Lec5
   - UIC
 Author:
@@ -12,5 +12,3 @@ Author:
 ---
 
 # [[OS-CPU-Scheduling]]
-
-
