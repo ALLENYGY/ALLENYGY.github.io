@@ -3,8 +3,8 @@ include: #以`.`开头的文件、文件夹默认忽略
   - .nojekyll
 exclude:
   - _includes/notes_graph.json
-  - NOTE/Obsidian/Templaters
-  - NOTE/.trash
+  - _notes/Obsidian/Templaters
+  - _notes/.trash
   # - _notes/cedict_ts.u8
 description: | # 头像背后的信息（html格式）
   <br>
@@ -41,7 +41,7 @@ collections:
     permalink: "/:path"
 defaults:
   - scope:
-      path: NOTE/**/*.md
+      path: _notes/**/*.md
     values:
       layout: post
   - scope:
