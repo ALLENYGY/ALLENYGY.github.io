@@ -24,7 +24,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
           token: ${{ secrets.ACCESS_TOKEN }} # github token
-          repository-name: yaleiyale/obsidian-jekyll-blog # target repo
+          repository-name: ALLENYGY/ALLENYGY.github.io # target repo
           branch: gh-pages
           folder: _site
           clean: true
