@@ -301,6 +301,7 @@ Vue中有2种数据绑定的方式：
 ```html
 <input type="checkbox"/>
 ```
+
 1. 没有配置input的value属性，那么收集的就是checked（勾选 or 未勾选，是布尔值）
 2. 配置input的value属性:
     1. v-model的初始值是非数组，那么收集的就是checked（勾选 or 未勾选，是布尔值）
@@ -352,6 +353,7 @@ v-show : 条件渲染 (动态控制节点是否展示)
 > [!info]+ v-cloak指令（没有值）
 >1. 本质是一个特殊属性，Vue实例创建完毕并接管容器后，会删掉v-cloak属性。
 >2. 使用css配合v-cloak可以解决网速慢时页面展示出{{xxx}}的问题。
+
 >```html
 ><style>
 >	[v-cloak]{

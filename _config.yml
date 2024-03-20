@@ -5,6 +5,10 @@ exclude:
   - _includes/notes_graph.json
   - _notes/Obsidian/Templaters
   - _notes/.trash
+  - _notes/.git
+  - _notes/.github
+  - _notes/Web/Vue
+
   # - _notes/cedict_ts.u8
 description: | # 头像背后的信息（html格式）
   <br>
@@ -41,6 +45,7 @@ collections:
     permalink: "/:path"
 defaults:
   - scope:
+      # path: NOTE/**/*.md
       path: _notes/**/*.md
     values:
       layout: post
@@ -87,14 +92,14 @@ defaults:
                 href: /ProgramLanguage
               - title: <i class="fa-solid fa-database fa-fw"></i> 数据库
                 href: /DBM
-              - title: <i class="fa-solid fa-link fa-fw"></i> 友链
-                href: /links
               - title: <i class="fa-solid fa-archive fa-fw"></i> 归档
                 href: /archive
               - title: <i class="fa-solid fa-tags fa-fw"></i> 标签
                 href: /tags
               - title: <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
                 href: /map
+              - title: <i class="fa-solid fa-link fa-fw"></i> 友链
+                href: /links
               # - title: <i class="fa-solid fa-coffee fa-fw"></i> 打赏
                 # href: /merger
             simple_jekyll_search: # 侧边栏的全站搜索
