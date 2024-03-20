@@ -21,7 +21,7 @@ WHERE contains(tags,"README")
 
 ## [[CO/README|Computer Organization]]
 
-## [[Contest/Overview|Contest Overview]]
+## [[Overview|Contest Overview]]
 
 ## [[DataAnalysis/README|Data Analysis]]
 
