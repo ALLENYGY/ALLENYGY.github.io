@@ -1,0 +1,17 @@
+{
+  "Blue-Topaz-Codebox-Highlight@@code-theme-selection": "code-theme-bt-default",
+  "blue-topaz-theme@@transparent-setting-panel": false,
+  "Blue-Topaz-Codebox-Highlight@@remove-language-type": false,
+  "Blue-Topaz-Codebox-Highlight@@blur-codebox-frosted-glass": 8,
+  "blue-topaz-theme@@font-monospace-theme": "'JetBrains Mono NL' ,Consolas, Monaco, '等距更纱黑体 SC', 'Source Han Mono', 'Microsoft Yahei Mono', 'Segoe UI Emoji', 'Microsoft YaHei', 'Source Code Pro', monospace",
+  "blue-topaz-theme@@font-family-change-to-default": false,
+  "blue-topaz-theme@@font-text-theme": "MiSans, 'JetBrains Mono NL' ,Consolas, Monaco, '等距更纱黑体 SC', 'Source Han Mono', 'Microsoft Yahei Mono', 'Segoe UI Emoji', 'Microsoft YaHei', 'Source Code Pro', monospace",
+  "blue-topaz-theme@@font-family-folder-file-title": "MiSans, ,'JetBrains Mono NL' ,Consolas, Monaco, '等距更纱黑体 SC', 'Source Han Mono', 'Microsoft Yahei Mono', 'Segoe UI Emoji', 'Microsoft YaHei', 'Source Code Pro', monospace",
+  "blue-topaz-theme@@color-scheme-options": "color-scheme-options-default",
+  "blue-topaz-theme@@toggle-bg-panel-page": false,
+  "blue-topaz-theme@@font-family-vault": "MiSans, ,'JetBrains Mono NL' ,Consolas, Monaco, '等距更纱黑体 SC', 'Source Han Mono', 'Microsoft Yahei Mono', 'Segoe UI Emoji', 'Microsoft YaHei', 'Source Code Pro', monospace",
+  "blue-topaz-theme@@dark-background-file": false,
+  "blue-topaz-theme@@folder-icons": false,
+  "blue-topaz-theme@@remove-arrow": true,
+  "blue-topaz-theme@@folder-style-change-options-colorful": "folder-style-change-options-colorful-default"
+}

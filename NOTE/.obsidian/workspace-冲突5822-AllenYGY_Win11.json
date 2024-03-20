@@ -1,0 +1,263 @@
+{
+  "main": {
+    "id": "a247fd9f4a0a5a13",
+    "type": "split",
+    "children": [
+      {
+        "id": "95545b32693351a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f27c20f332bea30c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Record/Internship/2024-03-03.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "27b259a965fae503",
+    "type": "split",
+    "children": [
+      {
+        "id": "495c8c7a1284cb04",
+        "type": "tabs",
+        "dimension": 62.182203389830505,
+        "children": [
+          {
+            "id": "2149ca7f56dd2153",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b64f70998bedd5d2",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "9829e94760d0295d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f53be0967197f08e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "824097adea2c27af",
+        "type": "tabs",
+        "dimension": 37.81779661016949,
+        "children": [
+          {
+            "id": "87552f0863fb7569",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "9deccb9f44f6b388",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "873467c0bf5b8b6c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 346.5
+  },
+  "right": {
+    "id": "6c77faef2551f814",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b1497b05aa93b43",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "231feee7442a7a77",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Record/Internship/2024-03-03.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "84ee7b2541e777ed",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ffbb5374fe8bcab4",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "8147753539adc6c4",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "3d972d6edf2ff9a2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Record/Internship/2024-03-03.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a4e146fc81fa544c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Record/Internship/2024-03-03.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 359.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "templates:Insert template": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "daily-notes:Open today's daily note": false,
+      "obsidian-tts:Text to Speech": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templater-obsidian:Templater": false,
+      "homepage:Open homepage": false
+    }
+  },
+  "active": "f27c20f332bea30c",
+  "lastOpenFiles": [
+    "Record/Daily/2024-03-03.md",
+    "Record/Internship/2024-03-03.md",
+    "Record/Daily/2024-03-03-冲突-AllenYGY_Win11.md",
+    "Home.md",
+    "Record/Internship",
+    "FixIncome/FixedIncomeOverview.md",
+    "Network/BasicConcepts.md",
+    "Math/LinearAlgebra/Chapter1.md",
+    "DeepLearning",
+    "Record/Daily/2024-03-01.md",
+    "Algorithm/DAA/Divide&Conquer.md",
+    "-冲突-AllenYGY_Win11.gitignore",
+    "conflict-files-obsidian-git.md",
+    "FixIncome",
+    "Untitled.md",
+    "Resume/JunyaYang.pdf",
+    "Resume/JunyaYang_photo.pdf",
+    "Resume/JunyaYang_CN.pdf",
+    "OperatingSystem/NJU-OS-PA0.md",
+    "OperatingSystem/Linux-Basic-Operation.md",
+    "Algorithm/DAA/Union-Find.md",
+    "Record/Daily/2024-02-27.md",
+    "Tools/Git/Git-Remote-Repository.md",
+    "Tools/Git/Git-Introduction.md",
+    "Tools/Git/Git-Workflow-Model.md",
+    "Tools/Git/Git-For-Beginners.md",
+    "Resume/MyResume.md",
+    "Record/Weekly/2024-W09.md",
+    "Obsidian/Templaters/Lanqiao.md",
+    "Record/Weekly/2024-W08.md",
+    "Obsidian/Templaters/Weekly.md",
+    "Obsidian/Templaters/Daily.md",
+    "Network/USTC-L1.md",
+    "Pasted image 20240225145010.png",
+    "Resume/JunyaYANG_CN.pdf",
+    "Obsidian/Obsidian-Git",
+    "nerd-fonts",
+    "Pasted image 20240221022754.png",
+    "Pasted image 20240220192732.png",
+    "Pasted image 20240219235618.png",
+    "Pasted image 20240209174539.png",
+    "Pasted image 20240209173754.png",
+    "Pasted image 20240206223316.png",
+    "Untitled.canvas",
+    "Pasted image 20240122210249.png",
+    "Pasted image 20240122175941.png",
+    "Pasted image 20240122175501.png"
+  ]
+}

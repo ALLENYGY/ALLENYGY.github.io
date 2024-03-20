@@ -1,0 +1,68 @@
+1.
+SELECT title
+FROM film
+    JOIN film_actor USING (film_id)
+    JOIN actor USING (actor_id)
+WHERE
+    first_name = 'Zero'
+    AND last_name = 'Cage'
+
+
+2.
+SELECT film.title
+FROM film
+    JOIN inventory ON inventory.film_id = film.film_id
+    JOIN rental ON rental.inventory_id = inventory.inventory_id
+    JOIN customer ON customer.customer_id = rental.customer_id
+WHERE
+    customer.first_name = 'George'
+    AND customer.last_name = 'Linton'
+
+3.
+SELECT
+    customer.first_name,
+    customer.last_name
+FROM category
+    JOIN film_category USING(category_id)
+    JOIN inventory USING(film_id)
+    JOIN rental USING(inventory_id)
+    JOIN customer USING (customer_id)
+WHERE category.name = 'action'
+
+4.
+SELECT
+    customer.first_name,
+    customer.last_name
+FROM country
+    JOIN city ON country.country_id = city.country_id
+    JOIN address USING(city_id)
+    JOIN customer USING(address_id)
+    JOIN rental USING (customer_id)
+    JOIN inventory USING(inventory_id)
+    JOIN film USING (film_id)
+    JOIN language USING (language_id)
+WHERE
+    country.country = 'China'
+    AND language.name = 'Japanese'
+
+5.
+SELECT
+    DISTINCT c1.first_name,
+    c1.last_name,
+    c2.first_name,
+    c2.last_name
+FROM rental AS r1
+    JOIN rental AS r2 USING (inventory_id)
+    JOIN customer AS c1 ON r1.customer_id = c1.customer_id
+    JOIN customer AS c2 ON r2.customer_id = c2.customer_id
+    JOIN inventory AS i ON i.inventory_id = r1.inventory_id
+    JOIN film AS f USING (film_id)
+WHERE r1.rental_id <> r2.rental_id
+
+6.
+SELECT title
+FROM customer
+LEFT JOIN rental USING (customer_id)
+LEFT JOIN inventory USING (inventory_id)
+LEFT JOIN film USING (film_id) 
+

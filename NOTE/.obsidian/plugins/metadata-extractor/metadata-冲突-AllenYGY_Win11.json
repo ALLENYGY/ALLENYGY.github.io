@@ -1,0 +1,8608 @@
+[
+  {
+    "fileName": "WorkView",
+    "relativePath": "WorkView.md",
+    "headings": [
+      {
+        "heading": "WorkView",
+        "level": 1
+      },
+      {
+        "heading": "Create Note",
+        "level": 2
+      },
+      {
+        "heading": "Modify Note",
+        "level": 2
+      },
+      {
+        "heading": "Navigate",
+        "level": 2
+      },
+      {
+        "heading": "[[CO/README|Computer Organization]]",
+        "level": 2
+      },
+      {
+        "heading": "[[Contest/Overview|Contest Overview]]",
+        "level": 2
+      },
+      {
+        "heading": "[[DataAnalysis/README|Data Analysis]]",
+        "level": 2
+      },
+      {
+        "heading": "[[DBM/README|Database Management System]]",
+        "level": 2
+      },
+      {
+        "heading": "[[ProgramLanguage/README|Program Language]]",
+        "level": 2
+      },
+      {
+        "heading": "[[Math/README|Mathematics ]]",
+        "level": 2
+      },
+      {
+        "heading": "[[ProgramLanguage/Tools/README|Tools ]]",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "README",
+        "displayText": "Computer Organization",
+        "relativePath": "CO/README.md"
+      },
+      {
+        "link": "Overview",
+        "displayText": "Contest Overview",
+        "relativePath": "Contest/Overview.md"
+      },
+      {
+        "link": "README",
+        "displayText": "Data Analysis",
+        "relativePath": "DataAnalysis/README.md"
+      },
+      {
+        "link": "README",
+        "displayText": "Database Management System",
+        "relativePath": "DBM/README.md"
+      },
+      {
+        "link": "README",
+        "displayText": "Program Language",
+        "relativePath": "ProgramLanguage/README.md"
+      },
+      {
+        "link": "README",
+        "displayText": "Mathematics",
+        "relativePath": "Math/README.md"
+      },
+      {
+        "link": "README",
+        "displayText": "Tools"
+      }
+    ]
+  },
+  {
+    "fileName": "resume-template",
+    "relativePath": "Resume/resume-template.md",
+    "headings": [
+      {
+        "heading": "个人信息",
+        "level": 2
+      },
+      {
+        "heading": "求职意向",
+        "level": 2
+      },
+      {
+        "heading": "教育经历",
+        "level": 2
+      },
+      {
+        "heading": "技能清单",
+        "level": 2
+      },
+      {
+        "heading": "工作经历/实习经历",
+        "level": 2
+      },
+      {
+        "heading": "项目经历",
+        "level": 2
+      },
+      {
+        "heading": "淘宝商城系统",
+        "level": 3
+      },
+      {
+        "heading": "荣誉奖项（可选）",
+        "level": 2
+      },
+      {
+        "heading": "开源项目（可选）",
+        "level": 2
+      },
+      {
+        "heading": "原创技术文章（可选）",
+        "level": 2
+      },
+      {
+        "heading": "校园经历（可选）",
+        "level": 2
+      },
+      {
+        "heading": "个人评价",
+        "level": 2
+      },
+      {
+        "heading": "感谢阅读",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "MyResume",
+    "relativePath": "Resume/MyResume.md",
+    "headings": [
+      {
+        "heading": "个人简历",
+        "level": 1
+      },
+      {
+        "heading": "个人信息",
+        "level": 2
+      },
+      {
+        "heading": "教育经历",
+        "level": 2
+      },
+      {
+        "heading": "技能清单",
+        "level": 2
+      },
+      {
+        "heading": "项目经历",
+        "level": 2
+      },
+      {
+        "heading": "校园项目",
+        "level": 3
+      },
+      {
+        "heading": "网页设计",
+        "level": 4
+      },
+      {
+        "heading": "数据库",
+        "level": 4
+      },
+      {
+        "heading": "荣誉奖项",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Shell",
+    "relativePath": "Tools/Shell/Shell.md",
+    "tags": [
+      "note"
+    ],
+    "frontmatter": {
+      "Create Time": "9th February 2024",
+      "Title": "[[Shell]]",
+      "Author": [
+        "AllenYGY"
+      ],
+      "theme": null
+    },
+    "headings": [
+      {
+        "heading": "[[Shell]]",
+        "level": 1
+      },
+      {
+        "heading": "**Terminal**",
+        "level": 2
+      },
+      {
+        "heading": "**Basic Operation**",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "Shell",
+        "relativePath": "Tools/Shell/Shell.md"
+      }
+    ]
+  },
+  {
+    "fileName": "README",
+    "relativePath": "Tools/README.md",
+    "tags": [
+      "readme"
+    ],
+    "frontmatter": {
+      "Title": "Tool",
+      "Author": "AllenYGY"
+    },
+    "headings": [
+      {
+        "heading": "Tools",
+        "level": 1
+      },
+      {
+        "heading": "Git",
+        "level": 2
+      },
+      {
+        "heading": "[Git Introduction](Git/Git-Introduction.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Git For Beginners](Git/Git-For-Beginners.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Git Remote Repository](Git-Remote-Repository.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Git Workflow Model](Git-Workflow-Model.md)",
+        "level": 3
+      },
+      {
+        "heading": "Docker",
+        "level": 2
+      },
+      {
+        "heading": "[Basic Docker](Docker/Docker.md)",
+        "level": 3
+      },
+      {
+        "heading": "Conda",
+        "level": 2
+      },
+      {
+        "heading": "[Conda Basic Operation](Conda/Conda.md)",
+        "level": 3
+      },
+      {
+        "heading": "Shell",
+        "level": 2
+      },
+      {
+        "heading": "[]",
+        "level": 3
+      }
+    ],
+    "links": [
+      {
+        "link": "Git-Introduction.md",
+        "displayText": "Git Introduction",
+        "relativePath": "Tools/Git/Git-Introduction.md"
+      },
+      {
+        "link": "Git-For-Beginners.md",
+        "displayText": "Git For Beginners",
+        "relativePath": "Tools/Git/Git-For-Beginners.md"
+      },
+      {
+        "link": "Git-Remote-Repository.md",
+        "displayText": "Git Remote Repository",
+        "relativePath": "Tools/Git/Git-Remote-Repository.md"
+      },
+      {
+        "link": "Git-Workflow-Model.md",
+        "displayText": "Git Workflow Model",
+        "relativePath": "Tools/Git/Git-Workflow-Model.md"
+      },
+      {
+        "link": "Docker.md",
+        "displayText": "Basic Docker",
+        "relativePath": "Tools/Docker/Docker.md"
+      },
+      {
+        "link": "Conda.md",
+        "displayText": "Conda Basic Operation",
+        "relativePath": "Tools/Conda/Conda.md"
+      }
+    ]
+  },
+  {
+    "fileName": "Git-Workflow-Model",
+    "relativePath": "Tools/Git/Git-Workflow-Model.md",
+    "headings": [
+      {
+        "heading": "Git Workflow Model",
+        "level": 1
+      },
+      {
+        "heading": "GitFlow",
+        "level": 2
+      },
+      {
+        "heading": "GitHub Flow",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Git-Workflow-Model.md",
+        "relativePath": "Tools/README.md",
+        "displayText": "Git Workflow Model"
+      }
+    ]
+  },
+  {
+    "fileName": "Git-Remote-Repository",
+    "relativePath": "Tools/Git/Git-Remote-Repository.md",
+    "headings": [
+      {
+        "heading": "Github",
+        "level": 1
+      },
+      {
+        "heading": "SSH settings",
+        "level": 2
+      },
+      {
+        "heading": "Push/ Pull",
+        "level": 2
+      },
+      {
+        "heading": "Associate Remote Repository",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Git-Remote-Repository.md",
+        "relativePath": "Tools/README.md",
+        "displayText": "Git Remote Repository"
+      }
+    ]
+  },
+  {
+    "fileName": "Git-Introduction",
+    "relativePath": "Tools/Git/Git-Introduction.md",
+    "headings": [
+      {
+        "heading": "Git Introduction",
+        "level": 1
+      },
+      {
+        "heading": "Git Workflow",
+        "level": 2
+      },
+      {
+        "heading": "Git Workspace/Staging Area/Local Repository",
+        "level": 2
+      },
+      {
+        "heading": "Git File Status",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Git-Introduction.md",
+        "relativePath": "Tools/README.md",
+        "displayText": "Git Introduction"
+      },
+      {
+        "fileName": "Git-For-Beginners",
+        "link": "Git-Introduction",
+        "relativePath": "Tools/Git/Git-For-Beginners.md",
+        "displayText": "Staging Area"
+      },
+      {
+        "fileName": "Git-For-Beginners",
+        "link": "Git-Introduction",
+        "relativePath": "Tools/Git/Git-For-Beginners.md",
+        "displayText": "Staging Area"
+      },
+      {
+        "fileName": "Git-For-Beginners",
+        "link": "Git-Introduction",
+        "relativePath": "Tools/Git/Git-For-Beginners.md",
+        "displayText": "Workspace"
+      }
+    ]
+  },
+  {
+    "fileName": "Git-For-Beginners",
+    "relativePath": "Tools/Git/Git-For-Beginners.md",
+    "headings": [
+      {
+        "heading": "Git For Beginners",
+        "level": 1
+      },
+      {
+        "heading": "**Get start**",
+        "level": 2
+      },
+      {
+        "heading": "**Configuration**",
+        "level": 2
+      },
+      {
+        "heading": "**Check File Status**",
+        "level": 2
+      },
+      {
+        "heading": "**Add** and **Commit  File** to the **Local Repository**",
+        "level": 2
+      },
+      {
+        "heading": "**View Repository Commit History**",
+        "level": 2
+      },
+      {
+        "heading": "**View File Difference**",
+        "level": 2
+      },
+      {
+        "heading": "**Reset the version**",
+        "level": 2
+      },
+      {
+        "heading": "**Remove Files**",
+        "level": 2
+      },
+      {
+        "heading": "**gitignore**",
+        "level": 2
+      },
+      {
+        "heading": "**Branch**",
+        "level": 2
+      },
+      {
+        "heading": "**Branch Conflict**",
+        "level": 2
+      },
+      {
+        "heading": "**Rebase**",
+        "level": 2
+      },
+      {
+        "heading": "**Help**",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "Git-Introduction",
+        "displayText": "Staging Area",
+        "relativePath": "Tools/Git/Git-Introduction.md"
+      },
+      {
+        "link": "Git-Introduction",
+        "displayText": "Staging Area",
+        "relativePath": "Tools/Git/Git-Introduction.md"
+      },
+      {
+        "link": "Git-Introduction",
+        "displayText": "Workspace",
+        "relativePath": "Tools/Git/Git-Introduction.md"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Git-For-Beginners.md",
+        "relativePath": "Tools/README.md",
+        "displayText": "Git For Beginners"
+      }
+    ]
+  },
+  {
+    "fileName": "Docker",
+    "relativePath": "Tools/Docker/Docker.md",
+    "headings": [
+      {
+        "heading": "Docker",
+        "level": 1
+      },
+      {
+        "heading": "Basic Concept",
+        "level": 2
+      },
+      {
+        "heading": "Client Server Architecture",
+        "level": 2
+      },
+      {
+        "heading": "Containerization **容器化** and Dockerfile",
+        "level": 2
+      },
+      {
+        "heading": "DockerFile",
+        "level": 3
+      },
+      {
+        "heading": "Docker Command",
+        "level": 2
+      },
+      {
+        "heading": "Management",
+        "level": 3
+      },
+      {
+        "heading": "Image Management",
+        "level": 4
+      },
+      {
+        "heading": "Container Management",
+        "level": 4
+      },
+      {
+        "heading": "Volume Management",
+        "level": 4
+      },
+      {
+        "heading": "Network Management",
+        "level": 4
+      },
+      {
+        "heading": "Plugin Management",
+        "level": 4
+      },
+      {
+        "heading": "Run Container",
+        "level": 3
+      },
+      {
+        "heading": "Daily Operation",
+        "level": 3
+      },
+      {
+        "heading": "Dockerfile",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Docker.md",
+        "relativePath": "Tools/README.md",
+        "displayText": "Basic Docker"
+      }
+    ]
+  },
+  {
+    "fileName": "Conda",
+    "relativePath": "Tools/Conda/Conda.md",
+    "headings": [
+      {
+        "heading": "Conda 基础操作",
+        "level": 1
+      },
+      {
+        "heading": "创建环境",
+        "level": 2
+      },
+      {
+        "heading": "切换环境",
+        "level": 2
+      },
+      {
+        "heading": "退出环境",
+        "level": 2
+      },
+      {
+        "heading": "环境列表",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Conda.md",
+        "relativePath": "Tools/README.md",
+        "displayText": "Conda Basic Operation"
+      }
+    ]
+  },
+  {
+    "fileName": "前置知识",
+    "relativePath": "Web/Vue/前置知识.md",
+    "tags": [
+      "note"
+    ],
+    "frontmatter": {
+      "Create Time": "6th February 2024",
+      "Title": "[[前置知识]]",
+      "Author": [
+        "AllenYGY"
+      ],
+      "theme": null
+    },
+    "headings": [
+      {
+        "heading": "[[前置知识]]",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "前置知识",
+        "relativePath": "Web/Vue/前置知识.md"
+      }
+    ]
+  },
+  {
+    "fileName": "VueBasic",
+    "relativePath": "Web/Vue/VueBasic.md",
+    "tags": [
+      "note",
+      "vue",
+      "web",
+      "备注"
+    ],
+    "frontmatter": {
+      "Create Time": "7th February 2024",
+      "Title": "[[VueBasic]]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[VueBasic]]",
+        "level": 1
+      },
+      {
+        "heading": "**初识Vue**",
+        "level": 2
+      },
+      {
+        "heading": "**模版语法**",
+        "level": 2
+      },
+      {
+        "heading": "**数据绑定**",
+        "level": 2
+      },
+      {
+        "heading": "**el与data的两种写法**",
+        "level": 2
+      },
+      {
+        "heading": "**MVVM 模型**",
+        "level": 2
+      },
+      {
+        "heading": "**数据代理**",
+        "level": 2
+      },
+      {
+        "heading": "**事件处理**",
+        "level": 2
+      },
+      {
+        "heading": "**事件的基本使用**",
+        "level": 3
+      },
+      {
+        "heading": "**Vue中的事件修饰符**",
+        "level": 3
+      },
+      {
+        "heading": "**键盘事件**",
+        "level": 3
+      },
+      {
+        "heading": "**计算属性**",
+        "level": 2
+      },
+      {
+        "heading": "**监视**",
+        "level": 2
+      },
+      {
+        "heading": "**监视属性 watch**",
+        "level": 2
+      },
+      {
+        "heading": "**深度监视**",
+        "level": 2
+      },
+      {
+        "heading": "**绑定样式**",
+        "level": 2
+      },
+      {
+        "heading": "**条件渲染**",
+        "level": 2
+      },
+      {
+        "heading": "**v-if**",
+        "level": 3
+      },
+      {
+        "heading": "**v-show**",
+        "level": 3
+      },
+      {
+        "heading": "**列表渲染**",
+        "level": 2
+      },
+      {
+        "heading": "**基本列表**",
+        "level": 3
+      },
+      {
+        "heading": "**key的内部原理**",
+        "level": 3
+      },
+      {
+        "heading": "**Vue监视数据**",
+        "level": 3
+      },
+      {
+        "heading": "**收集表单数据**",
+        "level": 2
+      },
+      {
+        "heading": "**text Input Type**",
+        "level": 3
+      },
+      {
+        "heading": "**radio input type**",
+        "level": 3
+      },
+      {
+        "heading": "**checkbox input type**",
+        "level": 3
+      },
+      {
+        "heading": "**过滤器**",
+        "level": 2
+      },
+      {
+        "heading": "**内置指令**",
+        "level": 2
+      },
+      {
+        "heading": "**自定义指令**",
+        "level": 2
+      },
+      {
+        "heading": "**定义语法**",
+        "level": 3
+      },
+      {
+        "heading": "**配置对象中常用的3个回调**",
+        "level": 3
+      },
+      {
+        "heading": "**生命周期**",
+        "level": 2
+      },
+      {
+        "heading": "**组件**",
+        "level": 2
+      },
+      {
+        "heading": "**Vue中使用组件的三大步骤**",
+        "level": 2
+      },
+      {
+        "heading": "**VueComponent**",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "VueBasic",
+        "relativePath": "Web/Vue/VueBasic.md"
+      }
+    ]
+  },
+  {
+    "fileName": "VueApplication",
+    "relativePath": "Web/Vue/VueApplication.md",
+    "tags": [
+      "note",
+      "vue",
+      "web"
+    ],
+    "frontmatter": {
+      "Create Time": "18th February 2024",
+      "Title": "[[VueApplication]]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[VueApplication]]",
+        "level": 1
+      },
+      {
+        "heading": "**CLI文件结构**",
+        "level": 2
+      },
+      {
+        "heading": "**关于不同版本的Vue**",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "VueApplication",
+        "relativePath": "Web/Vue/VueApplication.md"
+      }
+    ]
+  },
+  {
+    "fileName": "CSS-Introduction",
+    "relativePath": "Web/CSS/CSS-Introduction.md",
+    "tags": [
+      "note",
+      "web",
+      "css"
+    ],
+    "frontmatter": {
+      "Create Time": "30th January 2024",
+      "Title": "CSS-Introduction",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "**CSS-Introduction**",
+        "level": 1
+      },
+      {
+        "heading": "**Concept & Terms**",
+        "level": 2
+      },
+      {
+        "heading": "**Term 1**",
+        "level": 3
+      },
+      {
+        "heading": "**Term 2**",
+        "level": 3
+      },
+      {
+        "heading": "**Term 3**",
+        "level": 3
+      },
+      {
+        "heading": "**Term 4**",
+        "level": 3
+      },
+      {
+        "heading": "**Term 5**",
+        "level": 3
+      },
+      {
+        "heading": "**Term 6**",
+        "level": 3
+      },
+      {
+        "heading": "**Term 7**",
+        "level": 3
+      },
+      {
+        "heading": "**Term 8**",
+        "level": 3
+      },
+      {
+        "heading": "**Term 9**",
+        "level": 3
+      },
+      {
+        "heading": "**Term 10**",
+        "level": 3
+      },
+      {
+        "heading": "**Term 11**",
+        "level": 3
+      },
+      {
+        "heading": "**Term 12**",
+        "level": 3
+      },
+      {
+        "heading": "**Term 13**",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "2024-W05",
+        "link": "CSS-Introduction",
+        "relativePath": "Record/Weekly/2024-W05.md"
+      }
+    ]
+  },
+  {
+    "fileName": "2024",
+    "relativePath": "Record/Yearly/2024.md",
+    "tags": [
+      "yearly-record"
+    ],
+    "frontmatter": {
+      "Create Time": "2024",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "ThisYear",
+        "level": 1
+      },
+      {
+        "heading": "Consumption",
+        "level": 2
+      },
+      {
+        "heading": "E-commerce",
+        "level": 3
+      },
+      {
+        "heading": "Summary",
+        "level": 2
+      },
+      {
+        "heading": "NextYear",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "2024-W09",
+    "relativePath": "Record/Weekly/2024-W09.md",
+    "tags": [
+      "weekly-record"
+    ],
+    "frontmatter": {
+      "Create Time": "27th February 2024",
+      "Week": "2024-W09",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "ToWeek",
+        "level": 1
+      },
+      {
+        "heading": "Task List",
+        "level": 2
+      },
+      {
+        "heading": "Summary",
+        "level": 2
+      },
+      {
+        "heading": "NextWeek",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "2024-W08",
+    "relativePath": "Record/Weekly/2024-W08.md",
+    "tags": [
+      "weekly-record"
+    ],
+    "frontmatter": {
+      "Create Time": "26th February 2024",
+      "Week": "2024-W08",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "ToWeek",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 2
+      },
+      {
+        "heading": "NextWeek",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "2024-W07",
+    "relativePath": "Record/Weekly/2024-W07.md",
+    "tags": [
+      "weekly-record"
+    ],
+    "frontmatter": {
+      "Create Time": "18th February 2024",
+      "Week": "2024-W07",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "ToWeek",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 2
+      },
+      {
+        "heading": "NextWeek",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "2024-W06",
+    "relativePath": "Record/Weekly/2024-W06.md",
+    "tags": [
+      "weekly-record"
+    ],
+    "frontmatter": {
+      "Create Time": "11th February 2024",
+      "Week": "2024-W06",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "ToWeek",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 2
+      },
+      {
+        "heading": "NextWeek",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "2024-W05",
+    "relativePath": "Record/Weekly/2024-W05.md",
+    "tags": [
+      "weekly-record"
+    ],
+    "frontmatter": {
+      "Create Time": "4th February 2024",
+      "Week": "2024-W05",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "ToWeek",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 2
+      },
+      {
+        "heading": "NextWeek",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "CSS-Introduction",
+        "relativePath": "Web/CSS/CSS-Introduction.md"
+      },
+      {
+        "link": "Week-1",
+        "relativePath": "Contest/Lanqiao/Week-1.md"
+      },
+      {
+        "link": "Biweekly-contest-123",
+        "relativePath": "Contest/Leetcode/Biweekly-contest-123.md"
+      },
+      {
+        "link": "SlidingWindow",
+        "relativePath": "Algorithm/SlidingWindow.md"
+      },
+      {
+        "link": "Recursion-BinaryTree",
+        "relativePath": "Algorithm/Recursion/Recursion-BinaryTree.md"
+      }
+    ]
+  },
+  {
+    "fileName": "2024-W04",
+    "relativePath": "Record/Weekly/2024-W04.md",
+    "tags": [
+      "weekly-record"
+    ],
+    "frontmatter": {
+      "Create Time": "29th January 2024",
+      "Week": "2024-W04",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "ToWeek",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 2
+      },
+      {
+        "heading": "NextWeek",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "Git-For-Beginners"
+      },
+      {
+        "link": "Git-Remote-Repository"
+      },
+      {
+        "link": "Docker"
+      }
+    ]
+  },
+  {
+    "fileName": "2024-02-27",
+    "relativePath": "Record/Daily/2024-02-27.md",
+    "tags": [
+      "daily-record"
+    ],
+    "frontmatter": {
+      "Create Time": "27th February 2024",
+      "Title": "Daily Diary [2024-02-27]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "Today",
+        "level": 1
+      },
+      {
+        "heading": "Task List",
+        "level": 2
+      },
+      {
+        "heading": "What happened today?",
+        "level": 2
+      },
+      {
+        "heading": "What about tomorrow？",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "2024-02-19",
+    "relativePath": "Record/Daily/2024-02-19.md",
+    "tags": [
+      "daily-record"
+    ],
+    "frontmatter": {
+      "Create Time": "19th February 2024",
+      "Title": "Daily Diary [2024-02-19]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "Today",
+        "level": 1
+      },
+      {
+        "heading": "What happened today?",
+        "level": 2
+      },
+      {
+        "heading": "What about tomorrow？",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "2024-02-17",
+    "relativePath": "Record/Daily/2024-02-17.md",
+    "tags": [
+      "daily-record"
+    ],
+    "frontmatter": {
+      "Create Time": "17th February 2024",
+      "Title": "Daily Diary [2024-02-17]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "Today",
+        "level": 1
+      },
+      {
+        "heading": "What happened today?",
+        "level": 2
+      },
+      {
+        "heading": "What about tomorrow？",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "2024-01-31",
+    "relativePath": "Record/Daily/2024-01-31.md",
+    "tags": [
+      "daily-record"
+    ],
+    "frontmatter": {
+      "Create Time": "31st January 2024",
+      "Title": "Daily Diary [2024-01-31]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "Today",
+        "level": 1
+      },
+      {
+        "heading": "What happened today?",
+        "level": 2
+      },
+      {
+        "heading": "What about tomorrow？",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "2024-01-30",
+    "relativePath": "Record/Daily/2024-01-30.md",
+    "tags": [
+      "daily-record",
+      "flag"
+    ],
+    "frontmatter": {
+      "Create Time": "31st January 2024",
+      "Title": "Daily Diary [2024-01-31]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "Today",
+        "level": 1
+      },
+      {
+        "heading": "What happened today?",
+        "level": 2
+      },
+      {
+        "heading": "What about tomorrow？",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "2024-01-29",
+    "relativePath": "Record/Daily/2024-01-29.md",
+    "tags": [
+      "daily-record"
+    ],
+    "frontmatter": {
+      "Create Time": "29th January 2024",
+      "Title": "Daily Diary [2024-01-29]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "Today",
+        "level": 1
+      },
+      {
+        "heading": "What happened today?",
+        "level": 2
+      },
+      {
+        "heading": "What about tomorrow？",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "2024-01-28",
+    "relativePath": "Record/Daily/2024-01-28.md",
+    "tags": [
+      "daily-record"
+    ],
+    "frontmatter": {
+      "Create Time": "28th January 2024",
+      "Title": "Daily Diary [2024-01-28]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "Today",
+        "level": 1
+      },
+      {
+        "heading": "What happened today?",
+        "level": 2
+      },
+      {
+        "heading": "What about tomorrow？",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "2024-01-27",
+    "relativePath": "Record/Daily/2024-01-27.md",
+    "tags": [
+      "daily-record"
+    ],
+    "frontmatter": {
+      "Create Time": "27th January 2024",
+      "Title": "Daily Diary [2024-01-27]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "Today",
+        "level": 1
+      },
+      {
+        "heading": "What happened today?",
+        "level": 2
+      },
+      {
+        "heading": "What about tomorrow？",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "PloidyReview",
+    "relativePath": "Research/PloidyReview.md",
+    "headings": [
+      {
+        "heading": "Review",
+        "level": 1
+      },
+      {
+        "heading": "断点",
+        "level": 2
+      },
+      {
+        "heading": "预处理断点数据",
+        "level": 2
+      },
+      {
+        "heading": "求极值",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Ploidy",
+    "relativePath": "Research/Ploidy.md",
+    "headings": [
+      {
+        "heading": "Ploidy",
+        "level": 1
+      },
+      {
+        "heading": "[nQuire: a statistical framework for ploidy estimation using next generation sequencing](https://doi.org/10.1186/s12859-018-2128-z)",
+        "level": 2
+      },
+      {
+        "heading": "**Ploidy**",
+        "level": 3
+      },
+      {
+        "heading": "**NGS**",
+        "level": 3
+      },
+      {
+        "heading": "**nQuire**",
+        "level": 3
+      },
+      {
+        "heading": "**Expectation-Maximization (EM) algorithm**",
+        "level": 4
+      },
+      {
+        "heading": "M-step",
+        "level": 5
+      },
+      {
+        "heading": "E-step",
+        "level": 5
+      }
+    ]
+  },
+  {
+    "fileName": "README",
+    "relativePath": "README.md",
+    "tags": [
+      "homepage"
+    ],
+    "frontmatter": {
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "aliases": [
+      "Index"
+    ]
+  },
+  {
+    "fileName": "README",
+    "relativePath": "ProgramLanguage/README.md",
+    "tags": [
+      "readme"
+    ],
+    "frontmatter": {
+      "Title": "Program Language",
+      "Author": "AllenYGY"
+    },
+    "aliases": [
+      "PL"
+    ],
+    "headings": [
+      {
+        "heading": "Program Language",
+        "level": 1
+      },
+      {
+        "heading": "Java",
+        "level": 2
+      },
+      {
+        "heading": "[Java Introduction](Java/Lec0)",
+        "level": 3
+      },
+      {
+        "heading": "[Unified Modeling Language](Java/Lec1)",
+        "level": 3
+      },
+      {
+        "heading": "[Java Programming Essentials](Java/Lec2)",
+        "level": 3
+      },
+      {
+        "heading": "[Creating Java Classes](Java/Lec3)",
+        "level": 3
+      },
+      {
+        "heading": "[Inheritance](Java/Lec4)",
+        "level": 3
+      },
+      {
+        "heading": "[Abstract Methods and Classes Interfaces](Java/Lec5)",
+        "level": 3
+      },
+      {
+        "heading": "[Exception Handling](Java/Lec6)",
+        "level": 3
+      },
+      {
+        "heading": "[Array and Generics](Java/Lec7)",
+        "level": 3
+      },
+      {
+        "heading": "Python",
+        "level": 2
+      },
+      {
+        "heading": "[Python Basic](Python/PythonBasic)",
+        "level": 3
+      },
+      {
+        "heading": "R",
+        "level": 2
+      },
+      {
+        "heading": "[R Basic](R/Lec1)",
+        "level": 3
+      },
+      {
+        "heading": "[R Data Structure](R/Lec2)",
+        "level": 3
+      }
+    ],
+    "links": [
+      {
+        "link": "Lec0",
+        "displayText": "Java Introduction",
+        "relativePath": "ProgramLanguage/Java/Lec0.md"
+      },
+      {
+        "link": "Lec1",
+        "displayText": "Unified Modeling Language",
+        "relativePath": "ProgramLanguage/Java/Lec1.md"
+      },
+      {
+        "link": "Lec2",
+        "displayText": "Java Programming Essentials",
+        "relativePath": "ProgramLanguage/Java/Lec2.md"
+      },
+      {
+        "link": "Lec3",
+        "displayText": "Creating Java Classes",
+        "relativePath": "ProgramLanguage/Java/Lec3.md"
+      },
+      {
+        "link": "Lec4",
+        "displayText": "Inheritance",
+        "relativePath": "ProgramLanguage/Java/Lec4.md"
+      },
+      {
+        "link": "Lec5",
+        "displayText": "Abstract Methods and Classes Interfaces",
+        "relativePath": "ProgramLanguage/Java/Lec5.md"
+      },
+      {
+        "link": "Lec6",
+        "displayText": "Exception Handling",
+        "relativePath": "ProgramLanguage/Java/Lec6.md"
+      },
+      {
+        "link": "Lec7",
+        "displayText": "Array and Generics",
+        "relativePath": "ProgramLanguage/Java/Lec7.md"
+      },
+      {
+        "link": "PythonBasic",
+        "displayText": "Python Basic",
+        "relativePath": "ProgramLanguage/Python/PythonBasic.md"
+      },
+      {
+        "link": "Lec1",
+        "displayText": "R Basic",
+        "relativePath": "ProgramLanguage/R/Lec1.md"
+      },
+      {
+        "link": "Lec2",
+        "displayText": "R Data Structure",
+        "relativePath": "ProgramLanguage/R/Lec2.md"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "WorkView",
+        "link": "README",
+        "relativePath": "WorkView.md",
+        "displayText": "Program Language"
+      },
+      {
+        "fileName": "Home",
+        "link": "README",
+        "relativePath": "Home.md",
+        "displayText": "Program Language"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec2",
+    "relativePath": "ProgramLanguage/R/Lec2.md",
+    "headings": [
+      {
+        "heading": "R Data Structure",
+        "level": 1
+      },
+      {
+        "heading": "Vector",
+        "level": 2
+      },
+      {
+        "heading": "Length of a vector",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec2",
+        "relativePath": "ProgramLanguage/README.md",
+        "displayText": "R Data Structure"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec1",
+    "relativePath": "ProgramLanguage/R/Lec1.md",
+    "headings": [
+      {
+        "heading": "Basic R",
+        "level": 1
+      },
+      {
+        "heading": "R Input/Output",
+        "level": 2
+      },
+      {
+        "heading": "R Variables",
+        "level": 2
+      },
+      {
+        "heading": "Concatenate Elements",
+        "level": 3
+      },
+      {
+        "heading": "R Data Types",
+        "level": 2
+      },
+      {
+        "heading": "R Numbers",
+        "level": 2
+      },
+      {
+        "heading": "Type Conversion",
+        "level": 3
+      },
+      {
+        "heading": "R math functions",
+        "level": 3
+      },
+      {
+        "heading": "R Strings",
+        "level": 2
+      },
+      {
+        "heading": "If-else",
+        "level": 2
+      },
+      {
+        "heading": "Loop",
+        "level": 2
+      },
+      {
+        "heading": "while",
+        "level": 3
+      },
+      {
+        "heading": "For",
+        "level": 3
+      },
+      {
+        "heading": "Function",
+        "level": 2
+      },
+      {
+        "heading": "Nested Function",
+        "level": 3
+      },
+      {
+        "heading": "Recursion",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec1",
+        "relativePath": "ProgramLanguage/README.md",
+        "displayText": "R Basic"
+      }
+    ]
+  },
+  {
+    "fileName": "PythonBasic",
+    "relativePath": "ProgramLanguage/Python/PythonBasic.md",
+    "tags": [
+      "note",
+      "python"
+    ],
+    "frontmatter": {
+      "Create Time": "19th February 2024",
+      "Title": "[[PythonBasic]]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[PythonBasic]]",
+        "level": 1
+      },
+      {
+        "heading": "**Syntax**^[语法]",
+        "level": 2
+      },
+      {
+        "heading": "**Identifiers and Variables**^[标志符和变量]",
+        "level": 3
+      },
+      {
+        "heading": "**Quotation**^[引用]",
+        "level": 3
+      },
+      {
+        "heading": "**Reserved Words**^[保留字]",
+        "level": 3
+      },
+      {
+        "heading": "**Lines and Indentation**^[缩进]",
+        "level": 3
+      },
+      {
+        "heading": "**Basic IO**",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "PythonBasic",
+        "relativePath": "ProgramLanguage/Python/PythonBasic.md"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "PythonBasic",
+        "relativePath": "ProgramLanguage/README.md",
+        "displayText": "Python Basic"
+      }
+    ]
+  },
+  {
+    "fileName": "基础语法",
+    "relativePath": "ProgramLanguage/Cpp/基础语法.md",
+    "headings": [
+      {
+        "heading": "语法",
+        "level": 1
+      },
+      {
+        "heading": "注释",
+        "level": 2
+      },
+      {
+        "heading": "变量",
+        "level": 2
+      },
+      {
+        "heading": "常量",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Vector",
+    "relativePath": "ProgramLanguage/Cpp/Vector.md",
+    "headings": [
+      {
+        "heading": "Vector",
+        "level": 1
+      },
+      {
+        "heading": "常用方法",
+        "level": 2
+      },
+      {
+        "heading": "初始化",
+        "level": 2
+      },
+      {
+        "heading": "vector 插值",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "String",
+    "relativePath": "ProgramLanguage/Cpp/String.md",
+    "headings": [
+      {
+        "heading": "字符串操作",
+        "level": 1
+      },
+      {
+        "heading": "1. <a name=''></a>输入字符串",
+        "level": 2
+      },
+      {
+        "heading": "2. <a name='-1'></a>输出字符串",
+        "level": 2
+      },
+      {
+        "heading": "3. <a name='-1'></a>字符串长度",
+        "level": 2
+      },
+      {
+        "heading": "4. <a name='-1'></a>字符串分割",
+        "level": 2
+      },
+      {
+        "heading": "5. <a name='-1'></a>字符串比较",
+        "level": 2
+      },
+      {
+        "heading": "6. <a name='-1'></a>字符串赋值",
+        "level": 2
+      },
+      {
+        "heading": "7. <a name='-1'></a>判断字符串是否为空",
+        "level": 2
+      },
+      {
+        "heading": "8. <a name='-1'></a>字符串拼接",
+        "level": 2
+      },
+      {
+        "heading": "9. <a name='-1'></a>单字符操作",
+        "level": 2
+      },
+      {
+        "heading": "10. <a name='-1'></a>类型转换",
+        "level": 2
+      },
+      {
+        "heading": "10.1. <a name='cstring-cstring'></a>c++ string -> c string",
+        "level": 3
+      },
+      {
+        "heading": "10.2. <a name='-'></a>整型<->字符串",
+        "level": 3
+      }
+    ],
+    "links": [
+      {
+        "link": "#-1",
+        "relativePath": "ProgramLanguage/Cpp/String.md",
+        "cleanLink": "String",
+        "displayText": "输入字符串"
+      },
+      {
+        "link": "#-1",
+        "relativePath": "ProgramLanguage/Cpp/String.md",
+        "cleanLink": "String",
+        "displayText": "输出字符串"
+      },
+      {
+        "link": "#-1",
+        "relativePath": "ProgramLanguage/Cpp/String.md",
+        "cleanLink": "String",
+        "displayText": "字符串长度"
+      },
+      {
+        "link": "#-1",
+        "relativePath": "ProgramLanguage/Cpp/String.md",
+        "cleanLink": "String",
+        "displayText": "字符串分割"
+      },
+      {
+        "link": "#-1",
+        "relativePath": "ProgramLanguage/Cpp/String.md",
+        "cleanLink": "String",
+        "displayText": "字符串比较"
+      },
+      {
+        "link": "#-1",
+        "relativePath": "ProgramLanguage/Cpp/String.md",
+        "cleanLink": "String",
+        "displayText": "字符串赋值"
+      },
+      {
+        "link": "#-1",
+        "relativePath": "ProgramLanguage/Cpp/String.md",
+        "cleanLink": "String",
+        "displayText": "判断字符串是否为空"
+      },
+      {
+        "link": "#-1",
+        "relativePath": "ProgramLanguage/Cpp/String.md",
+        "cleanLink": "String",
+        "displayText": "字符串拼接"
+      },
+      {
+        "link": "#-1",
+        "relativePath": "ProgramLanguage/Cpp/String.md",
+        "cleanLink": "String",
+        "displayText": "单字符操作"
+      },
+      {
+        "link": "#-1",
+        "relativePath": "ProgramLanguage/Cpp/String.md",
+        "cleanLink": "String",
+        "displayText": "类型转换"
+      },
+      {
+        "link": "#cstring-cstring",
+        "relativePath": "ProgramLanguage/Cpp/String.md",
+        "cleanLink": "String",
+        "displayText": "c++ string -> c string"
+      },
+      {
+        "link": "#-",
+        "relativePath": "ProgramLanguage/Cpp/String.md",
+        "cleanLink": "String",
+        "displayText": "整型<->字符串"
+      }
+    ]
+  },
+  {
+    "fileName": "iota",
+    "relativePath": "ProgramLanguage/Cpp/iota.md",
+    "headings": [
+      {
+        "heading": "*iota* 函数",
+        "level": 1
+      },
+      {
+        "heading": "使用方法",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Container",
+    "relativePath": "ProgramLanguage/Cpp/Container.md",
+    "headings": [
+      {
+        "heading": "容器",
+        "level": 1
+      },
+      {
+        "heading": "*Vector* (向量)",
+        "level": 2
+      },
+      {
+        "heading": "嵌套",
+        "level": 3
+      },
+      {
+        "heading": "基础操作",
+        "level": 3
+      },
+      {
+        "heading": "*Deque*",
+        "level": 2
+      },
+      {
+        "heading": "*List*",
+        "level": 2
+      },
+      {
+        "heading": "*Array*",
+        "level": 2
+      },
+      {
+        "heading": "*string*",
+        "level": 2
+      },
+      {
+        "heading": "*Map*",
+        "level": 2
+      },
+      {
+        "heading": "unordered_map",
+        "level": 2
+      },
+      {
+        "heading": "*Set*",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Lec7",
+    "relativePath": "ProgramLanguage/Java/Lec7.md",
+    "headings": [
+      {
+        "heading": "Array and Generics",
+        "level": 1
+      },
+      {
+        "heading": "Array **引用数据类型**",
+        "level": 2
+      },
+      {
+        "heading": "Enhanced for loops",
+        "level": 2
+      },
+      {
+        "heading": "Advantages",
+        "level": 3
+      },
+      {
+        "heading": "Disadvantages",
+        "level": 3
+      },
+      {
+        "heading": "ArrayList",
+        "level": 2
+      },
+      {
+        "heading": "Generics--(Parametric Polymorphism)",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec7",
+        "relativePath": "ProgramLanguage/README.md",
+        "displayText": "Array and Generics"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec6",
+    "relativePath": "ProgramLanguage/Java/Lec6.md",
+    "headings": [
+      {
+        "heading": "Exception Handling",
+        "level": 1
+      },
+      {
+        "heading": "Programming Errors",
+        "level": 2
+      },
+      {
+        "heading": "Exceptions",
+        "level": 2
+      },
+      {
+        "heading": "Exception Classes 异常类",
+        "level": 3
+      },
+      {
+        "heading": "Checked and Unchecked Exceptions",
+        "level": 4
+      },
+      {
+        "heading": "Unchecked exceptions> 不一定发生-----不一定要改，也能运行",
+        "level": 5
+      },
+      {
+        "heading": "Checked Exceptioon> 一定发生-----一定要改，否则无法运行",
+        "level": 4
+      },
+      {
+        "heading": "try-catch-finally & throw/throws",
+        "level": 3
+      },
+      {
+        "heading": "try 把可能发生异常的代码用try{}包裹",
+        "level": 4
+      },
+      {
+        "heading": "catch 捕获特定异常后执行这部分处理",
+        "level": 4
+      },
+      {
+        "heading": "finally 无论是否捕获异常，最后都进入finally{}",
+        "level": 4
+      },
+      {
+        "heading": "throw & throws 两种方式处理异常",
+        "level": 4
+      },
+      {
+        "heading": "Exception information",
+        "level": 3
+      },
+      {
+        "heading": "throws 用于抛出特定的异常，以及自定义异常",
+        "level": 3
+      },
+      {
+        "heading": "Custom new exceptions 新定义一个类继承Exception这个父类",
+        "level": 4
+      },
+      {
+        "heading": "throws and method overidding",
+        "level": 4
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec6",
+        "relativePath": "ProgramLanguage/README.md",
+        "displayText": "Exception Handling"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec5",
+    "relativePath": "ProgramLanguage/Java/Lec5.md",
+    "headings": [
+      {
+        "heading": "Abstract Methods and Classes Interfaces",
+        "level": 1
+      },
+      {
+        "heading": "Abstract Methods",
+        "level": 2
+      },
+      {
+        "heading": "Interfaces",
+        "level": 2
+      },
+      {
+        "heading": "Application",
+        "level": 3
+      },
+      {
+        "heading": "Interfaces vs. Abstract Classes",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec5",
+        "relativePath": "ProgramLanguage/README.md",
+        "displayText": "Abstract Methods and Classes Interfaces"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec4",
+    "relativePath": "ProgramLanguage/Java/Lec4.md",
+    "headings": [
+      {
+        "heading": "Inheritance",
+        "level": 1
+      },
+      {
+        "heading": "Overloading vs Overriding",
+        "level": 2
+      },
+      {
+        "heading": "overloading>重载",
+        "level": 3
+      },
+      {
+        "heading": "overriding>重写",
+        "level": 3
+      },
+      {
+        "heading": "super keyword 从本类开始回溯直到找到该的方法",
+        "level": 2
+      },
+      {
+        "heading": "final modifier",
+        "level": 2
+      },
+      {
+        "heading": "Object class",
+        "level": 2
+      },
+      {
+        "heading": "toString and equals methods",
+        "level": 3
+      },
+      {
+        "heading": "toString method",
+        "level": 4
+      },
+      {
+        "heading": "equals method",
+        "level": 4
+      },
+      {
+        "heading": "\"==\"方法",
+        "level": 4
+      },
+      {
+        "heading": "Dynamic binding 动态绑定",
+        "level": 3
+      },
+      {
+        "heading": "Subtyping polymorphism 子类多态",
+        "level": 2
+      },
+      {
+        "heading": "Type Casting",
+        "level": 2
+      },
+      {
+        "heading": "instanceof",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec4",
+        "relativePath": "ProgramLanguage/README.md",
+        "displayText": "Inheritance"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec3",
+    "relativePath": "ProgramLanguage/Java/Lec3.md",
+    "headings": [
+      {
+        "heading": "Creating Java Classes",
+        "level": 1
+      },
+      {
+        "heading": "Class and object",
+        "level": 2
+      },
+      {
+        "heading": "Class",
+        "level": 3
+      },
+      {
+        "heading": "UML and class diagram",
+        "level": 2
+      },
+      {
+        "heading": "Diagram of one class",
+        "level": 3
+      },
+      {
+        "heading": "Constructor  **构造器**",
+        "level": 2
+      },
+      {
+        "heading": "The *new* Operator",
+        "level": 3
+      },
+      {
+        "heading": "Initialize",
+        "level": 4
+      },
+      {
+        "heading": "Instance Variables",
+        "level": 2
+      },
+      {
+        "heading": "Local variable",
+        "level": 2
+      },
+      {
+        "heading": "Methods",
+        "level": 2
+      },
+      {
+        "heading": "*this* Keyword",
+        "level": 2
+      },
+      {
+        "heading": "*this* Keyword with a field",
+        "level": 3
+      },
+      {
+        "heading": "*this* Keyword with Constructor",
+        "level": 3
+      },
+      {
+        "heading": "*this* Keyword as a method parameter",
+        "level": 3
+      },
+      {
+        "heading": "Overloading **重载**",
+        "level": 2
+      },
+      {
+        "heading": "Java access modifiers",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec3",
+        "relativePath": "ProgramLanguage/README.md",
+        "displayText": "Creating Java Classes"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec2",
+    "relativePath": "ProgramLanguage/Java/Lec2.md",
+    "headings": [
+      {
+        "heading": "*Java Programming Essentials*",
+        "level": 1
+      },
+      {
+        "heading": "*Identifiers and Naming*",
+        "level": 2
+      },
+      {
+        "heading": "*Keywords*",
+        "level": 2
+      },
+      {
+        "heading": "*Variable Declarations and Assignments*",
+        "level": 2
+      },
+      {
+        "heading": "*Naming Conventions*",
+        "level": 3
+      },
+      {
+        "heading": "*Three kinds of variables*",
+        "level": 3
+      },
+      {
+        "heading": "*Standard input and output (I/O)*",
+        "level": 2
+      },
+      {
+        "heading": "*Data Types*",
+        "level": 2
+      },
+      {
+        "heading": "*primitive type*",
+        "level": 3
+      },
+      {
+        "heading": "*Reference data type*",
+        "level": 3
+      },
+      {
+        "heading": "*Variable Initialization*",
+        "level": 2
+      },
+      {
+        "heading": "*Type Casting*",
+        "level": 2
+      },
+      {
+        "heading": "*Arithmetic Expressions and Operators*",
+        "level": 2
+      },
+      {
+        "heading": "*Java Packages*",
+        "level": 2
+      },
+      {
+        "heading": "*Flow Control*",
+        "level": 2
+      },
+      {
+        "heading": "Condition statement",
+        "level": 3
+      },
+      {
+        "heading": "Loop statement",
+        "level": 3
+      },
+      {
+        "heading": "The break and continue Statements",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec2",
+        "relativePath": "ProgramLanguage/README.md",
+        "displayText": "Java Programming Essentials"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec1",
+    "relativePath": "ProgramLanguage/Java/Lec1.md",
+    "headings": [
+      {
+        "heading": "Unified Modeling Language",
+        "level": 1
+      },
+      {
+        "heading": "UML",
+        "level": 2
+      },
+      {
+        "heading": "Class Diagram",
+        "level": 2
+      },
+      {
+        "heading": "Class Relationship",
+        "level": 2
+      },
+      {
+        "heading": "Association (directional + Multiplicity)",
+        "level": 3
+      },
+      {
+        "heading": "Aggregation",
+        "level": 3
+      },
+      {
+        "heading": "Composition",
+        "level": 3
+      },
+      {
+        "heading": "Inheritance",
+        "level": 3
+      },
+      {
+        "heading": "Realization/Implementation",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec1",
+        "relativePath": "ProgramLanguage/README.md",
+        "displayText": "Unified Modeling Language"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec0",
+    "relativePath": "ProgramLanguage/Java/Lec0.md",
+    "headings": [
+      {
+        "heading": "Java Introduction",
+        "level": 1
+      },
+      {
+        "heading": "Computer languages and Java",
+        "level": 2
+      },
+      {
+        "heading": "History of Java",
+        "level": 2
+      },
+      {
+        "heading": "Java Architecture",
+        "level": 2
+      },
+      {
+        "heading": "Feature of Java",
+        "level": 3
+      },
+      {
+        "heading": "Compiler",
+        "level": 3
+      },
+      {
+        "heading": "Java Compilation Model",
+        "level": 3
+      },
+      {
+        "heading": "Java Virtual Machine (JVM)",
+        "level": 2
+      },
+      {
+        "heading": "Garbage collection",
+        "level": 2
+      },
+      {
+        "heading": "Java Development environment",
+        "level": 2
+      },
+      {
+        "heading": "Java Eviroment",
+        "level": 3
+      },
+      {
+        "heading": "Java Edition",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec0",
+        "relativePath": "ProgramLanguage/README.md",
+        "displayText": "Java Introduction"
+      }
+    ]
+  },
+  {
+    "fileName": "Macro",
+    "relativePath": "ProgramLanguage/C/Macro.md",
+    "tags": [
+      "note",
+      "c",
+      "宏"
+    ],
+    "frontmatter": {
+      "Create Time": "19th February 2024",
+      "Title": "[[Macro]]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[Macro]]^[宏]",
+        "level": 1
+      },
+      {
+        "heading": "**\\# 和 \\##**",
+        "level": 2
+      },
+      {
+        "heading": "**参考列表**",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "Macro",
+        "relativePath": "ProgramLanguage/C/Macro.md"
+      }
+    ]
+  },
+  {
+    "fileName": "Linux-Basic-Operation",
+    "relativePath": "OperatingSystem/Linux-Basic-Operation.md",
+    "tags": [
+      "note",
+      "linux",
+      "basic"
+    ],
+    "frontmatter": {
+      "Create Time": "29th February 2024",
+      "Title": "[[Linux-Basic-Operation]]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[Linux-Basic-Operation]]",
+        "level": 1
+      },
+      {
+        "heading": "**File Operation**",
+        "level": 2
+      },
+      {
+        "heading": "**Rename**",
+        "level": 3
+      },
+      {
+        "heading": "**Vim Basic**",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "Linux-Basic-Operation",
+        "relativePath": "OperatingSystem/Linux-Basic-Operation.md"
+      }
+    ]
+  },
+  {
+    "fileName": "NJU-OS-PA0",
+    "relativePath": "OperatingSystem/NJU-OS-PA0.md",
+    "tags": [
+      "note",
+      "os",
+      "gnu/linux",
+      "debian",
+      "nju"
+    ],
+    "frontmatter": {
+      "Create Time": "20th February 2024",
+      "Title": "[[NJU-OS-PA0]]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[NJU-OS-PA0]]",
+        "level": 1
+      },
+      {
+        "heading": "关于`poweroff`",
+        "level": 2
+      },
+      {
+        "heading": "**关于中文输入法**",
+        "level": 2
+      },
+      {
+        "heading": "**Source**",
+        "level": 3
+      },
+      {
+        "heading": "中文输入法",
+        "level": 3
+      },
+      {
+        "heading": "卸载`ibus` 留下 `fcitx`",
+        "level": 3
+      },
+      {
+        "heading": "**fcitx系列输入法**",
+        "level": 4
+      },
+      {
+        "heading": "如果卸载`fcitx` 留下 `ibus`",
+        "level": 3
+      },
+      {
+        "heading": "Reference List",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "NJU-OS-PA0",
+        "relativePath": "OperatingSystem/NJU-OS-PA0.md"
+      }
+    ]
+  },
+  {
+    "fileName": "OS-Lec1",
+    "relativePath": "OperatingSystem/OS-Lec1.md",
+    "tags": [
+      "note",
+      "os"
+    ],
+    "frontmatter": {
+      "Create Time": "22nd February 2024",
+      "Title": "[[OS-Lec1]]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[OS-Lec1]]",
+        "level": 1
+      },
+      {
+        "heading": "**Computer System Architecture**",
+        "level": 2
+      },
+      {
+        "heading": "**I/O Device In Computer**",
+        "level": 3
+      },
+      {
+        "heading": "**CPU and Memory in Computer**",
+        "level": 3
+      },
+      {
+        "heading": "**Operating Systems**",
+        "level": 2
+      },
+      {
+        "heading": "**Interrupts**",
+        "level": 3
+      },
+      {
+        "heading": "**Interrupt Handling Steps**",
+        "level": 4
+      },
+      {
+        "heading": "**DMA**",
+        "level": 4
+      },
+      {
+        "heading": "**Interrupt-Driven I/O Cycle: Timeline View**",
+        "level": 4
+      },
+      {
+        "heading": "**Interrupt-Driven I/O Cycle: Two Methods**",
+        "level": 4
+      },
+      {
+        "heading": "**Operating System Activities**",
+        "level": 2
+      },
+      {
+        "heading": "**Caching**",
+        "level": 3
+      },
+      {
+        "heading": "**Process Management**",
+        "level": 3
+      },
+      {
+        "heading": "**Memory Management**",
+        "level": 3
+      },
+      {
+        "heading": "**File System Management**",
+        "level": 3
+      },
+      {
+        "heading": "**Secondary Storage Management**",
+        "level": 3
+      },
+      {
+        "heading": "**I/O Subsystem**",
+        "level": 3
+      },
+      {
+        "heading": "**Protection and Security**",
+        "level": 3
+      }
+    ],
+    "links": [
+      {
+        "link": "OS-Lec1",
+        "relativePath": "OperatingSystem/OS-Lec1.md"
+      }
+    ]
+  },
+  {
+    "fileName": "Yearly",
+    "relativePath": "Obsidian/Templaters/Yearly.md",
+    "tags": [
+      "yearly-record"
+    ],
+    "frontmatter": {
+      "Create Time": "<% tp.date.now(\"YYYY\") %>",
+      "Week": "<% tp.file.title%>",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "ThisYear",
+        "level": 1
+      },
+      {
+        "heading": "Consumption",
+        "level": 2
+      },
+      {
+        "heading": "E-commerce",
+        "level": 3
+      },
+      {
+        "heading": "Summary",
+        "level": 2
+      },
+      {
+        "heading": "NextYear",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Weekly",
+    "relativePath": "Obsidian/Templaters/Weekly.md",
+    "tags": [
+      "weekly-record"
+    ],
+    "frontmatter": {
+      "Create Time": "<% tp.date.now(\"Do MMMM YYYY\") %>",
+      "Week": "<% tp.file.title%>",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "ToWeek",
+        "level": 1
+      },
+      {
+        "heading": "Task List",
+        "level": 2
+      },
+      {
+        "heading": "Summary",
+        "level": 2
+      },
+      {
+        "heading": "NextWeek",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "NOTE",
+    "relativePath": "Obsidian/Templaters/NOTE.md",
+    "headings": [
+      {
+        "heading": "[[<%tp.user.title%>]]",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "<%tp.user.title%>"
+      }
+    ]
+  },
+  {
+    "fileName": "Leetcode",
+    "relativePath": "Obsidian/Templaters/Leetcode.md",
+    "tags": [
+      "t1",
+      "灵神题解",
+      "t2",
+      "t3",
+      "t4"
+    ],
+    "headings": [
+      {
+        "heading": "[[<%tp.user.title%>]](<% tp.file.cursor() %>)",
+        "level": 1
+      },
+      {
+        "heading": "#T1",
+        "level": 2
+      },
+      {
+        "heading": "#T2",
+        "level": 2
+      },
+      {
+        "heading": "#T3",
+        "level": 2
+      },
+      {
+        "heading": "#T4",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "<%tp.user.title%>"
+      }
+    ]
+  },
+  {
+    "fileName": "Lanqiao",
+    "relativePath": "Obsidian/Templaters/Lanqiao.md",
+    "headings": [
+      {
+        "heading": "[[<%tp.user.title%>]](<%tp.file.cursor() %>)",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "<%tp.user.title%>"
+      }
+    ]
+  },
+  {
+    "fileName": "InsertCallouts",
+    "relativePath": "Obsidian/Templaters/InsertCallouts.md"
+  },
+  {
+    "fileName": "Daily",
+    "relativePath": "Obsidian/Templaters/Daily.md",
+    "tags": [
+      "daily-record"
+    ],
+    "frontmatter": {
+      "Create Time": "<% tp.date.now(\"Do MMMM YYYY\") %>",
+      "Title": "Daily Diary [<% tp.date.now() %>]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "Today",
+        "level": 1
+      },
+      {
+        "heading": "Task List",
+        "level": 2
+      },
+      {
+        "heading": "What happened today?",
+        "level": 2
+      },
+      {
+        "heading": "What about tomorrow？",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Capture",
+    "relativePath": "Obsidian/Templaters/Capture.md"
+  },
+  {
+    "fileName": "Obsidian-Git-Operation",
+    "relativePath": "Obsidian/Obsidian-Git/Obsidian-Git-Operation.md",
+    "tags": [
+      "note",
+      "extension",
+      "git"
+    ],
+    "frontmatter": {
+      "Create Time": "23rd February 2024",
+      "Title": "[[Obsidian-Git-Operation]]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[Obsidian-Git-Operation]]",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "Obsidian-Git-Operation",
+        "relativePath": "Obsidian/Obsidian-Git/Obsidian-Git-Operation.md"
+      }
+    ]
+  },
+  {
+    "fileName": "QuickStart",
+    "relativePath": "Obsidian/AdvancedSlides/QuickStart.md",
+    "headings": [
+      {
+        "heading": "Advanced Slide",
+        "level": 1
+      },
+      {
+        "heading": "动画",
+        "level": 2
+      },
+      {
+        "heading": "动画",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "AdvancedSlide",
+    "relativePath": "Obsidian/AdvancedSlides/AdvancedSlide.md",
+    "frontmatter": {
+      "margin": 0,
+      "width": 1920,
+      "height": 1200,
+      "transition": "slide"
+    },
+    "headings": [
+      {
+        "heading": "Minml<!-- element style=\"letter-spacing: 1.5rem;\"-->",
+        "level": 1
+      },
+      {
+        "heading": "Modern Presentation Template",
+        "level": 5
+      },
+      {
+        "heading": "The abnormal design agency<!-- element drag=\"30 35\" drop=\"60 3\" align=\"left\"-->",
+        "level": 2
+      },
+      {
+        "heading": "Minimo Studio<!-- element drag=\"15 5\" drop=\"11 55\" align=\"left\"-->",
+        "level": 6
+      },
+      {
+        "heading": "The Story of Us",
+        "level": 1
+      },
+      {
+        "heading": "A few words about the Studio",
+        "level": 5
+      },
+      {
+        "heading": "Founder<!-- element drag=\"25 10\" drop=\"68 48\" rotate=\"90\"-->",
+        "level": 1
+      },
+      {
+        "heading": "Values",
+        "level": 1
+      },
+      {
+        "heading": "A few words about values",
+        "level": 5
+      },
+      {
+        "heading": "**Value 01**",
+        "level": 5
+      },
+      {
+        "heading": "**Value 02**",
+        "level": 5
+      },
+      {
+        "heading": "**Value 03**",
+        "level": 5
+      },
+      {
+        "heading": "Our Vision",
+        "level": 1
+      },
+      {
+        "heading": "We turn cultural Value, into company Value",
+        "level": 4
+      },
+      {
+        "heading": "Meet the Expert",
+        "level": 2
+      },
+      {
+        "heading": "Studio Partners",
+        "level": 5
+      },
+      {
+        "heading": "Killie Groover",
+        "level": 5
+      },
+      {
+        "heading": "Erik Keagan",
+        "level": 5
+      },
+      {
+        "heading": "Haley Gideon",
+        "level": 5
+      },
+      {
+        "heading": "*Emily Oberman*",
+        "level": 5
+      },
+      {
+        "heading": "Editorial Designer<!-- element drag=\"28 10\" drop=\"-1 25\"-->",
+        "level": 3
+      },
+      {
+        "heading": "*Michel Bierut*",
+        "level": 5
+      },
+      {
+        "heading": "Graphic Designer",
+        "level": 3
+      },
+      {
+        "heading": "Your Service",
+        "level": 5
+      },
+      {
+        "heading": "Your Service",
+        "level": 5
+      },
+      {
+        "heading": "Your Service",
+        "level": 5
+      },
+      {
+        "heading": "Your Service",
+        "level": 5
+      },
+      {
+        "heading": "What we do <!-- element style=\"color: #000\" -->",
+        "level": 2
+      },
+      {
+        "heading": "Our Services<!-- element drag=\"40 10\" drop=\"38 46\" rotate=\"-90\" -->",
+        "level": 1
+      },
+      {
+        "heading": "Branding",
+        "level": 6
+      },
+      {
+        "heading": "Marketing",
+        "level": 6
+      },
+      {
+        "heading": "Consulting",
+        "level": 6
+      },
+      {
+        "heading": "Your Service",
+        "level": 5
+      },
+      {
+        "heading": "Your Service",
+        "level": 5
+      },
+      {
+        "heading": "Your Service",
+        "level": 5
+      },
+      {
+        "heading": "Your Service",
+        "level": 5
+      },
+      {
+        "heading": "Work Process",
+        "level": 2
+      },
+      {
+        "heading": "Business Strategy",
+        "level": 1
+      },
+      {
+        "heading": "A few words about strategy",
+        "level": 4
+      },
+      {
+        "heading": "Keep it Simple",
+        "level": 3
+      },
+      {
+        "heading": "Keep it real",
+        "level": 3
+      },
+      {
+        "heading": "Quality over Quantity",
+        "level": 3
+      },
+      {
+        "heading": "Marketing Speciality",
+        "level": 5
+      },
+      {
+        "heading": "Success Marketing",
+        "level": 2
+      },
+      {
+        "heading": "Strength",
+        "level": 2
+      },
+      {
+        "heading": "Weakness",
+        "level": 2
+      },
+      {
+        "heading": "Threat",
+        "level": 2
+      },
+      {
+        "heading": "Opportunity",
+        "level": 2
+      },
+      {
+        "heading": "Clients",
+        "level": 1
+      },
+      {
+        "heading": "Reuters",
+        "level": 4
+      },
+      {
+        "heading": "Espn",
+        "level": 4
+      },
+      {
+        "heading": "Visa",
+        "level": 4
+      },
+      {
+        "heading": "Guardian",
+        "level": 4
+      },
+      {
+        "heading": "Our<br> Achievments",
+        "level": 1
+      },
+      {
+        "heading": "success in numbers",
+        "level": 5
+      },
+      {
+        "heading": "40",
+        "level": 1
+      },
+      {
+        "heading": "Clients",
+        "level": 4
+      },
+      {
+        "heading": "60",
+        "level": 1
+      },
+      {
+        "heading": "Projects",
+        "level": 4
+      },
+      {
+        "heading": "29",
+        "level": 1
+      },
+      {
+        "heading": "Apps & Websites",
+        "level": 4
+      },
+      {
+        "heading": "Pricing Table",
+        "level": 1
+      },
+      {
+        "heading": "Subscription packages",
+        "level": 4
+      },
+      {
+        "heading": "Basic",
+        "level": 3
+      },
+      {
+        "heading": "$ 299",
+        "level": 1
+      },
+      {
+        "heading": "Premium",
+        "level": 3
+      },
+      {
+        "heading": "$ 499",
+        "level": 1
+      },
+      {
+        "heading": "Pro",
+        "level": 3
+      },
+      {
+        "heading": "$ 799",
+        "level": 1
+      },
+      {
+        "heading": "It's a break section",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "fileName": "USTC-L1",
+    "relativePath": "Network/USTC-L1.md",
+    "tags": [
+      "note",
+      "network",
+      "ustc"
+    ],
+    "frontmatter": {
+      "Create Time": "26th February 2024",
+      "Title": "[[USTC-L1]]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[USTC-L1]]",
+        "level": 1
+      },
+      {
+        "heading": "**互联网**",
+        "level": 2
+      },
+      {
+        "heading": "**网络边缘**",
+        "level": 2
+      },
+      {
+        "heading": "**接入网、物理媒体**",
+        "level": 2
+      },
+      {
+        "heading": "**网络核心：分组交换、线路交换**",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "USTC-L1",
+        "relativePath": "Network/USTC-L1.md"
+      }
+    ]
+  },
+  {
+    "fileName": "BasicConcepts",
+    "relativePath": "Network/BasicConcepts.md",
+    "tags": [
+      "note",
+      "network",
+      "uic"
+    ],
+    "frontmatter": {
+      "Create Time": "20th February 2024",
+      "Title": "[[BasicConcepts]]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[BasicConcepts]]",
+        "level": 1
+      },
+      {
+        "heading": "**Data Communication Components**",
+        "level": 2
+      },
+      {
+        "heading": "**Data flow**",
+        "level": 2
+      },
+      {
+        "heading": "**Fundamentals of Data and Signals**",
+        "level": 2
+      },
+      {
+        "heading": "**Analog versus Digital**",
+        "level": 3
+      },
+      {
+        "heading": "**Advantages of Digital Signals**",
+        "level": 3
+      },
+      {
+        "heading": "**Transmitting digital data with digital signals: Digital Encoding Schemes**",
+        "level": 2
+      },
+      {
+        "heading": "**Convert Analog Signal to Digital Signal**",
+        "level": 2
+      },
+      {
+        "heading": "**Capacity of Communication Channel**",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "BasicConcepts",
+        "relativePath": "Network/BasicConcepts.md"
+      }
+    ]
+  },
+  {
+    "fileName": "PoissonDistribution",
+    "relativePath": "Math/ProbabilityStatistics/PoissonDistribution.md",
+    "headings": [
+      {
+        "heading": "Poisson-distribution",
+        "level": 1
+      },
+      {
+        "heading": "Poisson Distribution",
+        "level": 2
+      },
+      {
+        "heading": "From Binomial distribution to Poisson distribution",
+        "level": 2
+      },
+      {
+        "heading": "Derivation",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Lec7",
+    "relativePath": "Math/ProbabilityStatistics/Lec7.md",
+    "headings": [
+      {
+        "heading": "Chi-Square Tests",
+        "level": 1
+      },
+      {
+        "heading": "The Chi-Square Distribution",
+        "level": 2
+      },
+      {
+        "heading": "Test of Multinomial Experiment",
+        "level": 3
+      },
+      {
+        "heading": "General Test Example",
+        "level": 4
+      },
+      {
+        "heading": "Test for homogeneity Example",
+        "level": 4
+      },
+      {
+        "heading": "Chi-Square Test for Independence",
+        "level": 2
+      },
+      {
+        "heading": "Chi-Square Test for Independence Example",
+        "level": 3
+      },
+      {
+        "heading": "Summary",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec7.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Chi-Square Tests"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec6",
+    "relativePath": "Math/ProbabilityStatistics/Lec6.md",
+    "headings": [
+      {
+        "heading": "Hypothesis Testing (Two Populations)",
+        "level": 1
+      },
+      {
+        "heading": "Two Sample Tests",
+        "level": 2
+      },
+      {
+        "heading": "Independent Samples",
+        "level": 2
+      },
+      {
+        "heading": "$\\sigma_1$ and $\\sigma_2$ Known",
+        "level": 3
+      },
+      {
+        "heading": "$\\sigma_1$ and $\\sigma_2$ unknown assumed equal",
+        "level": 3
+      },
+      {
+        "heading": "$\\sigma_1$ and $\\sigma_2$ unknown not assumed equal",
+        "level": 3
+      },
+      {
+        "heading": "Related Samples",
+        "level": 2
+      },
+      {
+        "heading": "Paired T-test",
+        "level": 3
+      },
+      {
+        "heading": "Two Population Proportions",
+        "level": 2
+      },
+      {
+        "heading": "Summary",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec6.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Hypothesis Testing (Two Populations)"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec5",
+    "relativePath": "Math/ProbabilityStatistics/Lec5.md",
+    "headings": [
+      {
+        "heading": "Hypothesis Testing(Single Population)",
+        "level": 1
+      },
+      {
+        "heading": "p-Value Approach to Testing",
+        "level": 2
+      },
+      {
+        "heading": "Errors in Making Decisions",
+        "level": 2
+      },
+      {
+        "heading": "Type I Error",
+        "level": 3
+      },
+      {
+        "heading": "Type II Error",
+        "level": 3
+      },
+      {
+        "heading": "Summary",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec5.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Hypothesis Testing(Single Population)"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec4",
+    "relativePath": "Math/ProbabilityStatistics/Lec4.md",
+    "headings": [
+      {
+        "heading": "Confidence Interval",
+        "level": 1
+      },
+      {
+        "heading": "Estimation",
+        "level": 2
+      },
+      {
+        "heading": "Confidence interval",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec4.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Confidence Interval"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec1",
+    "relativePath": "Math/ProbabilityStatistics/Lec1.md",
+    "headings": [
+      {
+        "heading": "Probability Theory",
+        "level": 1
+      },
+      {
+        "heading": "**Set Theory**",
+        "level": 2
+      },
+      {
+        "heading": "**Probability Theory**",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "README",
+    "relativePath": "Math/README.md",
+    "tags": [
+      "readme"
+    ],
+    "frontmatter": {
+      "Title": "Mathematica",
+      "Author": "AllenYGY"
+    },
+    "aliases": [
+      "Math"
+    ],
+    "headings": [
+      {
+        "heading": "Mathematica",
+        "level": 1
+      },
+      {
+        "heading": "Linear Algebra",
+        "level": 2
+      },
+      {
+        "heading": "[Vector Spaces](LinearAlgebra/Chapter1.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Linear Transformations](LinearAlgebra/Chapter2.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Orthogonality](LinearAlgebra/Chapter3.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Eigenvalues and Eigenvectors](LinearAlgebra/Chapter4.md)",
+        "level": 3
+      },
+      {
+        "heading": "Discrete Structure",
+        "level": 2
+      },
+      {
+        "heading": "[Logic and Proofs----Propositional Logic](DiscreteStructure/Lecture/Lec1.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Logic and Proofs- Propositional Equivalence](DiscreteStructure/Lecture/Lec2.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Sets and N-tuple](DiscreteStructure/Lecture/Lec5.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Functions, Sequence, and Summations](DiscreteStructure/Lecture/Lec6.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Counting-Principles](DiscreteStructure/Lecture/Lec7.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Relation](DiscreteStructure/Lecture/Lec10.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Graph Theory](DiscreteStructure/Lecture/Lec11.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Graph Theory- Representing graph and connectivity](DiscreteStructure/Lecture/Lec12.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Tree](DiscreteStructure/Lecture/Lec13.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Boolean Algebras- Boolean Expressions](DiscreteStructure/Lecture/Lec14.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Boolean Algebras- Logic Circuits](DiscreteStructure/Lecture/Lec15.md)",
+        "level": 3
+      },
+      {
+        "heading": "Probability Statistics",
+        "level": 2
+      },
+      {
+        "heading": "[Confidence Interval](ProbabilityStatistics/Lec4.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Hypothesis Testing(Single Population)](ProbabilityStatistics/Lec5.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Hypothesis Testing (Two Populations)](ProbabilityStatistics/Lec6.md)",
+        "level": 3
+      },
+      {
+        "heading": "[Chi-Square Tests](ProbabilityStatistics/Lec7.md)",
+        "level": 3
+      }
+    ],
+    "links": [
+      {
+        "link": "Chapter1.md",
+        "displayText": "Vector Spaces",
+        "relativePath": "Math/LinearAlgebra/Chapter1.md"
+      },
+      {
+        "link": "Chapter2.md",
+        "displayText": "Linear Transformations",
+        "relativePath": "Math/LinearAlgebra/Chapter2.md"
+      },
+      {
+        "link": "Chapter3.md",
+        "displayText": "Orthogonality",
+        "relativePath": "Math/LinearAlgebra/Chapter3.md"
+      },
+      {
+        "link": "Chapter4.md",
+        "displayText": "Eigenvalues and Eigenvectors",
+        "relativePath": "Math/LinearAlgebra/Chapter4.md"
+      },
+      {
+        "link": "Lec1.md",
+        "displayText": "Logic and Proofs----Propositional Logic",
+        "relativePath": "Math/DiscreteStructure/Lecture/Lec1.md"
+      },
+      {
+        "link": "Lec2.md",
+        "displayText": "Logic and Proofs- Propositional Equivalence",
+        "relativePath": "Math/DiscreteStructure/Lecture/Lec2.md"
+      },
+      {
+        "link": "Lec5.md",
+        "displayText": "Sets and N-tuple",
+        "relativePath": "Math/DiscreteStructure/Lecture/Lec5.md"
+      },
+      {
+        "link": "Lec6.md",
+        "displayText": "Functions, Sequence, and Summations",
+        "relativePath": "Math/DiscreteStructure/Lecture/Lec6.md"
+      },
+      {
+        "link": "Lec7.md",
+        "displayText": "Counting-Principles",
+        "relativePath": "Math/DiscreteStructure/Lecture/Lec7.md"
+      },
+      {
+        "link": "Lec10.md",
+        "displayText": "Relation",
+        "relativePath": "Math/DiscreteStructure/Lecture/Lec10.md"
+      },
+      {
+        "link": "Lec11.md",
+        "displayText": "Graph Theory",
+        "relativePath": "Math/DiscreteStructure/Lecture/Lec11.md"
+      },
+      {
+        "link": "Lec12.md",
+        "displayText": "Graph Theory- Representing graph and connectivity",
+        "relativePath": "Math/DiscreteStructure/Lecture/Lec12.md"
+      },
+      {
+        "link": "Lec13.md",
+        "displayText": "Tree",
+        "relativePath": "Math/DiscreteStructure/Lecture/Lec13.md"
+      },
+      {
+        "link": "Lec14.md",
+        "displayText": "Boolean Algebras- Boolean Expressions",
+        "relativePath": "Math/DiscreteStructure/Lecture/Lec14.md"
+      },
+      {
+        "link": "Lec15.md",
+        "displayText": "Boolean Algebras- Logic Circuits",
+        "relativePath": "Math/DiscreteStructure/Lecture/Lec15.md"
+      },
+      {
+        "link": "Lec4.md",
+        "displayText": "Confidence Interval",
+        "relativePath": "Math/ProbabilityStatistics/Lec4.md"
+      },
+      {
+        "link": "Lec5.md",
+        "displayText": "Hypothesis Testing(Single Population)",
+        "relativePath": "Math/ProbabilityStatistics/Lec5.md"
+      },
+      {
+        "link": "Lec6.md",
+        "displayText": "Hypothesis Testing (Two Populations)",
+        "relativePath": "Math/ProbabilityStatistics/Lec6.md"
+      },
+      {
+        "link": "Lec7.md",
+        "displayText": "Chi-Square Tests",
+        "relativePath": "Math/ProbabilityStatistics/Lec7.md"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "WorkView",
+        "link": "README",
+        "relativePath": "WorkView.md",
+        "displayText": "Mathematics"
+      },
+      {
+        "fileName": "Home",
+        "link": "README",
+        "relativePath": "Home.md",
+        "displayText": "Mathematics"
+      }
+    ]
+  },
+  {
+    "fileName": "judgment",
+    "relativePath": "Math/LinearAlgebra/judgment.md",
+    "headings": [
+      {
+        "heading": "Judgment Questions",
+        "level": 1
+      },
+      {
+        "heading": "1.4",
+        "level": 2
+      },
+      {
+        "heading": "1.6",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Chapter4",
+    "relativePath": "Math/LinearAlgebra/Chapter4.md",
+    "headings": [
+      {
+        "heading": "Linear Algebra",
+        "level": 1
+      },
+      {
+        "heading": "1. <a name='Chapter4EigenvaluesandEigenvectors'></a>Eigenvalues and Eigenvectors",
+        "level": 2
+      },
+      {
+        "heading": "1.1. <a name='EigenvaluesandEigenvectors'></a>Ⅰ Eigenvalues and Eigenvectors",
+        "level": 3
+      },
+      {
+        "heading": "1.1.1. <a name='EigenvaluesandEigenvectors-1'></a>Eigenvalues and Eigenvectors",
+        "level": 4
+      },
+      {
+        "heading": "1.2. <a name='Diagonalization'></a>Ⅲ Diagonalization",
+        "level": 3
+      },
+      {
+        "heading": "1.2.1. <a name='Theorem4.3.1'></a>Theorem 4.3.1",
+        "level": 4
+      },
+      {
+        "heading": "1.2.2. <a name='Diagonalization-1'></a>Diagonalization",
+        "level": 4
+      },
+      {
+        "heading": "1.2.3. <a name='Theorem4.3.2'></a>Theorem 4.3.2",
+        "level": 4
+      },
+      {
+        "heading": "Shortcut: For a 2×2 matrix",
+        "level": 5
+      },
+      {
+        "heading": "1.2.4. <a name='SymmertricMatrix'></a>Symmertric Matrix",
+        "level": 4
+      },
+      {
+        "heading": "1.2.5. <a name='OrthogonallyDiagonalizable'></a>Orthogonally Diagonalizable",
+        "level": 4
+      },
+      {
+        "heading": "1.2.6. <a name='SpectralTheoremforRealSymmetricMatrices6.3.3'></a>Spectral Theorem for Real Symmetric Matrices 6.3.3",
+        "level": 4
+      },
+      {
+        "heading": "1.3. <a name='TheSingularValueDecomposition'></a>Ⅴ The Singular Value Decomposition",
+        "level": 3
+      },
+      {
+        "heading": "1.3.1. <a name='SquareSymmertricMatrix'></a>Square Symmertric Matrix",
+        "level": 4
+      },
+      {
+        "heading": "1.3.2. <a name='TheSingularValueDecomposition-1'></a>The Singular Value Decomposition",
+        "level": 4
+      },
+      {
+        "heading": "1.3.3. <a name='Theorem4.5.1'></a>Theorem 4.5.1",
+        "level": 4
+      },
+      {
+        "heading": "1.4. <a name='QuadraticForms'></a>Ⅵ Quadratic Forms",
+        "level": 3
+      },
+      {
+        "heading": "1.4.1. <a name='PrincipalAxesTheorem4.6.1'></a>Principal Axes Theorem 4.6.1",
+        "level": 4
+      },
+      {
+        "heading": "1.4.2. <a name='Theorem4.6.2'></a>Theorem 4.6.2",
+        "level": 4
+      },
+      {
+        "heading": "1.4.3. <a name='Theorem4.6.3'></a>Theorem 4.6.3",
+        "level": 4
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Chapter4.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Eigenvalues and Eigenvectors"
+      }
+    ]
+  },
+  {
+    "fileName": "Chapter3",
+    "relativePath": "Math/LinearAlgebra/Chapter3.md",
+    "headings": [
+      {
+        "heading": "Linear Algebra",
+        "level": 1
+      },
+      {
+        "heading": "1. <a name='Chapter3Orthogonality'></a>Orthogonality",
+        "level": 2
+      },
+      {
+        "heading": "1.1. <a name='TheScalarProductin'></a>Ⅰ The Scalar Product in $ℝ^𝑛$",
+        "level": 3
+      },
+      {
+        "heading": "1.1.1. <a name='ScalarProduct'></a>Scalar Product",
+        "level": 4
+      },
+      {
+        "heading": "1.1.2. <a name='Length'></a>Length",
+        "level": 4
+      },
+      {
+        "heading": "1.1.3. <a name='Angle'></a>Angle",
+        "level": 4
+      },
+      {
+        "heading": "orthogonal",
+        "level": 5
+      },
+      {
+        "heading": "1.1.4. <a name='Projection'></a>Projection",
+        "level": 4
+      },
+      {
+        "heading": "Projecting vector onto a line",
+        "level": 5
+      },
+      {
+        "heading": "Projection Matrix: $$P=A(A^TA)^-A^T$$",
+        "level": 5
+      },
+      {
+        "heading": "1.2. <a name='OrthogonalSubspaces'></a>Ⅱ Orthogonal Subspaces",
+        "level": 3
+      },
+      {
+        "heading": "1.2.1. <a name='OrthogonalSubspaces-1'></a>Orthogonal Subspaces",
+        "level": 4
+      },
+      {
+        "heading": "1.2.2. <a name='OrthogonalComplement'></a>Orthogonal Complement",
+        "level": 4
+      },
+      {
+        "heading": "1.2.3. <a name='Theorem3.2.1'></a>Theorem 3.2.1",
+        "level": 4
+      },
+      {
+        "heading": "1.2.4. <a name='Theorem3.2.2'></a>Theorem 3.2.2",
+        "level": 4
+      },
+      {
+        "heading": "1.2.5. <a name='Fundamentalsubspaces'></a>Fundamental subspaces",
+        "level": 4
+      },
+      {
+        "heading": "1.2.6. <a name='Theorem3.2.3'></a>Theorem 3.2.3",
+        "level": 4
+      },
+      {
+        "heading": "1.2.7. <a name='Theorem3.2.4'></a>Theorem 3.2.4",
+        "level": 4
+      },
+      {
+        "heading": "1.2.8. <a name='DirectSum'></a>Direct Sum",
+        "level": 4
+      },
+      {
+        "heading": "1.2.9. <a name='DirectSumTheorem3.2.5'></a>Direct Sum Theorem 3.2.5",
+        "level": 4
+      },
+      {
+        "heading": "1.2.10. <a name='Theorem3.2.6'></a>Theorem 3.2.6",
+        "level": 4
+      },
+      {
+        "heading": "1.3. <a name='LeastSquaresProblems'></a>Ⅲ Least Squares Problems",
+        "level": 3
+      },
+      {
+        "heading": "1.3.1. <a name='Lineofbestfit'></a>Line of best fit",
+        "level": 4
+      },
+      {
+        "heading": "1.3.2. <a name='LeastSquareSolutions'></a>Least Square Solutions",
+        "level": 4
+      },
+      {
+        "heading": "1.3.3. <a name='Theorem3.3.1'></a>Theorem 3.3.1",
+        "level": 4
+      },
+      {
+        "heading": "1.3.4. <a name='Projectionformula'></a>Projection formula",
+        "level": 4
+      },
+      {
+        "heading": "1.4. <a name='OrthonormalSets'></a>Ⅴ Orthonormal Sets",
+        "level": 3
+      },
+      {
+        "heading": "1.4.1. <a name='NoteonInnerProductSpaces'></a>Note on Inner Product Spaces",
+        "level": 4
+      },
+      {
+        "heading": "1.4.2. <a name='OrthogonalSet'></a>Orthogonal Set",
+        "level": 4
+      },
+      {
+        "heading": "1.4.3. <a name='OrthonormalSet'></a>Orthonormal Set",
+        "level": 4
+      },
+      {
+        "heading": "1.4.4. <a name='TheoremNonzeroorthogonalsetislinearlyindependent3.5.1'></a>Theorem [Nonzero orthogonal set is linearly independent] 3.5.1",
+        "level": 4
+      },
+      {
+        "heading": "1.4.5. <a name='OrthonormalBasis'></a>Orthonormal Basis",
+        "level": 4
+      },
+      {
+        "heading": "Orthonormal Basis and Coordinates",
+        "level": 5
+      },
+      {
+        "heading": "Theorem 3.5.2",
+        "level": 6
+      },
+      {
+        "heading": "Orthonormal Sets and Projection",
+        "level": 5
+      },
+      {
+        "heading": "Theorem 3.5.3",
+        "level": 6
+      },
+      {
+        "heading": "Theorem [Projection formula] 3.5.4",
+        "level": 6
+      },
+      {
+        "heading": "1.4.6. <a name='Orthogonalmatrix'></a>Orthogonal matrix",
+        "level": 4
+      },
+      {
+        "heading": "1.4.7. <a name='Theorem3.5.5'></a>Theorem 3.5.5",
+        "level": 4
+      },
+      {
+        "heading": "Orthonormal Sets and Least Squares",
+        "level": 5
+      },
+      {
+        "heading": "Theorem 3.5.4",
+        "level": 6
+      },
+      {
+        "heading": "1.5. <a name='Summary'></a>Summary",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Chapter3.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Orthogonality"
+      }
+    ]
+  },
+  {
+    "fileName": "Chapter2",
+    "relativePath": "Math/LinearAlgebra/Chapter2.md",
+    "headings": [
+      {
+        "heading": "Linear Algebra",
+        "level": 1
+      },
+      {
+        "heading": "1. <a name='Chapter2LinearTransformations'></a>Linear Transformations",
+        "level": 2
+      },
+      {
+        "heading": "1.1. <a name='LinearTransformation'></a>Ⅰ Linear Transformation",
+        "level": 3
+      },
+      {
+        "heading": "1.1.1. <a name='LinearTransformation-1'></a>Linear Transformation",
+        "level": 4
+      },
+      {
+        "heading": "1.1.2. <a name='Maping'></a>Maping",
+        "level": 4
+      },
+      {
+        "heading": "1.1.3 linear operator",
+        "level": 4
+      },
+      {
+        "heading": "1.1.4. <a name='LinearTransformations'></a>Linear Transformations from $ℝ^𝑛$ to $ℝ^𝑚$",
+        "level": 4
+      },
+      {
+        "heading": "1.1.5. <a name='Kernel'></a>Kernel",
+        "level": 4
+      },
+      {
+        "heading": "1.1.6. <a name='Image'></a>Image",
+        "level": 4
+      },
+      {
+        "heading": "1.1.7. <a name='Range'></a>Range",
+        "level": 4
+      },
+      {
+        "heading": "1.1.8. <a name='Theorem2.1.1KernelImagearesubspaces'></a>Theorem 2.1.1 (Kernel/Image are subspaces)",
+        "level": 4
+      },
+      {
+        "heading": "1.2. <a name='MatrixRepresentationsofLinearTransformations'></a>Ⅱ Matrix Representations of Linear Transformations",
+        "level": 3
+      },
+      {
+        "heading": "1.2.1. <a name='Theorem2.2.1Standardmatrixrepresentation'></a>Theorem 2.2.1 (Standard matrix representation)",
+        "level": 4
+      },
+      {
+        "heading": "1.2.2. <a name='Theorem2.1.2'></a>Theorem 2.1.2",
+        "level": 4
+      },
+      {
+        "heading": "1.2.3. <a name='Corollary'></a>Corollary",
+        "level": 4
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Chapter2.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Linear Transformations"
+      }
+    ]
+  },
+  {
+    "fileName": "Chapter1",
+    "relativePath": "Math/LinearAlgebra/Chapter1.md",
+    "headings": [
+      {
+        "heading": "Linear Algebra",
+        "level": 1
+      },
+      {
+        "heading": "1. <a name='Chapter VectorSpaces'></a>Vector Spaces",
+        "level": 2
+      },
+      {
+        "heading": "1.1. <a name='VectorandVectorSpaceAxioms'></a>Ⅰ Vector and Vector Space Axioms",
+        "level": 3
+      },
+      {
+        "heading": "1.1.1. <a name='mathbbRnEuclideanVectorSpaces'></a>$\\mathbb{R}^{n}$ ^[Euclidean Vector Spaces]",
+        "level": 4
+      },
+      {
+        "heading": "Addition and Scalar Multiplication",
+        "level": 5
+      },
+      {
+        "heading": "Prove a VectorSpace",
+        "level": 5
+      },
+      {
+        "heading": "Zero vector",
+        "level": 5
+      },
+      {
+        "heading": "Negative Vector",
+        "level": 5
+      },
+      {
+        "heading": "1.1.2. <a name='VectorSpaceAxioms'></a>Vector Space Axioms",
+        "level": 4
+      },
+      {
+        "heading": "$R^{m\\times n}$ is a Vector Space ^[Here “vector” is one m×n matrix]",
+        "level": 5
+      },
+      {
+        "heading": "$C[a,b]$ is a Vector Space",
+        "level": 5
+      },
+      {
+        "heading": "$P_n$ is a Vector Space",
+        "level": 5
+      },
+      {
+        "heading": "1.1.3. <a name='Theorem'></a>Theorem",
+        "level": 4
+      },
+      {
+        "heading": "1.2. <a name='SubspaceNullspace'></a>Ⅱ Subspace & Null space",
+        "level": 3
+      },
+      {
+        "heading": "1.2.1. <a name='SubspacesofVectorSpaces'></a>Subspaces of Vector Spaces",
+        "level": 4
+      },
+      {
+        "heading": "Trivial subspace",
+        "level": 5
+      },
+      {
+        "heading": "1.2.2. <a name='NullspaceofaMatrix'></a>Null space of a Matrix",
+        "level": 4
+      },
+      {
+        "heading": "1.2.3. <a name='TheSpanofaSetofVectors'></a>The Span of a Set of Vectors",
+        "level": 4
+      },
+      {
+        "heading": "1.2.4. <a name='Theorem-1'></a>Theorem",
+        "level": 4
+      },
+      {
+        "heading": "1.2.5. <a name='SpanningSet'></a>Spanning Set",
+        "level": 4
+      },
+      {
+        "heading": "How to check if a set spans $R^n$",
+        "level": 5
+      },
+      {
+        "heading": "1.3. <a name='LinearIndependence'></a>Ⅲ Linear Independence",
+        "level": 3
+      },
+      {
+        "heading": "1.3.1. <a name='LinearDependence'></a>Linear Dependence",
+        "level": 4
+      },
+      {
+        "heading": "1.3.2. <a name='Theorem1.3.0'></a>Theorem 1.3.0",
+        "level": 4
+      },
+      {
+        "heading": "1.3.3. <a name='LinearIndependence-1'></a>Linear Independence",
+        "level": 4
+      },
+      {
+        "heading": "1.3.4. <a name='Theorem1.3.1OnlySquarematrix'></a>Theorem 1.3.1 ^[Only Square matrix]",
+        "level": 4
+      },
+      {
+        "heading": "1.3.5. <a name='Theorem1.3.2'></a>Theorem 1.3.2",
+        "level": 4
+      },
+      {
+        "heading": "1.4. <a name='BasisandDimension'></a>Ⅳ Basis and Dimension",
+        "level": 3
+      },
+      {
+        "heading": "1.4.1. <a name='StandardBasisof'></a>Standard Basis of $R^n$",
+        "level": 4
+      },
+      {
+        "heading": "1.4.2. <a name='Dimension'></a>Dimension",
+        "level": 4
+      },
+      {
+        "heading": "1.4.3. <a name='Theorem1.4.1'></a>Theorem 1.4.1",
+        "level": 4
+      },
+      {
+        "heading": "Important Corollary (1.4.2)",
+        "level": 5
+      },
+      {
+        "heading": "1.4.4. <a name='Theorem1.4.3'></a>Theorem 1.4.3",
+        "level": 4
+      },
+      {
+        "heading": "1.4.5. <a name='Theorem1.4.4'></a>Theorem 1.4.4",
+        "level": 4
+      },
+      {
+        "heading": "1.5. <a name='ChangeofBasis'></a>Ⅴ Change of Basis",
+        "level": 3
+      },
+      {
+        "heading": "1.5.1. <a name='CoordinateVector'></a>Coordinate Vector",
+        "level": 4
+      },
+      {
+        "heading": "1.5.2. <a name='ChangingCoordinates'></a>Changing Coordinates",
+        "level": 4
+      },
+      {
+        "heading": "1.6. <a name='Rowspacecolumnspace'></a>Ⅵ Row space & column space",
+        "level": 3
+      },
+      {
+        "heading": "1.6.1. <a name='Rowspacecolumnspace-1'></a>Row space & column space",
+        "level": 4
+      },
+      {
+        "heading": "1.6.2. <a name='Theorem1.6.1'></a>Theorem 1.6.1",
+        "level": 4
+      },
+      {
+        "heading": "1.6.3. <a name='Theorem1.6.2'></a>Theorem 1.6.2",
+        "level": 4
+      },
+      {
+        "heading": "1.6.4. <a name='Rank'></a>Rank",
+        "level": 4
+      },
+      {
+        "heading": "1.6.5. <a name='DimensionTheorem1.6.3'></a>Dimension Theorem 1.6.3",
+        "level": 4
+      },
+      {
+        "heading": "1.6.6. <a name='ConsistencytheoremforLinearSystem1.6.4'></a>Consistency theorem for Linear System 1.6.4",
+        "level": 4
+      },
+      {
+        "heading": "1.6.7. <a name='Nullity'></a>Nullity",
+        "level": 4
+      },
+      {
+        "heading": "1.6.8. <a name='Theorem1.6.5'></a>Theorem 1.6.5",
+        "level": 4
+      },
+      {
+        "heading": "1.6.9. <a name='Property'></a>Property",
+        "level": 4
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Chapter1.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Vector Spaces"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec7",
+    "relativePath": "Math/DiscreteStructure/Lecture/Lec7.md",
+    "headings": [
+      {
+        "heading": "Counting- Principles",
+        "level": 1
+      },
+      {
+        "heading": "Basic Counting Principles",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec7.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Counting-Principles"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec6",
+    "relativePath": "Math/DiscreteStructure/Lecture/Lec6.md",
+    "headings": [
+      {
+        "heading": "Functions, Sequence, and Summations",
+        "level": 1
+      },
+      {
+        "heading": "Functions",
+        "level": 2
+      },
+      {
+        "heading": "One-to-One Functions (Injections)",
+        "level": 3
+      },
+      {
+        "heading": "Onto Functions (Surjections)",
+        "level": 3
+      },
+      {
+        "heading": "One-to-One and Onto Functions (Bijections)",
+        "level": 3
+      },
+      {
+        "heading": "Relationship between domain, co-domain and range",
+        "level": 4
+      },
+      {
+        "heading": "Image, Pre-image and Range",
+        "level": 3
+      },
+      {
+        "heading": "Inverse Function",
+        "level": 3
+      },
+      {
+        "heading": "Composition Function",
+        "level": 3
+      },
+      {
+        "heading": "Two special functions",
+        "level": 3
+      },
+      {
+        "heading": "Sequences",
+        "level": 2
+      },
+      {
+        "heading": "Summations",
+        "level": 2
+      },
+      {
+        "heading": "Some Special Summations",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec6.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Functions, Sequence, and Summations"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec5",
+    "relativePath": "Math/DiscreteStructure/Lecture/Lec5.md",
+    "headings": [
+      {
+        "heading": "Sets and N-tuple",
+        "level": 1
+      },
+      {
+        "heading": "Sets",
+        "level": 2
+      },
+      {
+        "heading": "Notation of Sets",
+        "level": 3
+      },
+      {
+        "heading": "Universial Sets",
+        "level": 3
+      },
+      {
+        "heading": "Venn Diagrams",
+        "level": 3
+      },
+      {
+        "heading": "Elements and sets",
+        "level": 3
+      },
+      {
+        "heading": "Subsets",
+        "level": 3
+      },
+      {
+        "heading": "Cardinality",
+        "level": 3
+      },
+      {
+        "heading": "Power Sets",
+        "level": 3
+      },
+      {
+        "heading": "Ordered n-tuple",
+        "level": 2
+      },
+      {
+        "heading": "Cartesian Product",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec5.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Sets and N-tuple"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec2",
+    "relativePath": "Math/DiscreteStructure/Lecture/Lec2.md",
+    "headings": [
+      {
+        "heading": "Logic and Proofs- Propositional Equivalence",
+        "level": 1
+      },
+      {
+        "heading": "Tautology",
+        "level": 2
+      },
+      {
+        "heading": "Logical Equivalence",
+        "level": 2
+      },
+      {
+        "heading": "Laws",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec2.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Logic and Proofs- Propositional Equivalence"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec15",
+    "relativePath": "Math/DiscreteStructure/Lecture/Lec15.md",
+    "headings": [
+      {
+        "heading": "Boolean Algebras- Logic Circuits",
+        "level": 1
+      },
+      {
+        "heading": "Logic Circuits",
+        "level": 2
+      },
+      {
+        "heading": "Logic Gates",
+        "level": 3
+      },
+      {
+        "heading": "Logic Circuit",
+        "level": 3
+      },
+      {
+        "heading": "Logic Circuits – Half Adder",
+        "level": 4
+      },
+      {
+        "heading": "Logic Circuit - Full Adder",
+        "level": 4
+      },
+      {
+        "heading": "Steps in Design of Logical Circuits(With Minimization)",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec15.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Boolean Algebras- Logic Circuits"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec14",
+    "relativePath": "Math/DiscreteStructure/Lecture/Lec14.md",
+    "headings": [
+      {
+        "heading": "Boolean Algebras- Boolean Expressions",
+        "level": 1
+      },
+      {
+        "heading": "Constructing Boolean Functions",
+        "level": 2
+      },
+      {
+        "heading": "Disjunctive Normal Form，DNF",
+        "level": 3
+      },
+      {
+        "heading": "Maxterms, CNF",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec14.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Boolean Algebras- Boolean Expressions"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec13",
+    "relativePath": "Math/DiscreteStructure/Lecture/Lec13.md",
+    "headings": [
+      {
+        "heading": "Tree",
+        "level": 1
+      },
+      {
+        "heading": "Rooted Trees",
+        "level": 2
+      },
+      {
+        "heading": "Game Trees",
+        "level": 2
+      },
+      {
+        "heading": "m-ary Trees",
+        "level": 2
+      },
+      {
+        "heading": "Balanced Tree",
+        "level": 2
+      },
+      {
+        "heading": "Tree Traversal",
+        "level": 3
+      },
+      {
+        "heading": "Pre-order Traversal",
+        "level": 4
+      },
+      {
+        "heading": "In-order Traversal",
+        "level": 4
+      },
+      {
+        "heading": "Post-order Traversal",
+        "level": 4
+      },
+      {
+        "heading": "Spanning Trees",
+        "level": 3
+      },
+      {
+        "heading": "Depth-First Search (DFS)",
+        "level": 4
+      },
+      {
+        "heading": "Breadth-First Search(BFS)",
+        "level": 4
+      },
+      {
+        "heading": "Minimum Spanning Trees",
+        "level": 3
+      },
+      {
+        "heading": "Prim’s Algorithm",
+        "level": 4
+      },
+      {
+        "heading": "Kruskal’s Algorithm",
+        "level": 4
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec13.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Tree"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec12",
+    "relativePath": "Math/DiscreteStructure/Lecture/Lec12.md",
+    "headings": [
+      {
+        "heading": "Graph Theory- Representing graph and connectivity",
+        "level": 1
+      },
+      {
+        "heading": "Representing Graphs",
+        "level": 2
+      },
+      {
+        "heading": "Adjacency matrix",
+        "level": 3
+      },
+      {
+        "heading": "Adjacency table (list)",
+        "level": 3
+      },
+      {
+        "heading": "Graph Isomorphism(图同构)",
+        "level": 2
+      },
+      {
+        "heading": "Graph Connectivity",
+        "level": 2
+      },
+      {
+        "heading": "Path",
+        "level": 3
+      },
+      {
+        "heading": "Circuit",
+        "level": 3
+      },
+      {
+        "heading": "Simple path/circuit",
+        "level": 4
+      },
+      {
+        "heading": "Graph Connectedness",
+        "level": 3
+      },
+      {
+        "heading": "Euler Path/Circuit",
+        "level": 2
+      },
+      {
+        "heading": "Hamilton Path/Circuit",
+        "level": 2
+      },
+      {
+        "heading": "How to find the Hamilton circuits? Some sufficient conditions can help",
+        "level": 3
+      },
+      {
+        "heading": "Planar Graphs",
+        "level": 2
+      },
+      {
+        "heading": "Euler’s Formula",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec12.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Graph Theory- Representing graph and connectivity"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec11",
+    "relativePath": "Math/DiscreteStructure/Lecture/Lec11.md",
+    "headings": [
+      {
+        "heading": "Graph Theory",
+        "level": 1
+      },
+      {
+        "heading": "Graph",
+        "level": 2
+      },
+      {
+        "heading": "Simple Graph",
+        "level": 3
+      },
+      {
+        "heading": "Multigraph",
+        "level": 3
+      },
+      {
+        "heading": "Loop",
+        "level": 3
+      },
+      {
+        "heading": "Directed Graph",
+        "level": 2
+      },
+      {
+        "heading": "Degree",
+        "level": 2
+      },
+      {
+        "heading": "Undirected",
+        "level": 3
+      },
+      {
+        "heading": "Directed",
+        "level": 3
+      },
+      {
+        "heading": "Handshaking Theorem",
+        "level": 4
+      },
+      {
+        "heading": "Odd Degree Theorem",
+        "level": 4
+      },
+      {
+        "heading": "Some Special Simple Graphs",
+        "level": 2
+      },
+      {
+        "heading": "Complete Graphs",
+        "level": 3
+      },
+      {
+        "heading": "Cycle",
+        "level": 3
+      },
+      {
+        "heading": "Wheel",
+        "level": 3
+      },
+      {
+        "heading": "Cube",
+        "level": 3
+      },
+      {
+        "heading": "Complete Bipartite Graphs",
+        "level": 2
+      },
+      {
+        "heading": "Theorem",
+        "level": 3
+      },
+      {
+        "heading": "Subgraphs and Proper Subgraphs",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec11.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Graph Theory"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec10",
+    "relativePath": "Math/DiscreteStructure/Lecture/Lec10.md",
+    "headings": [
+      {
+        "heading": "Relation",
+        "level": 1
+      },
+      {
+        "heading": "Relationships",
+        "level": 2
+      },
+      {
+        "heading": "Binary Relations",
+        "level": 2
+      },
+      {
+        "heading": "Representing Relations",
+        "level": 2
+      },
+      {
+        "heading": "Functions and Relations",
+        "level": 2
+      },
+      {
+        "heading": "Relation on the Set",
+        "level": 2
+      },
+      {
+        "heading": "Properties of Relations",
+        "level": 2
+      },
+      {
+        "heading": "Reflexive",
+        "level": 3
+      },
+      {
+        "heading": "Symmetric",
+        "level": 3
+      },
+      {
+        "heading": "Anti-symmetric",
+        "level": 3
+      },
+      {
+        "heading": "Transitive",
+        "level": 3
+      },
+      {
+        "heading": "Combining Relations",
+        "level": 2
+      },
+      {
+        "heading": "Powers of a Relation",
+        "level": 2
+      },
+      {
+        "heading": "𝑛-ary Relations",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec10.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Relation"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec1",
+    "relativePath": "Math/DiscreteStructure/Lecture/Lec1.md",
+    "headings": [
+      {
+        "heading": "Logic and Proofs----Propositional Logic",
+        "level": 1
+      },
+      {
+        "heading": "Declarative sentence",
+        "level": 2
+      },
+      {
+        "heading": "Proposition",
+        "level": 2
+      },
+      {
+        "heading": "Propositional Variables",
+        "level": 3
+      },
+      {
+        "heading": "Truth Value",
+        "level": 4
+      },
+      {
+        "heading": "Propositional Operators",
+        "level": 3
+      },
+      {
+        "heading": "Logical implication (indicated by →)",
+        "level": 4
+      },
+      {
+        "heading": "Logical bidirectional implication (indicated by ↔)",
+        "level": 4
+      },
+      {
+        "heading": "Compound（复合）Propositions",
+        "level": 3
+      },
+      {
+        "heading": "Specification Consistency",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec1.md",
+        "relativePath": "Math/README.md",
+        "displayText": "Logic and Proofs----Propositional Logic"
+      }
+    ]
+  },
+  {
+    "fileName": "Tutorial2",
+    "relativePath": "Math/DiscreteStructure/Assignment/Tutorial2.md",
+    "headings": [
+      {
+        "heading": "HomeWork",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "fileName": "Tutorial1",
+    "relativePath": "Math/DiscreteStructure/Assignment/Tutorial1.md",
+    "headings": [
+      {
+        "heading": "Homework",
+        "level": 1
+      },
+      {
+        "heading": "1.Question",
+        "level": 2
+      },
+      {
+        "heading": "2. Question",
+        "level": 2
+      },
+      {
+        "heading": "3. Question",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Assignment8",
+    "relativePath": "Math/DiscreteStructure/Assignment/Assignment8.md",
+    "headings": [
+      {
+        "heading": "Assignment8",
+        "level": 1
+      },
+      {
+        "heading": "Question1",
+        "level": 2
+      },
+      {
+        "heading": "Question2",
+        "level": 2
+      },
+      {
+        "heading": "Question3",
+        "level": 2
+      },
+      {
+        "heading": "Question4",
+        "level": 2
+      },
+      {
+        "heading": "Question5",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Assignment7",
+    "relativePath": "Math/DiscreteStructure/Assignment/Assignment7.md",
+    "headings": [
+      {
+        "heading": "Assignment7",
+        "level": 1
+      },
+      {
+        "heading": "Question1",
+        "level": 2
+      },
+      {
+        "heading": "Question2",
+        "level": 2
+      },
+      {
+        "heading": "Question3",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Assignment6",
+    "relativePath": "Math/DiscreteStructure/Assignment/Assignment6.md",
+    "headings": [
+      {
+        "heading": "Assignment 6",
+        "level": 1
+      },
+      {
+        "heading": "Question1",
+        "level": 2
+      },
+      {
+        "heading": "Question2",
+        "level": 2
+      },
+      {
+        "heading": "Question3",
+        "level": 2
+      },
+      {
+        "heading": "Question4",
+        "level": 2
+      },
+      {
+        "heading": "Question5",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Assignment5",
+    "relativePath": "Math/DiscreteStructure/Assignment/Assignment5.md",
+    "headings": [
+      {
+        "heading": "Assignment5",
+        "level": 1
+      },
+      {
+        "heading": "Question1",
+        "level": 2
+      },
+      {
+        "heading": "Question2",
+        "level": 2
+      },
+      {
+        "heading": "Question3",
+        "level": 2
+      },
+      {
+        "heading": "Question4",
+        "level": 2
+      },
+      {
+        "heading": "Question5",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Assignment3",
+    "relativePath": "Math/DiscreteStructure/Assignment/Assignment3.md",
+    "headings": [
+      {
+        "heading": "Assignment3",
+        "level": 1
+      },
+      {
+        "heading": "Question1",
+        "level": 2
+      },
+      {
+        "heading": "Question2",
+        "level": 2
+      },
+      {
+        "heading": "Question3",
+        "level": 2
+      },
+      {
+        "heading": "Question4",
+        "level": 2
+      },
+      {
+        "heading": "Question5",
+        "level": 2
+      },
+      {
+        "heading": "Question6",
+        "level": 2
+      },
+      {
+        "heading": "Question7",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Assignment2",
+    "relativePath": "Math/DiscreteStructure/Assignment/Assignment2.md",
+    "headings": [
+      {
+        "heading": "Assignment 2",
+        "level": 1
+      },
+      {
+        "heading": "Question 1",
+        "level": 2
+      },
+      {
+        "heading": "Question 2",
+        "level": 2
+      },
+      {
+        "heading": "Question 3",
+        "level": 2
+      },
+      {
+        "heading": "Question 4",
+        "level": 2
+      },
+      {
+        "heading": "Question 5",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Home",
+    "relativePath": "Home.md",
+    "headings": [
+      {
+        "heading": "Modify Note",
+        "level": 2
+      },
+      {
+        "heading": "Navigate",
+        "level": 2
+      },
+      {
+        "heading": "[[CO/README|Computer Organization]]",
+        "level": 2
+      },
+      {
+        "heading": "[[Contest/Overview|Contest Overview]]",
+        "level": 2
+      },
+      {
+        "heading": "[[DataAnalysis/README|Data Analysis]]",
+        "level": 2
+      },
+      {
+        "heading": "[[DBM/README|Database Management System]]",
+        "level": 2
+      },
+      {
+        "heading": "[[ProgramLanguage/README|Program Language]]",
+        "level": 2
+      },
+      {
+        "heading": "[[Math/README|Mathematics ]]",
+        "level": 2
+      },
+      {
+        "heading": "[[ProgramLanguage/Tools/README|Tools ]]",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "README",
+        "displayText": "Computer Organization",
+        "relativePath": "CO/README.md"
+      },
+      {
+        "link": "Overview",
+        "displayText": "Contest Overview",
+        "relativePath": "Contest/Overview.md"
+      },
+      {
+        "link": "README",
+        "displayText": "Data Analysis",
+        "relativePath": "DataAnalysis/README.md"
+      },
+      {
+        "link": "README",
+        "displayText": "Database Management System",
+        "relativePath": "DBM/README.md"
+      },
+      {
+        "link": "README",
+        "displayText": "Program Language",
+        "relativePath": "ProgramLanguage/README.md"
+      },
+      {
+        "link": "README",
+        "displayText": "Mathematics",
+        "relativePath": "Math/README.md"
+      },
+      {
+        "link": "README",
+        "displayText": "Tools"
+      }
+    ]
+  },
+  {
+    "fileName": "README",
+    "relativePath": "DBM/README.md",
+    "tags": [
+      "readme"
+    ],
+    "frontmatter": {
+      "Title": "Database Management System",
+      "Author": "AllenYGY"
+    },
+    "aliases": [
+      "DBM"
+    ],
+    "headings": [
+      {
+        "heading": "Database Management System",
+        "level": 1
+      },
+      {
+        "heading": "Database Design",
+        "level": 2
+      },
+      {
+        "heading": "[Entity-Relationship Model Modeling](DBM/Lecture/Lec1)",
+        "level": 3
+      },
+      {
+        "heading": "[Entity-Relationship Model Constraints](DBM/Lecture/Lec2)",
+        "level": 3
+      },
+      {
+        "heading": "[Entity-Relationship Model Extended Features](Lecture/Lec3)",
+        "level": 3
+      },
+      {
+        "heading": "[Design Issues](Lecture/Lec4)",
+        "level": 3
+      },
+      {
+        "heading": "[Logical Design](DBM/Lecture/Lec5.md)",
+        "level": 3
+      },
+      {
+        "heading": "[KEY Concept](Lecture/Key-concept)",
+        "level": 3
+      },
+      {
+        "heading": "MySQL",
+        "level": 2
+      },
+      {
+        "heading": "[Basic MySQL](MySQL/Lab1)",
+        "level": 3
+      },
+      {
+        "heading": "[Cross table query](MySQL/Lab2)",
+        "level": 3
+      },
+      {
+        "heading": "[Join](MySQL/Lab3)",
+        "level": 3
+      },
+      {
+        "heading": "[Aggregation](MySQL/Lab4)",
+        "level": 3
+      },
+      {
+        "heading": "[Data Definition](MySQL/Lab5)",
+        "level": 3
+      },
+      {
+        "heading": "[Data Modification](MySQL/Lab6)",
+        "level": 3
+      },
+      {
+        "heading": "[Null & Subquery](MySQL/Lab7)",
+        "level": 3
+      },
+      {
+        "heading": "[Set Operation & WHERE subquery](MySQL/Lab8)",
+        "level": 3
+      },
+      {
+        "heading": "[Division and Correlated Subquery](MySQL/Lab9)",
+        "level": 3
+      },
+      {
+        "heading": "[Advanced SQL](MySQL/Lab10)",
+        "level": 3
+      }
+    ],
+    "links": [
+      {
+        "link": "Lec1",
+        "displayText": "Entity-Relationship Model Modeling",
+        "relativePath": "DBM/Lecture/Lec1.md"
+      },
+      {
+        "link": "Lec2",
+        "displayText": "Entity-Relationship Model Constraints",
+        "relativePath": "DBM/Lecture/Lec2.md"
+      },
+      {
+        "link": "Lec3",
+        "displayText": "Entity-Relationship Model Extended Features",
+        "relativePath": "DBM/Lecture/Lec3.md"
+      },
+      {
+        "link": "Lec4",
+        "displayText": "Design Issues",
+        "relativePath": "DBM/Lecture/Lec4.md"
+      },
+      {
+        "link": "Lec5.md",
+        "displayText": "Logical Design",
+        "relativePath": "DBM/Lecture/Lec5.md"
+      },
+      {
+        "link": "Key-concept",
+        "displayText": "KEY Concept",
+        "relativePath": "DBM/Lecture/Key-concept.md"
+      },
+      {
+        "link": "Lab1",
+        "displayText": "Basic MySQL",
+        "relativePath": "DBM/MySQL/Lab1.md"
+      },
+      {
+        "link": "Lab2",
+        "displayText": "Cross table query",
+        "relativePath": "DBM/MySQL/Lab2.md"
+      },
+      {
+        "link": "Lab3",
+        "displayText": "Join",
+        "relativePath": "DBM/MySQL/Lab3.md"
+      },
+      {
+        "link": "Lab4",
+        "displayText": "Aggregation",
+        "relativePath": "DBM/MySQL/Lab4.md"
+      },
+      {
+        "link": "Lab5",
+        "displayText": "Data Definition",
+        "relativePath": "DBM/MySQL/Lab5.md"
+      },
+      {
+        "link": "Lab6",
+        "displayText": "Data Modification",
+        "relativePath": "DBM/MySQL/Lab6.md"
+      },
+      {
+        "link": "Lab7",
+        "displayText": "Null & Subquery",
+        "relativePath": "DBM/MySQL/Lab7.md"
+      },
+      {
+        "link": "Lab8",
+        "displayText": "Set Operation & WHERE subquery",
+        "relativePath": "DBM/MySQL/Lab8.md"
+      },
+      {
+        "link": "Lab9",
+        "displayText": "Division and Correlated Subquery",
+        "relativePath": "DBM/MySQL/Lab9.md"
+      },
+      {
+        "link": "Lab10",
+        "displayText": "Advanced SQL",
+        "relativePath": "DBM/MySQL/Lab10.md"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "WorkView",
+        "link": "README",
+        "relativePath": "WorkView.md",
+        "displayText": "Database Management System"
+      },
+      {
+        "fileName": "Home",
+        "link": "README",
+        "relativePath": "Home.md",
+        "displayText": "Database Management System"
+      }
+    ]
+  },
+  {
+    "fileName": "Lab9",
+    "relativePath": "DBM/MySQL/Lab9.md",
+    "headings": [
+      {
+        "heading": "Division and Correlated Subquery",
+        "level": 1
+      },
+      {
+        "heading": "Division",
+        "level": 2
+      },
+      {
+        "heading": "Example",
+        "level": 3
+      },
+      {
+        "heading": "Correlated Subquery",
+        "level": 2
+      },
+      {
+        "heading": "Example-for-Correlated-Subquery",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lab9",
+        "relativePath": "DBM/README.md",
+        "displayText": "Division and Correlated Subquery"
+      }
+    ]
+  },
+  {
+    "fileName": "Lab8",
+    "relativePath": "DBM/MySQL/Lab8.md",
+    "headings": [
+      {
+        "heading": "Set Operation & WHERE subquery",
+        "level": 1
+      },
+      {
+        "heading": "Set",
+        "level": 2
+      },
+      {
+        "heading": "UNION",
+        "level": 3
+      },
+      {
+        "heading": "INTERSECTION",
+        "level": 3
+      },
+      {
+        "heading": "Set Difference",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lab8",
+        "relativePath": "DBM/README.md",
+        "displayText": "Set Operation & WHERE subquery"
+      }
+    ]
+  },
+  {
+    "fileName": "Lab7",
+    "relativePath": "DBM/MySQL/Lab7.md",
+    "headings": [
+      {
+        "heading": "Null Subquery",
+        "level": 1
+      },
+      {
+        "heading": "NULL",
+        "level": 2
+      },
+      {
+        "heading": "Arithmetic and Atomic Predicate",
+        "level": 3
+      },
+      {
+        "heading": "Aggregation",
+        "level": 3
+      },
+      {
+        "heading": "Comparison and Compound Predicates",
+        "level": 3
+      },
+      {
+        "heading": "Subquery",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lab7",
+        "relativePath": "DBM/README.md",
+        "displayText": "Null & Subquery"
+      }
+    ]
+  },
+  {
+    "fileName": "Lab6",
+    "relativePath": "DBM/MySQL/Lab6.md",
+    "headings": [
+      {
+        "heading": "Data Modification",
+        "level": 1
+      },
+      {
+        "heading": "INSERT",
+        "level": 2
+      },
+      {
+        "heading": "UPDATE",
+        "level": 2
+      },
+      {
+        "heading": "DELETE",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lab6",
+        "relativePath": "DBM/README.md",
+        "displayText": "Data Modification"
+      }
+    ]
+  },
+  {
+    "fileName": "Lab5",
+    "relativePath": "DBM/MySQL/Lab5.md",
+    "headings": [
+      {
+        "heading": "Data Definition",
+        "level": 1
+      },
+      {
+        "heading": "CREATE",
+        "level": 2
+      },
+      {
+        "heading": "Data Type",
+        "level": 2
+      },
+      {
+        "heading": "Constraints",
+        "level": 2
+      },
+      {
+        "heading": "Foreign key",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lab5",
+        "relativePath": "DBM/README.md",
+        "displayText": "Data Definition"
+      }
+    ]
+  },
+  {
+    "fileName": "Lab4",
+    "relativePath": "DBM/MySQL/Lab4.md",
+    "headings": [
+      {
+        "heading": "Aggregation",
+        "level": 1
+      },
+      {
+        "heading": "COUNT",
+        "level": 2
+      },
+      {
+        "heading": "GROUP BY",
+        "level": 2
+      },
+      {
+        "heading": "HAVING",
+        "level": 2
+      },
+      {
+        "heading": "DISTINCT",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lab4",
+        "relativePath": "DBM/README.md",
+        "displayText": "Aggregation"
+      }
+    ]
+  },
+  {
+    "fileName": "Lab3",
+    "relativePath": "DBM/MySQL/Lab3.md",
+    "headings": [
+      {
+        "heading": "Join",
+        "level": 1
+      },
+      {
+        "heading": "Join Condition",
+        "level": 2
+      },
+      {
+        "heading": "JOIN",
+        "level": 3
+      },
+      {
+        "heading": "NATURAL JOIN",
+        "level": 3
+      },
+      {
+        "heading": "JOIN type",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lab3",
+        "relativePath": "DBM/README.md",
+        "displayText": "Join"
+      }
+    ]
+  },
+  {
+    "fileName": "Lab2",
+    "relativePath": "DBM/MySQL/Lab2.md",
+    "headings": [
+      {
+        "heading": "Cross table query",
+        "level": 1
+      },
+      {
+        "heading": "Cross table",
+        "level": 2
+      },
+      {
+        "heading": "A table times itself",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lab2",
+        "relativePath": "DBM/README.md",
+        "displayText": "Cross table query"
+      }
+    ]
+  },
+  {
+    "fileName": "Lab10",
+    "relativePath": "DBM/MySQL/Lab10.md",
+    "headings": [
+      {
+        "heading": "Advanced SQL",
+        "level": 1
+      },
+      {
+        "heading": "Integrity Constraints",
+        "level": 2
+      },
+      {
+        "heading": "Referential Integrity",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lab10",
+        "relativePath": "DBM/README.md",
+        "displayText": "Advanced SQL"
+      }
+    ]
+  },
+  {
+    "fileName": "Lab1",
+    "relativePath": "DBM/MySQL/Lab1.md",
+    "headings": [
+      {
+        "heading": "Basic MySQL",
+        "level": 1
+      },
+      {
+        "heading": "Predicates",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lab1",
+        "relativePath": "DBM/README.md",
+        "displayText": "Basic MySQL"
+      }
+    ]
+  },
+  {
+    "fileName": "NF",
+    "relativePath": "DBM/Lecture/NF.md",
+    "headings": [
+      {
+        "heading": "Final Review",
+        "level": 1
+      },
+      {
+        "heading": "Find all the candidate keys",
+        "level": 2
+      },
+      {
+        "heading": "Decompose the schema in BCNF",
+        "level": 2
+      },
+      {
+        "heading": "Is Loss-less join Decompositon",
+        "level": 2
+      },
+      {
+        "heading": "Is Dependency Preservation",
+        "level": 2
+      },
+      {
+        "heading": "Find canonical cover of the functional dependencies",
+        "level": 2
+      },
+      {
+        "heading": "Decompose the schema in 3NF",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Lec9",
+    "relativePath": "DBM/Lecture/Lec9.md",
+    "headings": [
+      {
+        "heading": "Relational Database Design 3rd Normal Form",
+        "level": 1
+      },
+      {
+        "heading": "$3^{rd}$ Normal Form",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Lec8",
+    "relativePath": "DBM/Lecture/Lec8.md",
+    "headings": [
+      {
+        "heading": "Relational Database Design BCNF",
+        "level": 1
+      },
+      {
+        "heading": "Lossless-join Decomposition",
+        "level": 2
+      },
+      {
+        "heading": "Dependency Preservation",
+        "level": 2
+      },
+      {
+        "heading": "BCNF",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Lec7",
+    "relativePath": "DBM/Lecture/Lec7.md",
+    "headings": [
+      {
+        "heading": "Relational Database Design-Functional Dependency",
+        "level": 1
+      },
+      {
+        "heading": "Functional Dependency Property *功能依赖*",
+        "level": 2
+      },
+      {
+        "heading": "Closure of a Set of Functional Dependencies *功能依赖的闭包*",
+        "level": 2
+      },
+      {
+        "heading": "How to find $F^+$",
+        "level": 3
+      },
+      {
+        "heading": "Prove Armstrong's Axioms",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "fileName": "Lec6",
+    "relativePath": "DBM/Lecture/Lec6.md",
+    "headings": [
+      {
+        "heading": "Relational Database Design Purpose & First Normal Form",
+        "level": 1
+      },
+      {
+        "heading": "Functional Dependency",
+        "level": 2
+      },
+      {
+        "heading": "First Normal Form *第一范式*",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Lec5",
+    "relativePath": "DBM/Lecture/Lec5.md",
+    "headings": [
+      {
+        "heading": "Logical Design",
+        "level": 1
+      },
+      {
+        "heading": "Relationship Set",
+        "level": 2
+      },
+      {
+        "heading": "Many to Many Relationship",
+        "level": 3
+      },
+      {
+        "heading": "One Relationship",
+        "level": 3
+      },
+      {
+        "heading": "Remaining case",
+        "level": 3
+      },
+      {
+        "heading": "Composite Attribute",
+        "level": 2
+      },
+      {
+        "heading": "ISA Relationship Sets",
+        "level": 2
+      },
+      {
+        "heading": "Aggregation",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec5.md",
+        "relativePath": "DBM/README.md",
+        "displayText": "Logical Design"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec4",
+    "relativePath": "DBM/Lecture/Lec4.md",
+    "headings": [
+      {
+        "heading": "Design Issues",
+        "level": 1
+      },
+      {
+        "heading": "Design Techniques",
+        "level": 2
+      },
+      {
+        "heading": "There are also some decisions that you need to make during the design",
+        "level": 3
+      },
+      {
+        "heading": "*Attribute vs Entity*",
+        "level": 4
+      },
+      {
+        "heading": "Entity set vs Relationship set",
+        "level": 4
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec4",
+        "relativePath": "DBM/README.md",
+        "displayText": "Design Issues"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec3",
+    "relativePath": "DBM/Lecture/Lec3.md",
+    "headings": [
+      {
+        "heading": "Entity-Relationship Model Extended Features",
+        "level": 1
+      },
+      {
+        "heading": "Aggregation",
+        "level": 2
+      },
+      {
+        "heading": "Weak Entity Sets",
+        "level": 2
+      },
+      {
+        "heading": "Generalization & Specialization",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec3",
+        "relativePath": "DBM/README.md",
+        "displayText": "Entity-Relationship Model Extended Features"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec2",
+    "relativePath": "DBM/Lecture/Lec2.md",
+    "headings": [
+      {
+        "heading": "Entity-Relationship Model Constraints",
+        "level": 1
+      },
+      {
+        "heading": "Motivation",
+        "level": 2
+      },
+      {
+        "heading": "Cardinality Constraints",
+        "level": 2
+      },
+      {
+        "heading": "**One-to-Many** relationship",
+        "level": 3
+      },
+      {
+        "heading": "**One-to-One** relationship",
+        "level": 3
+      },
+      {
+        "heading": "**Many-to-many** relationship",
+        "level": 3
+      },
+      {
+        "heading": "Participation Constraints",
+        "level": 2
+      },
+      {
+        "heading": "Total Participation",
+        "level": 3
+      },
+      {
+        "heading": "Particial Participation",
+        "level": 3
+      },
+      {
+        "heading": "Constraints for Ternary Relationship Sets",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec2",
+        "relativePath": "DBM/README.md",
+        "displayText": "Entity-Relationship Model Constraints"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec1",
+    "relativePath": "DBM/Lecture/Lec1.md",
+    "headings": [
+      {
+        "heading": "Entity-Relationship Model Modeling",
+        "level": 1
+      },
+      {
+        "heading": "Database Design Process",
+        "level": 2
+      },
+      {
+        "heading": "Conceptual-design",
+        "level": 3
+      },
+      {
+        "heading": "Optimization",
+        "level": 4
+      },
+      {
+        "heading": "Convert ER diagram to implementation data model",
+        "level": 4
+      },
+      {
+        "heading": "Logical-design",
+        "level": 3
+      },
+      {
+        "heading": "Physical-design",
+        "level": 3
+      },
+      {
+        "heading": "Entity Set",
+        "level": 2
+      },
+      {
+        "heading": "Attribute",
+        "level": 2
+      },
+      {
+        "heading": "ER-Diagram",
+        "level": 2
+      },
+      {
+        "heading": "Key",
+        "level": 3
+      },
+      {
+        "heading": "Multi-valued Attribute",
+        "level": 3
+      },
+      {
+        "heading": "Composite Attribute",
+        "level": 3
+      },
+      {
+        "heading": "Relationship",
+        "level": 3
+      },
+      {
+        "heading": "Multi-ary Relationship",
+        "level": 3
+      },
+      {
+        "heading": "Attributes for Relationship Sets",
+        "level": 3
+      },
+      {
+        "heading": "Derived Attributes",
+        "level": 3
+      },
+      {
+        "heading": "Summary",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec1",
+        "relativePath": "DBM/README.md",
+        "displayText": "Entity-Relationship Model Modeling"
+      }
+    ]
+  },
+  {
+    "fileName": "Key-concept",
+    "relativePath": "DBM/Lecture/Key-concept.md",
+    "headings": [
+      {
+        "heading": "Concept",
+        "level": 1
+      },
+      {
+        "heading": "Key",
+        "level": 2
+      },
+      {
+        "heading": "Normal Form",
+        "level": 2
+      },
+      {
+        "heading": "$1^{st}$NF *First Normal Form*",
+        "level": 3
+      },
+      {
+        "heading": "$2^{nd}$NF *Second Normal Form*",
+        "level": 3
+      },
+      {
+        "heading": "$3^{rd}$NF *Third Normal Form*",
+        "level": 3
+      },
+      {
+        "heading": "BCNF *Boyce-Codd Normal Form*",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Key-concept",
+        "relativePath": "DBM/README.md",
+        "displayText": "KEY Concept"
+      }
+    ]
+  },
+  {
+    "fileName": "As3",
+    "relativePath": "DBM/Assignment/As3/As3.md",
+    "headings": [
+      {
+        "heading": "Assignment",
+        "level": 1
+      },
+      {
+        "heading": "Question-1",
+        "level": 2
+      },
+      {
+        "heading": "Question-2",
+        "level": 2
+      },
+      {
+        "heading": "Question-3",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "As2",
+    "relativePath": "DBM/Assignment/As2/As2.md",
+    "headings": [
+      {
+        "heading": "Assignment",
+        "level": 1
+      },
+      {
+        "heading": "Q1. Convert the following ER diagram into logical schemas. (20pt)",
+        "level": 2
+      },
+      {
+        "heading": "Q2. Implement your logical design in SQL. You need to select suitable data types and link foreign keys properly. (20pt)",
+        "level": 2
+      },
+      {
+        "heading": "Q3",
+        "level": 2
+      },
+      {
+        "heading": "Q4",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "As1",
+    "relativePath": "DBM/Assignment/As1/As1.md",
+    "headings": [
+      {
+        "heading": "Assignment",
+        "level": 1
+      },
+      {
+        "heading": "Q1. Please explain why people use database systems instead of file systems with 3 examples",
+        "level": 2
+      },
+      {
+        "heading": "Q2. Please list the steps to design a database",
+        "level": 2
+      },
+      {
+        "heading": "Q3. What is a schema?",
+        "level": 2
+      },
+      {
+        "heading": "Q4. What is a key?",
+        "level": 2
+      },
+      {
+        "heading": "Q5. Suppose you are the manager of a supermarket. You want to design an ER diagram to model customers, products, and sales under the following assumptions",
+        "level": 2
+      },
+      {
+        "heading": "Q6. Write a query for each following question. Assuming students’ name and instructors’ name are unique",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "HODA",
+    "relativePath": "DataAnalysis/HODA/HODA.md",
+    "headings": [
+      {
+        "heading": "*Hands on Data Analytics for Everyone*",
+        "level": 1
+      },
+      {
+        "heading": "Preparation",
+        "level": 2
+      },
+      {
+        "heading": "Data Analytics",
+        "level": 3
+      },
+      {
+        "heading": "Data Science Skills",
+        "level": 3
+      },
+      {
+        "heading": "Chapter 1 Data Analytics Foundations",
+        "level": 2
+      },
+      {
+        "heading": "Data Science: Extract knowledge and insights from structured and unstructured data",
+        "level": 3
+      },
+      {
+        "heading": "Data project life cycle",
+        "level": 3
+      },
+      {
+        "heading": "Structured Data & Unstructured Data",
+        "level": 3
+      },
+      {
+        "heading": "Common Structured Data Types",
+        "level": 4
+      },
+      {
+        "heading": "5Comma-Separated Values",
+        "level": 4
+      },
+      {
+        "heading": "In \".csv” format, new records are separated by ==new line==",
+        "level": 4
+      },
+      {
+        "heading": "Data Type",
+        "level": 4
+      },
+      {
+        "heading": "Relation between computer science, statistics and data analytics",
+        "level": 3
+      },
+      {
+        "heading": "Difference between computer science, statistics and data analytics",
+        "level": 3
+      },
+      {
+        "heading": "Chapter 2 Data Processing",
+        "level": 2
+      },
+      {
+        "heading": "Data Summary",
+        "level": 3
+      },
+      {
+        "heading": "Basic Descriptive Statistics",
+        "level": 4
+      },
+      {
+        "heading": "Percentiles (Quartiles)",
+        "level": 5
+      },
+      {
+        "heading": "How to find quartile?",
+        "level": 6
+      },
+      {
+        "heading": "Data Visualization",
+        "level": 3
+      },
+      {
+        "heading": "Chart",
+        "level": 4
+      },
+      {
+        "heading": "Dimension 1",
+        "level": 5
+      },
+      {
+        "heading": "Bar chart",
+        "level": 6
+      },
+      {
+        "heading": "Histogram",
+        "level": 6
+      },
+      {
+        "heading": "Choice of Number of Bins",
+        "level": 6
+      },
+      {
+        "heading": "Dimension 2",
+        "level": 5
+      },
+      {
+        "heading": "Scatter Plot",
+        "level": 6
+      },
+      {
+        "heading": "Dimension 3",
+        "level": 5
+      },
+      {
+        "heading": "3D plot",
+        "level": 6
+      },
+      {
+        "heading": "Scatter Matrixes",
+        "level": 6
+      },
+      {
+        "heading": "Parallel Coordinates Plot \"cuba data\"",
+        "level": 6
+      },
+      {
+        "heading": "Radar Plot \"spider plots\"",
+        "level": 6
+      },
+      {
+        "heading": "Sunburst Chart",
+        "level": 6
+      },
+      {
+        "heading": "Dimensionality Reduction Techniques",
+        "level": 3
+      },
+      {
+        "heading": "Measure based",
+        "level": 4
+      },
+      {
+        "heading": "Data Cleaning",
+        "level": 3
+      },
+      {
+        "heading": "Missing Values",
+        "level": 4
+      },
+      {
+        "heading": "Missing Value Type",
+        "level": 5
+      },
+      {
+        "heading": "Missing Values Imputation",
+        "level": 5
+      },
+      {
+        "heading": "Outliers",
+        "level": 4
+      },
+      {
+        "heading": "Outlier Detection Techniques",
+        "level": 5
+      },
+      {
+        "heading": "Knowledge-based",
+        "level": 6
+      },
+      {
+        "heading": "Statistics-based",
+        "level": 6
+      },
+      {
+        "heading": "Statistical Methods",
+        "level": 6
+      },
+      {
+        "heading": "Data Normalization",
+        "level": 5
+      },
+      {
+        "heading": "Feature Engineering",
+        "level": 4
+      },
+      {
+        "heading": "Scale Conversion",
+        "level": 5
+      },
+      {
+        "heading": "Data Integration",
+        "level": 4
+      },
+      {
+        "heading": "Vertical Data Integration",
+        "level": 5
+      },
+      {
+        "heading": "Horizontal Data Integration",
+        "level": 5
+      },
+      {
+        "heading": "Chapter 3 Machine Learning",
+        "level": 2
+      },
+      {
+        "heading": "Supervised Learning && Unsupervised Learning",
+        "level": 3
+      },
+      {
+        "heading": "Supervised Learning",
+        "level": 4
+      },
+      {
+        "heading": "Unsupervised Learning",
+        "level": 4
+      },
+      {
+        "heading": "Classification and Regression (Supervised Learning)",
+        "level": 4
+      },
+      {
+        "heading": "Regression Problem",
+        "level": 5
+      },
+      {
+        "heading": "Classification problem",
+        "level": 5
+      },
+      {
+        "heading": "Linear Regression",
+        "level": 3
+      },
+      {
+        "heading": "Linear Regression Evaluation",
+        "level": 4
+      },
+      {
+        "heading": "Error",
+        "level": 5
+      },
+      {
+        "heading": "Classification",
+        "level": 3
+      },
+      {
+        "heading": "Classification accuracy",
+        "level": 4
+      },
+      {
+        "heading": "Confusion matrix",
+        "level": 5
+      },
+      {
+        "heading": "Consider a two-class problem and the confusion matrix below",
+        "level": 6
+      },
+      {
+        "heading": "Decision Tree",
+        "level": 4
+      },
+      {
+        "heading": "Clustering (Unsupervised Learning)",
+        "level": 3
+      },
+      {
+        "heading": "Types of Clustering Approach",
+        "level": 4
+      },
+      {
+        "heading": "(Dis-)similarity Functions for Numeric Attributes",
+        "level": 4
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "HODA.md",
+        "relativePath": "DataAnalysis/README.md",
+        "displayText": "Hands on Data For Everyone"
+      }
+    ]
+  },
+  {
+    "fileName": "README",
+    "relativePath": "DataAnalysis/README.md",
+    "tags": [
+      "readme"
+    ],
+    "frontmatter": {
+      "Title": "Data Analysis",
+      "Author": "AllenYGY"
+    },
+    "aliases": [
+      "HODA"
+    ],
+    "headings": [
+      {
+        "heading": "Data Analysis",
+        "level": 1
+      },
+      {
+        "heading": "[Hands on Data For Everyone](HODA/HODA.md)",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "HODA.md",
+        "displayText": "Hands on Data For Everyone",
+        "relativePath": "DataAnalysis/HODA/HODA.md"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "WorkView",
+        "link": "README",
+        "relativePath": "WorkView.md",
+        "displayText": "Data Analysis"
+      },
+      {
+        "fileName": "Home",
+        "link": "README",
+        "relativePath": "Home.md",
+        "displayText": "Data Analysis"
+      }
+    ]
+  },
+  {
+    "fileName": "Weekly-contest-381",
+    "relativePath": "Contest/Leetcode/Weekly-contest-381.md",
+    "tags": [
+      "contest",
+      "t1",
+      "t2",
+      "t3",
+      "t4"
+    ],
+    "frontmatter": {
+      "Title": "[[Weekly-contest-381]]",
+      "Contest": "leetcode",
+      "Rank": 1224,
+      "Total": 3737,
+      "Credits": 12,
+      "T1": "Accepted",
+      "T2": "Accepted",
+      "T3": "Accepted",
+      "T4": "Uncommitted",
+      "Create Time": "2024-02-06",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[Weekly-contest-381]](https://leetcode.cn/contest/weekly-contest-381/)",
+        "level": 1
+      },
+      {
+        "heading": "#T1",
+        "level": 2
+      },
+      {
+        "heading": "#T2",
+        "level": 2
+      },
+      {
+        "heading": "#T3",
+        "level": 2
+      },
+      {
+        "heading": "#T4",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "Weekly-contest-381",
+        "relativePath": "Contest/Leetcode/Weekly-contest-381.md"
+      }
+    ]
+  },
+  {
+    "fileName": "Leetcode",
+    "relativePath": "Contest/Leetcode/Leetcode.md",
+    "tags": [
+      "t1",
+      "灵神题解",
+      "t2",
+      "t3",
+      "t4"
+    ],
+    "headings": [
+      {
+        "heading": "[[<%tp.user.title%>]](<% tp.file.cursor() %>)",
+        "level": 1
+      },
+      {
+        "heading": "#T1",
+        "level": 2
+      },
+      {
+        "heading": "#T2",
+        "level": 2
+      },
+      {
+        "heading": "#T3",
+        "level": 2
+      },
+      {
+        "heading": "#T4",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "<%tp.user.title%>"
+      }
+    ]
+  },
+  {
+    "fileName": "Biweekly-contest-123",
+    "relativePath": "Contest/Leetcode/Biweekly-contest-123.md",
+    "tags": [
+      "contest",
+      "t1",
+      "灵神题解",
+      "t2",
+      "t3",
+      "t4"
+    ],
+    "frontmatter": {
+      "Title": "[[Biweekly-contest-123]]",
+      "Contest": "leetcode",
+      "Rank": 1169,
+      "Total": 2209,
+      "Credits": 3,
+      "T1": "Accepted",
+      "T2": "Uncommitted",
+      "T3": "New Complement",
+      "T4": "Uncommitted",
+      "Create Time": "2024-02-04",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[Biweekly-contest-123]](https://leetcode.cn/contest/biweekly-contest-123/)",
+        "level": 1
+      },
+      {
+        "heading": "#T1",
+        "level": 2
+      },
+      {
+        "heading": "#T2",
+        "level": 2
+      },
+      {
+        "heading": "#T3",
+        "level": 2
+      },
+      {
+        "heading": "#T4",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "Biweekly-contest-123",
+        "relativePath": "Contest/Leetcode/Biweekly-contest-123.md"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "2024-W05",
+        "link": "Biweekly-contest-123",
+        "relativePath": "Record/Weekly/2024-W05.md"
+      }
+    ]
+  },
+  {
+    "fileName": "Biweekly-contest-122",
+    "relativePath": "Contest/Leetcode/Biweekly-contest-122.md",
+    "tags": [
+      "contest",
+      "t1",
+      "woc，我是傻逼",
+      "灵神题解",
+      "t2",
+      "分组循环",
+      "t3",
+      "还没开始",
+      "t4"
+    ],
+    "frontmatter": {
+      "Title": "[[Biweekly-contest-122]]",
+      "Contest": "leetcode",
+      "Rank": 1205,
+      "Total": 2547,
+      "Credits": 7,
+      "T1": "Accepted",
+      "T2": "Accepted",
+      "T3": "New Complement",
+      "T4": "Uncommitted",
+      "Create Time": "2024-01-29",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[Biweekly-contest-122](https://leetcode.cn/contest/biweekly-contest-122)",
+        "level": 1
+      },
+      {
+        "heading": "#T1 [3010. 将数组分成最小总代价的子数组 I](https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-i/)",
+        "level": 2
+      },
+      {
+        "heading": "#T2 [3011. 判断一个数组是否可以变为有序](https://leetcode.cn/problems/find-if-array-can-be-sorted/)",
+        "level": 2
+      },
+      {
+        "heading": "#T3 [3012. 通过操作使数组长度最小](https://leetcode.cn/problems/minimize-length-of-array-using-operations/)",
+        "level": 2
+      },
+      {
+        "heading": "#T4 [3013. 将数组分成最小总代价的子数组 II](https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/)",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Week-1",
+    "relativePath": "Contest/Lanqiao/Week-1.md",
+    "tags": [
+      "contest",
+      "experience",
+      "hint"
+    ],
+    "frontmatter": {
+      "Title": "[[Week-1]]",
+      "Contest": "lanqiao",
+      "theme": "简单填空题",
+      "Create Time": "2024-01-31",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[Week-1]]",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "Week-1",
+        "relativePath": "Contest/Lanqiao/Week-1.md"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "2024-W05",
+        "link": "Week-1",
+        "relativePath": "Record/Weekly/2024-W05.md"
+      }
+    ]
+  },
+  {
+    "fileName": "Lanqiao",
+    "relativePath": "Contest/Lanqiao/Lanqiao.md",
+    "tags": [
+      "contest"
+    ],
+    "frontmatter": {
+      "Title": "[[Lanqiao]]",
+      "Contest": "lanqiao",
+      "theme": null,
+      "Create Time": "2024-01-31",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[Lanqiao]](<% tp.file.cursor() %>)",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "Lanqiao",
+        "relativePath": "Contest/Lanqiao/Lanqiao.md"
+      }
+    ]
+  },
+  {
+    "fileName": "Overview",
+    "relativePath": "Contest/Overview.md",
+    "tags": [
+      "readme",
+      "overview"
+    ],
+    "frontmatter": {
+      "title": "Contest overview",
+      "Author": "AllenYGY"
+    },
+    "headings": [
+      {
+        "heading": "Leetcode Contest",
+        "level": 1
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "WorkView",
+        "link": "Overview",
+        "relativePath": "WorkView.md",
+        "displayText": "Contest Overview"
+      },
+      {
+        "fileName": "Home",
+        "link": "Overview",
+        "relativePath": "Home.md",
+        "displayText": "Contest Overview"
+      }
+    ]
+  },
+  {
+    "fileName": "Lab9",
+    "relativePath": "CO/Lab/Lab9.md",
+    "headings": [
+      {
+        "heading": "Lab9",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "fileName": "Lab8",
+    "relativePath": "CO/Lab/Lab8.md"
+  },
+  {
+    "fileName": "Lab7",
+    "relativePath": "CO/Lab/Lab7.md",
+    "headings": [
+      {
+        "heading": "Lab7",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "fileName": "Lab6",
+    "relativePath": "CO/Lab/Lab6.md",
+    "headings": [
+      {
+        "heading": "Lab",
+        "level": 1
+      },
+      {
+        "heading": "$I$",
+        "level": 2
+      },
+      {
+        "heading": "$II$",
+        "level": 2
+      },
+      {
+        "heading": "$III$",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Lab5",
+    "relativePath": "CO/Lab/Lab5.md",
+    "headings": [
+      {
+        "heading": "Problem",
+        "level": 1
+      },
+      {
+        "heading": "ADD",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Lab3",
+    "relativePath": "CO/Lab/Lab3.md",
+    "headings": [
+      {
+        "heading": "Lab3",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "fileName": "Lab2",
+    "relativePath": "CO/Lab/Lab2.md",
+    "headings": [
+      {
+        "heading": "Lab2",
+        "level": 1
+      },
+      {
+        "heading": "1. Given 16 bits, what are the Signed-magnitude, 1’s complement and 2’s complement representation for -59? Write the answers in Hexadecimal",
+        "level": 2
+      },
+      {
+        "heading": "2. What is the corresponding decimal form for the single point precision floating number?",
+        "level": 2
+      },
+      {
+        "heading": "3. What is the single point precision floating number of -45.875 in computer system? Write the answers in Hexadecimal",
+        "level": 2
+      },
+      {
+        "heading": "4. What is the single point precision floating number of -45.875 in computer system? Write the answers in Hexadecimal",
+        "level": 2
+      },
+      {
+        "heading": "5. What is the Unicode representation for “您好” in hexadecimal?",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "README",
+    "relativePath": "CO/README.md",
+    "tags": [
+      "readme"
+    ],
+    "frontmatter": {
+      "Title": "Computer Organization",
+      "Author": "AllenYGY"
+    },
+    "aliases": [
+      "CO"
+    ],
+    "headings": [
+      {
+        "heading": "Computer Organization",
+        "level": 1
+      },
+      {
+        "heading": "[What is a Computer](CO/Lecture/Lec1.md)",
+        "level": 2
+      },
+      {
+        "heading": "[Bits: Data Representation and Manipulation](CO/Lecture/Lec2.md)",
+        "level": 2
+      },
+      {
+        "heading": "[Boolean Algebra: From Bits to Logic](Lecture/Lec3)",
+        "level": 2
+      },
+      {
+        "heading": "[From Transistors to Gates](Lecture/Lec4)",
+        "level": 2
+      },
+      {
+        "heading": "[From Gates to Circuits I: Combinational Circuits](CO/Lecture/Lec5.md)",
+        "level": 2
+      },
+      {
+        "heading": "[From Gates to Circuits II: Sequential Circuits](CO/Lecture/Lec6.md)",
+        "level": 2
+      },
+      {
+        "heading": "[Finite State Machine](CO/Lecture/Lec7.md)",
+        "level": 2
+      },
+      {
+        "heading": "[Circuit Design](Lecture/CircuitDesign)",
+        "level": 2
+      },
+      {
+        "heading": "[Microarchitecture](Lecture/Lec8.md)",
+        "level": 2
+      },
+      {
+        "heading": "[The LC-3 ISA](Lecture/Lec9.md)",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "Lec1.md",
+        "displayText": "What is a Computer",
+        "relativePath": "CO/Lecture/Lec1.md"
+      },
+      {
+        "link": "Lec2.md",
+        "displayText": "Bits: Data Representation and Manipulation",
+        "relativePath": "CO/Lecture/Lec2.md"
+      },
+      {
+        "link": "Lec3",
+        "displayText": "Boolean Algebra: From Bits to Logic",
+        "relativePath": "CO/Lecture/Lec3.md"
+      },
+      {
+        "link": "Lec4",
+        "displayText": "From Transistors to Gates",
+        "relativePath": "CO/Lecture/Lec4.md"
+      },
+      {
+        "link": "Lec5.md",
+        "displayText": "From Gates to Circuits I: Combinational Circuits",
+        "relativePath": "CO/Lecture/Lec5.md"
+      },
+      {
+        "link": "Lec6.md",
+        "displayText": "From Gates to Circuits II: Sequential Circuits",
+        "relativePath": "CO/Lecture/Lec6.md"
+      },
+      {
+        "link": "Lec7.md",
+        "displayText": "Finite State Machine",
+        "relativePath": "CO/Lecture/Lec7.md"
+      },
+      {
+        "link": "CircuitDesign",
+        "displayText": "Circuit Design",
+        "relativePath": "CO/Lecture/CircuitDesign.md"
+      },
+      {
+        "link": "Lec8.md",
+        "displayText": "Microarchitecture",
+        "relativePath": "CO/Lecture/Lec8.md"
+      },
+      {
+        "link": "Lec9.md",
+        "displayText": "The LC-3 ISA",
+        "relativePath": "CO/Lecture/Lec9.md"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "WorkView",
+        "link": "README",
+        "relativePath": "WorkView.md",
+        "displayText": "Computer Organization"
+      },
+      {
+        "fileName": "Home",
+        "link": "README",
+        "relativePath": "Home.md",
+        "displayText": "Computer Organization"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec9",
+    "relativePath": "CO/Lecture/Lec9.md",
+    "headings": [
+      {
+        "heading": "ISA",
+        "level": 1
+      },
+      {
+        "heading": "Lc-3",
+        "level": 2
+      },
+      {
+        "heading": "Lc-3 Memory Organization",
+        "level": 2
+      },
+      {
+        "heading": "Registers",
+        "level": 2
+      },
+      {
+        "heading": "Instruction",
+        "level": 2
+      },
+      {
+        "heading": "Opcodes & Operations",
+        "level": 3
+      },
+      {
+        "heading": "Opcodes",
+        "level": 4
+      },
+      {
+        "heading": "Operate instructions *Manipulate data directly*",
+        "level": 5
+      },
+      {
+        "heading": "Data Movement instructions *Move data between memory and registers(CPU)*",
+        "level": 5
+      },
+      {
+        "heading": "Control instructions *Change the sequence of instruction execution*",
+        "level": 5
+      },
+      {
+        "heading": "Data Types",
+        "level": 4
+      },
+      {
+        "heading": "Condition Codes",
+        "level": 4
+      },
+      {
+        "heading": "Addressing Modes",
+        "level": 2
+      },
+      {
+        "heading": "PC-Relative Mode *Direct mode* *直接寻址*",
+        "level": 3
+      },
+      {
+        "heading": "Base+Offset Mode",
+        "level": 3
+      },
+      {
+        "heading": "Indirect Addressing Mode",
+        "level": 3
+      },
+      {
+        "heading": "Control Instructions",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec9.md",
+        "relativePath": "CO/README.md",
+        "displayText": "The LC-3 ISA"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec8",
+    "relativePath": "CO/Lecture/Lec8.md",
+    "headings": [
+      {
+        "heading": "Microarchitecture",
+        "level": 1
+      },
+      {
+        "heading": "Von Neumann architecture",
+        "level": 2
+      },
+      {
+        "heading": "Memory",
+        "level": 2
+      },
+      {
+        "heading": "Interface to Memory",
+        "level": 3
+      },
+      {
+        "heading": "CPU",
+        "level": 2
+      },
+      {
+        "heading": "Register *Register File*",
+        "level": 3
+      },
+      {
+        "heading": "ALU *Arithmetic Logic Unit*",
+        "level": 3
+      },
+      {
+        "heading": "CU",
+        "level": 3
+      },
+      {
+        "heading": "I/O",
+        "level": 2
+      },
+      {
+        "heading": "Instruction",
+        "level": 2
+      },
+      {
+        "heading": "Lc-3's ADD Instruction",
+        "level": 3
+      },
+      {
+        "heading": "LC-3's LDR Instruction",
+        "level": 3
+      },
+      {
+        "heading": "Instruction processsing",
+        "level": 2
+      },
+      {
+        "heading": "Fetch",
+        "level": 3
+      },
+      {
+        "heading": "Decode",
+        "level": 3
+      },
+      {
+        "heading": "Evaluate Address *计算地址*",
+        "level": 3
+      },
+      {
+        "heading": "Fetch Operands",
+        "level": 3
+      },
+      {
+        "heading": "Execution",
+        "level": 3
+      },
+      {
+        "heading": "Store",
+        "level": 3
+      },
+      {
+        "heading": "Changing the Sequence of Execution",
+        "level": 2
+      },
+      {
+        "heading": "LC-3's Jump Instruction",
+        "level": 3
+      },
+      {
+        "heading": "Driving Force: the Clock",
+        "level": 3
+      },
+      {
+        "heading": "Instruction summary",
+        "level": 2
+      },
+      {
+        "heading": "Micro-Architecture Level",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec8.md",
+        "relativePath": "CO/README.md",
+        "displayText": "Microarchitecture"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec7",
+    "relativePath": "CO/Lecture/Lec7.md",
+    "headings": [
+      {
+        "heading": "*Finite State Machine*",
+        "level": 1
+      },
+      {
+        "heading": "*The Concept of State*",
+        "level": 2
+      },
+      {
+        "heading": "*Finite-State Machine* 有限状态机",
+        "level": 2
+      },
+      {
+        "heading": "*State Diagram*",
+        "level": 3
+      },
+      {
+        "heading": "*Turing Machine vs FSM*",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec7.md",
+        "relativePath": "CO/README.md",
+        "displayText": "Finite State Machine"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec6",
+    "relativePath": "CO/Lecture/Lec6.md",
+    "headings": [
+      {
+        "heading": "*From Gates to Circuits II: Sequential Circuits*",
+        "level": 1
+      },
+      {
+        "heading": "*Sequential Circuits*",
+        "level": 2
+      },
+      {
+        "heading": "*One bit memory*",
+        "level": 3
+      },
+      {
+        "heading": "*SR NOR Latch (or Flip-flop)*",
+        "level": 4
+      },
+      {
+        "heading": "*Gated SR Latch*",
+        "level": 5
+      },
+      {
+        "heading": "*SR-NAND Latch*",
+        "level": 4
+      },
+      {
+        "heading": "*Glitch*",
+        "level": 4
+      },
+      {
+        "heading": "*Clock*",
+        "level": 4
+      },
+      {
+        "heading": "*Edge-Triggered vs Level-Triggered* *边沿触发与电平触发*",
+        "level": 5
+      },
+      {
+        "heading": "*Clocked S-R Latch*",
+        "level": 5
+      },
+      {
+        "heading": "*J-K flip-flop*",
+        "level": 4
+      },
+      {
+        "heading": "*D flip-flop*",
+        "level": 4
+      },
+      {
+        "heading": "*4-bit Register*",
+        "level": 3
+      },
+      {
+        "heading": "*Binary Counter*",
+        "level": 3
+      },
+      {
+        "heading": "*4 x 3 Memory*",
+        "level": 3
+      },
+      {
+        "heading": "*Memory Addressing*",
+        "level": 3
+      },
+      {
+        "heading": "Summary",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec6.md",
+        "relativePath": "CO/README.md",
+        "displayText": "From Gates to Circuits II: Sequential Circuits"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec5",
+    "relativePath": "CO/Lecture/Lec5.md",
+    "headings": [
+      {
+        "heading": "*From Gates to Circuits I: Combinational Circuits*",
+        "level": 1
+      },
+      {
+        "heading": "*Basic Building Blocks* *基本构造模块*",
+        "level": 2
+      },
+      {
+        "heading": "*Integrated Circuits (IC)*",
+        "level": 2
+      },
+      {
+        "heading": "*Combinational Circuit*",
+        "level": 2
+      },
+      {
+        "heading": "*Half Adder* ***半加器***",
+        "level": 2
+      },
+      {
+        "heading": "*Full Adder* ***全加器***",
+        "level": 2
+      },
+      {
+        "heading": "*4-bit Adder* ***连锁进位加法器***",
+        "level": 2
+      },
+      {
+        "heading": "*Decoder*",
+        "level": 2
+      },
+      {
+        "heading": "*A 2-4 Decoder*",
+        "level": 3
+      },
+      {
+        "heading": "***Multiplexer***",
+        "level": 2
+      },
+      {
+        "heading": "***4-to-1 Multiplexer***",
+        "level": 3
+      },
+      {
+        "heading": "Difference between Decoder and Multiplexer",
+        "level": 2
+      },
+      {
+        "heading": "***1-bit-ALU***",
+        "level": 2
+      },
+      {
+        "heading": "***2bit-ALU***",
+        "level": 2
+      },
+      {
+        "heading": "Combination Circuit Design",
+        "level": 2
+      },
+      {
+        "heading": "Design a circuit that compares 1-bit number, A and B",
+        "level": 3
+      },
+      {
+        "heading": "Truth Table",
+        "level": 4
+      },
+      {
+        "heading": "Sum of Product",
+        "level": 4
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec5.md",
+        "relativePath": "CO/README.md",
+        "displayText": "From Gates to Circuits I: Combinational Circuits"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec4",
+    "relativePath": "CO/Lecture/Lec4.md",
+    "headings": [
+      {
+        "heading": "*From Transistors to Gates*",
+        "level": 1
+      },
+      {
+        "heading": "*Transistor*",
+        "level": 2
+      },
+      {
+        "heading": "*CMOS Transistors*",
+        "level": 2
+      },
+      {
+        "heading": "*Logical Gates*",
+        "level": 2
+      },
+      {
+        "heading": "*Inverter Gate* *(NOT)* *非*",
+        "level": 3
+      },
+      {
+        "heading": "*AND/NAND Gate* *与*",
+        "level": 3
+      },
+      {
+        "heading": "*NOR Gate* *异或*",
+        "level": 3
+      },
+      {
+        "heading": "*OR Gate* *或*",
+        "level": 3
+      },
+      {
+        "heading": "*Universal Logical Gate*",
+        "level": 2
+      },
+      {
+        "heading": "Prove NAND is a universal gate $\\overline{XY}$",
+        "level": 3
+      },
+      {
+        "heading": "Prove NOR is a universal gate $\\overline{X+Y}$",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec4",
+        "relativePath": "CO/README.md",
+        "displayText": "From Transistors to Gates"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec3",
+    "relativePath": "CO/Lecture/Lec3.md",
+    "headings": [
+      {
+        "heading": "*Boolean Algebra: From Bits to Logic*",
+        "level": 1
+      },
+      {
+        "heading": "*Boolean Functions*",
+        "level": 2
+      },
+      {
+        "heading": "*Canonical Forms*",
+        "level": 2
+      },
+      {
+        "heading": "*Sum-of-Products*",
+        "level": 3
+      },
+      {
+        "heading": "*Product-of-Sums*",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec3",
+        "relativePath": "CO/README.md",
+        "displayText": "Boolean Algebra: From Bits to Logic"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec2",
+    "relativePath": "CO/Lecture/Lec2.md",
+    "headings": [
+      {
+        "heading": "*Bits: Data Representation and Manipulation*",
+        "level": 1
+      },
+      {
+        "heading": "*Binary Numbers: Bits*",
+        "level": 2
+      },
+      {
+        "heading": "*Data Representation*",
+        "level": 2
+      },
+      {
+        "heading": "Numeric Data Representation",
+        "level": 2
+      },
+      {
+        "heading": "*Unsigned Integers Representations*",
+        "level": 3
+      },
+      {
+        "heading": "*Signed Integer Representations*",
+        "level": 3
+      },
+      {
+        "heading": "*Sign-magnitude*",
+        "level": 4
+      },
+      {
+        "heading": "*1’s complement*",
+        "level": 4
+      },
+      {
+        "heading": "*2’s complement*",
+        "level": 4
+      },
+      {
+        "heading": "*Property*",
+        "level": 3
+      },
+      {
+        "heading": "*Floating-point numbers*",
+        "level": 3
+      },
+      {
+        "heading": "*Half Precision Floating Numbers*",
+        "level": 3
+      },
+      {
+        "heading": "*Single point Precision Floating Numbers*",
+        "level": 3
+      },
+      {
+        "heading": "*Non-numeric Data Representation*",
+        "level": 2
+      },
+      {
+        "heading": "*ASCII code*",
+        "level": 3
+      },
+      {
+        "heading": "*Universal Character Set*",
+        "level": 3
+      },
+      {
+        "heading": "*Digital Audio*",
+        "level": 3
+      },
+      {
+        "heading": "*Image & Video*",
+        "level": 3
+      },
+      {
+        "heading": "Operations on Bits",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec2.md",
+        "relativePath": "CO/README.md",
+        "displayText": "Bits: Data Representation and Manipulation"
+      }
+    ]
+  },
+  {
+    "fileName": "Lec10",
+    "relativePath": "CO/Lecture/Lec10.md",
+    "headings": [
+      {
+        "heading": "From Machine Language to Assembly Language",
+        "level": 1
+      },
+      {
+        "heading": "$Lc-_3$ Assembly language Synatex",
+        "level": 2
+      },
+      {
+        "heading": "$Lc-_3$ Assembly Language Instruction",
+        "level": 2
+      },
+      {
+        "heading": "Opcode and Operands",
+        "level": 2
+      },
+      {
+        "heading": "Labels",
+        "level": 2
+      },
+      {
+        "heading": "Comments",
+        "level": 2
+      },
+      {
+        "heading": "Assembler Directives",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Lec1",
+    "relativePath": "CO/Lecture/Lec1.md",
+    "headings": [
+      {
+        "heading": "*Computer*",
+        "level": 1
+      },
+      {
+        "heading": "*Turing Machine*",
+        "level": 2
+      },
+      {
+        "heading": "*Universal Turing Machine*",
+        "level": 3
+      },
+      {
+        "heading": "*Historical Development*",
+        "level": 2
+      },
+      {
+        "heading": "*The von Neumann Architecture*",
+        "level": 2
+      },
+      {
+        "heading": "*Von Neumann Execution Cycle*",
+        "level": 3
+      },
+      {
+        "heading": "*The von Neumann Bottleneck*",
+        "level": 3
+      },
+      {
+        "heading": "*The system bus model of the von Neumann Architecture*",
+        "level": 3
+      },
+      {
+        "heading": "*Levels of Abstraction*",
+        "level": 2
+      },
+      {
+        "heading": "*Levels of Transformations*",
+        "level": 3
+      },
+      {
+        "heading": "*The Machine Levels*",
+        "level": 3
+      },
+      {
+        "heading": "*Hardware VS Software*",
+        "level": 3
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "Lec1.md",
+        "relativePath": "CO/README.md",
+        "displayText": "What is a Computer"
+      }
+    ]
+  },
+  {
+    "fileName": "CircuitDesign",
+    "relativePath": "CO/Lecture/CircuitDesign.md",
+    "headings": [
+      {
+        "heading": "Circuit Design",
+        "level": 1
+      },
+      {
+        "heading": "Combinational Circuit Design",
+        "level": 2
+      },
+      {
+        "heading": "Sequential Circuit Design",
+        "level": 2
+      },
+      {
+        "heading": "Sequential Circuit Analysis",
+        "level": 3
+      },
+      {
+        "heading": "Example-1",
+        "level": 4
+      },
+      {
+        "heading": "Design Sequencial Circuit",
+        "level": 3
+      },
+      {
+        "heading": "Example-2",
+        "level": 4
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "README",
+        "link": "CircuitDesign",
+        "relativePath": "CO/README.md",
+        "displayText": "Circuit Design"
+      }
+    ]
+  },
+  {
+    "fileName": "CaluteSE",
+    "relativePath": "CO/Assignment/CaluteSE.md",
+    "headings": [
+      {
+        "heading": "Calculate Structure Entropy",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "fileName": "Assignment4",
+    "relativePath": "CO/Assignment/As4/Assignment4.md",
+    "headings": [
+      {
+        "heading": "Assignment-4",
+        "level": 1
+      },
+      {
+        "heading": "$I$",
+        "level": 2
+      },
+      {
+        "heading": "$II$",
+        "level": 2
+      },
+      {
+        "heading": "$III$",
+        "level": 2
+      },
+      {
+        "heading": "$IV$",
+        "level": 2
+      },
+      {
+        "heading": "$V$",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Assignment3",
+    "relativePath": "CO/Assignment/As3/Assignment3.md",
+    "headings": [
+      {
+        "heading": "Assignment-3",
+        "level": 1
+      },
+      {
+        "heading": "$I$",
+        "level": 2
+      },
+      {
+        "heading": "$II$",
+        "level": 2
+      },
+      {
+        "heading": "$III$",
+        "level": 2
+      },
+      {
+        "heading": "$IV$",
+        "level": 2
+      },
+      {
+        "heading": "$V$",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Assignment2",
+    "relativePath": "CO/Assignment/As2/Assignment2.md",
+    "headings": [
+      {
+        "heading": "Assignment-2",
+        "level": 1
+      },
+      {
+        "heading": "$I$",
+        "level": 2
+      },
+      {
+        "heading": "$II$",
+        "level": 2
+      },
+      {
+        "heading": "$III$",
+        "level": 2
+      },
+      {
+        "heading": "$IV$",
+        "level": 2
+      },
+      {
+        "heading": "$V$",
+        "level": 2
+      },
+      {
+        "heading": "$VI$",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Assignment1",
+    "relativePath": "CO/Assignment/As1/Assignment1.md",
+    "headings": [
+      {
+        "heading": "Assignment-1",
+        "level": 1
+      },
+      {
+        "heading": "$I$",
+        "level": 2
+      },
+      {
+        "heading": "$II$",
+        "level": 2
+      },
+      {
+        "heading": "$III$",
+        "level": 2
+      },
+      {
+        "heading": "$IV$",
+        "level": 2
+      },
+      {
+        "heading": "$V$",
+        "level": 2
+      },
+      {
+        "heading": "$VI$",
+        "level": 2
+      },
+      {
+        "heading": "$VII$",
+        "level": 2
+      },
+      {
+        "heading": "$VIII$",
+        "level": 2
+      },
+      {
+        "heading": "$IX$",
+        "level": 2
+      },
+      {
+        "heading": "$X$",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "SlidingWindow",
+    "relativePath": "Algorithm/SlidingWindow.md",
+    "tags": [
+      "note",
+      "algorithm",
+      "experience"
+    ],
+    "frontmatter": {
+      "Create Time": "3rd February 2024",
+      "Title": "[[SlidingWindow]]",
+      "Author": [
+        "AllenYGY"
+      ],
+      "theme": "滑动窗口"
+    },
+    "headings": [
+      {
+        "heading": "**SlidingWindow**",
+        "level": 1
+      },
+      {
+        "heading": "[无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "2024-W05",
+        "link": "SlidingWindow",
+        "relativePath": "Record/Weekly/2024-W05.md"
+      }
+    ]
+  },
+  {
+    "fileName": "WA",
+    "relativePath": "Algorithm/DSA/WAassignment/WA.md",
+    "headings": [
+      {
+        "heading": "Written Assignment",
+        "level": 1
+      },
+      {
+        "heading": "Problem I",
+        "level": 2
+      },
+      {
+        "heading": "Problem II",
+        "level": 2
+      },
+      {
+        "heading": "Problem III",
+        "level": 2
+      },
+      {
+        "heading": "3.1",
+        "level": 3
+      },
+      {
+        "heading": "3.2",
+        "level": 3
+      },
+      {
+        "heading": "Problem IV",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "AVL",
+        "relativePath": "Algorithm/DSA/AVL.md"
+      },
+      {
+        "link": "AVL",
+        "relativePath": "Algorithm/DSA/AVL.md"
+      },
+      {
+        "link": "AVL",
+        "relativePath": "Algorithm/DSA/AVL.md"
+      },
+      {
+        "link": "AVL",
+        "relativePath": "Algorithm/DSA/AVL.md"
+      },
+      {
+        "link": "AVL",
+        "relativePath": "Algorithm/DSA/AVL.md"
+      },
+      {
+        "link": "AVL",
+        "relativePath": "Algorithm/DSA/AVL.md"
+      }
+    ]
+  },
+  {
+    "fileName": "WA-2",
+    "relativePath": "Algorithm/DSA/WAassignment/WA-2.md",
+    "headings": [
+      {
+        "heading": "Written Assignment-2",
+        "level": 1
+      },
+      {
+        "heading": "Problem I",
+        "level": 2
+      },
+      {
+        "heading": "Problem II",
+        "level": 2
+      },
+      {
+        "heading": "Problem III",
+        "level": 2
+      },
+      {
+        "heading": "Problem IV",
+        "level": 2
+      },
+      {
+        "heading": "Problem V",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "WA-1",
+    "relativePath": "Algorithm/DSA/WAassignment/WA-1.md",
+    "headings": [
+      {
+        "heading": "Written Assignment-1",
+        "level": 1
+      },
+      {
+        "heading": "Problem 1",
+        "level": 2
+      },
+      {
+        "heading": "Problem 2",
+        "level": 2
+      },
+      {
+        "heading": "Problem 3",
+        "level": 2
+      },
+      {
+        "heading": "Problem 4",
+        "level": 2
+      },
+      {
+        "heading": "Problem 5",
+        "level": 2
+      },
+      {
+        "heading": "Problem 6",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Tree",
+    "relativePath": "Algorithm/DSA/Tree.md",
+    "headings": [
+      {
+        "heading": "Tree",
+        "level": 1
+      },
+      {
+        "heading": "Basic Concepts",
+        "level": 2
+      },
+      {
+        "heading": "Perfect Binary Tree",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "B+Tree",
+    "relativePath": "Algorithm/DSA/B+Tree.md",
+    "headings": [
+      {
+        "heading": "$B^+\\ Tree$",
+        "level": 1
+      },
+      {
+        "heading": "M-ary Search tree",
+        "level": 2
+      },
+      {
+        "heading": "Definition",
+        "level": 2
+      },
+      {
+        "heading": "Insertion",
+        "level": 2
+      },
+      {
+        "heading": "Deletion",
+        "level": 2
+      },
+      {
+        "heading": "Situation I *Removal of a Key*",
+        "level": 3
+      },
+      {
+        "heading": "Situation II *Handling Leaves with Too Few Keys*",
+        "level": 3
+      },
+      {
+        "heading": "Case I",
+        "level": 4
+      },
+      {
+        "heading": "Case 2",
+        "level": 4
+      }
+    ]
+  },
+  {
+    "fileName": "AVL",
+    "relativePath": "Algorithm/DSA/AVL.md",
+    "headings": [
+      {
+        "heading": "AVL Tree",
+        "level": 1
+      },
+      {
+        "heading": "Unbalance Situation",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "WA",
+        "link": "AVL",
+        "relativePath": "Algorithm/DSA/WAassignment/WA.md"
+      },
+      {
+        "fileName": "WA",
+        "link": "AVL",
+        "relativePath": "Algorithm/DSA/WAassignment/WA.md"
+      },
+      {
+        "fileName": "WA",
+        "link": "AVL",
+        "relativePath": "Algorithm/DSA/WAassignment/WA.md"
+      },
+      {
+        "fileName": "WA",
+        "link": "AVL",
+        "relativePath": "Algorithm/DSA/WAassignment/WA.md"
+      },
+      {
+        "fileName": "WA",
+        "link": "AVL",
+        "relativePath": "Algorithm/DSA/WAassignment/WA.md"
+      },
+      {
+        "fileName": "WA",
+        "link": "AVL",
+        "relativePath": "Algorithm/DSA/WAassignment/WA.md"
+      }
+    ]
+  },
+  {
+    "fileName": "高精度计算",
+    "relativePath": "Algorithm/NumberTheory/高精度计算.md",
+    "headings": [
+      {
+        "heading": "High-precision Computing *高精度计算*",
+        "level": 1
+      },
+      {
+        "heading": "Add",
+        "level": 2
+      },
+      {
+        "heading": "Minus",
+        "level": 2
+      },
+      {
+        "heading": "Multiply",
+        "level": 2
+      },
+      {
+        "heading": "Divide",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "素数筛",
+    "relativePath": "Algorithm/NumberTheory/素数筛.md",
+    "headings": [
+      {
+        "heading": "Prime Sieve *质数筛*",
+        "level": 1
+      },
+      {
+        "heading": "**Eratosthenes Sieve**  *埃拉托斯特尼筛法*",
+        "level": 2
+      },
+      {
+        "heading": "**Euler Sieve** *欧拉筛*",
+        "level": 2
+      },
+      {
+        "heading": "例题",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Union-Find",
+    "relativePath": "Algorithm/DAA/Union-Find.md",
+    "tags": [
+      "note",
+      "datastructure",
+      "unionfind"
+    ],
+    "frontmatter": {
+      "Create Time": "28th February 2024",
+      "Title": "[[Union-Find]]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[Union-Find]]^[并查集]",
+        "level": 1
+      },
+      {
+        "heading": "初始化",
+        "level": 2
+      },
+      {
+        "heading": "查询",
+        "level": 2
+      },
+      {
+        "heading": "合并",
+        "level": 2
+      },
+      {
+        "heading": "优化 -- 路经压缩",
+        "level": 2
+      },
+      {
+        "heading": "优化 -- 按秩合并",
+        "level": 2
+      },
+      {
+        "heading": "Union-Find",
+        "level": 2
+      },
+      {
+        "heading": "亲戚问题",
+        "level": 2
+      },
+      {
+        "heading": "题目背景",
+        "level": 3
+      },
+      {
+        "heading": "题目描述",
+        "level": 3
+      },
+      {
+        "heading": "输入格式",
+        "level": 3
+      },
+      {
+        "heading": "输出格式",
+        "level": 3
+      },
+      {
+        "heading": "样例 #1",
+        "level": 3
+      },
+      {
+        "heading": "样例输入 #1",
+        "level": 4
+      },
+      {
+        "heading": "样例输出 #1",
+        "level": 4
+      },
+      {
+        "heading": "CODE",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "Union-Find",
+        "relativePath": "Algorithm/DAA/Union-Find.md"
+      }
+    ]
+  },
+  {
+    "fileName": "Sort",
+    "relativePath": "Algorithm/DAA/Sort.md",
+    "headings": [
+      {
+        "heading": "Sort Algorithm",
+        "level": 1
+      },
+      {
+        "heading": "Bubble Sort",
+        "level": 2
+      },
+      {
+        "heading": "Insertion Sort",
+        "level": 2
+      },
+      {
+        "heading": "Time Complexity for Insertion Sort",
+        "level": 3
+      },
+      {
+        "heading": "Merge Sort",
+        "level": 2
+      },
+      {
+        "heading": "Time Complexity for Merge Sort",
+        "level": 3
+      },
+      {
+        "heading": "Quick Sort",
+        "level": 2
+      },
+      {
+        "heading": "Strategy for pick pivot",
+        "level": 3
+      },
+      {
+        "heading": "Strategy I",
+        "level": 4
+      },
+      {
+        "heading": "Strategy II",
+        "level": 4
+      },
+      {
+        "heading": "Strategy III",
+        "level": 4
+      },
+      {
+        "heading": "Strategy IV",
+        "level": 4
+      },
+      {
+        "heading": "Time Complexity for Quick Sort",
+        "level": 3
+      },
+      {
+        "heading": "Why is quicksort faster than mergesort?",
+        "level": 3
+      },
+      {
+        "heading": "Heap Sort",
+        "level": 2
+      },
+      {
+        "heading": "Priority Queue",
+        "level": 3
+      },
+      {
+        "heading": "Binary Heap",
+        "level": 3
+      },
+      {
+        "heading": "Property",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "fileName": "Enumeration",
+    "relativePath": "Algorithm/DAA/Enumeration.md",
+    "headings": [
+      {
+        "heading": "Binary Enumeration *二进制枚举*",
+        "level": 2
+      },
+      {
+        "heading": "例题",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "Divide&Conquer",
+    "relativePath": "Algorithm/DAA/Divide&Conquer.md",
+    "tags": [
+      "note",
+      "dc"
+    ],
+    "frontmatter": {
+      "Create Time": "28th February 2024",
+      "Title": "[[Divide&Conquer]]",
+      "Author": [
+        "AllenYGY"
+      ]
+    },
+    "headings": [
+      {
+        "heading": "[[Divide&Conquer]]",
+        "level": 1
+      },
+      {
+        "heading": "**Maximum Contiguous Subarray Problem**",
+        "level": 2
+      },
+      {
+        "heading": "**Algorithm ReuseDataMCS ( R )**",
+        "level": 3
+      },
+      {
+        "heading": "**MCS(R, i, j)**",
+        "level": 3
+      }
+    ],
+    "links": [
+      {
+        "link": "Divide&Conquer",
+        "relativePath": "Algorithm/DAA/Divide&Conquer.md"
+      }
+    ]
+  },
+  {
+    "fileName": "Recursion-BinaryTree",
+    "relativePath": "Algorithm/Recursion/Recursion-BinaryTree.md",
+    "tags": [
+      "note",
+      "algorithm",
+      "experience",
+      "achievement"
+    ],
+    "frontmatter": {
+      "Create Time": "1st February 2024",
+      "Title": "[[Recursion-BinaryTree]]",
+      "Author": [
+        "AllenYGY"
+      ],
+      "theme": "递归"
+    },
+    "headings": [
+      {
+        "heading": "**Recursion-BinaryTree**",
+        "level": 1
+      },
+      {
+        "heading": "[二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)",
+        "level": 2
+      },
+      {
+        "heading": "[路径总和](https://leetcode.cn/problems/path-sum/)",
+        "level": 2
+      },
+      {
+        "heading": "[路径总和 II](https://leetcode.cn/problems/path-sum-ii/)",
+        "level": 2
+      },
+      {
+        "heading": "[求根节点到叶节点数字之和](https://leetcode.cn/problems/sum-root-to-leaf-numbers/)",
+        "level": 2
+      },
+      {
+        "heading": "[二叉树的所有路径](https://leetcode.cn/problems/binary-tree-paths/)",
+        "level": 2
+      },
+      {
+        "heading": "[统计二叉树中好节点的数目](https://leetcode.cn/problems/count-good-nodes-in-binary-tree/)",
+        "level": 2
+      },
+      {
+        "heading": "[二叉树的右视图](https://leetcode.cn/problems/binary-tree-right-side-view/)",
+        "level": 2
+      },
+      {
+        "heading": "[相同的树](https://leetcode.cn/problems/same-tree/)",
+        "level": 2
+      },
+      {
+        "heading": "[对称二叉树](https://leetcode.cn/problems/symmetric-tree/)",
+        "level": 2
+      },
+      {
+        "heading": "[平衡二叉树](https://leetcode.cn/problems/balanced-binary-tree/)",
+        "level": 2
+      },
+      {
+        "heading": "[翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/)",
+        "level": 2
+      },
+      {
+        "heading": "[根到叶路径上的不足节点](https://leetcode.cn/problems/insufficient-nodes-in-root-to-leaf-paths/)",
+        "level": 2
+      },
+      {
+        "heading": "[二叉树中的最长交错路径](https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/)",
+        "level": 2
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "2024-W05",
+        "link": "Recursion-BinaryTree",
+        "relativePath": "Record/Weekly/2024-W05.md"
+      }
+    ]
+  }
+]
