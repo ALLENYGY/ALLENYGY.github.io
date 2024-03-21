@@ -90,20 +90,7 @@ defaults:
               - title: <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
                 href: /CO
               - title: <i class="fa-solid fa-code fa-fw"></i> 编程语言
-                href: /Program
-              # python
-              - title: <i class="fa-brands fa-python fa-fw"></i> Python
-                href: /Python
-              # R
-              - title: <i class="fa-brands fa-r-project fa-fw"></i> R
-                href: /R
-              # C++
-              - title: <i class="fa-brands fa-cuttlefish fa-fw"></i> C++
-                href: /C++
-              # C
-              - title: <i class="fa-brands fa-cuttlefish fa-fw"></i> C
-                href: /C
-  
+                href: /Program  
               - title: <i class="fa-solid fa-database fa-fw"></i> 数据库
                 href: /DBM
               - title: <i class="fa-solid fa-archive fa-fw"></i> 归档
