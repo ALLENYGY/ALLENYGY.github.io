@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
+                "file": "Program/ProgramLanguage.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -110,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346.5
+    "width": 346.5,
+    "collapsed": true
   },
   "right": {
     "id": "6c77faef2551f814",
@@ -126,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
+                "file": "Program/ProgramLanguage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
+                "file": "Program/ProgramLanguage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CO/Lecture/From-Machine-Language-to-Assembly-Language.md"
+                "file": "Program/ProgramLanguage.md"
               }
             }
           }
@@ -213,6 +214,7 @@
   },
   "active": "502582b682383a88",
   "lastOpenFiles": [
+    "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
     "CO/Lab/Lab2.md",
     "DBM/Lecture/Key-concept.md",
     "DBM/Lecture/Relational-Database-Design-Functional-Dependency.md",
@@ -238,7 +240,6 @@
     "Entity-Relationship Model Constraints](]Entity-Relationship-Model-Constraints.md",
     "DBM/Database Management System.md",
     "DBM/MySQL/Advanced-SQL.md",
-    "DBM/MySQL/Division-and-Correlated-Subquery.md",
     "ProgramLanguage",
     "Program/Java/Lecture",
     "Pasted image 20240320183823.png",
