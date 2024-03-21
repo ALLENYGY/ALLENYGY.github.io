@@ -12,17 +12,17 @@
 <meta property="og:title" content="目录" />
 <meta name="author" content="AllenYGY" />
 <meta property="og:locale" content="zh" />
-<meta name="description" content="操作系统" />
-<meta property="og:description" content="操作系统" />
+<meta name="description" content="目录" />
+<meta property="og:description" content="目录" />
 <link rel="canonical" href="https://allenygy.github.io/contents" />
 <meta property="og:url" content="https://allenygy.github.io/contents" />
 <meta property="og:site_name" content="AllenYGY的个人小站" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-03-21T19:52:47+08:00" />
+<meta property="article:published_time" content="2024-03-21T20:23:14+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="目录" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-21T19:52:47+08:00","datePublished":"2024-03-21T19:52:47+08:00","description":"操作系统","headline":"目录","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/contents"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/contents"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-21T20:23:14+08:00","datePublished":"2024-03-21T20:23:14+08:00","description":"目录","headline":"目录","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/contents"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/contents"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -210,9 +210,21 @@
       
       
       <ol id="toc">
+  <li><a href="#-%E7%9B%AE%E5%BD%95"> 目录</a></li>
   <li><a href="#-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"> 操作系统</a></li>
   <li><a href="#-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C"> 计算机网络</a></li>
-  <li><a href="#-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86"> 计算机组成原理</a></li>
+  <li><a href="#-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86"> 计算机组成原理</a>
+        1.  <a href="#what-is-a-computer">What-is-a-Computer</a>
+        1.  <a href="#bits-data-representation-and-manipulation">Bits: Data Representation and Manipulation</a>
+        1.  <a href="#boolean-algebra-from-bits-to-logic">Boolean Algebra: From Bits to Logic</a>
+        1.  <a href="#from-transistors-to-gates">From Transistors to Gates</a></li>
+  <li><a href="#--%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86">  计算机组成原理</a>
+        1.  <a href="#from-gates-to-circuits-i-combinational-circuits">From Gates to Circuits I: Combinational Circuits</a>
+        1.  <a href="#from-gates-to-circuits-ii-sequential-circuits">From Gates to Circuits II: Sequential Circuits</a>
+        1.  <a href="#finite-state-machine">Finite State Machine</a>
+        1.  <a href="#circuit-design">Circuit Design</a>
+        1.  <a href="#microarchitecture">Microarchitecture</a>
+        1.  <a href="#the-lc-3-isa">The LC-3 ISA</a></li>
   <li><a href="#-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80"> 编程语言</a>
     <ol>
       <li><a href="#-java"> Java</a>
@@ -367,7 +379,7 @@
           
         
         5千
-        372字
+        357字
         
       </div>
       
@@ -379,30 +391,43 @@
     
     
     
-    
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.3.1/dist/reveal.min.css,npm/reveal.js@4.3.1/dist/theme/serif.min.css"
+/>
 <style>
-  h1::before,
-  h2::before,
-  h3::before,
-  h4::before,
-  h5::before,
-  h6::before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: bold;
-    font-size: smaller;
-    margin-right: .5rem;
-    content: "\f292";
+  .sidebar {
+    line-height: 1.5;
+  }
+  .reveal .slides {
+    text-align: left;
+  }
+  .reveal a,
+  .reveal a:hover,
+  .reveal a:focus {
+    color: inherit;
+    border-bottom: 1px solid var(--theme-base-color);
   }
 </style>
 
+<div class="slides">
+  <section
+    data-markdown data-separator='&lt;!-- .slide --&gt;'
+     data-separator-vertical='&lt;!-- .slide vertical=true --&gt;'
+     data-background-color='White'
+     >
+    <textarea data-template><h2 id="-目录"><i class="fa-solid fa-book fa-fw"></i> 目录</h2>
 
+<ul>
+  <li><i class="fa-solid fa-laptop fa-fw"></i> 操作系统</li>
+  <li><i class="fa-solid fa-network-wired"></i> 计算机网络</li>
+  <li><i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理</li>
+  <li><i class="fa-solid fa-code fa-fw"></i> 编程语言</li>
+</ul>
 
-<div class="container content">
-  <div class="page">
-    
-    <h1 class="page-title">目录</h1>
-    
-    <h2 id="-操作系统"><i class="fa-solid fa-laptop fa-fw"></i> 操作系统</h2>
+<!-- .slide -->
+
+<h2 id="-操作系统"><i class="fa-solid fa-laptop fa-fw"></i> 操作系统</h2>
 
 <ul>
   <li>
@@ -428,6 +453,8 @@
   </li>
 </ul>
 
+<!-- .slide -->
+
 <h2 id="-计算机网络"><i class="fa-solid fa-network-wired"></i> 计算机网络</h2>
 
 <ul>
@@ -445,287 +472,100 @@
   </li>
 </ul>
 
+<!-- .slide -->
+
 <h2 id="-计算机组成原理"><i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理</h2>
 
-<ul>
-  <li>
-    <p><a href="/CO/Lecture/CircuitDesign">Circuitdesign</a></p>
-  </li>
-  <li>
-    <p><a href="/CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits">From Gates To Circuits I Combinational Circuits</a></p>
-  </li>
-  <li>
-    <p><a href="/CO/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits">From Gates To Circuits Ii Sequential Circuits</a></p>
-  </li>
-  <li>
-    <p><a href="/CO/Lecture/From-Machine-Language-to-Assembly-Language">From Machine Language To Assembly Language</a></p>
-  </li>
-  <li>
-    <p><a href="/CO/Lecture/Microarchitecture">Microarchitecture</a></p>
-  </li>
-  <li>
-    <p><a href="/CO/Lecture/ISA">Isa</a></p>
-  </li>
-  <li>
-    <p><a href="/CO/Lecture/Bits-Data-Representation-and-Manipulation">Bits Data Representation And Manipulation</a></p>
-  </li>
-  <li>
-    <p><a href="/CO/Lecture/Boolean-Algebra-From-Bits-to-Logic">Boolean Algebra From Bits To Logic</a></p>
-  </li>
-  <li>
-    <p><a href="/CO/Lecture/Finite-State-Machine">Finite State Machine</a></p>
-  </li>
-  <li>
-    <p><a href="/CO/Lecture/From-Transistors-to-Gates">From Transistors To Gates</a></p>
-  </li>
-  <li>
-    <p><a href="/CO/Lecture/What-is-a-Computer">What Is A Computer</a></p>
-  </li>
-</ul>
+<h5 id="what-is-a-computer"><a href="CO/Lecture/Bits-Data-Representation-and-Manipulation">What-is-a-Computer</a></h5>
+
+<h5 id="bits-data-representation-and-manipulation"><a href="CO/Lecture/Bits-Data-Representation-and-Manipulation">Bits: Data Representation and Manipulation</a></h5>
+
+<h5 id="boolean-algebra-from-bits-to-logic"><a href="CO/Lecture/Boolean-Algebra-From-Bits-to-Logic">Boolean Algebra: From Bits to Logic</a></h5>
+
+<h5 id="from-transistors-to-gates"><a href="CO/Lecture/From-Transistors-to-Gates">From Transistors to Gates</a></h5>
+
+<!-- .slide vertical=true -->
+
+<h2 id="--计算机组成原理"><i class="fa-solid fa-atom fa-fw"></i>  计算机组成原理</h2>
+
+<h5 id="from-gates-to-circuits-i-combinational-circuits"><a href="CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits">From Gates to Circuits I: Combinational Circuits</a></h5>
+
+<h5 id="from-gates-to-circuits-ii-sequential-circuits"><a href="CO/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits">From Gates to Circuits II: Sequential Circuits</a></h5>
+
+<h5 id="finite-state-machine"><a href="CO/Lecture/Finite-State-Machine">Finite State Machine</a></h5>
+
+<h5 id="circuit-design"><a href="CO/Lecture/Lecture/CircuitDesign">Circuit Design</a></h5>
+
+<h5 id="microarchitecture"><a href="CO/Lecture/Microarchitecture">Microarchitecture</a></h5>
+
+<h5 id="the-lc-3-isa"><a href="CO/Lecture/ISA">The LC-3 ISA</a></h5>
+
+<!-- .slide -->
 
 <h2 id="-编程语言"><i class="fa-solid fa-code fa-fw"></i> 编程语言</h2>
 
+<ul>
+  <li><i class="fa-brands fa-java fa-fw"></i> Java</li>
+  <li><i class="fa-brands fa-python fa-fw"></i> Python</li>
+  <li><i class="fa-brands fa-r-project fa-fw"></i> R</li>
+  <li><i class="fa-brands fa-cuttlefish fa-fw"></i> C</li>
+</ul>
+
+<!-- .slide -->
+
 <h3 id="-java"><i class="fa-brands fa-java fa-fw"></i> Java</h3>
 
-<h4 id="java-introduction"><a href="Java/Lecture/Java-Introduction">Java Introduction</a></h4>
+<h4 id="java-introduction"><a href="Program/Java/Lecture/Java-Introduction">Java Introduction</a></h4>
 
-<h4 id="unified-modeling-language"><a href="Java/Lecture/Unified-Modeling-Language">Unified Modeling Language</a></h4>
+<h4 id="unified-modeling-language"><a href="Program/Java/Lecture/Unified-Modeling-Language">Unified Modeling Language</a></h4>
 
-<h4 id="java-programming-essentials"><a href="Java/Lecture/Java-Programming-Essentials">Java Programming Essentials</a></h4>
+<h4 id="java-programming-essentials"><a href="Program/Java/Lecture/Java-Programming-Essentials">Java Programming Essentials</a></h4>
 
-<h4 id="creating-java-classes"><a href="Java/Lecture/Creating-Java-Classes">Creating Java Classes</a></h4>
+<h4 id="creating-java-classes"><a href="Program/Java/Lecture/Creating-Java-Classes">Creating Java Classes</a></h4>
 
-<h4 id="inheritance"><a href="Java/Lecture/Inheritance">Inheritance</a></h4>
+<h4 id="inheritance"><a href="Program/Java/Lecture/Inheritance">Inheritance</a></h4>
 
-<h4 id="abstract-methods-and-classes-interfaces"><a href="Java/Lecture/Abstract-Methods-and-Classes-Interfaces">Abstract Methods and Classes Interfaces</a></h4>
+<h4 id="abstract-methods-and-classes-interfaces"><a href="Program/Java/Lecture/Abstract-Methods-and-Classes-Interfaces">Abstract Methods and Classes Interfaces</a></h4>
 
-<h4 id="exception-handling"><a href="Java/Lecture/Exception-Handling">Exception Handling</a></h4>
+<h4 id="exception-handling"><a href="Program/Java/Lecture/Exception-Handling">Exception Handling</a></h4>
 
-<h4 id="array-and-generics"><a href="Java/Lecture/Array-and-Generics">Array and Generics</a></h4>
+<h4 id="array-and-generics"><a href="Program/Java/Lecture/Array-and-Generics">Array and Generics</a></h4>
+
+<!-- .slide vertical=true -->
 
 <h3 id="-python"><i class="fa-brands fa-python fa-fw"></i> Python</h3>
 
-<h4 id="python-basic"><a href="Python/PythonBasic">Python Basic</a></h4>
+<h4 id="python-basic"><a href="Program/Python/PythonBasic">Python Basic</a></h4>
+
+<!-- .slide vertical=true -->
 
 <h3 id="-r"><i class="fa-brands fa-r-project fa-fw"></i> R</h3>
 
-<h4 id="r-basic"><a href="R/Basic-R">R Basic</a></h4>
+<h4 id="r-basic"><a href="Program/R/Basic-R">R Basic</a></h4>
 
-<h4 id="r-data-structure"><a href="R/R-Data-Structure">R Data Structure</a></h4>
+<h4 id="r-data-structure"><a href="Program/R/R-Data-Structure">R Data Structure</a></h4>
+
+<!-- .slide vertical=true -->
 
 <h3 id="-c"><i class="fa-brands fa-cuttlefish fa-fw"></i> C</h3>
 
-<h4 id="c-macro"><a href="C/Macro">C Macro</a></h4>
-
-  </div>
+<h4 id="c-macro"><a href="Program/C/Macro">C Macro</a></h4>
+</textarea>
+  </section>
 </div>
-
-
-
-<link
-  rel="stylesheet"
-  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
-/>
-<style>
-  .katex-display>.katex {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    word-break: break-all;
-  }
-</style>
 <script
-  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
-  defer="defer"
-></script>
-<script
- src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
- defer="defer"
- onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
-></script>
-
-
-
-
-<style>
-  pre.language-vega-lite,
-  code.language-vega-lite {
-    display: none;
-  }
-</style>
-<script
-  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
   async="async"
-  onload='
-    for(let x of document.getElementsByClassName("language-vega-lite"))
-      if(x.nodeName=="CODE")
-      {
-        let m = document.createElement("div");
-        x.parentNode.insertAdjacentElement("beforebegin", m);
-        vegaEmbed(m, JSON.parse(x.textContent));
-      }'
-></script>
-
-
-
-
-<style>
-  pre.language-mermaid,
-  code.language-mermaid {
-    display: none;
-  }
-  @media only screen {
-    .mermaid {
-      overflow: hidden hidden;
-      max-width: 100%;
-      max-height: 66.6vh;
-    }
-    .mermaid {
-      overflow: auto auto;
-    }
-  }
-</style>
-<script
-  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
-  async="async"
-  onload='
-    for(let x of document.getElementsByClassName("language-mermaid"))
-      if(x.nodeName=="CODE")
-      {
-        let m = document.createElement("div");
-        m.classList.add("mermaid");
-        m.textContent = x.textContent;
-        x.parentNode.insertAdjacentElement("beforebegin", m);
-      }'
-></script>
-
-
-
-
-<script type="text/javascript">
-   var tags = {
-    '[!note]': '<i class="fa-solid fa-pencil"></i>',
-    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
-    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
-    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
-    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
-    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
-    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
-    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
-    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
-    '[!success]': '<i class="fa-solid fa-check"></i>',
-    '[!check]': '<i class="fa-solid fa-check"></i>',
-    '[!done]': '<i class="fa-solid fa-check"></i>',
-    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
-    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
-    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
-    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
-    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
-    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
-    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
-    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
-    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
-    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
-    '[!error]': '<i class="fa-solid fa-bolt"></i>',
-    '[!bug]': '<i class="fa-solid fa-bug"></i>',
-    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
-    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
-    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
-  };
-  var blocklist = document.querySelectorAll("blockquote");
-  var blockCount = blocklist.length;
-  var blockNow;
-  for (var i = 0; i < blockCount; i++) {
-    blockNow = blocklist[i];
-    var find = false;
-    for (var key in tags) {
-      if (blockNow.innerHTML.indexOf(key) != -1) {
-        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
-        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
-        blocklist[i].innerHTML = blockNow.innerHTML;
-        find = true;
-        break;
-      }
-    }
-    if(!find){
-        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
-        blocklist[i].innerHTML = blockNow.innerHTML;
-      }
-  }
-</script>
-
-
-
-
-<script>
-  if (is_weixn_qq()) {
-   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
-  }
-  function is_weixn_qq(){
-  var ua = navigator.userAgent;
-  var isWeixin = !!/MicroMessenger/i.test(ua);
-  var isQQ = !!/QQ\//i.test(ua);
-  if(isWeixin||isQQ){
-    return true;
-   }
-    return false;
-  }
-</script>
-
-
-
-
-<style>
-  pre .btn-pre-copy {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -khtml-user-select: none;
-    user-select: none;
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    font-size: 12px;
-    line-height: 1;
-    cursor: pointer;
-    color: hsla(0, 0%, 54.9%, .8);
-    transition: color .1s;
-  }
-</style>
-<script>
-  let preList = document.querySelectorAll("pre");
-  for (let pre of preList) {
-    let btn = document.createElement("div");
-    pre.appendChild(btn);
-    btn.className = "btn-pre-copy";
-    btn.innerHTML = "复制";
-   btn.onclick = function () {
-     btn.innerHTML = "";
-     toClip(pre.innerText);
-      btn.innerHTML = "复制成功";
-      setTimeout(() => {
-       btn.innerHTML = "复制";
-     }, 800);
-    }
- }
-  function toClip(text) {
-    navigator.clipboard.writeText(text)
-      .then(() => {
-        console.log("Text copied to clipboard...");
-      })
-      .catch(err => {
-        console.log('Something went wrong', err);
-      });
-  }
-</script>
-
-
-
-
-<script 
-  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
-></script>
-
-
+  src="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.3.1/dist/reveal.min.js,npm/reveal.js@4.3.1/plugin/markdown/markdown.min.js,npm/reveal.js@4.3.1/plugin/math/math.min.js"
+  onload="
+  for(let x of document.getElementsByClassName('wrap'))
+    x.classList.add('reveal');
+  Reveal.initialize({
+    height: '100%',
+    mouseWheel: true,
+    navigationMode: 'linear',
+    plugins: [ RevealMarkdown,RevealMath.KaTeX ]
+  });
+"></script>
 
     
   </div>
