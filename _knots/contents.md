@@ -173,28 +173,28 @@ jekyll-theme-ObJekyll:
 
 ## <i class="fa-solid fa-server fa-fw"></i> MySQL
 
-#### - [Basic MySQL](DBM/Lab/Basic-MySQL)
+#### - [Basic MySQL](DBM/MySQL/Basic-MySQL)
 
-#### - [Cross table query](DBM/Lab/Cross-table-Query)
+#### - [Cross table query](DBM/MySQL/Cross-table-Query)
 
-#### - [Join](DBM/Lab/Join)
+#### - [Join](DBM/MySQL/Join)
 
-#### - [Aggregation](DBM/Lab/Aggregation)
+#### - [Aggregation](DBM/MySQL/Aggregation)
 
 <!-- .slide vertical=true -->
 ## <i class="fa-solid fa-server fa-fw"></i>  MySQL
 
-#### - [Data Definition](DBM/Lab/Data-Definition)
+#### - [Data Definition](DBM/MySQL/Data-Definition)
 
-#### - [Data Modification](DBM/Lab/Data-Modification)
+#### - [Data Modification](DBM/MySQL/Data-Modification)
 
-#### - [Null & Subquery](DBM/Lab/Null-Subquery)
+#### - [Null & Subquery](DBM/MySQL/Null-Subquery)
 
-#### - [Set Operation & WHERE subquery](DBM/Lab/Set-Operation-&-WHERE-subquery)
+#### - [Set Operation & WHERE subquery](DBM/MySQL/Set-Operation-&-WHERE-subquery)
 
-#### - [Division and Correlated Subquery](DBM/Lab/Division-and-Correlated-Subquery)
+#### - [Division and Correlated Subquery](DBM/MySQL/Division-and-Correlated-Subquery)
 
-#### - [Advanced SQL](DBM/Lab/Advanced-SQL)
+#### - [Advanced SQL](DBM/MySQL/Advanced-SQL)
 
 <!-- .slide -->
 

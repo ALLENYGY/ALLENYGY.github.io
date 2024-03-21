@@ -50,25 +50,25 @@ jekyll-theme-ObJekyll:
 
 ## <i class="fa-solid fa-server fa-fw"></i> MySQL
 
-#### - [Basic MySQL](Lab/Basic-MySQL)
+#### - [Basic MySQL](MySQL/Basic-MySQL)
 
-#### - [Cross table query](Lab/Cross-table-Query)
+#### - [Cross table query](MySQL/Cross-table-Query)
 
-#### - [Join](Lab/Join)
+#### - [Join](MySQL/Join)
 
-#### - [Aggregation](Lab/Aggregation)
+#### - [Aggregation](MySQL/Aggregation)
 
 <!-- .slide vertical=true -->
 ## <i class="fa-solid fa-server fa-fw"></i>  MySQL
 
-#### - [Data Definition](Lab/Data-Definition)
+#### - [Data Definition](MySQL/Data-Definition)
 
-#### - [Data Modification](Lab/Data-Modification)
+#### - [Data Modification](MySQL/Data-Modification)
 
-#### - [Null & Subquery](Lab/Null-Subquery)
+#### - [Null & Subquery](MySQL/Null-Subquery)
 
-#### - [Set Operation & WHERE subquery](Lab/Set-Operation-&-WHERE-subquery)
+#### - [Set Operation & WHERE subquery](MySQL/Set-Operation-&-WHERE-subquery)
 
-#### - [Division and Correlated Subquery](Lab/Division-and-Correlated-Subquery)
+#### - [Division and Correlated Subquery](MySQL/Division-and-Correlated-Subquery)
 
-#### - [Advanced SQL](Lab/Advanced-SQL)
+#### - [Advanced SQL](MySQL/Advanced-SQL)
