@@ -1,17 +1,17 @@
 ---
 Create Time: 19th March 2024
-Title: "[[OS-CPU-Scheduling]]"
+Title: "[[Threads]]"
 status: UNFINISHED
 tags:
   - OS
   - NOTE
-  - Lec5
+  - Lec4
   - UIC
 Author:
   - AllenYGY
 created: 2024-03-20T17:14
-updated: 2024-03-21T12:14
+updated: 2024-03-21T21:01
 ---
 
-# [[OS-CPU-Scheduling]]
+# [[Threads]]
 

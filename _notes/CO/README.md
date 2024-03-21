@@ -6,12 +6,8 @@ tags:
   - README
 Author: AllenYGY
 created: 2024-01-16T21:03
-updated: 2024-03-21T19:01
+updated: 2024-03-21T20:34
 ---
-
-# Computer Organization
-
-Here is my Computer Organization Note in UIC!
 
 ## [What-is-a-Computer](What-is-a-Computer.md)
 

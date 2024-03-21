@@ -7,11 +7,11 @@ tags:
   - CO
   - Lec2
 created: 2023-11-03T00:59
-updated: 2024-03-21T18:46
+updated: 2024-03-21T20:31
 ---
 
 
-# [[Bits: Data Representation and Manipulation]]
+# [[Bits-Data-Representation-and-Manipulation]]
 
 ## *Binary Numbers: Bits*
 

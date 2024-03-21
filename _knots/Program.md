@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Program Language
+layout: home
+title: 
 permalink: /Program
 jekyll-theme-ObJekyll:
   default:
@@ -11,34 +11,50 @@ jekyll-theme-ObJekyll:
       enable: true
 ---
 
-## Java
 
-### [Java Introduction](Program/Java/Lecture/Java-Introduction)
+## <i class="fa-solid fa-code fa-fw"></i> 编程语言
 
-### [Unified Modeling Language](Program/Java/Lecture/Unified-Modeling-Language)
+### - <i class="fa-brands fa-java fa-fw"></i> Java
+### - <i class="fa-brands fa-python fa-fw"></i> Python
+### - <i class="fa-brands fa-r-project fa-fw"></i> R
+### - <i class="fa-brands fa-cuttlefish fa-fw"></i> C
 
-### [Java Programming Essentials](Program/Java/Lecture/Java-Programming-Essentials)
+<!-- .slide -->
 
-### [Creating Java Classes](Program/Java/Lecture/Creating-Java-Classes)
+## <i class="fa-brands fa-java fa-fw"></i> Java
 
-### [Inheritance](Program/Java/Lecture/Inheritance)
+#### - [Java Introduction](Java/Lecture/Java-Introduction)
 
-### [Abstract Methods and Classes Interfaces](Program/Java/Lecture/Abstract-Methods-and-Classes-Interfaces)
+#### - [Unified Modeling Language](Java/Lecture/Unified-Modeling-Language)
 
-### [Exception Handling](Program/Java/Lecture/Exception-Handling)
+#### - [Java Programming Essentials](Java/Lecture/Java-Programming-Essentials)
 
-### [Array and Generics](Program/Java/Lecture/Array-and-Generics)
+#### - [Creating Java Classes](Java/Lecture/Creating-Java-Classes)
 
-## Python
+#### - [Inheritance](Java/Lecture/Inheritance)
 
-### [Python Basic](Program/Python/PythonBasic)
+#### - [Abstract Methods and Classes Interfaces](Java/Lecture/Abstract-Methods-and-Classes-Interfaces)
 
-## R
+#### - [Exception Handling](Java/Lecture/Exception-Handling)
 
-### [R Basic](Program/R/Basic-R)
+#### - [Array and Generics](Java/Lecture/Array-and-Generics)
 
-### [R Data Structure](Program/R/R-Data-Structure)
+<!-- .slide vertical=true -->
 
-## C
+### <i class="fa-brands fa-python fa-fw"></i> Python
 
-### [Macro](Program/C/Macro)
+#### - [Python Basic](Python/PythonBasic)
+
+<!-- .slide vertical=true -->
+
+### <i class="fa-brands fa-r-project fa-fw"></i> R
+
+#### - [R Basic](R/Basic-R)
+
+#### - [R Data Structure](R/R-Data-Structure)
+
+<!-- .slide vertical=true -->
+
+### <i class="fa-brands fa-cuttlefish fa-fw"></i> C
+
+#### - [C Macro](C/Macro)

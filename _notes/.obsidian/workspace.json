@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CO/README.md",
+                "file": "OperatingSystem/Process.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CO/README.md",
+                "file": "OperatingSystem/Process.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CO/README.md",
+                "file": "OperatingSystem/Process.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CO/README.md"
+                "file": "OperatingSystem/Process.md"
               }
             }
           }
@@ -213,6 +213,15 @@
   },
   "active": "2197771370032b9b",
   "lastOpenFiles": [
+    "OperatingSystem/Linux-Basic-Operation.md",
+    "OperatingSystem/NJU-OS-PA0.md",
+    "OperatingSystem/Threads.md",
+    "OperatingSystem/Process.md",
+    "OperatingSystem/Operating-System-Structure.md",
+    "OperatingSystem/Introduction.md",
+    "OperatingSystem/CPU-Scheduling.md",
+    "CO/Lecture/What-is-a-Computer.md",
+    "CO/README.md",
     "Program/ProgramLanguage.md",
     "Program/C/Macro.md",
     "Program/Python/PythonBasic.md",
@@ -228,19 +237,10 @@
     "Program/Java/Lecture/Java-Programming-Essentials.md",
     "Program/Java/Lecture/Inheritance.md",
     "Program/Java/Lecture/Creating-Java-Classes.md",
-    "CO/Lecture/What-is-a-Computer.md",
     "Program/Cpp/BasicSyntax.md",
     "Home.md",
     "Program/Java/Lecture",
-    "CO/README.md",
     "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
-    "CO/Lecture/From-Transistors-to-Gates.md",
-    "CO/Lecture/ISA.md",
-    "CO/Lecture/Microarchitecture.md",
-    "CO/Lecture/Finite-State-Machine.md",
-    "CO/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits.md",
-    "CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits.md",
-    "CO/Lecture/Bits-Data-Representation-and-Manipulation.md",
     "Pasted image 20240320183823.png",
     "Pasted image 20240320182332.png",
     "Resume/JunyaYang.pdf",

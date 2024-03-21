@@ -1,6 +1,6 @@
 ---
-layout: page
-title: 计算机网络
+layout: home
+title: 
 date: 2024-03-20
 lastmod: 2024-03-20
 permalink: /DCN
@@ -13,25 +13,16 @@ jekyll-theme-ObJekyll:
       enable: true
 ---
 
-{% for tag in site.tags%}
-{% if tag[0] == "Network" %}
-{% assign sorted-posts = tag[1] | sort: 'date'|reverse %}
-{% break %}
-{% endif %}
-{% endfor %}
+## <i class="fa-solid fa-network-wired"></i> 计算机网络
 
-{% assign lmonth = "1000-01" | date: "%b %Y" %}
+#### - [Basic Concepts](Network/Basic-Concepts)
 
-{% for post in sorted-posts %}
-{% assign month = post.date | date: "%b %Y" %}
-{% if month != lmonth %}
-## {{ month }}
-{%assign lmonth = month %}
-{% endif %}
-{% if site.use_html_extension %}
+#### - [Data Link Layer](Network/Data-Link-Layer)
 
-- *{{ post.date | date:"%d %b %Y" }}* [{{ post.title }}]({{ post.url | relative_url | append: ".html"}})
-{% else %}
-- *{{ post.date | date:"%d %b %Y" }}* [{{ post.title }}]({{ post.url | relative_url }})
-{% endif %}
-{% endfor %}
+#### - [Physical Layer](Network/Physical-Layer)
+
+<!-- .slide vertical=true -->
+
+### <i class="fa-solid fa-graduation-cap fa-fw"></i> USTC 计算机网络课程
+
+#### - [Chapter-I](Network/Physical-Layer/USTC-L1)

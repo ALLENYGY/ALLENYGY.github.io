@@ -1,6 +1,6 @@
 ---
 Create Time: 22nd February 2024
-Title: "[[OS-Introduction]]"
+Title: "[[Introduction]]"
 Author:
   - AllenYGY
 tags:
@@ -9,10 +9,10 @@ tags:
   - Introduction
   - Lec1
 created: 2024-01-20T17:14
-updated: 2024-03-21T11:57
+updated: 2024-03-21T21:01
 ---
 
-# [[OS-Introduction]]
+# [[Introduction]]
 
 ## **Computer System Architecture**
 

@@ -1,6 +1,6 @@
 ---
-layout: page
-title: 操作系统
+layout: home
+title: 
 permalink: /OS
 jekyll-theme-ObJekyll:
   default:
@@ -11,27 +11,24 @@ jekyll-theme-ObJekyll:
       enable: true
 ---
 
-{% for tag in site.tags%}
-{% if tag[0] == "OS" %}
-{% assign sorted-posts = tag[1] | sort: 'created'|reverse %}
-{% break %}
-{% endif %}
-{% endfor %}
+## <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
 
-{% assign lmonth = "1000-01" | date: "%b %Y" %}
+#### - [Operating System Introduction](OperatingSystem/Introduction)
 
-{% for post in sorted-posts %}
-{% assign month = post.created | date: "%b %Y" %}
+#### - [Operating System Structure](OperatingSystem/Operating-System-Structure)
 
-{% if month != lmonth %}
-## {{ month }}
-{%assign lmonth = month %}
-{% endif %}
+#### - [Operating System Process](OperatingSystem/Process)
 
-{% if site.use_html_extension %}
+#### - [Operating System Threads](OperatingSystem/Threads)
 
-- [{{ post.title }}]({{ post.url | relative_url | append: ".html"}}) *{{ post.created| date:"%d %b %Y" }}*
-{% else %}
-- [{{ post.title }}]({{ post.url | relative_url }}) *{{ post.created | date:"%d %b %Y" }}*
-{% endif %}
-{% endfor %}
+#### - [Operating System CPU Scheduling](OperatingSystem/CPU-Scheduling)
+
+<!-- .slide vertical=true -->
+
+### <i class="fa-solid fa-graduation-cap fa-fw"></i> NJU 操作系统课程
+
+#### - [PA-0](OperatingSystem/NJU-OS-PA0)
+
+### <i class="fa-solid fa-atom fa-fw"></i> Linux Basic
+
+#### - [Linux Basic Operation](OperatingSystem/Linux-Basic-Operation)

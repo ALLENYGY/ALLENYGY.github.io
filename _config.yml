@@ -78,9 +78,6 @@ defaults:
             nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
               - title: <i class="fa-solid fa-home fa-fw"></i> 首页
                 href: /
-              # - title: <i class="fa-solid fa-seedling fa-fw"></i> 聚点
-                # href: /roots
-              #目录
               - title: <i class="fa-solid fa-book fa-fw"></i> 目录
                 href: /contents
               - title: <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
@@ -103,6 +100,9 @@ defaults:
                 href: /links
               - title: <i class="fa-solid fa-comment fa-fw"></i> 留言
                 href: /comments
+
+              # - title: <i class="fa-solid fa-seedling fa-fw"></i> 聚点
+                # href: /roots
               # - title: <i class="fa-solid fa-coffee fa-fw"></i> 打赏
                 # href: /merger
             simple_jekyll_search: # 侧边栏的全站搜索
