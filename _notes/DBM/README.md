@@ -5,6 +5,8 @@ aliases:
 tags:
   - README
 Author: AllenYGY
+created: 2024-01-16T21:03
+updated: 2024-03-21T18:49
 ---
 
 # Database Management System
@@ -20,9 +22,9 @@ Here is my Database Management System Note in UIC!
 
 ### [Entity-Relationship Model Constraints](DBM/Lecture/Lec2)
 
-### [Entity-Relationship Model Extended Features](Lecture/Lec3)
+### [Entity-Relationship Model Extended Features](DBM/Lecture/Lec3.md)
 
-### [Design Issues](Lecture/Lec4)
+### [Design Issues](DBM/Lecture/Lec4.md)
 
 ### [Logical Design](DBM/Lecture/Lec5.md)
 

@@ -1,4 +1,17 @@
-# Circuit Design
+---
+Title: "[[CircuitDesign]]"
+Author:
+  - AllenYGY
+tags:
+  - NOTE
+  - CO
+  - CircuitDesign
+created: 2024-01-16T21:03
+updated: 2024-03-21T18:47
+---
+
+
+# [[CircuitDesign]]
 
 ## Combinational Circuit Design
 

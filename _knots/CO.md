@@ -15,7 +15,7 @@ jekyll-theme-ObJekyll:
 
 {% for tag in site.tags%}
 {% if tag[0] == "CO" %}
-{% assign sorted-posts = tag[1] | sort: 'date'|reverse %}
+{% assign sorted-posts = tag[1] | sort: 'created'|reverse %}
 {% break %}
 {% endif %}
 {% endfor %}
@@ -23,15 +23,17 @@ jekyll-theme-ObJekyll:
 {% assign lmonth = "1000-01" | date: "%b %Y" %}
 
 {% for post in sorted-posts %}
-{% assign month = post.date | date: "%b %Y" %}
+{% assign month = post.created | date: "%b %Y" %}
+
 {% if month != lmonth %}
 ## {{ month }}
 {%assign lmonth = month %}
 {% endif %}
+
 {% if site.use_html_extension %}
 
-- *{{ post.date | date:"%d %b %Y" }}* [{{ post.title }}]({{ post.url | relative_url | append: ".html"}})
+- [{{ post.title }}]({{ post.url | relative_url | append: ".html"}}) *{{ post.created| date:"%d %b %Y" }}*
 {% else %}
-- *{{ post.date | date:"%d %b %Y" }}* [{{ post.title }}]({{ post.url | relative_url }})
+- [{{ post.title }}]({{ post.url | relative_url }}) *{{ post.created | date:"%d %b %Y" }}*
 {% endif %}
 {% endfor %}

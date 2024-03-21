@@ -251,7 +251,7 @@
       "color": "qM2HC0GmljvwGMnPjfZtO"
     },
     {
-      "path": "ProgramLanguage",
+      "path": "Program",
       "color": "qM2HC0GmljvwGMnPjfZtO"
     },
     {
@@ -359,23 +359,23 @@
       "color": "qM2HC0GmljvwGMnPjfZtO"
     },
     {
-      "path": "ProgramLanguage/Cpp",
+      "path": "Program/Cpp",
       "color": "h4pz3iOpllJummNQwYsCV"
     },
     {
-      "path": "ProgramLanguage/Java",
+      "path": "Program/Java",
       "color": "A91ZXD-VW7sxy5n-yGb1f"
     },
     {
-      "path": "ProgramLanguage/Python",
+      "path": "Program/Python",
       "color": "Jg4M3jD97fUGZ_NnS7YKB"
     },
     {
-      "path": "ProgramLanguage/R",
+      "path": "Program/R",
       "color": "0_sL78WYAadjOiadIR00n"
     },
     {
-      "path": "ProgramLanguage/README.md",
+      "path": "Program/ProgramLanguage.md",
       "color": "qM2HC0GmljvwGMnPjfZtO"
     },
     {
@@ -431,7 +431,7 @@
       "color": "Jg4M3jD97fUGZ_NnS7YKB"
     },
     {
-      "path": "ProgramLanguage/C",
+      "path": "Program/C",
       "color": "h4pz3iOpllJummNQwYsCV"
     },
     {

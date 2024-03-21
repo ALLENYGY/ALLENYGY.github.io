@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e53f797168144025",
+        "id": "692dfa23267badfd",
         "type": "tabs",
         "children": [
           {
-            "id": "a1a4645932ac36ef",
+            "id": "2197771370032b9b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FixIncome/FixedIncomeOverview.md",
+                "file": "Program/ProgramLanguage.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FixIncome/FixedIncomeOverview.md",
+                "file": "Program/ProgramLanguage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FixIncome/FixedIncomeOverview.md",
+                "file": "Program/ProgramLanguage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FixIncome/FixedIncomeOverview.md"
+                "file": "Program/ProgramLanguage.md"
               }
             }
           }
@@ -211,37 +211,39 @@
       "obsidian-map-view:Open map view": false
     }
   },
-  "active": "a1a4645932ac36ef",
+  "active": "2197771370032b9b",
   "lastOpenFiles": [
-    "Obsidian/AdvancedSlides/QuickStart.md",
+    "Program/C/Macro.md",
+    "Program/ProgramLanguage.md",
+    "Program/Python/PythonBasic.md",
+    "Program/R/R-Data-Structure.md",
+    "Program/R/Basic-R.md",
+    "Program/Java/Lecture/Unified-Modeling-Language.md",
+    "ProgramLanguage/README.md",
+    "ProgramLanguage",
+    "Program/Java/Lecture/Java-Introduction.md",
+    "Program/Java/Lecture/Array-and-Generics.md",
+    "Program/Java/Lecture/Abstract-Methods-and-Classes-Interfaces.md",
+    "Program/Java/Lecture/Exception-Handling.md",
+    "Program/Java/Lecture/Java-Programming-Essentials.md",
+    "Program/Java/Lecture/Inheritance.md",
+    "Program/Java/Lecture/Creating-Java-Classes.md",
+    "CO/Lecture/What-is-a-Computer.md",
+    "Program/Cpp/BasicSyntax.md",
     "Home.md",
-    "OperatingSystem/OS-CPU-Scheduling.md",
+    "Program/Java/Lecture",
+    "CO/README.md",
+    "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
+    "CO/Lecture/From-Transistors-to-Gates.md",
+    "CO/Lecture/ISA.md",
+    "CO/Lecture/Microarchitecture.md",
+    "CO/Lecture/Finite-State-Machine.md",
+    "CO/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits.md",
+    "CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits.md",
+    "CO/Lecture/Bits-Data-Representation-and-Manipulation.md",
     "Pasted image 20240320183823.png",
-    "Network/Data-Link-Layer.md",
-    "OperatingSystem/TEST.md",
-    "OperatingSystem/README.md",
-    "OperatingSystem/OS-Threads.md",
-    "OperatingSystem/OS-Processes.md",
-    "OperatingSystem/OS-Operating-System-Structure.md",
-    "OperatingSystem/OS-Introduction.md",
-    "OperatingSystem/NJU-OS-PA0.md",
-    "OperatingSystem/Linux-Basic-Operation.md",
-    "Network/Basic-Concepts.md",
-    "Network/Physical-Layer.md",
-    "OperatingSystem/README copy.md",
     "Pasted image 20240320182332.png",
-    "Record/Weekly/2024-W11.md",
-    "Record/Weekly/2024-W05.md",
-    "Network/USTC-L1.md",
-    "WorkView.md",
     "Resume/JunyaYang.pdf",
-    "Math/ProbabilityStatistics/Lec6.md",
-    "Contest/Overview.md",
-    "Contest/Lanqiao/Week-1.md",
-    "Contest/Lanqiao/Lanqiao.md",
-    "Obsidian/Templaters/Lanqiao.md",
-    "Obsidian/Templaters/Note-NSCaseConflict-AllenYGY-mac14.4.md",
-    "conflict-files-obsidian-git.md",
     "Network/USTC-L1-NSConflict-AllenYGY-mac14.4.nssyncsc",
     "Contest/Lanqiao/Week-1.nssyncsc",
     "Contest/Lanqiao/Lanqiao.nssyncsc",
@@ -249,8 +251,6 @@
     "CO/Contest/Lanqiao",
     "CO/Contest/Leetcode",
     "CO/Contest",
-    "Contest/Leetcode/Leetcode.nssyncsc",
-    "Contest/Leetcode/Weekly-contest-381.nssyncsc",
     "Pasted image 20240319004008.png",
     "Pasted image 20240319004004.png",
     "Pasted image 20240319004023.png",
