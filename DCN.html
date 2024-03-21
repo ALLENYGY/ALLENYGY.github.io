@@ -3,26 +3,26 @@
 <head>
   <title>
     
-    计算机网络 &middot; AllenYGY的个人小站
+    Dcn &middot; AllenYGY的个人小站
     
   </title>
   
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="计算机网络" />
+<meta property="og:title" content="Dcn" />
 <meta name="author" content="AllenYGY" />
 <meta property="og:locale" content="zh" />
-<meta name="description" content="轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。" />
-<meta property="og:description" content="轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。" />
+<meta name="description" content="计算机网络" />
+<meta property="og:description" content="计算机网络" />
 <link rel="canonical" href="https://allenygy.github.io/DCN" />
 <meta property="og:url" content="https://allenygy.github.io/DCN" />
 <meta property="og:site_name" content="AllenYGY的个人小站" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-03-20T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="计算机网络" />
+<meta property="twitter:title" content="Dcn" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-20T00:00:00+08:00","datePublished":"2024-03-20T00:00:00+08:00","description":"轻阴阁小雨， 深院昼慵开。 坐看苍苔色， 欲上人衣来。","headline":"计算机网络","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/DCN"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/DCN"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-20T00:00:00+08:00","datePublished":"2024-03-20T00:00:00+08:00","description":"计算机网络","headline":"Dcn","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/DCN"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/DCN"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -210,7 +210,18 @@
       
       
       <ol id="toc">
-  <li><a href="#mar-2024">Mar 2024</a></li>
+  <li><a href="#-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C"> 计算机网络</a>
+    1.  <a href="#--basic-concepts">- Basic Concepts</a>
+    1.  <a href="#--data-link-layer">- Data Link Layer</a>
+    1.  <a href="#--physical-layer">- Physical Layer</a>
+    <ol>
+      <li><a href="#-ustc-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B"> USTC 计算机网络课程</a>
+        <ol>
+          <li><a href="#--chapter-i">- Chapter-I</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
 </ol>
       
       
@@ -333,7 +344,7 @@
           
         
         5千
-        357字
+        281字
         
       </div>
       
@@ -345,257 +356,60 @@
     
     
     
-    
-<style>
-  h1::before,
-  h2::before,
-  h3::before,
-  h4::before,
-  h5::before,
-  h6::before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: bold;
-    font-size: smaller;
-    margin-right: .5rem;
-    content: "\f292";
-  }
-</style>
-
-
-
-<div class="container content">
-  <div class="page">
-    
-    <h1 class="page-title">计算机网络</h1>
-    
-    
-<h2 id="mar-2024">Mar 2024</h2>
-
-<ul>
-  <li>
-    <p><em>21 Mar 2024</em> <a href="/Network/Basic-Concepts">Basic Concepts</a></p>
-  </li>
-  <li>
-    <p><em>21 Mar 2024</em> <a href="/Network/Data-Link-Layer">Data Link Layer</a></p>
-  </li>
-  <li>
-    <p><em>21 Mar 2024</em> <a href="/Network/Physical-Layer">Physical Layer</a></p>
-  </li>
-  <li>
-    <p><em>21 Mar 2024</em> <a href="/Network/USTC-L1">Ustc L1</a></p>
-  </li>
-</ul>
-
-
-  </div>
-</div>
-
-
-
-<link
+    <link
   rel="stylesheet"
-  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+  href="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.3.1/dist/reveal.min.css,npm/reveal.js@4.3.1/dist/theme/serif.min.css"
 />
 <style>
-  .katex-display>.katex {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    word-break: break-all;
+  .sidebar {
+    line-height: 1.5;
+  }
+  .reveal .slides {
+    text-align: left;
+  }
+  .reveal a,
+  .reveal a:hover,
+  .reveal a:focus {
+    color: inherit;
+    border-bottom: 1px solid var(--theme-base-color);
   }
 </style>
+
+<div class="slides">
+  <section
+    data-markdown data-separator='&lt;!-- .slide --&gt;'
+     data-separator-vertical='&lt;!-- .slide vertical=true --&gt;'
+     data-background-color='White'
+     >
+    <textarea data-template><h2 id="-计算机网络"><i class="fa-solid fa-network-wired"></i> 计算机网络</h2>
+
+<h4 id="--basic-concepts">- <a href="Network/Basic-Concepts">Basic Concepts</a></h4>
+
+<h4 id="--data-link-layer">- <a href="Network/Data-Link-Layer">Data Link Layer</a></h4>
+
+<h4 id="--physical-layer">- <a href="Network/Physical-Layer">Physical Layer</a></h4>
+
+<!-- .slide vertical=true -->
+
+<h3 id="-ustc-计算机网络课程"><i class="fa-solid fa-graduation-cap fa-fw"></i> USTC 计算机网络课程</h3>
+
+<h4 id="--chapter-i">- <a href="Network/Physical-Layer/USTC-L1">Chapter-I</a></h4>
+</textarea>
+  </section>
+</div>
 <script
-  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
-  defer="defer"
-></script>
-<script
- src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
- defer="defer"
- onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
-></script>
-
-
-
-
-<style>
-  pre.language-vega-lite,
-  code.language-vega-lite {
-    display: none;
-  }
-</style>
-<script
-  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
   async="async"
-  onload='
-    for(let x of document.getElementsByClassName("language-vega-lite"))
-      if(x.nodeName=="CODE")
-      {
-        let m = document.createElement("div");
-        x.parentNode.insertAdjacentElement("beforebegin", m);
-        vegaEmbed(m, JSON.parse(x.textContent));
-      }'
-></script>
-
-
-
-
-<style>
-  pre.language-mermaid,
-  code.language-mermaid {
-    display: none;
-  }
-  @media only screen {
-    .mermaid {
-      overflow: hidden hidden;
-      max-width: 100%;
-      max-height: 66.6vh;
-    }
-    .mermaid {
-      overflow: auto auto;
-    }
-  }
-</style>
-<script
-  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
-  async="async"
-  onload='
-    for(let x of document.getElementsByClassName("language-mermaid"))
-      if(x.nodeName=="CODE")
-      {
-        let m = document.createElement("div");
-        m.classList.add("mermaid");
-        m.textContent = x.textContent;
-        x.parentNode.insertAdjacentElement("beforebegin", m);
-      }'
-></script>
-
-
-
-
-<script type="text/javascript">
-   var tags = {
-    '[!note]': '<i class="fa-solid fa-pencil"></i>',
-    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
-    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
-    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
-    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
-    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
-    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
-    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
-    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
-    '[!success]': '<i class="fa-solid fa-check"></i>',
-    '[!check]': '<i class="fa-solid fa-check"></i>',
-    '[!done]': '<i class="fa-solid fa-check"></i>',
-    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
-    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
-    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
-    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
-    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
-    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
-    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
-    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
-    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
-    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
-    '[!error]': '<i class="fa-solid fa-bolt"></i>',
-    '[!bug]': '<i class="fa-solid fa-bug"></i>',
-    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
-    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
-    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
-  };
-  var blocklist = document.querySelectorAll("blockquote");
-  var blockCount = blocklist.length;
-  var blockNow;
-  for (var i = 0; i < blockCount; i++) {
-    blockNow = blocklist[i];
-    var find = false;
-    for (var key in tags) {
-      if (blockNow.innerHTML.indexOf(key) != -1) {
-        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
-        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
-        blocklist[i].innerHTML = blockNow.innerHTML;
-        find = true;
-        break;
-      }
-    }
-    if(!find){
-        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
-        blocklist[i].innerHTML = blockNow.innerHTML;
-      }
-  }
-</script>
-
-
-
-
-<script>
-  if (is_weixn_qq()) {
-   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
-  }
-  function is_weixn_qq(){
-  var ua = navigator.userAgent;
-  var isWeixin = !!/MicroMessenger/i.test(ua);
-  var isQQ = !!/QQ\//i.test(ua);
-  if(isWeixin||isQQ){
-    return true;
-   }
-    return false;
-  }
-</script>
-
-
-
-
-<style>
-  pre .btn-pre-copy {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -khtml-user-select: none;
-    user-select: none;
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    font-size: 12px;
-    line-height: 1;
-    cursor: pointer;
-    color: hsla(0, 0%, 54.9%, .8);
-    transition: color .1s;
-  }
-</style>
-<script>
-  let preList = document.querySelectorAll("pre");
-  for (let pre of preList) {
-    let btn = document.createElement("div");
-    pre.appendChild(btn);
-    btn.className = "btn-pre-copy";
-    btn.innerHTML = "复制";
-   btn.onclick = function () {
-     btn.innerHTML = "";
-     toClip(pre.innerText);
-      btn.innerHTML = "复制成功";
-      setTimeout(() => {
-       btn.innerHTML = "复制";
-     }, 800);
-    }
- }
-  function toClip(text) {
-    navigator.clipboard.writeText(text)
-      .then(() => {
-        console.log("Text copied to clipboard...");
-      })
-      .catch(err => {
-        console.log('Something went wrong', err);
-      });
-  }
-</script>
-
-
-
-
-<script 
-  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
-></script>
-
-
+  src="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.3.1/dist/reveal.min.js,npm/reveal.js@4.3.1/plugin/markdown/markdown.min.js,npm/reveal.js@4.3.1/plugin/math/math.min.js"
+  onload="
+  for(let x of document.getElementsByClassName('wrap'))
+    x.classList.add('reveal');
+  Reveal.initialize({
+    height: '100%',
+    mouseWheel: true,
+    navigationMode: 'linear',
+    plugins: [ RevealMarkdown,RevealMath.KaTeX ]
+  });
+"></script>
 
     
   </div>
