@@ -3,8 +3,10 @@ Title: Mathematica
 aliases:
   - Math
 tags:
-  - README
+  - Navigation
 Author: AllenYGY
+created: 2024-01-16T21:03
+updated: 2024-03-21T22:48
 ---
 
 # Mathematica

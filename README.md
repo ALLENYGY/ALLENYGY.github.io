@@ -12,7 +12,9 @@
 - <i class="fa-solid fa-network-wired"></i> [计算机网络](DCN)
 - <i class="fa-solid fa-atom fa-fw"></i> [计算机组成原理](CO)
 - <i class="fa-solid fa-code fa-fw"></i> [编程语言](Program)
-
+- <i class="fa-solid fa-database fa-fw"></i> [数据库](DBM)
+- <i class="fa-solid fa-tools fa-fw"></i> 编程素养
+  
 <!-- .slide -->
 
 ## <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
@@ -129,3 +131,83 @@
 ### <i class="fa-brands fa-cuttlefish fa-fw"></i> C
 
 #### - [C Macro](Program/C/Macro)
+
+<!-- .slide -->
+
+## <i class="fa-solid fa-database fa-fw"></i> 数据库
+
+#### - <i class="fa-solid fa-palette fa-fw"></i> Database Design
+#### - <i class="fa-solid fa-server fa-fw"></i> MySQL
+
+<!-- .slide -->
+
+## <i class="fa-solid fa-palette fa-fw"></i> Database Design
+
+#### - [Entity-Relationship Model Modeling](Entity-Relationship-Model-Modeling)
+
+#### - [Entity-Relationship Model Constraints](Entity-Relationship-Model-Constraints)
+
+#### - [Entity-Relationship Model Extended Features](Entity-Relationship-Model-Extended-Features)
+
+#### - [Design Issues](Design-Issues)
+
+#### - [Logical Design](Logical-Design)
+
+#### - [KEY Concept](Lecture/Key-concept)
+
+<!-- .slide vertical=true -->
+
+## <i class="fa-solid fa-server fa-fw"></i> MySQL
+
+#### - [Basic MySQL](Basic-MySQL)
+
+#### - [Cross table query](Cross-table-Query)
+
+#### - [Join](Join)
+
+#### - [Aggregation](Aggregation)
+
+#### - [Data Definition](Data-Definition)
+
+#### - [Data Modification](Data-Modification)
+
+<!-- .slide vertical=true -->
+## <i class="fa-solid fa-server fa-fw"></i>  MySQL
+
+#### - [Null & Subquery](Null-Subquery)
+
+#### - [Set Operation & WHERE subquery](Set-Operation-&-WHERE-subquery)
+
+#### - [Division and Correlated Subquery](Division-and-Correlated-Subquery)
+
+#### - [Advanced SQL](Advanced-SQL)
+
+<!-- .slide -->
+
+## <i class="fa-solid fa-tools fa-fw"></i> 编程素养
+
+### - <i class="fa-solid fa-tools fa-git"></i> Git
+### - <i class="fa-solid fa-tools fa-fw"></i> Docker
+### - <i class="fa-solid fa-tools fa-fw"></i> Conda
+
+<!-- .slide -->
+
+## <i class="fa-solid fa-tools fa-git"></i> Git
+
+### - [Git Introduction](Git/Git-Introduction)
+
+### - [Git For Beginners](Git/Git-For-Beginners)
+
+### - [Git Remote Repository](Git-Remote-Repository)
+
+### - [Git Workflow Model](Git-Workflow-Model)
+
+<!-- .slide vertical=true -->
+
+## <i class="fa-solid fa-tools fa-fw"></i> Docker
+
+### - [Basic Docker](Docker/Docker)
+
+## <i class="fa-solid fa-tools fa-fw"></i> Conda
+
+### - [Conda Basic Operation](Conda)

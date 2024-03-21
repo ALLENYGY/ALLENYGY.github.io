@@ -18,19 +18,19 @@ jekyll-theme-ObJekyll:
 {
   "data": { "url": "{{ site.baseurl }}/assets/simple-jekyll-search/search.json" },
   "encoding": {
-    "y": {"field": "creatd", "timeUnit": "month", "type": "ordinal"},
-    "x": {"field": "created", "timeUnit": "year"},
-    "color": {"field": "created", "aggregate": "count"}
+    "y": {"field": "date", "timeUnit": "month", "type": "ordinal"},
+    "x": {"field": "date", "timeUnit": "year"},
+    "color": {"field": "date", "aggregate": "count"}
   },
   "mark": "rect"
 }
 ```
 
-{% assign lmonth = "1000-01" | created: "%b %Y" %}
+{% assign lmonth = "1000-01" | date: "%b %Y" %}
 
 {% for post in site.notes reversed %}
 {% unless post.title contains '.excalidraw' %}
-{% assign month = post.created | date: "%b %Y" %}
+{% assign month = post.created | created: "%b %Y" %}
 {% if month != lmonth %}
 ## {{ month }}
 {%assign lmonth = month %}

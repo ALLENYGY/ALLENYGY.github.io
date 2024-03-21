@@ -8,7 +8,7 @@ tags:
   - Python
   - Program
 created: 2024-02-19T16:28
-updated: 2024-03-21T21:22
+updated: 2024-03-21T21:27
 ---
 
 # [[PythonBasic]]
@@ -36,15 +36,15 @@ a = b = [1,2,3]
 
 ### **Quotation**^[引用]
 
-- You can enclose strings using single ('), double (") or triple (''') quotes.
-- There is no difference between single and double quotes.
-    - Python 中单引号 ' 和双引号 " 使用完全相同。
-- Triple quotes can denote a string across multiple lines.
-    - 使用三引号(''' 或 """)可以指定一个多行字符串。
+* You can enclose strings using single ('), double (") or triple (''') quotes.
+* There is no difference between single and double quotes.
+  * Python 中单引号 ' 和双引号 " 使用完全相同。
+* Triple quotes can denote a string across multiple lines.
+  * 使用三引号(''' 或 """)可以指定一个多行字符串。
 
 ### **Reserved Words**^[保留字]
 
-Python has a smaller set of keywords than C does. 
+Python has a smaller set of keywords than C does.
 All the python keywords, as shown below, contain only lowercase letters.
 
 ```python
@@ -74,7 +74,6 @@ print("Hello",
 gender = ["female",
          "male"]
 ```
-         
 
 If you want to put multiple statements in a single line, seperate them using semicolons (;).
 
@@ -84,7 +83,7 @@ a = 1; b = 2; c = 3
 
 Python does not use braces ({}) to indicate blocks of code. Code blocks are denoted by line indentation and this is rigidly enforced. ***Wrong indentation will cause error!***
 
-A code block starts with indentation and ends with the first unindented line. 
+A code block starts with indentation and ends with the first unindented line.
 Generally *four whitespaces* are used for indentation. In a Jupyter notebook, you may press "tab" to input four whitespaces.
 
 ## **Basic IO**

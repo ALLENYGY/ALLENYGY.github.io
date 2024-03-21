@@ -5,7 +5,10 @@ Author:
   - AllenYGY
 tags:
   - NOTE
+  - Shell
 theme: 
+created: 2024-02-22T11:12
+updated: 2024-03-21T22:37
 ---
 
 # [[Shell]]

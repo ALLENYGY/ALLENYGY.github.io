@@ -351,11 +351,11 @@
       "color": "qM2HC0GmljvwGMnPjfZtO"
     },
     {
-      "path": "Tools/README.md",
+      "path": "Tools/Tools.md",
       "color": "qM2HC0GmljvwGMnPjfZtO"
     },
     {
-      "path": "CO/README.md",
+      "path": "CO/CO.md",
       "color": "qM2HC0GmljvwGMnPjfZtO"
     },
     {
@@ -379,11 +379,7 @@
       "color": "qM2HC0GmljvwGMnPjfZtO"
     },
     {
-      "path": "Math/README.md",
-      "color": "qM2HC0GmljvwGMnPjfZtO"
-    },
-    {
-      "path": "DBM/README.md",
+      "path": "Math/Math.md",
       "color": "qM2HC0GmljvwGMnPjfZtO"
     },
     {
@@ -453,10 +449,6 @@
     {
       "path": "Others",
       "color": "qM2HC0GmljvwGMnPjfZtO"
-    },
-    {
-      "path": "Excalidraw",
-      "color": "Jg4M3jD97fUGZ_NnS7YKB"
     }
   ]
 }

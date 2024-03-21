@@ -20,7 +20,7 @@ jekyll-theme-ObJekyll:
 ```vega-lite
 {% capture json_data %}[
 {% for tag in site.tags reversed %}
-{% unless tag[0] contains '游戏'or tag[0] contains 'excalidraw'  %}
+{% unless tag[0] contains 'NOTE'or tag[0] contains 'excalidraw'  %}
  , {"tags": "{{ tag[0] }}", "count": {{ tag[1].size }} }
 {% endunless %}
 {% endfor %}

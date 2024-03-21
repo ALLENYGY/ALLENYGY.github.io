@@ -9,6 +9,7 @@ exclude:
   - _notes/.github
   - _notes/Web/Vue
   - _notes/Others
+  - _notes/Record
 
   # - _notes/cedict_ts.u8
 description: | # 头像背后的信息（html格式）
@@ -90,6 +91,10 @@ defaults:
                 href: /Program  
               - title: <i class="fa-solid fa-database fa-fw"></i> 数据库
                 href: /DBM
+              # Tool
+              - title: <i class="fa-solid fa-tools fa-fw"></i> 编程素养
+                href: /Tools
+
               - title: <i class="fa-solid fa-archive fa-fw"></i> 归档
                 href: /archive
               - title: <i class="fa-solid fa-tags fa-fw"></i> 标签

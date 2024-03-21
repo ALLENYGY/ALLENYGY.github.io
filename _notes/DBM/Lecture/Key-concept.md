@@ -1,4 +1,15 @@
-# Concept
+---
+Title: "[[Key-concept]]"
+status: DONE
+tags:
+  - DataBase
+  - NOTE
+Author:
+  - AllenYGY
+created: 2023-11-10T13:25
+updated: 2024-03-21T21:35
+---
+# [[Key-concept]]
 
 ## Key
 

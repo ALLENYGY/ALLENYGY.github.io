@@ -25,17 +25,17 @@ jekyll-theme-ObJekyll:
 
 </style>
 
-{% assign all_tags = site.tags|size %}
+{% assign all_tags = site.tags | size %}
 <div class="tagcloud">
   {% for tag in site.tags %}
-    {% assign tag_name = tag|first %}
-    {% assign tag_count = tag|last|size %}
-    {% assign tag_avg = tag_count | div: all_tags %}
-    {% assign color_class = "tag-color-" | append: forloop.index | modulo: 5 %}
-    {% assign color_index = forloop.index | modulo: 5 %} <!-- 假设有5种颜色 -->
-    {% assign color_class = "tag-color-" | append: color_index %}
-    <span class="tag {{color_class}}" style="font-size: {{ tag_avg | times: 20 }}%;">{{ tag_name }}</span>{% if false %} ({{ tag_count }})
-    {% endif %}
+    {% assign tag_name = tag | first %}
+    {% unless tag_name == 'NOTE' %}
+      {% assign tag_count = tag | last | size %}
+      {% assign tag_avg = tag_count | div: all_tags %}
+      {% assign color_index = forloop.index | modulo: 5 | plus: 1 %} <!-- 假设有5种颜色，并且确保从1开始 -->
+      {% assign color_class = "tag-color-" | append: color_index %}
+      <span class="tag {{color_class}}" style="font-size: {{ tag_avg | times: 20 }}%;">{{ tag_name }}</span>
+    {% endunless %}
   {% endfor %}
 </div>
 

@@ -1,4 +1,16 @@
-# Git Workflow Model
+---
+Title: "[[Git-Workflow-Model]]"
+status: DONE
+tags:
+  - Docker
+  - NOTE
+Author:
+  - AllenYGY
+created: 2024-01-22T22:21
+updated: 2024-03-21T22:58
+---
+
+# [[Git-Workflow-Model]] 
 
 ## GitFlow
 
