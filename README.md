@@ -143,56 +143,56 @@
 
 ## <i class="fa-solid fa-palette fa-fw"></i> Database Design
 
-#### - [Entity-Relationship Model Modeling](Entity-Relationship-Model-Modeling)
+#### - [Entity-Relationship Model Modeling](DBM/Lecture/Entity-Relationship-Model-Modeling)
 
-#### - [Entity-Relationship Model Constraints](Entity-Relationship-Model-Constraints)
+#### - [Entity-Relationship Model Constraints](DBM/Lecture/Entity-Relationship-Model-Constraints)
 
-#### - [Entity-Relationship Model Extended Features](Entity-Relationship-Model-Extended-Features)
+#### - [Entity-Relationship Model Extended Features](DBM/Lecture/Entity-Relationship-Model-Extended-Features)
 
-#### - [Design Issues](Design-Issues)
+#### - [Design Issues](DBM/Lecture/Design-Issues)
 
-#### - [KEY Concept](Key-concept)
+#### - [KEY Concept](DBM/Lecture/Key-concept)
 
 <!-- .slide vertical=true -->
 
 ## <i class="fa-solid fa-palette fa-fw"></i>  Database Design
 
-#### - [Logical Design](Logical-Design)
+#### - [Logical Design](DBM/Lecture/Logical-Design)
 
-#### - [Relational Database Design First Normal Form]([Relational-Database-Design-Purpose-&-First-Normal-Form)
+#### - [Relational Database Design First Normal Form](DBM/Lecture/Relational-Database-Design-Purpose-&-First-Normal-Form)
 
-#### - [Relational Database Design Functional Dependency](Relational-Database-Design-Functional-Dependency)
+#### - [Relational Database Design Functional Dependency](DBM/Lecture/Relational-Database-Design-Functional-Dependency)
 
-#### - [Relational-Database-Design-BCNF](Relational-Database-Design-BCNF)
+#### - [Relational-Database-Design-BCNF](DBM/Lecture/Relational-Database-Design-BCNF)
 
-#### - [Relational-Database-Design-3rd-Normal-Form](Relational-Database-Design-3rd-Normal-Form)
+#### - [Relational-Database-Design-3rd-Normal-Form](DBM/Lecture/Relational-Database-Design-3rd-Normal-Form)
 
 <!-- .slide vertical=true -->
 
 ## <i class="fa-solid fa-server fa-fw"></i> MySQL
 
-#### - [Basic MySQL](Basic-MySQL)
+#### - [Basic MySQL](DBM/Lab/Basic-MySQL)
 
-#### - [Cross table query](Cross-table-Query)
+#### - [Cross table query](DBM/Lab/Cross-table-Query)
 
-#### - [Join](Join)
+#### - [Join](DBM/Lab/Join)
 
-#### - [Aggregation](Aggregation)
+#### - [Aggregation](DBM/Lab/Aggregation)
 
 <!-- .slide vertical=true -->
 ## <i class="fa-solid fa-server fa-fw"></i>  MySQL
 
-#### - [Data Definition](Data-Definition)
+#### - [Data Definition](DBM/Lab/Data-Definition)
 
-#### - [Data Modification](Data-Modification)
+#### - [Data Modification](DBM/Lab/Data-Modification)
 
-#### - [Null & Subquery](Null-Subquery)
+#### - [Null & Subquery](DBM/Lab/Null-Subquery)
 
-#### - [Set Operation & WHERE subquery](Set-Operation-&-WHERE-subquery)
+#### - [Set Operation & WHERE subquery](DBM/Lab/Set-Operation-&-WHERE-subquery)
 
-#### - [Division and Correlated Subquery](Division-and-Correlated-Subquery)
+#### - [Division and Correlated Subquery](DBM/Lab/Division-and-Correlated-Subquery)
 
-#### - [Advanced SQL](Advanced-SQL)
+#### - [Advanced SQL](DBM/Lab/Advanced-SQL)
 
 <!-- .slide -->
 

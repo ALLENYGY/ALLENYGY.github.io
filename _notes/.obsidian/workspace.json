@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBM/DBM.md",
+                "file": "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBM/DBM.md",
+                "file": "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBM/DBM.md",
+                "file": "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBM/DBM.md"
+                "file": "CO/Lecture/From-Machine-Language-to-Assembly-Language.md"
               }
             }
           }
@@ -213,11 +213,13 @@
   },
   "active": "502582b682383a88",
   "lastOpenFiles": [
+    "CO/Lab/Lab2.md",
+    "DBM/Lecture/Key-concept.md",
     "DBM/Lecture/Relational-Database-Design-Functional-Dependency.md",
+    "DBM/DBM.md",
     "DBM/Lecture/Relational-Database-Design-Purpose-&-First-Normal-Form.md",
     "DBM/Lecture/Relational-Database-Design-BCNF.md",
     "DBM/Lecture/Relational-Database-Design-3rd-Normal-Form.md",
-    "DBM/DBM.md",
     "Home.md",
     "Tools/Shell/Shell.md",
     "Tools/Git/Git-Workflow-Model.md",
@@ -237,8 +239,6 @@
     "DBM/Database Management System.md",
     "DBM/MySQL/Advanced-SQL.md",
     "DBM/MySQL/Division-and-Correlated-Subquery.md",
-    "DBM/MySQL/Set-Operation-&-WHERE-subquery.md",
-    "DBM/MySQL/Null-Subquery.md",
     "ProgramLanguage",
     "Program/Java/Lecture",
     "Pasted image 20240320183823.png",

@@ -6,7 +6,7 @@ tags:
   - Navigation
 Author: AllenYGY
 created: 2024-01-16T21:03
-updated: 2024-03-21T22:47
+updated: 2024-03-22T00:06
 ---
 
 ## [[What-is-a-Computer]]
@@ -19,11 +19,11 @@ updated: 2024-03-21T22:47
 
 ## [[From-Gates-to-Circuits-I-Combinational-Circuits]]
 
-## [From-Gates-to-Circuits-II-Sequential-Circuits]]
+## [[From-Gates-to-Circuits-II-Sequential-Circuits]]
 
 ## [[Finite-State-Machine]]
 
-## [[Lecture/CircuitDesign]]
+## [[CircuitDesign]]
 
 ## [[Microarchitecture]]
 

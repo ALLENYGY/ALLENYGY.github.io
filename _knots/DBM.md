@@ -22,53 +22,53 @@ jekyll-theme-ObJekyll:
 
 ## <i class="fa-solid fa-palette fa-fw"></i> Database Design
 
-#### - [Entity-Relationship Model Modeling](Entity-Relationship-Model-Modeling)
+#### - [Entity-Relationship Model Modeling](Lecture/Entity-Relationship-Model-Modeling)
 
-#### - [Entity-Relationship Model Constraints](Entity-Relationship-Model-Constraints)
+#### - [Entity-Relationship Model Constraints](Lecture/Entity-Relationship-Model-Constraints)
 
-#### - [Entity-Relationship Model Extended Features](Entity-Relationship-Model-Extended-Features)
+#### - [Entity-Relationship Model Extended Features](Lecture/Entity-Relationship-Model-Extended-Features)
 
-#### - [Design Issues](Design-Issues)
+#### - [Design Issues](Lecture/Design-Issues)
 
-#### - [KEY Concept](Key-concept)
+#### - [KEY Concept](Lecture/Key-concept)
 
 <!-- .slide vertical=true -->
 
 ## <i class="fa-solid fa-palette fa-fw"></i>  Database Design
 
-#### - [Logical Design](Logical-Design)
+#### - [Logical Design](Lecture/Logical-Design)
 
-#### - [Relational Database Design First Normal Form]([Relational-Database-Design-Purpose-&-First-Normal-Form)
+#### - [Relational Database Design First Normal Form](Lecture/Relational-Database-Design-Purpose-&-First-Normal-Form)
 
-#### - [Relational Database Design Functional Dependency](Relational-Database-Design-Functional-Dependency)
+#### - [Relational Database Design Functional Dependency](Lecture/Relational-Database-Design-Functional-Dependency)
 
-#### - [Relational-Database-Design-BCNF](Relational-Database-Design-BCNF)
+#### - [Relational-Database-Design-BCNF](Lecture/Relational-Database-Design-BCNF)
 
-#### - [Relational-Database-Design-3rd-Normal-Form](Relational-Database-Design-3rd-Normal-Form)
+#### - [Relational-Database-Design-3rd-Normal-Form](Lecture/Relational-Database-Design-3rd-Normal-Form)
 
 <!-- .slide vertical=true -->
 
 ## <i class="fa-solid fa-server fa-fw"></i> MySQL
 
-#### - [Basic MySQL](Basic-MySQL)
+#### - [Basic MySQL](Lab/Basic-MySQL)
 
-#### - [Cross table query](Cross-table-Query)
+#### - [Cross table query](Lab/Cross-table-Query)
 
-#### - [Join](Join)
+#### - [Join](Lab/Join)
 
-#### - [Aggregation](Aggregation)
+#### - [Aggregation](Lab/Aggregation)
 
 <!-- .slide vertical=true -->
 ## <i class="fa-solid fa-server fa-fw"></i>  MySQL
 
-#### - [Data Definition](Data-Definition)
+#### - [Data Definition](Lab/Data-Definition)
 
-#### - [Data Modification](Data-Modification)
+#### - [Data Modification](Lab/Data-Modification)
 
-#### - [Null & Subquery](Null-Subquery)
+#### - [Null & Subquery](Lab/Null-Subquery)
 
-#### - [Set Operation & WHERE subquery](Set-Operation-&-WHERE-subquery)
+#### - [Set Operation & WHERE subquery](Lab/Set-Operation-&-WHERE-subquery)
 
-#### - [Division and Correlated Subquery](Division-and-Correlated-Subquery)
+#### - [Division and Correlated Subquery](Lab/Division-and-Correlated-Subquery)
 
-#### - [Advanced SQL](Advanced-SQL)
+#### - [Advanced SQL](Lab/Advanced-SQL)
