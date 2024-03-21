@@ -11,8 +11,13 @@
             "id": "56866e1fb23b2af3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "WorkView.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
             }
           }
         ]
@@ -121,6 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "WorkView.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,6 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "WorkView.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +181,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "WorkView.md"
+              }
             }
           }
         ],
@@ -204,13 +213,16 @@
   },
   "active": "56866e1fb23b2af3",
   "lastOpenFiles": [
+    "Contest/Overview.md",
+    "WorkView.md",
+    "Home.md",
+    "CO/CO.md",
     "DataAnalysis/HODA/HODA.md",
     "Tools/Conda/Conda.md",
     "DataAnalysis/Data-Analysis.md",
     "Obsidian/Obsidian-Git/Obsidian-Git-Operation.md",
     "Algorithm/DAA/Assignment/Assignment-0.md",
     "Algorithm/DAA/Tutorial/Tutorial-1.md",
-    "Contest/Overview.md",
     "Contest/Lanqiao/Week-1.md",
     "Contest/Leetcode/Biweekly-contest-122.md",
     "Contest/Leetcode/Biweekly-contest-123.md",
@@ -227,9 +239,6 @@
     "Algorithm/DSA/B+Tree.md",
     "Algorithm/DSA/AVL.md",
     "FixIncome/FixedIncomeOverview.md",
-    "Network/USTC-L1.md",
-    "Network/Basic-Concepts.md",
-    "Network/Data-Link-Layer.md",
     "ProgramLanguage",
     "Program/Java/Lecture",
     "Pasted image 20240320183823.png",
