@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    Entity Relationship Model Modeling &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Entity Relationship Model Modeling" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="[[Entity-Relationship-Model-Modeling]]" />
+<meta property="og:description" content="[[Entity-Relationship-Model-Modeling]]" />
+<link rel="canonical" href="https://allenygy.github.io/DBM/Lecture/Entity-Relationship-Model-Modeling" />
+<meta property="og:url" content="https://allenygy.github.io/DBM/Lecture/Entity-Relationship-Model-Modeling" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-03-21T23:11:09+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Entity Relationship Model Modeling" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-21T23:11:09+08:00","datePublished":"2024-03-21T23:11:09+08:00","description":"[[Entity-Relationship-Model-Modeling]]","headline":"Entity Relationship Model Modeling","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/DBM/Lecture/Entity-Relationship-Model-Modeling"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/DBM/Lecture/Entity-Relationship-Model-Modeling"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-0d layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://allenygy.github.io">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://allenygy.github.io">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/contents">
+        <i class="fa-solid fa-book fa-fw"></i> 目录
+      </a>
+      
+      <a class="sidebar-nav-item" href="/OS">
+        <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DCN">
+        <i class="fa-solid fa-network-wired"></i> 计算机网络
+      </a>
+      
+      <a class="sidebar-nav-item" href="/CO">
+        <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Program">
+        <i class="fa-solid fa-code fa-fw"></i> 编程语言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DBM">
+        <i class="fa-solid fa-database fa-fw"></i> 数据库
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Tools">
+        <i class="fa-solid fa-tools fa-fw"></i> 编程素养
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/links">
+        <i class="fa-solid fa-link fa-fw"></i> 友链
+      </a>
+      
+      <a class="sidebar-nav-item" href="/comments">
+        <i class="fa-solid fa-comment fa-fw"></i> 留言
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#entity-relationship-model-modeling">Entity-Relationship-Model-Modeling</a>
+    <ol>
+      <li><a href="#database-design-process">Database Design Process</a>
+        <ol>
+          <li><a href="#conceptual-design">Conceptual-design</a>
+            <ol>
+              <li><a href="#optimization">Optimization</a></li>
+              <li><a href="#convert-er-diagram-to-implementation-data-model">Convert ER diagram to implementation data model</a></li>
+            </ol>
+          </li>
+          <li><a href="#logical-design">Logical-design</a></li>
+          <li><a href="#physical-design">Physical-design</a></li>
+        </ol>
+      </li>
+      <li><a href="#entity-set">Entity Set</a></li>
+      <li><a href="#attribute">Attribute</a></li>
+      <li><a href="#er-diagram">ER-Diagram</a>
+        <ol>
+          <li><a href="#key">Key</a></li>
+          <li><a href="#multi-valued-attribute">Multi-valued Attribute</a></li>
+          <li><a href="#composite-attribute">Composite Attribute</a></li>
+          <li><a href="#relationship">Relationship</a></li>
+          <li><a href="#multi-ary-relationship">Multi-ary Relationship</a></li>
+          <li><a href="#attributes-for-relationship-sets">Attributes for Relationship Sets</a></li>
+          <li><a href="#derived-attributes">Derived Attributes</a></li>
+        </ol>
+      </li>
+      <li><a href="#summary">Summary</a></li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "03/20/2024 16:27:40")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/ALLENYGY/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        22万
+        
+          
+        
+        4千
+        188字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title">Entity Relationship Model Modeling</h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2024-03-21 21:34:00 Thursday
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：2023-11-03 00:59:00 Friday
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        3213字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        11分
+        
+        
+        
+        <br>
+        
+        DataBase, NOTE, and Lec1
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="entity-relationship-model-modeling"><a class="internal-link" href="/DBM/Lecture/Entity-Relationship-Model-Modeling">Entity-Relationship-Model-Modeling</a></h1>
+
+<ul>
+  <li>Design Process</li>
+  <li>Entity Sets</li>
+  <li>Attributes</li>
+  <li>Relationship Sets</li>
+</ul>
+
+<h2 id="database-design-process">Database Design Process</h2>
+
+<ul>
+  <li>The goal of the relational database design is to create a database in a specific database management system that allows us to
+    <ul>
+      <li>Store information</li>
+      <li>Minimize unnecessary redundancies</li>
+      <li>Search information easily</li>
+    </ul>
+  </li>
+  <li>Design database can be split into multiple phases.
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Design-database.png" alt="Design-database" /></li>
+</ul>
+
+<h3 id="conceptual-design">Conceptual-design</h3>
+
+<ul>
+  <li>Focus on describing data and their relationships.</li>
+  <li>The outcome of this phase is an ER diagram.</li>
+  <li>It provides a graphic representation of the database design.
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER-diagram-example.png" alt="ER-diagram-example" /></li>
+</ul>
+
+<blockquote>
+  <p>However, designing an ER diagram can be very subjective. Then, the next phase is optimizing the ER diagram using functional dependencies and normal forms.</p>
+</blockquote>
+
+<h4 id="optimization">Optimization</h4>
+
+<ul>
+  <li>Optimizing the ER diagram using functional dependencies and normal forms.</li>
+</ul>
+
+<h4 id="convert-er-diagram-to-implementation-data-model">Convert ER diagram to implementation data model</h4>
+
+<p>This phase is to convert an ER diagram to the implementation data model of the database system that will be used.</p>
+
+<h3 id="logical-design">Logical-design</h3>
+
+<ul>
+  <li>Relational schemas will be produced.
+The relational schemas of a database are called logical view.</li>
+</ul>
+
+<h3 id="physical-design">Physical-design</h3>
+
+<ul>
+  <li>Designers will implement the relational schemas in the database management system using a particular data definition language.</li>
+</ul>
+
+<h2 id="entity-set">Entity Set</h2>
+
+<ul>
+  <li>The entity-relationship model contains three basic concepts:
+    <ul>
+      <li>entity sets</li>
+      <li>relationship sets</li>
+      <li>attributes</li>
+    </ul>
+  </li>
+</ul>
+
+<p>An entity is a “thing” or “object” in the real world, which is distinguishable from all other objects.
+An entity set is the class or type of objects in our model.</p>
+
+<h2 id="attribute">Attribute</h2>
+
+<ul>
+  <li>An entity can be described by a set of properties.</li>
+  <li>Each property is an attribute of the entity.</li>
+  <li>A set of attributes describes and distinguishes the entities in the same entity set.</li>
+  <li>One entity can have different attributes in different models for different applications.</li>
+  <li>Each entity has a value for each of its attributes.</li>
+  <li>The Domain of an attribute is the set of all possible values of the attribute.</li>
+</ul>
+
+<h2 id="er-diagram">ER-Diagram</h2>
+
+<ul>
+  <li>rectangles represent entity sets</li>
+  <li>ellipses represent attributes</li>
+  <li>keys are underlined</li>
+  <li>lines link attributes to entity sets
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Basic-ER-Features.png" alt="Basic-ER-Features" /></li>
+  <li>a relationship set is denoted by a diamond
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER-Relationship-set-diamond.png" alt="ER-Relationship-set-diamond" /></li>
+</ul>
+
+<h3 id="key">Key</h3>
+
+<ul>
+  <li>The set of special attribute(s) is called key.</li>
+  <li>Formally, a key of an entity set is a set of attributes that <strong>can uniquely identify the entities.</strong></li>
+  <li>Two entities are identical if and only if they have the same value for the key.</li>
+</ul>
+
+<h3 id="multi-valued-attribute">Multi-valued Attribute</h3>
+
+<ul>
+  <li>An entity may have multiple values in an attribute which is multi-valued attribute, denoted by double ellipses.</li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER-Multiple-valued-Attribute.png" alt="Multiple-valued-Attribute" />
+It is possible that one student may have multiple phone numbers.</p>
+
+<h3 id="composite-attribute">Composite Attribute</h3>
+
+<ul>
+  <li>One may ask “why the course code is not selected as a key?”</li>
+  <li>The reason is that a course code is not atomic.
+    <ul>
+      <li>An attribute is atomic if each value of the attribute has only one unit of information.</li>
+      <li>If an attribute is not atomic, it is a composite attribute.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Composite-attribute.png" alt="Composite-attribute" />
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Compositive-attribute-Example.png" alt="Composite-attribute" /></p>
+
+<h3 id="relationship">Relationship</h3>
+
+<ul>
+  <li>A relationship set is a set of relationships of the same type.
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER-Relationship-set.png" alt="ER-Relationship-set" /></li>
+  <li>Sets do not allow duplications.</li>
+  <li>This is also applied to entity sets.</li>
+</ul>
+
+<h3 id="multi-ary-relationship">Multi-ary Relationship</h3>
+
+<ul>
+  <li>If a relationship associates 𝑛 entities, this relationship is 𝒏-ary.</li>
+  <li>𝑛 is the degree of the relationship</li>
+  <li>If 𝑛 = 2, the relationship is binary.</li>
+  <li>If 𝑛 = 3, the relationship is ternary.</li>
+  <li>Theoretically, 𝑛 can be any positive integer.</li>
+</ul>
+
+<h3 id="attributes-for-relationship-sets">Attributes for Relationship Sets</h3>
+
+<ul>
+  <li>The relationship set can also have some attributes.</li>
+  <li>Example:
+    <ul>
+      <li>Sometimes people are also interested in some information about relationships.</li>
+      <li>In the “students borrow books” example, we also want to know when the book is borrowed, when the book is returned, and how long the book is kept by the student.</li>
+      <li>This information does not belong to students or books. It is about the association.
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER-Attribute-for-relationship-sets.png" alt="Attribute-for-relationship-sets" /></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="derived-attributes">Derived Attributes</h3>
+
+<ul>
+  <li>In the previous example, the attribute duration is in a dashed ellipse because it is a derived attribute.
+    <ul>
+      <li>If one knows the date of borrow and the date of return, then the duration can be calculated from the two values.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER-Summary.png" alt="ER-Summary" /></p>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/DBM/DBM">Dbm</a><br>
+                    <!-- <div style="font-size: 0.9em"> 数据库
+</div> -->
+                </div>
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/DBM/Lecture/Entity-Relationship-Model-Modeling">Entity Relationship Model Modeling</a><br>
+                    <!-- <div style="font-size: 0.9em">[[Entity-Relationship-Model-Modeling]]
+</div> -->
+                </div>
+                
+            </div>
+            
+        </side>
+    </div>
+</div>
+
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+<style>
+  pre.language-vega-lite,
+  code.language-vega-lite {
+    display: none;
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-vega-lite"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+        vegaEmbed(m, JSON.parse(x.textContent));
+      }'
+></script>
+
+
+
+
+<style>
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+  @media only screen {
+    .mermaid {
+      overflow: hidden hidden;
+      max-width: 100%;
+      max-height: 66.6vh;
+    }
+    .mermaid {
+      overflow: auto auto;
+    }
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-mermaid"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        m.classList.add("mermaid");
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+      }'
+></script>
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+

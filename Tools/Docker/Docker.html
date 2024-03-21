@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    Docker &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Docker" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="[[Docker]]" />
+<meta property="og:description" content="[[Docker]]" />
+<link rel="canonical" href="https://allenygy.github.io/Tools/Docker/Docker" />
+<meta property="og:url" content="https://allenygy.github.io/Tools/Docker/Docker" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-03-21T23:11:09+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Docker" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-21T23:11:09+08:00","datePublished":"2024-03-21T23:11:09+08:00","description":"[[Docker]]","headline":"Docker","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/Tools/Docker/Docker"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/Tools/Docker/Docker"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-0d layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://allenygy.github.io">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://allenygy.github.io">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/contents">
+        <i class="fa-solid fa-book fa-fw"></i> 目录
+      </a>
+      
+      <a class="sidebar-nav-item" href="/OS">
+        <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DCN">
+        <i class="fa-solid fa-network-wired"></i> 计算机网络
+      </a>
+      
+      <a class="sidebar-nav-item" href="/CO">
+        <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Program">
+        <i class="fa-solid fa-code fa-fw"></i> 编程语言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DBM">
+        <i class="fa-solid fa-database fa-fw"></i> 数据库
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Tools">
+        <i class="fa-solid fa-tools fa-fw"></i> 编程素养
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/links">
+        <i class="fa-solid fa-link fa-fw"></i> 友链
+      </a>
+      
+      <a class="sidebar-nav-item" href="/comments">
+        <i class="fa-solid fa-comment fa-fw"></i> 留言
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#docker">Docker</a>
+    <ol>
+      <li><a href="#basic-concept">Basic Concept</a></li>
+      <li><a href="#client-server-architecture">Client Server Architecture</a></li>
+      <li><a href="#containerization-%E5%AE%B9%E5%99%A8%E5%8C%96-and-dockerfile">Containerization 容器化 and Dockerfile</a>
+        <ol>
+          <li><a href="#dockerfile">DockerFile</a></li>
+        </ol>
+      </li>
+      <li><a href="#docker-command">Docker Command</a>
+        <ol>
+          <li><a href="#management">Management</a>
+            <ol>
+              <li><a href="#image-management">Image Management</a></li>
+              <li><a href="#container-management">Container Management</a></li>
+              <li><a href="#volume-management">Volume Management</a></li>
+              <li><a href="#network-management">Network Management</a></li>
+              <li><a href="#plugin-management">Plugin Management</a></li>
+            </ol>
+          </li>
+          <li><a href="#run-container">Run Container</a></li>
+          <li><a href="#daily-operation">Daily Operation</a></li>
+        </ol>
+      </li>
+      <li><a href="#dockerfile-1">Dockerfile</a></li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "03/20/2024 16:27:40")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/ALLENYGY/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        21万
+        
+          
+        
+        2千
+        427字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title">Docker</h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2024-03-21 22:57:00 Thursday
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：2024-02-22 11:12:00 Thursday
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        4488字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        15分
+        
+        
+        
+        <br>
+        
+        Docker and NOTE
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="docker"><a class="internal-link" href="/Tools/Docker/Docker">Docker</a></h1>
+
+<h2 id="basic-concept">Basic Concept</h2>
+
+<ul>
+  <li><strong>镜像</strong>: <em>Image</em>  定义了容器如何构建</li>
+  <li><strong>容器</strong>: <em>Container</em>  容器是独立运行的一个或一组应用，是镜像运行时的实体</li>
+  <li><strong>Dockerfile</strong>: 构建镜像需要的各种指令</li>
+</ul>
+
+<blockquote>
+  <p>[!info] 镜像（Image）和容器（Container）的关系，就像是面向对象程序设计中的类和实例一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。</p>
+</blockquote>
+
+<h2 id="client-server-architecture">Client Server Architecture</h2>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Docker/framework.png" alt="framework" /></p>
+
+<h2 id="containerization-容器化-and-dockerfile">Containerization <strong>容器化</strong> and Dockerfile</h2>
+
+<ol>
+  <li>创建Dockerfile</li>
+  <li>使用Dockerfile构建Image</li>
+  <li>使用Image创建和运行容器</li>
+</ol>
+
+<h3 id="dockerfile">DockerFile</h3>
+
+<ol>
+  <li>Install Operating System</li>
+  <li>Install Operating Environment</li>
+  <li>Copy app, dependency, configuration files</li>
+  <li>Execute start command run the app</li>
+</ol>
+
+<h2 id="docker-command">Docker Command</h2>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Docker/Docker.png" alt="MindMap" /></p>
+
+<h3 id="management">Management</h3>
+
+<ul>
+  <li>Image</li>
+  <li>Network</li>
+  <li>Container</li>
+  <li>Volume</li>
+  <li>Plugin</li>
+</ul>
+
+<h4 id="image-management">Image Management</h4>
+
+<ul>
+  <li><strong>查看镜像</strong> (List images)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker image ls
+</code></pre></div></div>
+
+<ul>
+  <li><strong>检索镜像</strong> (Search for images)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker search [image]
+</code></pre></div></div>
+<blockquote>
+  <p>[!note]+ <strong>Example</strong>
+```docker
+ docker search nginx</p>
+</blockquote>
+
+<ul>
+  <li><strong>拉取镜像</strong> (Pull an image)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker pull[image]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>上传镜像</strong> (Push an image)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker push[image]
+</code></pre></div></div>
+<blockquote>
+  <p>[!note]+ <strong>Example</strong>
+```docker
+docker push geekhour/hello-docker:latest</p>
+</blockquote>
+
+<ul>
+  <li><strong>保存镜像</strong> (Save image)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker save [image] -o FILE 
+docker save [image] &gt; FILE 
+</code></pre></div></div>
+<blockquote>
+  <p>[!note]+ <strong>Example</strong>
+```docker
+docker save geekhour/hello-docker:latest</p>
+</blockquote>
+
+<ul>
+  <li><strong>导入镜像</strong> (Load an image)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker load -i FILE
+</code></pre></div></div>
+<blockquote>
+  <p>[!note]+ <strong>Example</strong>
+```docker
+ docker load -i hello-docker.tar</p>
+</blockquote>
+
+<ul>
+  <li><strong>查看镜像历史</strong>  (View image history)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker history[image]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>删除镜像</strong> (Remove an image)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker rmi [image]
+docker image rm [image] 
+</code></pre></div></div>
+
+<ul>
+  <li><strong>删除不再使⽤的镜像</strong> (Delete a image that is no longer used)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker image prune
+</code></pre></div></div>
+
+<ul>
+  <li><strong>将⽂件系统导⼊为镜像</strong> (Guide the component system as a image)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker import [URL/FILE]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>从容器创建镜像</strong> (Create an image from a container)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker commit [container][image]
+</code></pre></div></div>
+
+<h4 id="container-management">Container Management</h4>
+
+<ul>
+  <li><strong>创建容器</strong> (Create a container)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker create [image]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>创建并运行容器</strong> (Create and run a container)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run [image]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>启动容器</strong> (Start a container)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker start [container]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>停止容器</strong> (Stop a container)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker stop [container]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>重启容器</strong> (Restart a container)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker restart [container]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>列出正在运行的容器</strong> (List running containers)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker ps
+docker container ls
+</code></pre></div></div>
+
+<ul>
+  <li><strong>列出所有容器</strong> (List all containers)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker ps -a
+docker container ls -a
+</code></pre></div></div>
+
+<ul>
+  <li><strong>以交互模式进入容器</strong> (Enter a container in interactive mode)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker exec -it [container] bash
+docker attach [container]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>导出容器</strong> (Export a container)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker export [container] -o FILE
+docker export [container] &gt; FILE
+</code></pre></div></div>
+
+<ul>
+  <li><strong>导入容器快照</strong> (Import a container image)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker import FILE
+</code></pre></div></div>
+
+<ul>
+  <li><strong>查看容器日志</strong> (View container logs)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker logs [container]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>删除容器</strong> (Remove a container)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker rm [container]
+docker container rm [container]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>查看容器端口映射</strong> (View container port mappings)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker port [container]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>显示容器内进程</strong> (Show processes inside a container)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker top [container]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>复制本地文件至容器内的指定路径</strong> (Copy local files to a specified path inside a container)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker cp [FILE] [container]:[PATH]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>显示容器的变化</strong> (Show changes in a container)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker diff [container]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>显示容器资源使用情况</strong> (Show container resource usage)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker stats [container]
+</code></pre></div></div>
+
+<h4 id="volume-management">Volume Management</h4>
+
+<ul>
+  <li><strong>创建一个数据卷</strong> (Create a volume)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker volume create [volume]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>查看数据卷</strong> (List volumes)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker volume ls
+</code></pre></div></div>
+
+<ul>
+  <li><strong>查看数据卷详细信息</strong> (Inspect a volume)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker volume inspect [volume]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>删除数据卷</strong> (Remove a volume)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker volume rm [volume]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>删除所有未使用的数据卷</strong> (Remove all unused volumes)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker volume prune
+</code></pre></div></div>
+
+<h4 id="network-management">Network Management</h4>
+
+<ul>
+  <li><strong>列出可用网络</strong> (List networks)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker network ls
+</code></pre></div></div>
+
+<ul>
+  <li><strong>查看网络详细信息</strong> (Inspect network)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker network inspect [network]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>创建一个新的网络</strong> (Create a new network)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker network create [network]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>删除一个网络</strong> (Remove a network)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker network rm [network]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>将容器连接到网络</strong> (Connect a container to a network)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker network connect [network] [container]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>将容器从网络断开</strong> (Disconnect a container from a network)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker network disconnect [network] [container]
+</code></pre></div></div>
+
+<h4 id="plugin-management">Plugin Management</h4>
+
+<ul>
+  <li><strong>列出插件</strong> (List plugins)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker plugin ls
+</code></pre></div></div>
+
+<ul>
+  <li><strong>安装插件</strong> (Install plugin)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker plugin install [plugin]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>启用插件</strong> (Enable plugin)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker plugin enable [plugin]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>禁用插件</strong> (Disable plugin)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker plugin disable [plugin]
+</code></pre></div></div>
+
+<ul>
+  <li><strong>卸载插件</strong> (Remove plugin)</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker plugin rm [plugin]
+</code></pre></div></div>
+
+<h3 id="run-container">Run Container</h3>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run [options] image [command][arg...]
+</code></pre></div></div>
+
+<ul>
+  <li>创建一个容器，并指定容器名称、后台运行、端口映射、环境变量、和工作目录</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -d -p[hostPost]:[containerPort] -e [key=value] -w[PATH] --name[name][image]
+</code></pre></div></div>
+
+<ul>
+  <li>创建 运行并命名容器</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run --name[name][image]
+</code></pre></div></div>
+
+<ul>
+  <li>创建一个容器并后台运行</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -d[image]
+</code></pre></div></div>
+
+<ul>
+  <li>创建一个容器并指定端口映射</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -p[hostPort]:[containerPort][image]
+</code></pre></div></div>
+
+<ul>
+  <li>创建一个容器并指定端口映射 <strong>随机分配</strong></li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -P[image]
+</code></pre></div></div>
+
+<ul>
+  <li>创建一个容器并指定环境变量</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -e[key=value][image]
+</code></pre></div></div>
+
+<ul>
+  <li>创建一个容器并指定工作目录</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -w[PATH][image]
+</code></pre></div></div>
+
+<ul>
+  <li>创建一个容器并在容器中执行命令</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run [image][command]
+</code></pre></div></div>
+
+<blockquote>
+  <p>[!note]+ <strong>Example</strong>
+```docker
+docker run -it nginx:latest /bin/bash</p>
+</blockquote>
+
+<p><strong>使用镜像nginx：latest 来启动一个容器，并在容器内执行交互式 bash shell</strong></p>
+
+<blockquote>
+  <p>```docker
+docker run -it -p 3316:3306 -v /data:/data -d mysql:latest</p>
+</blockquote>
+
+<p><strong>创建⼀个 mysql 容器，后台模式启动，主机 3316 端⼝ 映射到容器 3306 端⼝，主机 /data ⽬录映射到容器 /data ⽬录</strong></p>
+
+<h3 id="daily-operation">Daily Operation</h3>
+
+<ol>
+  <li>查看Docker <strong>系统信息</strong></li>
+</ol>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker info
+</code></pre></div></div>
+
+<ol>
+  <li>查看Docker <strong>版本</strong></li>
+</ol>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker version
+</code></pre></div></div>
+
+<ol>
+  <li>查看Docker <strong>帮助文档</strong></li>
+</ol>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker--help
+</code></pre></div></div>
+
+<ol>
+  <li>查看Docker <strong>命令帮助文档</strong></li>
+</ol>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker[command]--help
+</code></pre></div></div>
+
+<ol>
+  <li><strong>登录/退出</strong> DockerHub</li>
+</ol>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker login/logout
+</code></pre></div></div>
+
+<h2 id="dockerfile-1">Dockerfile</h2>
+
+<div class="language-Dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 基础镜像设置</span>
+<span class="k">FROM</span><span class="s"> [base_image]</span>
+<span class="c"># 指定基础镜像，必须为Dockerfile的第一条指令；</span>
+
+<span class="c"># 文件添加指令</span>
+<span class="k">ADD</span><span class="s"> &lt;src&gt;... &lt;dest&gt;</span>
+<span class="c"># 用于将文件复制到镜像中，源可以是URL或者本地文件，也可以是一个压缩文件（自动解压）</span>
+
+<span class="c"># 文件复制指令</span>
+<span class="k">COPY</span><span class="s"> [--chown=&lt;user&gt;:&lt;group&gt;] &lt;src&gt;... &lt;dest&gt;</span>
+<span class="c"># 用于将文件复制到镜像中，源只能是本地文件</span>
+
+<span class="c"># 工作目录指令</span>
+<span class="k">WORKDIR</span><span class="s"> /path/to/workdir</span>
+<span class="c"># 用于指定工作目录，可以使用多个WORKDIR指令，如果使用相对路径，则是相对于上一条WORKDIR指令的路径</span>
+
+<span class="c"># 环境变量指令</span>
+<span class="k">ENV</span><span class="s"> &lt;key&gt; &lt;value&gt;</span>
+<span class="k">ENV</span><span class="s"> &lt;key1&gt;=&lt;value1&gt; &lt;key2&gt;=&lt;value2&gt;...</span>
+<span class="c"># 用于设置环境变量</span>
+
+<span class="c"># 执行命令指令</span>
+<span class="k">CMD</span><span class="s"> ["executable","param1","param2"]</span>
+<span class="k">CMD</span><span class="s"> command param1 param2</span>
+<span class="c"># 用于指定默认的容器主进程，每个Dockerfile中只能有一条CMD指令，如果有多条，则只有最后一条会生效</span>
+
+<span class="c"># 卷挂载指令</span>
+<span class="k">VOLUME</span><span class="s"> ["/path/to/volume"]</span>
+<span class="k">VOLUME</span><span class="s"> ["/path1", "/path2"...]</span>
+<span class="c"># 用于定义匿名卷，持久化数据</span>
+
+</code></pre></div></div>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/Tools/Docker/Docker">Docker</a><br>
+                    <!-- <div style="font-size: 0.9em">[[Docker]]
+</div> -->
+                </div>
+                
+            </div>
+            
+        </side>
+    </div>
+</div>
+
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+<style>
+  pre.language-vega-lite,
+  code.language-vega-lite {
+    display: none;
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-vega-lite"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+        vegaEmbed(m, JSON.parse(x.textContent));
+      }'
+></script>
+
+
+
+
+<style>
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+  @media only screen {
+    .mermaid {
+      overflow: hidden hidden;
+      max-width: 100%;
+      max-height: 66.6vh;
+    }
+    .mermaid {
+      overflow: auto auto;
+    }
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-mermaid"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        m.classList.add("mermaid");
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+      }'
+></script>
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+
