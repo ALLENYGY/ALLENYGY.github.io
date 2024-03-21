@@ -1,8 +1,8 @@
 ---
 layout: page
 title: 友链
-date: 2022-10-22 21:48:33 +0800,周四
-lastmod: 2022-10-22 22:06:07 +0800,周四
+created: 2024-03-20
+updated: 2024-03-22
 permalink: /links
 jekyll-theme-ObJekyll:
   default:

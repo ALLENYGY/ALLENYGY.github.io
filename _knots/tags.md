@@ -1,8 +1,8 @@
 ---
 layout: page
 title: 标签
-date: 2024-03-20 21:48:33 +0800,周四
-lastmod: 2024-3-20 22:06:07 +0800,周四
+created: 2024-03-20
+updated: 2024-03-22
 permalink: /tags
 jekyll-theme-ObJekyll:
   default:

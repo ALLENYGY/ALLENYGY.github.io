@@ -1,8 +1,8 @@
 ---
 layout: page
 title: 图谱
-date: 2024-03-20 21:48:33 +0800,周四
-lastmod: 2022-03-21 22:06:07 +0800,周四
+created: 2024-03-20
+updated: 2024-03-22
 permalink: /map
 jekyll-theme-ObJekyll:
   default:
