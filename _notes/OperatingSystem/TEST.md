@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 # AllenYGY
 
 ## 个人小站 开始阅读

@@ -7,10 +7,10 @@ permalink: /links
 jekyll-theme-ObJekyll:
   default:
     sidebar:
-      open: false
+      open: true
   tags:
     vega_lite: # 显示一个统计图，需要引入 vega-lite
-      enable: true
+      enable: false
 ---
 
 

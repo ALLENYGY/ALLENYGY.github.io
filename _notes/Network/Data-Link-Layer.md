@@ -160,4 +160,11 @@ The data link layer needs to pack bits into frames, so that each frame is distin
 > [!example]- CRC Example
 >![CRC](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/CRC.png)
 
+> [!note]+ Generator x
+> 不能太长：太长准确率高，但是效率低
+> 不能太短：太短reminder容易重复
+> 需要是质数：这样reminder重复概率进一步减小
+
+### Error Correction
+
 ## Flow Control 
