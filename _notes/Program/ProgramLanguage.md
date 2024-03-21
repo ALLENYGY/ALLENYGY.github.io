@@ -5,39 +5,41 @@ tags:
   - README
 Author: AllenYGY
 created: 2024-02-22T11:10
-updated: 2024-03-21T19:45
+updated: 2024-03-21T20:00
 ---
 
-# Program Language
+### Java
 
-## Java
+#### [[Java-Introduction]]
 
-### [[Java-Introduction]]
+#### [[Unified-Modeling-Language]]
 
-### [[Unified-Modeling-Language]]
+#### [[Java-Programming-Essentials]]
 
-### [[Java-Programming-Essentials]]
+#### [[Creating-Java-Classes]]
 
-### [[Creating-Java-Classes]]
+#### [[Inheritance]]
 
-### [[Inheritance]]
+#### [[Abstract-Methods-and-Classes-Interfaces]]
 
-### [[Abstract-Methods-and-Classes-Interfaces]]
+#### [[Exception-Handling]]
 
-### [[Exception-Handling]]
+#### [[Array-and-Generics]]
 
-### [[Array-and-Generics]]
+<!-- .slide -->
 
-## Python
+### Python
 
-### [[PythonBasic]]
+#### [[PythonBasic]]
 
-## R
+### R
 
-### [[Basic-R]]
+#### [[Basic-R]]
 
-### [[R-Data-Structure]]
+#### [[R-Data-Structure]]
 
-## C
+### C
 
-### [[Macro]]
+#### [[Macro]]
+
+<!-- .slide -->
