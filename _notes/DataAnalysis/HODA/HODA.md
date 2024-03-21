@@ -1,3 +1,15 @@
+---
+Title: "[[HODA]]"
+status: DONE
+tags:
+  - DataAnalysis
+  - NOTE
+Author:
+  - AllenYGY
+created: 2024-01-16
+updated: 2024-03-22
+---
+
 # *Hands on Data Analytics for Everyone*
 
 - 此文基本包括了uic hands on data 这门课quiz和期末考的知识点， 高亮标注都是考点

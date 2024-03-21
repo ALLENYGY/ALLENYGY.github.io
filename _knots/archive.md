@@ -27,10 +27,11 @@ jekyll-theme-ObJekyll:
 ```
 
 {% assign lmonth = "1000-01" | date: "%b %Y" %}
+{% assign sorted_notes = site.notes | sort: 'created' | reverse %}
 
-{% for post in site.notes reversed %}
+{% for post in  sorted_notes %}
 {% unless post.title contains '.excalidraw' %}
-{% assign month = post.created | created: "%b %Y" %}
+{% assign month = post.created | date: "%b %Y" %}
 {% if month != lmonth %}
 ## {{ month }}
 {%assign lmonth = month %}

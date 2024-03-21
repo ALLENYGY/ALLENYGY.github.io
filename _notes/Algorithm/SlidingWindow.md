@@ -4,9 +4,11 @@ Title: "[[SlidingWindow]]"
 Author:
   - AllenYGY
 tags:
+  - SlidingWindow
   - NOTE
   - Algorithm
-theme: 滑动窗口
+created: 2024-02-03
+updated: 2024-03-22
 ---
 
 # **SlidingWindow**

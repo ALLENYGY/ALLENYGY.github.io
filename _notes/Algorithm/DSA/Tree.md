@@ -1,3 +1,17 @@
+---
+Create Time: 28th February 2024
+Title: "[[Tree]]"
+Author:
+  - AllenYGY
+tags:
+  - NOTE
+  - DataStructure
+  - Tree
+  - Algorithm
+created: 2024-01-16
+updated: 2024-03-22
+---
+
 # Tree
 
 - Basic Concepts

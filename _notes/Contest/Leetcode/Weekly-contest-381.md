@@ -9,9 +9,10 @@ T1: Accepted
 T2: Accepted
 T3: Accepted
 T4: Uncommitted
-Create Time: 2024-02-06
-Author: 
-- AllenYGY
+Author:
+  - AllenYGY
+created: 2024-02-06
+updated: 2024-03-22
 ---
 
 # [[Weekly-contest-381]](https://leetcode.cn/contest/weekly-contest-381/)

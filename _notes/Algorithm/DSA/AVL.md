@@ -1,4 +1,17 @@
-# AVL Tree
+---
+Create Time: 28th February 2024
+Title: "[[AVL]]"
+Author:
+  - AllenYGY
+tags:
+  - NOTE
+  - DataStructure
+  - AVL
+  - Algorithm
+created: 2024-01-16
+updated: 2024-03-22
+---
+# [[AVL]]
 
 - 二叉搜索树，在插入和删除时可能失衡
 - 如在插入和删除时旋转，始终令其保持平衡，则成为自平衡点二叉搜索树

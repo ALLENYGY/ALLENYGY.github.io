@@ -1,3 +1,16 @@
+---
+Create Time: 28th February 2024
+Title: "[[Sort]]"
+Author:
+  - AllenYGY
+tags:
+  - NOTE
+  - Sort
+  - Algorithm
+created: 2023-12-31
+updated: 2024-03-22
+---
+
  # Sort Algorithm
 
 - Bubble Sort

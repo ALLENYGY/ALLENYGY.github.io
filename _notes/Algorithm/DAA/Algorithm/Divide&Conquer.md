@@ -6,6 +6,9 @@ Author:
 tags:
   - NOTE
   - DC
+  - Algorithm
+created: 2024-02-28
+updated: 2024-03-22
 ---
 
 # [[Divide&Conquer]] 

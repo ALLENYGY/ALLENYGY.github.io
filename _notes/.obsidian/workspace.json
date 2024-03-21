@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "16d042ad5c47b2e2",
+        "id": "e931daee351fc34d",
         "type": "tabs",
         "children": [
           {
-            "id": "502582b682383a88",
+            "id": "56866e1fb23b2af3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Program/ProgramLanguage.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -110,8 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346.5,
-    "collapsed": true
+    "width": 346.5
   },
   "right": {
     "id": "6c77faef2551f814",
@@ -127,7 +121,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program/ProgramLanguage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +164,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program/ProgramLanguage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,9 +174,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Program/ProgramLanguage.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -212,34 +202,34 @@
       "obsidian-map-view:Open map view": false
     }
   },
-  "active": "502582b682383a88",
+  "active": "56866e1fb23b2af3",
   "lastOpenFiles": [
-    "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
-    "CO/Lab/Lab2.md",
-    "DBM/Lecture/Key-concept.md",
-    "DBM/Lecture/Relational-Database-Design-Functional-Dependency.md",
-    "DBM/DBM.md",
-    "DBM/Lecture/Relational-Database-Design-Purpose-&-First-Normal-Form.md",
-    "DBM/Lecture/Relational-Database-Design-BCNF.md",
-    "DBM/Lecture/Relational-Database-Design-3rd-Normal-Form.md",
-    "Home.md",
-    "Tools/Shell/Shell.md",
-    "Tools/Git/Git-Workflow-Model.md",
-    "Tools/Git/Git-Remote-Repository.md",
-    "Tools/Git/Git-Introduction.md",
-    "Tools/Git/Git-For-Beginners.md",
-    "Tools/Docker/Docker.md",
+    "DataAnalysis/HODA/HODA.md",
     "Tools/Conda/Conda.md",
-    "DBM/Lecture/Design-Issues.md",
-    "Tools/Tools.md",
-    "Resume/MyResume.md",
-    "Program/ProgramLanguage.md",
+    "DataAnalysis/Data-Analysis.md",
+    "Obsidian/Obsidian-Git/Obsidian-Git-Operation.md",
+    "Algorithm/DAA/Assignment/Assignment-0.md",
+    "Algorithm/DAA/Tutorial/Tutorial-1.md",
+    "Contest/Overview.md",
+    "Contest/Lanqiao/Week-1.md",
+    "Contest/Leetcode/Biweekly-contest-122.md",
+    "Contest/Leetcode/Biweekly-contest-123.md",
+    "Contest/Leetcode/Weekly-contest-381.md",
+    "Algorithm/Recursion/Recursion-BinaryTree.md",
+    "Algorithm/SlidingWindow.md",
+    "Algorithm/NumberTheory/高精度计算.md",
+    "Algorithm/NumberTheory/素数筛.md",
+    "Algorithm/DSA/Tree.md",
+    "Algorithm/DAA/Algorithm/Divide&Conquer.md",
+    "Algorithm/DAA/Algorithm/Enumeration.md",
+    "Algorithm/DAA/Algorithm/Sort.md",
+    "Algorithm/DAA/Algorithm/Union-Find.md",
+    "Algorithm/DSA/B+Tree.md",
+    "Algorithm/DSA/AVL.md",
     "FixIncome/FixedIncomeOverview.md",
-    "Math/Math.md",
-    "CO/CO.md",
-    "Entity-Relationship Model Constraints](]Entity-Relationship-Model-Constraints.md",
-    "DBM/Database Management System.md",
-    "DBM/MySQL/Advanced-SQL.md",
+    "Network/USTC-L1.md",
+    "Network/Basic-Concepts.md",
+    "Network/Data-Link-Layer.md",
     "ProgramLanguage",
     "Program/Java/Lecture",
     "Pasted image 20240320183823.png",

@@ -7,6 +7,9 @@ tags:
   - NOTE
   - DataStructure
   - UnionFind
+  - Algorithm
+created: 2024-02-28
+updated: 2024-03-22
 ---
 
 # [[Union-Find]]^[并查集]

@@ -1,3 +1,18 @@
+---
+Create Time: 28th February 2024
+Title: "[[B+Tree]]"
+Author:
+  - AllenYGY
+tags:
+  - NOTE
+  - DataStructure
+  - B+ Tree
+  - Algorithm
+created: 2024-01-16
+updated: 2024-03-22
+---
+
+
 # $B^+\ Tree$
 
 ## M-ary Search tree

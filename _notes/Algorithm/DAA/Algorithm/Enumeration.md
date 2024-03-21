@@ -1,3 +1,15 @@
+---
+Create Time: 28th February 2024
+Title: "[[Enumeration]]"
+Author:
+  - AllenYGY
+tags:
+  - NOTE
+  - Enumernation
+  - Algorithm
+created: 2024-01-15
+updated: 2024-03-22
+---
 ## Binary Enumeration *二进制枚举*
 
 枚举 $1 - (2^n-1)$

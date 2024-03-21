@@ -1,6 +1,6 @@
 ---
 created: 2024-02-19T23:44
-updated: 2024-03-21T22:48
+updated: 2024-03-22
 ---
 # WorkView
 
@@ -27,7 +27,7 @@ WHERE contains(tags,"README")
 
 ## [[Overview|Contest Overview]]
 
-## [[DataAnalysis/README|Data Analysis]]
+## [[Data-Analysis|Data Analysis]]
 
 ## [[Database Management System|Database Management System]]
 
