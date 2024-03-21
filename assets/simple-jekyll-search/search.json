@@ -4,8 +4,8 @@
     {
       "title"    : "Divide&amp;conquer",
       "category" : "",
-      "tags"     : "NOTE, DC",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "tags"     : "NOTE, DC, Algorithm",
+      "date"     : "2024-02-28",
       
       
       "url"      : "/Algorithm/DAA/Algorithm/Divide&Conquer"
@@ -13,10 +13,32 @@
     } ,
   
     {
+      "title"    : "Enumeration",
+      "category" : "",
+      "tags"     : "NOTE, Enumernation, Algorithm",
+      "date"     : "2024-01-15",
+      
+      
+      "url"      : "/Algorithm/DAA/Algorithm/Enumeration"
+      
+    } ,
+  
+    {
+      "title"    : "Sort",
+      "category" : "",
+      "tags"     : "NOTE, Sort, Algorithm",
+      "date"     : "2023-12-31",
+      
+      
+      "url"      : "/Algorithm/DAA/Algorithm/Sort"
+      
+    } ,
+  
+    {
       "title"    : "Union Find",
       "category" : "",
-      "tags"     : "NOTE, DataStructure, UnionFind",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "tags"     : "NOTE, DataStructure, UnionFind, Algorithm",
+      "date"     : "2024-02-28",
       
       
       "url"      : "/Algorithm/DAA/Algorithm/Union-Find"
@@ -27,7 +49,7 @@
       "title"    : "Assignment 0",
       "category" : "",
       "tags"     : "NOTE, DAA, Assignment",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-03-09",
       
       
       "url"      : "/Algorithm/DAA/Assignment/Assignment-0"
@@ -38,7 +60,7 @@
       "title"    : "Tutorial 1",
       "category" : "",
       "tags"     : "NOTE, DAA, Tutorial",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-03-04",
       
       
       "url"      : "/Algorithm/DAA/Tutorial/Tutorial-1"
@@ -46,10 +68,54 @@
     } ,
   
     {
+      "title"    : "Avl",
+      "category" : "",
+      "tags"     : "NOTE, DataStructure, AVL, Algorithm",
+      "date"     : "2024-01-16",
+      
+      
+      "url"      : "/Algorithm/DSA/AVL"
+      
+    } ,
+  
+    {
+      "title"    : "B+tree",
+      "category" : "",
+      "tags"     : "NOTE, DataStructure, B+ Tree, Algorithm",
+      "date"     : "2024-01-16",
+      
+      
+      "url"      : "/Algorithm/DSA/B+Tree"
+      
+    } ,
+  
+    {
+      "title"    : "Tree",
+      "category" : "",
+      "tags"     : "NOTE, DataStructure, Tree, Algorithm",
+      "date"     : "2024-01-16",
+      
+      
+      "url"      : "/Algorithm/DSA/Tree"
+      
+    } ,
+  
+    {
+      "title"    : "素数筛",
+      "category" : "",
+      "tags"     : "NOTE, NumberTheory, Algorithm",
+      "date"     : "2024-01-16",
+      
+      
+      "url"      : "/Algorithm/NumberTheory/%E7%B4%A0%E6%95%B0%E7%AD%9B"
+      
+    } ,
+  
+    {
       "title"    : "Recursion Binarytree",
       "category" : "",
-      "tags"     : "NOTE, Algorithm",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "tags"     : "NOTE, Algorithm, Recursion",
+      "date"     : "2024-02-01",
       
       
       "url"      : "/Algorithm/Recursion/Recursion-BinaryTree"
@@ -59,8 +125,8 @@
     {
       "title"    : "Slidingwindow",
       "category" : "",
-      "tags"     : "NOTE, Algorithm",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "tags"     : "SlidingWindow, NOTE, Algorithm",
+      "date"     : "2024-02-03",
       
       
       "url"      : "/Algorithm/SlidingWindow"
@@ -71,7 +137,7 @@
       "title"    : "Co",
       "category" : "",
       "tags"     : "Navigation",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-16T21:03",
       
       
       "url"      : "/CO/CO"
@@ -82,7 +148,7 @@
       "title"    : "Bits Data Representation And Manipulation",
       "category" : "",
       "tags"     : "NOTE, CO, Lec2",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-03T00:59",
       
       
       "url"      : "/CO/Lecture/Bits-Data-Representation-and-Manipulation"
@@ -93,7 +159,7 @@
       "title"    : "Boolean Algebra From Bits To Logic",
       "category" : "",
       "tags"     : "NOTE, CO, Lec3",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-03T00:59",
       
       
       "url"      : "/CO/Lecture/Boolean-Algebra-From-Bits-to-Logic"
@@ -104,7 +170,7 @@
       "title"    : "Circuitdesign",
       "category" : "",
       "tags"     : "NOTE, CO, CircuitDesign",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-16T21:03",
       
       
       "url"      : "/CO/Lecture/CircuitDesign"
@@ -115,7 +181,7 @@
       "title"    : "Finite State Machine",
       "category" : "",
       "tags"     : "NOTE, CO, Lec7",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-03T00:59",
       
       
       "url"      : "/CO/Lecture/Finite-State-Machine"
@@ -126,7 +192,7 @@
       "title"    : "From Gates To Circuits I Combinational Circuits",
       "category" : "",
       "tags"     : "NOTE, CO, Lec5",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-16T21:03",
       
       
       "url"      : "/CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits"
@@ -137,7 +203,7 @@
       "title"    : "From Gates To Circuits Ii Sequential Circuits",
       "category" : "",
       "tags"     : "NOTE, CO, Lec6",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-16T21:03",
       
       
       "url"      : "/CO/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits"
@@ -148,7 +214,7 @@
       "title"    : "From Machine Language To Assembly Language",
       "category" : "",
       "tags"     : "NOTE, CO, Lec9",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-16T21:03",
       
       
       "url"      : "/CO/Lecture/From-Machine-Language-to-Assembly-Language"
@@ -159,7 +225,7 @@
       "title"    : "From Transistors To Gates",
       "category" : "",
       "tags"     : "NOTE, CO, Lec4",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-03T00:59",
       
       
       "url"      : "/CO/Lecture/From-Transistors-to-Gates"
@@ -170,7 +236,7 @@
       "title"    : "Isa",
       "category" : "",
       "tags"     : "NOTE, CO, Lec9",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-20T21:25",
       
       
       "url"      : "/CO/Lecture/ISA"
@@ -181,7 +247,7 @@
       "title"    : "Microarchitecture",
       "category" : "",
       "tags"     : "NOTE, CO, Lec8",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-16T21:03",
       
       
       "url"      : "/CO/Lecture/Microarchitecture"
@@ -192,7 +258,7 @@
       "title"    : "What Is A Computer",
       "category" : "",
       "tags"     : "NOTE, CO, Lec1",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-03T00:59",
       
       
       "url"      : "/CO/Lecture/What-is-a-Computer"
@@ -203,7 +269,7 @@
       "title"    : "Week 1",
       "category" : "",
       "tags"     : "Contest",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-03-20",
       
       
       "url"      : "/Contest/Lanqiao/Week-1"
@@ -214,7 +280,7 @@
       "title"    : "Biweekly Contest 122",
       "category" : "",
       "tags"     : "Contest",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-29",
       
       
       "url"      : "/Contest/Leetcode/Biweekly-contest-122"
@@ -225,7 +291,7 @@
       "title"    : "Biweekly Contest 123",
       "category" : "",
       "tags"     : "Contest",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-02-04",
       
       
       "url"      : "/Contest/Leetcode/Biweekly-contest-123"
@@ -236,7 +302,7 @@
       "title"    : "Weekly Contest 381",
       "category" : "",
       "tags"     : "Contest",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-02-06",
       
       
       "url"      : "/Contest/Leetcode/Weekly-contest-381"
@@ -247,7 +313,7 @@
       "title"    : "Contest overview",
       "category" : "",
       "tags"     : "README, Overview",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-29",
       
       
       "url"      : "/Contest/Overview"
@@ -258,7 +324,7 @@
       "title"    : "Dbm",
       "category" : "",
       "tags"     : "Navigation",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-16T21:03",
       
       
       "url"      : "/DBM/DBM"
@@ -269,7 +335,7 @@
       "title"    : "Design Issues",
       "category" : "",
       "tags"     : "DataBase, NOTE, Lec4",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-04T14:49",
       
       
       "url"      : "/DBM/Lecture/Design-Issues"
@@ -280,7 +346,7 @@
       "title"    : "Entity Relationship Model Constraints",
       "category" : "",
       "tags"     : "DataBase, NOTE, Lec2",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-03T00:59",
       
       
       "url"      : "/DBM/Lecture/Entity-Relationship-Model-Constraints"
@@ -291,7 +357,7 @@
       "title"    : "Entity Relationship Model Extended Features",
       "category" : "",
       "tags"     : "DataBase, NOTE, Lec3",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-03T00:59",
       
       
       "url"      : "/DBM/Lecture/Entity-Relationship-Model-Extended-Features"
@@ -302,7 +368,7 @@
       "title"    : "Entity Relationship Model Modeling",
       "category" : "",
       "tags"     : "DataBase, NOTE, Lec1",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-03T00:59",
       
       
       "url"      : "/DBM/Lecture/Entity-Relationship-Model-Modeling"
@@ -313,7 +379,7 @@
       "title"    : "Key Concept",
       "category" : "",
       "tags"     : "DataBase, NOTE",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-10",
       
       
       "url"      : "/DBM/Lecture/Key-concept"
@@ -324,7 +390,7 @@
       "title"    : "Logical Design",
       "category" : "",
       "tags"     : "DataBase, NOTE, Lec5",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-10T13:40",
       
       
       "url"      : "/DBM/Lecture/Logical-Design"
@@ -335,7 +401,7 @@
       "title"    : "Relational Database Design 3rd Normal Form",
       "category" : "",
       "tags"     : "DataBase, NOTE, Lec10",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-12-10T17:03",
       
       
       "url"      : "/DBM/Lecture/Relational-Database-Design-3rd-Normal-Form"
@@ -346,7 +412,7 @@
       "title"    : "Relational Database Design Bcnf",
       "category" : "",
       "tags"     : "DataBase, NOTE, Lec9",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-12-27T17:12",
       
       
       "url"      : "/DBM/Lecture/Relational-Database-Design-BCNF"
@@ -357,7 +423,7 @@
       "title"    : "Relational Database Design Functional Dependency",
       "category" : "",
       "tags"     : "DataBase, NOTE, Lec8",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-12-28T00:16",
       
       
       "url"      : "/DBM/Lecture/Relational-Database-Design-Functional-Dependency"
@@ -368,7 +434,7 @@
       "title"    : "Relational Database Design Purpose &amp; First Normal Form",
       "category" : "",
       "tags"     : "DataBase, NOTE, Lec6",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-12-03T22:39",
       
       
       "url"      : "/DBM/Lecture/Relational-Database-Design-Purpose-&-First-Normal-Form"
@@ -379,7 +445,7 @@
       "title"    : "Advanced Sql",
       "category" : "",
       "tags"     : "MySQL, NOTE, Lec10",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-12-27T21:06",
       
       
       "url"      : "/DBM/MySQL/Advanced-SQL"
@@ -390,7 +456,7 @@
       "title"    : "Aggregation",
       "category" : "",
       "tags"     : "MySQL, NOTE, Lec4",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-18T12:09",
       
       
       "url"      : "/DBM/MySQL/Aggregation"
@@ -401,7 +467,7 @@
       "title"    : "Basic Mysql",
       "category" : "",
       "tags"     : "MySQL, NOTE, Lec1",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-17T15:52",
       
       
       "url"      : "/DBM/MySQL/Basic-MySQL"
@@ -412,7 +478,7 @@
       "title"    : "Cross Table Query",
       "category" : "",
       "tags"     : "MySQL, NOTE, Lec2",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-17T17:15",
       
       
       "url"      : "/DBM/MySQL/Cross-table-Query"
@@ -423,7 +489,7 @@
       "title"    : "Data Definition",
       "category" : "",
       "tags"     : "MySQL, NOTE, Lec5",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-18T12:37",
       
       
       "url"      : "/DBM/MySQL/Data-Definition"
@@ -434,7 +500,7 @@
       "title"    : "Data Modification",
       "category" : "",
       "tags"     : "MySQL, NOTE, Lec6",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-18T13:46",
       
       
       "url"      : "/DBM/MySQL/Data-Modification"
@@ -445,7 +511,7 @@
       "title"    : "Division And Correlated Subquery",
       "category" : "",
       "tags"     : "MySQL, NOTE, Lec9",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-12-27T18:49",
       
       
       "url"      : "/DBM/MySQL/Division-and-Correlated-Subquery"
@@ -456,7 +522,7 @@
       "title"    : "Join",
       "category" : "",
       "tags"     : "MySQL, NOTE, Lec3",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-17T18:18",
       
       
       "url"      : "/DBM/MySQL/Join"
@@ -467,7 +533,7 @@
       "title"    : "Null Subquery",
       "category" : "",
       "tags"     : "MySQL, NOTE, Lec7",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-12-27T01:37",
       
       
       "url"      : "/DBM/MySQL/Null-Subquery"
@@ -478,7 +544,7 @@
       "title"    : "Set Operation &amp; Where Subquery",
       "category" : "",
       "tags"     : "MySQL, NOTE, Lec8",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-12-27T21:21",
       
       
       "url"      : "/DBM/MySQL/Set-Operation-&-WHERE-subquery"
@@ -486,13 +552,24 @@
     } ,
   
     {
-      "title"    : "Readme",
+      "title"    : "Data Analysis",
       "category" : "",
-      "tags"     : "README",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "tags"     : "Navigation",
+      "date"     : "2023-11-04",
       
       
-      "url"      : "/DataAnalysis/README"
+      "url"      : "/DataAnalysis/Data-Analysis"
+      
+    } ,
+  
+    {
+      "title"    : "Hoda",
+      "category" : "",
+      "tags"     : "DataAnalysis, NOTE",
+      "date"     : "2024-01-16",
+      
+      
+      "url"      : "/DataAnalysis/HODA/HODA"
       
     } ,
   
@@ -500,7 +577,7 @@
       "title"    : "Fixedincomeoverview",
       "category" : "",
       "tags"     : "NOTE, Finance",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-03-01T22:33",
       
       
       "url"      : "/FixIncome/FixedIncomeOverview"
@@ -511,7 +588,7 @@
       "title"    : "Math",
       "category" : "",
       "tags"     : "Navigation",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-16T21:03",
       
       
       "url"      : "/Math/Math"
@@ -522,7 +599,7 @@
       "title"    : "Basic Concepts",
       "category" : "",
       "tags"     : "NOTE, Network, Lec1, UIC",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-02-20T11:32",
       
       
       "url"      : "/Network/Basic-Concepts"
@@ -533,7 +610,7 @@
       "title"    : "Data Link Layer",
       "category" : "",
       "tags"     : "NOTE, Network, Lec3, UIC",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-03-19",
       
       
       "url"      : "/Network/Data-Link-Layer"
@@ -544,7 +621,7 @@
       "title"    : "Physical Layer",
       "category" : "",
       "tags"     : "NOTE, Network, Lec2, UIC",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-03-19",
       
       
       "url"      : "/Network/Physical-Layer"
@@ -555,7 +632,7 @@
       "title"    : "Ustc L1",
       "category" : "",
       "tags"     : "NOTE, Network, USTC, Lec1",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-03-19",
       
       
       "url"      : "/Network/USTC-L1"
@@ -566,7 +643,7 @@
       "title"    : "Advancedslide",
       "category" : "",
       "tags"     : "",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-16T23:59",
       
       
       "url"      : "/Obsidian/AdvancedSlides/AdvancedSlide"
@@ -577,7 +654,7 @@
       "title"    : "Obsidian Git Operation",
       "category" : "",
       "tags"     : "NOTE, Extension, Git",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-02-23",
       
       
       "url"      : "/Obsidian/Obsidian-Git/Obsidian-Git-Operation"
@@ -588,7 +665,7 @@
       "title"    : "Cpu Scheduling",
       "category" : "",
       "tags"     : "OS, NOTE, Lec5, UIC",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-03-20T17:14",
       
       
       "url"      : "/OperatingSystem/CPU-Scheduling"
@@ -599,7 +676,7 @@
       "title"    : "Introduction",
       "category" : "",
       "tags"     : "OS, NOTE, Introduction, Lec1",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-20T17:14",
       
       
       "url"      : "/OperatingSystem/Introduction"
@@ -610,7 +687,7 @@
       "title"    : "Linux Basic Operation",
       "category" : "",
       "tags"     : "OS, NOTE, Linux, Basic",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-03-20T17:14",
       
       
       "url"      : "/OperatingSystem/Linux-Basic-Operation"
@@ -621,7 +698,7 @@
       "title"    : "Nju Os Pa0",
       "category" : "",
       "tags"     : "OS, NOTE, GNU/Linux, Debian, NJU",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-03-20T17:14",
       
       
       "url"      : "/OperatingSystem/NJU-OS-PA0"
@@ -632,7 +709,7 @@
       "title"    : "Operating System Structure",
       "category" : "",
       "tags"     : "OS, NOTE, Lec2",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-03-20T17:14",
       
       
       "url"      : "/OperatingSystem/Operating-System-Structure"
@@ -643,7 +720,7 @@
       "title"    : "Process",
       "category" : "",
       "tags"     : "OS, NOTE, Lec3, UIC",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-03-20T17:14",
       
       
       "url"      : "/OperatingSystem/Process"
@@ -654,7 +731,7 @@
       "title"    : "Threads",
       "category" : "",
       "tags"     : "OS, NOTE, Lec4, UIC",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-03-20T17:14",
       
       
       "url"      : "/OperatingSystem/Threads"
@@ -665,7 +742,7 @@
       "title"    : "Macro",
       "category" : "",
       "tags"     : "NOTE, C",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-02-19T23:53",
       
       
       "url"      : "/Program/C/Macro"
@@ -676,7 +753,7 @@
       "title"    : "Abstract Methods And Classes Interfaces",
       "category" : "",
       "tags"     : "NOTE, Java, Lec5, Program",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-07T00:59",
       
       
       "url"      : "/Program/Java/Lecture/Abstract-Methods-and-Classes-Interfaces"
@@ -687,7 +764,7 @@
       "title"    : "Array And Generics",
       "category" : "",
       "tags"     : "NOTE, Java, Lec7, Program",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-12-30T00:59",
       
       
       "url"      : "/Program/Java/Lecture/Array-and-Generics"
@@ -698,7 +775,7 @@
       "title"    : "Creating Java Classes",
       "category" : "",
       "tags"     : "NOTE, Java, Lec3, Program",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-05T00:59",
       
       
       "url"      : "/Program/Java/Lecture/Creating-Java-Classes"
@@ -709,7 +786,7 @@
       "title"    : "Exception Handling",
       "category" : "",
       "tags"     : "NOTE, Java, Lec6, Program",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-12-27T01:55",
       
       
       "url"      : "/Program/Java/Lecture/Exception-Handling"
@@ -720,7 +797,7 @@
       "title"    : "Inheritance",
       "category" : "",
       "tags"     : "NOTE, Java, Lec4, Program",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-06T00:59",
       
       
       "url"      : "/Program/Java/Lecture/Inheritance"
@@ -731,7 +808,7 @@
       "title"    : "Java Introduction",
       "category" : "",
       "tags"     : "NOTE, Java, Lec0, Program",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-01T00:59",
       
       
       "url"      : "/Program/Java/Lecture/Java-Introduction"
@@ -742,7 +819,7 @@
       "title"    : "Java Programming Essentials",
       "category" : "",
       "tags"     : "NOTE, Java, Lec2, Program",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-04T00:59",
       
       
       "url"      : "/Program/Java/Lecture/Java-Programming-Essentials"
@@ -753,7 +830,7 @@
       "title"    : "Unified Modeling Language",
       "category" : "",
       "tags"     : "NOTE, Java, Lec1, Program",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-02T00:59",
       
       
       "url"      : "/Program/Java/Lecture/Unified-Modeling-Language"
@@ -764,7 +841,7 @@
       "title"    : "Programlanguage",
       "category" : "",
       "tags"     : "Navigation",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-02-22T11:10",
       
       
       "url"      : "/Program/ProgramLanguage"
@@ -775,7 +852,7 @@
       "title"    : "Pythonbasic",
       "category" : "",
       "tags"     : "NOTE, Python, Program",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-02-19T16:28",
       
       
       "url"      : "/Program/Python/PythonBasic"
@@ -786,7 +863,7 @@
       "title"    : "Basic R",
       "category" : "",
       "tags"     : "NOTE, R, Lec1, Program",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-11-03T00:59",
       
       
       "url"      : "/Program/R/Basic-R"
@@ -797,7 +874,7 @@
       "title"    : "R Data Structure",
       "category" : "",
       "tags"     : "NOTE, R, Lec1, Program",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-12-27T01:56",
       
       
       "url"      : "/Program/R/R-Data-Structure"
@@ -808,7 +885,7 @@
       "title"    : "Ploidy",
       "category" : "",
       "tags"     : "",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-19T11:25",
       
       
       "url"      : "/Research/Ploidy"
@@ -819,7 +896,7 @@
       "title"    : "Ploidyreview",
       "category" : "",
       "tags"     : "",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-20T11:18",
       
       
       "url"      : "/Research/PloidyReview"
@@ -830,7 +907,7 @@
       "title"    : "Conda",
       "category" : "",
       "tags"     : "Conda, NOTE",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2023-12-23T02:12",
       
       
       "url"      : "/Tools/Conda/Conda"
@@ -841,7 +918,7 @@
       "title"    : "Docker",
       "category" : "",
       "tags"     : "Docker, NOTE",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-02-22T11:12",
       
       
       "url"      : "/Tools/Docker/Docker"
@@ -852,7 +929,7 @@
       "title"    : "Git For Beginners",
       "category" : "",
       "tags"     : "Docker, NOTE",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-02-22T11:12",
       
       
       "url"      : "/Tools/Git/Git-For-Beginners"
@@ -863,7 +940,7 @@
       "title"    : "Git Introduction",
       "category" : "",
       "tags"     : "Docker, NOTE",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-30T02:14",
       
       
       "url"      : "/Tools/Git/Git-Introduction"
@@ -874,7 +951,7 @@
       "title"    : "Git Remote Repository",
       "category" : "",
       "tags"     : "Docker, NOTE",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-28T11:37",
       
       
       "url"      : "/Tools/Git/Git-Remote-Repository"
@@ -885,7 +962,7 @@
       "title"    : "Git Workflow Model",
       "category" : "",
       "tags"     : "Docker, NOTE",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-22T22:21",
       
       
       "url"      : "/Tools/Git/Git-Workflow-Model"
@@ -896,7 +973,7 @@
       "title"    : "Shell",
       "category" : "",
       "tags"     : "NOTE, Shell",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-02-22T11:12",
       
       
       "url"      : "/Tools/Shell/Shell"
@@ -907,7 +984,7 @@
       "title"    : "Tools",
       "category" : "",
       "tags"     : "Navigation",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-02-22T11:11",
       
       
       "url"      : "/Tools/Tools"
@@ -918,7 +995,7 @@
       "title"    : "Css Introduction",
       "category" : "",
       "tags"     : "NOTE, WEB, CSS",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-01-30T00:22",
       
       
       "url"      : "/Web/CSS/CSS-Introduction"
@@ -929,7 +1006,7 @@
       "title"    : "Workview",
       "category" : "",
       "tags"     : "",
-      "date"     : "2024-03-22 00:37:23 +0800",
+      "date"     : "2024-02-19T23:44",
       
       
       "url"      : "/WorkView"

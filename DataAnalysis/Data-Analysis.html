@@ -3,26 +3,26 @@
 <head>
   <title>
     
-    Join &middot; AllenYGY的个人小站
+    Data Analysis &middot; AllenYGY的个人小站
     
   </title>
   
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Join" />
+<meta property="og:title" content="Data Analysis" />
 <meta name="author" content="AllenYGY" />
 <meta property="og:locale" content="zh" />
-<meta name="description" content="[[Join]]" />
-<meta property="og:description" content="[[Join]]" />
-<link rel="canonical" href="https://allenygy.github.io/DBM/MySQL/Join" />
-<meta property="og:url" content="https://allenygy.github.io/DBM/MySQL/Join" />
+<meta name="description" content="[[Data Analysis]]" />
+<meta property="og:description" content="[[Data Analysis]]" />
+<link rel="canonical" href="https://allenygy.github.io/DataAnalysis/Data-Analysis" />
+<meta property="og:url" content="https://allenygy.github.io/DataAnalysis/Data-Analysis" />
 <meta property="og:site_name" content="AllenYGY的个人小站" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-03-22T01:29:20+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Join" />
+<meta property="twitter:title" content="Data Analysis" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-22T01:29:20+08:00","datePublished":"2024-03-22T01:29:20+08:00","description":"[[Join]]","headline":"Join","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/DBM/MySQL/Join"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/DBM/MySQL/Join"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-22T01:29:20+08:00","datePublished":"2024-03-22T01:29:20+08:00","description":"[[Data Analysis]]","headline":"Data Analysis","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/DataAnalysis/Data-Analysis"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/DataAnalysis/Data-Analysis"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -214,15 +214,9 @@
       
       
       <ol id="toc">
-  <li><a href="#join">Join</a>
+  <li><a href="#data-analysis">Data Analysis</a>
     <ol>
-      <li><a href="#join-condition">Join Condition</a>
-        <ol>
-          <li><a href="#join-1">JOIN</a></li>
-          <li><a href="#natural-join">NATURAL JOIN</a></li>
-          <li><a href="#join-type">JOIN type</a></li>
-        </ol>
-      </li>
+      <li><a href="#hands-on-data-for-everyone">Hands on Data For Everyone</a></li>
     </ol>
   </li>
 </ol>
@@ -346,8 +340,8 @@
         
           
         
-        3千
-        165字
+        2千
+        939字
         
       </div>
       
@@ -380,33 +374,33 @@
 <div class="container content">
   <div class="page">
     
-    <h1 class="page-title">Join</h1>
+    <h1 class="page-title">Data Analysis</h1>
     
     <div class="wrapper">
     <main><div class="post">
     <span class="post-date">
         
         <i class="fa-solid fa-calendar-day fa-fw"></i>
-        改于：2024-03-21 21:45:00 Thursday
+        改于：2024-03-22 00:00:00 Friday
         <br>
         
         
         <i class="fa-solid fa-calendar-plus fa-fw"></i>
-        建于：2023-11-17 18:18:00 Friday
+        建于：2023-11-04 00:00:00 Saturday
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        3028字
+        34字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
-        11分
+        1分
         
         
         
         <br>
         
-        MySQL, NOTE, and Lec3
+        Navigation
         
         
         <br/>
@@ -421,196 +415,9 @@
     </span>
     <div id="notes-entry-container">
         <content>
-            <h1 id="join"><a class="internal-link" href="/DBM/MySQL/Join">Join</a></h1>
+            <h1 id="data-analysis"><a class="internal-link" href="/DataAnalysis/Data-Analysis">Data Analysis</a></h1>
 
-<ul>
-  <li>NATURAL JOIN</li>
-</ul>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
-<span class="k">FROM</span> <span class="n">table1</span>
-<span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">table2</span><span class="p">;</span>
-</code></pre></div></div>
-
-<p>默认JOIN所有共同的attribute</p>
-
-<ul>
-  <li>JOIN ON</li>
-</ul>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
-<span class="k">FROM</span> <span class="n">table1</span>
-<span class="k">JOIN</span> <span class="n">table2</span> <span class="k">ON</span> <span class="n">table1</span><span class="p">.</span><span class="k">column_name</span> <span class="o">=</span> <span class="n">table2</span><span class="p">.</span><span class="k">column_name</span>
-<span class="k">JOIN</span> <span class="n">table3</span> <span class="k">ON</span> <span class="n">table2</span><span class="p">.</span><span class="k">column_name</span> <span class="o">=</span> <span class="n">table3</span><span class="p">.</span><span class="k">column_name</span><span class="p">;</span>
-</code></pre></div></div>
-
-<ul>
-  <li>JOIN USING</li>
-</ul>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
-<span class="k">FROM</span> <span class="n">table1</span>
-<span class="k">JOIN</span> <span class="n">table2</span> <span class="k">USING</span> <span class="p">(</span><span class="k">column_name</span><span class="p">)</span>
-<span class="k">JOIN</span> <span class="n">table3</span> <span class="k">USING</span> <span class="p">(</span><span class="k">column_name</span><span class="p">);</span>
-</code></pre></div></div>
-
-<ul>
-  <li>LEFT/RIGHT/FULL JOIN</li>
-</ul>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
-<span class="k">FROM</span> <span class="n">left_table</span>
-<span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">right_table</span> <span class="k">ON</span> <span class="n">left_table</span><span class="p">.</span><span class="k">column_name</span> <span class="o">=</span> <span class="n">right_table</span><span class="p">.</span><span class="k">column_name</span><span class="p">;</span>
-
-<span class="k">SELECT</span> <span class="o">*</span>
-<span class="k">FROM</span> <span class="n">table1</span>
-<span class="k">RIGHT</span> <span class="k">JOIN</span> <span class="n">table2</span> <span class="k">ON</span> <span class="n">table1</span><span class="p">.</span><span class="k">column_name</span> <span class="o">=</span> <span class="n">table2</span><span class="p">.</span><span class="k">column_name</span><span class="p">;</span>
-
-<span class="k">SELECT</span> <span class="o">*</span>
-<span class="k">FROM</span> <span class="n">table1</span>
-<span class="k">FULL</span> <span class="k">JOIN</span> <span class="n">table2</span> <span class="k">ON</span> <span class="n">table1</span><span class="p">.</span><span class="k">column_name</span> <span class="o">=</span> <span class="n">table2</span><span class="p">.</span><span class="k">column_name</span><span class="p">;</span>
-</code></pre></div></div>
-
-<ul>
-  <li>Are you tired of condition checking in cross table queries?</li>
-</ul>
-
-<p>The NATURAL JOIN operator associates two tables by the common attributes.
-After NATURAL JOIN, the duplicated attributes are omitted.</p>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">city</span> <span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">country</span>
-</code></pre></div></div>
-<p>is implemented as</p>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">city</span><span class="p">.</span><span class="n">country_id</span><span class="p">,</span> <span class="n">city</span><span class="p">.</span><span class="n">last_update</span><span class="p">,</span> <span class="n">city_id</span><span class="p">,</span> <span class="n">city</span><span class="p">,</span> <span class="n">country</span>
-<span class="k">FROM</span> <span class="n">city</span><span class="p">,</span> <span class="n">country</span>
-<span class="k">WHERE</span> <span class="n">city</span><span class="p">.</span><span class="n">country_id</span> <span class="o">=</span> <span class="n">country</span><span class="p">.</span><span class="n">country_id</span> <span class="k">AND</span>
-    <span class="n">city</span><span class="p">.</span><span class="n">last_update</span> <span class="o">=</span> <span class="n">country</span><span class="p">.</span><span class="n">last_update</span>
-</code></pre></div></div>
-
-<h2 id="join-condition">Join Condition</h2>
-
-<ul>
-  <li>Join conditions define in which condition the tuples are associated.</li>
-  <li>Two tuples are associated if
-    <ul>
-      <li>NATURAL: all common attributes have the same value.</li>
-      <li>ON &lt;predicate&gt;: the predicate is evaluated to be true.</li>
-      <li>USING $(A_1,A_2,⋯,A_n)$: the common attributes in list have the same value.</li>
-    </ul>
-  </li>
-</ul>
-
-<p>For example, these queries are equivalent.</p>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">address</span><span class="p">,</span> <span class="n">district</span><span class="p">,</span> <span class="n">postal_code</span> 
-<span class="k">FROM</span> <span class="n">customer</span> <span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">address</span>
-
-<span class="k">SELECT</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">address</span><span class="p">,</span> <span class="n">district</span><span class="p">,</span> <span class="n">postal_code</span>
-<span class="k">FROM</span> <span class="n">customer</span> <span class="k">JOIN</span> <span class="n">address</span> <span class="k">ON</span> <span class="n">customer</span><span class="p">.</span><span class="n">address_id</span> <span class="o">=</span> <span class="n">address</span><span class="p">.</span><span class="n">address_id</span> <span class="k">AND</span> <span class="n">customer</span><span class="p">.</span><span class="n">last_update</span> <span class="o">=</span> <span class="n">address</span><span class="p">.</span><span class="n">last_update</span>
-
-<span class="k">SELECT</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">address</span><span class="p">,</span> <span class="n">district</span><span class="p">,</span> <span class="n">postal_code</span>
-<span class="k">FROM</span> <span class="n">customer</span> <span class="k">JOIN</span> <span class="n">address</span> <span class="k">USING</span> <span class="p">(</span><span class="n">address_id</span><span class="p">,</span> <span class="n">last_update</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h3 id="join-1">JOIN</h3>
-
-<ul>
-  <li>A JOIN without any condition is same as a cartesian product.
-Sometimes more than two tables are joined together.</li>
-</ul>
-
-<h3 id="natural-join">NATURAL JOIN</h3>
-
-<ul>
-  <li>The NATURAL JOIN operator associates two tables by all the common attributes.
-基于两个表之间的相同列名来进行连接。当使用自然连接时，数据库系统会自动查找两个表中列名相同的字段，并将它们用作连接条件，返回一个新表，其中包含了这些字段的所有数据。</li>
-</ul>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">city</span> <span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">country</span>
-<span class="k">is</span> <span class="n">equivalent</span> <span class="k">to</span>
-<span class="k">SELECT</span> <span class="n">city</span><span class="p">.</span><span class="n">country_id</span><span class="p">,</span> <span class="n">city</span><span class="p">.</span><span class="n">last_update</span><span class="p">,</span> <span class="n">city_id</span><span class="p">,</span> <span class="n">city</span><span class="p">,</span><span class="n">country</span>
-<span class="k">FROM</span> <span class="n">city</span><span class="p">,</span> <span class="n">country</span>
-<span class="k">WHERE</span> <span class="n">city</span><span class="p">.</span><span class="n">country_id</span> <span class="o">=</span> <span class="n">country</span><span class="p">.</span><span class="n">country_id</span> <span class="k">AND</span>
-<span class="n">city</span><span class="p">.</span><span class="n">last_update</span> <span class="o">=</span> <span class="n">country</span><span class="p">.</span><span class="n">last_update</span>
-</code></pre></div></div>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">SELECT</span> <span class="o">*</span><span class="k">FROM</span> <span class="n">table1</span> <span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">table2</span> <span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">table3</span>  
-</code></pre></div></div>
-<p>The query is understood as</p>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">SELECT</span><span class="o">*</span> <span class="k">FROM</span> <span class="p">(</span><span class="n">table1</span> <span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">table2</span><span class="p">)</span> <span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">table3</span>
-</code></pre></div></div>
-
-<p>只保留相同的部分</p>
-
-<p>Notes:</p>
-
-<ul>
-  <li>The predicate in the ON clause is user-defined, which is very flexible.</li>
-  <li>NATURAL and USING combine the common attributes. But ON duplicates common attributes.</li>
-</ul>
-
-<h3 id="join-type">JOIN type</h3>
-
-<p>当需要无法匹配的部分时</p>
-
-<ul>
-  <li>Sometimes users want to keep the unmatched tuples after joining two tables.</li>
-</ul>
-
-<p><em>OUTER JOIN</em> can handle it.</p>
-
-<ul>
-  <li>
-    <p>table1 NATURAL LEFT OUTER JOIN table2
-All tuples in table1 are in the result. For the unmatched tuples, the values of the attributes from table2 are NULL, meaning “unknown”. (NULL values will be introduced in following labs.)</p>
-  </li>
-  <li>
-    <p>table1 NATURAL RIGHT OUTER JOIN table2
-The unmatched tuples from table2 are kept.</p>
-  </li>
-  <li>
-    <p>table1 NATURAL FULL OUTER JOIN table2
-All tuples (from both table1 and table2) are kept.</p>
-  </li>
-  <li>
-    <p>NATURAL is the join condition.</p>
-  </li>
-</ul>
-
-<p>On the opposite of OUTER, INNER JOIN does not keep the unmatched tuples.
-Same as JOIN. “INNER” is usually omitted.</p>
-
-<p>Suppose we try to join this 2 tables
-<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/OUTERJOIN-1.png" /></p>
-
-<ul>
-  <li>LEFT OUTER JOIN</li>
-</ul>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>  <span class="k">FROM</span> <span class="n">person</span> <span class="k">NATURAL</span> <span class="k">LEFT</span> <span class="k">OUTER</span> <span class="k">JOIN</span> <span class="n">address</span>
-</code></pre></div></div>
-
-<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/LEFTJOIN.png" /></p>
-
-<ul>
-  <li>RIGHT OUTER JOIN</li>
-</ul>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>  <span class="k">FROM</span> <span class="n">person</span> <span class="k">NATURAL</span> <span class="k">RIGHT</span> <span class="k">OUTER</span> <span class="k">JOIN</span> <span class="n">address</span>
-</code></pre></div></div>
-
-<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/RIGHTJOIN.png" /></p>
-
-<ul>
-  <li>FULL OUTER JOIN</li>
-</ul>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">NATURAL</span> <span class="k">FULL</span> <span class="k">OUTER</span> <span class="k">JOIN</span> <span class="n">address</span>
-</code></pre></div></div>
-
-<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/FULLOUTERJOIN.png" /></p>
-
-<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/JOIN.png" /></p>
+<h2 id="hands-on-data-for-everyone"><a href="HODA/HODA.md">Hands on Data For Everyone</a></h2>
 
         </content>
         <side style="font-size: 0.9em">
@@ -620,15 +427,15 @@ Same as JOIN. “INNER” is usually omitted.</p>
                 
                 <div class="backlink-box">
                     <a class="internal-link"
-                        href="/DBM/DBM">Dbm</a><br>
-                    <!-- <div style="font-size: 0.9em"> 数据库
+                        href="/DataAnalysis/Data-Analysis">Data Analysis</a><br>
+                    <!-- <div style="font-size: 0.9em">[[Data Analysis]]
 </div> -->
                 </div>
                 
                 <div class="backlink-box">
                     <a class="internal-link"
-                        href="/DBM/MySQL/Join">Join</a><br>
-                    <!-- <div style="font-size: 0.9em">[[Join]]
+                        href="/WorkView">Workview</a><br>
+                    <!-- <div style="font-size: 0.9em">WorkView
 </div> -->
                 </div>
                 

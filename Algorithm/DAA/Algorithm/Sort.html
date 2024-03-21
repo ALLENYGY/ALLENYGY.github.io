@@ -3,26 +3,26 @@
 <head>
   <title>
     
-    Join &middot; AllenYGY的个人小站
+    Sort &middot; AllenYGY的个人小站
     
   </title>
   
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Join" />
+<meta property="og:title" content="Sort" />
 <meta name="author" content="AllenYGY" />
 <meta property="og:locale" content="zh" />
-<meta name="description" content="[[Join]]" />
-<meta property="og:description" content="[[Join]]" />
-<link rel="canonical" href="https://allenygy.github.io/DBM/MySQL/Join" />
-<meta property="og:url" content="https://allenygy.github.io/DBM/MySQL/Join" />
+<meta name="description" content="# Sort Algorithm" />
+<meta property="og:description" content="# Sort Algorithm" />
+<link rel="canonical" href="https://allenygy.github.io/Algorithm/DAA/Algorithm/Sort" />
+<meta property="og:url" content="https://allenygy.github.io/Algorithm/DAA/Algorithm/Sort" />
 <meta property="og:site_name" content="AllenYGY的个人小站" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-03-22T01:29:20+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Join" />
+<meta property="twitter:title" content="Sort" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-22T01:29:20+08:00","datePublished":"2024-03-22T01:29:20+08:00","description":"[[Join]]","headline":"Join","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/DBM/MySQL/Join"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/DBM/MySQL/Join"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-22T01:29:20+08:00","datePublished":"2024-03-22T01:29:20+08:00","description":"# Sort Algorithm","headline":"Sort","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/Algorithm/DAA/Algorithm/Sort"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/Algorithm/DAA/Algorithm/Sort"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -214,15 +214,36 @@
       
       
       <ol id="toc">
-  <li><a href="#join">Join</a>
+  <li><a href="#bubble-sort">Bubble Sort</a></li>
+  <li><a href="#insertion-sort">Insertion Sort</a>
     <ol>
-      <li><a href="#join-condition">Join Condition</a>
+      <li><a href="#time-complexity-for-insertion-sort">Time Complexity for Insertion Sort</a></li>
+    </ol>
+  </li>
+  <li><a href="#merge-sort">Merge Sort</a>
+    <ol>
+      <li><a href="#time-complexity-for-merge-sort">Time Complexity for Merge Sort</a></li>
+    </ol>
+  </li>
+  <li><a href="#quick-sort">Quick Sort</a>
+    <ol>
+      <li><a href="#strategy-for-pick-pivot">Strategy for pick pivot</a>
         <ol>
-          <li><a href="#join-1">JOIN</a></li>
-          <li><a href="#natural-join">NATURAL JOIN</a></li>
-          <li><a href="#join-type">JOIN type</a></li>
+          <li><a href="#strategy-i">Strategy I</a></li>
+          <li><a href="#strategy-ii">Strategy II</a></li>
+          <li><a href="#strategy-iii">Strategy III</a></li>
+          <li><a href="#strategy-iv">Strategy IV</a></li>
         </ol>
       </li>
+      <li><a href="#time-complexity-for-quick-sort">Time Complexity for Quick Sort</a></li>
+      <li><a href="#why-is-quicksort-faster-than-mergesort">Why is quicksort faster than mergesort?</a></li>
+    </ol>
+  </li>
+  <li><a href="#heap-sort">Heap Sort</a>
+    <ol>
+      <li><a href="#priority-queue">Priority Queue</a></li>
+      <li><a href="#binary-heap">Binary Heap</a></li>
+      <li><a href="#property">Property</a></li>
     </ol>
   </li>
 </ol>
@@ -346,8 +367,8 @@
         
           
         
-        3千
-        165字
+        6千
+        799字
         
       </div>
       
@@ -380,33 +401,33 @@
 <div class="container content">
   <div class="page">
     
-    <h1 class="page-title">Join</h1>
+    <h1 class="page-title">Sort</h1>
     
     <div class="wrapper">
     <main><div class="post">
     <span class="post-date">
         
         <i class="fa-solid fa-calendar-day fa-fw"></i>
-        改于：2024-03-21 21:45:00 Thursday
+        改于：2024-03-22 00:00:00 Friday
         <br>
         
         
         <i class="fa-solid fa-calendar-plus fa-fw"></i>
-        建于：2023-11-17 18:18:00 Friday
+        建于：2023-12-31 00:00:00 Sunday
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        3028字
+        5277字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
-        11分
+        18分
         
         
         
         <br>
         
-        MySQL, NOTE, and Lec3
+        NOTE, Sort, and Algorithm
         
         
         <br/>
@@ -421,217 +442,405 @@
     </span>
     <div id="notes-entry-container">
         <content>
-            <h1 id="join"><a class="internal-link" href="/DBM/MySQL/Join">Join</a></h1>
+            <p># Sort Algorithm</p>
 
 <ul>
-  <li>NATURAL JOIN</li>
+  <li>Bubble Sort</li>
+  <li>Insertion Sort</li>
+  <li>Merge Sort</li>
+  <li>Quick Sort</li>
+  <li>Heap Sort</li>
 </ul>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
-<span class="k">FROM</span> <span class="n">table1</span>
-<span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">table2</span><span class="p">;</span>
-</code></pre></div></div>
+<p>稳定排序：排序前后两个相等的数相对位置不变，则算法稳定
+Bubble sort, Insertion sort, Merge sort
+非稳定排序：排序前后两个相等的数相对位置发生了变化，则算法不稳定
+Quick sort, Heap sort</p>
 
-<p>默认JOIN所有共同的attribute</p>
+<p>Default order from smallest to largest</p>
+<h2 id="bubble-sort">Bubble Sort</h2>
 
 <ul>
-  <li>JOIN ON</li>
+  <li>Final不考先不写</li>
 </ul>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
-<span class="k">FROM</span> <span class="n">table1</span>
-<span class="k">JOIN</span> <span class="n">table2</span> <span class="k">ON</span> <span class="n">table1</span><span class="p">.</span><span class="k">column_name</span> <span class="o">=</span> <span class="n">table2</span><span class="p">.</span><span class="k">column_name</span>
-<span class="k">JOIN</span> <span class="n">table3</span> <span class="k">ON</span> <span class="n">table2</span><span class="p">.</span><span class="k">column_name</span> <span class="o">=</span> <span class="n">table3</span><span class="p">.</span><span class="k">column_name</span><span class="p">;</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">sort</span><span class="o">(</span><span class="kt">int</span> <span class="n">nums</span><span class="o">[]){</span>
+    <span class="nc">Bubble</span><span class="o">(</span><span class="n">nums</span><span class="o">,</span> <span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="mi">1</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="c1">//* 优化 每次循环的最后一次交换后   该下标往右都不会再发生交换 */</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">Bubble</span><span class="o">(</span><span class="kt">int</span> <span class="n">nums</span><span class="o">[],</span><span class="kt">int</span> <span class="n">j</span><span class="o">){</span>    
+    <span class="k">if</span><span class="o">(</span><span class="n">j</span><span class="o">==</span><span class="mi">0</span><span class="o">)</span> <span class="k">return</span> <span class="o">;</span>
+    <span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span>
+    <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">j</span><span class="o">;</span><span class="n">i</span><span class="o">++){</span>
+      <span class="k">if</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">]&gt;</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">])</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">temp</span><span class="o">=</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+        <span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">];</span>
+        <span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">]=</span><span class="n">temp</span><span class="o">;</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">i</span><span class="o">;</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="nc">Bubble</span><span class="o">(</span><span class="n">nums</span><span class="o">,</span> <span class="n">x</span><span class="o">);</span>
+  <span class="o">}</span>
 </code></pre></div></div>
 
+<h2 id="insertion-sort">Insertion Sort</h2>
+
 <ul>
-  <li>JOIN USING</li>
+  <li>遍历第一个元素到数组最后一个元素</li>
+  <li>
+    <p>每遍历一个元素就比较已经排好序的部分，倒序遍历回去知道找到可以插入的位置</p>
+  </li>
+  <li>Example:
+    <ol>
+      <li>654321</li>
+      <li>564321</li>
+      <li>456321</li>
+      <li>345621</li>
+      <li>234561</li>
+      <li>123456</li>
+    </ol>
+  </li>
 </ul>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
-<span class="k">FROM</span> <span class="n">table1</span>
-<span class="k">JOIN</span> <span class="n">table2</span> <span class="k">USING</span> <span class="p">(</span><span class="k">column_name</span><span class="p">)</span>
-<span class="k">JOIN</span> <span class="n">table3</span> <span class="k">USING</span> <span class="p">(</span><span class="k">column_name</span><span class="p">);</span>
-</code></pre></div></div>
+<pre><code class="language-pseudo">INSERTION-SORT(A)
+FOR p = 1 TO n-1
+  key = A[p]
+  i = p – 1
+  WHILE i &gt;= 0 AND A[i] &gt; key
+    A[i+1] = A[i]
+    i = i – 1
+  A[i+1] = key
+</code></pre>
 
 <ul>
-  <li>LEFT/RIGHT/FULL JOIN</li>
+  <li>Non-Recursion</li>
 </ul>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
-<span class="k">FROM</span> <span class="n">left_table</span>
-<span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">right_table</span> <span class="k">ON</span> <span class="n">left_table</span><span class="p">.</span><span class="k">column_name</span> <span class="o">=</span> <span class="n">right_table</span><span class="p">.</span><span class="k">column_name</span><span class="p">;</span>
-
-<span class="k">SELECT</span> <span class="o">*</span>
-<span class="k">FROM</span> <span class="n">table1</span>
-<span class="k">RIGHT</span> <span class="k">JOIN</span> <span class="n">table2</span> <span class="k">ON</span> <span class="n">table1</span><span class="p">.</span><span class="k">column_name</span> <span class="o">=</span> <span class="n">table2</span><span class="p">.</span><span class="k">column_name</span><span class="p">;</span>
-
-<span class="k">SELECT</span> <span class="o">*</span>
-<span class="k">FROM</span> <span class="n">table1</span>
-<span class="k">FULL</span> <span class="k">JOIN</span> <span class="n">table2</span> <span class="k">ON</span> <span class="n">table1</span><span class="p">.</span><span class="k">column_name</span> <span class="o">=</span> <span class="n">table2</span><span class="p">.</span><span class="k">column_name</span><span class="p">;</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">insertionSort</span><span class="o">(</span><span class="kt">int</span> <span class="no">A</span><span class="o">[]){</span>
+  <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">p</span><span class="o">=</span><span class="mi">1</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="no">A</span><span class="o">.</span><span class="na">length</span><span class="o">;</span><span class="n">p</span><span class="o">++){</span>
+    <span class="kt">int</span> <span class="n">key</span><span class="o">=</span><span class="no">A</span><span class="o">[</span><span class="n">p</span><span class="o">];</span> <span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+    <span class="k">while</span><span class="o">(</span><span class="n">i</span><span class="o">&gt;=</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="no">A</span><span class="o">[</span><span class="n">i</span><span class="o">]&gt;</span><span class="n">key</span><span class="o">){</span>
+      <span class="no">A</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">]=</span><span class="no">A</span><span class="o">[</span><span class="n">i</span><span class="o">];</span> <span class="c1">//挪位置</span>
+      <span class="n">i</span><span class="o">=</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="no">A</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">]=</span><span class="n">key</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
 </code></pre></div></div>
 
 <ul>
-  <li>Are you tired of condition checking in cross table queries?</li>
+  <li>Recursion</li>
 </ul>
 
-<p>The NATURAL JOIN operator associates two tables by the common attributes.
-After NATURAL JOIN, the duplicated attributes are omitted.</p>
+<p>不断缩小排序范围</p>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">city</span> <span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">country</span>
-</code></pre></div></div>
-<p>is implemented as</p>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">city</span><span class="p">.</span><span class="n">country_id</span><span class="p">,</span> <span class="n">city</span><span class="p">.</span><span class="n">last_update</span><span class="p">,</span> <span class="n">city_id</span><span class="p">,</span> <span class="n">city</span><span class="p">,</span> <span class="n">country</span>
-<span class="k">FROM</span> <span class="n">city</span><span class="p">,</span> <span class="n">country</span>
-<span class="k">WHERE</span> <span class="n">city</span><span class="p">.</span><span class="n">country_id</span> <span class="o">=</span> <span class="n">country</span><span class="p">.</span><span class="n">country_id</span> <span class="k">AND</span>
-    <span class="n">city</span><span class="p">.</span><span class="n">last_update</span> <span class="o">=</span> <span class="n">country</span><span class="p">.</span><span class="n">last_update</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">insertionSort</span><span class="o">(</span><span class="kt">int</span> <span class="no">A</span><span class="o">[]){</span>
+    <span class="nc">Insertion</span><span class="o">(</span><span class="no">A</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">insertionSort</span><span class="o">(</span><span class="kt">int</span> <span class="no">A</span><span class="o">[],</span><span class="kt">int</span> <span class="n">p</span><span class="o">){</span>
+  <span class="k">if</span><span class="o">(</span><span class="n">p</span><span class="o">==</span><span class="no">A</span><span class="o">.</span><span class="na">length</span><span class="o">)</span> <span class="k">return</span><span class="o">;</span>
+  <span class="kt">int</span> <span class="n">key</span><span class="o">=</span><span class="no">A</span><span class="o">[</span><span class="n">p</span><span class="o">];</span> <span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+  <span class="k">while</span><span class="o">(</span><span class="n">i</span><span class="o">&gt;=</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">key</span><span class="o">&lt;</span><span class="no">A</span><span class="o">[</span><span class="n">i</span><span class="o">]){</span>
+    <span class="no">A</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">]=</span><span class="no">A</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+    <span class="n">i</span><span class="o">--;</span>
+  <span class="o">}</span>
+  <span class="no">A</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">]=</span><span class="n">key</span><span class="o">;</span>
+  <span class="nc">Insertion</span><span class="o">(</span><span class="no">A</span><span class="o">,</span> <span class="n">p</span><span class="o">+</span><span class="mi">1</span><span class="o">);</span>
+<span class="o">}</span>
 </code></pre></div></div>
 
-<h2 id="join-condition">Join Condition</h2>
+<h3 id="time-complexity-for-insertion-sort">Time Complexity for Insertion Sort</h3>
 
 <ul>
-  <li>Join conditions define in which condition the tuples are associated.</li>
-  <li>Two tuples are associated if
+  <li>Best-Case: $O(n)$ 已经排好序的数组，扫一遍</li>
+  <li>Worst-Case: $O(n^2)$ 倒序的数组</li>
+  <li>Average-Case: $O(n^2)$</li>
+</ul>
+
+<h2 id="merge-sort">Merge Sort</h2>
+
+<ul>
+  <li>重点讲下merge的过程
     <ul>
-      <li>NATURAL: all common attributes have the same value.</li>
-      <li>ON &lt;predicate&gt;: the predicate is evaluated to be true.</li>
-      <li>USING $(A_1,A_2,⋯,A_n)$: the common attributes in list have the same value.</li>
+      <li>对于两个有序数组第一个元素下标分别为$i_1，i_2$</li>
     </ul>
   </li>
 </ul>
 
-<p>For example, these queries are equivalent.</p>
+<pre><code class="language-pseudo">MERGESORT(A, left, right)
+1.     IF left&gt;=right
+2.          RETURN
+3.    center = (left+right) / 2
+4.    MERGESORT(A, left, center)
+5.    MERGESORT(A, center+1, right)
+6.    MERGE(A, left, center, right)
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">address</span><span class="p">,</span> <span class="n">district</span><span class="p">,</span> <span class="n">postal_code</span> 
-<span class="k">FROM</span> <span class="n">customer</span> <span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">address</span>
+MERGE(A, left, center, right)
+1.  i1 = left, i2 = center+1, i=0
+2.  WHILE i1&lt;=center AND i2&lt;=right
+3.    IF A[i1]&lt;A[i2]
+4.      B[i++] = A[i1++]
+5.    ELSE
+6.      B[i++] = A[i2++]
+7.    WHILE i1 &lt;= center
+8.    B[i++] = A[i1++]
+9.    WHILE i2 &lt;= right
+10.   B[i++] = A[i2++]
+11. Copy B to A[left..right]
+</code></pre>
 
-<span class="k">SELECT</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">address</span><span class="p">,</span> <span class="n">district</span><span class="p">,</span> <span class="n">postal_code</span>
-<span class="k">FROM</span> <span class="n">customer</span> <span class="k">JOIN</span> <span class="n">address</span> <span class="k">ON</span> <span class="n">customer</span><span class="p">.</span><span class="n">address_id</span> <span class="o">=</span> <span class="n">address</span><span class="p">.</span><span class="n">address_id</span> <span class="k">AND</span> <span class="n">customer</span><span class="p">.</span><span class="n">last_update</span> <span class="o">=</span> <span class="n">address</span><span class="p">.</span><span class="n">last_update</span>
+<h3 id="time-complexity-for-merge-sort">Time Complexity for Merge Sort</h3>
+<p>\(T(n) = \begin{cases}
+$2T(\frac{n}{2}) + O(n), &amp; \text{if } n \geq 1 \\
+O(1), &amp; \text{if } n = 1
+\end{cases} \\\)
+$T(n)=2^iT(\frac{n}{2^i})+i<em>n$
+$let\ 2^i=n$
+$T(n)=nT(\frac{n}{n})+n</em>log(n)=O(nlog(n))$</p>
 
-<span class="k">SELECT</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">address</span><span class="p">,</span> <span class="n">district</span><span class="p">,</span> <span class="n">postal_code</span>
-<span class="k">FROM</span> <span class="n">customer</span> <span class="k">JOIN</span> <span class="n">address</span> <span class="k">USING</span> <span class="p">(</span><span class="n">address_id</span><span class="p">,</span> <span class="n">last_update</span><span class="p">)</span>
-</code></pre></div></div>
+<h2 id="quick-sort">Quick Sort</h2>
 
-<h3 id="join-1">JOIN</h3>
+<pre><code class="language-pseudo">QUICKSORT(A, left, right)
+1.     IF left &gt;= right
+2.          return
+3.     q = PARTITION(A, left, right)
+4.     //q is the position of the pivot
+5.     QUICKSORT(A, left, q-1)           
+6.     QUICKSORT(A, q+1, right)
 
-<ul>
-  <li>A JOIN without any condition is same as a cartesian product.
-Sometimes more than two tables are joined together.</li>
-</ul>
+PARTITION(A, left, right)
+1.     p = PIVOT(A, left, right)
+2.    //p is the position of the pivot
+3.    swap A[p] and A[right]
+4.    i = left, j = right-1, pivot = A[right]
+5.    WHILE true           
+6.        WHILE i&lt;right AND A[i]&lt;pivot
+7.            i++
+8.        WHILE j&gt;=left AND A[j]&gt;pivot
+9.            j--
+10.       IF i&lt;j
+11.           swap A[i] and A[j]
+12.           i++, j--
+13.       ELSE
+14.           BREAK
+15.   swap A[i] and A[right]
+</code></pre>
 
-<h3 id="natural-join">NATURAL JOIN</h3>
+<h3 id="strategy-for-pick-pivot">Strategy for pick pivot</h3>
 
-<ul>
-  <li>The NATURAL JOIN operator associates two tables by all the common attributes.
-基于两个表之间的相同列名来进行连接。当使用自然连接时，数据库系统会自动查找两个表中列名相同的字段，并将它们用作连接条件，返回一个新表，其中包含了这些字段的所有数据。</li>
-</ul>
+<h4 id="strategy-i">Strategy I</h4>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">city</span> <span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">country</span>
-<span class="k">is</span> <span class="n">equivalent</span> <span class="k">to</span>
-<span class="k">SELECT</span> <span class="n">city</span><span class="p">.</span><span class="n">country_id</span><span class="p">,</span> <span class="n">city</span><span class="p">.</span><span class="n">last_update</span><span class="p">,</span> <span class="n">city_id</span><span class="p">,</span> <span class="n">city</span><span class="p">,</span><span class="n">country</span>
-<span class="k">FROM</span> <span class="n">city</span><span class="p">,</span> <span class="n">country</span>
-<span class="k">WHERE</span> <span class="n">city</span><span class="p">.</span><span class="n">country_id</span> <span class="o">=</span> <span class="n">country</span><span class="p">.</span><span class="n">country_id</span> <span class="k">AND</span>
-<span class="n">city</span><span class="p">.</span><span class="n">last_update</span> <span class="o">=</span> <span class="n">country</span><span class="p">.</span><span class="n">last_update</span>
-</code></pre></div></div>
+<p>Use the first element as a pivot</p>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">SELECT</span> <span class="o">*</span><span class="k">FROM</span> <span class="n">table1</span> <span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">table2</span> <span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">table3</span>  
-</code></pre></div></div>
-<p>The query is understood as</p>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">SELECT</span><span class="o">*</span> <span class="k">FROM</span> <span class="p">(</span><span class="n">table1</span> <span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">table2</span><span class="p">)</span> <span class="k">NATURAL</span> <span class="k">JOIN</span> <span class="n">table3</span>
-</code></pre></div></div>
-
-<p>只保留相同的部分</p>
-
-<p>Notes:</p>
-
-<ul>
-  <li>The predicate in the ON clause is user-defined, which is very flexible.</li>
-  <li>NATURAL and USING combine the common attributes. But ON duplicates common attributes.</li>
-</ul>
-
-<h3 id="join-type">JOIN type</h3>
-
-<p>当需要无法匹配的部分时</p>
-
-<ul>
-  <li>Sometimes users want to keep the unmatched tuples after joining two tables.</li>
-</ul>
-
-<p><em>OUTER JOIN</em> can handle it.</p>
-
-<ul>
-  <li>
-    <p>table1 NATURAL LEFT OUTER JOIN table2
-All tuples in table1 are in the result. For the unmatched tuples, the values of the attributes from table2 are NULL, meaning “unknown”. (NULL values will be introduced in following labs.)</p>
+<ol>
+  <li>if the input is random, ok</li>
+  <li>if the input is presorted (or in reverse order)
+    <ul>
+      <li>all the elements go into S2 (or S1)</li>
+      <li>this happens consistently throughout the recursive calls
+Results in $O(n^2)$ behavior</li>
+    </ul>
   </li>
-  <li>
-    <p>table1 NATURAL RIGHT OUTER JOIN table2
-The unmatched tuples from table2 are kept.</p>
-  </li>
-  <li>
-    <p>table1 NATURAL FULL OUTER JOIN table2
-All tuples (from both table1 and table2) are kept.</p>
-  </li>
-  <li>
-    <p>NATURAL is the join condition.</p>
-  </li>
-</ul>
+</ol>
 
-<p>On the opposite of OUTER, INNER JOIN does not keep the unmatched tuples.
-Same as JOIN. “INNER” is usually omitted.</p>
+<h4 id="strategy-ii">Strategy II</h4>
 
-<p>Suppose we try to join this 2 tables
-<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/OUTERJOIN-1.png" /></p>
+<p>Choose the pivot randomly</p>
 
-<ul>
-  <li>LEFT OUTER JOIN</li>
-</ul>
+<ol>
+  <li>generally safe</li>
+  <li>random number generation can be expensive</li>
+</ol>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>  <span class="k">FROM</span> <span class="n">person</span> <span class="k">NATURAL</span> <span class="k">LEFT</span> <span class="k">OUTER</span> <span class="k">JOIN</span> <span class="n">address</span>
-</code></pre></div></div>
+<h4 id="strategy-iii">Strategy III</h4>
 
-<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/LEFTJOIN.png" /></p>
+<p>Use the median of the array <em>中位数</em>
+The median is the middle element if the array is sorted.</p>
 
-<ul>
-  <li>RIGHT OUTER JOIN</li>
-</ul>
+<ol>
+  <li>Partitioning always cuts the array into roughly half</li>
+  <li>An optimal quicksort: O(N log N)</li>
+  <li>However, it is expensive to find the exact median
+e.g., sort an array to pick the value in the middle</li>
+</ol>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>  <span class="k">FROM</span> <span class="n">person</span> <span class="k">NATURAL</span> <span class="k">RIGHT</span> <span class="k">OUTER</span> <span class="k">JOIN</span> <span class="n">address</span>
-</code></pre></div></div>
+<h4 id="strategy-iv">Strategy IV</h4>
 
-<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/RIGHTJOIN.png" /></p>
+<p>We will use the median of three
+Compare just three elements: the left-most, right-most, and center</p>
+
+<p>Swap these elements if necessary so that</p>
 
 <ul>
-  <li>FULL OUTER JOIN</li>
+  <li>A[left] =  Smallest</li>
+  <li>A[right]   =  Largest</li>
+  <li>A[center]  = Median of three</li>
+  <li>Pick A[center] as the pivot</li>
+  <li>Swap A[center] and A[right – 1] so that the pivot is at second-last position</li>
 </ul>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">NATURAL</span> <span class="k">FULL</span> <span class="k">OUTER</span> <span class="k">JOIN</span> <span class="n">address</span>
-</code></pre></div></div>
+<h3 id="time-complexity-for-quick-sort">Time Complexity for Quick Sort</h3>
 
-<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/FULLOUTERJOIN.png" /></p>
+<ul>
+  <li>Assumptions
+Pivot Selection: Median of 3
+Base Case: Array size &lt;= 10</li>
+  <li>Running time $T(n)$
+    <ul>
+      <li>Divide
+        <ol>
+          <li>Pivot selection: O(1)</li>
+          <li>Partitioning: O(n)</li>
+          <li>Recursive calls: T(i) + T(n-i-1)</li>
+        </ol>
+      </li>
+      <li>Conquer and Combine: O(1)</li>
+    </ul>
+  </li>
+</ul>
 
-<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/JOIN.png" /></p>
+\[T(n)=T(i)+T(n-i-1)+O(n)\]
+
+<ul>
+  <li>Worst-Case
+    <ul>
+      <li>The pivot is the smallest element, all the time</li>
+      <li>Partition is always unbalanced</li>
+    </ul>
+  </li>
+</ul>
+
+\[T(N) = T(N - 1) + cN \\
+T(N - 1) = T(N - 2) + c(N - 1) \\
+T(N - 2) = T(N - 3) + c(N - 2) \\
+...\\
+T(2) = T(1) + c(2) \\
+T(N) = T(1) + c\sum_{i=2}^{N} i = O(N^2) \\\]
+
+<ul>
+  <li>Best-Case
+    <ul>
+      <li>Partition is perfectly balanced</li>
+      <li>Pivot is always in the middle (median of the array)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>$T(n) = 2T\left(\frac{n}{2}\right) + n$</p>
+
+<p>$\quad = 2\left[2T\left(\frac{n}{2^2}\right) + \frac{n}{2}\right] + n$</p>
+
+<p>$\quad = 2^2T\left(\frac{n}{2^2}\right) + 2n$</p>
+
+<p>$\quad = 2^3T\left(\frac{n}{2^3}\right) + 3n$</p>
+
+<p>$\quad = 2^iT\left(\frac{n}{2^i}\right) + in$</p>
+
+<p>$Let\ i = \log(n)$</p>
+
+<p>$\quad = nT\left(\frac{n}{n}\right) + n \cdot \log(n)$</p>
+
+<p>$\quad = O(n \log(n))$</p>
+
+<ul>
+  <li>Average-Case</li>
+  <li>$O(nlog(n))$</li>
+</ul>
+
+<h3 id="why-is-quicksort-faster-than-mergesort">Why is quicksort faster than mergesort?</h3>
+
+<ul>
+  <li>The inner loop consists of an increment/decrement (by 1, which is fast), a test, and , a jump.</li>
+  <li>There is no extra juggling as in mergesort.</li>
+</ul>
+
+<h2 id="heap-sort">Heap Sort</h2>
+
+<h3 id="priority-queue">Priority Queue</h3>
+
+<p>The priority queue is a data structure that allows at least two operations</p>
+
+<ul>
+  <li>insert</li>
+  <li>delete in/deleteMax
+    <ul>
+      <li>finds, returns, and removes the minimum elements in the priority queue</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="binary-heap">Binary Heap</h3>
+
+<p>Heaps are “almost perfect binary trees”</p>
+
+<ul>
+  <li>All levels are full except possibly the lowest level</li>
+  <li>If the lowest level is not full, then nodes must be packed to the left</li>
+</ul>
+
+<h3 id="property">Property</h3>
+
+<p>Given a binary heap of node number n and height h</p>
+
+<ul>
+  <li>n is within $[2^h, 2^{h+1}-1]$</li>
+  <li>The height $h=O(log(n))$
+The structure is so regular, it can be represented in an array and no links are necessary !!!</li>
+</ul>
+
+<p>Insert in $O(log N)$ time
+Locate the current minimum in $O(1)$ time
+Delete the current minimum in $O(log N)$ time</p>
+
+<pre><code class="language-pseudo">insert(x)
+1.     IF ISFULL(A)
+2.          return False
+3.     // percolate up
+4.     hole = size ++
+5.     WHILE hole&gt;0 AND x&lt;A[(hole-1)/2]
+6.         A[hole] = A[(hole-1)/2]
+7.         hole = (hole-1)/2
+8.     A[hole] = x
+9.     return True
+</code></pre>
+
+<p>Note:
+节点A：$x$
+父节点：$\lfloor \frac{x-1}{2} \rfloor$</p>
+
+<pre><code class="language-pseudo">deleteMin()
+1.     IF ISEMPTY(A)
+2.          return -1
+3.     min = A[0], hole = 0, x=A[--size]
+4.     // percolate down
+4.     WHILE A[hole] has children
+5.         sid = index of A[hole]’s smaller child
+6.         IF x&lt;=A[sid]
+7.           BREAK
+8.         A[hole] = A[sid]
+9.         hole = sid
+10.   A[hole] = x
+11.   return min
+</code></pre>
+
+<pre><code class="language-pseudo">HEAPSORT(A)
+1.     heap = new MaxHeap(A) 
+2.     FOR Each x in A
+3.         heap.insert(x)
+4.     FOR i=size-1 TO 0
+5.         A[i] = heap.deleteMax()
+</code></pre>
 
         </content>
         <side style="font-size: 0.9em">
             <h3 style="margin-bottom: 1em">BackLink</h3>
             
-            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
-                
-                <div class="backlink-box">
-                    <a class="internal-link"
-                        href="/DBM/DBM">Dbm</a><br>
-                    <!-- <div style="font-size: 0.9em"> 数据库
-</div> -->
-                </div>
-                
-                <div class="backlink-box">
-                    <a class="internal-link"
-                        href="/DBM/MySQL/Join">Join</a><br>
-                    <!-- <div style="font-size: 0.9em">[[Join]]
-</div> -->
-                </div>
-                
+
+            <div style="font-size: 0.9em">
+                <p>
+                    no link
+                </p>
             </div>
             
         </side>
