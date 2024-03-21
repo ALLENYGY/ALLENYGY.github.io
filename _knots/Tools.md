@@ -15,7 +15,7 @@ jekyll-theme-ObJekyll:
 
 ## <i class="fa-solid fa-tools fa-fw"></i> 编程素养
 
-### - <i class="fa-solid fa-tools fa-git"></i> Git
+### - <i class="fa-solid fa-tools fa-fw"></i> Git
 ### - <i class="fa-solid fa-tools fa-fw"></i> Docker
 ### - <i class="fa-solid fa-tools fa-fw"></i> Conda
 
@@ -23,20 +23,20 @@ jekyll-theme-ObJekyll:
 
 ## <i class="fa-solid fa-tools fa-git"></i> Git
 
-### - [Git Introduction](Git/Git-Introduction)
+### - [Git Introduction](Tools/Git/Git-Introduction)
 
-### - [Git For Beginners](Git/Git-For-Beginners)
+### - [Git For Beginners](Tools/Git/Git-For-Beginners)
 
-### - [Git Remote Repository](Git-Remote-Repository)
+### - [Git Remote Repository](Tools/Git-Remote-Repository)
 
-### - [Git Workflow Model](Git-Workflow-Model)
+### - [Git Workflow Model](Tools/Git-Workflow-Model)
 
 <!-- .slide vertical=true -->
 
 ## <i class="fa-solid fa-tools fa-fw"></i> Docker
 
-### - [Basic Docker](Docker/Docker)
+### - [Basic Docker](Tools/Docker/Docker)
 
 ## <i class="fa-solid fa-tools fa-fw"></i> Conda
 
-### - [Conda Basic Operation](Conda)
+### - [Conda Basic Operation](Tools/Conda)

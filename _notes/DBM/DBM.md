@@ -5,7 +5,7 @@ tags:
 Author:
   - AllenYGY
 created: 2024-01-16T21:03
-updated: 2024-03-21T22:47
+updated: 2024-03-21T23:34
 ---
 
 
@@ -27,6 +27,14 @@ updated: 2024-03-21T22:47
 ### [[Logical-Design]]
 
 ### [[Key-concept]]
+
+### [[Relational-Database-Design-Purpose-&-First-Normal-Form]]
+
+### [[Relational-Database-Design-Functional-Dependency]]
+
+### [[Relational-Database-Design-BCNF]]
+
+### [[Relational-Database-Design-3rd-Normal-Form]]
 
 ## <i class="fa-solid fa-server fa-fw"></i>MySQL
 

@@ -30,9 +30,21 @@ jekyll-theme-ObJekyll:
 
 #### - [Design Issues](Design-Issues)
 
+#### - [KEY Concept](Key-concept)
+
+<!-- .slide vertical=true -->
+
+## <i class="fa-solid fa-palette fa-fw"></i>  Database Design
+
 #### - [Logical Design](Logical-Design)
 
-#### - [KEY Concept](Lecture/Key-concept)
+#### - [Relational Database Design First Normal Form]([Relational-Database-Design-Purpose-&-First-Normal-Form)
+
+#### - [Relational Database Design Functional Dependency](Relational-Database-Design-Functional-Dependency)
+
+#### - [Relational-Database-Design-BCNF](Relational-Database-Design-BCNF)
+
+#### - [Relational-Database-Design-3rd-Normal-Form](Relational-Database-Design-3rd-Normal-Form)
 
 <!-- .slide vertical=true -->
 
@@ -46,12 +58,12 @@ jekyll-theme-ObJekyll:
 
 #### - [Aggregation](Aggregation)
 
+<!-- .slide vertical=true -->
+## <i class="fa-solid fa-server fa-fw"></i>  MySQL
+
 #### - [Data Definition](Data-Definition)
 
 #### - [Data Modification](Data-Modification)
-
-<!-- .slide vertical=true -->
-## <i class="fa-solid fa-server fa-fw"></i>  MySQL
 
 #### - [Null & Subquery](Null-Subquery)
 

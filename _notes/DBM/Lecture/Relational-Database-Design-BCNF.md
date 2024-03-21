@@ -4,11 +4,11 @@ status: DONE
 tags:
   - DataBase
   - NOTE
-  - Lec7
+  - Lec9
 Author:
   - AllenYGY
 created: 2023-12-27T17:12
-updated: 2024-03-21T21:41
+updated: 2024-03-21T23:28
 ---
 # [[Relational-Database-Design-BCNF]]
 

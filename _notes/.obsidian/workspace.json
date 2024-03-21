@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9f719fe5daf9c46b",
+        "id": "16d042ad5c47b2e2",
         "type": "tabs",
         "children": [
           {
-            "id": "6d5ec018c305e9ec",
+            "id": "502582b682383a88",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Tools.md",
+                "file": "DBM/DBM.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Tools.md",
+                "file": "DBM/DBM.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Tools.md",
+                "file": "DBM/DBM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Tools.md"
+                "file": "DBM/DBM.md"
               }
             }
           }
@@ -211,8 +211,14 @@
       "obsidian-map-view:Open map view": false
     }
   },
-  "active": "2149ca7f56dd2153",
+  "active": "502582b682383a88",
   "lastOpenFiles": [
+    "DBM/Lecture/Relational-Database-Design-Functional-Dependency.md",
+    "DBM/Lecture/Relational-Database-Design-Purpose-&-First-Normal-Form.md",
+    "DBM/Lecture/Relational-Database-Design-BCNF.md",
+    "DBM/Lecture/Relational-Database-Design-3rd-Normal-Form.md",
+    "DBM/DBM.md",
+    "Home.md",
     "Tools/Shell/Shell.md",
     "Tools/Git/Git-Workflow-Model.md",
     "Tools/Git/Git-Remote-Repository.md",
@@ -226,7 +232,6 @@
     "Program/ProgramLanguage.md",
     "FixIncome/FixedIncomeOverview.md",
     "Math/Math.md",
-    "DBM/DBM.md",
     "CO/CO.md",
     "Entity-Relationship Model Constraints](]Entity-Relationship-Model-Constraints.md",
     "DBM/Database Management System.md",
@@ -234,11 +239,6 @@
     "DBM/MySQL/Division-and-Correlated-Subquery.md",
     "DBM/MySQL/Set-Operation-&-WHERE-subquery.md",
     "DBM/MySQL/Null-Subquery.md",
-    "DBM/MySQL/Join.md",
-    "DBM/MySQL/Data-Modification.md",
-    "DBM/MySQL/Data-Definition.md",
-    "DBM/MySQL/Aggregation.md",
-    "DBM/MySQL/Basic-MySQL.md",
     "ProgramLanguage",
     "Program/Java/Lecture",
     "Pasted image 20240320183823.png",

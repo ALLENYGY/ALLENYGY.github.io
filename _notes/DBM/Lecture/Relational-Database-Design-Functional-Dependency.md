@@ -4,11 +4,11 @@ status: DONE
 tags:
   - DataBase
   - NOTE
-  - Lec7
+  - Lec8
 Author:
   - AllenYGY
 created: 2023-12-28T00:16
-updated: 2024-03-21T21:40
+updated: 2024-03-21T23:28
 ---
 # [[Relational-Database-Design-Functional-Dependency]]
 

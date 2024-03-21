@@ -4,11 +4,11 @@ status: UNFINISHED
 tags:
   - DataBase
   - NOTE
-  - Lec7
+  - Lec10
 Author:
   - AllenYGY
 created: 2023-12-10T17:03
-updated: 2024-03-21T21:42
+updated: 2024-03-21T23:27
 ---
 # [[Relational-Database-Design-3rd-Normal-Form]]
 
