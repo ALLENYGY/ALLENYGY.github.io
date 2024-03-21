@@ -1,14 +1,17 @@
 # AllenYGY
 
-## 个人小站 开始阅读
+## 个人小站
 
 <!-- .slide -->
 
-# 将Obsidian库publish为博客
+## 将Obsidian库<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Publish为博客
 
 <!-- .slide -->
 
-# 支持双链<br>预览 和 图谱
+# 支持
+
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;双链预览
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;知识图谱
 
 <!-- .slide vertical=true -->
 
@@ -17,3 +20,6 @@
 <!-- .slide -->
 
 [默认主题](https://github.com/yaleiyale/jekyll-theme-ObJekyll)自定义替换,主题模板来自[wu-kan](https://github.com/wu-kan/jekyll-theme-WuK),<br>obsidian双链支持相关来自[maximevaillancourt](https://github.com/maximevaillancourt/digital-garden-jekyll-template)
+
+<!-- .slide -->
+# 开始阅读

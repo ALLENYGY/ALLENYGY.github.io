@@ -1,5 +1,5 @@
 ---
-Create Time: 20th February 2024
+CreateTime: 20th February 2024
 Title: "[[Basic-Concepts]]"
 status: DONE
 Author:
@@ -9,6 +9,8 @@ tags:
   - Network
   - Lec1
   - UIC
+created: 2024-02-20T11:32
+updated: 2024-03-21T11:34
 ---
 
 # [[Basic-Concepts]]

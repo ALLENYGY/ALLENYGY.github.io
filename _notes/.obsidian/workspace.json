@@ -4,25 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "7136e1752157aa8e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "cb9893abf1c8bede",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Network/Basic-Concepts.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "4ba910010ce23dda",
         "type": "tabs",
         "children": [
@@ -32,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network/Data-Link-Layer.md",
-                "mode": "preview",
+                "file": "Obsidian/AdvancedSlides/AdvancedSlide.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -145,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Network/Basic-Concepts.md",
+                "file": "Obsidian/AdvancedSlides/AdvancedSlide.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Network/Basic-Concepts.md",
+                "file": "Obsidian/AdvancedSlides/AdvancedSlide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Network/Basic-Concepts.md"
+                "file": "Obsidian/AdvancedSlides/AdvancedSlide.md"
               }
             }
           }
@@ -231,20 +212,27 @@
       "obsidian-map-view:Open map view": false
     }
   },
-  "active": "cb9893abf1c8bede",
+  "active": "b3f724b3eae22ec2",
   "lastOpenFiles": [
-    "Network/Data-Link-Layer.md",
-    "Network/Physical-Layer.md",
-    "OperatingSystem/TEST.md",
-    "OperatingSystem/README copy.md",
-    "OperatingSystem/README.md",
+    "Home.md",
+    "OperatingSystem/OS-CPU-Scheduling.md",
     "Pasted image 20240320183823.png",
+    "Network/Data-Link-Layer.md",
+    "OperatingSystem/TEST.md",
+    "OperatingSystem/README.md",
+    "OperatingSystem/OS-Threads.md",
+    "OperatingSystem/OS-Processes.md",
+    "OperatingSystem/OS-Operating-System-Structure.md",
+    "OperatingSystem/OS-Introduction.md",
+    "OperatingSystem/NJU-OS-PA0.md",
+    "OperatingSystem/Linux-Basic-Operation.md",
+    "Network/Basic-Concepts.md",
+    "Network/Physical-Layer.md",
+    "OperatingSystem/README copy.md",
     "Pasted image 20240320182332.png",
     "Record/Weekly/2024-W11.md",
     "Record/Weekly/2024-W05.md",
     "Network/USTC-L1.md",
-    "OperatingSystem/OS-Processes.md",
-    "Home.md",
     "WorkView.md",
     "Resume/JunyaYang.pdf",
     "Math/ProbabilityStatistics/Lec6.md",
@@ -258,17 +246,9 @@
     "Contest/Lanqiao/Week-1.nssyncsc",
     "Contest/Lanqiao/Lanqiao.nssyncsc",
     "Contest/Lanqiao/000_Nutstore Flash Download Guide.url.nssyncsc",
-    "CO/Contest/Lanqiao/Week-1.md",
-    "CO/Contest/Lanqiao/Lanqiao.md",
-    "CO/Contest/Leetcode/Weekly-contest-381.md",
-    "CO/Contest/Leetcode/Biweekly-contest-123.md",
-    "CO/Contest/Leetcode/Biweekly-contest-122.md",
-    "CO/Contest/Overview.md",
     "CO/Contest/Lanqiao",
     "CO/Contest/Leetcode",
     "CO/Contest",
-    "Contest/Leetcode/Leetcode.md",
-    "OperatingSystem/NJU-OS-PA0-NSConflict-AllenYGY-mac14.4.md",
     "Contest/Leetcode/Leetcode.nssyncsc",
     "Contest/Leetcode/Weekly-contest-381.nssyncsc",
     "Pasted image 20240319004008.png",

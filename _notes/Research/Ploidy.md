@@ -1,3 +1,7 @@
+---
+created: 2024-01-19T11:25
+updated: 2024-03-21T12:36
+---
 # Ploidy
 
 ## [nQuire: a statistical framework for ploidy estimation using next generation sequencing](https://doi.org/10.1186/s12859-018-2128-z)

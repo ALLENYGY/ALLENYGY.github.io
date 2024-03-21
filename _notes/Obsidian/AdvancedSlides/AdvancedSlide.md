@@ -1,8 +1,11 @@
 ---
+layout: home
 margin: 0
 width: 1920
 height: 1200
 transition: slide
+created: 2024-01-16T23:59
+updated: 2024-03-21T12:39
 ---
 
 <!-- slide data-background-image="https://picsum.photos/id/177/2515/1830" -->
@@ -22,27 +25,27 @@ transition: slide
 
 **Agenda 01**
 
-**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s 
+**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
 <!-- element style="font-size: 24px"-->
 </grid>
 
 <grid drag="27 85" drop="27 15" bg="#EEB73F" pad="50px" align="justify">
 
-![](https://picsum.photos/id/1010/500/400) 
+![](https://picsum.photos/id/1010/500/400)
 
 **Agenda 02**
 
-**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s 
+**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
 <!-- element style="font-size: 24px"-->
 </grid>
 
 <grid drag="27 85" drop="54 15" bg="#EEB73F" pad="50px" align="justify">
 
-![](https://picsum.photos/id/1025/500/400) 
+![](https://picsum.photos/id/1025/500/400)
 
 **Agenda 03**
 
-**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s 
+**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
 <!-- element style="font-size: 24px"-->
 </grid>
 
@@ -56,7 +59,7 @@ Presentation Agenda <!-- element drag="60 20" drop="57 48" rotate="90" style="fo
 
 ###### Minimo Studio<!-- element drag="15 5" drop="11 55" align="left"-->
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 <!-- element style="font-size: 24px" drag="30 30" drop="11 58" align="justify"-->
 
 ![](https://picsum.photos/id/112/500/400) <!-- element drag="30 45" drop="47 40"-->
@@ -75,10 +78,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ![](https://picsum.photos/id/113/600/400) <!-- element drag="32 40" drop="28 50"-->
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 <!-- element style="font-size: 24px" drag="25 30" drop="65 15" align="justify"-->
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 <!-- element style="font-size: 24px" drag="25 30" drop="65 55" align="justify"-->
 
 ---
@@ -185,12 +188,12 @@ Marketing Expert <!-- element style="font-size: 24px"-->
 <grid drag="20 45" drop="10 -18" align="justify">
 
 ##### *Emily Oberman*
-	
+
 LoremIpsumLoremIpsum <!-- element style="font-size: 24px" -->
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 <!-- element style="font-size: 24px" -->
-	
+
 </grid>
 
 ![](https://picsum.photos/id/64/300/300) <!-- element drag="40 70" drop="-18 -18"-->
@@ -214,7 +217,7 @@ LoremIpsumLoremIpsum <!-- element style="font-size: 24px" -->
 
 ### Graphic Designer
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 <!-- element style="font-size: 24px" -->
 </grid>
 
@@ -234,7 +237,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 ##### Your Service
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
 <!-- element style="font-size: 24px" -->
-	
+
 ##### Your Service
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
 <!-- element style="font-size: 24px" -->
@@ -284,14 +287,14 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ###### Marketing
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
 <!-- element style="font-size: 20px" -->
 
 <br><br>
 
 ###### Consulting
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
 <!-- element style="font-size: 20px" -->
 </grid>
 
@@ -328,7 +331,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ## Work Process
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 <!-- element style="font-size: 28px" align="justify"-->
 </grid>
 
@@ -486,7 +489,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
 <!-- element style="font-size: 24px" align="justify" -->
-	
+
 # 29
 #### Apps & Websites
 

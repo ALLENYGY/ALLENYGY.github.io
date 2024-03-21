@@ -1,7 +1,5 @@
 ---
-ctime: 22nd February 2024
-date: 2022-07-30T20:46:10+08:00
-lastmod: 2022-11-21T22:02:47+08:00
+Create Time: 22nd February 2024
 Title: "[[OS-Introduction]]"
 Author:
   - AllenYGY
@@ -10,13 +8,11 @@ tags:
   - NOTE
   - Introduction
   - Lec1
-created: 2024-03-20T17:14
-updated: 2024-03-21T10:56
+created: 2024-01-20T17:14
+updated: 2024-03-21T11:57
 ---
 
 # [[OS-Introduction]]
-
----
 
 ## **Computer System Architecture**
 

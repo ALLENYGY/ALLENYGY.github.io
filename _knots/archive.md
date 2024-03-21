@@ -18,28 +18,28 @@ jekyll-theme-ObJekyll:
 {
   "data": { "url": "{{ site.baseurl }}/assets/simple-jekyll-search/search.json" },
   "encoding": {
-    "y": {"field": "date", "timeUnit": "month", "type": "ordinal"},
-    "x": {"field": "date", "timeUnit": "year"},
-    "color": {"field": "date", "aggregate": "count"}
+    "y": {"field": "creatd", "timeUnit": "month", "type": "ordinal"},
+    "x": {"field": "created", "timeUnit": "year"},
+    "color": {"field": "created", "aggregate": "count"}
   },
   "mark": "rect"
 }
 ```
 
-{% assign lmonth = "1000-01" | date: "%b %Y" %}
+{% assign lmonth = "1000-01" | created: "%b %Y" %}
 
 {% for post in site.notes reversed %}
 {% unless post.title contains '.excalidraw' %}
-{% assign month = post.date | date: "%b %Y" %}
+{% assign month = post.created | date: "%b %Y" %}
 {% if month != lmonth %}
 ## {{ month }}
 {%assign lmonth = month %}
 {% endif %}
 {% if site.use_html_extension %}
 
-- _{{ post.date | date:"%d %b" }}_ [{{ post.title }}]({{ post.url | relative_url | append: ".html" }})
+- _{{ post.created | date:"%d %b" }}_ [{{ post.title }}]({{ post.url | relative_url | append: ".html" }})
 {% else %}
-- _{{ post.date | date:"%d %b" }}_ [{{ post.title }}]({{ post.url | relative_url }})
+- _{{ post.created | date:"%d %b" }}_ [{{ post.title }}]({{ post.url | relative_url }})
 {% endif %}
 {% endunless %}
 {% endfor %}
