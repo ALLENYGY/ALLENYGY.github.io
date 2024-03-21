@@ -1,1 +1,1 @@
-Sitemap: https://objekyll.netlify.app/sitemap.xml
+Sitemap: https://allenygy.github.io/sitemap.xml
