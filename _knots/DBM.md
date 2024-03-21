@@ -22,53 +22,53 @@ jekyll-theme-ObJekyll:
 
 ## <i class="fa-solid fa-palette fa-fw"></i> Database Design
 
-#### - [Entity-Relationship Model Modeling](Lecture/Entity-Relationship-Model-Modeling)
+#### - [Entity-Relationship Model Modeling](DBM/Lecture/Entity-Relationship-Model-Modeling)
 
-#### - [Entity-Relationship Model Constraints](Lecture/Entity-Relationship-Model-Constraints)
+#### - [Entity-Relationship Model Constraints](DBM/Lecture/Entity-Relationship-Model-Constraints)
 
-#### - [Entity-Relationship Model Extended Features](Lecture/Entity-Relationship-Model-Extended-Features)
+#### - [Entity-Relationship Model Extended Features](DBM/Lecture/Entity-Relationship-Model-Extended-Features)
 
-#### - [Design Issues](Lecture/Design-Issues)
+#### - [Design Issues](DBM/Lecture/Design-Issues)
 
-#### - [KEY Concept](Lecture/Key-concept)
+#### - [KEY Concept](DBM/Lecture/Key-concept)
 
 <!-- .slide vertical=true -->
 
 ## <i class="fa-solid fa-palette fa-fw"></i>  Database Design
 
-#### - [Logical Design](Lecture/Logical-Design)
+#### - [Logical Design](DBM/Lecture/Logical-Design)
 
-#### - [Relational Database Design First Normal Form](Lecture/Relational-Database-Design-Purpose-&-First-Normal-Form)
+#### - [Relational Database Design First Normal Form](DBM/Lecture/Relational-Database-Design-Purpose-&-First-Normal-Form)
 
-#### - [Relational Database Design Functional Dependency](Lecture/Relational-Database-Design-Functional-Dependency)
+#### - [Relational Database Design Functional Dependency](DBM/Lecture/Relational-Database-Design-Functional-Dependency)
 
-#### - [Relational-Database-Design-BCNF](Lecture/Relational-Database-Design-BCNF)
+#### - [Relational-Database-Design-BCNF](DBM/Lecture/Relational-Database-Design-BCNF)
 
-#### - [Relational-Database-Design-3rd-Normal-Form](Lecture/Relational-Database-Design-3rd-Normal-Form)
+#### - [Relational-Database-Design-3rd-Normal-Form](DBM/Lecture/Relational-Database-Design-3rd-Normal-Form)
 
 <!-- .slide vertical=true -->
 
 ## <i class="fa-solid fa-server fa-fw"></i> MySQL
 
-#### - [Basic MySQL](MySQL/Basic-MySQL)
+#### - [Basic MySQL](DBM/MySQL/Basic-MySQL)
 
-#### - [Cross table query](MySQL/Cross-table-Query)
+#### - [Cross table query](DBM/MySQL/Cross-table-Query)
 
-#### - [Join](MySQL/Join)
+#### - [Join](DBM/MySQL/Join)
 
-#### - [Aggregation](MySQL/Aggregation)
+#### - [Aggregation](DBM/MySQL/Aggregation)
 
 <!-- .slide vertical=true -->
 ## <i class="fa-solid fa-server fa-fw"></i>  MySQL
 
-#### - [Data Definition](MySQL/Data-Definition)
+#### - [Data Definition](DBM/MySQL/Data-Definition)
 
-#### - [Data Modification](MySQL/Data-Modification)
+#### - [Data Modification](DBM/MySQL/Data-Modification)
 
-#### - [Null & Subquery](MySQL/Null-Subquery)
+#### - [Null & Subquery](DBM/MySQL/Null-Subquery)
 
-#### - [Set Operation & WHERE subquery](MySQL/Set-Operation-&-WHERE-subquery)
+#### - [Set Operation & WHERE subquery](DBM/MySQL/Set-Operation-&-WHERE-subquery)
 
-#### - [Division and Correlated Subquery](MySQL/Division-and-Correlated-Subquery)
+#### - [Division and Correlated Subquery](DBM/MySQL/Division-and-Correlated-Subquery)
 
-#### - [Advanced SQL](MySQL/Advanced-SQL)
+#### - [Advanced SQL](DBM/MySQL/Advanced-SQL)
