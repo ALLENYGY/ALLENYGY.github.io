@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4ba910010ce23dda",
+        "id": "e53f797168144025",
         "type": "tabs",
         "children": [
           {
-            "id": "b3f724b3eae22ec2",
+            "id": "a1a4645932ac36ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian/AdvancedSlides/AdvancedSlide.md",
+                "file": "FixIncome/FixedIncomeOverview.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Obsidian/AdvancedSlides/AdvancedSlide.md",
+                "file": "FixIncome/FixedIncomeOverview.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Obsidian/AdvancedSlides/AdvancedSlide.md",
+                "file": "FixIncome/FixedIncomeOverview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Obsidian/AdvancedSlides/AdvancedSlide.md"
+                "file": "FixIncome/FixedIncomeOverview.md"
               }
             }
           }
@@ -191,8 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 359.5,
-    "collapsed": true
+    "width": 359.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,8 +211,9 @@
       "obsidian-map-view:Open map view": false
     }
   },
-  "active": "b3f724b3eae22ec2",
+  "active": "a1a4645932ac36ef",
   "lastOpenFiles": [
+    "Obsidian/AdvancedSlides/QuickStart.md",
     "Home.md",
     "OperatingSystem/OS-CPU-Scheduling.md",
     "Pasted image 20240320183823.png",
