@@ -13,32 +13,32 @@ jekyll-theme-ObJekyll:
 
 ## Java
 
-### [Java Introduction](Java/Lecture/Java-Introduction)
+### [Java Introduction](Program/Java/Lecture/Java-Introduction)
 
-### [Unified Modeling Language](Java/Lecture/Unified-Modeling-Language)
+### [Unified Modeling Language](Program/Java/Lecture/Unified-Modeling-Language)
 
-### [Java Programming Essentials](Java/Lecture/Java-Programming-Essentials)
+### [Java Programming Essentials](Program/Java/Lecture/Java-Programming-Essentials)
 
-### [Creating Java Classes](Java/Lecture/Creating-Java-Classes)
+### [Creating Java Classes](Program/Java/Lecture/Creating-Java-Classes)
 
-### [Inheritance](Java/Lecture/Inheritance)
+### [Inheritance](Program/Java/Lecture/Inheritance)
 
-### [Abstract Methods and Classes Interfaces](Java/Lecture/Abstract-Methods-and-Classes-Interfaces)
+### [Abstract Methods and Classes Interfaces](Program/Java/Lecture/Abstract-Methods-and-Classes-Interfaces)
 
-### [Exception Handling](Java/Lecture/Exception-Handling)
+### [Exception Handling](Program/Java/Lecture/Exception-Handling)
 
-### [Array and Generics](Java/Lecture/Array-and-Generics)
+### [Array and Generics](Program/Java/Lecture/Array-and-Generics)
 
 ## Python
 
-### [Python Basic](Python/PythonBasic)
+### [Python Basic](Program/Python/PythonBasic)
 
 ## R
 
-### [R Basic](R/Basic-R)
+### [R Basic](Program/R/Basic-R)
 
-### [R Data Structure](R/R-Data-Structure)
+### [R Data Structure](Program/R/R-Data-Structure)
 
 ## C
 
-### [Macro](C/Macro)
+### [Macro](Program/C/Macro)

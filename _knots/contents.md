@@ -69,32 +69,32 @@ jekyll-theme-ObJekyll:
 
 ### <i class="fa-brands fa-java fa-fw"></i> Java
 
-#### [Java Introduction](Java/Lecture/Java-Introduction)
+#### [Java Introduction](Program/Java/Lecture/Java-Introduction)
 
-#### [Unified Modeling Language](Java/Lecture/Unified-Modeling-Language)
+#### [Unified Modeling Language](Program/Java/Lecture/Unified-Modeling-Language)
 
-#### [Java Programming Essentials](Java/Lecture/Java-Programming-Essentials)
+#### [Java Programming Essentials](Program/Java/Lecture/Java-Programming-Essentials)
 
-#### [Creating Java Classes](Java/Lecture/Creating-Java-Classes)
+#### [Creating Java Classes](Program/Java/Lecture/Creating-Java-Classes)
 
-#### [Inheritance](Java/Lecture/Inheritance)
+#### [Inheritance](Program/Java/Lecture/Inheritance)
 
-#### [Abstract Methods and Classes Interfaces](Java/Lecture/Abstract-Methods-and-Classes-Interfaces)
+#### [Abstract Methods and Classes Interfaces](Program/Java/Lecture/Abstract-Methods-and-Classes-Interfaces)
 
-#### [Exception Handling](Java/Lecture/Exception-Handling)
+#### [Exception Handling](Program/Java/Lecture/Exception-Handling)
 
-#### [Array and Generics](Java/Lecture/Array-and-Generics)
+#### [Array and Generics](Program/Java/Lecture/Array-and-Generics)
 
 ### <i class="fa-brands fa-python fa-fw"></i> Python
 
-#### [Python Basic](Python/PythonBasic)
+#### [Python Basic](Program/Python/PythonBasic)
 
 ### <i class="fa-brands fa-r-project fa-fw"></i> R
 
-#### [R Basic](R/Basic-R)
+#### [R Basic](Program/R/Basic-R)
 
-#### [R Data Structure](R/R-Data-Structure)
+#### [R Data Structure](Program/R/R-Data-Structure)
 
 ### <i class="fa-brands fa-cuttlefish fa-fw"></i> C
 
-#### [C Macro](C/Macro)
+#### [C Macro](Program/C/Macro)
