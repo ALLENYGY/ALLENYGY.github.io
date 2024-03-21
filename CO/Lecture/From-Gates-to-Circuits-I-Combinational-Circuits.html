@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    From Gates To Circuits I Combinational Circuits &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="From Gates To Circuits I Combinational Circuits" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="[[From-Gates-to-Circuits-I-Combinational-Circuits]] Basic Building Blocks 基本构造模块" />
+<meta property="og:description" content="[[From-Gates-to-Circuits-I-Combinational-Circuits]] Basic Building Blocks 基本构造模块" />
+<link rel="canonical" href="https://allenygy.github.io/CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits" />
+<meta property="og:url" content="https://allenygy.github.io/CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-03-21T19:50:17+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="From Gates To Circuits I Combinational Circuits" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-21T19:50:17+08:00","datePublished":"2024-03-21T19:50:17+08:00","description":"[[From-Gates-to-Circuits-I-Combinational-Circuits]] Basic Building Blocks 基本构造模块","headline":"From Gates To Circuits I Combinational Circuits","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-0d layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://allenygy.github.io">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://allenygy.github.io">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/contents">
+        <i class="fa-solid fa-book fa-fw"></i> 目录
+      </a>
+      
+      <a class="sidebar-nav-item" href="/OS">
+        <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DCN">
+        <i class="fa-solid fa-network-wired"></i> 计算机网络
+      </a>
+      
+      <a class="sidebar-nav-item" href="/CO">
+        <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Program">
+        <i class="fa-solid fa-code fa-fw"></i> 编程语言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Python">
+        <i class="fa-brands fa-python fa-fw"></i> Python
+      </a>
+      
+      <a class="sidebar-nav-item" href="/R">
+        <i class="fa-brands fa-r-project fa-fw"></i> R
+      </a>
+      
+      <a class="sidebar-nav-item" href="/C++">
+        <i class="fa-brands fa-cuttlefish fa-fw"></i> C++
+      </a>
+      
+      <a class="sidebar-nav-item" href="/C">
+        <i class="fa-brands fa-cuttlefish fa-fw"></i> C
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DBM">
+        <i class="fa-solid fa-database fa-fw"></i> 数据库
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/links">
+        <i class="fa-solid fa-link fa-fw"></i> 友链
+      </a>
+      
+      <a class="sidebar-nav-item" href="/comments">
+        <i class="fa-solid fa-comment fa-fw"></i> 留言
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#from-gates-to-circuits-i-combinational-circuits">From-Gates-to-Circuits-I-Combinational-Circuits</a>
+    <ol>
+      <li><a href="#basic-building-blocks-%E5%9F%BA%E6%9C%AC%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9D%97">Basic Building Blocks 基本构造模块</a></li>
+      <li><a href="#integrated-circuits-ic">Integrated Circuits (IC)</a></li>
+      <li><a href="#combinational-circuit">Combinational Circuit</a></li>
+      <li><a href="#half-adder-%E5%8D%8A%E5%8A%A0%E5%99%A8">Half Adder 半加器</a></li>
+      <li><a href="#full-adder-%E5%85%A8%E5%8A%A0%E5%99%A8">Full Adder 全加器</a></li>
+      <li><a href="#4-bit-adder-%E8%BF%9E%E9%94%81%E8%BF%9B%E4%BD%8D%E5%8A%A0%E6%B3%95%E5%99%A8">4-bit Adder 连锁进位加法器</a></li>
+      <li><a href="#decoder">Decoder</a>
+        <ol>
+          <li><a href="#a-2-4-decoder">A 2-4 Decoder</a></li>
+        </ol>
+      </li>
+      <li><a href="#multiplexer">Multiplexer</a>
+        <ol>
+          <li><a href="#4-to-1-multiplexer">4-to-1 Multiplexer</a></li>
+        </ol>
+      </li>
+      <li><a href="#difference-between-decoder-and-multiplexer">Difference between Decoder and Multiplexer</a></li>
+      <li><a href="#1-bit-alu">1-bit-ALU</a></li>
+      <li><a href="#2bit-alu">2bit-ALU</a></li>
+      <li><a href="#combination-circuit-design">Combination Circuit Design</a>
+        <ol>
+          <li><a href="#design-a-circuit-that-compares-1-bit-number-a-and-b">Design a circuit that compares 1-bit number, A and B</a>
+            <ol>
+              <li><a href="#truth-table">Truth Table</a></li>
+              <li><a href="#sum-of-product">Sum of Product</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "03/20/2024 16:27:40")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/ALLENYGY/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        20万
+        
+          
+        
+        8千
+        712字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title">From Gates To Circuits I Combinational Circuits</h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2024-03-21 18:51:00 Thursday
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：2024-01-16 21:03:00 Tuesday
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        3594字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        12分
+        
+        
+        
+        <br>
+        
+        NOTE, CO, and Lec5
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="from-gates-to-circuits-i-combinational-circuits"><a class="internal-link" href="/CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits">From-Gates-to-Circuits-I-Combinational-Circuits</a></h1>
+<h2 id="basic-building-blocks-基本构造模块"><em>Basic Building Blocks</em> <em>基本构造模块</em></h2>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Basic-Building-Blocks.png" /></p>
+
+<ul>
+  <li>AND/NAND</li>
+  <li>OR/NOR/XOR</li>
+  <li>NOT</li>
+</ul>
+
+<p>3 representations logically equivalent to one another</p>
+
+<ol>
+  <li>Truth table</li>
+  <li>Logic expression</li>
+  <li>Logic circuit</li>
+</ol>
+
+<h2 id="integrated-circuits-ic"><em>Integrated Circuits (IC)</em></h2>
+
+<p>The integration of large numbers of tiny transistors into a small chip</p>
+
+<ul>
+  <li>Two Types of Circuits
+    <ul>
+      <li>Combinational logic circuits <em>组合逻辑电路</em></li>
+      <li>Sequential logic circuits <em>时序逻辑电路</em></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="combinational-circuit"><em>Combinational Circuit</em></h2>
+
+<ul>
+  <li>Circuit with no memory <em>无内存</em></li>
+  <li>Multiple inputs, multiple outputs, one Boolean function for each output</li>
+  <li>Abstracted as a package or a black box <em>可抽象成黑箱</em></li>
+  <li>Implementation described by one of
+    <ul>
+      <li>n-input-, m-output-column truth table</li>
+      <li>boolean function for each output variable</li>
+      <li>logic diagram (possibly using other packages)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="half-adder-半加器"><em>Half Adder</em> <strong><em>半加器</em></strong></h2>
+
+<p>Only add two single bits together (a, b), s is the sum and c is the carry bit
+<em>仅实现两个单bit二进制加法</em>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Half-Adder.png" />
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Half-Adder-Circuit.png" /></p>
+
+<p><strong>Half Adder</strong>:
+半加器用于对两个单比特（二进制位）进行加法运算，产生两个输出结果：和（Sum）和进位（Carry）。
+    - 输入：两个待相加的二进制位 $A,B$
+    - 输出：
+        - 和（Sum）: $A \bigotimes B$即A和B的异或结果，表示当前位相加的结果。
+        - 进位（Carry）：$A ∧ B$，即A和B的与运算结果，表示当前位相加是否产生进位。</p>
+
+<h2 id="full-adder-全加器"><em>Full Adder</em> <strong><em>全加器</em></strong></h2>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Full-Adder-Circuit.png" /></p>
+
+<p><strong>Full Adder</strong>:
+全加器用于对三个单比特（二进制位）进行加法运算，包括两个输入位（A和B）和上一位的进位（Cin），产生两个输出结果：和（Sum）和新的进位（Carry）。
+    - 输入：三个待相加的二进制位（A、B和Cin）。
+    - 输出：
+        - 和（Sum）：(A ⊕ B) ⊕ Cin，即当前位相加的结果，考虑了上一位的进位。
+        - 进位（Carry）：(A ∧ B) ∨ ((A ⊕ B) ∧ Cin)，表示下一位相加是否产生进位，综合考虑了当前位和上一位的进位。</p>
+
+<ul>
+  <li>半加器处理两个输入位的加法运算，产生Sum和Carry</li>
+  <li>全加器处理三个输入位的加法运算，产生 和（Sum）和新的进位（Carry），能够考虑前一位的进位情况</li>
+</ul>
+
+<h2 id="4-bit-adder-连锁进位加法器"><em>4-bit Adder</em> <strong><em>连锁进位加法器</em></strong></h2>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/4-bit-adder.png" /></p>
+
+<p>feeding the Carry Out of one circuit into the Carry In of the circuit immediately to its left</p>
+
+<p>“Ripple-Carry Adder”（连锁进位加法器）之所以被称为这个名称，是因为它的进位传递机制类似于水波纹在水面扩散的方式。它是一种最基本的加法器设计，用于将两个二进制数字相加。</p>
+
+<p>在Ripple-Carry Adder中，当两个二进制数字的每一位相加后产生进位时，这个进位会向下一位的相加操作传递。这个传递的过程就像水波纹在水面扩散一样，从一位传递到下一位，依次传递到最高位。这一连串的进位传递是串行进行的，因此它的名字中包含了”Ripple”这个词。</p>
+
+<h2 id="decoder"><em>Decoder</em></h2>
+
+<p>A decoder uses the inputs and their respective values to select one specific output line.</p>
+
+<ul>
+  <li>$n$ inputs to a maximum of $2^n$ outputs</li>
+  <li>$n$个输入最多可以有$2^n$个输出</li>
+</ul>
+
+<p>All memory addresses in a computer are specified as binary numbers.
+When a memory address is referenced (whether for reading or forwriting), the computer first has to determine the actual address.
+Decoder（译为解码器）是数字电路中的一个常见组件，它用于将输入的编码信号转换成特定的输出信号，根据输入信号的不同编码，Decoder产生不同的输出信号。Decoder有多种用途，包括：</p>
+
+<ol>
+  <li>
+    <p><strong>控制逻辑</strong>：Decoder用于生成控制信号，这些信号用于控制其他数字电路的操作。例如，它可以用于选择特定的操作模式，启用或禁用特定功能等。</p>
+  </li>
+  <li>
+    <p><strong>地址解码</strong>：在微处理器和微控制器中，Decoder用于解码指令地址，以确定下一步执行的指令或操作。</p>
+  </li>
+</ol>
+
+<p>Decoder是数字电路中的一种重要元件，用于将输入信号从一种编码形式转换为另一种有意义的输出信号，从而实现数据选择、控制、解码和路由等功能。</p>
+
+<h3 id="a-2-4-decoder"><em>A 2-4 Decoder</em></h3>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/A2-4Decoder.png" /></p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/noYq2M.jpg" /></p>
+
+<p>2-4 Decoder（也称为2输入4输出解码器）是一种特定类型的解码器，它具有两个输入线和四个输出线。它的主要功能是将两个输入线的组合编码映射到四个输出线，其中每个输入组合对应一个输出线。</p>
+
+<p>一般情况下，2-4 Decoder的真值表如下：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>输入（A1, A0）</th>
+      <th>输出 D1</th>
+      <th>输出 D2</th>
+      <th>输出 D3</th>
+      <th>输出 D4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="multiplexer"><strong><em>Multiplexer</em></strong></h2>
+
+<ul>
+  <li>A multiplexer behaves like a channel selector</li>
+  <li>It selects a single output from several inputs.</li>
+  <li>The particular input chosen for output is determined by the value of the multiplexer’s control lines.</li>
+  <li>To be able to select among n inputs, log2 n control lines are needed</li>
+  <li>多个输入一个输出  由控制线路选择选择输出线路</li>
+</ul>
+
+<h3 id="4-to-1-multiplexer"><strong><em>4-to-1 Multiplexer</em></strong></h3>
+
+<p>4-to-1 Multiplexer（四选一多路器）是数字电路中的一个常见组件，用于从多个输入信号中选择一个输出信号。它有四个数据输入（通常称为I0、I1、I2和I3），两个控制输入（通常称为S0和S1），一个电源开关（E），一个输出（通常称为Y）。</p>
+
+<p>4-to-1 Multiplexer的运行原理如下：</p>
+
+<ol>
+  <li>
+    <p>控制输入：S1和S0是控制输入，它们确定要从哪一个数据输入传递到输出。这两个控制线有四种可能的组合：00、01、10和11，分别对应着选择I0、I1、I2和I3作为输出。</p>
+  </li>
+  <li>
+    <p>数据输入：有四个数据输入（I0、I1、I2和I3），每个数据输入上都可以连接一个不同的输入信号。</p>
+  </li>
+  <li>
+    <p>输出：根据S1和S0的状态，Multiplexer会选择一个数据输入作为输出。例如，如果S1=0且S0=1，那么Multiplexer会将D1的值传递到输出Y。</p>
+  </li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>$S_0,S_1$</th>
+      <th>Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>${0,0}$</td>
+      <td>$I_0$</td>
+    </tr>
+    <tr>
+      <td>${1,0}$</td>
+      <td>$I_1$</td>
+    </tr>
+    <tr>
+      <td>${0,1}$</td>
+      <td>$I_2$</td>
+    </tr>
+    <tr>
+      <td>${1,1}$</td>
+      <td>$I_3$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Multiplexer.png" />
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/4-1Multiplexer.png" /></p>
+
+<h2 id="difference-between-decoder-and-multiplexer">Difference between Decoder and Multiplexer</h2>
+
+<p><em>decoder</em>在最开始选择走哪条路
+<em>multiplexer</em>在中间选择线路通过</p>
+
+<!-- 1. ***Multiplexer***
+
+- 以 ***4-to-1 Muliplexer*** 为例
+- $S_0,S_1$ 的状态决定输出线路是$I_0,I_1,I_2,I_3$中的哪一个
+- $I_0,I_1,I_2,I_3$本身就有特定的意义
+
+2. ***Decoder***
+
+- 用于将输入信号从一种编码形式转换为另一种有意义的输出信号
+  - $D_0,D_1,D_2,D_3$本质是相同的，其接通的线路使有了意义 -->
+
+<h2 id="1-bit-alu"><strong><em>1-bit-ALU</em></strong></h2>
+
+<ul>
+  <li>实现4个功能 AND OR NOT ADD</li>
+  <li>如图F0,F1进入decoder 选择将要实现的功能</li>
+  <li>右下角实现 ADD
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/1-bitALU.png" /></li>
+</ul>
+
+<h2 id="2bit-alu"><strong><em>2bit-ALU</em></strong></h2>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/2-bit-ALU.png" /></p>
+
+<h2 id="combination-circuit-design">Combination Circuit Design</h2>
+
+<ol>
+  <li>From the design specification, obtain the truth table</li>
+  <li>From the truth table, derive the Sum of Products Boolean Expression.</li>
+  <li>Use Karnaugh Map to minimize the Boolean expression.</li>
+  <li>Use logic gates to implement the simplified Boolean Expression.</li>
+  <li>Verify the result.</li>
+</ol>
+
+<h3 id="design-a-circuit-that-compares-1-bit-number-a-and-b">Design a circuit that compares 1-bit number, A and B</h3>
+
+<ul>
+  <li>Three outputs:
+    <ul>
+      <li>G (“Greater”) should be 1 only when A &gt; B</li>
+      <li>E (“Equal”) should be 1 only when A = B</li>
+      <li>L (“Lesser”) should be 1 only when A &lt; B</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="truth-table">Truth Table</h4>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/NaX6TI.jpg" alt="NaX6TI" /></p>
+
+<h4 id="sum-of-product">Sum of Product</h4>
+
+<ul>
+  <li>G: $A \overline B$</li>
+  <li>E: $\overline A \overline B +AB = (\overline A+B)(\overline B+A)$</li>
+  <li>L: $\overline A B$</li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/vH5EJb.jpg" alt="vH5EJb" /></p>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits">From Gates To Circuits I Combinational Circuits</a><br>
+                    <!-- <div style="font-size: 0.9em">[[From-Gates-to-Circuits-I-Combinational-Circuits]]
+Basic Building Blocks 基本构造模块
+</div> -->
+                </div>
+                
+            </div>
+            
+        </side>
+    </div>
+</div>
+
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+<style>
+  pre.language-vega-lite,
+  code.language-vega-lite {
+    display: none;
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-vega-lite"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+        vegaEmbed(m, JSON.parse(x.textContent));
+      }'
+></script>
+
+
+
+
+<style>
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+  @media only screen {
+    .mermaid {
+      overflow: hidden hidden;
+      max-width: 100%;
+      max-height: 66.6vh;
+    }
+    .mermaid {
+      overflow: auto auto;
+    }
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-mermaid"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        m.classList.add("mermaid");
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+      }'
+></script>
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+

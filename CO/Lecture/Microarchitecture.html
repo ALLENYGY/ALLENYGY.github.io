@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    Microarchitecture &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Microarchitecture" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="[[Microarchitecture]]" />
+<meta property="og:description" content="[[Microarchitecture]]" />
+<link rel="canonical" href="https://allenygy.github.io/CO/Lecture/Microarchitecture" />
+<meta property="og:url" content="https://allenygy.github.io/CO/Lecture/Microarchitecture" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-03-21T19:50:17+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Microarchitecture" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-21T19:50:17+08:00","datePublished":"2024-03-21T19:50:17+08:00","description":"[[Microarchitecture]]","headline":"Microarchitecture","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/CO/Lecture/Microarchitecture"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/CO/Lecture/Microarchitecture"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-0d layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://allenygy.github.io">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://allenygy.github.io">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/contents">
+        <i class="fa-solid fa-book fa-fw"></i> 目录
+      </a>
+      
+      <a class="sidebar-nav-item" href="/OS">
+        <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DCN">
+        <i class="fa-solid fa-network-wired"></i> 计算机网络
+      </a>
+      
+      <a class="sidebar-nav-item" href="/CO">
+        <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Program">
+        <i class="fa-solid fa-code fa-fw"></i> 编程语言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Python">
+        <i class="fa-brands fa-python fa-fw"></i> Python
+      </a>
+      
+      <a class="sidebar-nav-item" href="/R">
+        <i class="fa-brands fa-r-project fa-fw"></i> R
+      </a>
+      
+      <a class="sidebar-nav-item" href="/C++">
+        <i class="fa-brands fa-cuttlefish fa-fw"></i> C++
+      </a>
+      
+      <a class="sidebar-nav-item" href="/C">
+        <i class="fa-brands fa-cuttlefish fa-fw"></i> C
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DBM">
+        <i class="fa-solid fa-database fa-fw"></i> 数据库
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/links">
+        <i class="fa-solid fa-link fa-fw"></i> 友链
+      </a>
+      
+      <a class="sidebar-nav-item" href="/comments">
+        <i class="fa-solid fa-comment fa-fw"></i> 留言
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#microarchitecture">Microarchitecture</a>
+    <ol>
+      <li><a href="#von-neumann-architecture">Von Neumann architecture</a></li>
+      <li><a href="#memory">Memory</a>
+        <ol>
+          <li><a href="#interface-to-memory">Interface to Memory</a></li>
+        </ol>
+      </li>
+      <li><a href="#cpu">CPU</a>
+        <ol>
+          <li><a href="#register-register-file">Register Register File</a></li>
+          <li><a href="#alu-arithmetic-logic-unit">ALU Arithmetic Logic Unit</a></li>
+          <li><a href="#cu">CU</a></li>
+        </ol>
+      </li>
+      <li><a href="#io">I/O</a></li>
+      <li><a href="#instruction">Instruction</a>
+        <ol>
+          <li><a href="#lc-3s-add-instruction">Lc-3’s ADD Instruction</a></li>
+          <li><a href="#lc-3s-ldr-instruction">LC-3’s LDR Instruction</a></li>
+        </ol>
+      </li>
+      <li><a href="#instruction-processsing">Instruction processsing</a>
+        <ol>
+          <li><a href="#fetch">Fetch</a></li>
+          <li><a href="#decode">Decode</a></li>
+          <li><a href="#evaluate-address-%E8%AE%A1%E7%AE%97%E5%9C%B0%E5%9D%80">Evaluate Address 计算地址</a></li>
+          <li><a href="#fetch-operands">Fetch Operands</a></li>
+          <li><a href="#execution">Execution</a></li>
+          <li><a href="#store">Store</a></li>
+        </ol>
+      </li>
+      <li><a href="#changing-the-sequence-of-execution">Changing the Sequence of Execution</a>
+        <ol>
+          <li><a href="#lc-3s-jump-instruction">LC-3’s Jump Instruction</a></li>
+          <li><a href="#driving-force-the-clock">Driving Force: the Clock</a></li>
+        </ol>
+      </li>
+      <li><a href="#instruction-summary">Instruction summary</a></li>
+      <li><a href="#micro-architecture-level">Micro-Architecture Level</a></li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "03/20/2024 16:27:40")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/ALLENYGY/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        20万
+        
+          
+        
+        7千
+        599字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title">Microarchitecture</h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2024-03-21 18:54:00 Thursday
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：2024-01-16 21:03:00 Tuesday
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        5554字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        19分
+        
+        
+        
+        <br>
+        
+        NOTE, CO, and Lec8
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="microarchitecture"><a class="internal-link" href="/CO/Lecture/Microarchitecture">Microarchitecture</a></h1>
+
+<ul>
+  <li>
+    <p>Microarchitecture connects circuits and ISA together.
+ISA = Instruction Set Architecture</p>
+  </li>
+  <li>ISA specifies what hardware does, but not how
+    <ul>
+      <li>ISA defines the instruction code</li>
+    </ul>
+  </li>
+  <li>Microarchitecture specifies how it does it
+    <ul>
+      <li>Microarchitecture determine how it work it</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Microarchitecture.png" /></p>
+
+<ul>
+  <li>The ISA is the interface of a processor as seen by an assembly language programmer
+or compiler writer</li>
+  <li>Micro-architecture transfers the ISA into an implementation</li>
+  <li>For a given ISA, there might be many different microarchitectures</li>
+  <li>An architecture is a collection of circuits connected</li>
+</ul>
+
+<h2 id="von-neumann-architecture">Von Neumann architecture</h2>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/John_von_Neumann.png" width="30%" /><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/VNA.png" alt="VNA" /></p>
+
+<ul>
+  <li>Memory</li>
+  <li>CPU
+    <ul>
+      <li>Register</li>
+      <li>ALU</li>
+      <li>CU</li>
+    </ul>
+  </li>
+  <li>I/O</li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Stored-Program-Computer.png" /></p>
+
+<ul>
+  <li>Memory stores not only data, but coded instructions that make up a computer program</li>
+  <li>CPU fetches and executes – interprets - successive instructions of the program</li>
+  <li>Program is simply data for the interpreter – as in a Universal Turing Machine!</li>
+  <li>Single expandable resource pool – main memory</li>
+  <li>constrains both data and program size
+<!-- Take Lc-3 for example --></li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/Lc-3.png" /></p>
+
+<h2 id="memory">Memory</h2>
+
+<ul>
+  <li>Address space $2^{16}$
+    <ul>
+      <li>means: there are $2^{16}$ block</li>
+    </ul>
+  </li>
+  <li>Addressability $16$</li>
+  <li>Each block store 16-bit instruction
+    <ul>
+      <li>Each block represent by a Hexadecimal code
+        <ul>
+          <li>x0000</li>
+          <li>x0001</li>
+          <li>….</li>
+        </ul>
+      </li>
+      <li>Address 逐行递增</li>
+    </ul>
+  </li>
+  <li>Memory is store element</li>
+  <li>Basic Operations
+    <ul>
+      <li>LOAD
+        <ul>
+          <li>read a value from a memory location</li>
+        </ul>
+      </li>
+      <li>STORE
+        <ul>
+          <li>write a value to a memory location
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/Memory.png" /></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="interface-to-memory">Interface to Memory</h3>
+
+<ol>
+  <li>MAR: Memory Address Register (D flip-flops)</li>
+  <li>MDR: Memory Data Register (D flip-flops)
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/MAR-MDR.png" /></li>
+</ol>
+
+<ul>
+  <li>To read a location (A):
+    <ol>
+      <li>Write the address (A) into the MAR.</li>
+      <li>Send a “read” signal to the memory.</li>
+      <li>Read the data from MDR.</li>
+    </ol>
+  </li>
+  <li>To write a value (X) to a location (A):
+    <ol>
+      <li>Write the data (X) to the MDR.</li>
+      <li>Write the address (A) into the MAR.</li>
+      <li>Send a “write” signal to the memory.</li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="cpu">CPU</h2>
+
+<ul>
+  <li>The brain of the computer</li>
+  <li>It is the part that actually executes the machine instructions</li>
+  <li>Inside the CPU
+    <ul>
+      <li>Data path
+        <ul>
+          <li>Registers</li>
+        </ul>
+      </li>
+      <li>Control Path
+        <ul>
+          <li>IR (instruction register), PC (program counter), FSM (finite state machine)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="register-register-file">Register <em>Register File</em></h3>
+
+<ul>
+  <li>Register is store element
+    <ul>
+      <li>Achieved by D filp-flop</li>
+    </ul>
+  </li>
+  <li>8 Register
+    <ul>
+      <li>Each register represent by 3 bit to record its address
+        <ul>
+          <li>000 $R_0$</li>
+          <li>001 $R_1$</li>
+          <li>010 $R_2$</li>
+          <li>…</li>
+          <li>110 $R_6$</li>
+          <li>111 $R_7$</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Source Register 1 $SR_1$</li>
+  <li>Source Register 2 $SR_2$</li>
+  <li>Destination Register $DR$</li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Register.png" alt="Register" /></p>
+
+<ul>
+  <li>Why register?
+Closer to processing unit, allow quicker access to intermediate results instead of going to memory</li>
+</ul>
+
+<h3 id="alu-arithmetic-logic-unit">ALU <em>Arithmetic Logic Unit</em></h3>
+
+<p>Perform arithmetic and logic operations (AND, NOT, ADD) on values stored in registers</p>
+
+<ul>
+  <li>ADD</li>
+  <li>AND</li>
+  <li>NOT A</li>
+  <li>PASS A</li>
+</ul>
+
+<h3 id="cu">CU</h3>
+
+<p>Control Unit: a finite state machine coordinates execution of the program
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/CU.png" />
+IR Get the Instruction from Memory through PC’s address</p>
+
+<ul>
+  <li>PC <em>Program Counter</em>
+    <ul>
+      <li>It stores the next instruction address</li>
+      <li>In each clock, PC+=1</li>
+      <li>In x86 architecture also called IP <em>Instruction Pointer</em></li>
+    </ul>
+  </li>
+  <li>IR <em>Instruction Register</em>
+    <ul>
+      <li>Current Instruction</li>
+    </ul>
+  </li>
+  <li>Control Unit as a Finite State Machine
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/CU-FSM.png" /></li>
+</ul>
+
+<h2 id="io">I/O</h2>
+
+<ul>
+  <li>Devices for getting data into and out of memory</li>
+  <li>Each device has its own interface, usually a set of registers like the memory’s MAR and MDR
+    <ul>
+      <li>keyboard: data register (KBDR) and status register (KBSR)</li>
+      <li>console: data register (DDR) and status register (DSR)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="instruction">Instruction</h2>
+
+<ul>
+  <li>The instruction is the most basic unit of computer processing.</li>
+  <li>One instruction specifies two things:
+    <ul>
+      <li>opcode: operation to be performed</li>
+      <li>operands: data/locations to be used for operation</li>
+    </ul>
+  </li>
+  <li>An instruction is encoded as a sequence of bits (just like data!)</li>
+  <li>Control unit interprets instruction</li>
+  <li>A computer’s instructions and their formats is known as its Instruction Set Architecture (ISA).</li>
+</ul>
+
+<h3 id="lc-3s-add-instruction">Lc-3’s ADD Instruction</h3>
+
+<ul>
+  <li>opcode: 0001</li>
+  <li>steering bit IR[5]</li>
+</ul>
+
+<p>If IR[5]=0</p>
+
+<pre><code class="language-ISA">ADD DST SR1 000 SR2
+0001 xxx xxx 000 xxx
+</code></pre>
+
+<ul>
+  <li>operands: Src1,Src2,Dst
+    <ul>
+      <li>Src1+Src2-&gt;Dst</li>
+    </ul>
+  </li>
+</ul>
+
+<p>If IR[5]=1</p>
+
+<pre><code class="language-ISA">ADD DST SR1 1 xxxxx
+0001 xxx xxx 1 xxxxx
+</code></pre>
+
+<ul>
+  <li>operands: Src1,Dst,xxxxx
+    <ul>
+      <li>Src1+xxxxx-&gt;Dst</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="lc-3s-ldr-instruction">LC-3’s LDR Instruction</h3>
+
+<ul>
+  <li>opcode: 0110</li>
+  <li>
+    <p>operands: Src,Dst</p>
+  </li>
+  <li>Load the value in memory location Src into register Dst</li>
+  <li>Move [Base + Offset] to Dst</li>
+  <li>Load memory content at address (R3 + 6) to R2</li>
+</ul>
+
+<pre><code class="language-ISA">LDR DST SRC offset
+0110 xxx xxx xxxxxx
+</code></pre>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/LDR.png" /></p>
+
+<h2 id="instruction-processsing">Instruction processsing</h2>
+
+<ul>
+  <li><strong>Fetch</strong></li>
+  <li><strong>Decode</strong></li>
+  <li><strong>Evaluate Address</strong></li>
+  <li><strong>Fetch operands</strong></li>
+  <li><strong>Execute</strong></li>
+  <li><strong>Store result</strong></li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Lc-3/instruction-process.png" /></p>
+
+<h3 id="fetch">Fetch</h3>
+
+<p>PC-MAR-MDR-IR</p>
+
+<p>Load next instruction (at address stored in PC)
+from memory into Instruction Register (IR).</p>
+
+<ul>
+  <li>Load contents of PC into MAR.</li>
+  <li>Send “read” signal to memory.</li>
+  <li>Read contents of MDR, store in IR.</li>
+</ul>
+
+<p>Then increment PC, so that it points to the next instruction in sequence.</p>
+
+<ul>
+  <li>PC becomes PC+1.</li>
+</ul>
+
+<h3 id="decode">Decode</h3>
+
+<p>First identify the opcode.</p>
+
+<ul>
+  <li>In LC-3, this is always the first four bits of instruction.</li>
+  <li>A 4-to-16 decoder asserts a control line corresponding to the desired opcode.</li>
+</ul>
+
+<h3 id="evaluate-address-计算地址">Evaluate Address <em>计算地址</em></h3>
+
+<ul>
+  <li>For instructions that require memory access, compute address used for access.</li>
+  <li>Examples:
+    <ul>
+      <li>add offset to base register (as in LDR)</li>
+      <li>add offset to PC (or to part of PC)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="fetch-operands">Fetch Operands</h3>
+
+<ul>
+  <li>Obtain source operands needed to perform operation.</li>
+  <li>Examples:
+    <ul>
+      <li>load data from memory (LDR)</li>
+      <li>read data from register file (ADD)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="execution">Execution</h3>
+
+<ul>
+  <li>Perform the operation, using the source operands.</li>
+  <li>Examples:
+    <ul>
+      <li>send operands to ALU and assert ADD signal</li>
+      <li>do nothing (e.g., for loads and stores)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="store">Store</h3>
+
+<ul>
+  <li>Write results to destination (register or memory)</li>
+  <li>Examples:
+    <ul>
+      <li>result of ADD is placed in destination register</li>
+      <li>result of memory load is placed in destination register</li>
+    </ul>
+  </li>
+  <li>for store instruction, data is stored to memory</li>
+</ul>
+
+<h2 id="changing-the-sequence-of-execution">Changing the Sequence of Execution</h2>
+
+<ul>
+  <li>In the FETCH phase, PC is incremented by 1 automatically (counter)</li>
+  <li>Other Sequence
+    <ul>
+      <li>if-then, loop, function call</li>
+      <li>Achieved by special instruction that changes the content of PC
+        <ul>
+          <li>Jumps (unconditionals)</li>
+          <li>Branches (conditional)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="lc-3s-jump-instruction">LC-3’s Jump Instruction</h3>
+
+<p>Set the PC to the value obtained by adding an offset to a register.</p>
+<pre><code class="language-ISA">JMPR 000 BASE offset
+1100 000 011 000110
+</code></pre>
+<p>Add the value of 6 (offset) to the contents of R3 (Base),and load the result into the PC</p>
+
+<p>This becomes the address of the next instruction to fetch.</p>
+
+<h3 id="driving-force-the-clock">Driving Force: the Clock</h3>
+
+<p>The clock is a signal that keeps the control unit moving.</p>
+
+<ul>
+  <li>
+    <p>At each clock “tick,” control unit moves to the next machine cycle – may be next instruction or next phase of current instruction.</p>
+  </li>
+  <li>
+    <p>Stopping the Computer</p>
+    <ul>
+      <li>Stopping the instruction cycle requires stopping the clock</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="instruction-summary">Instruction summary</h2>
+
+<ul>
+  <li>Three basic kinds of instructions:
+    <ul>
+      <li>computational instructions (ADD, AND, …)</li>
+      <li>data movement instructions (LD, ST, …)</li>
+      <li>control instructions (JMP, BRnz, …)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="micro-architecture-level">Micro-Architecture Level</h2>
+
+<ul>
+  <li>Computer = processing unit + memory system + I/O
+    <ul>
+      <li>Processing unit = control + data path
+        <ul>
+          <li>Control = FSM <em>Finite state machine</em>
+            <ul>
+              <li>Inputs = machine instruction,datapath condition</li>
+              <li>Outputs = register transfer control signal, ALU operation codes</li>
+              <li>Instruction interpretation = instruction fetch, decode, execute, write</li>
+            </ul>
+          </li>
+          <li>Datapath = function units +registers
+            <ul>
+              <li>All logic used to process information
+                <ul>
+                  <li>Functional units = ALU, multipliers,dividers…</li>
+                  <li>Register = PC <em>program counter</em>, IR <em>instruction register</em>, storage registers</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/CO/Lecture/Microarchitecture">Microarchitecture</a><br>
+                    <!-- <div style="font-size: 0.9em">[[Microarchitecture]]
+</div> -->
+                </div>
+                
+            </div>
+            
+        </side>
+    </div>
+</div>
+
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+<style>
+  pre.language-vega-lite,
+  code.language-vega-lite {
+    display: none;
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-vega-lite"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+        vegaEmbed(m, JSON.parse(x.textContent));
+      }'
+></script>
+
+
+
+
+<style>
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+  @media only screen {
+    .mermaid {
+      overflow: hidden hidden;
+      max-width: 100%;
+      max-height: 66.6vh;
+    }
+    .mermaid {
+      overflow: auto auto;
+    }
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-mermaid"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        m.classList.add("mermaid");
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+      }'
+></script>
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+
