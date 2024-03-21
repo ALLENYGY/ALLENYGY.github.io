@@ -16,26 +16,26 @@ jekyll-theme-ObJekyll:
 
 ## <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
 
-#### - [What-is-a-Computer](Lecture/What-is-a-Computer)
+#### - [What-is-a-Computer](CO/Lecture/What-is-a-Computer)
 
-#### - [Bits: Data Representation and Manipulation](Lecture/Bits-Data-Representation-and-Manipulation)
+#### - [Bits: Data Representation and Manipulation](CO/Lecture/Bits-Data-Representation-and-Manipulation)
 
-#### - [Boolean Algebra: From Bits to Logic](Lecture/Boolean-Algebra-From-Bits-to-Logic)
+#### - [Boolean Algebra: From Bits to Logic](CO/Lecture/Boolean-Algebra-From-Bits-to-Logic)
 
-#### - [From Transistors to Gates](Lecture/From-Transistors-to-Gates)
+#### - [From Transistors to Gates](CO/Lecture/From-Transistors-to-Gates)
 
 <!-- .slide vertical=true -->
 
 ## <i class="fa-solid fa-atom fa-fw"></i>  计算机组成原理
 
-#### - [From Gates to Circuits I: Combinational Circuits](Lecture/From-Gates-to-Circuits-I-Combinational-Circuits)
+#### - [From Gates to Circuits I: Combinational Circuits](CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits)
 
-#### - [From Gates to Circuits II: Sequential Circuits](Lecture/From-Gates-to-Circuits-II-Sequential-Circuits)
+#### - [From Gates to Circuits II: Sequential Circuits](CO/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits)
 
-#### - [Finite State Machine](Lecture/Finite-State-Machine)
+#### - [Finite State Machine](CO/Lecture/Finite-State-Machine)
 
-#### - [Circuit Design](Lecture/Lecture/CircuitDesign)
+#### - [Circuit Design](CO/Lecture/Lecture/CircuitDesign)
 
-#### - [Microarchitecture](Lecture/Microarchitecture)
+#### - [Microarchitecture](CO/Lecture/Microarchitecture)
 
-#### - [The LC-3 ISA](Lecture/ISA)
+#### - [The LC-3 ISA](CO/Lecture/ISA)
