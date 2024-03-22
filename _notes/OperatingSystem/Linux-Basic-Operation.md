@@ -1,6 +1,7 @@
 ---
 Create Time: 29th February 2024
 Title: "[[Linux-Basic-Operation]]"
+status: DONE
 Author:
   - AllenYGY
 tags:
@@ -8,8 +9,8 @@ tags:
   - NOTE
   - Linux
   - Basic
-created: 2024-03-20T17:14
-updated: 2024-03-21T11:55
+created: 2024-03-20
+updated: 2024-03-22
 ---
 
 # [[Linux-Basic-Operation]]

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e931daee351fc34d",
+        "id": "84007b075b92c7ee",
         "type": "tabs",
         "children": [
           {
-            "id": "56866e1fb23b2af3",
+            "id": "f9770d63cbb17e3a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WorkView.md",
+                "file": "OperatingSystem/OperatingSystem.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -106,7 +106,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -126,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WorkView.md",
+                "file": "OperatingSystem/OperatingSystem.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WorkView.md",
+                "file": "OperatingSystem/OperatingSystem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WorkView.md"
+                "file": "OperatingSystem/OperatingSystem.md"
               }
             }
           }
@@ -191,7 +192,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 359.5
+    "width": 359.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -208,14 +210,28 @@
       "templater-obsidian:Templater": false,
       "homepage:Open homepage": false,
       "remotely-save:Remotely Save": false,
-      "obsidian-map-view:Open map view": false
+      "obsidian-map-view:Open map view": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "56866e1fb23b2af3",
+  "active": "f9770d63cbb17e3a",
   "lastOpenFiles": [
-    "Contest/Overview.md",
     "WorkView.md",
+    "OperatingSystem/OperatingSystem.md",
+    "OperatingSystem/Operating-System-Introduction.md",
+    "OperatingSystem/Operating-System-Structure.md",
+    "Network/Data-Communication-Network.md",
+    "OperatingSystem/Linux-Basic-Operation.md",
     "Home.md",
+    "Obsidian/AdvancedSlides/QuickStart.md",
+    "Obsidian/AdvancedSlides/AdvancedSlide.md",
+    "Obsidian/Templaters/Note.md",
+    "Record/Weekly/2024-W12.md",
+    "Math/Math.md",
+    "Record/Daily/2024-03-21.md",
+    "Obsidian/Templaters/Daily.md",
+    "OperatingSystem/NJU-OS-PA0.md",
+    "Contest/Overview.md",
     "CO/CO.md",
     "DataAnalysis/HODA/HODA.md",
     "Tools/Conda/Conda.md",
@@ -226,19 +242,6 @@
     "Contest/Lanqiao/Week-1.md",
     "Contest/Leetcode/Biweekly-contest-122.md",
     "Contest/Leetcode/Biweekly-contest-123.md",
-    "Contest/Leetcode/Weekly-contest-381.md",
-    "Algorithm/Recursion/Recursion-BinaryTree.md",
-    "Algorithm/SlidingWindow.md",
-    "Algorithm/NumberTheory/高精度计算.md",
-    "Algorithm/NumberTheory/素数筛.md",
-    "Algorithm/DSA/Tree.md",
-    "Algorithm/DAA/Algorithm/Divide&Conquer.md",
-    "Algorithm/DAA/Algorithm/Enumeration.md",
-    "Algorithm/DAA/Algorithm/Sort.md",
-    "Algorithm/DAA/Algorithm/Union-Find.md",
-    "Algorithm/DSA/B+Tree.md",
-    "Algorithm/DSA/AVL.md",
-    "FixIncome/FixedIncomeOverview.md",
     "ProgramLanguage",
     "Program/Java/Lecture",
     "Pasted image 20240320183823.png",

@@ -4,9 +4,10 @@ Title: Daily Diary [<% tp.date.now() %>]
 status: DONE
 tags:
   - Daily-Record
-archived: false
 Author:
   - AllenYGY
+created: 2024-02-22
+updated: 2024-03-22
 ---
 <% tp.web.daily_quote()%>
 
@@ -15,5 +16,3 @@ Author:
 ## Task List
 
 ## What happened today?
-
-## What about tomorrow？

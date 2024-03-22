@@ -1,6 +1,7 @@
 ---
 Create Time: 20th February 2024
 Title: "[[NJU-OS-PA0]]"
+status: DONE
 Author:
   - AllenYGY
 tags:
@@ -10,7 +11,7 @@ tags:
   - Debian
   - NJU
 created: 2024-03-20T17:14
-updated: 2024-03-21T11:56
+updated: 2024-03-22
 ---
 
 # [[NJU-OS-PA0]]

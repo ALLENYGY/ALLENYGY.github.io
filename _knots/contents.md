@@ -23,7 +23,7 @@ jekyll-theme-ObJekyll:
 
 ## <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
 
-#### - [Operating System Introduction](OperatingSystem/Introduction)
+#### - [Operating System Introduction](OperatingSystem/Operating-System-Introduction)
 
 #### - [Operating System Structure](OperatingSystem/Operating-System-Structure)
 

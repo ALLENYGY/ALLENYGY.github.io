@@ -8,15 +8,57 @@
   "collapse-color-groups": true,
   "colorGroups": [
     {
+      "query": "tag:#CO  ",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
       "query": "tag:#OS  ",
       "color": {
         "a": 1,
-        "rgb": 6078166
+        "rgb": 14069084
+      }
+    },
+    {
+      "query": "tag:#Git  ",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
+      }
+    },
+    {
+      "query": "tag:DBM",
+      "color": {
+        "a": 1,
+        "rgb": 6084188
+      }
+    },
+    {
+      "query": "tag:#Network",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
+    },
+    {
+      "query": "tag:#Program  ",
+      "color": {
+        "a": 1,
+        "rgb": 6073814
+      }
+    },
+    {
+      "query": "tag:#Navigation  ",
+      "color": {
+        "a": 1,
+        "rgb": 14054492
       }
     }
   ],
   "collapse-display": true,
-  "showArrow": false,
+  "showArrow": true,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
@@ -25,6 +67,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.12305182803037261,
+  "scale": 0.1774320459719663,
   "close": true
 }
