@@ -1,6 +1,6 @@
 ---
-layout: page
-title: 友链
+layout: home
+title: 
 created: 2024-03-20
 updated: 2024-03-22
 permalink: /links
@@ -13,6 +13,7 @@ jekyll-theme-ObJekyll:
       enable: false
 ---
 
+## <i class="fa-solid fa-user-friends fa-fw"></i> 友链
 
-- [Open17](https://blog.open17.vip)
-- [Harkerbest](https://www.harkerbest.cn/)
+### - [Open17](https://blog.open17.vip)
+### - [Harkerbest](https://www.harkerbest.cn/)

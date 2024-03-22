@@ -94,14 +94,13 @@ defaults:
               # Tool
               - title: <i class="fa-solid fa-tools fa-fw"></i> 编程素养
                 href: /Tools
-
               - title: <i class="fa-solid fa-archive fa-fw"></i> 归档
                 href: /archive
               - title: <i class="fa-solid fa-tags fa-fw"></i> 标签
                 href: /tags
               - title: <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
                 href: /map
-              - title: <i class="fa-solid fa-link fa-fw"></i> 友链
+              - title: <i class="fa-solid fa-user-friends fa-fw"></i> 友链
                 href: /links
               - title: <i class="fa-solid fa-comment fa-fw"></i> 留言
                 href: /comments
