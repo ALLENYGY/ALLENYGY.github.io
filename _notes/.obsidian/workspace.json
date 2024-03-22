@@ -4,16 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "84007b075b92c7ee",
+        "id": "e9648e7b18540b04",
         "type": "tabs",
         "children": [
           {
-            "id": "f9770d63cbb17e3a",
+            "id": "b644a97bcc2d7cdb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OperatingSystem/OperatingSystem.md",
+                "file": "OperatingSystem/Threads.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "564307f81bce2e97",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f7278fb489fe12dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OperatingSystem/Threads.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -111,7 +130,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346.5
+    "width": 346.5,
+    "collapsed": true
   },
   "right": {
     "id": "6c77faef2551f814",
@@ -127,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OperatingSystem/OperatingSystem.md",
+                "file": "OperatingSystem/Threads.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +191,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OperatingSystem/OperatingSystem.md",
+                "file": "OperatingSystem/Threads.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +203,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OperatingSystem/OperatingSystem.md"
+                "file": "OperatingSystem/Threads.md"
               }
             }
           }
@@ -211,17 +231,24 @@
       "homepage:Open homepage": false,
       "remotely-save:Remotely Save": false,
       "obsidian-map-view:Open map view": false,
-      "obsidian-advanced-slides:Show Slide Preview": false
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "audio-recorder:Start/stop recording": false,
+      "markdown-importer:Open format converter": false,
+      "random-note:Open random note": false
     }
   },
-  "active": "f9770d63cbb17e3a",
+  "active": "b644a97bcc2d7cdb",
   "lastOpenFiles": [
-    "WorkView.md",
+    "OperatingSystem/Process.md",
     "OperatingSystem/OperatingSystem.md",
-    "OperatingSystem/Operating-System-Introduction.md",
     "OperatingSystem/Operating-System-Structure.md",
-    "Network/Data-Communication-Network.md",
+    "OperatingSystem/Operating-System-Introduction.md",
+    "OperatingSystem/NJU-OS-PA0.md",
     "OperatingSystem/Linux-Basic-Operation.md",
+    "OperatingSystem/CPU-Scheduling.md",
+    "OperatingSystem/Threads.md",
+    "WorkView.md",
+    "Network/Data-Communication-Network.md",
     "Home.md",
     "Obsidian/AdvancedSlides/QuickStart.md",
     "Obsidian/AdvancedSlides/AdvancedSlide.md",
@@ -230,7 +257,6 @@
     "Math/Math.md",
     "Record/Daily/2024-03-21.md",
     "Obsidian/Templaters/Daily.md",
-    "OperatingSystem/NJU-OS-PA0.md",
     "Contest/Overview.md",
     "CO/CO.md",
     "DataAnalysis/HODA/HODA.md",
@@ -239,9 +265,6 @@
     "Obsidian/Obsidian-Git/Obsidian-Git-Operation.md",
     "Algorithm/DAA/Assignment/Assignment-0.md",
     "Algorithm/DAA/Tutorial/Tutorial-1.md",
-    "Contest/Lanqiao/Week-1.md",
-    "Contest/Leetcode/Biweekly-contest-122.md",
-    "Contest/Leetcode/Biweekly-contest-123.md",
     "ProgramLanguage",
     "Program/Java/Lecture",
     "Pasted image 20240320183823.png",

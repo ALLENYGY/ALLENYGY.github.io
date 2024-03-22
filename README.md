@@ -1,3 +1,15 @@
+---
+layout: home
+title: 
+created: 2024-03-20
+updated: 2024-03-22
+permalink: /contents
+jekyll-theme-ObJekyll:
+  default:
+    sidebar:
+      open: true
+---
+
 # AllenYGY
 
 ## 个人小站

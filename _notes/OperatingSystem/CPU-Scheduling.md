@@ -6,11 +6,10 @@ tags:
   - OS
   - NOTE
   - Lec5
-  - UIC
 Author:
   - AllenYGY
 created: 2024-03-20T17:14
-updated: 2024-03-21T21:01
+updated: 2024-03-22
 ---
 
 # [[CPU-Scheduling]]

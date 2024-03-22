@@ -14,7 +14,10 @@
   "command-palette",
   "editor-status",
   "bookmarks",
+  "markdown-importer",
+  "random-note",
   "outline",
   "word-count",
+  "audio-recorder",
   "file-recovery"
 ]
