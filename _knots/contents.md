@@ -208,7 +208,7 @@ jekyll-theme-ObJekyll:
 
 <!-- .slide -->
 
-## <i class="fa-solid fa-tools fa-git"></i> Git
+## <i class="fa-solid fa-tools fa-fw"></i> Git
 
 ### - [Git Introduction](Tools/Git/Git-Introduction)
 
