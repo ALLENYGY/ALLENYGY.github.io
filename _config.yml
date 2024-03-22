@@ -94,7 +94,7 @@ defaults:
               # Tool
               - title: <i class="fa-solid fa-tools fa-fw"></i> 编程素养
                 href: /Tools
-              - title: <i class="fa-solid fa-archive fa-fw"></i> 归档
+              - title: <i class="fa-solid fa-archive fa-fw"></i> 时间线
                 href: /archive
               - title: <i class="fa-solid fa-tags fa-fw"></i> 标签
                 href: /tags
