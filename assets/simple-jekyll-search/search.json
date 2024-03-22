@@ -607,6 +607,17 @@
     } ,
   
     {
+      "title"    : "Data Communication Network",
+      "category" : "",
+      "tags"     : "Navigation",
+      "date"     : "2024-03-22",
+      
+      
+      "url"      : "/Network/Data-Communication-Network"
+      
+    } ,
+  
+    {
       "title"    : "Data Link Layer",
       "category" : "",
       "tags"     : "NOTE, Network, Lec3, UIC",
@@ -673,21 +684,10 @@
     } ,
   
     {
-      "title"    : "Introduction",
-      "category" : "",
-      "tags"     : "OS, NOTE, Introduction, Lec1",
-      "date"     : "2024-01-20T17:14",
-      
-      
-      "url"      : "/OperatingSystem/Introduction"
-      
-    } ,
-  
-    {
       "title"    : "Linux Basic Operation",
       "category" : "",
       "tags"     : "OS, NOTE, Linux, Basic",
-      "date"     : "2024-03-20T17:14",
+      "date"     : "2024-03-20",
       
       
       "url"      : "/OperatingSystem/Linux-Basic-Operation"
@@ -706,6 +706,17 @@
     } ,
   
     {
+      "title"    : "Operating System Introduction",
+      "category" : "",
+      "tags"     : "OS, NOTE, Introduction, Lec1",
+      "date"     : "2024-01-20T17:14",
+      
+      
+      "url"      : "/OperatingSystem/Operating-System-Introduction"
+      
+    } ,
+  
+    {
       "title"    : "Operating System Structure",
       "category" : "",
       "tags"     : "OS, NOTE, Lec2",
@@ -713,6 +724,17 @@
       
       
       "url"      : "/OperatingSystem/Operating-System-Structure"
+      
+    } ,
+  
+    {
+      "title"    : "Operatingsystem",
+      "category" : "",
+      "tags"     : "Navigation",
+      "date"     : "2024-03-22",
+      
+      
+      "url"      : "/OperatingSystem/OperatingSystem"
       
     } ,
   
