@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 归档
+title: 时间线
 created: 2024-03-20
 updated: 2024-03-22
 permalink: /archive
@@ -33,7 +33,7 @@ jekyll-theme-ObJekyll:
 {% unless post.title contains '.excalidraw' %}
 {% assign month = post.created | date: "%b %Y" %}
 {% if month != lmonth %}
-## {{ month }}
+### {{ month }}
 {%assign lmonth = month %}
 {% endif %}
 {% if site.use_html_extension %}
