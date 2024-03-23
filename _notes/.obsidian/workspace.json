@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e9648e7b18540b04",
+        "id": "420972703ae3095a",
         "type": "tabs",
         "children": [
           {
-            "id": "b644a97bcc2d7cdb",
+            "id": "08a12029a2ea326c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -23,11 +23,11 @@
         ]
       },
       {
-        "id": "564307f81bce2e97",
+        "id": "4af803e9672c7e81",
         "type": "tabs",
         "children": [
           {
-            "id": "f7278fb489fe12dd",
+            "id": "65e30b7f46ce8d06",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -125,8 +125,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -237,8 +236,24 @@
       "random-note:Open random note": false
     }
   },
-  "active": "b644a97bcc2d7cdb",
+  "active": "65e30b7f46ce8d06",
   "lastOpenFiles": [
+    "Math/DiscreteStructure/Lecture/Lec13.md",
+    "Math/DiscreteStructure/Lecture/Lec14.md",
+    "Math/DiscreteStructure/Lecture/Lec15.md",
+    "Math/DiscreteStructure/Lecture/Lec11.md",
+    "Math/DiscreteStructure/Lecture/Lec12.md",
+    "Math/DiscreteStructure/Lecture/Lec10.md",
+    "Math/DiscreteStructure/Lecture/Lec7.md",
+    "Math/DiscreteStructure/Lecture/Lec6.md",
+    "Math/DiscreteStructure/Lecture/Lec5.md",
+    "Math/DiscreteStructure/Lecture/Lec1.md",
+    "Math/DiscreteStructure/Lecture/Lec2.md",
+    "OperatingSystem/Threads.md",
+    "Record/Daily/2024-03-23.md",
+    "Home.md",
+    "WorkView.md",
+    "Record/Daily/2024-03-21.md",
     "OperatingSystem/Process.md",
     "OperatingSystem/OperatingSystem.md",
     "OperatingSystem/Operating-System-Structure.md",
@@ -246,25 +261,9 @@
     "OperatingSystem/NJU-OS-PA0.md",
     "OperatingSystem/Linux-Basic-Operation.md",
     "OperatingSystem/CPU-Scheduling.md",
-    "OperatingSystem/Threads.md",
-    "WorkView.md",
     "Network/Data-Communication-Network.md",
-    "Home.md",
     "Obsidian/AdvancedSlides/QuickStart.md",
     "Obsidian/AdvancedSlides/AdvancedSlide.md",
-    "Obsidian/Templaters/Note.md",
-    "Record/Weekly/2024-W12.md",
-    "Math/Math.md",
-    "Record/Daily/2024-03-21.md",
-    "Obsidian/Templaters/Daily.md",
-    "Contest/Overview.md",
-    "CO/CO.md",
-    "DataAnalysis/HODA/HODA.md",
-    "Tools/Conda/Conda.md",
-    "DataAnalysis/Data-Analysis.md",
-    "Obsidian/Obsidian-Git/Obsidian-Git-Operation.md",
-    "Algorithm/DAA/Assignment/Assignment-0.md",
-    "Algorithm/DAA/Tutorial/Tutorial-1.md",
     "ProgramLanguage",
     "Program/Java/Lecture",
     "Pasted image 20240320183823.png",
