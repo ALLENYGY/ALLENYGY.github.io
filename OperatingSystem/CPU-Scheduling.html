@@ -18,11 +18,11 @@
 <meta property="og:url" content="https://allenygy.github.io/OperatingSystem/CPU-Scheduling" />
 <meta property="og:site_name" content="AllenYGY的个人小站" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-03-23T17:18:39+08:00" />
+<meta property="article:published_time" content="2024-03-25T02:19:55+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Cpu Scheduling" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-23T17:18:39+08:00","datePublished":"2024-03-23T17:18:39+08:00","description":"[[CPU-Scheduling]]","headline":"Cpu Scheduling","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/OperatingSystem/CPU-Scheduling"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/OperatingSystem/CPU-Scheduling"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-25T02:19:55+08:00","datePublished":"2024-03-25T02:19:55+08:00","description":"[[CPU-Scheduling]]","headline":"Cpu Scheduling","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/OperatingSystem/CPU-Scheduling"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/OperatingSystem/CPU-Scheduling"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -214,7 +214,52 @@
       
       
       <ol id="toc">
-  <li><a href="#cpu-scheduling">CPU-Scheduling</a></li>
+  <li><a href="#cpu-scheduling">CPU-Scheduling</a>
+    <ol>
+      <li><a href="#basic-concept">Basic Concept</a></li>
+      <li><a href="#cpu-scheduler-cpu%E8%B0%83%E5%BA%A6%E7%A8%8B%E5%BA%8F">CPU Scheduler CPU调度程序</a></li>
+      <li><a href="#scheduling-criteria">Scheduling Criteria</a></li>
+      <li><a href="#scheduling-algorithm">Scheduling Algorithm</a>
+        <ol>
+          <li><a href="#first-come-first-served-scheduling-fcfs">First-Come, First-Served Scheduling FCFS</a></li>
+          <li><a href="#shortest-job-first-scheduling-sjf">Shortest-Job-First Scheduling SJF</a>
+            <ol>
+              <li><a href="#determining-length-of-next-cpu-burst-durationpng">Determining Length of Next CPU Burst-duration.png</a></li>
+            </ol>
+          </li>
+          <li><a href="#shortest-remaining-time-first-srtf">Shortest-remaining-time-first SRTF</a></li>
+          <li><a href="#round-robin-rr">Round-Robin RR</a></li>
+          <li><a href="#priority-scheduling">Priority Scheduling</a></li>
+          <li><a href="#multilevel-queue">Multilevel Queue</a></li>
+          <li><a href="#multilevel-feedback-queue-mfq">Multilevel Feedback Queue MFQ</a></li>
+        </ol>
+      </li>
+      <li><a href="#thread-scheduling">Thread Scheduling</a></li>
+      <li><a href="#multi-process-scheduling">Multi-Process Scheduling</a></li>
+      <li><a href="#real-time-cpu-scheduling">Real-Time CPU Scheduling</a>
+        <ol>
+          <li><a href="#event-latency-%E4%BA%8B%E4%BB%B6%E5%BB%B6%E8%BF%9F">Event Latency 事件延迟</a></li>
+          <li><a href="#priority-based-scheduling">Priority-based Scheduling</a>
+            <ol>
+              <li><a href="#rate-monotonic-scheduling">Rate Monotonic Scheduling</a></li>
+              <li><a href="#earliest-deadline-first-scheduling-edf">Earliest Deadline First Scheduling EDF</a></li>
+              <li><a href="#proportional-share-scheduling">Proportional Share Scheduling</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#operating-system-examples">Operating System Examples</a>
+        <ol>
+          <li><a href="#linux-scheduling">Linux Scheduling</a>
+            <ol>
+              <li><a href="#completely-fair-scheduler-cfs">Completely Fair Scheduler CFS</a></li>
+            </ol>
+          </li>
+          <li><a href="#windows-scheduling">Windows Scheduling</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
 </ol>
       
       
@@ -332,12 +377,12 @@
         
         
         
-        24万
+        26万
         
           
         
-        8千
-        686字
+        1千
+        707字
         
       </div>
       
@@ -377,20 +422,20 @@
     <span class="post-date">
         
         <i class="fa-solid fa-calendar-day fa-fw"></i>
-        改于：2024-03-22 00:00:00 Friday
+        改于：2024-03-25 02:15:00 Monday
         <br>
         
         
         <i class="fa-solid fa-calendar-plus fa-fw"></i>
-        建于：2024-03-20 17:14:00 Wednesday
+        建于：2024-03-20 00:00:00 Wednesday
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        14字
+        12402字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
-        1分
+        42分
         
         
         
@@ -413,6 +458,843 @@
         <content>
             <h1 id="cpu-scheduling"><a class="internal-link" href="/OperatingSystem/CPU-Scheduling">CPU-Scheduling</a></h1>
 
+<h2 id="basic-concept">Basic Concept</h2>
+
+<p>To maximize CPU utilization
+Using Multiprogramming</p>
+
+<blockquote>
+  <p>[!info]+ CPU-I/O Burst Cycle</p>
+  <ul>
+    <li>Process execution consists of a cycle of CPU execution and I/O wait</li>
+    <li>CPU burst followed by I/O burst</li>
+    <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Burst-duration.png" alt="Burst-Duration" />
+ 	- <strong>短CPU突发</strong>：大多数进程都会有大量的短时间CPU突发，这表示进程在执行较短时间的计算后就会等待I/O操作。
+ 	- <strong>长CPU突发</strong>：只有少数进程会有较长时间的CPU突发，这些通常是计算密集型的进程，在执行更长时间的计算之后才会进行I/O操作。</li>
+  </ul>
+</blockquote>
+
+<h2 id="cpu-scheduler-cpu调度程序">CPU Scheduler <code class="language-plaintext highlighter-rouge">CPU调度程序</code></h2>
+
+<blockquote>
+  <p>[!quote]+ The CPU scheduler selects a process from the processes in ready queue , and allocates the CPU to it</p>
+  <ul>
+    <li>Ready queue <code class="language-plaintext highlighter-rouge">就绪队列</code> may be ordered in various ways</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!question]+ When does the CPU Scheduling  happen ？</p>
+  <ol>
+    <li>switches from running to waiting state (non-preemptive<code class="language-plaintext highlighter-rouge">自愿</code> )
+      <ul>
+        <li>Example: the process does an I/O system call.</li>
+      </ul>
+    </li>
+    <li>switches from running to ready state (preemptive <code class="language-plaintext highlighter-rouge">非自愿</code>)
+      <ul>
+        <li>Example: there is a clock interrupt.</li>
+      </ul>
+    </li>
+    <li>switches from waiting to ready (preemptive)
+      <ul>
+        <li>Example: there is a hard disk controller interrupt because the I/O is finished.</li>
+      </ul>
+    </li>
+    <li>terminates (non-preemptive)</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ Preemptive vs. Nonpreemptive Scheduling</p>
+  <ul>
+    <li>When a process is pre-empted, <code class="language-plaintext highlighter-rouge">当进程非自愿离开CPU</code>
+ 	- It is moved from its current processor
+ 	- However, it still remains in memory and in ready queue <code class="language-plaintext highlighter-rouge">仍保留在就绪队列</code></li>
+    <li>When a process is non-preemptive <code class="language-plaintext highlighter-rouge">当进程自愿离开CPU</code>
+      <ul>
+        <li>Process runs until completion or until they yield control of a processor <code class="language-plaintext highlighter-rouge">进程运行直至完成或让出处理器控制权</code></li>
+        <li>Disadvantage: Unimportant processes can block important ones indefinitely
+          <ul>
+            <li><code class="language-plaintext highlighter-rouge">进程易阻塞</code></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!question]+ Why preemptive scheduling is used?</p>
+  <ul>
+    <li>Improve response times</li>
+    <li>Create interactive environments (real-time)</li>
+  </ul>
+</blockquote>
+
+<h2 id="scheduling-criteria">Scheduling Criteria</h2>
+<blockquote>
+  <p>[!info]+ Concept</p>
+  <ul>
+    <li><strong>Throughput</strong>: number of processes that complete their execution per time unit<code class="language-plaintext highlighter-rouge">吞吐量</code></li>
+    <li><strong>Response Time</strong>: amount of time it takes from when a request was submitted until the first response is produced, not output (for time-sharing environment) <code class="language-plaintext highlighter-rouge">等待时间-进程在就绪队列中等待的总时间</code></li>
+    <li><strong>Turnaround Time</strong>: amount of time to execute a particular process (from start to end of process, including waiting time) <code class="language-plaintext highlighter-rouge">执行特定流程的时间(从流程的开始到结束，包括等待时间)</code>
+      <ul>
+        <li>Turnaround Time = Waiting time + time for all CPU bursts</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ Scheduling Criteria</p>
+  <ul>
+    <li><em>Maximize</em>
+      <ul>
+        <li><strong>CPU Utilization</strong>^[keep the CPU as busy as possible]</li>
+        <li><strong>Throughput</strong>^[Increase throughput as high as possible]</li>
+      </ul>
+    </li>
+    <li><em>Minimize</em>
+      <ul>
+        <li><strong>Response time</strong></li>
+        <li><strong>Waiting time</strong></li>
+        <li><strong>Turnaround time</strong></li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<h2 id="scheduling-algorithm">Scheduling Algorithm</h2>
+
+<blockquote>
+  <p>[!abstract]+ Scheduling Algorithm</p>
+  <ol>
+    <li>
+      <p>First-Come, First-Served <code class="language-plaintext highlighter-rouge">FCFS</code></p>
+    </li>
+    <li>
+      <p>Shortest-Job-First <code class="language-plaintext highlighter-rouge">SJF</code></p>
+    </li>
+    <li>
+      <p>Priority Scheduling <code class="language-plaintext highlighter-rouge">PS</code></p>
+    </li>
+    <li>
+      <p>Round-Robin <code class="language-plaintext highlighter-rouge">RR</code></p>
+    </li>
+    <li>
+      <p>Multilevel Queue Scheduling <code class="language-plaintext highlighter-rouge">MQS</code></p>
+    </li>
+    <li>
+      <p>Multilevel Feedback Queue Scheduling <code class="language-plaintext highlighter-rouge">MFQS</code></p>
+    </li>
+  </ol>
+</blockquote>
+
+<h3 id="first-come-first-served-scheduling-fcfs">First-Come, First-Served Scheduling <code class="language-plaintext highlighter-rouge">FCFS</code></h3>
+
+<blockquote>
+  <p>[!tip]+ Scheduling</p>
+  <ul>
+    <li>Suppose that the processes arrive in the ready queue at time $t = 0$ in the following order: $P_1, P_2, P_3$</li>
+  </ul>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Process</th>
+      <th style="text-align: center">Burst Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">P1</td>
+      <td style="text-align: center">24</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P2</td>
+      <td style="text-align: center">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P3</td>
+      <td style="text-align: center">3</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!example]+ FCFS Example</p>
+  <ul>
+    <li>The Gantt Chart for the schedule is:</li>
+    <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/GanttChart.png" alt="Gantt Schedule" /></li>
+    <li>Waiting time: $P_1= 0; P_2= 24; P_3= 27$</li>
+    <li>Average waiting time: $\frac{0 + 24 + 27}{3} = 17$</li>
+    <li>Average turnaround time:  $\frac{24+27+30}{3} = 27$</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!example]+ Change Example
+Suppose the order is changed to this $P_2, P_3, P_1$</p>
+  <ul>
+    <li>The Gantt Chart for the schedule is:</li>
+    <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/GanttChart-1.png" alt="GanttChart-1" /></li>
+    <li>Waiting time: $P_1= 6; P_2= 0; P_3= 3$</li>
+    <li>Average waiting time: $\frac{6 + 0 + 3}{3} = 3$</li>
+    <li>Average turnaround time:  $\frac{30+6+3}{3} = 13$</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!tip]+ Convoy effect<code class="language-plaintext highlighter-rouge">护送效应</code> - short process behind long process</p>
+</blockquote>
+
+<h3 id="shortest-job-first-scheduling-sjf">Shortest-Job-First Scheduling <code class="language-plaintext highlighter-rouge">SJF</code></h3>
+
+<blockquote>
+  <p>[!tip]+ Scheduling</p>
+  <ul>
+    <li>SJF is optimal – gives minimum average waiting time for a given set of processes</li>
+    <li>The difficulty is knowing the length of the next CPU request  Could ask the user</li>
+  </ul>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Process</th>
+      <th style="text-align: center">Burst Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">P1</td>
+      <td style="text-align: center">6</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P2</td>
+      <td style="text-align: center">8</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P3</td>
+      <td style="text-align: center">7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P4</td>
+      <td style="text-align: center">3</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!example]+ SJF Example</p>
+  <ul>
+    <li>The Gantt Chart for the schedule is:</li>
+    <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/GanttChart-2.png" alt="GanttChart-2" /></li>
+    <li>Average waiting time = $\frac{3 + 16 + 9 + 0}{4} = 7$</li>
+    <li>Average turnaround time = $\frac{3+9+16+24}{4} = 13$</li>
+  </ul>
+</blockquote>
+
+<h4 id="determining-length-of-next-cpu-burst-durationpng">Determining Length of Next CPU Burst-duration.png</h4>
+
+<blockquote>
+  <p>[!info]+ Estimation Method
+Use the length of previous CPU bursts, with exponential averaging
+$\tau_{n+1} = \alpha \times t_n + (1 - \alpha) \times \tau_n$</p>
+  <ul>
+    <li>$\tau_{n+1}$ 是对下一个CPU突发的预测时间。</li>
+    <li>$t_n$ 是第n个CPU突发的实际长度。</li>
+    <li>$\tau_n$ 是第n个CPU突发的预测时间（基于过去的观测）。</li>
+    <li>$\alpha$ 是一个介于0和1之间的权重，用来平衡最近的实际CPU突发时间和之前的预测。
+$\tau_{n+1} = \alpha t_n + (1 - \alpha)\alpha t_{n-1} + \ldots + (1 - \alpha)^j \alpha t_{n-j} + \ldots + (1 - \alpha)^{n+1} \tau_0$</li>
+  </ul>
+</blockquote>
+
+<h3 id="shortest-remaining-time-first-srtf">Shortest-remaining-time-first <code class="language-plaintext highlighter-rouge">SRTF</code></h3>
+
+<blockquote>
+  <p>[!tip]+ Scheduling Algorithm
+The preemptive version of SJF is also called shortest-remaining-time-first</p>
+  <ul>
+    <li><strong>Preemption</strong>: If a new process arrives in the ready queue while a current process is executing, the remaining time to complete the current process is compared with the total time required by the new process to finish. If the new process requires less time than what the current process has left, the current process is preempted (put back in the ready queue) and the CPU is given to the new process.</li>
+    <li><strong>Efficiency</strong>: This algorithm is effective in terms of average waiting time and turnaround time. By giving preference to processes that are closest to completion, it minimizes the amount of time each process has to wait to complete its execution.</li>
+    <li><strong>Starvation</strong>: A potential downside of SRTF is that longer processes may suffer starvation; if shorter processes keep arriving, the longer processes may be postponed indefinitely.</li>
+    <li><strong>Dynamic</strong>: Unlike SJF, which is static and decides on a process before it starts executing, SRTF has to make decisions dynamically as new processes arrive and as the remaining execution times of the processes in the ready queue change.</li>
+  </ul>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Process</th>
+      <th style="text-align: center">Arrival Time</th>
+      <th style="text-align: right">Burst Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">P1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: right">8</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P2</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: right">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P3</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: right">9</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P4</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: right">5</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!example]+ SRTF Example</p>
+  <ul>
+    <li>The Gantt Chart for the schedule is:</li>
+    <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Gantt-Chart-3.png" alt="GanttChart-3" /></li>
+    <li>Average waiting time = $\frac{(10-1) + (1-1) + (17-2) + (5-3)}{4} = \frac{26}{4}=6.5$</li>
+    <li>Average turnaround time = $\frac{(17-0)+(5-1)+(26-2)+(10-3)}{4} = 13$</li>
+  </ul>
+</blockquote>
+
+<h3 id="round-robin-rr">Round-Robin <code class="language-plaintext highlighter-rouge">RR</code></h3>
+
+<blockquote>
+  <p>[!info]+ Scheduling Algorithm</p>
+  <ul>
+    <li>Each process gets a small unit of CPU time (time quantum <code class="language-plaintext highlighter-rouge">定额</code>, usually 10-100 milliseconds.</li>
+    <li>After q has elapsed, the process is preempted by a clock interrupt and added to the end of the ready queue.</li>
+    <li>Timer interrupts every quantum q to schedule next process</li>
+    <li>If there are n processes in the ready queue and the time quantum is q. No process waits more than $(n-1)*q$</li>
+    <li>Performance
+      <ul>
+        <li>q too large $\rightarrow$  FCFS</li>
+        <li>q too small  $\rightarrow$ too much time is spent on context switch
+          <ul>
+            <li>q should be large compared to context switch time</li>
+            <li>q usually 10ms to 100ms, context switch &lt; 10 usec (微秒)</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Process</th>
+      <th style="text-align: center">Burst Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">P1</td>
+      <td style="text-align: center">24</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P2</td>
+      <td style="text-align: center">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P3</td>
+      <td style="text-align: center">3</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!example]+ SRTF
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Gantt-Chart-4.png" alt="GanttChart-4" /></p>
+  <ul>
+    <li>Average waiting time: $\frac{6 + 4 + 7}{3} = 5.67$</li>
+    <li>Average turnaround time:  $\frac{30+7+10}{3} = 15.7$</li>
+  </ul>
+</blockquote>
+
+<h3 id="priority-scheduling">Priority Scheduling</h3>
+
+<p>The CPU is allocated to the process with the highest priority 
+(smallest integer $\Leftrightarrow$ highest priority)</p>
+
+<blockquote>
+  <p>[!info]+ Two policies</p>
+  <ul>
+    <li>Preemptive
+      <ul>
+        <li>the current process is pre-empted immediately by high priority process</li>
+      </ul>
+    </li>
+    <li>Non-preemptive 
+  -the current process finishes its burst first, then scheduler chooses the process with highest priority</li>
+  </ul>
+
+  <p>SJF is priority scheduling where priority is the inverse of predicted next CPU burst time</p>
+</blockquote>
+
+<blockquote>
+  <p>[!question]+ What is the Problem in Proority Scheduling ?</p>
+  <ul>
+    <li>Problem: Starvation: low priority processes may never execute</li>
+    <li>Solution: Aging: as time progresses increase the priority of the process</li>
+  </ul>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Process</th>
+      <th style="text-align: center">Burst Time</th>
+      <th style="text-align: center">Priority</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">P1</td>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P2</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P3</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P5</td>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">2</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!example]+ Priority Scheduling (not preemptive)
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Gantt-Chart-5.png" alt="GanttChart-5 " />
+Average waiting time = $\frac{6+0+16+18+1}{5} = 8.2$</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Process</th>
+      <th style="text-align: center">Burst Time</th>
+      <th style="text-align: center">Priority</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">P1</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P2</td>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P3</td>
+      <td style="text-align: center">8</td>
+      <td style="text-align: center">2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P5</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">3</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!example]+ Priority Scheduling  $Assume q=2$
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Gantt-Chart-6.png" alt="Gantt-Chart-6" />
+Average waiting time = $\frac{22+11+12+0+24}{5} = 13.8$</p>
+</blockquote>
+
+<h3 id="multilevel-queue">Multilevel Queue</h3>
+
+<blockquote>
+  <p>[!info]+ Multilevel Queue</p>
+  <ul>
+    <li>Ready queue is partitioned into separate queues, e.g.:
+      <ul>
+        <li>Foreground (interactive processes)</li>
+        <li>Background (batch processes)</li>
+      </ul>
+    </li>
+    <li>Process permanently in a given queue (stay in that queue) Each queue has its own scheduling algorithm:
+      <ul>
+        <li>Foreground – RR</li>
+        <li>Background – FCFS</li>
+      </ul>
+    </li>
+    <li>Scheduling must be done between the queues:
+      <ul>
+        <li>Fixed priority scheduling
+          <ul>
+            <li>Each queue has a given priority
+              <ul>
+                <li>High priority queue is served before low priority queue</li>
+                <li>Possibility of starvation</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Time slice
+          <ul>
+            <li>Each queue gets a certain amount of CPU time</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/MultilevelQueuePriority.png" alt="MultilevelQueuePriority" /></li>
+  </ul>
+</blockquote>
+
+<h3 id="multilevel-feedback-queue-mfq">Multilevel Feedback Queue <code class="language-plaintext highlighter-rouge">MFQ</code></h3>
+
+<blockquote>
+  <p>[!info]+ Multilevel Feedback Queue</p>
+  <ul>
+    <li>A process can move between the various queues;
+      <ul>
+        <li>aging can be considered in this way (prevent starvation)</li>
+        <li>advantage: prevent</li>
+      </ul>
+    </li>
+    <li>The multilevel feedback queue scheduler
+      <ul>
+        <li>the most general CPU scheduling algorithm</li>
+        <li>defined by the following parameters:
+          <ol>
+            <li>number of queues</li>
+            <li>scheduling algorithms for each queue</li>
+            <li>Policies on moving process between queues
+              <ol>
+                <li>when to upgrade a processes</li>
+                <li>when to demote <code class="language-plaintext highlighter-rouge">降级</code> a processes</li>
+                <li>which queue a process will enter when that process needs service</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!example]+ Example of Multilevel Feedback Queue
+Three queues: FCFS+RR</p>
+  <ol>
+    <li>$Q_0$ – RR with time quantum 8 milliseconds</li>
+    <li>$Q_1$ – RR with time quantum 16 milliseconds</li>
+    <li>$Q_2$ – FCFS
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Example-MFQ.png" alt="MFQ" /></li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!tip]+ Scheduling</p>
+  <ul>
+    <li>A new job enters queue $Q_0$ which is served FCFS</li>
+    <li>When it gains CPU, job receives 8 milliseconds</li>
+    <li>If it does not finish in 8 milliseconds, job is moved to queue $Q_1$</li>
+    <li>At $Q_1$ job is again served FCFS and receives 16 additional milliseconds</li>
+    <li>If it still does not complete, it is preempted and moved to queue $Q_2$ where it runs until completion but with a low priority</li>
+  </ul>
+</blockquote>
+
+<h2 id="thread-scheduling">Thread Scheduling</h2>
+
+<p>Distinguish between user-level and kernel-level threads</p>
+<ul>
+  <li>When threads are supported by kernel,   threads are scheduled, not processes 
+<code class="language-plaintext highlighter-rouge">当内核支持线程时，内核调度的是线程，而不是进程</code>
+    <blockquote>
+      <p>[!example]+ 
+Many-to-one and many-to-many models,</p>
+      <ul>
+        <li>Thread library schedules user-level threads to run on kernel threads (LWP: light-weight process)</li>
+      </ul>
+
+      <p>Typically priority is set by programmer <code class="language-plaintext highlighter-rouge">优先级人为设置</code></p>
+    </blockquote>
+  </li>
+  <li>Kernel threads are scheduled by Kernel onto available CPU <code class="language-plaintext highlighter-rouge">内核线程被可利用的CPU调度</code>
+    <ul>
+      <li>system-contention scope <code class="language-plaintext highlighter-rouge">SCS</code></li>
+      <li>competition is among all kernel-level threads from all processes in the system</li>
+    </ul>
+  </li>
+  <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/ThreadScheduling-1.png" alt="ThreadScheduling-1" /></li>
+  <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/ThreadScheduling-2.png" alt="ThreadScheduling-2" /></li>
+</ul>
+
+<h2 id="multi-process-scheduling">Multi-Process Scheduling</h2>
+
+<h2 id="real-time-cpu-scheduling">Real-Time CPU Scheduling</h2>
+
+<blockquote>
+  <p>[!question]+ Why Real-Time CPU Scheduling? 
+  实时CPU调度（Real-Time CPU Scheduling）是一种操作系统的调度机制，它确保能够满足实时任务的时间要求。实时操作系统（RTOS）通常需要这种调度策略，因为它们运行着要求在特定时间内完成或响应的任务。</p>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ Two kinds of RTOS</p>
+  <ul>
+    <li>Soft real-time systems <code class="language-plaintext highlighter-rouge">尽可能在截止时间内完成任务</code>
+      <ul>
+        <li>Critical real-time tasks have the highest priority, but no guarantee as to when tasks will be scheduled (best try only)</li>
+      </ul>
+    </li>
+    <li>Hard real-time systems <code class="language-plaintext highlighter-rouge">严格在截止时间前完成任务</code>
+      <ul>
+        <li>a task must be serviced by its deadline (guarantee)</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<h3 id="event-latency-事件延迟">Event Latency <code class="language-plaintext highlighter-rouge">事件延迟</code></h3>
+
+<blockquote>
+  <p>[!info]+ Event latency</p>
+  <ul>
+    <li>the amount of time that elapses from when an event occurs to when it is serviced.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ Two kinds of Event Latency</p>
+  <ol>
+    <li>Interrupt latency – time from arrival of interrupt to start of kernel interrupt service routine (ISR) that services interrupt
+      <ul>
+        <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/InterruptLatency.png" alt="Interrupt Latency" /></li>
+      </ul>
+    </li>
+    <li>Dispatch latency(调度延迟) – time for scheduler to take current process off CPU and switch to another
+      <ul>
+        <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/DispatchLatency.png" alt="Dispatch Latency" /></li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
+
+<h3 id="priority-based-scheduling">Priority-based Scheduling</h3>
+
+<blockquote>
+  <p>[!quote]+ For real-time scheduling, scheduler must support preemptive, priority-based scheduling</p>
+  <ul>
+    <li>But only guarantees soft real-time</li>
+    <li>For hard real-time, must also provide ability to meet deadlines</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ Process need new Characteristic
+<strong>New Characteristic</strong>: periodically require CPU at constant intervals</p>
+  <ul>
+    <li><strong>Process Time</strong> $t$^[处理时间]: 进程需要CPU的时间</li>
+    <li><strong>Deadline</strong> $d$^[截止时间]: 进程必须完成其任务的最后期限</li>
+    <li><strong>Period</strong> $p$^[周期时间]: 进程每隔一定时间就需要运行的周期。</li>
+    <li><strong>Rate of period task</strong>^[周期任务的频率]: $\frac{1}{p}$</li>
+    <li>Relation: $0\leq t\leq d\leq p$</li>
+    <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/PriorityBasedScheduling.png" alt="PriorityBasedScheduling" /></li>
+  </ul>
+</blockquote>
+
+<h4 id="rate-monotonic-scheduling">Rate Monotonic Scheduling</h4>
+
+<p><strong>Priority is assigned based on the inverse of its period</strong></p>
+
+<p>\(Shorter\ periods\ =\ higher\ priority\)
+\(Longer\ periods\ = lower\  priority\)</p>
+
+<blockquote>
+  <p>[!example]+ Example of Rate Monotonic Scheduling
+Asume Priority : $P_1 &gt;P_2$
+ $P_1$ needs to run for 20 ms every 50 ms. 
+ 	- $t = 20, d = p = 50$
+$P_2$ needs to run for 35 ms every 100 ms. 
+	- $t = 35, d = p = 100$
+Assume deadline $d = p$
+假定每个任务的截止时间<code class="language-plaintext highlighter-rouge">d</code>等于其周期<code class="language-plaintext highlighter-rouge">p</code>，即每个任务必须在下一个周期开始之前完成。
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/RateMonotonicScheduling.png" alt="RateMonotonicScheduling" /></p>
+</blockquote>
+
+<blockquote>
+  <p>[!example]+ Missed Deadlines Case
+ $P_1$ needs to run for 25 ms every 50 ms. 
+ 	- $t = 25, d = p = 50$
+$P_2$ needs to run for 35 ms every 80 ms. 
+	- $t = 35, d = p = 80$</p>
+  <ul>
+    <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/RateMontonicScheduling-MissedDeadlinesCase.png" alt="RateMonotonicScheduling-MissedDeadline" /></li>
+    <li>In this case It can’t satisfy the <code class="language-plaintext highlighter-rouge">Hard real-time systems</code></li>
+  </ul>
+</blockquote>
+
+<h4 id="earliest-deadline-first-scheduling-edf">Earliest Deadline First Scheduling <code class="language-plaintext highlighter-rouge">EDF</code></h4>
+
+<p><strong>Priorities are assigned according to deadlines</strong></p>
+
+<p>\(The\ earlier\ the\ deadline,\ the\ higher\ the\ priority\)
+\(The\ later\ the\ deadline,\ the\ lower\ the\ priority\)</p>
+
+<blockquote>
+  <p>[!example]+ EDF Example 
+ $P_1$ needs to run for 25 ms every 50 ms. 
+ 	- $t = 25, d = p = 50$
+$P_2$ needs to run for 35 ms every 80 ms. 
+	- $t = 35, d = p = 80$
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/EDF.png" alt="EDF" /></p>
+</blockquote>
+
+<h4 id="proportional-share-scheduling">Proportional Share Scheduling</h4>
+
+<p><strong>T shares are allocated among all processes in the system</strong></p>
+
+<blockquote>
+  <p>[!example]+ Example of Proportional Share Scheduling
+ T = 20, therefore there are 20 shares, where one share represents 5% of the CPU time</p>
+  <ul>
+    <li>An application receives N shares where $N &lt; T$</li>
+    <li>This ensures each application will receive $\frac{N}{T}$ of the total processor time</li>
+    <li>Example: an application receives N = 5 shares the application then has 5 / 20 = 25% of the CPU time.</li>
+    <li>This percentage of CPU time is available to the application whether the application uses it or not.</li>
+    <li><strong>无论应用程序是否使用这些CPU时间，这些份额都被保留给它。</strong></li>
+  </ul>
+</blockquote>
+
+<h2 id="operating-system-examples">Operating System Examples</h2>
+
+<ul>
+  <li>Linux Scheduling</li>
+  <li>Windows Scheduling</li>
+</ul>
+
+<h3 id="linux-scheduling">Linux Scheduling</h3>
+
+<blockquote>
+  <p>[!info]+  Scheduling classes</p>
+  <ul>
+    <li>2 scheduling classes are included, others can be added
+      <ol>
+        <li>default</li>
+        <li>real-time</li>
+      </ol>
+    </li>
+    <li>Each process/task has specific priority</li>
+  </ul>
+</blockquote>
+
+<ul>
+  <li>Real-time scheduling according to POSIX.1b
+    <ul>
+      <li>Real-time tasks have static priorities</li>
+    </ul>
+  </li>
+  <li>Real-time plus normal tasks map into global priority scheme
+    <ul>
+      <li>Nice value of -20 maps to global priority 100</li>
+      <li>Nice value of +19 maps to priority 139</li>
+      <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/LinuxScheduling-Priority.png" alt="LinuxScheduling-Priority" /></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="completely-fair-scheduler-cfs">Completely Fair Scheduler <code class="language-plaintext highlighter-rouge">CFS</code></h4>
+
+<p><strong>Scheduler picks highest priority task in highest scheduling class</strong></p>
+
+<ul>
+  <li>Quantum is not fixed <code class="language-plaintext highlighter-rouge">时间片不固定</code></li>
+  <li>Calculated based on nice value from -20 to +19
+    <ul>
+      <li>Lower value is higher priority</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>[!abstract]+ CFS Mechanism</p>
+  <ul>
+    <li>CFS maintains per task virtual run time in variable <code class="language-plaintext highlighter-rouge">vruntime</code> ^[<strong>虚拟运行时间（vruntime）</strong>：CFS使用一个名为<code class="language-plaintext highlighter-rouge">vruntime</code>的变量来追踪每个进程应该获得的CPU时间。<code class="language-plaintext highlighter-rouge">vruntime</code>的增加速度取决于进程的优先级：优先级较低的进程（<code class="language-plaintext highlighter-rouge">nice</code>值较高）的<code class="language-plaintext highlighter-rouge">vruntime</code>增长得更快。]</li>
+    <li>Associated with decay factor based on priority of task =&gt; lower priority is higher decay rate  ^[<strong>衰减因子</strong>：CFS使用衰减因子来根据进程的优先级调整其<code class="language-plaintext highlighter-rouge">vruntime</code>，优先级越低的进程，其<code class="language-plaintext highlighter-rouge">vruntime</code>的增长越快，从而减少它们被调度的概率。]</li>
+    <li>Normal default priority (Nice value: 0) yields virtual run time = actual run time</li>
+    <li>To decide next task to run, scheduler picks task with lowest virtual run time ^[<strong>选择下一个运行的进程</strong>：当需要选择下一个运行的进程时，CFS选择<code class="language-plaintext highlighter-rouge">vruntime</code>最低的进程，以尝试平等地分配CPU时间给每个进程。]
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/LinuxScheduling.png" alt="LinuxScheduling" /></li>
+  </ul>
+</blockquote>
+
+<h3 id="windows-scheduling">Windows Scheduling</h3>
+
+<p><strong>Windows uses priority-based preemptive scheduling</strong></p>
+
+<ul>
+  <li>*Highest-priority thread runs next *
+    <ul>
+      <li>Thread runs until
+        <ul>
+          <li>
+            <ol>
+              <li>blocks,</li>
+            </ol>
+          </li>
+          <li>
+            <ol>
+              <li>uses time slice,</li>
+            </ol>
+          </li>
+          <li>
+            <ol>
+              <li>preempted by higher-priority thread</li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><em>Real-time threads can preempt non-real-time</em></li>
+  <li><em>32-level priority scheme</em>
+    <ul>
+      <li>Variable class is 1-15, real-time class is 16-31</li>
+      <li>Priority 0 is memory-management thread</li>
+      <li>There is a queue for each priority</li>
+      <li>If no run-able thread, runs idle thread</li>
+    </ul>
+  </li>
+  <li>
+    <p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/WindowsScheduling.png" alt="Windows Scheduling" /></p>
+  </li>
+  <li>
+    <p>Windows操作系统中进程可以属于六种优先级类别，每个类别中各个相对优先级的数值。Windows API定义了实时类（real-time class）和变量类（variable class），每个类别中都有不同的优先级级别。</p>
+  </li>
+  <li>
+    <p><strong>在实时类别中</strong>，有一个时间关键（time-critical）优先级，这是最高的优先级，数值为31。其他优先级依次降低，直到最低的空闲（idle）优先级，数值为16。这些优先级是为需要即时响应的任务设计的，比如那些在特定时间限制内必须完成的任务。</p>
+  </li>
+  <li>
+    <p><strong>在变量类别中</strong>，优先级从高（high）到空闲（idle）不等。每个优先级类别还有相对优先级，如正常（normal）类别的优先级数值范围从15到6不等。这些优先级通常用于普通应用程序和后台任务。</p>
+  </li>
+  <li><strong>“变量”（Variable</strong> 意味着线程的优先级可以改变，即使它们属于同一类别。这允许操作系统根据当前的需求和资源情况动态调整进程的优先级。</li>
+  <li>在调度时，系统会选择优先级数值最高的线程来执行，确保时间敏感的任务能够获得及时的处理。通过这种方式，操作系统可以管理多任务环境中的资源分配，确保关键任务能够及时完成，同时为不太重要的任务提供必要的CPU时间。</li>
+</ul>
 
         </content>
         <side style="font-size: 0.9em">
