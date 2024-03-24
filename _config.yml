@@ -3,7 +3,7 @@ include: #以`.`开头的文件、文件夹默认忽略
   - .nojekyll
 exclude:
   - _includes/notes_graph.json
-  - _notes/Obsidian/Templaters
+  - _notes/Workflow/Obsidian/Templaters
   - _notes/.trash
   - _notes/.git
   - _notes/.github
