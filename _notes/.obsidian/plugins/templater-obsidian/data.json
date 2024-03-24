@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "Obsidian/Templaters",
+  "templates_folder": "Workflow/Obsidian/Templaters",
   "templates_pairs": [
     [
       "",
@@ -16,68 +16,68 @@
   "folder_templates": [
     {
       "folder": "Algorithm",
-      "template": "Obsidian/Templaters/Note.md"
+      "template": "Workflow/Obsidian/Templaters/Note.md"
     },
     {
       "folder": "CO",
-      "template": "Obsidian/Templaters/Note.md"
+      "template": "Workflow/Obsidian/Templaters/Note.md"
     },
     {
       "folder": "DataAnalysis",
-      "template": "Obsidian/Templaters/Note.md"
+      "template": "Workflow/Obsidian/Templaters/Note.md"
     },
     {
       "folder": "Math",
-      "template": "Obsidian/Templaters/Note.md"
+      "template": "Workflow/Obsidian/Templaters/Note.md"
     },
     {
-      "folder": "ProgramLanguage",
-      "template": "Obsidian/Templaters/Note.md"
+      "folder": "Program",
+      "template": "Workflow/Obsidian/Templaters/Note.md"
     },
     {
       "folder": "DBM",
-      "template": "Obsidian/Templaters/Note.md"
+      "template": "Workflow/Obsidian/Templaters/Note.md"
     },
     {
       "folder": "Tools",
-      "template": "Obsidian/Templaters/Note.md"
+      "template": "Workflow/Obsidian/Templaters/Note.md"
     },
     {
       "folder": "Research",
-      "template": "Obsidian/Templaters/Note.md"
+      "template": "Workflow/Obsidian/Templaters/Note.md"
     },
     {
       "folder": "Contest/Leetcode",
-      "template": "Obsidian/Templaters/Leetcode.md"
+      "template": "Workflow/Obsidian/Templaters/Leetcode.md"
     },
     {
       "folder": "Web",
-      "template": "Obsidian/Templaters/Note.md"
+      "template": "Workflow/Obsidian/Templaters/Note.md"
     },
     {
       "folder": "Contest/Lanqiao",
-      "template": "Obsidian/Templaters/Lanqiao.md"
+      "template": "Workflow/Obsidian/Templaters/Lanqiao.md"
     },
     {
       "folder": "Record/Yearly",
-      "template": "Obsidian/Templaters/Yearly.md"
+      "template": "Workflow/Obsidian/Templaters/Yearly.md"
     },
     {
       "folder": "Network",
-      "template": "Obsidian/Templaters/Note.md"
+      "template": "Workflow/Obsidian/Templaters/Note.md"
     },
     {
       "folder": "OperatingSystem",
-      "template": "Obsidian/Templaters/Note.md"
+      "template": "Workflow/Obsidian/Templaters/Note.md"
     }
   ],
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": true,
   "enabled_templates_hotkeys": [
-    "Obsidian/Templaters/Capture.md",
-    "Obsidian/Templaters/Leetcode.md",
-    "Obsidian/Templaters/Lanqiao.md",
-    "Obsidian/Templaters/InsertCallouts.md"
+    "Workflow/Obsidian/Templaters/Capture.md",
+    "Workflow/Obsidian/Templaters/Leetcode.md",
+    "Workflow/Obsidian/Templaters/Lanqiao.md",
+    "Workflow/Obsidian/Templaters/InsertCallouts.md"
   ],
   "startup_templates": [
     ""

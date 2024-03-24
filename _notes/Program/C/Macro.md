@@ -4,10 +4,10 @@ Title: "[[Macro]]"
 Author:
   - AllenYGY
 tags:
-  - NOTE
   - C
+  - NOTE
 created: 2024-02-19T23:53
-updated: 2024-03-21T19:44
+updated: 2024-03-24
 ---
 
 # [[Macro]]^[宏]

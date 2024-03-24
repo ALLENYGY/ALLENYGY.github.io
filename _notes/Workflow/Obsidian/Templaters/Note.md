@@ -14,6 +14,7 @@ tp.user.title=title;
 -%>
 Create Time: <% tp.date.now("Do MMMM YYYY") %>
 Title: "[[<% title %>]]"
+status: UNFINISHED 
 Author:
   - AllenYGY
 tags:

@@ -243,7 +243,7 @@
       "color": "qM2HC0GmljvwGMnPjfZtO"
     },
     {
-      "path": "Obsidian",
+      "path": "Workflow/Obsidian",
       "color": "CCR-z2z0NhAGw9jcz-skS"
     },
     {
@@ -315,11 +315,11 @@
       "color": "qM2HC0GmljvwGMnPjfZtO"
     },
     {
-      "path": "Obsidian/AdvancedSlides",
+      "path": "Workflow/Obsidian/AdvancedSlides",
       "color": "Jg4M3jD97fUGZ_NnS7YKB"
     },
     {
-      "path": "Obsidian/Templaters",
+      "path": "Workflow/Obsidian/Templaters",
       "color": "Jg4M3jD97fUGZ_NnS7YKB"
     },
     {
@@ -423,7 +423,7 @@
       "color": "Jg4M3jD97fUGZ_NnS7YKB"
     },
     {
-      "path": "Obsidian/Obsidian-Git",
+      "path": "Workflow/Obsidian/Obsidian-Git",
       "color": "Jg4M3jD97fUGZ_NnS7YKB"
     },
     {
@@ -449,6 +449,10 @@
     {
       "path": "Others",
       "color": "qM2HC0GmljvwGMnPjfZtO"
+    },
+    {
+      "path": "Workflow",
+      "color": "gr6ZlwD18MSkfEqnMBRu8"
     }
   ]
 }

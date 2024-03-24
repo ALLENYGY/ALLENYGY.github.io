@@ -102,5 +102,15 @@
       "key": "A"
     }
   ],
-  "quick-latex:addAlignBlock": []
+  "quick-latex:addAlignBlock": [],
+  "various-complements:reload-custom-dictionaries": [],
+  "templater-obsidian:Workflow/Obsidian/Templaters/InsertCallouts.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "C"
+    }
+  ]
 }
