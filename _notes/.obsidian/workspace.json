@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CO/CO.md",
-                "mode": "source",
+                "file": "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CO/CO.md",
+                "file": "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CO/CO.md",
+                "file": "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CO/CO.md"
+                "file": "CO/Lecture/From-Machine-Language-to-Assembly-Language.md"
               }
             }
           }
@@ -219,12 +219,12 @@
   },
   "active": "6f20dd8b8a998d0a",
   "lastOpenFiles": [
+    "CO/CO.md",
     "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
     "CO/Lecture/What-is-a-Computer.md",
     "CO/Lecture/From-Transistors-to-Gates.md",
     "CO/Lecture/ISA.md",
     "CO/Lecture/Microarchitecture.md",
-    "CO/CO.md",
     "Home.md",
     "OperatingSystem/CPU-Scheduling.md",
     "Pasted image 20240325000053.png",
