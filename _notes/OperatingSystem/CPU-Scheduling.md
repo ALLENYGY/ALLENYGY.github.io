@@ -9,7 +9,7 @@ tags:
 Author:
   - AllenYGY
 created: 2024-03-20
-updated: 2024-03-25T02:15
+updated: 2024-03-26T01:23
 ---
 
 # [[CPU-Scheduling]]
@@ -297,6 +297,83 @@ Distinguish between user-level and kernel-level threads
 
 ## Multi-Process Scheduling 
 
+The term Multiprocessor now applies to the following system architectures:
+
+- Multicore CPUs 
+- Multithreaded cores 
+-  NUMA systems
+
+### Symmetric multiprocessing (SMP) 
+
+Symmetric multiprocessing (SMP) is where each processor is self scheduling
+> [!abstract]+ Two Scheduling Method
+> 1. All threads may be in a common ready queue (a) `所有进程共用一个就绪队列`
+> 2. Each processor may have its own private queue of threads（b）`每个处理机都有私有的队列`
+> ![SMP](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/SMP.png)
+
+### Multicore Processors
+
+When multiple processor cores are on same physical chip ----》 Multicore Processor 
+- Multicore Processor ==> Recent trend
+
+> [!success]+ Advantage
+>  Faster and consumes less power
+
+> [!failure]+ Disadvantage
+> Memory Stall Growing^[An event that occurs when a thread is on CPU and accesses memory content that is not in the CPU’s cache. The thread’s execution stalls while the memory content is retrieved and fetched]
+
+Solution： 每个核都有多个硬件线程
+- Each core has more than one hardware threads. If one thread has a memory stall, switch to another thread!
+
+#### Multithreaded Multicore System
+
+*Chip-multithreading*  `CMT` assigns each core multiple hardware threads. 
+- (Intel refers to this as hyper-threading.)
+
+On a quad-core system (4核) with 2 hardware threads per core, the operating system sees 8 logical processors.
+
+> [!abstract]- 
+> 在一个四核（4核）系统中，如果每个核心支持2个硬件线程，操作系统看到的8个逻辑处理器其实是由这种硬件线程技术（也称为超线程技术）使得每个物理核心能够同时处理两个线程。这种技术允许CPU更高效地利用其资源，特别是在某些核心的一部分资源（如执行单元）在特定时刻未被充分使用时。
+> 具体来说，超线程技术通过使每个物理核心在操作系统层面呈现为两个逻辑处理器来工作。这样，操作系统和应用程序可以将这些逻辑处理器视为独立的处理单元，从而在逻辑上扩展了CPU的并行处理能力。
+> 因此，在这样一个四核处理器中，由于每个核心可以处理两个线程，总共就有\(4 \times 2 = 8\)个逻辑处理器。这就是操作系统为什么会看到8个逻辑处理器的原因。这种安排使得处理器在处理多任务或多线程应用程序时更为高效，尤其是在等待I/O操作或进行其他非CPU密集型任务时，可以更好地利用CPU资源。
+
+
+Two levels of scheduling: `可以在两个层次调度` Multithreaded Multicore System
+1. The operating system deciding which software thread to run on a logical CPU `OS决定谁进CPU(逻辑上)`
+2. Each core decides which hardware thread to run on the physical core `Core 决定谁进入物理核心`
+
+### Multiple-Processor Scheduling - Loading Balancing ----`负载均衡`
+
+> [!info]+ Load balancing
+> Load balancing attempts to keep workload evenly distributed 
+> - **Push migration** – periodic task checks load on each processor, and pushes tasks from overloaded CPU to other less loaded CPUs 
+> - **Pull migration** – idle CPUs pulls waiting tasks from busy CPU
+
+**Push and pull migration need not be mutually exclusive ** `推迁移、拉迁移不必相互互斥`
+- They are often implemented in parallel on load-balancing systems.
+
+### Multiple-Processor Scheduling – Processor Affinity `处理器亲和力`
+
+**处理器亲和性指的是线程或进程倾向于在被分配运行的同一个CPU上运行的性质。** 当线程在一个处理器上运行时，它的数据会被存储在该处理器的高速缓存（cache）中。如果这个线程之后继续在同一个处理器上运行，它可以更快地访问之前的数据，因为数据已经在缓存中了。
+
+**Load balancing** may affect **processor affinity**
+- A thread may be moved from one processor to another to balance loads
+- That thread loses the contents of what it had in the cache of the processor it was moved off
+
+- **Soft affinity**`软亲和性`：操作系统会尽量让线程在同一个处理器上运行，但不保证。系统负载均衡器可能会根据需要将线程迁移到其他处理器。
+    
+- **Hard affinity**`应亲和性`：进程可以指定它希望运行的处理器集合。如果设置了硬亲和性，即使在负载高的情况下，内核也不会将进程移动到它未指定运行的处理器上。
+
+## NUMA and CPU Scheduling
+
+> [!info]+ NUMA and CPU Scheduling
+> 在NUMA架构中，计算机的内存被分割成多个区域，每个CPU都有一块局部内存。这些内存区域之间的访问速度可能不一样： 
+> **局部内存（Local memory）**：与某个CPU相邻的内存，这个CPU访问局部内存的速度快（fast access）。 
+> **非局部内存（Non-local memory）**：不与该CPU相邻的内存，该CPU访问非局部内存的速度慢（slow access）。
+> NUMA-aware操作系统在调度线程到CPU时会考虑内存访问的非一致性。它会尝试将线程分配到可以快速访问所需数据的CPU上。这意味着操作系统会考虑线程正在使用的数据的内存位置，并尽量让线程在靠近这些数据的CPU上运行。
+> 这样做的好处是减少了内存访问延迟，提高了处理速度。但是，如果线程被调度到远离其数据的CPU上，它访问内存的速度将会慢下来，这可能会降低性能。
+> ![NUMA-CPU-Scheduling](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/NUMA-CPU-Scheduling.png)
+
 ## Real-Time CPU Scheduling 
 
 > [!question]+ Why Real-Time CPU Scheduling? 
@@ -314,9 +391,9 @@ Distinguish between user-level and kernel-level threads
 > -  the amount of time that elapses from when an event occurs to when it is serviced.
 
 > [!abstract]+ Two kinds of Event Latency
-> 1. Interrupt latency – time from arrival of interrupt to start of kernel interrupt service routine (ISR) that services interrupt 
+> 1. Interrupt latency `中断延迟`– time from arrival of interrupt to start of kernel interrupt service routine (ISR) that services interrupt 
 > 	- ![Interrupt Latency](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/InterruptLatency.png)
-> 2. Dispatch latency(调度延迟) – time for scheduler to take current process off CPU and switch to another
+> 2. Dispatch latency `调度延迟` – time for scheduler to take current process off CPU and switch to another
 > 	- ![Dispatch Latency](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/DispatchLatency.png) 
 
 ### Priority-based Scheduling 
