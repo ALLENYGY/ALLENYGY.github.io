@@ -4,36 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "dfb5d99e1c4757f8",
+        "id": "dfce79232269a999",
         "type": "tabs",
         "children": [
           {
-            "id": "43fbbd866a3154eb",
+            "id": "6f20dd8b8a998d0a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OperatingSystem/CPU-Scheduling.md",
+                "file": "CO/CO.md",
                 "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "4060f17419498606",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "041d0fa1ad1c71be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OperatingSystem/CPU-Scheduling.md",
-                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -130,8 +111,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346.5,
-    "collapsed": true
+    "width": 346.5
   },
   "right": {
     "id": "6c77faef2551f814",
@@ -147,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OperatingSystem/CPU-Scheduling.md",
+                "file": "CO/CO.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OperatingSystem/CPU-Scheduling.md",
+                "file": "CO/CO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -203,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OperatingSystem/CPU-Scheduling.md"
+                "file": "CO/CO.md"
               }
             }
           }
@@ -237,17 +217,23 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "041d0fa1ad1c71be",
+  "active": "6f20dd8b8a998d0a",
   "lastOpenFiles": [
+    "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
+    "CO/Lecture/What-is-a-Computer.md",
+    "CO/Lecture/From-Transistors-to-Gates.md",
+    "CO/Lecture/ISA.md",
+    "CO/Lecture/Microarchitecture.md",
+    "CO/CO.md",
+    "Home.md",
+    "OperatingSystem/CPU-Scheduling.md",
     "Pasted image 20240325000053.png",
     "Pasted image 20240324234531.png",
     "Pasted image 20240324234410.png",
     "Pasted image 20240324234403.png",
     "Contest/Lanqiao/Week-1.md",
     "Contest/Lanqiao/Practice",
-    "OperatingSystem/CPU-Scheduling.md",
     "OperatingSystem/Operating-System-Structure.md",
-    "Home.md",
     "Record/Daily/2024-03-24.md",
     "WorkFlow/Untitled/000_Nutstore Flash Download Guide.url.nssyncsc",
     "WorkFlow/Untitled",
@@ -271,11 +257,6 @@
     "Math/DiscreteStructure/Lecture/Lec13.md",
     "Math/DiscreteStructure/Lecture/Lec14.md",
     "Math/DiscreteStructure/Lecture/Lec15.md",
-    "Math/DiscreteStructure/Lecture/Lec11.md",
-    "Math/DiscreteStructure/Lecture/Lec12.md",
-    "Math/DiscreteStructure/Lecture/Lec10.md",
-    "Math/DiscreteStructure/Lecture/Lec7.md",
-    "Math/DiscreteStructure/Lecture/Lec6.md",
     "ProgramLanguage",
     "Program/Java/Lecture",
     "Pasted image 20240320183823.png",
@@ -284,7 +265,6 @@
     "Pasted image 20240319004004.png",
     "Pasted image 20240319004023.png",
     "Pasted image 20240306232535.png",
-    "Pasted image 20240306091418.png",
     "Untitled.canvas"
   ]
 }

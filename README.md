@@ -79,21 +79,23 @@ jekyll-theme-ObJekyll:
 
 #### - [From Transistors to Gates](CO/Lecture/From-Transistors-to-Gates)
 
+#### - [From Gates to Circuits I: Combinational Circuits](CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits)
+
 <!-- .slide vertical=true -->
 
 ## <i class="fa-solid fa-atom fa-fw"></i>  计算机组成原理
 
-#### - [From Gates to Circuits I: Combinational Circuits](CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits)
-
 #### - [From Gates to Circuits II: Sequential Circuits](CO/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits)
 
-#### - [Finite State Machine](CO/Lecture/Finite-State-Machine)
-
 #### - [Circuit Design](CO/Lecture/Lecture/CircuitDesign)
+
+#### - [Finite State Machine](CO/Lecture/Finite-State-Machine)
 
 #### - [Microarchitecture](CO/Lecture/Microarchitecture)
 
 #### - [The LC-3 ISA](CO/Lecture/ISA)
+
+#### - [From Machine Language to Assembly Language](CO/Lecture/From-Machine-Language-to-Assembly-Language)
 
 <!-- .slide -->
 

@@ -7,7 +7,7 @@ tags:
   - CO
   - Lec9
 created: 2024-01-16T21:03
-updated: 2024-03-21T18:56
+updated: 2024-03-25T09:37
 ---
 
 # [[From-Machine-Language-to-Assembly-Language]]
@@ -68,10 +68,10 @@ Pseudo-operations
 - used by assembler
 - look like instruction, but "opcode" starts whith dots
 
-｜Opcode｜Operand｜Meaning｜
-｜--｜--｜--|
-|.ORIG|address|starting address of program|
-|.END|end of program|
-|.BLKW|n|allocate n words of storage|
-|.FILL|n|allocate one word,initializa with value n|
-|.STRINGZ|n-character string|allocate n+1 locations, initialize w/characters and null terminator|
+| Opcode   | Operand            | Meaning                                                             |
+| -------- | ------------------ | ------------------------------------------------------------------- |
+| .ORIG    | address            | starting address of program                                         |
+| .END     | end of program     |                                                                     |
+| .BLKW    | n                  | allocate n words of storage                                         |
+| .FILL    | n                  | allocate one word,initializa with value n                           |
+| .STRINGZ | n-character string | allocate n+1 locations, initialize w/characters and null terminator |

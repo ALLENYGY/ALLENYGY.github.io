@@ -16,7 +16,7 @@ jekyll-theme-ObJekyll:
 
 ## <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
 
-#### - [What is a Compute ?](CO/Lecture/What-is-a-Computer)
+#### - [What is a Computer ?](CO/Lecture/What-is-a-Computer)
 
 #### - [Bits: Data Representation and Manipulation](CO/Lecture/Bits-Data-Representation-and-Manipulation)
 
