@@ -18,11 +18,11 @@
 <meta property="og:url" content="https://allenygy.github.io/OperatingSystem/CPU-Scheduling" />
 <meta property="og:site_name" content="AllenYGY的个人小站" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-03-25T12:24:58+08:00" />
+<meta property="article:published_time" content="2024-03-26T01:24:19+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Cpu Scheduling" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-25T12:24:58+08:00","datePublished":"2024-03-25T12:24:58+08:00","description":"[[CPU-Scheduling]]","headline":"Cpu Scheduling","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/OperatingSystem/CPU-Scheduling"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/OperatingSystem/CPU-Scheduling"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-26T01:24:19+08:00","datePublished":"2024-03-26T01:24:19+08:00","description":"[[CPU-Scheduling]]","headline":"Cpu Scheduling","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/OperatingSystem/CPU-Scheduling"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/OperatingSystem/CPU-Scheduling"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -235,7 +235,19 @@
         </ol>
       </li>
       <li><a href="#thread-scheduling">Thread Scheduling</a></li>
-      <li><a href="#multi-process-scheduling">Multi-Process Scheduling</a></li>
+      <li><a href="#multi-process-scheduling">Multi-Process Scheduling</a>
+        <ol>
+          <li><a href="#symmetric-multiprocessing-smp">Symmetric multiprocessing (SMP)</a></li>
+          <li><a href="#multicore-processors">Multicore Processors</a>
+            <ol>
+              <li><a href="#multithreaded-multicore-system">Multithreaded Multicore System</a></li>
+            </ol>
+          </li>
+          <li><a href="#multiple-processor-scheduling---loading-balancing--%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1">Multiple-Processor Scheduling - Loading Balancing —-负载均衡</a></li>
+          <li><a href="#multiple-processor-scheduling--processor-affinity-%E5%A4%84%E7%90%86%E5%99%A8%E4%BA%B2%E5%92%8C%E5%8A%9B">Multiple-Processor Scheduling – Processor Affinity 处理器亲和力</a></li>
+        </ol>
+      </li>
+      <li><a href="#numa-and-cpu-scheduling">NUMA and CPU Scheduling</a></li>
       <li><a href="#real-time-cpu-scheduling">Real-Time CPU Scheduling</a>
         <ol>
           <li><a href="#event-latency-%E4%BA%8B%E4%BB%B6%E5%BB%B6%E8%BF%9F">Event Latency 事件延迟</a></li>
@@ -381,8 +393,8 @@
         
           
         
-        1千
-        688字
+        4千
+        610字
         
       </div>
       
@@ -422,7 +434,7 @@
     <span class="post-date">
         
         <i class="fa-solid fa-calendar-day fa-fw"></i>
-        改于：2024-03-25 02:15:00 Monday
+        改于：2024-03-26 01:23:00 Tuesday
         <br>
         
         
@@ -431,11 +443,11 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        12402字
+        15324字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
-        42分
+        52分
         
         
         
@@ -1048,6 +1060,114 @@ Many-to-one and many-to-many models,</p>
 
 <h2 id="multi-process-scheduling">Multi-Process Scheduling</h2>
 
+<p>The term Multiprocessor now applies to the following system architectures:</p>
+
+<ul>
+  <li>Multicore CPUs</li>
+  <li>Multithreaded cores</li>
+  <li>NUMA systems</li>
+</ul>
+
+<h3 id="symmetric-multiprocessing-smp">Symmetric multiprocessing (SMP)</h3>
+
+<p>Symmetric multiprocessing (SMP) is where each processor is self scheduling</p>
+<blockquote>
+  <p>[!abstract]+ Two Scheduling Method</p>
+  <ol>
+    <li>All threads may be in a common ready queue (a) <code class="language-plaintext highlighter-rouge">所有进程共用一个就绪队列</code></li>
+    <li>Each processor may have its own private queue of threads（b）<code class="language-plaintext highlighter-rouge">每个处理机都有私有的队列</code>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/SMP.png" alt="SMP" /></li>
+  </ol>
+</blockquote>
+
+<h3 id="multicore-processors">Multicore Processors</h3>
+
+<p>When multiple processor cores are on same physical chip —-》 Multicore Processor</p>
+<ul>
+  <li>Multicore Processor ==&gt; Recent trend</li>
+</ul>
+
+<blockquote>
+  <p>[!success]+ Advantage
+ Faster and consumes less power</p>
+</blockquote>
+
+<blockquote>
+  <p>[!failure]+ Disadvantage
+Memory Stall Growing^[An event that occurs when a thread is on CPU and accesses memory content that is not in the CPU’s cache. The thread’s execution stalls while the memory content is retrieved and fetched]</p>
+</blockquote>
+
+<p>Solution： 每个核都有多个硬件线程</p>
+<ul>
+  <li>Each core has more than one hardware threads. If one thread has a memory stall, switch to another thread!</li>
+</ul>
+
+<h4 id="multithreaded-multicore-system">Multithreaded Multicore System</h4>
+
+<p><em>Chip-multithreading</em>  <code class="language-plaintext highlighter-rouge">CMT</code> assigns each core multiple hardware threads.</p>
+<ul>
+  <li>(Intel refers to this as hyper-threading.)</li>
+</ul>
+
+<p>On a quad-core system (4核) with 2 hardware threads per core, the operating system sees 8 logical processors.</p>
+
+<blockquote>
+  <p>[!abstract]- 
+在一个四核（4核）系统中，如果每个核心支持2个硬件线程，操作系统看到的8个逻辑处理器其实是由这种硬件线程技术（也称为超线程技术）使得每个物理核心能够同时处理两个线程。这种技术允许CPU更高效地利用其资源，特别是在某些核心的一部分资源（如执行单元）在特定时刻未被充分使用时。
+具体来说，超线程技术通过使每个物理核心在操作系统层面呈现为两个逻辑处理器来工作。这样，操作系统和应用程序可以将这些逻辑处理器视为独立的处理单元，从而在逻辑上扩展了CPU的并行处理能力。
+因此，在这样一个四核处理器中，由于每个核心可以处理两个线程，总共就有(4 \times 2 = 8)个逻辑处理器。这就是操作系统为什么会看到8个逻辑处理器的原因。这种安排使得处理器在处理多任务或多线程应用程序时更为高效，尤其是在等待I/O操作或进行其他非CPU密集型任务时，可以更好地利用CPU资源。</p>
+</blockquote>
+
+<p>Two levels of scheduling: <code class="language-plaintext highlighter-rouge">可以在两个层次调度</code> Multithreaded Multicore System</p>
+<ol>
+  <li>The operating system deciding which software thread to run on a logical CPU <code class="language-plaintext highlighter-rouge">OS决定谁进CPU(逻辑上)</code></li>
+  <li>Each core decides which hardware thread to run on the physical core <code class="language-plaintext highlighter-rouge">Core 决定谁进入物理核心</code></li>
+</ol>
+
+<h3 id="multiple-processor-scheduling---loading-balancing--负载均衡">Multiple-Processor Scheduling - Loading Balancing —-<code class="language-plaintext highlighter-rouge">负载均衡</code></h3>
+
+<blockquote>
+  <p>[!info]+ Load balancing
+Load balancing attempts to keep workload evenly distributed</p>
+  <ul>
+    <li><strong>Push migration</strong> – periodic task checks load on each processor, and pushes tasks from overloaded CPU to other less loaded CPUs</li>
+    <li><strong>Pull migration</strong> – idle CPUs pulls waiting tasks from busy CPU</li>
+  </ul>
+</blockquote>
+
+<p>**Push and pull migration need not be mutually exclusive ** <code class="language-plaintext highlighter-rouge">推迁移、拉迁移不必相互互斥</code></p>
+<ul>
+  <li>They are often implemented in parallel on load-balancing systems.</li>
+</ul>
+
+<h3 id="multiple-processor-scheduling--processor-affinity-处理器亲和力">Multiple-Processor Scheduling – Processor Affinity <code class="language-plaintext highlighter-rouge">处理器亲和力</code></h3>
+
+<p><strong>处理器亲和性指的是线程或进程倾向于在被分配运行的同一个CPU上运行的性质。</strong> 当线程在一个处理器上运行时，它的数据会被存储在该处理器的高速缓存（cache）中。如果这个线程之后继续在同一个处理器上运行，它可以更快地访问之前的数据，因为数据已经在缓存中了。</p>
+
+<p><strong>Load balancing</strong> may affect <strong>processor affinity</strong></p>
+<ul>
+  <li>A thread may be moved from one processor to another to balance loads</li>
+  <li>
+    <p>That thread loses the contents of what it had in the cache of the processor it was moved off</p>
+  </li>
+  <li>
+    <p><strong>Soft affinity</strong><code class="language-plaintext highlighter-rouge">软亲和性</code>：操作系统会尽量让线程在同一个处理器上运行，但不保证。系统负载均衡器可能会根据需要将线程迁移到其他处理器。</p>
+  </li>
+  <li><strong>Hard affinity</strong><code class="language-plaintext highlighter-rouge">应亲和性</code>：进程可以指定它希望运行的处理器集合。如果设置了硬亲和性，即使在负载高的情况下，内核也不会将进程移动到它未指定运行的处理器上。</li>
+</ul>
+
+<h2 id="numa-and-cpu-scheduling">NUMA and CPU Scheduling</h2>
+
+<blockquote>
+  <p>[!info]+ NUMA and CPU Scheduling
+在NUMA架构中，计算机的内存被分割成多个区域，每个CPU都有一块局部内存。这些内存区域之间的访问速度可能不一样： 
+<strong>局部内存（Local memory）</strong>：与某个CPU相邻的内存，这个CPU访问局部内存的速度快（fast access）。 
+<strong>非局部内存（Non-local memory）</strong>：不与该CPU相邻的内存，该CPU访问非局部内存的速度慢（slow access）。
+NUMA-aware操作系统在调度线程到CPU时会考虑内存访问的非一致性。它会尝试将线程分配到可以快速访问所需数据的CPU上。这意味着操作系统会考虑线程正在使用的数据的内存位置，并尽量让线程在靠近这些数据的CPU上运行。
+这样做的好处是减少了内存访问延迟，提高了处理速度。但是，如果线程被调度到远离其数据的CPU上，它访问内存的速度将会慢下来，这可能会降低性能。
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/NUMA-CPU-Scheduling.png" alt="NUMA-CPU-Scheduling" /></p>
+</blockquote>
+
 <h2 id="real-time-cpu-scheduling">Real-Time CPU Scheduling</h2>
 
 <blockquote>
@@ -1083,12 +1203,12 @@ Many-to-one and many-to-many models,</p>
 <blockquote>
   <p>[!abstract]+ Two kinds of Event Latency</p>
   <ol>
-    <li>Interrupt latency – time from arrival of interrupt to start of kernel interrupt service routine (ISR) that services interrupt
+    <li>Interrupt latency <code class="language-plaintext highlighter-rouge">中断延迟</code>– time from arrival of interrupt to start of kernel interrupt service routine (ISR) that services interrupt
       <ul>
         <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/InterruptLatency.png" alt="Interrupt Latency" /></li>
       </ul>
     </li>
-    <li>Dispatch latency(调度延迟) – time for scheduler to take current process off CPU and switch to another
+    <li>Dispatch latency <code class="language-plaintext highlighter-rouge">调度延迟</code> – time for scheduler to take current process off CPU and switch to another
       <ul>
         <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/DispatchLatency.png" alt="Dispatch Latency" /></li>
       </ul>
