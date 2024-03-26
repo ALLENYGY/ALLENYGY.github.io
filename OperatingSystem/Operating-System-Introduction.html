@@ -18,11 +18,11 @@
 <meta property="og:url" content="https://allenygy.github.io/OperatingSystem/Operating-System-Introduction" />
 <meta property="og:site_name" content="AllenYGY的个人小站" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-03-26T10:12:13+08:00" />
+<meta property="article:published_time" content="2024-03-26T19:59:39+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Operating System Introduction" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-26T10:12:13+08:00","datePublished":"2024-03-26T10:12:13+08:00","description":"[[Operating-System-Introduction]]","headline":"Operating System Introduction","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/OperatingSystem/Operating-System-Introduction"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/OperatingSystem/Operating-System-Introduction"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-26T19:59:39+08:00","datePublished":"2024-03-26T19:59:39+08:00","description":"[[Operating-System-Introduction]]","headline":"Operating System Introduction","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/OperatingSystem/Operating-System-Introduction"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/OperatingSystem/Operating-System-Introduction"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -224,7 +224,7 @@
       </li>
       <li><a href="#operating-systems">Operating Systems</a>
         <ol>
-          <li><a href="#interrupts">Interrupts</a>
+          <li><a href="#interrupts-%E4%B8%AD%E6%96%AD">Interrupts 中断</a>
             <ol>
               <li><a href="#interrupt-handling-steps">Interrupt Handling Steps</a></li>
               <li><a href="#dma">DMA</a></li>
@@ -368,7 +368,8 @@
         
           
         
-        字
+        1千
+        163字
         
       </div>
       
@@ -408,7 +409,7 @@
     <span class="post-date">
         
         <i class="fa-solid fa-calendar-day fa-fw"></i>
-        改于：2024-03-22 00:00:00 Friday
+        改于：2024-03-26 19:14:00 Tuesday
         <br>
         
         
@@ -417,11 +418,11 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        9594字
+        10198字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
-        32分
+        34分
         
         
         
@@ -446,6 +447,8 @@
 
 <h2 id="computer-system-architecture"><strong>Computer System Architecture</strong></h2>
 
+<p><strong>主要由<code class="language-plaintext highlighter-rouge">Memory</code>,<code class="language-plaintext highlighter-rouge">CPU</code>,<code class="language-plaintext highlighter-rouge">I/O Devices</code>构成</strong></p>
+
 <ul>
   <li>Memory</li>
   <li>CPU</li>
@@ -456,6 +459,7 @@
       <li>keyboard</li>
       <li>printer</li>
       <li>monitor</li>
+      <li>…</li>
     </ul>
   </li>
 </ul>
@@ -468,227 +472,227 @@
 
 <p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/ComputerSystemArchitecture.png" alt="ComputerSystemArchitecture" /></p>
 
-<ol>
-  <li>
-    <blockquote>
-      <p>[!tip]- I/O devices and the CPU can work concurrently
+<blockquote>
+  <p>[!tip]- I/O devices and the CPU can work concurrently
 <strong>I/O设备与CPU并发工作</strong></p>
+  <ul>
+    <li>这意味着CPU可以处理指令，同时I/O设备可以进行数据传输，它们不必等待彼此完成任务才开始工作。</li>
+  </ul>
+</blockquote>
 
-      <ul>
-        <li>这意味着CPU可以处理指令，同时I/O设备可以进行数据传输，它们不必等待彼此完成任务才开始工作。</li>
-      </ul>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote>
-      <p>[!tip]- I/O is between the device and local buffer of controller</p>
+<blockquote>
+  <p>[!tip]- Controller</p>
+  <ul>
+    <li>每个I/O设备都通过一个控制器与系统总线连接。控制器负责管理与特定I/O设备的数据传输。</li>
+    <li>例如，磁盘驱动器通过磁盘控制器连接，鼠标和键盘可能通过USB控制器连接。</li>
+    <li>设备控制器负责管理特定设备的操作，并且每个控制器都有其自己的本地缓冲区。</li>
+    <li>控制器确保数据正确无误地在设备和计算机的内存之间传输。</li>
+  </ul>
+</blockquote>
 
-      <ul>
-        <li>IO 在设备与控制器的缓冲区之间</li>
-      </ul>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote>
-      <p>[!tip]- Controller
-<strong>设备和I/O之间的控制器</strong></p>
+<blockquote>
+  <p>[!tip]- Each device controller is in charge of a particular device type</p>
+  <ul>
+    <li>每个设备控制器被一个特定的设备控制</li>
+  </ul>
+</blockquote>
 
-      <ul>
-        <li>每个I/O设备都通过一个控制器与系统总线连接。控制器负责管理与特定I/O设备的数据传输。</li>
-        <li>例如，磁盘驱动器通过磁盘控制器连接，鼠标和键盘可能通过USB控制器连接。</li>
-        <li>设备控制器负责管理特定设备的操作，并且每个控制器都有其自己的本地缓冲区。</li>
-        <li>控制器确保数据正确无误地在设备和计算机的内存之间传输。</li>
-      </ul>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote>
-      <p>[!tip]- Local Buffer
-<strong>本地缓冲区</strong></p>
-      <ul>
-        <li>每个设备控制器都有一个本地缓冲区（或本地内存），用于临时存储从设备传输的数据或要传输到设备的数据。</li>
-        <li>缓冲区可以平衡CPU和设备之间的速度差异，因为CPU通常比I/O设备快得多。</li>
-      </ul>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote>
-      <p>[!tip]- System Bus
+<blockquote>
+  <p>[!tip]- Each device controller has a local buffer</p>
+  <ul>
+    <li>每个设备控制器都有一个本地缓存</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!tip]- Local Buffer  <strong>本地缓冲区</strong></p>
+  <ul>
+    <li>每个设备控制器都有一个本地缓冲区（或本地内存），用于临时存储从设备传输的数据或要传输到设备的数据。</li>
+    <li>缓冲区可以平衡CPU和设备之间的速度差异，因为CPU通常比I/O设备快得多。</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!tip]- System Bus
 <strong>系统总线</strong></p>
-      <ul>
-        <li>系统总线是连接CPU、内存和所有I/O设备控制器的通道。</li>
-        <li>它允许数据在CPU、内存和I/O设备之间传输。</li>
-      </ul>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote>
-      <p>[!tip]- Memory
+  <ul>
+    <li>系统总线是连接CPU、内存和所有I/O设备控制器的通道。</li>
+    <li>它允许数据在CPU、内存和I/O设备之间传输。</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!tip]- I/O is between the device and local buffer of controller</p>
+  <ul>
+    <li>IO 发生在设备与控制器的缓冲区之间</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!tip]- Memory
 <strong>内存</strong></p>
-      <ul>
-        <li>在图中，内存单独显示，表示它与CPU和所有I/O设备通过系统总线相连。</li>
-        <li>内存用于存储CPU当前正在处理的数据和指令，以及等待被I/O设备处理的数据。</li>
-      </ul>
-    </blockquote>
-  </li>
-</ol>
+  <ul>
+    <li>在图中，内存单独显示，表示它与CPU和所有I/O设备通过系统总线相连。</li>
+    <li>内存用于存储CPU当前正在处理的数据和指令，以及等待被I/O设备处理的数据。</li>
+  </ul>
+</blockquote>
 
 <hr />
 
 <h3 id="cpu-and-memory-in-computer"><strong>CPU and Memory in Computer</strong></h3>
 
-<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/CPU.png" alt="CPU" /></p>
-
-<ol>
-  <li>
-    <blockquote>
-      <p>[!tip]- Single Processor &amp; Multiple Processor</p>
-    </blockquote>
-  </li>
-</ol>
+<p><strong>CPU与Memory间的关系</strong> 可以分成三种模型</p>
 
 <blockquote>
-  <p><strong>单处理器</strong></p>
-
+  <p>[!tip]- Single Processor &amp; Multiple Processor  <strong>单处理器</strong> 和 <strong>多处理器</strong></p>
   <ul>
-    <li>这是最基本的配置，有一个CPU负责处理所有计算任务。这个CPU有自己的寄存器和缓存来处理指令和数据。</li>
-  </ul>
-
-  <p><strong>多处理器</strong>:</p>
-
-  <ul>
-    <li>在这种配置中，有两个或更多的独立CPU（或处理器），每个CPU都有自己的寄存器和缓存。这些处理器共享主内存，允许它们处理更多的任务和并行计算。</li>
-  </ul>
-</blockquote>
-
-<ol>
-  <li>
-    <blockquote>
-      <p>[!tip]- Dual Core</p>
-    </blockquote>
-  </li>
-</ol>
-
-<blockquote>
-  <p><strong>双核处理器</strong></p>
-
-  <ul>
-    <li>双核处理器实际上是一个包含两个独立核心的单个CPU。每个核心都有自己的寄存器和一级缓存（L1 cache），它们共享一个二级缓存（L2 cache）和主内存。这允许一个处理器在同一时间内处理更多的任务。</li>
-  </ul>
-</blockquote>
-
-<ol>
-  <li>
-    <blockquote>
-      <p>[!tip]- NUMA</p>
-    </blockquote>
-  </li>
-</ol>
-
-<blockquote>
-  <p><strong>非统一内存访问系统</strong></p>
-
-  <ul>
-    <li>NUMA是一种内存设计，其中多个处理器被分配专用的内存块。每个CPU可以访问自己的内存（memory0, memory1等），以及其他CPU的内存，但访问其他CPU的内存会有更高的延迟。这种设计可以提高处理器访问内存的速度和效率，特别是在处理大量数据或高性能计算任务时。</li>
-  </ul>
-</blockquote>
-
-<hr />
-<h2 id="operating-systems"><strong>Operating Systems</strong></h2>
-
-<blockquote>
-  <p>[!quote] Operating System: Intermediary between a User and the Computer Hardware
-<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Intermediary.png" alt="Intermediary" /></p>
-</blockquote>
-
-<ul>
-  <li>An operating system
-    <ul>
-      <li>is a program that acts as an intermediary between a user of a computer and the computer hardware</li>
-      <li>provides interface to a user, runs a program for a user</li>
-    </ul>
-  </li>
-  <li>General goals of operation systems
-    <ul>
-      <li>Execute user programs and make solving user problems easier</li>
-      <li>Make the computer system convenient to use</li>
-      <li>Use the computer hardware in an efficient manner</li>
-    </ul>
-  </li>
-</ul>
-
-<blockquote>
-  <p>[!quote] A definition: “Everything a vendor ships when you order an operating system”</p>
-</blockquote>
-
-<blockquote>
-  <p>[!example]+ “Everything” include</p>
-
-  <ul>
-    <li>Kernel</li>
-    <li>Part of a operating system, resides in memory at all times on the computer
-  <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/KernelInMemory.png" alt="KernelInMemory" /></li>
-    <li>Others
+    <li><strong>单处理器</strong></li>
+    <li>这是最基本的配置，有一个CPU负责处理所有计算任务。
       <ul>
-        <li>System programs -all programs associated with the operating system
-          <ul>
-            <li>but not in kernel</li>
-          </ul>
-        </li>
-        <li>Application program - all programs not associated with the operating system</li>
-        <li>middleware – a set of software frameworks that provide additional services to application developers such as:</li>
-        <li>databases, multimedia, graphics</li>
+        <li>这个CPU有自己的<em>寄存器</em>和<em>缓存</em>来处理指令和数据。</li>
+      </ul>
+    </li>
+    <li><strong>多处理器</strong></li>
+    <li>在这种配置中，有两个或更多的独立CPU或处理器
+      <ul>
+        <li>与单处理器相同每个CPU都有自己的<em>寄存器</em>和<em>缓存</em>。</li>
+        <li>这些处理器<strong>共享主内存</strong>，允许它们处理更多的任务和并行计算。</li>
       </ul>
     </li>
   </ul>
 </blockquote>
 
-<hr />
-<h3 id="interrupts"><strong>Interrupts</strong></h3>
+<blockquote>
+  <p>[!tip]- Dual Core <strong>双核处理器</strong></p>
+  <ul>
+    <li>双核处理器实际上是一个包含两个<em>独立核心</em>的单个CPU。
+      <ul>
+        <li>每个核心都有自己的<em>Regisiter</em>和 <em>L1 cache</em>。</li>
+        <li>它们共享一个二级缓存<em>L2 cache</em>和 <em>Main Memory</em>。</li>
+        <li>这允许一个处理器在同一时间内处理更多的任务。</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
 
 <blockquote>
-  <p>[!abstract]+ An <strong>interrupt</strong> is a signal emitted by <strong>hardware</strong> or <strong>software</strong> when a process or an event needs immediate attention</p>
-
+  <p>[!tip]- NUMA  <strong>非统一内存访问系统</strong></p>
   <ul>
-    <li>Software: A trap or exception is a software-generated interrupt caused either by an error or a user request (system call)</li>
+    <li>NUMA是一种内存设计，其中多个处理器被分配专用的<strong>内存块</strong>。</li>
+    <li>每个CPU可以访问自己的内存<code class="language-plaintext highlighter-rouge">memory0, memory1,....</code>，以及其他CPU的内存，但访问其他CPU的内存会有更高的延迟。</li>
+    <li>这种设计可以提高处理器访问内存的速度和效率，特别是在处理大量数据或高性能计算任务时。</li>
+  </ul>
+</blockquote>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/CPU.png" alt="CPU" /></p>
+
+<hr />
+<h2 id="operating-systems"><strong>Operating Systems</strong></h2>
+
+<blockquote>
+  <p>[!abstract]+</p>
+  <ul>
+    <li>操作系统作为用户和计算机硬件的中介</li>
+    <li>它主要包括kernel,以及系统程序，应用程序，中间件(软件框架，如数据库，多媒体，…)</li>
+    <li>操作系统是中断驱动的
+      <ul>
+        <li>内核中的设备驱动器管理支配设备</li>
+        <li>设备控制器通过中断告知CPU，设备已经完成操作</li>
+        <li>内核的代码只有当中断发生时才执行</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!tip]- Operating System: Intermediary between a User and the Computer Hardware —-用户与操作系统的中介</p>
+  <ul>
+    <li>An operating system provides interface to a user, runs a program for a user</li>
+    <li>Application Program: Compilers, web browsers….</li>
+    <li>Computer Hardware: CPU, Memory, I/O devices…
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Intermediary.png" alt="Intermediary" /></li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ General goals of operation systems</p>
+  <ul>
+    <li>Execute user programs and make solving user problems easier <em>更简单的执行 User Programs</em></li>
+    <li>Make the computer system convenient to use <em>更方便的使用Computer System</em></li>
+    <li>Use the computer hardware in an efficient manner <em>更高效的使用Computer Hardware</em></li>
+  </ul>
+</blockquote>
+
+<p>%% &gt; [!quote] A definition: “Everything a vendor ships when you order an operating system” %%</p>
+
+<blockquote>
+  <p>[!Question]+ What is Operating System ?
+OS Include:</p>
+  <ul>
+    <li><strong>Kernel</strong> Part of a operating system, resides in memory at all times on the computer
+ <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/KernelInMemory.png" alt="KernelInMemory" /></li>
+    <li><strong>Others</strong>
+      <ul>
+        <li><strong>System programs</strong> -all programs associated with the operating system, but not in kernel</li>
+        <li><strong>Application programs</strong> - all programs not associated with the operating system</li>
+        <li><strong>Middleware</strong><code class="language-plaintext highlighter-rouge">中间件</code>– a set of software frameworks that provide additional services to application developers such as:  databases, multimedia, graphics</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ Operating System Is <strong>Interrupt-Driven</strong></p>
+  <ul>
+    <li>Device driver inside the kernel knows how to talk and manage the device 
+<em>在kernel中的设备驱动知道如何管理设备以及和设备交流</em></li>
+    <li>Device driver provides <strong>uniform interface</strong> between <strong>controller</strong> and <strong>kernel</strong> 
+<em>设备驱动器为控制器和内核提供统一接口</em></li>
+    <li>Each device controller <strong>informs CPU</strong> that it has <strong>finished</strong> its <strong>operation by causing an interrupt</strong> 
+<em>每个设备控制器通过中断告知CPU，它已经完成了它的操作</em>
+The code of the kernel is in memory all the time but the code of the kernel is only executed when there is an interrupt, on demand!
+<strong>内核的代码一直在内存中，但内核的代码只有在出现中断时才会按需执行！</strong>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/DeviceDriverInKernel.png" alt="Device Driver In Kernel" /></li>
+  </ul>
+</blockquote>
+
+<h3 id="interrupts-中断">Interrupts 中断</h3>
+
+<blockquote>
+  <p>[!abstract]+</p>
+  <ul>
+    <li>当软硬件发生需要OS立刻处理的事件时中断发生
+      <ul>
+        <li>在软件层面：由<code class="language-plaintext highlighter-rouge">Error</code>或者<code class="language-plaintext highlighter-rouge">System call</code>引起中断</li>
+        <li>在硬件层面：由<code class="language-plaintext highlighter-rouge">Device</code> 引发</li>
+      </ul>
+    </li>
+    <li>由ISR决定对于不同中断应该采取什么行动</li>
+  </ul>
+
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ Interrupt
+An <strong>interrupt</strong> is a signal emitted by <strong>hardware</strong> or <strong>software</strong> when a process or an event needs immediate attention</p>
+  <ul>
+    <li>Software: A trap or exception is a software-generated interrupt caused either by an error or a user request <em>(system call)</em></li>
     <li>Hardware: Device
 [!abstract] Interrupt Service Routines (ISR)
 ISR inside the kernel determine what action should be taken for each type of interrupt</li>
   </ul>
 </blockquote>
 
-<blockquote>
-  <p>[!abstract]+ Operating System Is <strong>Interrupt-Driven</strong></p>
-
-  <ul>
-    <li>Device driver (software) inside the kernel knows how to talk and manage the device</li>
-    <li>Device driver provides <strong>uniform interface</strong> between <strong>controller</strong> and <strong>kernel</strong></li>
-    <li>Each device controller <strong>informs CPU</strong> that it has <strong>finished</strong> its <strong>operation by causing an interrupt</strong>
-<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/DeviceDriverInKernel.png" alt="Device Driver In Kernel" />
-The code of the kernel is in memory all the time but the code of the kernel is only executed when there is an interrupt, on demand!
-<strong>内核的代码一直在内存中，但内核的代码只有在出现中断时才会按需执行！</strong></li>
-  </ul>
-</blockquote>
-
-<hr />
-
 <h4 id="interrupt-handling-steps"><strong>Interrupt Handling Steps</strong></h4>
 
 <blockquote>
-  <p>[!success]+ When there is an interrupt, the operating system</p>
-
-  <ol>
-    <li><strong>Preserves the state of the CPU</strong> by storing registers and the program counter(PC) for the software that was just interrupted (so that the same software can be restarted later).</li>
-    <li><strong>Determine type of interrupt</strong></li>
-  </ol>
-
+  <p>[!success]+ When there is an interrupt, the operating system
+<strong>Preserves the state of the CPU</strong> by storing registers and the program counter(PC) for the software that was just interrupted (so that the same software can be restarted later).
+<strong>Determine type of interrupt</strong></p>
   <ul>
-    <li>check Interrupt vector to get the address of corresponding ISR for this interrupt (used on all modern computers)</li>
+    <li>check Interrupt vector to get the address of corresponding ISR for this interrupt (used on all modern computers)
+<strong>Runs ISR in kernel</strong> to handle interrupt</li>
   </ul>
-
-  <ol>
-    <li><strong>Runs ISR in kernel</strong> to handle interrupt</li>
-  </ol>
 </blockquote>
 
 <hr />
