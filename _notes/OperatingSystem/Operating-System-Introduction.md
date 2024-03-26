@@ -9,12 +9,14 @@ tags:
   - Introduction
   - Lec1
 created: 2024-01-20T17:14
-updated: 2024-03-22
+updated: 2024-03-26T19:14
 ---
 
 # [[Operating-System-Introduction]]
 
 ## **Computer System Architecture**
+
+**主要由`Memory`,`CPU`,`I/O Devices`构成**
 
 - Memory
 - CPU
@@ -24,6 +26,7 @@ updated: 2024-03-22
   - keyboard
   - printer
   - monitor
+  - ...
 
 ![ComputerSystemArchitecture](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/ComputerSystemArchitecture.png)
 
@@ -33,34 +36,35 @@ updated: 2024-03-22
 
 ![ComputerSystemArchitecture](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/ComputerSystemArchitecture.png)
 
-1. > [!tip]- I/O devices and the CPU can work concurrently
+> [!tip]- I/O devices and the CPU can work concurrently
 > **I/O设备与CPU并发工作**
->
 > - 这意味着CPU可以处理指令，同时I/O设备可以进行数据传输，它们不必等待彼此完成任务才开始工作。
 
-2. > [!tip]- I/O is between the device and local buffer of controller
->
-> - IO 在设备与控制器的缓冲区之间
-
-3. > [!tip]- Controller
-> **设备和I/O之间的控制器**
->
+> [!tip]- Controller
 > - 每个I/O设备都通过一个控制器与系统总线连接。控制器负责管理与特定I/O设备的数据传输。
 > - 例如，磁盘驱动器通过磁盘控制器连接，鼠标和键盘可能通过USB控制器连接。
 > - 设备控制器负责管理特定设备的操作，并且每个控制器都有其自己的本地缓冲区。
 > - 控制器确保数据正确无误地在设备和计算机的内存之间传输。
 
-4. > [!tip]- Local Buffer
-> **本地缓冲区**
+> [!tip]- Each device controller is in charge of a particular device type
+> - 每个设备控制器被一个特定的设备控制
+
+> [!tip]- Each device controller has a local buffer
+> - 每个设备控制器都有一个本地缓存
+
+> [!tip]- Local Buffer  **本地缓冲区**
 > - 每个设备控制器都有一个本地缓冲区（或本地内存），用于临时存储从设备传输的数据或要传输到设备的数据。
 > - 缓冲区可以平衡CPU和设备之间的速度差异，因为CPU通常比I/O设备快得多。
 
-5. > [!tip]- System Bus
+> [!tip]- System Bus
 > **系统总线**
 > - 系统总线是连接CPU、内存和所有I/O设备控制器的通道。
 > - 它允许数据在CPU、内存和I/O设备之间传输。
 
-6. > [!tip]- Memory
+> [!tip]- I/O is between the device and local buffer of controller
+> - IO 发生在设备与控制器的缓冲区之间
+
+> [!tip]- Memory
 > **内存**
 > - 在图中，内存单独显示，表示它与CPU和所有I/O设备通过系统总线相连。
 > - 内存用于存储CPU当前正在处理的数据和指令，以及等待被I/O设备处理的数据。
@@ -69,89 +73,98 @@ updated: 2024-03-22
 
 ### **CPU and Memory in Computer**
 
+**CPU与Memory间的关系** 可以分成三种模型
+
+> [!tip]- Single Processor & Multiple Processor  **单处理器** 和 **多处理器**
+> - **单处理器**
+> - 这是最基本的配置，有一个CPU负责处理所有计算任务。
+> 	- 这个CPU有自己的*寄存器*和*缓存*来处理指令和数据。
+> - **多处理器**
+> - 在这种配置中，有两个或更多的独立CPU或处理器 
+> 	- 与单处理器相同每个CPU都有自己的*寄存器*和*缓存*。
+> 	- 这些处理器**共享主内存**，允许它们处理更多的任务和并行计算。
+
+> [!tip]- Dual Core **双核处理器**
+> - 双核处理器实际上是一个包含两个*独立核心*的单个CPU。
+> 	- 每个核心都有自己的*Regisiter*和 *L1 cache*。
+> 	- 它们共享一个二级缓存*L2 cache*和 *Main Memory*。
+> 	- 这允许一个处理器在同一时间内处理更多的任务。
+
+> [!tip]- NUMA  **非统一内存访问系统**
+> - NUMA是一种内存设计，其中多个处理器被分配专用的**内存块**。
+> - 每个CPU可以访问自己的内存`memory0, memory1,....`，以及其他CPU的内存，但访问其他CPU的内存会有更高的延迟。
+> - 这种设计可以提高处理器访问内存的速度和效率，特别是在处理大量数据或高性能计算任务时。
+
 ![CPU](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/CPU.png)
-
-1. > [!tip]- Single Processor & Multiple Processor
-
-> **单处理器**
->
-> - 这是最基本的配置，有一个CPU负责处理所有计算任务。这个CPU有自己的寄存器和缓存来处理指令和数据。
->
-> **多处理器**:
->
-> - 在这种配置中，有两个或更多的独立CPU（或处理器），每个CPU都有自己的寄存器和缓存。这些处理器共享主内存，允许它们处理更多的任务和并行计算。
-
-2. > [!tip]- Dual Core
-
-> **双核处理器**
->
-> - 双核处理器实际上是一个包含两个独立核心的单个CPU。每个核心都有自己的寄存器和一级缓存（L1 cache），它们共享一个二级缓存（L2 cache）和主内存。这允许一个处理器在同一时间内处理更多的任务。
-
-3. > [!tip]- NUMA
-
-> **非统一内存访问系统**
->
-> - NUMA是一种内存设计，其中多个处理器被分配专用的内存块。每个CPU可以访问自己的内存（memory0, memory1等），以及其他CPU的内存，但访问其他CPU的内存会有更高的延迟。这种设计可以提高处理器访问内存的速度和效率，特别是在处理大量数据或高性能计算任务时。
 
 ---
 ## **Operating Systems**
 
-> [!quote] Operating System: Intermediary between a User and the Computer Hardware
+> [!abstract]+ 
+> - 操作系统作为用户和计算机硬件的中介
+> - 它主要包括kernel,以及系统程序，应用程序，中间件(软件框架，如数据库，多媒体，...)
+> - 操作系统是中断驱动的
+> 	- 内核中的设备驱动器管理支配设备
+> 	- 设备控制器通过中断告知CPU，设备已经完成操作
+> 	- 内核的代码只有当中断发生时才执行	
+
+> [!tip]- Operating System: Intermediary between a User and the Computer Hardware ----用户与操作系统的中介
+> - An operating system provides interface to a user, runs a program for a user
+> - Application Program: Compilers, web browsers....
+> - Computer Hardware: CPU, Memory, I/O devices...
 > ![Intermediary](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Intermediary.png)
 
-- An operating system
-  - is a program that acts as an intermediary between a user of a computer and the computer hardware
-  - provides interface to a user, runs a program for a user
-- General goals of operation systems
-  - Execute user programs and make solving user problems easier
-  - Make the computer system convenient to use
-  - Use the computer hardware in an efficient manner
+> [!info]+ General goals of operation systems
+> - Execute user programs and make solving user problems easier *更简单的执行 User Programs* 
+> - Make the computer system convenient to use *更方便的使用Computer System*
+> - Use the computer hardware in an efficient manner *更高效的使用Computer Hardware*
 
-> [!quote] A definition: “Everything a vendor ships when you order an operating system”
+%% > [!quote] A definition: “Everything a vendor ships when you order an operating system” %%
 
-> [!example]+ “Everything” include
->
-> - Kernel  
-> - Part of a operating system, resides in memory at all times on the computer
->     ![KernelInMemory](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/KernelInMemory.png)
-> - Others
->   - System programs -all programs associated with the operating system
->     - but not in kernel
->   - Application program - all programs not associated with the operating system
->   - middleware – a set of software frameworks that provide additional services to application developers such as:
->   - databases, multimedia, graphics
+> [!Question]+ What is Operating System ?
+> OS Include:
+> - **Kernel** Part of a operating system, resides in memory at all times on the computer
+>    ![KernelInMemory](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/KernelInMemory.png)
+> - **Others**
+> 	- **System programs** -all programs associated with the operating system, but not in kernel 
+> 	- **Application programs** - all programs not associated with the operating system 
+> 	- **Middleware**`中间件`– a set of software frameworks that provide additional services to application developers such as:  databases, multimedia, graphics
 
----
-### **Interrupts**
+> [!abstract]+ Operating System Is **Interrupt-Driven**
+> - Device driver inside the kernel knows how to talk and manage the device 
+>   *在kernel中的设备驱动知道如何管理设备以及和设备交流*
+> - Device driver provides **uniform interface** between **controller** and **kernel** 
+>   *设备驱动器为控制器和内核提供统一接口*
+> - Each device controller **informs CPU** that it has **finished** its **operation by causing an interrupt** 
+> *每个设备控制器通过中断告知CPU，它已经完成了它的操作*
+> The code of the kernel is in memory all the time but the code of the kernel is only executed when there is an interrupt, on demand!
+>**内核的代码一直在内存中，但内核的代码只有在出现中断时才会按需执行！**
+![Device Driver In Kernel](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/DeviceDriverInKernel.png)
 
-> [!abstract]+ An **interrupt** is a signal emitted by **hardware** or **software** when a process or an event needs immediate attention
->
-> - Software: A trap or exception is a software-generated interrupt caused either by an error or a user request (system call)
+
+### Interrupts 中断
+
+> [!abstract]+ 
+> - 当软硬件发生需要OS立刻处理的事件时中断发生
+> 	- 在软件层面：由`Error`或者`System call`引起中断
+> 	- 在硬件层面：由`Device` 引发
+> - 由ISR决定对于不同中断应该采取什么行动
+> 	
+
+> [!info]+ Interrupt
+> An **interrupt** is a signal emitted by **hardware** or **software** when a process or an event needs immediate attention
+> - Software: A trap or exception is a software-generated interrupt caused either by an error or a user request *(system call)*
 > - Hardware: Device
 > [!abstract] Interrupt Service Routines (ISR)
 > ISR inside the kernel determine what action should be taken for each type of interrupt
 
-> [!abstract]+ Operating System Is **Interrupt-Driven**
->
-> - Device driver (software) inside the kernel knows how to talk and manage the device
-> - Device driver provides **uniform interface** between **controller** and **kernel**
-> - Each device controller **informs CPU** that it has **finished** its **operation by causing an interrupt**
-![Device Driver In Kernel](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/DeviceDriverInKernel.png)
-> The code of the kernel is in memory all the time but the code of the kernel is only executed when there is an interrupt, on demand!
->**内核的代码一直在内存中，但内核的代码只有在出现中断时才会按需执行！**
-
----
-
 #### **Interrupt Handling Steps**
 
 > [!success]+ When there is an interrupt, the operating system
->
-> 1. **Preserves the state of the CPU** by storing registers and the program counter(PC) for the software that was just interrupted (so that the same software can be restarted later).
-> 2. **Determine type of interrupt**
->
+> **Preserves the state of the CPU** by storing registers and the program counter(PC) for the software that was just interrupted (so that the same software can be restarted later).
+> **Determine type of interrupt**
 > - check Interrupt vector to get the address of corresponding ISR for this interrupt (used on all modern computers)
->
-> 1. **Runs ISR in kernel** to handle interrupt
+> **Runs ISR in kernel** to handle interrupt
 
 ---
 

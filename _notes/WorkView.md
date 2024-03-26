@@ -3,7 +3,7 @@ title: WorkView
 tags: Navigation
 Author: AllenYGY
 created: 2024-02-19
-updated: 2024-03-22
+updated: 2024-03-26T19:38
 ---
 # WorkView
 
@@ -17,6 +17,6 @@ updated: 2024-03-22
 
 ## [[ProgramLanguage|Program Language]]
 
-## [[Math|Mathematics ]]
+## [[Math|Mathematics]]
 
 ## [[Tools]]

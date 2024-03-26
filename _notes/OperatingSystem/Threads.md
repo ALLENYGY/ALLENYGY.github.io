@@ -9,7 +9,7 @@ tags:
 Author:
   - AllenYGY
 created: 2024-03-20T17:14
-updated: 2024-03-23
+updated: 2024-03-26T12:12
 ---
 
 # [[Threads]]
@@ -45,7 +45,7 @@ updated: 2024-03-23
 > 2. Resource Sharing
 > 3. Efficiency 
 > 	- Can simplify code
-> 4.Responsiveness
+> 4. Responsiveness
 > 	- May allow continued execution if part of process is blocked 
 > 	- 即使进程的部分被阻塞，仍可以继续运行
 > 5. Scalability
