@@ -49,10 +49,9 @@ jekyll-theme-ObJekyll:
 
 #### - [Basic Concepts](Network/Basic-Concepts)
 
-#### - [Data Link Layer](Network/Data-Link-Layer)
-
 #### - [Physical Layer](Network/Physical-Layer)
 
+#### - [Data Link Layer](Network/Data-Link-Layer)
 <!-- .slide vertical=true -->
 
 ### <i class="fa-solid fa-graduation-cap fa-fw"></i> USTC 计算机网络课程

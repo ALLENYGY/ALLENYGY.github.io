@@ -6,11 +6,10 @@ tags:
   - NOTE
   - Network
   - Lec2
-  - UIC
 Author:
   - AllenYGY
 created: 2024-03-19
-updated: 2024-03-22
+updated: 2024-03-26T10:03
 ---
 
 # [[Physical-Layer]]

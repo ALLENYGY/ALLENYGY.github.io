@@ -9,7 +9,7 @@ tags:
 Author:
   - AllenYGY
 created: 2024-03-20
-updated: 2024-03-26T01:23
+updated: 2024-03-26T01:28
 ---
 
 # [[CPU-Scheduling]]
@@ -23,8 +23,10 @@ Using Multiprogramming
 > - Process execution consists of a cycle of CPU execution and I/O wait 
 > - CPU burst followed by I/O burst
 > - ![Burst-Duration](https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Burst-duration.png)
->  	- **短CPU突发**：大多数进程都会有大量的短时间CPU突发，这表示进程在执行较短时间的计算后就会等待I/O操作。
->  	- **长CPU突发**：只有少数进程会有较长时间的CPU突发，这些通常是计算密集型的进程，在执行更长时间的计算之后才会进行I/O操作。 
+> - 横轴表示CPU Burst时间  
+
+>  - **短CPU突发**：大多数进程都会有大量的短时间CPU突发，这表示进程在执行较短时间的计算后就会等待I/O操作。
+>  - **长CPU突发**：只有少数进程会有较长时间的CPU突发，这些通常是计算密集型的进程，在执行更长时间的计算之后才会进行I/O操作。 
 
 ## CPU Scheduler `CPU调度程序`
 

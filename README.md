@@ -57,9 +57,9 @@ jekyll-theme-ObJekyll:
 
 #### - [Basic Concepts](Network/Basic-Concepts)
 
-#### - [Data Link Layer](Network/Data-Link-Layer)
-
 #### - [Physical Layer](Network/Physical-Layer)
+
+#### - [Data Link Layer](Network/Data-Link-Layer)
 
 <!-- .slide vertical=true -->
 

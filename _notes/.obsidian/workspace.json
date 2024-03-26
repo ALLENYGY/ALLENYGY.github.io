@@ -4,36 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e2ea601cfd834f8a",
+        "id": "7677a991ef6b15d0",
         "type": "tabs",
         "children": [
           {
-            "id": "915c8f5f665abf3c",
+            "id": "94061c58f1134bfd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OperatingSystem/CPU-Scheduling.md",
+                "file": "Network/Data-Communication-Network.md",
                 "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "448b6eff18061969",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "533fcf44101db3bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OperatingSystem/CPU-Scheduling.md",
-                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -146,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OperatingSystem/CPU-Scheduling.md",
+                "file": "Network/Data-Communication-Network.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OperatingSystem/CPU-Scheduling.md",
+                "file": "Network/Data-Communication-Network.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OperatingSystem/CPU-Scheduling.md"
+                "file": "Network/Data-Communication-Network.md"
               }
             }
           }
@@ -236,25 +217,30 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "915c8f5f665abf3c",
+  "active": "94061c58f1134bfd",
   "lastOpenFiles": [
+    "Network/Basic-Concepts.md",
+    "Network/Data-Communication-Network.md",
+    "Network/USTC-L1.md",
+    "Network/Physical-Layer.md",
+    "Network/Data-Link-Layer.md",
+    "OperatingSystem/CPU-Scheduling.md",
+    "OperatingSystem/Operating-System-Structure.md",
+    "Home.md",
     "Pasted image 20240326011937.png",
     "OperatingSystem/OperatingSystem.md",
-    "Home.md",
     "CO/CO.md",
     "CO/Lecture/From-Machine-Language-to-Assembly-Language.md",
     "CO/Lecture/What-is-a-Computer.md",
     "CO/Lecture/From-Transistors-to-Gates.md",
     "CO/Lecture/ISA.md",
     "CO/Lecture/Microarchitecture.md",
-    "OperatingSystem/CPU-Scheduling.md",
     "Pasted image 20240325000053.png",
     "Pasted image 20240324234531.png",
     "Pasted image 20240324234410.png",
     "Pasted image 20240324234403.png",
     "Contest/Lanqiao/Week-1.md",
     "Contest/Lanqiao/Practice",
-    "OperatingSystem/Operating-System-Structure.md",
     "Record/Daily/2024-03-24.md",
     "WorkFlow/Untitled/000_Nutstore Flash Download Guide.url.nssyncsc",
     "WorkFlow/Untitled",
@@ -272,10 +258,6 @@
     "Workflow/Obsidian/Templaters/Leetcode.md",
     "Workflow/Obsidian/Templaters/Yearly.md",
     "Workflow/Obsidian/Templaters/Weekly.md",
-    "Program/Untitled.md",
-    "Record/Daily/2024-03-23.md",
-    "OperatingSystem/Threads.md",
-    "Math/DiscreteStructure/Lecture/Lec13.md",
     "ProgramLanguage",
     "Program/Java/Lecture",
     "Pasted image 20240320183823.png",
@@ -283,7 +265,6 @@
     "Pasted image 20240319004008.png",
     "Pasted image 20240319004004.png",
     "Pasted image 20240319004023.png",
-    "Pasted image 20240306232535.png",
     "Untitled.canvas"
   ]
 }
