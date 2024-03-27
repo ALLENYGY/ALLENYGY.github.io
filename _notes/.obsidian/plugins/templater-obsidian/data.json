@@ -69,6 +69,10 @@
     {
       "folder": "OperatingSystem",
       "template": "Workflow/Obsidian/Templaters/Note.md"
+    },
+    {
+      "folder": "/",
+      "template": "Workflow/Obsidian/Templaters/Note.md"
     }
   ],
   "syntax_highlighting": true,

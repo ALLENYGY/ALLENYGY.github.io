@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7677a991ef6b15d0",
+        "id": "3290c7e13d8dc4ef",
         "type": "tabs",
         "children": [
           {
-            "id": "94061c58f1134bfd",
+            "id": "02f65b61e63120b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Tools.md",
-                "mode": "preview",
+                "file": "Projects/DatabaseManagementSystem.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -23,16 +23,16 @@
         ]
       },
       {
-        "id": "93a363a03787e693",
+        "id": "416897554ccd4c63",
         "type": "tabs",
         "children": [
           {
-            "id": "220914782287e336",
+            "id": "92649ddd6a81a079",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OperatingSystem/Operating-System-Introduction.md",
+                "file": "Projects/DatabaseManagementSystem.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Tools.md",
+                "file": "Projects/DatabaseManagementSystem.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,7 +190,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Tools.md",
+                "file": "Projects/DatabaseManagementSystem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Tools.md"
+                "file": "Projects/DatabaseManagementSystem.md"
               }
             }
           }
@@ -236,9 +236,14 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "94061c58f1134bfd",
+  "active": "02f65b61e63120b0",
   "lastOpenFiles": [
+    "Algorithm/DAA/Algorithm/Enumeration Subset.md",
+    "Projects/DatabaseManagementSystem.md",
+    "Projects",
+    "Algorithm/DAA/Algorithm/Enumeration.md",
     "OperatingSystem/Operating-System-Introduction.md",
+    "Tools/Tools.md",
     "OperatingSystem/Threads.md",
     "Network/Data-Communication-Network.md",
     "Network/Basic-Concepts.md",
@@ -273,12 +278,7 @@
     "Program/C/Pointers.md",
     "Program/C/MultiThreads.md",
     "Program/C/Macro.md",
-    "Program/C/FileOperation.md",
-    "Workflow/Obsidian/Templaters/Note.md",
-    "OperatingSystem/Untitled.md",
-    "Workflow/Obsidian/Templaters/Leetcode.md",
     "ProgramLanguage",
-    "Program/Java/Lecture",
     "Pasted image 20240320183823.png",
     "Pasted image 20240320182332.png",
     "Pasted image 20240319004008.png",
