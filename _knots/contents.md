@@ -227,8 +227,8 @@ jekyll-theme-ObJekyll:
 
 ### - [Conda Basic Operation](Tools/Conda/Conda)
 
-## <i class="fa-solid fa-project-diagram fa-fw"></i> 项目
-
 <!-- .slide -->
 
-### - 数据库项目[快递站信息管理系统](Projects/DatabaseManagementSystem.md)
+## <i class="fa-solid fa-project-diagram fa-fw"></i> 项目
+
+### - 数据库项目[快递站信息管理系统](Projects/DatabaseManagementSystem)
