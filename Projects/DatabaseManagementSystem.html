@@ -3,26 +3,26 @@
 <head>
   <title>
     
-    Design Issues &middot; AllenYGY的个人小站
+    Databasemanagementsystem &middot; AllenYGY的个人小站
     
   </title>
   
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Design Issues" />
+<meta property="og:title" content="Databasemanagementsystem" />
 <meta name="author" content="AllenYGY" />
 <meta property="og:locale" content="zh" />
-<meta name="description" content="[[Design-Issues]]" />
-<meta property="og:description" content="[[Design-Issues]]" />
-<link rel="canonical" href="https://allenygy.github.io/DBM/Lecture/Design-Issues" />
-<meta property="og:url" content="https://allenygy.github.io/DBM/Lecture/Design-Issues" />
+<meta name="description" content="Courier Station Information Management System" />
+<meta property="og:description" content="Courier Station Information Management System" />
+<link rel="canonical" href="https://allenygy.github.io/Projects/DatabaseManagementSystem" />
+<meta property="og:url" content="https://allenygy.github.io/Projects/DatabaseManagementSystem" />
 <meta property="og:site_name" content="AllenYGY的个人小站" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-03-27T14:29:36+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Design Issues" />
+<meta property="twitter:title" content="Databasemanagementsystem" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-27T14:29:36+08:00","datePublished":"2024-03-27T14:29:36+08:00","description":"[[Design-Issues]]","headline":"Design Issues","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/DBM/Lecture/Design-Issues"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/DBM/Lecture/Design-Issues"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-27T14:29:36+08:00","datePublished":"2024-03-27T14:29:36+08:00","description":"Courier Station Information Management System","headline":"Databasemanagementsystem","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/Projects/DatabaseManagementSystem"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/Projects/DatabaseManagementSystem"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -214,18 +214,28 @@
       
       
       <ol id="toc">
-  <li><a href="#design-issues">Design-Issues</a>
+  <li><a href="#courier-station-information-management-system">Courier Station Information Management System</a>
     <ol>
-      <li><a href="#design-techniques">Design Techniques</a>
+      <li><a href="#assumption">Assumption</a></li>
+      <li><a href="#user-requirement">User Requirement</a>
         <ol>
-          <li><a href="#there-are-also-some-decisions-that-you-need-to-make-during-the-design">There are also some decisions that you need to make during the design</a>
-            <ol>
-              <li><a href="#attribute-vs-entity">Attribute vs Entity</a></li>
-              <li><a href="#entity-set-vs-relationship-set">Entity set vs Relationship set</a></li>
-            </ol>
-          </li>
+          <li><a href="#for-the-customer">For the customer</a></li>
+          <li><a href="#for-the-courier-station-manager">For the courier station manager</a></li>
+          <li><a href="#for-the-administrator">For the administrator</a></li>
         </ol>
       </li>
+      <li><a href="#e-r-diagram">E-R Diagram</a></li>
+      <li><a href="#logical-design">Logical Design</a></li>
+      <li><a href="#normalization">Normalization</a></li>
+      <li><a href="#bonus-part">Bonus Part</a>
+        <ol>
+          <li><a href="#use-foreign-keys">Use foreign keys</a></li>
+          <li><a href="#use-blob-to-store-picture">Use BLOB to store picture</a></li>
+          <li><a href="#use-triggers-to-implement-constraints">Use triggers to implement constraints</a></li>
+        </ol>
+      </li>
+      <li><a href="#conclusion">Conclusion</a></li>
+      <li><a href="#database-size">Database Size</a></li>
     </ol>
   </li>
 </ol>
@@ -345,12 +355,11 @@
         
         
         
-        28万
+        27万
         
           
         
-        8千
-        373字
+        字
         
       </div>
       
@@ -383,33 +392,33 @@
 <div class="container content">
   <div class="page">
     
-    <h1 class="page-title">Design Issues</h1>
+    <h1 class="page-title">Databasemanagementsystem</h1>
     
     <div class="wrapper">
     <main><div class="post">
     <span class="post-date">
         
         <i class="fa-solid fa-calendar-day fa-fw"></i>
-        改于：2024-03-21 21:38:00 Thursday
+        改于：2024-03-27 14:28:00 Wednesday
         <br>
         
         
         <i class="fa-solid fa-calendar-plus fa-fw"></i>
-        建于：2023-11-04 14:49:00 Saturday
+        建于：2024-03-27 14:13:00 Wednesday
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        932字
+        7710字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
-        4分
+        26分
         
         
         
         <br>
         
-        DataBase, NOTE, and Lec4
+        NOTE, DBM, and Project
         
         
         <br/>
@@ -424,68 +433,262 @@
     </span>
     <div id="notes-entry-container">
         <content>
-            <h1 id="design-issues"><a class="internal-link" href="/DBM/Lecture/Design-Issues">Design-Issues</a></h1>
+            <h1 id="courier-station-information-management-system"><a href="https://github.com/ALLENYGY/DataBase-Management-System-Project">Courier Station Information Management System</a></h1>
 
-<ul>
-  <li>Design Techniques</li>
-  <li>Attributes vs Entity</li>
-  <li>Entity set vs Relationship set</li>
-  <li>Weak entity sets</li>
-  <li>Redundancies</li>
-</ul>
-
-<h2 id="design-techniques">Design Techniques</h2>
+<h2 id="assumption">Assumption</h2>
 
 <ol>
-  <li>Express all constraints (you can express!).</li>
-  <li>Use and do not change terminology and class structure of the application domain.</li>
-  <li>Keep it simple.
-  Avoid defining entity types that do not serve any purpose.
-  Don’t use an entity set when an attribute will do. Choose an entity set if it helps expressing constraints; otherwise, use an attribute.</li>
-  <li>Avoid redundancy (but derived attributes are okay)!</li>
-  <li>Limit the use of weak entity sets.</li>
+  <li>There is only one courier station in each region.</li>
+  <li>The address in this area is the address of the delivery station.
+    <ul>
+      <li>For example, there is a courier station on <em>XiangZhou,ZhuHai,GuangDong</em> then the address of this station will be <em>XiangZhou,ZhuHai,GuangDong</em>. There will be no additional specific address</li>
+    </ul>
+  </li>
+  <li>One courier station may have many courier station manager.</li>
 </ol>
 
-<h3 id="there-are-also-some-decisions-that-you-need-to-make-during-the-design">There are also some decisions that you need to make during the design</h3>
+<h2 id="user-requirement">User Requirement</h2>
+
+<p>Since we have different kinds of users, I will describe user requirements by user.</p>
+
+<h3 id="for-the-customer">For the customer</h3>
+
+<ol>
+  <li><strong>Pick Parcel</strong>: Allows customers to pick a parcel from another customer.</li>
+  <li><strong>Send Parcel</strong>: Allows customers to send a parcel to another customer.</li>
+  <li><strong>Parcel Tracking</strong>: Allows customers to view the real-time location and status of their parcel during delivery.</li>
+  <li><strong>Personal Information Management</strong>: Allow customers to update their personal information,  contact details.</li>
+  <li><strong>History</strong>: Give customers the ability to view their order history.</li>
+  <li><strong>Shipping Options</strong>: Choose from different delivery speeds and prices, such as standard, expedited, or timed delivery.</li>
+  <li><strong>Service Evaluation</strong>: Provide a platform for customers to rate the express service and leave feedback.</li>
+</ol>
+
+<h3 id="for-the-courier-station-manager">For the courier station manager</h3>
+
+<ol>
+  <li><strong>Status Update</strong>: Ability to update the delivery status of a package in the system, such as delivered or delayed.</li>
+  <li><strong>Courier Station Information Management</strong>: Allow courier station manager to update their personal information, contact details, opening hours.</li>
+  <li><strong>History</strong>: Allow courier station manager the ability to view information on packages that pass through this Courier station</li>
+</ol>
+
+<h3 id="for-the-administrator">For the administrator</h3>
+
+<ol>
+  <li><em>Station status</em>: Ability to check the status of all of the courier station in this system.</li>
+  <li><strong>History</strong>: Ability to view view all package information.</li>
+</ol>
+
+<p>Here is a basic feature about the pick and send parcel.</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/process.png" alt="Pick-Send Process" /></p>
+
+<p>CustomerA delivers the package to courier stationA and fills in the address that needs to be delivered, then the manager of courier stationA checks the package and transfers it to courier stationB according to the address, and the manager of courier stationB accepts the package. Finally, CustomerB can pick up the package.</p>
+
+<h2 id="e-r-diagram">E-R Diagram</h2>
+
+<p>In the user part, the user uses uID to login, we use the ISA relationship to distinguish the user as customer, delivery manager and administrator, and this ISA relationship is not disjoint, which means that all users registered in the system can be more than one identity.</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/user.png" alt="ER-user" />
+In the parcel section. Each parcel will be sent and picked up by one customer, each customer can send or pick up more than one parcel at the same time, and each parcel has its responsible delivery manager, and corresponding logistic company.</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/parcel.png" alt="ER-parcel" /></p>
+
+<p>In the courier station section, we can see that each delivery manager belongs to a courier station, and the administrator of the system can control multiple courier stations. Every courier station has a specific location for the logistics company to transport the parcel to the fixed address.</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/courier_station.png" alt="ER-courier_station" /></p>
+
+<p>Finall we can get the ER diagram like this.</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/E-R.png" alt="E-R" /></p>
+
+<h2 id="logical-design">Logical Design</h2>
+
+<p>In our user requirement the 3 different kinds of users should be disjoint and total participation.</p>
+
+<p>For the Entity part</p>
+
+<p>we can get 3 relationship sets about the user according to the method in logical design.</p>
 
 <ul>
-  <li>Attribute vs Entity</li>
-  <li>Entity set vs Relationship set</li>
-  <li>Strong entity sets vs Weak entity sets</li>
-  <li>Binary relationship vs multi-ary relationship</li>
+  <li>$customer$</li>
+  <li>$courier_adminstrator$<em>(courier_adminstrator)</em></li>
+  <li>$admin$<em>(adminstrator)</em></li>
 </ul>
 
-<p>Try to eliminate redundancy
-In most cases, the answer is very subjective. It depends on the real-world problem.
-Sometimes, the answers can be very different even on the same problem but with different assumptions.</p>
+<p>And for each entity we can get one relationship set</p>
 
-<h4 id="attribute-vs-entity"><em>Attribute vs Entity</em></h4>
+<ul>
+  <li>$parcel$</li>
+  <li>$courier_station$</li>
+  <li>$logistics_company$</li>
+  <li>$address$</li>
+  <li>$rating$</li>
+</ul>
 
-<p>It depends on the real case.
-Both ER models have advantages and disadvantages.</p>
+<p>For the relationship part, we have 8 relationship in our system.</p>
 
-<h4 id="entity-set-vs-relationship-set">Entity set vs Relationship set</h4>
+<ul>
+  <li>$pick$  $\ Case IX$</li>
+  <li>$send$  $\ Case IX$</li>
+  <li>$manage$  $\ Case X$</li>
+  <li>$belong$  $\ Case X$</li>
+  <li>$control$ $\ Case X$</li>
+  <li>$evaluate$ $\ Case VIII$</li>
+</ul>
+
+<p>For above case we could not to create table.</p>
+
+<ul>
+  <li>$carry$ $\ Case III$</li>
+  <li>$transfer$ $\ Case III$</li>
+</ul>
+
+<p>$admin={\underline{uID,uphone,umail},uname,upassword,ugender,upicture}$
+$cadmin={\underline{uID,uphone,umail},uname,upassword,ugender,upicture,csID}$
+$customer={\underline{uID,uphone,umail},uname,upassword,ugender,upicture}$</p>
+
+<p>$parcel={\underline{parcelID},volume,weight,status,parcelType,
+          send_address,pick_address,send_storage_time,send_time,pick_storage_time,
+          pick_time,cust_send_ID,cust_pick_ID,cadminID,}$
+$courier_station={\underline{csID,phone,email,address},start_time,end_time,adminID}$
+$rating={\underline{ratingID},rating_time,score,uID}$
+$logistics_company={\underline{lsID,lsname,lsemail}}$
+$carry={\underline{lsID},parcelID}$
+$transfer={\underline{csaddress},lcID}$</p>
+
+<h2 id="normalization">Normalization</h2>
+
+<p>After the logical design the schemas in our database have already satisfed 1NF</p>
+
+<p>Now let’s continue to normalize the schema.</p>
+
+<p>For these 3 user tables they have similar attributes</p>
+
+<p>$admin={\underline{uID,phone,mail,}name,password,gender,picture}$
+$cadmin={\underline{uID,phone,mail},name,password,gender,picture,csID}$
+$customer={\underline{uID,phone,mail},name,password,gender,picture}$</p>
+
+<p>We can get the following function dependency.</p>
+
+<p>$uID \rightarrow {email,phone,name,password,gender,picture}$</p>
+
+<p>$email \rightarrow {password,gender,picture}$</p>
+
+<p>$phone \rightarrow {password,gender,picture}$</p>
+
+<p>$uID$ is obviously candicate key it can hold the whole schema.
+While $email$ and $phone$ can hold the attribute $password,gender,picture$, respectively.</p>
+
+<p>but email and phone are not superkey, therefore it violates BCNF.</p>
+
+<p>so we do this decomposition to this schema.</p>
+
+<p>Decomposition</p>
+
+<p>$customer={\underline{uID},name,password,gender,picture}$
+$customer_phone={\underline{phone},uID}$
+$customer_mail={\underline{mail},uID}$</p>
+
+<p>$admin={\underline{uID}name,password,gender,picture}$
+$admin_phone={\underline{phone},uID}$
+$admin_mail={\underline{mail},uID}$</p>
+
+<p>$cadmin={\underline{uID},name,password,gender,picture,csID}$
+$cadmin_phone={\underline{phone},uID}$
+$cadmin_mail={\underline{mail},uID}$</p>
+
+<p>This obviously satisfies the BCNF.</p>
+
+<p>For the Courier station schema it also has email and phone attribute, and there is one more property csaddress</p>
+
+<p>$courier_station={\underline{csID,phone,email,csaddress},start_time,end_time,adminID}$
+Functional dependency:
+$csID\rightarrow {start_time,csaddress,phone,email,end_time,adminID}$
+$phone\rightarrow {start_time,csaddress,csID,email,end_time,adminID}$
+$email\rightarrow {start_time,csaddress,phone,csID,end_time,adminID}$
+$csaddress\rightarrow {start_time,email,phone,csID,end_time,adminID}$</p>
+
+<p>Therefore, we do decomposite just like before</p>
+
+<p>$courier_station={\underline{csID},start_time,end_time,adminID}$
+$csphone={\underline{phone},csID}$
+$csmail={\underline{email},csID}$
+$address={\underline{address},csID}$</p>
+
+<p>The next schema is about the parcel.</p>
+
+<p>$parcel={parcelID,volume,weight,status,parcelType,
+          send_address,pick_address,send_storage_time,send_time,pick_storage_time,
+          pick_time,cust_send_ID,cust_pick_ID,cadminID}$</p>
+
+<p>We can get the following function dependency like this.</p>
+
+<p>$parcelID \rightarrow {volume,weight,status,parcelType,send_address,pick_address,send_storage_time,send_time,pick_storage_time,
+          pick_time,cust_send_ID,cust_pick_ID,cadminID}$</p>
+
+<p>We can find it only has one functional dependency. And obviously, the parcelID is the condicate key in this schema. So it has been already satisfied BCNF.</p>
+
+<p>$logistics_company={\underline{lsID,lsname,lsemail}}$</p>
+
+<p>For the rest of the schema we can find it only has 2 attributes. So it must satisfy BCNF.</p>
+
+<p>$address={\underline{address},csID}$
+$carry={\underline{lsID},parcelID}$
+$transfer={\underline{address},lcID}$</p>
+
+<h2 id="bonus-part">Bonus Part</h2>
+
+<h3 id="use-foreign-keys">Use foreign keys</h3>
+
+<p>In this project, foreign keys are used in almost all the tables to establish connections.</p>
+
+<h3 id="use-blob-to-store-picture">Use BLOB to store picture</h3>
+
+<p>In the table for each user, I used BLOB to save the profile picture。</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/BLOB.png" alt="BLOB" /></p>
+
+<h3 id="use-triggers-to-implement-constraints">Use triggers to implement constraints</h3>
+
+<p>When dealing with the weight and volume of the package, I checked them on the front and back ends, especially on the back end, where I used triggers to make the volume and weight range from 0-300.</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/triggers.png" alt="triggers" /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<ul>
+  <li>
+    <p>Customers can effortlessly pick and send packages, track deliveries in real-time, manage personal information, view order history, and evaluate the quality of service.
+Our system offers a range of dynamic shipping options to suit different customer preferences.</p>
+  </li>
+  <li>
+    <p>For courier station managers, features such as status updates, site information management, and access to comprehensive historical logs can effectively manage packages. The ability to transfer parcels between sites ensures a smooth flow of parcels through the logistics network.</p>
+  </li>
+  <li>
+    <p>In addition, administrators benefit from a centralized view of workstation status and a complete package history, allowing them to monitor and optimize overall system performance.</p>
+  </li>
+</ul>
+
+<h2 id="database-size">Database Size</h2>
+
+<ul>
+  <li>customer: 200000 records.</li>
+  <li>courier admin: 50000 records.</li>
+  <li>admin: 500   records. <em>(There’s no need to have 10,000 administrators)</em></li>
+  <li>parcel：15000 records.</li>
+  <li>courier station：5000  records. <em>(There are only about 5,000 in the whole country)</em></li>
+  <li>email and phone table are the same size as its main(customer,  courier admin,  admin) table</li>
+</ul>
 
         </content>
         <side style="font-size: 0.9em">
             <h3 style="margin-bottom: 1em">BackLink</h3>
             
-            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
-                
-                <div class="backlink-box">
-                    <a class="internal-link"
-                        href="/DBM/DBM">Dbm</a><br>
-                    <!-- <div style="font-size: 0.9em"> 数据库
-</div> -->
-                </div>
-                
-                <div class="backlink-box">
-                    <a class="internal-link"
-                        href="/DBM/Lecture/Design-Issues">Design Issues</a><br>
-                    <!-- <div style="font-size: 0.9em">[[Design-Issues]]
-</div> -->
-                </div>
-                
+
+            <div style="font-size: 0.9em">
+                <p>
+                    no link
+                </p>
             </div>
             
         </side>

@@ -13,6 +13,17 @@
     } ,
   
     {
+      "title"    : "Enumeration subset",
+      "category" : "",
+      "tags"     : "NOTE, Enumernation, Algorithm",
+      "date"     : "2024-03-27T08:36",
+      
+      
+      "url"      : "/Algorithm/DAA/Algorithm/Enumeration%20Subset"
+      
+    } ,
+  
+    {
       "title"    : "Enumeration",
       "category" : "",
       "tags"     : "NOTE, Enumernation, Algorithm",
@@ -911,6 +922,17 @@
       
       
       "url"      : "/Program/R/R-Data-Structure"
+      
+    } ,
+  
+    {
+      "title"    : "Databasemanagementsystem",
+      "category" : "",
+      "tags"     : "NOTE, DBM, Project",
+      "date"     : "2024-03-27T14:13",
+      
+      
+      "url"      : "/Projects/DatabaseManagementSystem"
       
     } ,
   

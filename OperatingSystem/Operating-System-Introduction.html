@@ -18,11 +18,11 @@
 <meta property="og:url" content="https://allenygy.github.io/OperatingSystem/Operating-System-Introduction" />
 <meta property="og:site_name" content="AllenYGY的个人小站" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-03-26T19:59:39+08:00" />
+<meta property="article:published_time" content="2024-03-27T14:29:36+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Operating System Introduction" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-26T19:59:39+08:00","datePublished":"2024-03-26T19:59:39+08:00","description":"[[Operating-System-Introduction]]","headline":"Operating System Introduction","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/OperatingSystem/Operating-System-Introduction"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/OperatingSystem/Operating-System-Introduction"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-03-27T14:29:36+08:00","datePublished":"2024-03-27T14:29:36+08:00","description":"[[Operating-System-Introduction]]","headline":"Operating System Introduction","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/OperatingSystem/Operating-System-Introduction"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/OperatingSystem/Operating-System-Introduction"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -364,12 +364,12 @@
         
         
         
-        26万
+        27万
         
           
         
         1千
-        163字
+        182字
         
       </div>
       
@@ -409,7 +409,7 @@
     <span class="post-date">
         
         <i class="fa-solid fa-calendar-day fa-fw"></i>
-        改于：2024-03-26 19:14:00 Tuesday
+        改于：2024-03-26 20:08:00 Tuesday
         <br>
         
         
@@ -418,7 +418,7 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        10198字
+        10197字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
@@ -830,38 +830,37 @@ ISR inside the kernel determine what action should be taken for each type of int
       <li>在这种方法中，用户程序在启动I/O操作后不会等待I/O完成，而是立即继续执行其他工作。这是一个异步I/O操作，用户程序可以在I/O操作正在进行时做其他事情。</li>
       <li>用户程序发起I/O请求后，控制权立即返回，无需等待硬件操作完成。</li>
       <li>数据传输和中断处理会在后台进行，而用户程序在这个过程中可以继续执行其他任务。</li>
-      <li>
-        <blockquote>
-          <p>[!example]-
-想象一下你在做饭，同时你想听音乐。你有一张CD和一个CD播放器（这里的CD播放器就像一个需要读取数据的I/O设备）。</p>
-          <ol>
-            <li><strong>启动播放器（请求I/O操作）</strong>:
-              <ul>
-                <li>你把CD放入播放器并按下播放按钮。这一动作启动了播放器的内部机械装置去读取CD上的数据。</li>
-              </ul>
-            </li>
-            <li><strong>继续做饭（用户程序继续执行）</strong>:
-              <ul>
-                <li>一旦音乐开始播放，你不需要站在播放器旁边等待每首歌曲加载。相反，你可以继续做饭。这个阶段就像是服务器处理其他客户端请求或者进行其他工作。</li>
-              </ul>
-            </li>
-            <li><strong>歌曲播放完毕（I/O操作完成）</strong>:
-              <ul>
-                <li>当一首歌曲播放完毕，CD播放器会自动读取下一首歌曲。如果我们把这比喻成一个中断，那么每当一首歌播放完毕，播放器就“中断”当前状态，转而开始播放下一首歌。</li>
-              </ul>
-            </li>
-            <li><strong>不需要干预</strong>:
-              <ul>
-                <li>在整个过程中，你无需干预播放器的操作。你可以专注于做饭，而播放器在后台自行处理CD的播放。
-这就是一个日常生活中的异步I/O示例：你启动了一个需要时间完成的任务（CD播放），但在它完成之前，你可以去做别的事情（做饭），而不是等待它完成。当播放器需要你注意（比如CD播放完毕）时，它会以音乐停止的方式提醒你，这就好比是一个中断信号。</li>
-              </ul>
-            </li>
-          </ol>
-        </blockquote>
-      </li>
     </ul>
   </li>
 </ol>
+
+<blockquote>
+  <p>[!example]
+想象一下你在做饭，同时你想听音乐。你有一张CD和一个CD播放器（这里的CD播放器就像一个需要读取数据的I/O设备）。</p>
+  <ol>
+    <li><strong>启动播放器（请求I/O操作）</strong>:
+      <ul>
+        <li>你把CD放入播放器并按下播放按钮。这一动作启动了播放器的内部机械装置去读取CD上的数据。</li>
+      </ul>
+    </li>
+    <li><strong>继续做饭（用户程序继续执行）</strong>:
+      <ul>
+        <li>一旦音乐开始播放，你不需要站在播放器旁边等待每首歌曲加载。相反，你可以继续做饭。这个阶段就像是服务器处理其他客户端请求或者进行其他工作。</li>
+      </ul>
+    </li>
+    <li><strong>歌曲播放完毕（I/O操作完成）</strong>:
+      <ul>
+        <li>当一首歌曲播放完毕，CD播放器会自动读取下一首歌曲。如果我们把这比喻成一个中断，那么每当一首歌播放完毕，播放器就“中断”当前状态，转而开始播放下一首歌。</li>
+      </ul>
+    </li>
+    <li><strong>不需要干预</strong>:
+      <ul>
+        <li>在整个过程中，你无需干预播放器的操作。你可以专注于做饭，而播放器在后台自行处理CD的播放。
+这就是一个日常生活中的异步I/O示例：你启动了一个需要时间完成的任务（CD播放），但在它完成之前，你可以去做别的事情（做饭），而不是等待它完成。当播放器需要你注意（比如CD播放完毕）时，它会以音乐停止的方式提醒你，这就好比是一个中断信号。</li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
 
 <p>这两种方法的选择取决于程序设计的需求。</p>
 
