@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">JY research monogram</title>
+  <desc id="desc">A geometric JY monogram inspired by open pages and connected research nodes.</desc>
+  <g fill="none" stroke="#14233B" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.5">
+    <path d="M8 12h20M24 12v27c0 9-4 13-11 13-5 0-8-3-8-8"/>
+    <path d="M33 12l10 15 10-15M43 27v25"/>
+  </g>
+  <g fill="#315E8A">
+    <circle cx="33" cy="12" r="3.75"/>
+    <circle cx="53" cy="12" r="3.75"/>
+    <circle cx="43" cy="27" r="3.75"/>
+  </g>
+</svg>

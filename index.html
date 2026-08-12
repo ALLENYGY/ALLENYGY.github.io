@@ -1,26 +1,203 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Junya Yang | Academic Homepage</title>
-    <meta name="description" content="Academic homepage of Junya Yang, an MSc Computer Science student at The Chinese University of Hong Kong." />
-    <link rel="canonical" href="https://blog.allenygy.vip/" />
-    <meta http-equiv="refresh" content="0; url=https://blog.allenygy.vip/" />
-    <script>window.location.replace('https://blog.allenygy.vip/');</script>
-    <style>
-      :root { color-scheme: light dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-      body { min-height: 100vh; margin: 0; display: grid; place-items: center; background: #f6f7f9; color: #172033; }
-      main { width: min(34rem, calc(100% - 3rem)); padding: 2rem; border: 1px solid #dbe1e8; background: #fff; }
-      a { color: #255baa; }
-      @media (prefers-color-scheme: dark) { body { background: #0f141b; color: #eef3f8; } main { border-color: #2b3745; background: #16202b; } a { color: #8eb6ef; } }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>Junya Yang · 杨钧涯</h1>
-      <p>Redirecting to the academic homepage…</p>
-      <p><a href="https://blog.allenygy.vip/">Continue to blog.allenygy.vip</a></p>
-    </main>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AllenYGY | Academic Homepage</title>
+  <meta name="description" content="AllenYGY's academic homepage: research interests, selected projects, publications, notes, and contact links." />
+  <meta name="author" content="AllenYGY" />
+  <meta property="og:title" content="AllenYGY | Academic Homepage" />
+  <meta property="og:description" content="Research, projects, publications, and technical notes by AllenYGY." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://allenygy.github.io/" />
+  <meta property="og:site_name" content="AllenYGY Academic Homepage" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.allenygy.vip/feed.rss" />
+  <link rel="stylesheet" href="assets/academic-home.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "AllenYGY",
+    "url": "https://allenygy.github.io/",
+    "sameAs": ["https://github.com/ALLENYGY", "https://blog.allenygy.vip/"],
+    "knowsAbout": [
+      "Computer Science",
+      "Bioinformatics",
+      "Computational Biology",
+      "AI Agents"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="/" aria-label="AllenYGY academic homepage">AllenYGY</a>
+      <div class="nav-links">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#notes">Notes</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Academic homepage · research portfolio · technical notes</p>
+        <h1 id="page-title">AllenYGY</h1>
+        <p class="subtitle">Master’s student in Computer Science at The Chinese University of Hong Kong, focusing on bioinformatics, computational biology, and AI agents.</p>
+        <div class="hero-actions" aria-label="Main actions">
+          <a class="button button-primary" href="#research">View research</a>
+          <a class="button" href="https://blog.allenygy.vip/">Open blog</a>
+          <a class="button" href="https://github.com/ALLENYGY">GitHub</a>
+        </div>
+      </div>
+      <aside class="profile-card" aria-label="Profile summary">
+        <div class="avatar" aria-hidden="true">AY</div>
+        <h2>AllenYGY</h2>
+        <p class="muted">MSc in Computer Science · CUHK</p>
+        <ul class="profile-list">
+          <li><span>Focus</span><strong>Bioinformatics · Computational Biology · AI Agents</strong></li>
+          <li><span>Site</span><strong>allenygy.github.io</strong></li>
+          <li><span>GitHub</span><strong>@ALLENYGY</strong></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="research" class="section-shell split-section">
+      <div>
+        <p class="eyebrow">Research interests</p>
+        <h2>Current directions</h2>
+        <p class="section-intro">The structure follows common academic-homepage patterns: a short identity statement, focused research areas, selected papers/projects, updates, and a persistent archive of notes.</p>
+      </div>
+      <div class="card-grid two-col">
+        <article class="card accent-green">
+          <h3>Bioinformatics & single-cell analysis</h3>
+          <p>Cell-specific networks, conditional cell-specific networks, network reconstruction, cfDNA data, and literature synthesis for computational biology.</p>
+          <a href="https://blog.allenygy.vip/page/blog">Explore research notes →</a>
+        </article>
+        <article class="card accent-blue">
+          <h3>Machine learning & deep learning</h3>
+          <p>Statistical learning, neural networks, optimization, model evaluation, and practical ML notes.</p>
+          <a href="https://blog.allenygy.vip/page/blog">ML cheat sheet →</a>
+        </article>
+        <article class="card accent-purple">
+          <h3>Computer vision</h3>
+          <p>Image processing, convolution, detection, attention, backpropagation, and course projects.</p>
+          <a href="https://blog.allenygy.vip/page/blog">CV project report →</a>
+        </article>
+        <article class="card accent-orange">
+          <h3>LLM reasoning & chain-of-thought</h3>
+          <p>Reading notes on CoT prompting, decomposition, generation-verification, multilingual reasoning, and evaluation.</p>
+          <a href="https://blog.allenygy.vip/page/blog">Explore AI notes →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section-shell">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Publications</p>
+          <h2>Selected manuscripts and research notes</h2>
+        </div>
+        <a class="text-link" href="https://blog.allenygy.vip/page/blog">Research archive</a>
+      </div>
+      <div class="publication-list">
+        <article class="publication">
+          <p class="pub-status">Working note</p>
+          <h3><a href="https://blog.allenygy.vip/page/blog">Construction of cell-specific networks from scRNA-seq data</a></h3>
+          <p>Literature review covering single-cell RNA-seq analysis, CSN formulation, and conditional network extensions.</p>
+          <div class="pub-tags"><span>Bioinformatics</span><span>scRNA-seq</span><span>Networks</span></div>
+        </article>
+        <article class="publication">
+          <p class="pub-status">Project note</p>
+          <h3><a href="https://blog.allenygy.vip/page/blog">CSCN network reconstruction</a></h3>
+          <p>Notes and implementation-facing summary for conditional cell-specific network reconstruction.</p>
+          <div class="pub-tags"><span>Network reconstruction</span><span>Computational biology</span></div>
+        </article>
+        <article class="publication">
+          <p class="pub-status">Reading list</p>
+          <h3><a href="https://blog.allenygy.vip/page/blog">Chain-of-thought reasoning reading list</a></h3>
+          <p>Organized references and research questions on reasoning decomposition and verification for large language models.</p>
+          <div class="pub-tags"><span>LLM</span><span>Reasoning</span><span>Survey notes</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section-shell split-section">
+      <div>
+        <p class="eyebrow">Projects</p>
+        <h2>Selected coursework and research projects</h2>
+      </div>
+      <div class="link-grid">
+        <a class="link-card" href="https://blog.allenygy.vip/page/blog"><strong>AlphaFold2 notes</strong><span>Structure prediction and bioinformatics reading</span></a>
+        <a class="link-card" href="https://blog.allenygy.vip/page/blog"><strong>cfDNA data</strong><span>Computational biology data notes</span></a>
+        <a class="link-card" href="https://blog.allenygy.vip/page/blog"><strong>MySQL + Redis</strong><span>Data-system application notes</span></a>
+        <a class="link-card" href="https://blog.allenygy.vip/page/blog"><strong>Compiler project</strong><span>Language features and compiler design</span></a>
+        <a class="link-card" href="https://blog.allenygy.vip/page/blog"><strong>Chat application</strong><span>Computer-network course project</span></a>
+        <a class="link-card" href="https://blog.allenygy.vip/page/blog"><strong>Network deconvolution</strong><span>Shared research note</span></a>
+      </div>
+    </section>
+
+    <section class="section-shell news-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">News</p>
+          <h2>Updates</h2>
+        </div>
+      </div>
+      <ol class="timeline">
+        <li><time datetime="2026-08">2026.08</time><span>Separated the academic homepage from the independently maintained technical blog.</span></li>
+        <li><time datetime="2025-05">2025.05</time><span>Knowledge base export includes research, coursework, programming, and mathematics notes.</span></li>
+      </ol>
+    </section>
+
+    <section id="notes" class="section-shell">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Knowledge base</p>
+          <h2>Course notes and technical writing</h2>
+        </div>
+        <a class="text-link" href="https://blog.allenygy.vip/page/archive">Full archive</a>
+      </div>
+      <div class="topic-grid">
+        <a href="https://blog.allenygy.vip/page/blog">Algorithms</a>
+        <a href="https://blog.allenygy.vip/page/blog">Machine Learning</a>
+        <a href="https://blog.allenygy.vip/page/blog">Deep Learning</a>
+        <a href="https://blog.allenygy.vip/page/blog">Computer Vision</a>
+        <a href="https://blog.allenygy.vip/page/blog">Database Systems</a>
+        <a href="https://blog.allenygy.vip/page/blog">Computer Networks</a>
+        <a href="https://blog.allenygy.vip/page/blog">Operating Systems</a>
+        <a href="https://blog.allenygy.vip/page/blog">Compiler Construction</a>
+        <a href="https://blog.allenygy.vip/page/tags">Mathematics</a>
+        <a href="https://blog.allenygy.vip/page/tags">Programming</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section-shell contact-section">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Get in touch</h2>
+        <p class="section-intro">Research notes, course materials, and technical writing are maintained on the independent blog; source code and projects are available on GitHub.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="button button-primary" href="https://github.com/ALLENYGY">GitHub</a>
+        <a class="button" href="https://blog.allenygy.vip/feed.rss">RSS</a>
+        <a class="button" href="https://blog.allenygy.vip/">Blog</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> AllenYGY. Built as a lightweight academic homepage on GitHub Pages.</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
