@@ -20,6 +20,11 @@
 
 html { scroll-behavior: smooth; }
 
+.academic-home {
+  min-height: 100vh;
+  color-scheme: light dark;
+}
+
 body {
   margin: 0;
   color: var(--text);
@@ -64,7 +69,14 @@ a:hover { color: var(--brand); }
   gap: 1rem;
 }
 
+.brand img {
+  flex: none;
+}
+
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
   font-weight: 800;
   letter-spacing: -0.03em;
   font-size: 1.15rem;
