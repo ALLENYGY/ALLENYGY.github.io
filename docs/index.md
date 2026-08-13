@@ -1,5 +1,10 @@
 ---
-layout: academic-home
+layout: doc
+sidebar: false
+aside: false
+pageClass: home-page
+lastUpdated: false
+editLink: false
 title: Junya Yang | Academic Homepage
 description: Junya Yang's academic homepage covering bioinformatics, computational biology, AI agents, selected projects, and technical notes.
 head:
@@ -42,6 +47,7 @@ hero:
     - text: Read the blog
       link: https://blog.allenygy.vip/
       external: true
+      quiet: true
   links:
     - type: github
       text: GitHub
@@ -96,11 +102,11 @@ research:
   areas:
     - number: "01"
       tone: blue
-      title: Bioinformatics
+      title: Bioinformatics & single-cell analysis
       icon: network
       description: >
-        Developing computational approaches for biological data, with particular interest
-        in network reconstruction and data-driven discovery.
+        Cell-specific networks, conditional cell-specific networks, network reconstruction,
+        cfDNA data, and literature synthesis for computational biology.
       tags:
         - Biological data
         - Network inference
@@ -112,8 +118,8 @@ research:
       title: Computational Biology
       icon: cell
       description: >
-        Studying biological systems through models, algorithms, and cell-specific
-        relationships that connect data with mechanism.
+        Studying biological systems through models, algorithms, and cell-specific relationships
+        that connect data with mechanism.
       tags:
         - Systems biology
         - Single-cell data
@@ -125,8 +131,8 @@ research:
       title: AI Agents
       icon: agent
       description: >
-        Building agentic systems that can plan, use tools, coordinate workflows, and
-        support scientific and technical work.
+        Building agentic systems that can plan, use tools, coordinate workflows, and support
+        scientific and technical work.
       tags:
         - Agentic AI
         - Tool use
@@ -136,14 +142,13 @@ research:
 projects:
   eyebrow: Selected work
   title: Projects built to test ideas.
-  archiveLink: https://github.com/ALLENYGY?tab=repositories
   items:
     - name: CSCN Demo
       type: Research prototype
       year: "2026"
       description: >
-        A Python implementation and demonstration environment for exploring
-        cell-specific causal network reconstruction.
+        A Python implementation and demonstration environment for exploring cell-specific
+        causal network reconstruction.
       stack:
         - Python
         - Causal networks

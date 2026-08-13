@@ -19,23 +19,24 @@
   --nav-height: 56px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --academic-ink: #f0eee8;
-    --academic-muted: #a8b1bf;
-    --academic-paper: #111923;
-    --academic-panel: #16212d;
-    --academic-line: rgba(223, 232, 242, 0.14);
-    --academic-blue: #8eb6ef;
-    --academic-blue-soft: #1b3048;
-    --academic-green: #81c7b2;
-    --academic-green-soft: #1b342f;
-    --academic-amber: #efb66e;
-    --academic-amber-soft: #3a2c1e;
-    --academic-violet: #c4adf4;
-    --academic-violet-soft: #302945;
-  }
+
+html.dark {
+  --academic-ink: #eef5ff;
+  --academic-muted: #9fb0cc;
+  --academic-paper: #0d1320;
+  --academic-panel: #111827;
+  --academic-line: rgba(201, 216, 235, 0.14);
+  --academic-blue: #8eb6ef;
+  --academic-blue-soft: #162740;
+  --academic-green: #6ac9a8;
+  --academic-green-soft: #102820;
+  --academic-amber: #e9b468;
+  --academic-amber-soft: #2a1e10;
+  --academic-violet: #b9a7ef;
+  --academic-violet-soft: #20183a;
 }
+
+
 
 * { box-sizing: border-box; }
 
@@ -60,73 +61,11 @@ a { color: inherit; text-decoration: none; }
   outline-offset: 3px;
 }
 
-.skip-link {
-  position: absolute;
-  left: -999px;
-  top: 1rem;
-  z-index: 100;
-  padding: 0.65rem 1rem;
-  background: var(--academic-ink);
-  color: var(--academic-paper);
-  border-radius: 999px;
-  font-size: 0.85rem;
-}
-
-.skip-link:focus { left: 1rem; }
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  height: var(--nav-height);
-  background: color-mix(in srgb, var(--academic-paper) 88%, transparent);
-  border-bottom: 1px solid var(--academic-line);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-}
-
-.nav {
-  width: min(1180px, 100%);
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  color: var(--academic-ink);
-  font-weight: 700;
-  font-size: 1.1rem;
-  letter-spacing: -0.02em;
-}
-
-.brand__logo {
-  width: 28px;
-  height: 28px;
-  display: block;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  font-size: 0.9rem;
-  color: var(--academic-muted);
-}
-
-.nav-link:hover { color: var(--academic-blue); }
-
 .academic-home { background: var(--academic-paper); }
 
 .academic-hero {
   min-height: calc(100vh - var(--nav-height));
-  padding: clamp(5rem, 10vw, 8.5rem) max(1.5rem, calc((100vw - 1180px) / 2)) 2rem;
+  padding: clamp(5rem, 10vw, 8.5rem) clamp(1.5rem, 5vw, 4rem) 2rem;
   position: relative;
   overflow: hidden;
   background:
@@ -138,17 +77,7 @@ a { color: inherit; text-decoration: none; }
   background-size: 100% 100%, 56px 56px, 56px 56px, 100% 100%, 100% 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  .academic-hero {
-    background:
-      linear-gradient(90deg, transparent 49.9%, rgba(255, 255, 255, 0.025) 50%, transparent 50.1%),
-      linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-      radial-gradient(circle at 86% 14%, rgba(84, 137, 214, 0.16), transparent 28rem),
-      var(--academic-paper);
-    background-size: 100% 100%, 56px 56px, 56px 56px, 100% 100%, 100% 100%;
-  }
-}
+
 
 .academic-hero::before {
   content: "";
@@ -163,12 +92,13 @@ a { color: inherit; text-decoration: none; }
 }
 
 .academic-hero__grid {
-  width: min(1180px, 100%);
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
   align-items: center;
-  gap: clamp(3rem, 7vw, 7rem);
+  gap: clamp(2rem, 5vw, 5rem);
   position: relative;
   z-index: 1;
 }
@@ -204,9 +134,10 @@ a { color: inherit; text-decoration: none; }
 
 .academic-hero__title {
   margin: 0;
-  font-size: clamp(4rem, 8.4vw, 7.4rem);
+  font-size: clamp(2.4rem, 5vw, 4rem);
   font-weight: 500;
-  line-height: 0.88;
+  line-height: 1.05;
+  word-break: keep-all;
 }
 
 .academic-hero__role {
@@ -368,9 +299,11 @@ a { color: inherit; text-decoration: none; }
 .academic-hero__scroll:hover { color: var(--academic-blue); }
 
 .academic-section {
-  width: min(1180px, 100%);
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: clamp(5rem, 9vw, 8rem) 1.5rem;
+  padding: clamp(5rem, 9vw, 8rem) clamp(1.5rem, 5vw, 4rem);
+  box-sizing: border-box;
 }
 
 .academic-section__heading { margin-bottom: 3rem; }
@@ -447,9 +380,10 @@ a { color: inherit; text-decoration: none; }
 .academic-projects {
   width: 100%;
   max-width: none;
-  padding-right: max(1.5rem, calc((100vw - 1180px) / 2));
-  padding-left: max(1.5rem, calc((100vw - 1180px) / 2));
+  padding-right: clamp(1.5rem, 5vw, 4rem);
+  padding-left: clamp(1.5rem, 5vw, 4rem);
   background: color-mix(in srgb, var(--academic-blue) 5%, var(--academic-paper));
+  box-sizing: border-box;
 }
 
 .project-list { border-top: 1px solid var(--academic-line); }
@@ -496,14 +430,13 @@ a { color: inherit; text-decoration: none; }
 
 .academic-contact {
   width: 100%;
-  padding: clamp(5rem, 9vw, 8rem) max(1.5rem, calc((100vw - 1180px) / 2)) 2rem;
+  padding: clamp(5rem, 9vw, 8rem) clamp(1.5rem, 5vw, 4rem) 2rem;
   background: #183a69;
   color: #eef5ff;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  .academic-contact { background: #132f54; }
-}
+
 
 .academic-contact__copy { max-width: 760px; }
 .academic-contact .academic-section__eyebrow { color: #9fc2f1; }
@@ -515,8 +448,68 @@ a { color: inherit; text-decoration: none; }
 .academic-button--outline:hover { border-color: #fff; color: #fff; }
 .academic-contact__footer { display: flex; justify-content: space-between; gap: 1rem; margin-top: 6rem; padding-top: 1.2rem; border-top: 1px solid rgba(255, 255, 255, 0.22); color: #afc4de; font-size: 0.72rem; }
 
+
+/* Dark mode overrides for default VitePress integration */
+html.dark .academic-hero {
+  background:
+    linear-gradient(90deg, transparent 49.9%, rgba(201, 216, 235, 0.04) 50%, transparent 50.1%),
+    linear-gradient(rgba(201, 216, 235, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 216, 235, 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 86% 14%, rgba(142, 182, 239, 0.10), transparent 28rem),
+    var(--academic-paper);
+  background-size: 100% 100%, 56px 56px, 56px 56px, 100% 100%, 100% 100%;
+}
+
+html.dark .academic-hero::before {
+  border-color: color-mix(in srgb, var(--academic-blue) 28%, transparent);
+  box-shadow: 0 0 0 3.5rem color-mix(in srgb, var(--academic-blue) 6%, transparent), 0 0 0 7rem color-mix(in srgb, var(--academic-blue) 4%, transparent);
+}
+
+html.dark .academic-profile {
+  background: color-mix(in srgb, var(--academic-panel) 88%, transparent);
+  box-shadow: 1.2rem 1.2rem 0 color-mix(in srgb, var(--academic-blue) 9%, transparent);
+}
+
+html.dark .academic-profile__portrait-wrap {
+  background: var(--academic-blue-soft);
+}
+
+html.dark .academic-profile__ring {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+html.dark .academic-projects {
+  background: color-mix(in srgb, var(--academic-blue) 8%, var(--academic-paper));
+}
+
+html.dark .academic-contact {
+  background: #0b274f;
+  color: #eef5ff;
+}
+
+html.dark .academic-contact .academic-section__eyebrow { color: #8eb6ef; }
+html.dark .academic-contact h2 { color: #fff; }
+html.dark .academic-contact__copy > p:last-child { color: #9fb0cc; }
+html.dark .academic-button--light { border-color: #fff; background: #fff; color: #0b274f; }
+html.dark .academic-button--light:hover { background: #dbe7fb; color: #0b274f; }
+html.dark .academic-button--outline { border-color: rgba(255, 255, 255, 0.45); color: #fff; }
+html.dark .academic-contact__footer { color: #8da6c4; }
+
+html.dark .research-card:hover {
+  box-shadow: 0 1rem 2.8rem rgba(0, 0, 0, 0.22);
+}
+
+html.dark .writing-item:hover h3,
+html.dark .knowledge-card:hover h3,
+html.dark .research-card:hover h3 {
+  color: var(--academic-blue);
+}
+
+html.dark ::selection {
+  background: color-mix(in srgb, var(--academic-blue) 30%, transparent);
+}
+
 @media (max-width: 960px) {
-  .nav-links { gap: 1rem; }
   .academic-hero__grid { grid-template-columns: 1fr; }
   .academic-profile { width: min(420px, 100%); margin: 0 auto; }
   .academic-about { grid-template-columns: 1fr; gap: 1rem; }
@@ -527,11 +520,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 720px) {
-  .site-header { height: auto; }
-  .nav { padding: 0.75rem 1rem; flex-wrap: wrap; }
-  .nav-links { width: 100%; overflow-x: auto; gap: 1rem; font-size: 0.85rem; }
   .academic-hero { padding-top: 4.5rem; }
-  .academic-hero__title { font-size: clamp(3.6rem, 18vw, 5.5rem); }
+  .academic-hero__title { font-size: clamp(2.2rem, 10vw, 3.4rem); }
   .academic-section { padding: 3.5rem 1rem; }
   .academic-section__heading--row { align-items: flex-start; flex-direction: column; }
   .academic-about__principles { grid-template-columns: 1fr; }
@@ -553,3 +543,39 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto;
   padding: 8rem 1.5rem;
 }
+
+/* Full-bleed home page inside the default VitePress doc layout.
+   VPDoc uses scoped CSS, so we raise specificity with .container/.content-container. */
+.home-page .VPDoc {
+  padding: 0;
+  width: 100%;
+}
+.home-page .VPDoc .container {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+.home-page .VPDoc .container .content,
+.home-page .VPDoc .container .content-container,
+.home-page .VPDoc .container .content .content-container {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+.home-page .VPDoc .main {
+  padding: 0;
+}
+.home-page .vp-doc {
+  padding: 0;
+}
+.home-page .VPDocFooter {
+  display: none;
+}
+.home-page .VPFooter {
+  display: none;
+}
+
+.home-page .academic-home {
+  width: 100%;
+}
+

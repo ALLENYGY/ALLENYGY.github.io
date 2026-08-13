@@ -42,28 +42,6 @@ const formatDate = (value: string) => {
 </script>
 
 <template>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="/" :aria-label="`${page.brand} homepage`">
-        <img class="brand__logo" src="/logo.svg" alt="" width="28" height="28" />
-        <span>{{ page.brand }}</span>
-      </a>
-      <div class="nav-links">
-        <a
-          v-for="item in page.navigation"
-          :key="item.text"
-          :href="item.link"
-          class="nav-link"
-          v-bind="externalAttrs(item.link)"
-        >
-          {{ item.text }}
-        </a>
-      </div>
-    </nav>
-  </header>
-
   <main id="main" class="academic-home">
     <section class="academic-hero" aria-labelledby="academic-home-title">
       <div class="academic-hero__grid">

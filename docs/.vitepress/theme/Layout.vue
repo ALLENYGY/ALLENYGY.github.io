@@ -1,19 +1,24 @@
 <script setup lang="ts">
+import DefaultTheme from "vitepress/theme";
 import { useData } from "vitepress";
 import AcademicHome from "./AcademicHome.vue";
 
 const { frontmatter, page } = useData();
+const isHome = frontmatter.value?.pageClass === "home-page";
 </script>
 
 <template>
-  <AcademicHome v-if="frontmatter.layout === 'academic-home'" />
-  <main v-else class="fallback-page">
-    <template v-if="page.isNotFound">
-      <p class="eyebrow">Page not found</p>
-      <h1>404</h1>
-      <p class="section-intro">The requested page does not exist.</p>
-      <a class="button button-primary" href="/">Return home</a>
+  <DefaultTheme.Layout>
+    <template #doc-before>
+      <AcademicHome v-if="isHome" />
     </template>
-    <Content v-else />
-  </main>
+    <template #not-found>
+      <main class="fallback-page">
+        <p class="eyebrow">Page not found</p>
+        <h1>404</h1>
+        <p class="section-intro">The requested page does not exist.</p>
+        <a class="button button-primary" href="/">Return home</a>
+      </main>
+    </template>
+  </DefaultTheme.Layout>
 </template>

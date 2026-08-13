@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Junya Yang</title>
+  <desc id="logoDesc">A clean JY monogram logo for Junya Yang's academic homepage.</desc>
+  <defs>
+    <linearGradient id="logo-grad-dark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8eb6ef"/>
+      <stop offset="100%" stop-color="#5a8fd8"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="none" stroke="#f0eee8" stroke-width="2.5"/>
+  <g fill="none" stroke="#f0eee8" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5">
+    <path d="M20 18 L20 40 C20 46 17 49 12 49"/>
+    <path d="M28 18 L36 33 L44 18"/>
+    <path d="M36 33 L36 49"/>
+  </g>
+  <circle cx="48" cy="20" r="3.5" fill="url(#logo-grad-dark)"/>
+</svg>
