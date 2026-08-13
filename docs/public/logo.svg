@@ -1,13 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
-  <title id="title">JY research monogram</title>
-  <desc id="desc">A geometric JY monogram inspired by open pages and connected research nodes.</desc>
-  <g fill="none" stroke="#14233B" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.5">
-    <path d="M8 12h20M24 12v27c0 9-4 13-11 13-5 0-8-3-8-8"/>
-    <path d="M33 12l10 15 10-15M43 27v25"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Junya Yang</title>
+  <desc id="logoDesc">A geometric JY monogram with connected research nodes for Junya Yang's academic homepage.</desc>
+  <style>
+    :root { --logo-ink: #14233b; --logo-accent: #255baa; }
+    @media (prefers-color-scheme: dark) {
+      :root { --logo-ink: #f0eee8; --logo-accent: #8eb6ef; }
+    }
+  </style>
+  <circle cx="32" cy="32" r="30" fill="none" stroke="var(--logo-ink)" stroke-width="1.5" opacity="0.16"/>
+  <g fill="none" stroke="var(--logo-ink)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+    <path d="M15 18h18"/>
+    <path d="M24 18v25c0 7-4 11-10 11-4 0-6-2-6-6"/>
+    <path d="M37 18l9 13 9-13"/>
+    <path d="M46 31v18"/>
   </g>
-  <g fill="#315E8A">
-    <circle cx="33" cy="12" r="3.75"/>
-    <circle cx="53" cy="12" r="3.75"/>
-    <circle cx="43" cy="27" r="3.75"/>
-  </g>
+  <circle cx="15" cy="18" r="3" fill="var(--logo-accent)"/>
+  <circle cx="55" cy="18" r="3" fill="var(--logo-accent)"/>
+  <circle cx="46" cy="31" r="3" fill="var(--logo-accent)"/>
 </svg>

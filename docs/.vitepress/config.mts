@@ -2,9 +2,9 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   lang: "en-US",
-  title: "AllenYGY | Homepage",
+  title: "Junya Yang | Academic Homepage",
   description:
-    "AllenYGY's homepage: research interests, selected projects, publications, notes, and contact links.",
+    "Junya Yang's academic homepage: bioinformatics, computational biology, AI agents, selected projects, and technical notes.",
   base: "/",
   cleanUrls: true,
   appearance: false,
@@ -22,18 +22,18 @@ export default defineConfig({
         href: "https://blog.allenygy.vip/feed.rss",
       },
     ],
-    ["meta", { name: "author", content: "AllenYGY" }],
-    ["meta", { property: "og:title", content: "AllenYGY | Homepage" }],
+    ["meta", { name: "author", content: "Junya Yang" }],
+    ["meta", { property: "og:title", content: "Junya Yang | Academic Homepage" }],
     [
       "meta",
       {
         property: "og:description",
-        content: "Research, projects, publications, and technical notes by AllenYGY.",
+        content: "Bioinformatics, computational biology, AI agents, selected projects, and technical notes by Junya Yang.",
       },
     ],
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:url", content: "https://allenygy.github.io/" }],
-    ["meta", { property: "og:site_name", content: "AllenYGY Homepage" }],
+    ["meta", { property: "og:site_name", content: "Junya Yang Homepage" }],
     ["meta", { name: "twitter:card", content: "summary" }],
     [
       "script",
@@ -41,7 +41,7 @@ export default defineConfig({
       JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Person",
-        name: "AllenYGY",
+        name: "Junya Yang",
         url: "https://allenygy.github.io/",
         affiliation: {
           "@type": "CollegeOrUniversity",
