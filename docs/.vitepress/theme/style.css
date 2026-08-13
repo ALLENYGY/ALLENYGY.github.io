@@ -67,28 +67,7 @@ a { color: inherit; text-decoration: none; }
   min-height: calc(100vh - var(--nav-height));
   padding: clamp(5rem, 10vw, 8.5rem) clamp(1.5rem, 5vw, 4rem) 2rem;
   position: relative;
-  overflow: hidden;
-  background:
-    linear-gradient(90deg, transparent 49.9%, rgba(20, 35, 59, 0.035) 50%, transparent 50.1%),
-    linear-gradient(rgba(20, 35, 59, 0.028) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(20, 35, 59, 0.028) 1px, transparent 1px),
-    radial-gradient(circle at 86% 14%, rgba(37, 91, 170, 0.12), transparent 28rem),
-    var(--academic-paper);
-  background-size: 100% 100%, 56px 56px, 56px 56px, 100% 100%, 100% 100%;
-}
-
-
-
-.academic-hero::before {
-  content: "";
-  position: absolute;
-  top: 7%;
-  right: -9rem;
-  width: 25rem;
-  height: 25rem;
-  border: 1px solid color-mix(in srgb, var(--academic-blue) 24%, transparent);
-  border-radius: 50%;
-  box-shadow: 0 0 0 3.5rem color-mix(in srgb, var(--academic-blue) 4%, transparent), 0 0 0 7rem color-mix(in srgb, var(--academic-blue) 3%, transparent);
+  background: var(--academic-paper);
 }
 
 .academic-hero__grid {
@@ -232,7 +211,7 @@ a { color: inherit; text-decoration: none; }
   padding: 1.2rem;
   border: 1px solid var(--academic-line);
   background: color-mix(in srgb, var(--academic-panel) 88%, transparent);
-  box-shadow: 1.2rem 1.2rem 0 color-mix(in srgb, var(--academic-blue) 7%, transparent);
+  box-shadow: 0.4rem 0.4rem 0 color-mix(in srgb, var(--academic-blue) 7%, transparent);
 }
 
 .academic-profile__portrait-wrap {
@@ -451,23 +430,12 @@ a { color: inherit; text-decoration: none; }
 
 /* Dark mode overrides for default VitePress integration */
 html.dark .academic-hero {
-  background:
-    linear-gradient(90deg, transparent 49.9%, rgba(201, 216, 235, 0.04) 50%, transparent 50.1%),
-    linear-gradient(rgba(201, 216, 235, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(201, 216, 235, 0.03) 1px, transparent 1px),
-    radial-gradient(circle at 86% 14%, rgba(142, 182, 239, 0.10), transparent 28rem),
-    var(--academic-paper);
-  background-size: 100% 100%, 56px 56px, 56px 56px, 100% 100%, 100% 100%;
-}
-
-html.dark .academic-hero::before {
-  border-color: color-mix(in srgb, var(--academic-blue) 28%, transparent);
-  box-shadow: 0 0 0 3.5rem color-mix(in srgb, var(--academic-blue) 6%, transparent), 0 0 0 7rem color-mix(in srgb, var(--academic-blue) 4%, transparent);
+  background: var(--academic-paper);
 }
 
 html.dark .academic-profile {
   background: color-mix(in srgb, var(--academic-panel) 88%, transparent);
-  box-shadow: 1.2rem 1.2rem 0 color-mix(in srgb, var(--academic-blue) 9%, transparent);
+  box-shadow: 0.4rem 0.4rem 0 color-mix(in srgb, var(--academic-blue) 9%, transparent);
 }
 
 html.dark .academic-profile__portrait-wrap {
