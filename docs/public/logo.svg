@@ -1,17 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="logoTitle logoDesc">
-  <title id="logoTitle">Junya Yang</title>
-  <desc id="logoDesc">A clean JY monogram logo for Junya Yang's academic homepage.</desc>
-  <defs>
-    <linearGradient id="logo-grad-light" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#255baa"/>
-      <stop offset="100%" stop-color="#1a3d6e"/>
-    </linearGradient>
-  </defs>
-  <rect x="4" y="4" width="56" height="56" rx="14" fill="none" stroke="#14233b" stroke-width="2.5"/>
-  <g fill="none" stroke="#14233b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5">
-    <path d="M20 18 L20 40 C20 46 17 49 12 49"/>
-    <path d="M28 18 L36 33 L44 18"/>
-    <path d="M36 33 L36 49"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">JY research monogram</title>
+  <desc id="desc">A geometric JY monogram inspired by open pages and connected research nodes.</desc>
+  <g fill="none" stroke="#14233B" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.5">
+    <path d="M8 12h20M24 12v27c0 9-4 13-11 13-5 0-8-3-8-8"/>
+    <path d="M33 12l10 15 10-15M43 27v25"/>
   </g>
-  <circle cx="48" cy="20" r="3.5" fill="url(#logo-grad-light)"/>
+  <g fill="#315E8A">
+    <circle cx="33" cy="12" r="3.75"/>
+    <circle cx="53" cy="12" r="3.75"/>
+    <circle cx="43" cy="27" r="3.75"/>
+  </g>
 </svg>
