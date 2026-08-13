@@ -1,10 +1,7 @@
 ---
-layout: doc
-sidebar: false
-aside: false
+layout: home
 pageClass: home-page
 lastUpdated: false
-editLink: false
 title: Junya Yang | Academic Homepage
 description: Junya Yang's academic homepage covering bioinformatics, computational biology, AI agents, selected projects, and technical notes.
 head:
@@ -282,6 +279,8 @@ footer:
   name: Junya Yang
   location: Hong Kong · UTC+8
 ---
+
+<AcademicHome />
 
 <!--
 This Markdown file is the homepage content source.

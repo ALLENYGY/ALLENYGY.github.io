@@ -93,9 +93,5 @@ export default defineConfig({
     search: {
       provider: "local",
     },
-    footer: {
-      message: "Built with VitePress and GitHub Pages.",
-      copyright: "© Junya Yang",
-    },
   },
 });
